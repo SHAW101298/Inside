@@ -38,7 +38,7 @@ public class PlayerUI : MonoBehaviour
     {
         if (windowIsActive == false)
             return;
-
+        
 
         timer += Time.deltaTime;
         if (timer >= showTimer)

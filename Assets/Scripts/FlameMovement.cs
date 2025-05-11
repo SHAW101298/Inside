@@ -10,7 +10,7 @@ public class FlameMovement : MonoBehaviour
     [SerializeField] List<Transform> movementPoints;
     [SerializeField] bool moveToNext;
     [SerializeField] int currentPoint = -1;
-    [SerializeField] bool isActive;
+    bool isActive;
     [SerializeField] float distToPlayer;
     [SerializeField] float maxAllowedDistToPlayer;
 
@@ -27,20 +27,22 @@ public class FlameMovement : MonoBehaviour
             agent.SetDestination(sphere.position);
         }
 
-        TrackDistanceToPlayer();
-        if(moveToNext == true)
+        if (moveToNext == true)
         {
             moveToNext = false;
             currentPoint++;
-            if(currentPoint >= movementPoints.Count)
+            if (currentPoint >= movementPoints.Count)
             {
                 currentPoint = 0;
             }
 
             agent.SetDestination(movementPoints[currentPoint].position);
         }
-    }
 
+
+        TrackDistanceToPlayer();
+        
+    }
 
     public void StartMovement()
     {
@@ -48,12 +50,16 @@ public class FlameMovement : MonoBehaviour
         currentPoint = 0;
         agent.SetDestination(movementPoints[0].position);
         isActive = true;
+
+        //Debug.Log("Is active ? = " + isActive);
     }
 
     void TrackDistanceToPlayer()
     {
         if (isActive == false)
+        {
             return;
+        }
         /*
         float distToDest = Vector3.Distance(transform.position, movementPoints[currentPoint].position);
         if(distToDest <= 1)
@@ -67,7 +73,8 @@ public class FlameMovement : MonoBehaviour
 
         */
 
-        
+        //Debug.Log("Is active = " + isActive);
+
         distToPlayer = Vector3.Distance(transform.position, player.transform.position);
         if (distToPlayer >= maxAllowedDistToPlayer)
         {

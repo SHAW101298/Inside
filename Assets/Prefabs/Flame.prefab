@@ -5136,9 +5136,8 @@ MonoBehaviour:
   - {fileID: 0}
   moveToNext: 0
   currentPoint: -1
-  isActive: 0
   distToPlayer: 0
-  maxAllowedDistToPlayer: 4
+  maxAllowedDistToPlayer: 8
   followSphere: 0
   sphere: {fileID: 0}
   destination: {x: 0, y: 0, z: 0}
