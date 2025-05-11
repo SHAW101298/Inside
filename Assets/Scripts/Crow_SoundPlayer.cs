@@ -5,10 +5,13 @@ using UnityEngine;
 public class Crow_SoundPlayer : MonoBehaviour
 {
     public AudioSource source;
+    public List<AudioClip> clips;
 
-    float timer;
     public float minTimeDelay;
     public float maxTimeDelay;
+
+    public float pitchVariation;
+    float timer;
     float timeDelay;
 
 
@@ -26,7 +29,10 @@ public class Crow_SoundPlayer : MonoBehaviour
         timer += Time.deltaTime;
         if(timer >= timeDelay)
         {
-            source.Play();
+            int randClip = Random.Range(0, clips.Count);
+            float randPitch = Random.Range(-pitchVariation, pitchVariation);
+            source.pitch = 1 + randPitch;
+            source.PlayOneShot(clips[randClip]);
             
             timer = 0;
             timeDelay = Random.Range(minTimeDelay, maxTimeDelay);

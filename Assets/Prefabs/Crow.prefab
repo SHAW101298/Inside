@@ -48,8 +48,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   source: {fileID: 5169741273025197923}
+  clips:
+  - {fileID: 8300000, guid: 9ef5412c97e37ff44a11c4905acc3ec1, type: 3}
+  - {fileID: 8300000, guid: 0d5ad8c9785f2514bac23f84b29e4f5f, type: 3}
+  - {fileID: 8300000, guid: 9ef5412c97e37ff44a11c4905acc3ec1, type: 3}
+  - {fileID: 8300000, guid: f940de2f50759c54baf365805c7cd561, type: 3}
   minTimeDelay: 5
   maxTimeDelay: 40
+  pitchVariation: 0.15
 --- !u!65 &6214978747023807125
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -221,8 +221,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   source: {fileID: 4368979679073853471}
+  clips:
+  - {fileID: 8300000, guid: 9ef5412c97e37ff44a11c4905acc3ec1, type: 3}
+  - {fileID: 8300000, guid: 0d5ad8c9785f2514bac23f84b29e4f5f, type: 3}
+  - {fileID: 8300000, guid: c43c43c4220fb0d4f83f1dd6046a6800, type: 3}
+  - {fileID: 8300000, guid: f940de2f50759c54baf365805c7cd561, type: 3}
   minTimeDelay: 5
   maxTimeDelay: 40
+  pitchVariation: 0.15
 --- !u!65 &3269382084736288233
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -290,7 +296,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: a973d2d7a26cfc546adb9cdfd821b8e0, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 21d18a894b4b70d41905eece9f96c769, type: 2}
+      objectReference: {fileID: 2100000, guid: f520fcaf28549c249ac2378ada85d107, type: 2}
     - target: {fileID: 919132149155446097, guid: a973d2d7a26cfc546adb9cdfd821b8e0, type: 3}
       propertyPath: m_Name
       value: Crow_02
