@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 9170628902623201513}
   - component: {fileID: 9170628902623201512}
   - component: {fileID: 9170628902623201515}
+  - component: {fileID: 5098851125473400533}
   - component: {fileID: 9170628902623201514}
   - component: {fileID: 8990680619478941646}
   - component: {fileID: 7508711536102962417}
@@ -59,6 +60,7 @@ MonoBehaviour:
   rotation: {fileID: 9170628902623201513}
   cam: {fileID: 9170628904267750383}
   ui: {fileID: 9170628902623201515}
+  animations: {fileID: 5098851125473400533}
 --- !u!114 &9170628902623201518
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -142,6 +144,20 @@ MonoBehaviour:
   infoWindow: {fileID: 0}
   infoText: {fileID: 0}
   showTimer: 0.2
+--- !u!114 &5098851125473400533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9170628902623201525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c01e749078b33c34a9d757e0d6d9b5de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 9170628902623201519}
+  tempVal: 0
 --- !u!143 &9170628902623201514
 CharacterController:
   m_ObjectHideFlags: 0

@@ -21,4 +21,5 @@ public class PlayerData : MonoBehaviour
     public PlayerRotation rotation;
     public CameraHookUp cam;
     public PlayerUI ui;
+    public PlayerAnimations animations;
 }
