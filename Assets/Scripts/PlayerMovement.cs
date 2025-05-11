@@ -229,6 +229,10 @@ public class PlayerMovement : MonoBehaviour
 
     void GroundCheck()
     {
+        RaycastHit hitinfo;
+        Physics.Raycast(groundCheckTransform.transform.position, Vector3.down, out hitinfo, groundCheckDistance, groundLayer);
+        //Debug.Log(hitinfo.collider.gameObject);
+        Debug.DrawRay(groundCheckTransform.transform.position, Vector3.down, Color.red);
         groundedPlayer = Physics.Raycast(groundCheckTransform.transform.position, Vector3.down, groundCheckDistance, groundLayer);
         if(groundedPlayer == true && velocity.y <= 0)
         {

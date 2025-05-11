@@ -5,7 +5,7 @@ using UnityEngine;
 public class IntroSceneScript : MonoBehaviour
 {
     [Header("References")]
-    public GameObject player;
+    public PlayerData player;
     public GameObject spawnPoint;
     public GameObject flame;
     public GameObject flameInfo;
@@ -49,7 +49,10 @@ public class IntroSceneScript : MonoBehaviour
 
     public void PlayerLeftArea()
     {
+        Debug.Log("PLayer left Area");
+        player.gameObject.SetActive(false);
         player.transform.position = spawnPoint.transform.position;
+        player.gameObject.SetActive(true);
     }
     public void PlayerGotCloserToKnockSource()
     {
@@ -69,6 +72,7 @@ public class IntroSceneScript : MonoBehaviour
     }
     public void InteractWithLadder()
     {
+        Debug.Log("Interact with Ladder");
         // Screen Fade
         // Change Scene
         //
