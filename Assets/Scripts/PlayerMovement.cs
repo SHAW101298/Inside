@@ -16,6 +16,7 @@ public enum ENUM_PlayerMoveState
 public class PlayerMovement : MonoBehaviour
 {
     public PlayerData data;
+    public PlayerAnimations anim;
     [Header("Basic Data")]
     [SerializeField] float gravityValue = -9.81f;
     public ENUM_PlayerMoveState moveState;
@@ -82,49 +83,17 @@ public class PlayerMovement : MonoBehaviour
         {
             return false;
         }
-
-        //Debug.Log("New state = " + newState);
-        //moveState = newState;
-
-        /*
-        if(moveState != ENUM_PlayerMoveState.dashing)
-        {
-            moveState = newState;
-        }
-        */
         
-        if (moveState != ENUM_PlayerMoveState.dashing && moveState != ENUM_PlayerMoveState.jumping)
+        if (moveState != ENUM_PlayerMoveState.jumping)
         {
             //Debug.Log("New state = " + newState);
             moveState = newState;
+
             return true;
         }
 
-
-        if (moveState == ENUM_PlayerMoveState.jumping && newState == ENUM_PlayerMoveState.dashing)
-        {
-            moveState = ENUM_PlayerMoveState.jumpDash;
-            return true;
-        }
-        if(moveState == ENUM_PlayerMoveState.dashing && newState == ENUM_PlayerMoveState.jumping)
-        {
-            moveState = ENUM_PlayerMoveState.jumpDash;
-            return true;
-            //velocity.y += Mathf.Sqrt(jumpHeight * -3.0f * gravityValue);
-        }
         return false;
-        /*
-        if(moveState == ENUM_PlayerMoveState.jumping && newState == ENUM_PlayerMoveState.dashing)
-        {
-            moveState = newState;
-        }
-        if(moveState == ENUM_PlayerMoveState.dashing && newState == ENUM_PlayerMoveState.jumping)
-        {
-            //velocity.y += Mathf.Sqrt(jumpHeight * -3.0f * gravityValue) - 6;
-            velocity.y = 4;
-            //Jumping();
-        }
-        */
+
 
     }
     void FinishCurrentState(ENUM_PlayerMoveState newState)
@@ -138,11 +107,13 @@ public class PlayerMovement : MonoBehaviour
         {
             input = context.ReadValue<Vector2>();
             TryToChangeState(ENUM_PlayerMoveState.walking);
+            anim.anim.SetBool("Walking", true);
         }
         if (context.phase == InputActionPhase.Canceled)
         {
             input = Vector2.zero;
             TryToChangeState(ENUM_PlayerMoveState.idle);
+            anim.anim.SetBool("Walking", false);
         }
     }
     public void ActionRunning(InputAction.CallbackContext context)
@@ -150,9 +121,11 @@ public class PlayerMovement : MonoBehaviour
         if(context.phase == InputActionPhase.Performed)
         {
             isRunning = true;
+            anim.anim.SetBool("Running", true);
         }
         if(context.phase == InputActionPhase.Canceled)
         {
+            anim.anim.SetBool("Running", false);
             isRunning = false;
         }
     }

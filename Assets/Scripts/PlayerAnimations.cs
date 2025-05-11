@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerAnimations : MonoBehaviour
 {
     public PlayerData player;
+    public Animator anim;
 
     public float tempVal;
 }
