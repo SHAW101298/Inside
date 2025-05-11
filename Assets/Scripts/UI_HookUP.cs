@@ -1,18 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UI_HookUP : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    #region // INSTANCE CREATION
+    public static UI_HookUP Instance;
+    private void Awake()
     {
-        
+        Instance = this;
     }
+#endregion
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public Text infoTextField;
+    public GameObject infoWindow;
+
 }

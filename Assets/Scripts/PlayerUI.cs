@@ -11,6 +11,10 @@ public class PlayerUI : MonoBehaviour
     [SerializeField] float showTimer;
     float timer;
 
+    private void Start()
+    {
+        SetReferences();
+    }
     public void ShowText(string text)
     {
         //Debug.Log("SHOW INFO");
@@ -41,5 +45,11 @@ public class PlayerUI : MonoBehaviour
         {
             HideText();
         }
+    }
+
+    public void SetReferences()
+    {
+        infoWindow = UI_HookUP.Instance.infoWindow;
+        infoText = UI_HookUP.Instance.infoTextField;
     }
 }
