@@ -16,7 +16,8 @@ public class Crow_SoundPlayer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        //timer = Random.Range(minTimeDelay, maxTimeDelay);
+        timeDelay = Random.Range(minTimeDelay, maxTimeDelay);
     }
 
     // Update is called once per frame
