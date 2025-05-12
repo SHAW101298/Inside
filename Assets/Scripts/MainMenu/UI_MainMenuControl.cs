@@ -28,6 +28,7 @@ public class UI_MainMenuControl : MonoBehaviour
     [SerializeField] TMP_Dropdown resolutionDropDown;
     [SerializeField] TMP_Dropdown fpsDropDown;
     [SerializeField] TMP_Dropdown vsyncDropDown;
+    [SerializeField] TMP_Dropdown languageDropDown;
     float originalSoundVolume;
     float originalMusicVolume;
 
@@ -93,6 +94,7 @@ public class UI_MainMenuControl : MonoBehaviour
         int width, height;
         int fpsLimit;
         int vSync;
+        int language;
 
         fullscreen = fullScreenToggle.isOn;
 
@@ -154,8 +156,20 @@ public class UI_MainMenuControl : MonoBehaviour
                 vSync = 0;
                 break;
         }
+        switch (languageDropDown.value)
+        {
+            case 0:
+                language = 0;
+                break;
+            case 1:
+                language = 1;
+                break;
+            default:
+                language = 0;
+                break;
+        }
 
-
+        LanguageManager.Instance.ChangeCurrentLanguage(language);
         Application.targetFrameRate = fpsLimit;
         QualitySettings.vSyncCount = vSync;
         Screen.SetResolution(width, height, fullscreen);

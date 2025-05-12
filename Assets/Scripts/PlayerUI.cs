@@ -29,6 +29,9 @@ public class PlayerUI : MonoBehaviour
     [SerializeField] TMP_Dropdown vsyncDropDown;
     [SerializeField] TMP_Dropdown resolutionDropDown;
     [SerializeField] Toggle fullScreenToggle;
+    [SerializeField] TMP_Dropdown languageDropDown;
+    [Header("More")]
+    [SerializeField] List<LanguageApplier> textFieldsToTranslate;
     float originalMusicVolume;
     float originalSoundVolume;
 
@@ -183,6 +186,7 @@ public class PlayerUI : MonoBehaviour
         int width, height;
         int fpsLimit;
         int vSync;
+        int language;
 
         fullscreen = fullScreenToggle.isOn;
 
@@ -244,10 +248,27 @@ public class PlayerUI : MonoBehaviour
                 vSync = 0;
                 break;
         }
+        switch (languageDropDown.value)
+        {
+            case 0:
+                language = 0;
+                break;
+            case 1:
+                language = 1;
+                break;
+            default:
+                language = 1;
+                break;
+        }
 
 
+        LanguageManager.Instance.ChangeCurrentLanguage(language);
         Application.targetFrameRate = fpsLimit;
         QualitySettings.vSyncCount = vSync;
         Screen.SetResolution(width, height, fullscreen);
+        foreach(LanguageApplier field in textFieldsToTranslate)
+        {
+            field.SetAccordingToLanguage();
+        }
     }
 }

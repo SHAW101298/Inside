@@ -41,6 +41,7 @@ public class Crow_SoundPlayer : MonoBehaviour
 
     public void Interact_PlayRandomCaw()
     {
+        timer = 0;
         int randClip = Random.Range(0, clips.Count);
         float randPitch = Random.Range(-pitchVariation, pitchVariation);
         source.pitch = 1 + randPitch;
@@ -48,6 +49,7 @@ public class Crow_SoundPlayer : MonoBehaviour
     }
     public void Interact_PlaySpecificCaw(int x)
     {
+        timer = 0;
         source.PlayOneShot(clips[x]);
     }
 }

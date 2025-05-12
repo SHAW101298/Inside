@@ -51,5 +51,8 @@ public class Language_Polish : LanguageBase
         text[22] = "Wspnij siÍ  ( E )";
         text[23] = "WrÛÊ do gry";
         text[24] = "Do Menu";
+        text[25] = "ZNAJDè TO !!!";
+        text[26] = "????  ( E )";
+        text[27] = "JÍzyk";
     }
 }

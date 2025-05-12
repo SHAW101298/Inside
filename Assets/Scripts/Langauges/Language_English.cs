@@ -48,5 +48,10 @@ public class Language_English : LanguageBase
         text[20] = "Run";
         text[21] = "Touch  ( E )";
         text[22] = "Climb  ( E )";
+        text[23] = "Continue";
+        text[24] = "To Menu";
+        text[25] = "FIND IT !!!";
+        text[26] = "????  ( E )";
+        text[27] = "Language";
     }
 }
