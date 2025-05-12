@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -24,8 +25,9 @@ public class UI_MainMenuControl : MonoBehaviour
     [SerializeField] Slider musicSlider;
     [SerializeField] Slider soundSlider;
     [SerializeField] Toggle fullScreenToggle;
-    [SerializeField] Dropdown resolutionDropDown;
-    [SerializeField] Dropdown fpsDropDown;
+    [SerializeField] TMP_Dropdown resolutionDropDown;
+    [SerializeField] TMP_Dropdown fpsDropDown;
+    [SerializeField] TMP_Dropdown vsyncDropDown;
 
     [Header("Debug")]
     bool animate;
@@ -33,6 +35,10 @@ public class UI_MainMenuControl : MonoBehaviour
     bool animatedesired;
     float currentValue = 0;
 
+    private void Start()
+    {
+        currentWindow = menuWindow;
+    }
 
     private void Update()
     {
@@ -67,16 +73,90 @@ public class UI_MainMenuControl : MonoBehaviour
         animate = true;
         animatecurrent = true;
     }
+    public void BTN_ExitGame()
+    {
+        Application.Quit();
+    }
 
     public void BTN_SaveOptions()
     {
+        Options.Instance.musicVolume = musicSlider.value;
+        Options.Instance.soundVolume = soundSlider.value;
+        
+        
+
+        bool fullscreen;
+        int width, height;
+        int fpsLimit;
+        int vSync;
+
+        fullscreen = fullScreenToggle.isOn;
+
+        switch (resolutionDropDown.value)
+        {
+            case 0:
+                width = 1920;
+                height = 1080;
+                break;
+            case 1:
+                width = 1600;
+                height = 900;
+                break;
+            case 2:
+                width = 1280;
+                height = 720;
+                break;
+            default:
+                width = Screen.currentResolution.width;
+                height = Screen.currentResolution.height;
+                break;
+        }
+        switch (fpsDropDown.value)
+        {
+            case 0:
+                fpsLimit = 30;
+                break;
+            case 1:
+                fpsLimit = 60;
+                break;
+            case 2:
+                fpsLimit = 120;
+                break;
+            case 5:
+                fpsLimit = 0;
+                break;
+            default:
+                fpsLimit = 0;
+                break;
+        }
+        switch (vsyncDropDown.value)
+        {
+            case 0:
+                vSync = 0;
+                break;
+            case 1:
+                vSync = 1;
+                break;
+            case 2:
+                vSync = 2;
+                break;
+            case 3:
+                vSync = 3;
+                break;
+            case 4:
+                vSync = 4;
+                break;
+            default:
+                vSync = 0;
+                break;
+        }
+
+
+        Application.targetFrameRate = fpsLimit;
+        QualitySettings.vSyncCount = vSync;
+        Screen.SetResolution(width, height, fullscreen);
 
     }
-    public void BTN_ReturnWithoutSaving()
-    {
-
-    }
-    
 
     void WindowsAnimation()
     {
