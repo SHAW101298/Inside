@@ -31,7 +31,8 @@ public class IntroSceneScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        DialogManager.Instance.ShowText("                               ");
+        DialogManager.Instance.ShowText(" ? ? ? ");
     }
 
     // Update is called once per frame
@@ -44,6 +45,7 @@ public class IntroSceneScript : MonoBehaviour
             {
                 knockTimer -= timeBetweenKnocks;
                 knockingAudioSource.Play();
+                //DialogManager.Instance.ShowText(28);
             }
         }
     }

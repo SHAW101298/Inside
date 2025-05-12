@@ -53,5 +53,16 @@ public class Language_English : LanguageBase
         text[25] = "FIND IT !!!";
         text[26] = "????  ( E )";
         text[27] = "Language";
+        text[28] = "* knock knock knock *";
+        text[29] = "What's that noise ?";
+        text[30] = "FORGET !!!";
+        text[31] = "Lost . . .";
+        text[32] = "Soon";
+        text[33] = "Why";
     }
 }
+
+/* Crow Lines
+FORGET !!!
+
+ */

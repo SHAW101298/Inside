@@ -54,5 +54,19 @@ public class Language_Polish : LanguageBase
         text[25] = "ZNAJDè TO !!!";
         text[26] = "????  ( E )";
         text[27] = "JÍzyk";
+        text[28] = "* puk puk puk *";
+        text[29] = "Co to za düwiÍk ?";
+        text[30] = "ZAPOMNIJ !!!";
+        text[31] = "Stracone . . .";
+        text[32] = "Juø Nied≥ugo";
+        text[33] = "Dlaczego";
     }
 }
+
+/* Crow Lines
+ZAPOMNIJ !!!
+Stracone . . .
+Juø Nied≥ugo
+Dlaczego
+
+ */
