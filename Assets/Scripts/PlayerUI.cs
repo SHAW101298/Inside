@@ -51,5 +51,6 @@ public class PlayerUI : MonoBehaviour
     {
         infoWindow = UI_HookUP.Instance.infoWindow;
         infoText = UI_HookUP.Instance.infoTextField;
+        Cursor.visible = false;
     }
 }
