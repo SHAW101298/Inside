@@ -859,6 +859,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 869791446}
   m_CullTransparentMesh: 1
+--- !u!82 &1011819611 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 3998621102542203688, guid: 92b627872cf1a504985c0a8599c16676, type: 3}
+  m_PrefabInstance: {fileID: 9170628903308768922}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1044256481
 GameObject:
   m_ObjectHideFlags: 0
@@ -1097,7 +1102,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 1edbc74cc4ff08e489f71079da957db6, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.6
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1117,7 +1122,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0.18387222
+      value: 0.4
       inSlope: -0.20161894
       outSlope: -0.20161894
       tangentMode: 0
@@ -1126,7 +1131,7 @@ AudioSource:
       outWeight: 0.208
     - serializedVersion: 3
       time: 1
-      value: 0
+      value: 0.1
       inSlope: -0.21121353
       outSlope: -0.21121353
       tangentMode: 0
@@ -1454,6 +1459,54 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1743280832
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1743280834}
+  - component: {fileID: 1743280833}
+  m_Layer: 0
+  m_Name: Audio Source Collector
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1743280833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1743280832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29d59f1a4f907844c9e1a372b0662a89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundAudioSources:
+  - {fileID: 1011819611}
+  - {fileID: 1168190675}
+  musicAudioSources: []
+--- !u!4 &1743280834
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1743280832}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.9276776, y: 1.900393, z: -3.0302749}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1814097298
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1509,10 +1562,6 @@ PrefabInstance:
       propertyPath: movementPoints.Array.data[0]
       value: 
       objectReference: {fileID: 1639285065}
-    - target: {fileID: 5665249757572036692, guid: b5283154d3ca6924ea5cc295a39f41cb, type: 3}
-      propertyPath: m_Color.g
-      value: 0.30879685
-      objectReference: {fileID: 0}
     - target: {fileID: 5665249757615669668, guid: b5283154d3ca6924ea5cc295a39f41cb, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -1728,10 +1777,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3998621102542203688, guid: 92b627872cf1a504985c0a8599c16676, type: 3}
-      propertyPath: m_Volume
-      value: 0.2
-      objectReference: {fileID: 0}
     - target: {fileID: 9170628902623201516, guid: 92b627872cf1a504985c0a8599c16676, type: 3}
       propertyPath: m_RootOrder
       value: 16
@@ -1775,10 +1820,6 @@ PrefabInstance:
     - target: {fileID: 9170628902623201516, guid: 92b627872cf1a504985c0a8599c16676, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9170628902623201518, guid: 92b627872cf1a504985c0a8599c16676, type: 3}
-      propertyPath: groundCheckDistance
-      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 9170628902623201525, guid: 92b627872cf1a504985c0a8599c16676, type: 3}
       propertyPath: m_Name

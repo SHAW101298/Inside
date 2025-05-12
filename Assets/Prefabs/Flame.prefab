@@ -43,9 +43,9 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.30879685, b: 0, a: 1}
   m_Intensity: 20
-  m_Range: 1
+  m_Range: 3
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -226,6 +226,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  objectsToDestroy: []
+  destroyObjectOnActivation: 0
+  destroyTriggerOnActivation: 0
+  destroyDelay: 0
 --- !u!1 &5665249759138651875
 GameObject:
   m_ObjectHideFlags: 0

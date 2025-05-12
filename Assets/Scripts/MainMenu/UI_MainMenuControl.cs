@@ -28,6 +28,8 @@ public class UI_MainMenuControl : MonoBehaviour
     [SerializeField] TMP_Dropdown resolutionDropDown;
     [SerializeField] TMP_Dropdown fpsDropDown;
     [SerializeField] TMP_Dropdown vsyncDropDown;
+    float originalSoundVolume;
+    float originalMusicVolume;
 
     [Header("Debug")]
     bool animate;
@@ -66,6 +68,9 @@ public class UI_MainMenuControl : MonoBehaviour
         desiredWindow = optionsWindow;
         animate = true;
         animatecurrent = true;
+
+        originalMusicVolume = Options.Instance.GetMusicVolume();
+        originalSoundVolume = Options.Instance.GetSoundVolume();
     }
     public void BTN_Exit()
     {
@@ -80,11 +85,9 @@ public class UI_MainMenuControl : MonoBehaviour
 
     public void BTN_SaveOptions()
     {
-        Options.Instance.musicVolume = musicSlider.value;
-        Options.Instance.soundVolume = soundSlider.value;
-        
-        
 
+        Options.Instance.ChangeVolumes(musicSlider.value, soundSlider.value);
+         
         bool fullscreen;
         int width, height;
         int fpsLimit;
@@ -155,8 +158,26 @@ public class UI_MainMenuControl : MonoBehaviour
         Application.targetFrameRate = fpsLimit;
         QualitySettings.vSyncCount = vSync;
         Screen.SetResolution(width, height, fullscreen);
+        BTN_Menu();
 
     }
+    public void BTN_ReturnWithoutSavingOptions()
+    {
+        Options.Instance.ChangeVolumes(originalMusicVolume, originalSoundVolume);
+        vsyncDropDown.value = QualitySettings.vSyncCount;
+        fullScreenToggle.isOn = Screen.fullScreen;
+        BTN_Menu();
+    }
+
+    public void Slider_ChangeSoundVolume()
+    {
+        Options.Instance.ChangeSoundVolume(soundSlider.value);
+    }
+    public void Slider_ChangeMusicVolume()
+    {
+        Options.Instance.ChangeMusicVolume(musicSlider.value);
+    }
+
 
     void WindowsAnimation()
     {
