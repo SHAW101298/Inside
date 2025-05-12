@@ -49,6 +49,7 @@ public class UI_MainMenuControl : MonoBehaviour
 
     public void BTN_Play()
     {
+        Cursor.visible = false;
         SceneManager.LoadScene(1);
     }
     public void BTN_Menu()
@@ -159,7 +160,6 @@ public class UI_MainMenuControl : MonoBehaviour
         QualitySettings.vSyncCount = vSync;
         Screen.SetResolution(width, height, fullscreen);
         BTN_Menu();
-
     }
     public void BTN_ReturnWithoutSavingOptions()
     {
