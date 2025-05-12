@@ -988,9 +988,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  parent: {fileID: 0}
+  objectsToDestroy: []
+  destroyObjectOnActivation: 0
   destroyTriggerOnActivation: 0
-  destroyParentOnActivation: 0
+  destroyDelay: 0
 --- !u!1 &1045203205
 GameObject:
   m_ObjectHideFlags: 0
@@ -1389,9 +1390,11 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  parent: {fileID: 0}
+  objectsToDestroy:
+  - {fileID: 1618564251}
+  destroyObjectOnActivation: 1
   destroyTriggerOnActivation: 0
-  destroyParentOnActivation: 0
+  destroyDelay: 0
 --- !u!65 &1618564253
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1458,6 +1461,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2693384186368039057, guid: b5283154d3ca6924ea5cc295a39f41cb, type: 3}
+      propertyPath: objectToDestroy
+      value: 
+      objectReference: {fileID: 1814097302}
+    - target: {fileID: 2693384186368039057, guid: b5283154d3ca6924ea5cc295a39f41cb, type: 3}
+      propertyPath: destroyObjectOnActivation
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2693384186368039057, guid: b5283154d3ca6924ea5cc295a39f41cb, type: 3}
+      propertyPath: destroyTriggerOnActivation
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2693384186368039057, guid: b5283154d3ca6924ea5cc295a39f41cb, type: 3}
+      propertyPath: objectsToDestroy.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2693384186368039057, guid: b5283154d3ca6924ea5cc295a39f41cb, type: 3}
+      propertyPath: objectsToDestroy.Array.data[0]
+      value: 
+      objectReference: {fileID: 1814097303}
+    - target: {fileID: 2693384186368039057, guid: b5283154d3ca6924ea5cc295a39f41cb, type: 3}
+      propertyPath: objectsToDestroy.Array.data[1]
+      value: 
+      objectReference: {fileID: 1814097302}
     - target: {fileID: 2693384186368039057, guid: b5283154d3ca6924ea5cc295a39f41cb, type: 3}
       propertyPath: interactEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 

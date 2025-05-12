@@ -6,9 +6,14 @@ using UnityEngine.Events;
 public class EnterTrigger : MonoBehaviour
 {
     public UnityEvent enterEvent;
-    [SerializeField] GameObject parent;
+    [Space(10)]
+    [SerializeField] List<GameObject> objectsToDestroy;
+    [SerializeField] bool destroyObjectOnActivation;
     [SerializeField] bool destroyTriggerOnActivation;
-    [SerializeField] bool destroyParentOnActivation;
+    [SerializeField] float destroyDelay;
+
+    float timer;
+    bool startTimer;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -16,14 +21,33 @@ public class EnterTrigger : MonoBehaviour
         {
             enterEvent.Invoke();
 
-            if(destroyParentOnActivation == true)
-            {
-                Destroy(parent);
-            }
+            startTimer = true;
+        }
+    }
 
-            if(destroyTriggerOnActivation == true)
+    private void Update()
+    {
+        if (startTimer == true)
+        {
+            timer += Time.deltaTime;
+            if (timer >= destroyDelay)
             {
-                Destroy(this);
+                startTimer = false;
+                timer = 0;
+
+
+                if (destroyObjectOnActivation == true)
+                {
+                    foreach (GameObject obj in objectsToDestroy)
+                    {
+                        Destroy(obj);
+                    }
+                }
+
+                if (destroyTriggerOnActivation == true)
+                {
+                    Destroy(this);
+                }
             }
         }
     }

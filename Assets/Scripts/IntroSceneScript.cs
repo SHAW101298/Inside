@@ -65,7 +65,7 @@ public class IntroSceneScript : MonoBehaviour
     {
         Debug.Log("Interact with Flame");
         flameInfo.SetActive(false);
-        flameInteract.SetActive(false);
+        //flameInteract.SetActive(false);
         levelBlockade.SetActive(false);
         flameLight.intensity = flameIntensity;
         flameLight.range = flameRange;

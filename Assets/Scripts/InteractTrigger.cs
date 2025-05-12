@@ -7,7 +7,7 @@ public class InteractTrigger : MonoBehaviour
 {
     public UnityEvent interactEvent;
     [Space(10)]
-    [SerializeField] GameObject objectToDestroy;
+    [SerializeField] List<GameObject> objectsToDestroy;
     [SerializeField] bool destroyObjectOnActivation;
     [SerializeField] bool destroyTriggerOnActivation;
     [SerializeField] float destroyDelay;
@@ -34,7 +34,10 @@ public class InteractTrigger : MonoBehaviour
 
                 if (destroyObjectOnActivation == true)
                 {
-                    Destroy(objectToDestroy);
+                    foreach (GameObject obj in objectsToDestroy)
+                    {
+                        Destroy(obj);
+                    }
                 }
 
                 if (destroyTriggerOnActivation == true)
