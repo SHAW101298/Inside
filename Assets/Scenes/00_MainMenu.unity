@@ -667,6 +667,32 @@ MonoBehaviour:
   resolutionDropDown: {fileID: 305979557}
   fpsDropDown: {fileID: 1580326106}
   vsyncDropDown: {fileID: 929229627}
+  languageDropDown: {fileID: 2049485848}
+  textFieldsToTranslate:
+  - {fileID: 507824510}
+  - {fileID: 414921876}
+  - {fileID: 564921033}
+  - {fileID: 317335325}
+  - {fileID: 1845773929}
+  - {fileID: 587118105}
+  - {fileID: 70844279}
+  - {fileID: 169264561}
+  - {fileID: 2127479747}
+  - {fileID: 77078692}
+  - {fileID: 417894371}
+  - {fileID: 1245505270}
+  - {fileID: 1463416994}
+  - {fileID: 1041009943}
+  - {fileID: 918818356}
+  - {fileID: 1729111751}
+  - {fileID: 1154949201}
+  - {fileID: 1980972516}
+  - {fileID: 1190056613}
+  - {fileID: 233186205}
+  - {fileID: 1699197179}
+  - {fileID: 1930714323}
+  - {fileID: 1530397481}
+  - {fileID: 1983415723}
 --- !u!4 &85540384
 Transform:
   m_ObjectHideFlags: 0
@@ -1884,6 +1910,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentLanguage: {fileID: 260947562}
+  languages:
+  - {fileID: 260947560}
+  - {fileID: 260947562}
   pl: {fileID: 260947560}
   eng: {fileID: 260947562}
 --- !u!1 &265407649
@@ -4759,7 +4788,6 @@ GameObject:
   - component: {fileID: 614778823}
   - component: {fileID: 614778826}
   - component: {fileID: 614778825}
-  - component: {fileID: 614778824}
   m_Layer: 5
   m_Name: Language Label
   m_TagString: Untagged
@@ -4787,20 +4815,6 @@ RectTransform:
   m_AnchoredPosition: {x: -1, y: 0}
   m_SizeDelta: {x: 400, y: 50}
   m_Pivot: {x: 0, y: 0.5}
---- !u!114 &614778824
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 614778822}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4240eed3d54a1624e9ecebe1a20c3756, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textField: {fileID: 614778825}
-  index: 12
 --- !u!114 &614778825
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7036,6 +7050,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1190056612}
+  - component: {fileID: 1190056613}
   m_Layer: 5
   m_Name: Language Option
   m_TagString: Untagged
@@ -7065,6 +7080,20 @@ RectTransform:
   m_AnchoredPosition: {x: -700, y: -200}
   m_SizeDelta: {x: 638.4, y: 60}
   m_Pivot: {x: 0, y: 0.5}
+--- !u!114 &1190056613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1190056611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4240eed3d54a1624e9ecebe1a20c3756, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textField: {fileID: 614778825}
+  index: 27
 --- !u!1 &1225625012
 GameObject:
   m_ObjectHideFlags: 0

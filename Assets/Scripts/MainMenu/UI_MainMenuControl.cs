@@ -31,6 +31,7 @@ public class UI_MainMenuControl : MonoBehaviour
     [SerializeField] TMP_Dropdown languageDropDown;
     float originalSoundVolume;
     float originalMusicVolume;
+    [SerializeField] List<LanguageApplier> textFieldsToTranslate;
 
     [Header("Debug")]
     bool animate;
@@ -173,6 +174,10 @@ public class UI_MainMenuControl : MonoBehaviour
         Application.targetFrameRate = fpsLimit;
         QualitySettings.vSyncCount = vSync;
         Screen.SetResolution(width, height, fullscreen);
+        foreach (LanguageApplier field in textFieldsToTranslate)
+        {
+            field.SetAccordingToLanguage();
+        }
         BTN_Menu();
     }
     public void BTN_ReturnWithoutSavingOptions()
