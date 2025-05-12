@@ -6,6 +6,19 @@ using System.Linq;
 
 public class DialogManager : MonoBehaviour
 {
+    public static DialogManager Instance;
+    private void Awake()
+    {
+        if(Instance != null && Instance != this)
+        {
+            Destroy(this); 
+        }
+        else
+        {
+            Instance = this;
+        }
+    }
+
     public TMP_Text dialogField;
 
     [SerializeField] List<string> textToShow;
