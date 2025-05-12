@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0452cc4c7ef6b5c4f8877c99edd9e1d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: Touch  ( E )
+  index: 21
 --- !u!1 &5665249758891850504
 GameObject:
   m_ObjectHideFlags: 0

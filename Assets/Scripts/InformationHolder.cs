@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class InformationHolder : MonoBehaviour
 {
-    [SerializeField] string text;
+    [SerializeField] int index;
 
     public string GetInformation()
     {
-        return text;
+        return LanguageManager.Instance.GetText(index);
     }
 }

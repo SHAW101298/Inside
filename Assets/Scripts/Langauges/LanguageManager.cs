@@ -4,11 +4,28 @@ using UnityEngine;
 
 public  class LanguageManager : MonoBehaviour
 {
+    #region
     public static LanguageManager Instance;
+    public void Awake()
+    {
+
+        if(Instance != null && Instance != this)
+        {
+            Destroy(this);
+        }
+        else
+        {
+            Instance = this;
+            DontDestroyOnLoad(this);
+        } 
+    }
+    #endregion
     [SerializeField] LanguageBase currentLanguage;
     [SerializeField] Language_Polish pl;
     [SerializeField] Language_English eng;
 
+
+    
     public string GetText(int index)
     {
         return currentLanguage.GetText(index);

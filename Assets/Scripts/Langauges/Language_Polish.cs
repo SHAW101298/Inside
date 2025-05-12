@@ -21,10 +21,11 @@ public class Language_Polish : LanguageBase
         else
         {
             Instance = this;
+            DontDestroyOnLoad(this);
         }
 
-        DontDestroyOnLoad(this);
-        text = new string[21];
+        
+        text = new string[50];
         text[0] = "Rozpocznij Grê";
         text[1] = "Jak graæ";
         text[2] = "Opcje";
@@ -46,5 +47,9 @@ public class Language_Polish : LanguageBase
         text[18] = "Skok";
         text[19] = "Interakcja";
         text[20] = "Bieg";
+        text[21] = "Dotknij  ( E )";
+        text[22] = "Wspnij siê  ( E )";
+        text[23] = "Wróæ do gry";
+        text[24] = "Do Menu";
     }
 }

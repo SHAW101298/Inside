@@ -12,4 +12,9 @@ public class LanguageApplier : MonoBehaviour
     {
         textField.text = LanguageManager.Instance.GetText(index);
     }
+
+    private void Start()
+    {
+        SetAccordingToLanguage();
+    }
 }

@@ -58,7 +58,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0452cc4c7ef6b5c4f8877c99edd9e1d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: Climb  ( E )
+  index: 22
 --- !u!1 &6139241661246700521
 GameObject:
   m_ObjectHideFlags: 0
@@ -132,6 +132,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  objectsToDestroy: []
+  destroyObjectOnActivation: 0
+  destroyTriggerOnActivation: 0
+  destroyDelay: 0
 --- !u!1 &6447403371622970179
 GameObject:
   m_ObjectHideFlags: 0
