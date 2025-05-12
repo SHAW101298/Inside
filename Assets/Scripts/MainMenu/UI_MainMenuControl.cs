@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class UI_MainMenuControl : MonoBehaviour
 {
@@ -10,17 +12,26 @@ public class UI_MainMenuControl : MonoBehaviour
     [SerializeField] GameObject howToPlayWindow;
     [SerializeField] GameObject optionsWindow;
     [SerializeField] GameObject exitWindow;
+
     [Header("Animation Data")]
-    [SerializeField] GameObject currentWindow;
-    [SerializeField] GameObject desiredWindow;
     [SerializeField] float windowMovementSpeed;
     [SerializeField] Vector3 openPosition;
     [SerializeField] Vector3 closedPosition;
+    GameObject currentWindow;
+    GameObject desiredWindow;
+
+    [Header("Options Data")]
+    [SerializeField] Slider musicSlider;
+    [SerializeField] Slider soundSlider;
+    [SerializeField] Toggle fullScreenToggle;
+    [SerializeField] Dropdown resolutionDropDown;
+    [SerializeField] Dropdown fpsDropDown;
+
     [Header("Debug")]
-    [SerializeField] bool animate;
-    [SerializeField] bool animatecurrent;
-    [SerializeField] bool animatedesired;
-    [SerializeField] float currentValue = 0;
+    bool animate;
+    bool animatecurrent;
+    bool animatedesired;
+    float currentValue = 0;
 
 
     private void Update()
@@ -29,6 +40,10 @@ public class UI_MainMenuControl : MonoBehaviour
     }
 
     public void BTN_Play()
+    {
+        SceneManager.LoadScene(1);
+    }
+    public void BTN_Menu()
     {
         desiredWindow = menuWindow;
         animate = true;
@@ -51,6 +66,15 @@ public class UI_MainMenuControl : MonoBehaviour
         desiredWindow = exitWindow;
         animate = true;
         animatecurrent = true;
+    }
+
+    public void BTN_SaveOptions()
+    {
+
+    }
+    public void BTN_ReturnWithoutSaving()
+    {
+
     }
     
 
