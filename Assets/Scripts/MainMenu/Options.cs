@@ -2,6 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+enum ENUM_Language
+{
+    pl,
+    en
+}
+
 public class Options : MonoBehaviour
 {
     public static Options Instance;
@@ -19,6 +25,8 @@ public class Options : MonoBehaviour
     }
     [SerializeField] float musicVolume;
     [SerializeField] float soundVolume;
+    [SerializeField] ENUM_Language language;
+
 
     public void ChangeVolumes(float music, float sound)
     {

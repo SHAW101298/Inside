@@ -939,6 +939,7 @@ GameObject:
   - component: {fileID: 169264559}
   - component: {fileID: 169264558}
   - component: {fileID: 169264557}
+  - component: {fileID: 169264561}
   m_Layer: 5
   m_Name: BTN Return Without Saving
   m_TagString: Untagged
@@ -1076,6 +1077,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 169264555}
   m_CullTransparentMesh: 1
+--- !u!114 &169264561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 169264555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4240eed3d54a1624e9ecebe1a20c3756, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textField: {fileID: 0}
+  index: 0
 --- !u!1 &181745740
 GameObject:
   m_ObjectHideFlags: 0
@@ -1453,6 +1468,61 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 243548948}
   m_CullTransparentMesh: 1
+--- !u!1 &260947559
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 260947561}
+  - component: {fileID: 260947560}
+  m_Layer: 0
+  m_Name: Language Packs
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &260947560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 260947559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78940159f9a3f4549b33167ae8a13eef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text:
+  - "Rozpocznij Gr\u0119"
+  - "Jak Gra\u0107"
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+--- !u!4 &260947561
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 260947559}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -91.068634, y: 18.697329, z: -236.38985}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &265407649
 GameObject:
   m_ObjectHideFlags: 0
@@ -1697,6 +1767,7 @@ GameObject:
   - component: {fileID: 317335323}
   - component: {fileID: 317335322}
   - component: {fileID: 317335321}
+  - component: {fileID: 317335325}
   m_Layer: 5
   m_Name: BTN Options
   m_TagString: Untagged
@@ -1723,7 +1794,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 50, y: 310}
-  m_SizeDelta: {x: 300, y: 40}
+  m_SizeDelta: {x: 480, y: 40}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &317335321
 MonoBehaviour:
@@ -1834,6 +1905,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 317335319}
   m_CullTransparentMesh: 1
+--- !u!114 &317335325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 317335319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4240eed3d54a1624e9ecebe1a20c3756, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textField: {fileID: 552472491}
+  index: 2
 --- !u!1 &319502496
 GameObject:
   m_ObjectHideFlags: 0
@@ -2167,6 +2252,7 @@ GameObject:
   - component: {fileID: 414921874}
   - component: {fileID: 414921873}
   - component: {fileID: 414921872}
+  - component: {fileID: 414921876}
   m_Layer: 5
   m_Name: BTN How To Play
   m_TagString: Untagged
@@ -2193,7 +2279,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 50, y: 380}
-  m_SizeDelta: {x: 300, y: 40}
+  m_SizeDelta: {x: 480, y: 40}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &414921872
 MonoBehaviour:
@@ -2304,6 +2390,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 414921870}
   m_CullTransparentMesh: 1
+--- !u!114 &414921876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 414921870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4240eed3d54a1624e9ecebe1a20c3756, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textField: {fileID: 372685421}
+  index: 1
 --- !u!1 &417894367
 GameObject:
   m_ObjectHideFlags: 0
@@ -2315,6 +2415,7 @@ GameObject:
   - component: {fileID: 417894368}
   - component: {fileID: 417894370}
   - component: {fileID: 417894369}
+  - component: {fileID: 417894371}
   m_Layer: 5
   m_Name: Controls Label
   m_TagString: Untagged
@@ -2439,6 +2540,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 417894367}
   m_CullTransparentMesh: 1
+--- !u!114 &417894371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 417894367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4240eed3d54a1624e9ecebe1a20c3756, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textField: {fileID: 0}
+  index: 0
 --- !u!1 &434960832
 GameObject:
   m_ObjectHideFlags: 0
@@ -2854,6 +2969,7 @@ GameObject:
   - component: {fileID: 507824508}
   - component: {fileID: 507824507}
   - component: {fileID: 507824506}
+  - component: {fileID: 507824510}
   m_Layer: 5
   m_Name: BTN Exit
   m_TagString: Untagged
@@ -2880,7 +2996,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 50, y: 240}
-  m_SizeDelta: {x: 300, y: 40}
+  m_SizeDelta: {x: 480, y: 40}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &507824506
 MonoBehaviour:
@@ -2991,6 +3107,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 507824504}
   m_CullTransparentMesh: 1
+--- !u!114 &507824510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 507824504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4240eed3d54a1624e9ecebe1a20c3756, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textField: {fileID: 1870104079}
+  index: 3
 --- !u!1 &531444052
 GameObject:
   m_ObjectHideFlags: 0
@@ -3740,6 +3870,7 @@ GameObject:
   - component: {fileID: 587118103}
   - component: {fileID: 587118102}
   - component: {fileID: 587118101}
+  - component: {fileID: 587118105}
   m_Layer: 5
   m_Name: BTN Return
   m_TagString: Untagged
@@ -3877,6 +4008,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 587118099}
   m_CullTransparentMesh: 1
+--- !u!114 &587118105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 587118099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4240eed3d54a1624e9ecebe1a20c3756, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textField: {fileID: 0}
+  index: 0
 --- !u!1 &630132242
 GameObject:
   m_ObjectHideFlags: 0
@@ -7033,6 +7178,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musicVolume: 0.5
   soundVolume: 0.5
+  language: 0
 --- !u!4 &1669689189
 Transform:
   m_ObjectHideFlags: 0
@@ -7912,6 +8058,7 @@ GameObject:
   - component: {fileID: 1845773926}
   - component: {fileID: 1845773925}
   - component: {fileID: 1845773928}
+  - component: {fileID: 1845773929}
   m_Layer: 5
   m_Name: BTN Play
   m_TagString: Untagged
@@ -7938,7 +8085,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 50, y: 450}
-  m_SizeDelta: {x: 160, y: 40}
+  m_SizeDelta: {x: 480, y: 40}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &1845773925
 MonoBehaviour:
@@ -8049,6 +8196,20 @@ MonoBehaviour:
   scaleModifier: 1.1
   rect: {fileID: 1845773924}
   source: {fileID: 997892747}
+--- !u!114 &1845773929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1845773923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4240eed3d54a1624e9ecebe1a20c3756, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textField: {fileID: 1834810008}
+  index: 0
 --- !u!1 &1848694020
 GameObject:
   m_ObjectHideFlags: 0
@@ -9894,6 +10055,7 @@ GameObject:
   - component: {fileID: 2127479745}
   - component: {fileID: 2127479744}
   - component: {fileID: 2127479743}
+  - component: {fileID: 2127479747}
   m_Layer: 5
   m_Name: BTN Save
   m_TagString: Untagged
@@ -10031,3 +10193,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2127479741}
   m_CullTransparentMesh: 1
+--- !u!114 &2127479747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2127479741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4240eed3d54a1624e9ecebe1a20c3756, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textField: {fileID: 0}
+  index: 0
