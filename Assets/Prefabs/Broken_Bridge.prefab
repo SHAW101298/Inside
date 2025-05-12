@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1237982224334155997}
   - component: {fileID: 3894698460757031682}
   - component: {fileID: 3742820645644920588}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Broken_Bridge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -123,7 +123,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8314335401536344571}
   - component: {fileID: 5439431216728296594}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: colliders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -168,7 +168,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5316022316230510634}
   - component: {fileID: 2237756114398832469}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: colliders (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

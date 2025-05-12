@@ -38,4 +38,16 @@ public class Crow_SoundPlayer : MonoBehaviour
             timeDelay = Random.Range(minTimeDelay, maxTimeDelay);
         }
     }
+
+    public void Interact_PlayRandomCaw()
+    {
+        int randClip = Random.Range(0, clips.Count);
+        float randPitch = Random.Range(-pitchVariation, pitchVariation);
+        source.pitch = 1 + randPitch;
+        source.PlayOneShot(clips[randClip]);
+    }
+    public void Interact_PlaySpecificCaw(int x)
+    {
+        source.PlayOneShot(clips[x]);
+    }
 }
