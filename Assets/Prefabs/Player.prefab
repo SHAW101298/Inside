@@ -272,9 +272,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13197aa5b8dafde43a7a930e2789310c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  data: {fileID: 9170628902623201519}
   infoWindow: {fileID: 0}
   infoText: {fileID: 0}
-  showTimer: 0.2
+  showInfoTimer: 0
+  pauseWindow: {fileID: 0}
+  optionsWindow: {fileID: 0}
+  exitWindow: {fileID: 0}
+  currentWindow: {fileID: 0}
+  soundSlider: {fileID: 0}
+  musicSlider: {fileID: 0}
+  fpsDropDown: {fileID: 0}
+  vsyncDropDown: {fileID: 0}
+  resolutionDropDown: {fileID: 0}
+  fullScreenToggle: {fileID: 0}
 --- !u!114 &5098851125473400533
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -473,6 +484,22 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: f0465bdf-9dd3-407b-83cf-6b05bc7de94e
     m_ActionName: UI/TrackedDeviceOrientation
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 9170628902623201515}
+        m_TargetAssemblyTypeName: PlayerUI, Assembly-CSharp
+        m_MethodName: ACTION_EscapeButton
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: e6970626-1c90-49f3-aa02-101fcdaa8e30
+    m_ActionName: Player/Escape[/Keyboard/escape]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: Keyboard&Mouse
   m_DefaultActionMap: Player

@@ -9,6 +9,7 @@ using TMPro;
 
 public class PlayerUI : MonoBehaviour
 {
+    public PlayerData data;
     [SerializeField] GameObject infoWindow;
     [SerializeField] Text infoText;
     [SerializeField] float showInfoTimer;
@@ -86,6 +87,7 @@ public class PlayerUI : MonoBehaviour
                 currentWindow = null;
                 uiActive = false;
                 Cursor.visible = false;
+                data.AllowMovementAndRotation();
             }
             else
             {
@@ -100,6 +102,9 @@ public class PlayerUI : MonoBehaviour
             uiActive = true;
             currentWindow = pauseWindow;
             currentWindow.SetActive(true);
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+            data.BlockMovementAndRotation();
 
 
             originalMusicVolume = Options.Instance.GetMusicVolume();
@@ -113,6 +118,8 @@ public class PlayerUI : MonoBehaviour
         currentWindow = null;
         uiActive = false;
         Cursor.visible = false;
+
+        data.AllowMovementAndRotation();
     }
     public void BTN_Options()
     {

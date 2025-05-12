@@ -22,4 +22,16 @@ public class PlayerData : MonoBehaviour
     public CameraHookUp cam;
     public PlayerUI ui;
     public PlayerAnimations animations;
+
+
+    public void BlockMovementAndRotation()
+    {
+        movement.BlockMovement();
+        rotation.BlockRotation();
+    }
+    public void AllowMovementAndRotation()
+    {
+        movement.AllowMovement();
+        rotation.AllowRotation();
+    }
 }
