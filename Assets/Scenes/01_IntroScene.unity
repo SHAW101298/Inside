@@ -2206,6 +2206,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 736384140649888298, guid: 92b627872cf1a504985c0a8599c16676, type: 3}
+      propertyPath: m_text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 736384140649888298, guid: 92b627872cf1a504985c0a8599c16676, type: 3}
+      propertyPath: m_fontColor.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1693841038671066283, guid: 92b627872cf1a504985c0a8599c16676, type: 3}
+      propertyPath: levelName
+      value: 1-1 The Pit
+      objectReference: {fileID: 0}
     - target: {fileID: 7508711536102962417, guid: 92b627872cf1a504985c0a8599c16676, type: 3}
       propertyPath: m_ActionEvents.Array.size
       value: 17

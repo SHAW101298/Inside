@@ -24,7 +24,7 @@ public class Language_English : LanguageBase
             DontDestroyOnLoad(this);
         }
 
-        text = new string[50];
+        text = new string[100];
         text[0] = "Start Game";
         text[1] = "How To Play";
         text[2] = "Options";
@@ -59,6 +59,9 @@ public class Language_English : LanguageBase
         text[31] = "Lost . . .";
         text[32] = "Soon";
         text[33] = "Why";
+        text[97] = "1-1 The Pit";
+        text[98] = "1-2 The Stillness";
+        text[99] = "1-2 The Silent World";
     }
 }
 

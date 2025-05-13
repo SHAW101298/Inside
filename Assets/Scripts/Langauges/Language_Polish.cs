@@ -25,7 +25,7 @@ public class Language_Polish : LanguageBase
         }
 
         
-        text = new string[50];
+        text = new string[100];
         text[0] = "Rozpocznij Grê";
         text[1] = "Jak graæ";
         text[2] = "Opcje";
@@ -60,6 +60,9 @@ public class Language_Polish : LanguageBase
         text[31] = "Stracone . . .";
         text[32] = "Ju¿ Nied³ugo";
         text[33] = "Dlaczego";
+        text[97] = "1-1 Dno";
+        text[98] = "1-2 Bezruch";
+        text[99] = "1-2 Cichy Œwiat";
     }
 }
 
