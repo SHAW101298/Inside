@@ -57,6 +57,7 @@ public class Language_Polish : LanguageBase
         text[51] = "Wspnij siê  ( E )";
         text[52] = "Spójrz  ( E )";
         text[53] = "????  ( E )";
+        text[54] = "Od³ó¿  ( E )";
 
 
         text[70] = "1-1 Dno";
@@ -84,6 +85,7 @@ public class Language_Polish : LanguageBase
         text[114] = "ju¿ nie ma powodu";
         text[115] = "ostatnia . . . proœba";
         text[116] = "wygl¹da jakby czegoœ tu brakowa³o";
+        text[117] = "WeŸ - Iskra  ( E )";
     }
 }
 

@@ -55,6 +55,7 @@ public class Language_English : LanguageBase
         text[51] = "Climb  ( E )";
         text[52] = "Look  ( E )";
         text[53] = "????  ( E )";
+        text[54] = "Place  ( E )";
 
 
         text[70] = "1-1 The Pit";
@@ -82,6 +83,7 @@ public class Language_English : LanguageBase
         text[114] = "no more reasons";
         text[115] = "last . . . request";
         text[116] = "something is missing here";
+        text[117] = "Take - Spark  ( E )";
     }
 }
 
