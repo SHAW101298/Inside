@@ -24,7 +24,7 @@ public class Language_English : LanguageBase
             DontDestroyOnLoad(this);
         }
 
-        text = new string[100];
+        text = new string[200];
         text[0] = "Start Game";
         text[1] = "How To Play";
         text[2] = "Options";
@@ -46,24 +46,29 @@ public class Language_English : LanguageBase
         text[18] = "Jump";
         text[19] = "Interact";
         text[20] = "Run";
-        text[21] = "Touch  ( E )";
-        text[22] = "Climb  ( E )";
-        text[23] = "Continue";
-        text[24] = "To Menu";
-        text[25] = "FIND IT !!!";
-        text[26] = "????  ( E )";
-        text[27] = "Language";
-        text[28] = "* knock knock knock *";
-        text[29] = "What's that noise ?";
-        text[30] = "FORGET !!!";
-        text[31] = "Lost . . .";
-        text[32] = "Soon";
-        text[33] = "Why";
-        text[34] = "As if . . . The time stopped";
-        text[35] = "Look  ( E )";
-        text[97] = "1-1 The Pit";
-        text[98] = "1-2 The Stillness";
-        text[99] = "1-2 The Silent World";
+        text[21] = "Continue";
+        text[22] = "To Menu";
+        text[23] = "Language";
+
+        text[50] = "Touch  ( E )";
+        text[51] = "Climb  ( E )";
+        text[52] = "Look  ( E )";
+        text[53] = "????  ( E )";
+
+        text[70] = "1-1 The Pit";
+        text[71] = "1-2 The Stillness";
+        text[72] = "1-2 The Silent World";
+
+        text[100] = "                               ";
+        text[101] = "? ? ?";
+        text[102] = "* knock knock knock *";
+        text[103] = "What's that noise ?";
+        text[104] = "FIND IT !!!";
+        text[105] = "FORGET !!!";
+        text[106] = "Lost . . .";
+        text[107] = "Soon";
+        text[108] = "Why";
+        text[109] = "As if . . . the time stopped";
     }
 }
 

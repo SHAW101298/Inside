@@ -1339,6 +1339,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 111475508523463720, guid: b5283154d3ca6924ea5cc295a39f41cb, type: 3}
+      propertyPath: index
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 2693384186368039057, guid: b5283154d3ca6924ea5cc295a39f41cb, type: 3}
       propertyPath: objectToDestroy
       value: 
@@ -1387,6 +1391,10 @@ PrefabInstance:
       propertyPath: movementPoints.Array.data[0]
       value: 
       objectReference: {fileID: 1639285065}
+    - target: {fileID: 5665249757615669668, guid: b5283154d3ca6924ea5cc295a39f41cb, type: 3}
+      propertyPath: m_Name
+      value: Flame Information
+      objectReference: {fileID: 0}
     - target: {fileID: 5665249757615669668, guid: b5283154d3ca6924ea5cc295a39f41cb, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -1573,6 +1581,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5995685352288703548, guid: 0acb027e5aaa9394a810deb0cf059879, type: 3}
+      propertyPath: m_Name
+      value: Ladder Info
+      objectReference: {fileID: 0}
     - target: {fileID: 6447403371622970179, guid: 0acb027e5aaa9394a810deb0cf059879, type: 3}
       propertyPath: m_Name
       value: Ladder
@@ -1593,6 +1605,10 @@ PrefabInstance:
       propertyPath: interactEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 8308403241146199194, guid: 0acb027e5aaa9394a810deb0cf059879, type: 3}
+      propertyPath: index
+      value: 51
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0acb027e5aaa9394a810deb0cf059879, type: 3}
 --- !u!1001 &9170628903308768922
@@ -1609,6 +1625,10 @@ PrefabInstance:
     - target: {fileID: 736384140649888298, guid: 92b627872cf1a504985c0a8599c16676, type: 3}
       propertyPath: m_fontColor.a
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1687126626005213089, guid: 92b627872cf1a504985c0a8599c16676, type: 3}
+      propertyPath: index
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 1693841038671066283, guid: 92b627872cf1a504985c0a8599c16676, type: 3}
       propertyPath: levelName

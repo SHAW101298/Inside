@@ -673,26 +673,26 @@ MonoBehaviour:
   - {fileID: 414921876}
   - {fileID: 564921033}
   - {fileID: 317335325}
-  - {fileID: 1845773929}
   - {fileID: 587118105}
   - {fileID: 70844279}
   - {fileID: 169264561}
   - {fileID: 2127479747}
+  - {fileID: 1845773929}
   - {fileID: 77078692}
   - {fileID: 417894371}
   - {fileID: 1245505270}
-  - {fileID: 1463416994}
-  - {fileID: 1041009943}
-  - {fileID: 918818356}
-  - {fileID: 1729111751}
+  - {fileID: 2125406391}
+  - {fileID: 1929166818}
   - {fileID: 1154949201}
   - {fileID: 1980972516}
   - {fileID: 1190056613}
   - {fileID: 233186205}
-  - {fileID: 1699197179}
+  - {fileID: 1377353496}
   - {fileID: 1930714323}
+  - {fileID: 1072880081}
   - {fileID: 1530397481}
-  - {fileID: 1983415723}
+  - {fileID: 731577070}
+  - {fileID: 1116603756}
 --- !u!4 &85540384
 Transform:
   m_ObjectHideFlags: 0
@@ -5419,6 +5419,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 731577069}
+  - component: {fileID: 731577070}
   m_Layer: 5
   m_Name: Sound Option
   m_TagString: Untagged
@@ -5448,6 +5449,20 @@ RectTransform:
   m_AnchoredPosition: {x: -700, y: 200}
   m_SizeDelta: {x: 638.4, y: 60}
   m_Pivot: {x: 0, y: 0.5}
+--- !u!114 &731577070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 731577068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4240eed3d54a1624e9ecebe1a20c3756, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textField: {fileID: 1983415721}
+  index: 8
 --- !u!1 &815785356
 GameObject:
   m_ObjectHideFlags: 0
@@ -5845,9 +5860,8 @@ GameObject:
   - component: {fileID: 918818353}
   - component: {fileID: 918818355}
   - component: {fileID: 918818354}
-  - component: {fileID: 918818356}
   m_Layer: 5
-  m_Name: FullScreen Label
+  m_Name: FPS Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5970,20 +5984,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 918818352}
   m_CullTransparentMesh: 1
---- !u!114 &918818356
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 918818352}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4240eed3d54a1624e9ecebe1a20c3756, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textField: {fileID: 918818354}
-  index: 11
 --- !u!1 &929229625
 GameObject:
   m_ObjectHideFlags: 0
@@ -6524,9 +6524,8 @@ GameObject:
   - component: {fileID: 1041009940}
   - component: {fileID: 1041009942}
   - component: {fileID: 1041009941}
-  - component: {fileID: 1041009943}
   m_Layer: 5
-  m_Name: FullScreen Label
+  m_Name: Resolution Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6649,20 +6648,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1041009939}
   m_CullTransparentMesh: 1
---- !u!114 &1041009943
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1041009939}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4240eed3d54a1624e9ecebe1a20c3756, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textField: {fileID: 1041009941}
-  index: 10
 --- !u!1 &1072880079
 GameObject:
   m_ObjectHideFlags: 0
@@ -6672,6 +6657,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1072880080}
+  - component: {fileID: 1072880081}
   m_Layer: 5
   m_Name: Resolution Option
   m_TagString: Untagged
@@ -6701,6 +6687,20 @@ RectTransform:
   m_AnchoredPosition: {x: -700, y: 40}
   m_SizeDelta: {x: 638.4, y: 60}
   m_Pivot: {x: 0, y: 0.5}
+--- !u!114 &1072880081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1072880079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4240eed3d54a1624e9ecebe1a20c3756, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textField: {fileID: 1041009941}
+  index: 10
 --- !u!1 &1106003398
 GameObject:
   m_ObjectHideFlags: 0
@@ -6786,6 +6786,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1116603755}
+  - component: {fileID: 1116603756}
   m_Layer: 5
   m_Name: Vsync Option
   m_TagString: Untagged
@@ -6815,6 +6816,20 @@ RectTransform:
   m_AnchoredPosition: {x: -700, y: -120}
   m_SizeDelta: {x: 638.4, y: 60}
   m_Pivot: {x: 0, y: 0.5}
+--- !u!114 &1116603756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1116603754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4240eed3d54a1624e9ecebe1a20c3756, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textField: {fileID: 1729111749}
+  index: 12
 --- !u!1 &1140860100
 GameObject:
   m_ObjectHideFlags: 0
@@ -7093,7 +7108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textField: {fileID: 614778825}
-  index: 27
+  index: 23
 --- !u!1 &1225625012
 GameObject:
   m_ObjectHideFlags: 0
@@ -7940,6 +7955,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1377353495}
+  - component: {fileID: 1377353496}
   m_Layer: 5
   m_Name: Music Option
   m_TagString: Untagged
@@ -7969,6 +7985,20 @@ RectTransform:
   m_AnchoredPosition: {x: -700, y: 280}
   m_SizeDelta: {x: 638.4, y: 60}
   m_Pivot: {x: 0, y: 0.5}
+--- !u!114 &1377353496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1377353494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4240eed3d54a1624e9ecebe1a20c3756, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textField: {fileID: 1699197177}
+  index: 7
 --- !u!1 &1426464813
 GameObject:
   m_ObjectHideFlags: 0
@@ -8132,7 +8162,6 @@ GameObject:
   - component: {fileID: 1463416991}
   - component: {fileID: 1463416993}
   - component: {fileID: 1463416992}
-  - component: {fileID: 1463416994}
   m_Layer: 5
   m_Name: FullScreen Label
   m_TagString: Untagged
@@ -8257,20 +8286,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1463416990}
   m_CullTransparentMesh: 1
---- !u!114 &1463416994
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1463416990}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4240eed3d54a1624e9ecebe1a20c3756, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textField: {fileID: 1463416992}
-  index: 9
 --- !u!1 &1514122318
 GameObject:
   m_ObjectHideFlags: 0
@@ -9357,7 +9372,6 @@ GameObject:
   - component: {fileID: 1699197176}
   - component: {fileID: 1699197178}
   - component: {fileID: 1699197177}
-  - component: {fileID: 1699197179}
   m_Layer: 5
   m_Name: Music Volume Label
   m_TagString: Untagged
@@ -9482,20 +9496,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1699197175}
   m_CullTransparentMesh: 1
---- !u!114 &1699197179
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1699197175}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4240eed3d54a1624e9ecebe1a20c3756, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textField: {fileID: 1699197177}
-  index: 7
 --- !u!1 &1720865299
 GameObject:
   m_ObjectHideFlags: 0
@@ -9634,9 +9634,8 @@ GameObject:
   - component: {fileID: 1729111748}
   - component: {fileID: 1729111750}
   - component: {fileID: 1729111749}
-  - component: {fileID: 1729111751}
   m_Layer: 5
-  m_Name: FullScreen Label
+  m_Name: Vsync Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9759,20 +9758,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1729111747}
   m_CullTransparentMesh: 1
---- !u!114 &1729111751
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1729111747}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4240eed3d54a1624e9ecebe1a20c3756, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textField: {fileID: 1729111749}
-  index: 12
 --- !u!1 &1737134174
 GameObject:
   m_ObjectHideFlags: 0
@@ -10029,7 +10014,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Play
+  m_text: Start Game
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -10121,7 +10106,7 @@ GameObject:
   - component: {fileID: 1845773928}
   - component: {fileID: 1845773929}
   m_Layer: 5
-  m_Name: BTN Play
+  m_Name: BTN Start Game
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10714,6 +10699,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1929166817}
+  - component: {fileID: 1929166818}
   m_Layer: 5
   m_Name: FullScreen Option
   m_TagString: Untagged
@@ -10743,6 +10729,20 @@ RectTransform:
   m_AnchoredPosition: {x: -700, y: 120}
   m_SizeDelta: {x: 638.4, y: 60}
   m_Pivot: {x: 0, y: 0.5}
+--- !u!114 &1929166818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1929166816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4240eed3d54a1624e9ecebe1a20c3756, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textField: {fileID: 1463416992}
+  index: 9
 --- !u!1 &1930714319
 GameObject:
   m_ObjectHideFlags: 0
@@ -11542,7 +11542,6 @@ GameObject:
   - component: {fileID: 1983415720}
   - component: {fileID: 1983415722}
   - component: {fileID: 1983415721}
-  - component: {fileID: 1983415723}
   m_Layer: 5
   m_Name: Sound Volume Label
   m_TagString: Untagged
@@ -11667,20 +11666,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1983415719}
   m_CullTransparentMesh: 1
---- !u!114 &1983415723
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1983415719}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4240eed3d54a1624e9ecebe1a20c3756, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textField: {fileID: 1983415721}
-  index: 8
 --- !u!1 &1997973098
 GameObject:
   m_ObjectHideFlags: 0
@@ -12605,6 +12590,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2125406390}
+  - component: {fileID: 2125406391}
   m_Layer: 5
   m_Name: FPS Option
   m_TagString: Untagged
@@ -12634,6 +12620,20 @@ RectTransform:
   m_AnchoredPosition: {x: -700, y: -40}
   m_SizeDelta: {x: 638.4, y: 60}
   m_Pivot: {x: 0, y: 0.5}
+--- !u!114 &2125406391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2125406389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4240eed3d54a1624e9ecebe1a20c3756, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textField: {fileID: 918818354}
+  index: 11
 --- !u!1 &2127479741
 GameObject:
   m_ObjectHideFlags: 0

@@ -10627,7 +10627,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textField: {fileID: 4418376911360579556}
-  index: 24
+  index: 22
 --- !u!1 &8862479385880610231
 GameObject:
   m_ObjectHideFlags: 0
@@ -11069,7 +11069,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textField: {fileID: 4541553758383834353}
-  index: 27
+  index: 23
 --- !u!1 &9196317600466852726
 GameObject:
   m_ObjectHideFlags: 0

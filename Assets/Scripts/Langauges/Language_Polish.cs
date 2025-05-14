@@ -25,7 +25,7 @@ public class Language_Polish : LanguageBase
         }
 
         
-        text = new string[100];
+        text = new string[200];
         text[0] = "Rozpocznij GrÍ";
         text[1] = "Jak graÊ";
         text[2] = "Opcje";
@@ -47,24 +47,33 @@ public class Language_Polish : LanguageBase
         text[18] = "Skok";
         text[19] = "Interakcja";
         text[20] = "Bieg";
-        text[21] = "Dotknij  ( E )";
-        text[22] = "Wspnij siÍ  ( E )";
-        text[23] = "WrÛÊ do gry";
-        text[24] = "Do Menu";
-        text[25] = "ZNAJDè TO !!!";
-        text[26] = "????  ( E )";
-        text[27] = "JÍzyk";
-        text[28] = "* puk puk puk *";
-        text[29] = "Co to za düwiÍk ?";
-        text[30] = "ZAPOMNIJ !!!";
-        text[31] = "Stracone . . .";
-        text[32] = "Juø Nied≥ugo";
-        text[33] = "Dlaczego";
-        text[34] = "Jakby . . . Czas stanπ≥ w miejscu";
-        text[35] = "SpÛjrz  ( E )";
-        text[97] = "1-1 Dno";
-        text[98] = "1-2 Bezruch";
-        text[99] = "1-2 Cichy åwiat";
+        text[21] = "WrÛÊ do gry";
+        text[22] = "Do Menu";
+        text[23] = "JÍzyk";
+
+
+        text[50] = "Dotknij  ( E )";
+        text[51] = "Wspnij siÍ  ( E )";
+        text[52] = "SpÛjrz  ( E )";
+        text[53] = "????  ( E )";
+
+
+        text[70] = "1-1 Dno";
+        text[71] = "1-2 Bezruch";
+        text[72] = "1-2 Cichy åwiat";
+
+
+        text[100] = "                               ";
+        text[101] = "? ? ?";
+        text[102] = "* puk puk puk *";
+        text[103] = "Co to za düwiÍk ?";
+        text[104] = "ZNAJDè TO !!!";
+        text[105] = "ZAPOMNIJ !!!";
+        text[106] = "Stracone . . .";
+        text[107] = "Juø Nied≥ugo";
+        text[108] = "Dlaczego";
+        text[109] = "Jakby . . . czas stanπ≥ w miejscu";
+
     }
 }
 

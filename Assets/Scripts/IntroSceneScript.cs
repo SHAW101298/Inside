@@ -31,8 +31,8 @@ public class IntroSceneScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        DialogManager.Instance.ShowText("                               ");
-        DialogManager.Instance.ShowText(" ? ? ? ");
+        DialogManager.Instance.ShowText(100);
+        DialogManager.Instance.ShowText(101);
     }
 
     // Update is called once per frame
