@@ -84,6 +84,9 @@ public class Language_English : LanguageBase
         text[115] = "last . . . request";
         text[116] = "something is missing here";
         text[117] = "Take - Spark  ( E )";
+        text[118] = "Place - Spark  ( E )";
+        text[119] = "Fear";
+        text[120] = "erase . . . existence";
     }
 }
 

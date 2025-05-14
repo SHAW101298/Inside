@@ -9,7 +9,8 @@ public class LevelScript_02 : MonoBehaviour
     [SerializeField] GameObject emptySpotReadyForPiece;
     [SerializeField] GameObject filledSpot;
 
-    [SerializeField] List<GameObject> altarCrows;
+    [SerializeField] GameObject altarCrowsBefore;
+    [SerializeField] GameObject altarCrowsAfter;
 
     public bool foundMissingPiece;
     public bool placedMissingPiece;
@@ -27,6 +28,8 @@ public class LevelScript_02 : MonoBehaviour
         placedMissingPiece = true;
         emptySpotReadyForPiece.SetActive(false);
         filledSpot.SetActive(true);
+        altarCrowsBefore.SetActive(false);
+        altarCrowsAfter.SetActive(true);
     }
 
 }

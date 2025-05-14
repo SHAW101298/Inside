@@ -24,6 +24,7 @@ public class DialogManager : MonoBehaviour
     [SerializeField] List<string> textToShow;
     [SerializeField] float delayBetweenLetters;
     [SerializeField] float timeForTextToRemain;
+
     float timer;
     bool animateText;
     bool awaitingUntilRestart;
@@ -38,7 +39,13 @@ public class DialogManager : MonoBehaviour
     public void ShowText(int index)
     {
         textToShow.Add(LanguageManager.Instance.GetText(index));
-        animateText = true;
+
+        if(textToShow.Count == 1)
+        {
+            animateText = true;
+        }
+
+
     }
     public void ShowText(string tekst)
     {

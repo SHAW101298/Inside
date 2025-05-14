@@ -123,7 +123,7 @@ MonoBehaviour:
   - {fileID: 3544687189024391753}
   destroyObjectOnActivation: 1
   destroyTriggerOnActivation: 1
-  destroyDelay: 2
+  destroyDelay: 0
 --- !u!65 &3544687189098261575
 BoxCollider:
   m_ObjectHideFlags: 0
