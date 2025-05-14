@@ -63,7 +63,7 @@ public class Language_English : LanguageBase
         text[72] = "1-2 The Silent World";
 
 
-        text[99] = "You're just an unexpected guest inside someones a mind. Find out what happend.";
+        text[99] = "You're just an unexpected guest inside someones mind. Discover the truth hidden under the blanket of reality.";
 
 
         text[100] = "                               ";
