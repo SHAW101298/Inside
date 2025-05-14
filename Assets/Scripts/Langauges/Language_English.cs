@@ -75,6 +75,8 @@ public class Language_English : LanguageBase
         text[107] = "Soon";
         text[108] = "Why";
         text[109] = "As if . . . the time stopped";
+        text[110] = "end this";
+        text[111] = "alone";
     }
 }
 

@@ -185,7 +185,7 @@ GameObject:
   - component: {fileID: 6760272162129203258}
   - component: {fileID: 3269382084736288233}
   m_Layer: 0
-  m_Name: Crow (2)
+  m_Name: Crow 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

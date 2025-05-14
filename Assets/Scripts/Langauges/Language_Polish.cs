@@ -76,7 +76,8 @@ public class Language_Polish : LanguageBase
         text[107] = "Ju¿ Nied³ugo";
         text[108] = "Dlaczego";
         text[109] = "Jakby . . . czas stan¹³ w miejscu";
-
+        text[110] = "Uciekaj";
+        text[111] = "samemu";
     }
 }
 
