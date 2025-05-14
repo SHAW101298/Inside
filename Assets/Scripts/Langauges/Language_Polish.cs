@@ -1,3 +1,4 @@
+using Palmmedia.ReportGenerator.Core.Parser.Analysis;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -78,6 +79,10 @@ public class Language_Polish : LanguageBase
         text[109] = "Jakby . . . czas stan¹³ w miejscu";
         text[110] = "Uciekaj";
         text[111] = "samemu";
+        text[112] = "zawiód³";
+        text[113] = "wszystko stracone";
+        text[114] = "ju¿ nie ma powodu";
+        text[115] = "ostatnia . . . proœba";
     }
 }
 
