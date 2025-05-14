@@ -77,12 +77,13 @@ public class Language_Polish : LanguageBase
         text[107] = "Ju¿ Nied³ugo";
         text[108] = "Dlaczego";
         text[109] = "Jakby . . . czas stan¹³ w miejscu";
-        text[110] = "zakoñcz to";
+        text[110] = "zakoñcz to```";
         text[111] = "samemu";
         text[112] = "zawiód³";
         text[113] = "wszystko stracone";
         text[114] = "ju¿ nie ma powodu";
         text[115] = "ostatnia . . . proœba";
+        text[116] = "wygl¹da jakby czegoœ tu brakowa³o";
     }
 }
 

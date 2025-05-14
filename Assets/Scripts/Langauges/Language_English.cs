@@ -81,6 +81,7 @@ public class Language_English : LanguageBase
         text[113] = "all is lost";
         text[114] = "no more reasons";
         text[115] = "last . . . request";
+        text[116] = "something is missing here";
     }
 }
 
