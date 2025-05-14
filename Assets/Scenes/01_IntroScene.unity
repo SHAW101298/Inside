@@ -1265,8 +1265,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentLanguage: {fileID: 1685787221}
   languages:
-  - {fileID: 1685787221}
   - {fileID: 1685787220}
+  - {fileID: 1685787221}
   pl: {fileID: 1685787221}
   eng: {fileID: 1685787220}
 --- !u!4 &1685787223

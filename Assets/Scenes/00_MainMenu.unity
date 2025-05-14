@@ -1911,8 +1911,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentLanguage: {fileID: 260947562}
   languages:
-  - {fileID: 260947560}
   - {fileID: 260947562}
+  - {fileID: 260947560}
   pl: {fileID: 260947560}
   eng: {fileID: 260947562}
 --- !u!1 &265407649
