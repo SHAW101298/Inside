@@ -59,6 +59,8 @@ public class Language_English : LanguageBase
         text[31] = "Lost . . .";
         text[32] = "Soon";
         text[33] = "Why";
+        text[34] = "As if . . . The time stopped";
+        text[35] = "Look  ( E )";
         text[97] = "1-1 The Pit";
         text[98] = "1-2 The Stillness";
         text[99] = "1-2 The Silent World";

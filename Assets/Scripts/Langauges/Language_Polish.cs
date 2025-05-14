@@ -60,6 +60,8 @@ public class Language_Polish : LanguageBase
         text[31] = "Stracone . . .";
         text[32] = "Ju¿ Nied³ugo";
         text[33] = "Dlaczego";
+        text[34] = "Jakby . . . Czas stan¹³ w miejscu";
+        text[35] = "Spójrz  ( E )";
         text[97] = "1-1 Dno";
         text[98] = "1-2 Bezruch";
         text[99] = "1-2 Cichy Œwiat";
