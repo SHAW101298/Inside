@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1488389690019066911}
   - component: {fileID: 2524277610477763514}
   - component: {fileID: 354938112300765040}
-  - component: {fileID: 3740544015235230926}
+  - component: {fileID: 3341905211758920951}
   m_Layer: 6
   m_Name: Pillar_00_01
   m_TagString: Untagged
@@ -84,7 +84,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &3740544015235230926
+--- !u!65 &3341905211758920951
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -95,5 +95,5 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.64247406, y: 2.5265422, z: 0.64309704}
-  m_Center: {x: 0.011072293, y: 1.2632711, z: -0.002315104}
+  m_Size: {x: 1.2849481, y: 5.0530844, z: 1.2861941}
+  m_Center: {x: 0.022144586, y: 2.5265422, z: -0.004630208}
