@@ -86,7 +86,7 @@ public class Language_Polish : LanguageBase
         text[115] = "ostatnia . . . proœba";
         text[116] = "wygl¹da jakby czegoœ tu brakowa³o";
         text[117] = "WeŸ - Iskra  ( E )";
-        text[118] = "Od³ó¿ - Spark  ( E )";
+        text[118] = "Od³ó¿ - Iskra  ( E )";
         text[119] = "Strach";
     }
 }
