@@ -63,6 +63,9 @@ public class Language_Polish : LanguageBase
         text[72] = "1-2 Cichy Œwiat";
 
 
+        text[99] = "Jesteœ jedynie nieprzewidzianym goœciem w czyimœ umyœle. Odkryj co siê sta³o.";
+
+
         text[100] = "                               ";
         text[101] = "? ? ?";
         text[102] = "* puk puk puk *";

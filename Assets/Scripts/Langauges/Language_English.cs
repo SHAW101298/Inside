@@ -50,14 +50,20 @@ public class Language_English : LanguageBase
         text[22] = "To Menu";
         text[23] = "Language";
 
+
         text[50] = "Touch  ( E )";
         text[51] = "Climb  ( E )";
         text[52] = "Look  ( E )";
         text[53] = "????  ( E )";
 
+
         text[70] = "1-1 The Pit";
         text[71] = "1-2 The Stillness";
         text[72] = "1-2 The Silent World";
+
+
+        text[99] = "You're just an unexpected guest inside someones a mind. Find out what happend.";
+
 
         text[100] = "                               ";
         text[101] = "? ? ?";
