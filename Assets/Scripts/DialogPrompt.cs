@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class DialogPrompt : MonoBehaviour
 {
     [SerializeField] List<int> index;
     [SerializeField] bool removeShownTextsFromList;
     [SerializeField] int lastTextIndex;
+
+    public UnityEvent EVENT_LastTextSpoken;
 
     public void PromptDialogField()
     {
@@ -33,9 +36,25 @@ public class DialogPrompt : MonoBehaviour
             index.RemoveAt(rand);
         }
     }
+    public void PromptOneDialogField()
+    {
+        if (index.Count == 0)
+        {
+            DialogManager.Instance.ShowText(lastTextIndex);
+            LastTextSpoken();
+            return;
+        }
+        DialogManager.Instance.ShowText(index[0]);
+
+        if (removeShownTextsFromList == true)
+        {
+            index.RemoveAt(0);
+        }
+
+    }
 
     void LastTextSpoken()
     {
-
+        EVENT_LastTextSpoken.Invoke();
     }
 }

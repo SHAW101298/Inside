@@ -95,6 +95,9 @@ public class Language_Polish : LanguageBase
         text[123] = "a wiêc powtarzamy cykl";
         text[124] = "jesteœ g³upcem";
         text[125] = "OdejdŸ.";
+        text[126] = "Czujê, jakbym by³ ostatni";
+        text[127] = "ZnajdŸ drogê";
+        text[128] = "Upadek jest nieunikniony";
     }
 }
 

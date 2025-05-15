@@ -93,6 +93,9 @@ public class Language_English : LanguageBase
         text[123] = "the cycle repeats";
         text[124] = "you're a fool";
         text[125] = "Leave.";
+        text[126] = "It feels like I'm the last one";
+        text[127] = "Find the road";
+        text[128] = "The collapse is inevitable";
     }
 }
 
