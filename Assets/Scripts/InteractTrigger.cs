@@ -11,12 +11,18 @@ public class InteractTrigger : MonoBehaviour
     [SerializeField] bool destroyObjectOnActivation;
     [SerializeField] bool destroyTriggerOnActivation;
     [SerializeField] float destroyDelay;
+    [SerializeField] GameObject objectToEnable;
 
     float timer;
     bool startTimer;
     public void Interact()
     {
         interactEvent.Invoke();
+
+        if (objectToEnable != null)
+        {
+            objectToEnable.SetActive(true);
+        }
 
         startTimer = true;
     }
@@ -45,6 +51,14 @@ public class InteractTrigger : MonoBehaviour
                     Destroy(this);
                 }
             }
+        }
+    }
+
+    public void TriggerDestruction()
+    {
+        foreach (GameObject obj in objectsToDestroy)
+        {
+            Destroy(obj);
         }
     }
 }

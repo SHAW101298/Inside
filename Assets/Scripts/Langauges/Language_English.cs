@@ -56,6 +56,7 @@ public class Language_English : LanguageBase
         text[52] = "Look  ( E )";
         text[53] = "????  ( E )";
         text[54] = "Place  ( E )";
+        text[55] = "Listen  ( E )";
 
 
         text[70] = "1-1 The Pit";
@@ -91,10 +92,13 @@ public class Language_English : LanguageBase
         text[122] = "please, no more hope";
         text[123] = "the cycle repeats";
         text[124] = "you're a fool";
+        text[125] = "Leave.";
     }
 }
 
 /* Crow Lines
 FORGET !!!
+
+It feels like I'm the last one
 
  */

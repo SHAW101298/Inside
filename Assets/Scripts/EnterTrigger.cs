@@ -11,6 +11,7 @@ public class EnterTrigger : MonoBehaviour
     [SerializeField] bool destroyObjectOnActivation;
     [SerializeField] bool destroyTriggerOnActivation;
     [SerializeField] float destroyDelay;
+    [SerializeField] GameObject objectToEnable;
 
     float timer;
     bool startTimer;
@@ -20,6 +21,10 @@ public class EnterTrigger : MonoBehaviour
         if(other.CompareTag("Player"))
         {
             enterEvent.Invoke();
+            if(objectToEnable != null)
+            {
+                objectToEnable.SetActive(true);
+            }
 
             startTimer = true;
         }

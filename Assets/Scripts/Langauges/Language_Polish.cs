@@ -58,6 +58,7 @@ public class Language_Polish : LanguageBase
         text[52] = "Spójrz  ( E )";
         text[53] = "????  ( E )";
         text[54] = "Od³ó¿  ( E )";
+        text[55] = "S³uchaj  ( E )";
 
 
         text[70] = "1-1 Dno";
@@ -93,6 +94,7 @@ public class Language_Polish : LanguageBase
         text[122] = "prosze, nie dawaj nadziei";
         text[123] = "a wiêc powtarzamy cykl";
         text[124] = "jesteœ g³upcem";
+        text[125] = "OdejdŸ.";
     }
 }
 
