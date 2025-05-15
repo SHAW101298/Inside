@@ -89,6 +89,10 @@ public class Language_Polish : LanguageBase
         text[118] = "Od³ó¿ - Iskra  ( E )";
         text[119] = "Strach";
         text[120] = "wyma¿ . . . istnienie";
+        text[121] = "zostaw to";
+        text[122] = "prosze, nie dawaj nadziei";
+        text[123] = "a wiêc powtarzamy cykl";
+        text[124] = "jesteœ g³upcem";
     }
 }
 

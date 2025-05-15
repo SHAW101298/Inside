@@ -12,6 +12,11 @@ public class LevelScript_02 : MonoBehaviour
     [SerializeField] GameObject altarCrowsBefore;
     [SerializeField] GameObject altarCrowsAfter;
 
+    [SerializeField] GameObject roadCrowsBefore;
+    [SerializeField] GameObject roadCrowsAfter;
+
+    [SerializeField] float fogAmountOnRoad;
+
     public bool foundMissingPiece;
     public bool placedMissingPiece;
 
@@ -21,6 +26,10 @@ public class LevelScript_02 : MonoBehaviour
         foundMissingPiece = true;
         emptySpotReadyForPiece.SetActive(true);
         emptySpot.SetActive(false);
+        RenderSettings.fogEndDistance = 80;
+
+        roadCrowsBefore.SetActive(false);
+        roadCrowsAfter.SetActive(true);
     }
 
     public void PlacedMissingPiece()
@@ -30,6 +39,12 @@ public class LevelScript_02 : MonoBehaviour
         filledSpot.SetActive(true);
         altarCrowsBefore.SetActive(false);
         altarCrowsAfter.SetActive(true);
+    }
+
+    public void EnterTheRoad()
+    {
+        Debug.Log("Enter The road");
+        RenderSettings.fogEndDistance = fogAmountOnRoad;
     }
 
 }

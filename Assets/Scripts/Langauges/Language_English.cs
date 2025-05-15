@@ -87,6 +87,10 @@ public class Language_English : LanguageBase
         text[118] = "Place - Spark  ( E )";
         text[119] = "Fear";
         text[120] = "erase . . . existence";
+        text[121] = "leave it";
+        text[122] = "please, no more hope";
+        text[123] = "the cycle repeats";
+        text[124] = "you're a fool";
     }
 }
 
