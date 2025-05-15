@@ -98,6 +98,7 @@ public class Language_Polish : LanguageBase
         text[126] = "Czujê, jakbym by³ ostatni";
         text[127] = "ZnajdŸ drogê";
         text[128] = "Upadek jest nieunikniony";
+        text[129] = "Trzymane razem ale przez co ?";
     }
 }
 

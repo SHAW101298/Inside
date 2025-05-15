@@ -96,6 +96,7 @@ public class Language_English : LanguageBase
         text[126] = "It feels like I'm the last one";
         text[127] = "Find the road";
         text[128] = "The collapse is inevitable";
+        text[129] = "Held together by what exactly ?";
     }
 }
 
