@@ -9,12 +9,13 @@ public class LevelScript_02 : MonoBehaviour
     [SerializeField] GameObject emptySpotReadyForPiece;
     [SerializeField] GameObject filledSpot;
 
-    [SerializeField] GameObject altarCrowsBefore;
-    [SerializeField] GameObject altarCrowsAfter;
-
     [SerializeField] GameObject roadCrowsBefore;
     [SerializeField] GameObject roadCrowsAfter;
+    [Header("After placing Missing Piece")]
+    [SerializeField] List<GameObject> objectsBeforePlacingPiece;
+    [SerializeField] List<GameObject> objectsAfterPlacingPiece;
 
+    [Header("Checkers")]
     [SerializeField] float fogAmountOnRoad;
 
     public bool foundMissingPiece;
@@ -37,8 +38,15 @@ public class LevelScript_02 : MonoBehaviour
         placedMissingPiece = true;
         emptySpotReadyForPiece.SetActive(false);
         filledSpot.SetActive(true);
-        altarCrowsBefore.SetActive(false);
-        altarCrowsAfter.SetActive(true);
+
+        foreach(GameObject obj in objectsBeforePlacingPiece)
+        {
+            obj.SetActive(false);
+        }
+        foreach(GameObject obj in objectsAfterPlacingPiece)
+        {
+            obj.SetActive(true);
+        }
     }
 
     public void EnterTheRoad()
