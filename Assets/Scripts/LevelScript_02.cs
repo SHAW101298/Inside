@@ -47,6 +47,7 @@ public class LevelScript_02 : MonoBehaviour
         {
             obj.SetActive(true);
         }
+        DialogManager.Instance.ShowText(98);
     }
 
     public void EnterTheRoad()

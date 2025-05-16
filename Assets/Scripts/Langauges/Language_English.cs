@@ -65,7 +65,7 @@ public class Language_English : LanguageBase
         text[71] = "1-2 The Stillness";
         text[72] = "1-2 The Silent World";
 
-
+        text[98] = "GAME FINISHED FOR NOW. There are a few things that changed on map, which you're free to explore. But nothing more than that is ready.";
         text[99] = "You're just an unexpected guest inside someones mind. Enjoy the journey and watch the story unfold.";
 
 
