@@ -90,7 +90,7 @@ public class PlayerUI : MonoBehaviour
                 currentWindow = null;
                 uiActive = false;
                 Cursor.visible = false;
-                data.AllowMovementAndRotation();
+                data.AllowMovemntAndRotationByUI();
             }
             else
             {
@@ -107,7 +107,7 @@ public class PlayerUI : MonoBehaviour
             currentWindow.SetActive(true);
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
-            data.BlockMovementAndRotation();
+            data.BlockMovementAndRotationByUI();
 
 
             originalMusicVolume = Options.Instance.GetMusicVolume();
@@ -122,7 +122,7 @@ public class PlayerUI : MonoBehaviour
         uiActive = false;
         Cursor.visible = false;
 
-        data.AllowMovementAndRotation();
+        data.AllowMovemntAndRotationByUI();
     }
     public void BTN_Options()
     {

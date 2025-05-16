@@ -24,14 +24,25 @@ public class PlayerData : MonoBehaviour
     public PlayerAnimations animations;
 
 
-    public void BlockMovementAndRotation()
+    public void BlockMovementAndRotationByUI()
     {
-        movement.BlockMovement();
-        rotation.BlockRotation();
+        movement.BlockMovementByUI();
+        rotation.BlockRotationByUI();
     }
-    public void AllowMovementAndRotation()
+    public void AllowMovemntAndRotationByUI()
     {
-        movement.AllowMovement();
-        rotation.AllowRotation();
+        movement.AllowMovementByUI();
+        rotation.AllowRotationByUI();
     }
+    public void BlockMovementAndRotationByAction()
+    {
+        movement.BlockMovementByAction();
+        rotation.BlockRotationByAction();
+    }
+    public void AllowMovementAndRotationByAction()
+    {
+        movement.AllowMovementByAction();
+        rotation.AllowRotationByAction();
+    }
+
 }

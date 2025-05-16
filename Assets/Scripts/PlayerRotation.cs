@@ -14,7 +14,8 @@ public class PlayerRotation : MonoBehaviour
     public float x;
     public float y;
 
-    public bool blockedRotation { get; private set; }
+    public bool blockedRotationByUI { get; private set; }
+    public bool blockedRotationByAction { get; private set; }
 
     public void ActionLook(InputAction.CallbackContext context)
     {
@@ -25,7 +26,9 @@ public class PlayerRotation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (blockedRotation == true)
+        if (blockedRotationByAction == true)
+            return;
+        if (blockedRotationByUI == true)
             return;
 
         RotateBody();
@@ -62,12 +65,20 @@ public class PlayerRotation : MonoBehaviour
         body.transform.eulerAngles = body.transform.eulerAngles - rotateValue;
     }
 
-    public void BlockRotation()
+    public void BlockRotationByUI()
     {
-        blockedRotation = true;
+        blockedRotationByUI = true;
     }
-    public void AllowRotation()
+    public void BlockRotationByAction()
     {
-        blockedRotation = false;
+        blockedRotationByAction = true;
+    }
+    public void AllowRotationByUI()
+    {
+        blockedRotationByUI = false;
+    }
+    public void AllowRotationByAction()
+    {
+        blockedRotationByAction = false;
     }
 }

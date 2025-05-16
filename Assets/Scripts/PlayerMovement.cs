@@ -25,7 +25,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float groundCheckDistance;
     [SerializeField]Vector3 velocity;
     Vector3 dir;
-    bool blockedMovement;
+    bool blockedMovementByAction;
+    bool blockedMovementByUI;
     [Header("Movement")]
     [SerializeField] float moveSpeed;
     [SerializeField] float runSpeedMultiplier;
@@ -50,7 +51,11 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(blockedMovement == true)
+        if(blockedMovementByAction == true)
+        {
+            return;
+        }
+        if (blockedMovementByUI == true)
         {
             return;
         }
@@ -218,14 +223,23 @@ public class PlayerMovement : MonoBehaviour
         controller.Move(velocity * Time.deltaTime);
     }
 
-    public void BlockMovement()
+    public void BlockMovementByUI()
     {
-        blockedMovement = true;
+        blockedMovementByUI = true;
     }
-    public void AllowMovement()
+    public void BlockMovementByAction()
     {
-        blockedMovement = false;
+        blockedMovementByAction = true;
     }
+    public void AllowMovementByUI()
+    {
+        blockedMovementByUI = false;
+    }
+    public void AllowMovementByAction()
+    {
+        blockedMovementByAction = false;
+    }
+
     public void SetMovementSpeed(float newSpeed)
     {
         moveSpeed = newSpeed;
