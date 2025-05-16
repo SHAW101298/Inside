@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class BenchSitting : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class BenchSitting : MonoBehaviour
     [SerializeField] float requiredSitTime;
     [SerializeField] float delayBetweenDialogPrompts;
     [SerializeField] DialogPrompt dialog;
+    public UnityEvent Event_PromptDialog;
 
 
     public void Sit()
@@ -34,6 +36,7 @@ public class BenchSitting : MonoBehaviour
         dialogTimer = 0;
         PlayerData player = PlayerData.instance;
         player.AllowMovementAndRotationByAction();
+        player.gameObject.transform.localEulerAngles = Vector3.up * -90;
     }
 
     private void Update()
@@ -55,7 +58,9 @@ public class BenchSitting : MonoBehaviour
             {
                 dialogTimer = 0;
                 dialog.PromptRandomDialogField();
+                Event_PromptDialog.Invoke();
             }
         }
     }
+    
 }
