@@ -97,6 +97,7 @@ public class Language_English : LanguageBase
         text[127] = "Find the road";
         text[128] = "The collapse is inevitable";
         text[129] = "Held together by what exactly ?";
+        text[130] = "tired";
     }
 }
 

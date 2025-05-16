@@ -99,6 +99,7 @@ public class Language_Polish : LanguageBase
         text[127] = "ZnajdŸ drogê";
         text[128] = "Upadek jest nieunikniony";
         text[129] = "Trzymane razem ale przez co ?";
+        text[130] = "zmêczony";
     }
 }
 
