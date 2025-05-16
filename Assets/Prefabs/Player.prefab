@@ -173,8 +173,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fadeScreen: {fileID: 5187244841060342425}
-  fadeColor: {r: 0, g: 0, b: 0, a: 0}
+  fadeColor: {r: 0, g: 0, b: 0, a: 1}
   fadeTime: 1.5
+  fade: 0
+  unfade: 1
   screenFaded:
     m_PersistentCalls:
       m_Calls: []

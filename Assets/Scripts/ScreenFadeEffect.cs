@@ -6,6 +6,20 @@ using UnityEngine.UI;
 
 public class ScreenFadeEffect : MonoBehaviour
 {
+    public static ScreenFadeEffect Instance;
+    private void Awake()
+    {
+        if(Instance != null && Instance != this)
+        {
+            Destroy(this);
+        }
+        else
+        { 
+            Instance = this;
+        }
+    }
+
+
     [SerializeField] Image fadeScreen;
     [SerializeField] Color fadeColor;
     [SerializeField] float fadeTime;
@@ -51,5 +65,18 @@ public class ScreenFadeEffect : MonoBehaviour
                 screenUnfaded.Invoke();
             }
         }
+    }
+
+    public void FadeScreen()
+    {
+        timer = 0;
+        fade = true;
+        unfade = false;
+    }
+    public void UnFadeScreen()
+    {
+        timer = fadeTime;
+        unfade = true;
+        fade = false;
     }
 }

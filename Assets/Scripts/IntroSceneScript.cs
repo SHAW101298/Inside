@@ -75,10 +75,13 @@ public class IntroSceneScript : MonoBehaviour
     }
     public void InteractWithLadder()
     {
-        Debug.Log("Interact with Ladder");
-        SceneManager.LoadScene(2);
+        ScreenFadeEffect.Instance.FadeScreen();
         // Screen Fade
         // Change Scene
         //
+    }
+    public void ChangeSceneToNextLevel()
+    {
+        SceneManager.LoadScene(2);
     }
 }
