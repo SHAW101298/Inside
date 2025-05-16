@@ -12,6 +12,7 @@ public class InteractTrigger : MonoBehaviour
     [SerializeField] bool destroyTriggerOnActivation;
     [SerializeField] float destroyDelay;
     [SerializeField] GameObject objectToEnable;
+    [SerializeField] GameObject objectToDisable;
 
     float timer;
     bool startTimer;
@@ -22,6 +23,10 @@ public class InteractTrigger : MonoBehaviour
         if (objectToEnable != null)
         {
             objectToEnable.SetActive(true);
+        }
+        if(objectToDisable != null)
+        {
+            objectToDisable.SetActive(false);
         }
 
         startTimer = true;
