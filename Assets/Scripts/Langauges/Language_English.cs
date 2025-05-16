@@ -100,6 +100,11 @@ public class Language_English : LanguageBase
         text[128] = "The collapse is inevitable";
         text[129] = "Held together by what exactly ?";
         text[130] = "tired";
+        text[131] = "what is my purpose";
+        text[132] = "what is wrong with me";
+        text[133] = "was that supposed to happen ?";
+        text[134] = "its better to just . . .";
+
     }
 }
 

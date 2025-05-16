@@ -102,6 +102,10 @@ public class Language_Polish : LanguageBase
         text[128] = "Upadek jest nieunikniony";
         text[129] = "Trzymane razem ale przez co ?";
         text[130] = "zmêczony";
+        text[131] = "jaki jest cel mojego istnienia";
+        text[132] = "co jest ze mn¹ nie tak";
+        text[133] = "czy w³aœnie tak to mia³o wygl¹daæ ?";
+        text[134] = "proœciej by³oby gdybym . . .";
     }
 }
 
