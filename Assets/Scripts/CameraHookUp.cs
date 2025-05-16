@@ -38,7 +38,9 @@ public class CameraHookUp : MonoBehaviour
     }
     private void LateUpdate()
     {
-        if (input.blockedRotation == true)
+        if (input.blockedRotationByUI == true)
+            return;
+        if (input.blockedRotationByAction == true)
             return;
         RotateCam();
     }

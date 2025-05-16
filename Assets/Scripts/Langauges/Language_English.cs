@@ -57,6 +57,8 @@ public class Language_English : LanguageBase
         text[53] = "????  ( E )";
         text[54] = "Place  ( E )";
         text[55] = "Listen  ( E )";
+        text[56] = "Sit  ( E )";
+        text[57] = "Stand Up  ( E )";
 
 
         text[70] = "1-1 The Pit";

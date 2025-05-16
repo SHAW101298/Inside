@@ -58,6 +58,8 @@ public class Language_Polish : LanguageBase
         text[53] = "????  ( E )";
         text[54] = "Od³ó¿  ( E )";
         text[55] = "S³uchaj  ( E )";
+        text[56] = "UsiadŸ  ( E )";
+        text[57] = "WStañ  ( E )";
 
 
         text[70] = "1-1 Dno";
