@@ -59,6 +59,7 @@ public class Language_English : LanguageBase
         text[55] = "Listen  ( E )";
         text[56] = "Sit  ( E )";
         text[57] = "Stand Up  ( E )";
+        text[58] = "Open  ( E )";
 
 
         text[70] = "1-1 The Pit";
@@ -105,6 +106,14 @@ public class Language_English : LanguageBase
         text[133] = "was that supposed to happen ?";
         text[134] = "its better to just . . .";
 
+        text[135] = "pathetic";
+        text[136] = "you thought it will be that easy ?";
+        text[137] = "just find that little spark in yourself";
+        text[138] = "then everything will surely work out";
+        text[139] = "a few more steps and everything will be great";
+        text[140] = "keep going, believe in yourself";
+        text[141] = "Don't make me laugh";
+        text[142] = "you knew it will never work";
     }
 }
 
