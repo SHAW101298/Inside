@@ -51,6 +51,7 @@ public class ScreenFadeEffect : MonoBehaviour
             {
                 fade = false;
                 screenFaded.Invoke();
+                fadeScreen.gameObject.SetActive(false);
             }
         }
         if(unfade == true)
@@ -63,6 +64,7 @@ public class ScreenFadeEffect : MonoBehaviour
             {
                 unfade = false;
                 screenUnfaded.Invoke();
+                fadeScreen.gameObject.SetActive(false);
             }
         }
     }
@@ -72,11 +74,13 @@ public class ScreenFadeEffect : MonoBehaviour
         timer = 0;
         fade = true;
         unfade = false;
+        fadeScreen.gameObject.SetActive(true);
     }
     public void UnFadeScreen()
     {
         timer = fadeTime;
         unfade = true;
         fade = false;
+        fadeScreen.gameObject.SetActive(true);
     }
 }
