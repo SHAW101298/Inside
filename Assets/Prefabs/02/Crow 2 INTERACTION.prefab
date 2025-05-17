@@ -104,6 +104,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 68000000
+  removeShownTextsFromList: 0
+  lastTextIndex: 0
+  EVENT_LastTextSpoken:
+    m_PersistentCalls:
+      m_Calls: []
+  EVENT_EmptyDialogPrompts:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1838755724791927825
 GameObject:
   m_ObjectHideFlags: 0
@@ -154,7 +162,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1838755724155619142}
         m_TargetAssemblyTypeName: DialogPrompt, Assembly-CSharp
-        m_MethodName: PromptDialogField
+        m_MethodName: PromptAllDialogFields
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -183,6 +191,8 @@ MonoBehaviour:
   destroyObjectOnActivation: 1
   destroyTriggerOnActivation: 1
   destroyDelay: 0
+  objectToEnable: {fileID: 0}
+  objectToDisable: {fileID: 0}
 --- !u!65 &1838755724791927831
 BoxCollider:
   m_ObjectHideFlags: 0

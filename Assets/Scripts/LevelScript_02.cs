@@ -17,6 +17,7 @@ public class LevelScript_02 : MonoBehaviour
 
     [Header("Checkers")]
     [SerializeField] float fogAmountOnRoad;
+    [SerializeField] Animator doorAnimator;
 
     public bool foundMissingPiece;
     public bool placedMissingPiece;
@@ -47,7 +48,11 @@ public class LevelScript_02 : MonoBehaviour
         {
             obj.SetActive(true);
         }
-        DialogManager.Instance.ShowText(98);
+        //DialogManager.Instance.ShowText(98);
+    }
+    public void OpenDoorFirstTime()
+    {
+        doorAnimator.SetTrigger("Open");
     }
 
     public void EnterTheRoad()

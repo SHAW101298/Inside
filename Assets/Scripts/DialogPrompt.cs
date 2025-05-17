@@ -10,13 +10,24 @@ public class DialogPrompt : MonoBehaviour
     [SerializeField] int lastTextIndex;
 
     public UnityEvent EVENT_LastTextSpoken;
+    public UnityEvent EVENT_EmptyDialogPrompts;
 
     public void PromptDialogField()
     {
-
         for (int i = 0; i < index.Count; i++)
         {
             DialogManager.Instance.ShowText(index[i]);
+        }
+    }
+    public void PromptAllDialogFields()
+    {
+        for (int i = 0; i < index.Count; i++)
+        {
+            DialogManager.Instance.ShowText(index[i]);
+        }
+        if(removeShownTextsFromList == true)
+        {
+            index.Clear();
         }
     }
     public void PromptRandomDialogField()
@@ -24,7 +35,7 @@ public class DialogPrompt : MonoBehaviour
         if(index.Count == 0)
         {
             DialogManager.Instance.ShowText(lastTextIndex);
-            LastTextSpoken();
+            EVENT_EmptyDialogPrompts.Invoke();
             return;
         }
 
@@ -35,13 +46,17 @@ public class DialogPrompt : MonoBehaviour
         {
             index.RemoveAt(rand);
         }
+        if (index.Count == 0)
+        {
+            EVENT_LastTextSpoken.Invoke();
+        }
     }
     public void PromptOneDialogField()
     {
         if (index.Count == 0)
         {
             DialogManager.Instance.ShowText(lastTextIndex);
-            LastTextSpoken();
+            EVENT_EmptyDialogPrompts.Invoke();
             return;
         }
         DialogManager.Instance.ShowText(index[0]);
@@ -50,11 +65,10 @@ public class DialogPrompt : MonoBehaviour
         {
             index.RemoveAt(0);
         }
-
+        if(index.Count == 0)
+        {
+            EVENT_LastTextSpoken.Invoke();
+        }
     }
 
-    void LastTextSpoken()
-    {
-        EVENT_LastTextSpoken.Invoke();
-    }
 }
