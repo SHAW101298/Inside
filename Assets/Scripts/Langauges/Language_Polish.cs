@@ -92,7 +92,7 @@ public class Language_Polish : LanguageBase
         text[117] = "WeŸ - Iskra  ( E )";
         text[118] = "Od³ó¿ - Iskra  ( E )";
         text[119] = "Strach";
-        text[120] = "wyma¿ . . . istnienie";
+        text[120] = "zniszcz . . . egzystencje";
         text[121] = "zostaw to";
         text[122] = "prosze, nie dawaj nadziei";
         text[123] = "a wiêc powtarzamy cykl";
