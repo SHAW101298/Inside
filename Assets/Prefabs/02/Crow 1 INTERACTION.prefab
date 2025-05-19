@@ -45,6 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 6c000000
+  usedIndexes: 
   removeShownTextsFromList: 0
   EVENT_StartShowing:
     m_PersistentCalls:
@@ -446,8 +447,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0d5ad8c9785f2514bac23f84b29e4f5f, type: 3}
   - {fileID: 8300000, guid: c43c43c4220fb0d4f83f1dd6046a6800, type: 3}
   - {fileID: 8300000, guid: f940de2f50759c54baf365805c7cd561, type: 3}
-  minTimeDelay: 20
-  maxTimeDelay: 40
+  minTimeDelay: 35
+  maxTimeDelay: 70
   pitchVariation: 0.15
 --- !u!65 &7453818067474768059
 BoxCollider:
