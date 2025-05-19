@@ -117,8 +117,7 @@ public class Language_Polish : LanguageBase
         text[139] = "jeszcze tylko kilka kroków i wszystko bêdzie dobrze ";
         text[140] = "idŸ naprzód, uwierz w siebie";
         text[141] = "Nie rozœmieszaj mnie";
-        text[142] = "you knew it will never work";
-        text[142] = "wiedzia³eœ ¿e to nie pomo¿e";
+        text[142] = "wiedzia³eœ ¿e to nie zadzia³a";
     }
 }
 

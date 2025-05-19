@@ -273,6 +273,7 @@ GameObject:
   - component: {fileID: 7508711536102962417}
   - component: {fileID: 3035334430277219731}
   - component: {fileID: 1986717580770749869}
+  - component: {fileID: 220096961786312101}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -690,6 +691,20 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 933e6dd5886efb444847ae016ef1ab2d, type: 3}
   - {fileID: 8300000, guid: 933e6dd5886efb444847ae016ef1ab2d, type: 3}
   pitchVariation: 0.15
+--- !u!136 &220096961786312101
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9170628902623201525}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.3
+  m_Height: 1.8
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.9, z: 0}
 --- !u!1 &9170628902720905094
 GameObject:
   m_ObjectHideFlags: 0
