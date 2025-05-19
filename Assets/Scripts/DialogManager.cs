@@ -4,6 +4,13 @@ using UnityEngine;
 using TMPro;
 using System.Linq;
 
+[System.Serializable]
+public class DialogData
+{
+    public DialogPrompt prompt;
+    public int index;
+}
+
 public class DialogManager : MonoBehaviour
 {
     public static DialogManager Instance;
@@ -21,48 +28,51 @@ public class DialogManager : MonoBehaviour
 
     public TMP_Text dialogField;
 
-    [SerializeField] List<string> textToShow;
+    [SerializeField] List<DialogData> promptsToShow;
     [SerializeField] float delayBetweenLetters;
     [SerializeField] float timeForTextToRemain;
+
+    [SerializeField] string currentTextToShow;
 
     float timer;
     bool animateText;
     bool awaitingUntilRestart;
-    int lettercount;
+
     int lastLetterIndex;
 
-
-    [SerializeField] bool DEBUGSTART;
-    [SerializeField] string debugText;
-
-
-    public void ShowText(int index)
+    public void ShowText(DialogData data)
     {
-        textToShow.Add(LanguageManager.Instance.GetText(index));
-
-        if(textToShow.Count == 1)
+        promptsToShow.Add(data);
+        if(promptsToShow.Count == 1)
         {
             animateText = true;
+            lastLetterIndex = 0;
+            currentTextToShow = LanguageManager.Instance.GetText(promptsToShow[0].index);
+
+            if (promptsToShow[0].prompt != null)
+            {
+                promptsToShow[0].prompt.EVENT_StartShowing.Invoke();
+            }
         }
 
-
     }
-    public void ShowText(string tekst)
+    public void ShowText(int index)
     {
-        textToShow.Add(tekst);
-        lettercount = tekst.Length;
-        animateText = true;
+        DialogData data = new DialogData();
+        data.prompt = null;
+        data.index = index;
+        promptsToShow.Add(data);
+
+        if (promptsToShow.Count == 1)
+        {
+            lastLetterIndex = 0;
+            currentTextToShow = LanguageManager.Instance.GetText(promptsToShow[0].index);
+            animateText = true;
+        }
     }
 
     private void Update()
     {
-        if(DEBUGSTART == true)
-        {
-            DEBUGSTART = false;
-
-            ShowText(debugText);
-        }
-
         if(animateText == true)
         {
             AnimateText();
@@ -79,12 +89,12 @@ public class DialogManager : MonoBehaviour
         if (timer >= delayBetweenLetters)
         {
             timer -= delayBetweenLetters;
-            dialogField.text += textToShow[0][lastLetterIndex];
+            dialogField.text += currentTextToShow[lastLetterIndex];
             lastLetterIndex++;
 
 
             // Finished with this text
-            if (lastLetterIndex >= textToShow[0].Length)
+            if (lastLetterIndex >= currentTextToShow.Length)
             {
                 lastLetterIndex = 0;
                 timer = 0;
@@ -96,17 +106,28 @@ public class DialogManager : MonoBehaviour
     void AwateUntilFinishedWithReading()
     {
         timer += Time.deltaTime;
-        if(timer >= timeForTextToRemain)
+        if (timer >= timeForTextToRemain)
         {
             timer = 0;
             dialogField.text = "";
             awaitingUntilRestart = false;
-
-            textToShow.RemoveAt(0);
-
-            if(textToShow.Count > 0)
+            if (promptsToShow[0].prompt != null)
             {
-                lettercount = textToShow[0].Length;
+                promptsToShow[0].prompt.EVENT_EndShowing.Invoke();
+            }
+
+            promptsToShow.RemoveAt(0);
+
+            if (promptsToShow.Count > 0)
+            {
+                //Debug.Log("Setting new current text");
+                currentTextToShow = LanguageManager.Instance.GetText(promptsToShow[0].index);
+
+                if (promptsToShow[0].prompt != null)
+                {
+                    //Debug.Log("Prompt is present");
+                    promptsToShow[0].prompt.EVENT_StartShowing.Invoke();
+                }
                 animateText = true;
             }
         }

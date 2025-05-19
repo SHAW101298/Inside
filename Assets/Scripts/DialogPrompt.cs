@@ -5,70 +5,116 @@ using UnityEngine.Events;
 
 public class DialogPrompt : MonoBehaviour
 {
-    [SerializeField] List<int> index;
+    public List<int> index;
+    [SerializeField] List<int> usedIndexes;
     [SerializeField] bool removeShownTextsFromList;
-    [SerializeField] int lastTextIndex;
+    //[SerializeField] bool destroyOnLast;
 
-    public UnityEvent EVENT_LastTextSpoken;
-    public UnityEvent EVENT_EmptyDialogPrompts;
+    public UnityEvent EVENT_StartShowing;
+    public UnityEvent EVENT_EndShowing;
+    public UnityEvent EVENT_EmptyIndexList;
 
-    public void PromptDialogField()
-    {
-        for (int i = 0; i < index.Count; i++)
-        {
-            DialogManager.Instance.ShowText(index[i]);
-        }
-    }
+
     public void PromptAllDialogFields()
     {
         for (int i = 0; i < index.Count; i++)
         {
-            DialogManager.Instance.ShowText(index[i]);
+            DialogData data = new DialogData();
+            data.prompt = this;
+            data.index = index[i];
+
+            //Debug.Log("data prompt = " + data.prompt);
+            //Debug.Log("data index = " + data.index);
+            DialogManager.Instance.ShowText(data);
         }
         if(removeShownTextsFromList == true)
         {
+
+            for (int i = 0; i < index.Count; i++)
+            {
+                usedIndexes.Add(index[i]);
+            }
+
             index.Clear();
+            EVENT_EmptyIndexList.Invoke();
         }
     }
     public void PromptRandomDialogField()
     {
-        if(index.Count == 0)
-        {
-            DialogManager.Instance.ShowText(lastTextIndex);
-            EVENT_EmptyDialogPrompts.Invoke();
-            return;
-        }
-
         int rand = Random.Range(0, index.Count);
-        DialogManager.Instance.ShowText(index[rand]);
+
+        DialogData data = new DialogData();
+        data.prompt = this;
+        data.index = index[rand];
+        
+        DialogManager.Instance.ShowText(data);
 
         if(removeShownTextsFromList == true)
         {
+            usedIndexes.Add(index[rand]);
             index.RemoveAt(rand);
         }
+
         if (index.Count == 0)
         {
-            EVENT_LastTextSpoken.Invoke();
+            EVENT_EmptyIndexList.Invoke();
         }
     }
     public void PromptOneDialogField()
     {
-        if (index.Count == 0)
-        {
-            DialogManager.Instance.ShowText(lastTextIndex);
-            EVENT_EmptyDialogPrompts.Invoke();
-            return;
-        }
-        DialogManager.Instance.ShowText(index[0]);
+        DialogData data = new DialogData();
+        data.prompt = this;
+        data.index = index[0];
+        DialogManager.Instance.ShowText(data);
 
         if (removeShownTextsFromList == true)
         {
+            usedIndexes.Add(index[0]);
             index.RemoveAt(0);
         }
+        else
+        {
+            int x = index[0];
+            index.RemoveAt(0);
+            index.Add(x);
+        }
+
+        if (index.Count == 0)
+        {
+            EVENT_EmptyIndexList.Invoke();
+        }
+    }
+    public void TriggerDestruction()
+    {
+        //Debug.Log("Trigger Destruction of Prompt");
+        Destroy(gameObject);
+    }
+    public void DestroyOnLast()
+    {
+        Debug.Log("Destroy On Last");
+        // Run when EVENT_EndShowing is invoked
         if(index.Count == 0)
         {
-            EVENT_LastTextSpoken.Invoke();
+            TriggerDestruction();
         }
     }
 
+    public void RemoveFirstFromUsed()
+    {
+        usedIndexes.RemoveAt(0);
+    }
+    public void DestroyIfEmptyIndexes()
+    {
+        if (index.Count != 0)
+            return;
+        if (usedIndexes.Count != 0)
+            return;
+            
+        Destroy(gameObject);
+
+    }
+    public void DEBUGSTARTSHOWING()
+    {
+        Debug.Log("EVENT START SHOWING");
+    }
 }

@@ -30,7 +30,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2445271698880790344}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3544687189024391735
 MonoBehaviour:
@@ -46,11 +46,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   index: 6c000000
   removeShownTextsFromList: 0
-  lastTextIndex: 0
-  EVENT_LastTextSpoken:
+  EVENT_StartShowing:
     m_PersistentCalls:
-      m_Calls: []
-  EVENT_EmptyDialogPrompts:
+      m_Calls:
+      - m_Target: {fileID: 1729147046233847144}
+        m_TargetAssemblyTypeName: Crow_SoundPlayer, Assembly-CSharp
+        m_MethodName: Interact_PlayRandomCaw
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  EVENT_EndShowing:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3544687189024391735}
+        m_TargetAssemblyTypeName: DialogPrompt, Assembly-CSharp
+        m_MethodName: TriggerDestruction
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  EVENT_EmptyIndexList:
     m_PersistentCalls:
       m_Calls: []
 --- !u!1 &3544687189098261593
@@ -82,7 +108,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 3544687189729712998}
   m_Father: {fileID: 2445271698880790344}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -113,23 +140,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1729147046233847144}
-        m_TargetAssemblyTypeName: Crow_SoundPlayer, Assembly-CSharp
-        m_MethodName: Interact_PlayRandomCaw
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 3
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  objectsToDestroy:
-  - {fileID: 3544687189729713017}
-  - {fileID: 3544687189098261593}
-  - {fileID: 3544687189024391753}
-  destroyObjectOnActivation: 1
+  objectsToDestroy: []
+  destroyObjectOnActivation: 0
   destroyTriggerOnActivation: 1
   destroyDelay: 0
   objectToEnable: {fileID: 0}
@@ -172,13 +184,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3544687189729713017}
-  m_LocalRotation: {x: -0, y: 0.25016072, z: -0, w: 0.9682044}
+  m_LocalRotation: {x: -0, y: 0.000000029802319, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2445271698880790344}
-  m_RootOrder: 3
+  m_Father: {fileID: 3544687189098261574}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3544687189729712996
 MonoBehaviour:
@@ -412,7 +424,6 @@ Transform:
   - {fileID: 165590115092906834}
   - {fileID: 7972349164358999982}
   - {fileID: 3544687189098261574}
-  - {fileID: 3544687189729712998}
   - {fileID: 3544687189024391734}
   m_Father: {fileID: 0}
   m_RootOrder: 0

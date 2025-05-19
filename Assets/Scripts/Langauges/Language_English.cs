@@ -60,12 +60,14 @@ public class Language_English : LanguageBase
         text[56] = "Sit  ( E )";
         text[57] = "Stand Up  ( E )";
         text[58] = "Open  ( E )";
+        text[59] = "Close  ( E )";
 
 
         text[70] = "1-1 The Pit";
         text[71] = "1-2 The Stillness";
         text[72] = "1-2 The Silent World";
 
+        text[97] = "Won't even budge";
         text[98] = "GAME FINISHED FOR NOW. There are a few things that changed on map, which you're free to explore. But nothing more than that is ready.";
         text[99] = "You're just an unexpected guest inside someones mind. Enjoy the journey and watch the story unfold.";
 

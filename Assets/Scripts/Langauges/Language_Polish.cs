@@ -59,7 +59,9 @@ public class Language_Polish : LanguageBase
         text[54] = "Od³ó¿  ( E )";
         text[55] = "S³uchaj  ( E )";
         text[56] = "UsiadŸ  ( E )";
-        text[57] = "WStañ  ( E )";
+        text[57] = "Wstañ  ( E )";
+        text[58] = "Otwórz  ( E )";
+        text[59] = "Zamknij  ( E )";
 
 
         text[70] = "1-1 Dno";
@@ -107,6 +109,16 @@ public class Language_Polish : LanguageBase
         text[132] = "co jest ze mn¹ nie tak";
         text[133] = "czy w³aœnie tak to mia³o wygl¹daæ ?";
         text[134] = "proœciej by³oby gdybym . . .";
+
+        text[135] = "¿a³osne";
+        text[136] = "Naprawdê myœla³eœ, ¿e to bêdzie takie proste ?";
+        text[137] = "znajdŸ w sobie to coœ";
+        text[138] = "wtedy napewno wszystko siê u³o¿y";
+        text[139] = "jeszcze tylko kilka kroków i wszystko bêdzie dobrze ";
+        text[140] = "idŸ naprzód, uwierz w siebie";
+        text[141] = "Nie rozœmieszaj mnie";
+        text[142] = "you knew it will never work";
+        text[142] = "wiedzia³eœ ¿e to nie pomo¿e";
     }
 }
 

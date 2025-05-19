@@ -53,7 +53,7 @@ public class InteractTrigger : MonoBehaviour
 
                 if (destroyTriggerOnActivation == true)
                 {
-                    Destroy(this);
+                    Destroy(gameObject);
                 }
             }
         }

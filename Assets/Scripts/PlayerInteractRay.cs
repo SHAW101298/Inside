@@ -19,7 +19,7 @@ public class PlayerInteractRay : MonoBehaviour
         Vector3 lookDir = data.cam.GetForwardDir();
         RaycastHit hitInfo;
 
-        Debug.Log("TRYING TO INTERACT");
+        //Debug.Log("TRYING TO INTERACT");
 
         if (Physics.Raycast(data.cam.transform.position, lookDir, out hitInfo, infoRaycastDistance, interactLayer) == true)
         {

@@ -41,6 +41,7 @@ public class Crow_SoundPlayer : MonoBehaviour
 
     public void Interact_PlayRandomCaw()
     {
+        //Debug.Log("Playing random caw");
         timer = 0;
         int randClip = Random.Range(0, clips.Count);
         float randPitch = Random.Range(-pitchVariation, pitchVariation);
