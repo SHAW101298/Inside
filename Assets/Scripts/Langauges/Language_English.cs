@@ -118,10 +118,60 @@ public class Language_English : LanguageBase
         text[141] = "Don't make me laugh";
         text[142] = "you knew it will never work";
         text[143] = "might as well burn this whole place down and start from scratch";
+
+
+        text[144] = "A silent world.";
+        text[145] = "A world where things just stopped.";
+        text[146] = "Not because of some cataclysm.";
+        text[147] = "Not beacause of abandonment.";
+        text[148] = "But because of a damage.";
+        text[149] = "Damage dealt by others";
+        text[150] = "things not considered properly";
+        text[151] = "decisions made by people who won't give second thought a chance";
+        text[152] = "actions made without a feeling of consequence.";
+        text[153] = "Welcome.";
+        text[154] = "The world before your eyes is the one, some might say is beyond repair.";
+        text[155] = "The world doomed to fail.";
+        text[156] = "And yet. Here you stand. ";
+        text[157] = "Trying to make things right. Trying to fix this shithole. ";
+        text[158] = "Good Luck. Because i couldn't.";
+        text[159] = "So yeah, a world where things just stay.";
+        text[160] = "Just the way they were left.";
+        text[161] = "For someone to pickup. Just for a convienience.";
+        text[162] = "Like a random shiny peeble on a road.";
+        text[163] = "A plant that hasn't been watered for god knows how many days just begging for some rain.";
+        text[164] = "Just trying to survive, trying to be itself.";
+        text[165] = "But there is no rain coming.";
+        text[166] = "Nothing that may correct the course of actions.";
+        text[167] = "All that is left is just waiting for the time to come. ";
+        text[168] = "All the hope you may have had is lost.";
+        text[169] = "Welcome to this world.";
     }
 }
 
 /* Crow Lines
+
+A world where things just stopped. Not because of some cataclysm. Not beacause of abandonment.
+But because of a damage.
+Damage dealt by others
+things not considered properly
+decisions made by people who won't give second thought a chance
+actions made without a feeling of consequence.
+Welcome. 
+The world before your eyes is the one, some might say is beyond repair. 
+The world doomed to fail. 
+And yet. Here you stand. 
+Trying to make things right. Trying to fix this shithole. 
+Good Luck. Because i couldn't.
+So yeah, a world where things just stay. Just the way they were left.
+For someone to pickup. Just for a convienience.
+Like a random shiny peeble on a road.
+A plant that hasn't been watered for god knows how many days just begging for some rain.
+Just trying to survive, trying to be itself.
+But there is no rain coming. Nothing that may correct the course of actions.
+All that is left is just waiting for the time to come. 
+All the hope you may have had is lost.
+Welcome to this world.
 
 
  */
