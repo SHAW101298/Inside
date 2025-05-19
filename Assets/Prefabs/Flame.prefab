@@ -230,6 +230,8 @@ MonoBehaviour:
   destroyObjectOnActivation: 0
   destroyTriggerOnActivation: 0
   destroyDelay: 0
+  objectToEnable: {fileID: 0}
+  objectToDisable: {fileID: 0}
 --- !u!1 &5665249759138651875
 GameObject:
   m_ObjectHideFlags: 0
@@ -5012,7 +5014,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9155108f08c42c444bc68b643c1ea74b, type: 2}
+  - {fileID: 2100000, guid: a7ab49b3d7a321248bbb7aef42af2201, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

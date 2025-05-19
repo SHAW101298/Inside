@@ -2250,6 +2250,10 @@ PrefabInstance:
       propertyPath: screenFaded.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 5187244841060342425, guid: 92b627872cf1a504985c0a8599c16676, type: 3}
+      propertyPath: m_RaycastTarget
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7508711536102962417, guid: 92b627872cf1a504985c0a8599c16676, type: 3}
       propertyPath: m_ActionEvents.Array.size
       value: 17

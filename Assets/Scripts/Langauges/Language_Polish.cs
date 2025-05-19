@@ -123,11 +123,3 @@ public class Language_Polish : LanguageBase
         text[143] = "równie dobrze mo¿na spaliæ to wszystko i zacz¹æ od zera";
     }
 }
-
-/* Crow Lines
-ZAPOMNIJ !!!
-Stracone . . .
-Ju¿ Nied³ugo
-Dlaczego
-
- */
