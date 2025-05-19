@@ -67,6 +67,7 @@ public class Language_English : LanguageBase
         text[71] = "1-2 The Stillness";
         text[72] = "1-2 The Silent World";
 
+        text[96] = "NO TEXT";
         text[97] = "Won't even budge";
         text[98] = "GAME FINISHED FOR NOW. There are a few things that changed on map, which you're free to explore. But nothing more than that is ready.";
         text[99] = "You're just an unexpected guest inside someones mind. Enjoy the journey and watch the story unfold.";
@@ -116,12 +117,11 @@ public class Language_English : LanguageBase
         text[140] = "keep going, believe in yourself";
         text[141] = "Don't make me laugh";
         text[142] = "you knew it will never work";
+        text[143] = "might as well burn this whole place down and start from scratch";
     }
 }
 
 /* Crow Lines
-FORGET !!!
 
-It feels like I'm the last one
 
  */

@@ -19,9 +19,7 @@ public class DialogPrompt : MonoBehaviour
     {
         for (int i = 0; i < index.Count; i++)
         {
-            DialogData data = new DialogData();
-            data.prompt = this;
-            data.index = index[i];
+            DialogData data = new DialogData(this, index[i]);
 
             //Debug.Log("data prompt = " + data.prompt);
             //Debug.Log("data index = " + data.index);
@@ -43,9 +41,7 @@ public class DialogPrompt : MonoBehaviour
     {
         int rand = Random.Range(0, index.Count);
 
-        DialogData data = new DialogData();
-        data.prompt = this;
-        data.index = index[rand];
+        DialogData data = new DialogData(this, index[rand]);
         
         DialogManager.Instance.ShowText(data);
 
@@ -62,9 +58,7 @@ public class DialogPrompt : MonoBehaviour
     }
     public void PromptOneDialogField()
     {
-        DialogData data = new DialogData();
-        data.prompt = this;
-        data.index = index[0];
+        DialogData data = new DialogData(this, index[0]);
         DialogManager.Instance.ShowText(data);
 
         if (removeShownTextsFromList == true)

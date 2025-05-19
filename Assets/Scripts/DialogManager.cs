@@ -9,6 +9,17 @@ public class DialogData
 {
     public DialogPrompt prompt;
     public int index;
+
+    public DialogData(DialogPrompt newPrompt, int newIndex)
+    {
+        prompt = newPrompt;
+        index = newIndex;
+    }
+    public DialogData()
+    {
+        prompt = null;
+        index = 96;
+    }
 }
 
 public class DialogManager : MonoBehaviour
@@ -58,9 +69,7 @@ public class DialogManager : MonoBehaviour
     }
     public void ShowText(int index)
     {
-        DialogData data = new DialogData();
-        data.prompt = null;
-        data.index = index;
+        DialogData data = new DialogData(null, index);
         promptsToShow.Add(data);
 
         if (promptsToShow.Count == 1)

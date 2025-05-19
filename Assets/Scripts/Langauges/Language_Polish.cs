@@ -69,6 +69,8 @@ public class Language_Polish : LanguageBase
         text[72] = "1-2 Cichy Œwiat";
 
 
+        text[96] = "BRAK TEKSTU";
+        text[97] = "Nawet nie drgnie";
         text[98] = "GRA SKOÑCZONA NA TEN MOMENT. Jest kilka rzeczy, które zmieni³y siê na mapie, mo¿na iœæ i je sprawdziæ. Jednak poza tym nie ma ju¿ nic innego do zrobienia";
         //text[99] = "Jesteœ jedynie nieprzewidzianym goœciem w czyimœ umyœle. Odkryj prawdê ukryt¹ pod warstw¹ rzeczywistoœci.";
         text[99] = "Jesteœ jedynie nieprzewidzianym goœciem w czyimœ umyœle. Ciesz siê podró¿¹ i obserwuj rozwój historii";
@@ -118,6 +120,7 @@ public class Language_Polish : LanguageBase
         text[140] = "idŸ naprzód, uwierz w siebie";
         text[141] = "Nie rozœmieszaj mnie";
         text[142] = "wiedzia³eœ ¿e to nie zadzia³a";
+        text[143] = "równie dobrze mo¿na spaliæ to wszystko i zacz¹æ od zera";
     }
 }
 
