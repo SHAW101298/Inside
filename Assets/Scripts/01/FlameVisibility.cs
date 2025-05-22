@@ -5,24 +5,30 @@ using UnityEngine;
 public class FlameVisibility : MonoBehaviour
 {
     [Header("References")]
-    public Light lightSource;
-    public Transform cameraPosition;
-    public Transform forwardPosition;
+    [SerializeField] Light lightSource;
+    [SerializeField] Transform cameraPosition;
+    [SerializeField] Transform forwardPosition;
+    [SerializeField] Transform playerPosition;
     public float dangerLevel;
     Vector3 followPosition;
-    public LayerMask terrainLayer;
+    [SerializeField] LayerMask terrainLayer;
     [Header("Neutral")]
-    public Color neutralColor;
-    public float neutralRange;
-    public float neutralIntensity;
+    [SerializeField] Color neutralColor;
+    [SerializeField] float neutralRange;
+    [SerializeField] float neutralIntensity;
     [Header("Danger")]
-    public Color dangerColor;
-    public float dangerRange;
-    public float dangerIntensity;
+    [SerializeField] Color dangerColor;
+    [SerializeField] float dangerRange;
+    [SerializeField] float dangerIntensity;
     [Header("Current")]
-    public Color currentColor;
-    public float currentRange;
-    public float currentIntensity;
+    [SerializeField] Color currentColor;
+    [SerializeField] float currentRange;
+    [SerializeField] float currentIntensity;
+    [Space(10)]
+    [SerializeField] Vector3 startPosition;
+    [SerializeField] Vector3 endPosition;
+    [SerializeField] float dangerDistance;
+    [SerializeField] bool inDanger;
 
     [Header("Debug")]
     [SerializeField] Vector3 velocity;
@@ -42,7 +48,11 @@ public class FlameVisibility : MonoBehaviour
 
         gameObject.transform.position = Vector3.SmoothDamp(gameObject.transform.position, followPosition,ref velocity, smoothTime);
 
-        SetVisibilityAccordingToDanger();
+        if(inDanger == true)
+        {
+            CalculateDangerLevel();
+            SetVisibilityAccordingToDanger();
+        }
     }
 
     void CalculateFollowPosition()
@@ -67,13 +77,23 @@ public class FlameVisibility : MonoBehaviour
         lightSource.intensity = currentIntensity;
         lightSource.color = currentColor;
     }
-
-    public void EnteredDanger1()
+    public void SetAsCurrentDanger(Vector3 start, Vector3 end)
     {
-        dangerLevel = 1;
+        startPosition = start;
+        endPosition = end;
+        dangerDistance = Vector3.Distance(startPosition, endPosition);
+        inDanger = true;
     }
-    public void EnteredDanger2()
+    public void ExitDanger()
     {
-        dangerLevel = 2;
+        inDanger = false;
+    }    
+    
+    void CalculateDangerLevel()
+    {
+        float playerDist = Vector3.Distance(startPosition, playerPosition.position);
+
+        //Debug.Log("Playedist = " + playerDist);
+        dangerLevel = playerDist / dangerDistance;
     }
 }

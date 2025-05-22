@@ -7,13 +7,18 @@ public class DangerZone : MonoBehaviour
     [SerializeField] FlameVisibility flame;
 
     [SerializeField] Transform startPosition;
+    [SerializeField] Transform endPosition;
     [SerializeField] bool isActive;
+    [SerializeField] List<AudioSource> whisperSources;
 
     private void Update()
     {
         if(isActive == true)
         {
-
+            foreach(AudioSource source in whisperSources)
+            {
+                source.volume = flame.dangerLevel;
+            }
         }
     }
 
@@ -21,7 +26,7 @@ public class DangerZone : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Player"))
         {
-            flame.EnteredDanger1();
+            flame.SetAsCurrentDanger(startPosition.position,endPosition.position);
         }
     }
 }

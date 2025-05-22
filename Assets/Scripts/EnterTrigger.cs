@@ -6,12 +6,14 @@ using UnityEngine.Events;
 public class EnterTrigger : MonoBehaviour
 {
     public UnityEvent enterEvent;
+    public UnityEvent exitEvent;
     [Space(10)]
     [SerializeField] List<GameObject> objectsToDestroy;
     [SerializeField] bool destroyObjectOnActivation;
     [SerializeField] bool destroyTriggerOnActivation;
     [SerializeField] float destroyDelay;
     [SerializeField] GameObject objectToEnable;
+    [SerializeField] List<GameObject> objectsToDisable;
 
     float timer;
     bool startTimer;
@@ -22,6 +24,26 @@ public class EnterTrigger : MonoBehaviour
         {
             enterEvent.Invoke();
             if(objectToEnable != null)
+            {
+                objectToEnable.SetActive(true);
+            }
+            if(objectsToDisable.Count > 0)
+            {
+                foreach(GameObject obj in objectsToDisable)
+                {
+                    obj.SetActive(false);
+                }
+            }
+
+            startTimer = true;
+        }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            exitEvent.Invoke();
+            if (objectToEnable != null)
             {
                 objectToEnable.SetActive(true);
             }
