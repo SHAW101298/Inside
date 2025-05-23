@@ -26,7 +26,8 @@ public class BenchSitting : MonoBehaviour
         PlayerData player = PlayerData.instance;
         player.gameObject.transform.position = sitPosition.transform.position;
         player.gameObject.transform.localRotation = sitPosition.transform.localRotation;
-        player.BlockMovementAndRotationByAction();
+        //player.BlockMovementAndRotationByAction();
+        player.BlockMovementByAction();
     }
     public void StandUp()
     {
@@ -35,7 +36,8 @@ public class BenchSitting : MonoBehaviour
         sitTimer = 0;
         dialogTimer = 0;
         PlayerData player = PlayerData.instance;
-        player.AllowMovementAndRotationByAction();
+        //player.AllowMovementAndRotationByAction();
+        player.AllowMovementByAction();
         player.gameObject.transform.localEulerAngles = Vector3.up * -90;
     }
 

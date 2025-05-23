@@ -44,5 +44,37 @@ public class PlayerData : MonoBehaviour
         movement.AllowMovementByAction();
         rotation.AllowRotationByAction();
     }
+    public void BlockMovementByAction()
+    {
+        movement.BlockMovementByAction();
+    }
+    public void AllowMovementByAction()
+    {
+        movement.AllowMovementByAction();
+    }
+    public void BlockMovementByUI()
+    {
+        movement.BlockMovementByUI();
+    }
+    public void AllowMovementByUI()
+    {
+        movement.AllowMovementByUI();
+    }
+    public void BlockRotationByAction()
+    {
+        rotation.BlockRotationByAction();
+    }
+    public void AllowRotationByAction()
+    {
+        rotation.AllowRotationByAction();
+    }
+    public void BlockRotationByUI()
+    {
+        rotation.BlockRotationByUI();
+    }
+    public void AllowRotationByUI()
+    {
+        rotation.AllowRotationByUI();
+    }
 
 }

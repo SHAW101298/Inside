@@ -133,8 +133,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3284871710105822734}
   - component: {fileID: 3284871710105822730}
-  - component: {fileID: 3284871710105822731}
-  - component: {fileID: 3284871710105822728}
   - component: {fileID: 3284871710105822729}
   m_Layer: 7
   m_Name: StandUp Interact Trigger (2)
@@ -169,34 +167,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.75, y: 1.3937286, z: 3.3334968}
-  m_Center: {x: 0, y: 0.19686365, z: -0.09821542}
---- !u!65 &3284871710105822731
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3284871710105822735}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.9978638, y: 1.3726642, z: 0.72481287}
-  m_Center: {x: 1.2437439, y: 0.1863318, z: -1.6720989}
---- !u!65 &3284871710105822728
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3284871710105822735}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.9978638, y: 1.182066, z: 0.72481287}
-  m_Center: {x: 1.2437439, y: 0.09103298, z: 1.672099}
+  m_Size: {x: 0.75, y: 0.5, z: 2}
+  m_Center: {x: 0, y: -0.25, z: 0}
 --- !u!114 &3284871710105822729
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -258,7 +230,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3284871711145321829
 Transform:
   m_ObjectHideFlags: 0
@@ -366,9 +338,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 7e0000007a0000007b000000710000006a0000006c0000007c0000008200000083000000840000008500000086000000
+  usedIndexes: 
   removeShownTextsFromList: 0
-  lastTextIndex: 0
-  EVENT_LastTextSpoken:
+  EVENT_StartShowing:
+    m_PersistentCalls:
+      m_Calls: []
+  EVENT_EndShowing:
+    m_PersistentCalls:
+      m_Calls: []
+  EVENT_EmptyIndexList:
     m_PersistentCalls:
       m_Calls: []
 --- !u!1 &3284871711609006750
@@ -441,15 +419,13 @@ GameObject:
   - component: {fileID: 3284871711777519717}
   - component: {fileID: 3284871711777519713}
   - component: {fileID: 3284871711777519718}
-  - component: {fileID: 3284871711777519719}
-  - component: {fileID: 3284871711777519716}
   m_Layer: 8
   m_Name: StandUp Interact Trigger (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3284871711777519717
 Transform:
   m_ObjectHideFlags: 0
@@ -458,7 +434,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3284871711777519722}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.5, y: 0.5, z: 0}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -511,34 +487,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.75, y: 1.3937286, z: 3.3334968}
-  m_Center: {x: 0, y: 0.19686365, z: -0.09821542}
---- !u!65 &3284871711777519719
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3284871711777519722}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.9978638, y: 1.3726642, z: 0.72481287}
-  m_Center: {x: 1.2437439, y: 0.1863318, z: -1.6720989}
---- !u!65 &3284871711777519716
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3284871711777519722}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.9978638, y: 1.182066, z: 0.72481287}
-  m_Center: {x: 1.2437439, y: 0.09103298, z: 1.672099}
+  m_Size: {x: 0.75, y: 0.5, z: 2}
+  m_Center: {x: 0, y: -0.25, z: 0}
 --- !u!1001 &7876957950546610881
 PrefabInstance:
   m_ObjectHideFlags: 0
