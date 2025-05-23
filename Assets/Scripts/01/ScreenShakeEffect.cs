@@ -23,7 +23,7 @@ public class ScreenShakeEffect : MonoBehaviour
     {
         if(isShaking == true)
         {
-            desiredScreenMovement = flame.dangerLevel * maxScreenMovement;
+            desiredScreenMovement = (flame.dangerLevel * 0.8f)* maxScreenMovement;
             Vector3 rand = new Vector3();
             rand.x = Random.Range(-desiredScreenMovement, desiredScreenMovement);
             rand.y = Random.Range(-desiredScreenMovement, desiredScreenMovement);
