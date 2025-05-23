@@ -24,7 +24,9 @@ public class Language_English : LanguageBase
             DontDestroyOnLoad(this);
         }
 
+
         text = new string[200];
+        // UI TEXT
         text[0] = "Start Game";
         text[1] = "How To Play";
         text[2] = "Options";
@@ -51,6 +53,7 @@ public class Language_English : LanguageBase
         text[23] = "Language";
 
 
+        // INTERACTION TEXT
         text[50] = "Touch  ( E )";
         text[51] = "Climb  ( E )";
         text[52] = "Look  ( E )";
@@ -63,10 +66,13 @@ public class Language_English : LanguageBase
         text[59] = "Close  ( E )";
 
 
+        // LEVEL NAMES
         text[70] = "1-1 The Pit";
         text[71] = "1-2 The Stillness";
         text[72] = "1-2 The Silent World";
 
+
+        // Additional Texts
         text[96] = "NO TEXT";
         text[97] = "Won't even budge";
         text[98] = "GAME FINISHED FOR NOW. There are a few things that changed on map, which you're free to explore. But nothing more than that is ready.";

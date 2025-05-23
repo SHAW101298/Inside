@@ -26,6 +26,7 @@ public class Language_Polish : LanguageBase
 
         
         text = new string[200];
+        // UI TEXT
         text[0] = "Rozpocznij Grê";
         text[1] = "Jak graæ";
         text[2] = "Opcje";
@@ -52,6 +53,7 @@ public class Language_Polish : LanguageBase
         text[23] = "Jêzyk";
 
 
+        // INTERACTION TEXT
         text[50] = "Dotknij  ( E )";
         text[51] = "Wspnij siê  ( E )";
         text[52] = "Spójrz  ( E )";
@@ -64,11 +66,13 @@ public class Language_Polish : LanguageBase
         text[59] = "Zamknij  ( E )";
 
 
+        // LEVEL NAMES
         text[70] = "1-1 Dno";
         text[71] = "1-2 Bezruch";
         text[72] = "1-2 Cichy Œwiat";
 
 
+        // Additional Texts
         text[96] = "BRAK TEKSTU";
         text[97] = "Nawet nie drgnie";
         text[98] = "GRA SKOÑCZONA NA TEN MOMENT. Jest kilka rzeczy, które zmieni³y siê na mapie, mo¿na iœæ i je sprawdziæ. Jednak poza tym nie ma ju¿ nic innego do zrobienia";
