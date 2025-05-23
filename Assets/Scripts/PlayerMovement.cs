@@ -185,6 +185,11 @@ public class PlayerMovement : MonoBehaviour
         dir *= moveSpeed * Time.deltaTime;
         dir = transform.TransformDirection(dir);
 
+        if (isRunning == true)
+        {
+            dir *= runSpeedMultiplier;
+        }
+
         controller.Move(dir);
         MoveAccordingToGravity();
 
