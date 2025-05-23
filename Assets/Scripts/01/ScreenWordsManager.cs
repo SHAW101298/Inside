@@ -33,7 +33,11 @@ public class ScreenWordsManager : MonoBehaviour
 
     void CalculateDesiredNumberOfWords()
     {
-        desiredNumberOfWords = (int)(flame.dangerLevel * 4);
+        desiredNumberOfWords = (int)(flame.dangerLevel * 4) - 1;
+        if(desiredNumberOfWords < 0)
+        {
+            desiredNumberOfWords = 0;
+        }
     }
     void CheckIfNeedToAddMoreWords()
     {
