@@ -25,7 +25,7 @@ public class Language_English : LanguageBase
         }
 
 
-        text = new string[200];
+        text = new string[300];
         // UI TEXT
         text[0] = "Start Game";
         text[1] = "How To Play";
@@ -73,85 +73,118 @@ public class Language_English : LanguageBase
 
 
         // Additional Texts
+        text[94] = "                               ";
+        text[95] = "? ? ?";
         text[96] = "NO TEXT";
         text[97] = "Won't even budge";
         text[98] = "GAME FINISHED FOR NOW. There are a few things that changed on map, which you're free to explore. But nothing more than that is ready.";
         text[99] = "You're just an unexpected guest inside someones mind. Enjoy the journey and watch the story unfold.";
 
 
-        text[100] = "                               ";
-        text[101] = "? ? ?";
-        text[102] = "* knock knock knock *";
-        text[103] = "What's that noise ?";
-        text[104] = "FIND IT !!!";
-        text[105] = "FORGET !!!";
-        text[106] = "Lost . . .";
-        text[107] = "Soon";
-        text[108] = "Why";
-        text[109] = "As if . . . the time stopped";
-        text[110] = "end this";
-        text[111] = "alone";
-        text[112] = "failed";
-        text[113] = "all is lost";
-        text[114] = "no more reasons";
-        text[115] = "last . . . request";
-        text[116] = "something is missing here";
-        text[117] = "Take - Spark  ( E )";
-        text[118] = "Place - Spark  ( E )";
-        text[119] = "Fear";
-        text[120] = "erase . . . existence";
-        text[121] = "leave it";
-        text[122] = "please, no more hope";
-        text[123] = "the cycle repeats";
-        text[124] = "you're a fool";
-        text[125] = "Leave.";
-        text[126] = "It feels like I'm the last one";
-        text[127] = "Find the road";
-        text[128] = "The collapse is inevitable";
-        text[129] = "Held together by what exactly ?";
-        text[130] = "tired";
-        text[131] = "what is my purpose";
-        text[132] = "what is wrong with me";
-        text[133] = "was that supposed to happen ?";
-        text[134] = "its better to just . . .";
+        // Erratic Thoughts Intro Scene
+        text[100] = "run";
+        text[101] = "join";
+        text[102] = "no time";
+        text[103] = "escape";
+        text[104] = "they are coming";
+        text[105] = "paralyzed";
+        text[106] = "help";
+        text[107] = "weak";
+        text[108] = "don't go";
+        text[109] = "GIVE UP";
+        text[110] = "i'm afraid";
+        text[111] = "can't take it anymore";
+        text[112] = "get lost";
+        text[113] = "disappear";
+        text[114] = "so cold";
+        text[115] = "it's too much";
+        text[116] = "no hope";
+        text[117] = "FASTER";
+        text[118] = "stay";
+        text[119] = "lose";
 
-        text[135] = "pathetic";
-        text[136] = "you thought it will be that easy ?";
-        text[137] = "just find that little spark in yourself";
-        text[138] = "then everything will surely work out";
-        text[139] = "a few more steps and everything will be great";
-        text[140] = "keep going, believe in yourself";
-        text[141] = "Don't make me laugh";
-        text[142] = "you knew it will never work";
-        text[143] = "might as well burn this whole place down and start from scratch";
+        // SCENE 02
+        // Crow Random Lines
+        text[150] = "FIND IT !!!";
+        text[151] = "FORGET !!!";
+        text[152] = "Lost . . .";
+        text[153] = "Soon";
+        text[154] = "Why";
+        text[155] = "end this";
+        text[156] = "alone";
+        text[157] = "failed";
+        text[158] = "all is lost";
+        text[159] = "no more reasons";
+        text[160] = "Fear";
+        text[161] = "leave it";
+        text[162] = "tired";
+        text[163] = "the cycle repeats";
+        text[164] = "you're a fool";
+        text[165] = "Leave.";
+        text[166] = "last . . . request";
+        text[167] = "erase . . . existence";
+        text[168] = "Find the road";
+        text[169] = "please, no more hope";
+        text[170] = "It feels like I'm the last one";
+        text[171] = "The collapse is inevitable";
 
 
-        text[144] = "A silent world.";
-        text[145] = "A world where things just stopped.";
-        text[146] = "Not because of some cataclysm.";
-        text[147] = "Not beacause of abandonment.";
-        text[148] = "But because of a damage.";
-        text[149] = "Damage dealt by others";
-        text[150] = "things not considered properly";
-        text[151] = "decisions made by people who won't give second thought a chance";
-        text[152] = "actions made without a feeling of consequence.";
-        text[153] = "Welcome.";
-        text[154] = "The world before your eyes is the one, some might say is beyond repair.";
-        text[155] = "The world doomed to fail.";
-        text[156] = "And yet. Here you stand. ";
-        text[157] = "Trying to make things right. Trying to fix this shithole. ";
-        text[158] = "Good Luck. Because i couldn't.";
-        text[159] = "So yeah, a world where things just stay.";
-        text[160] = "Just the way they were left.";
-        text[161] = "For someone to pickup. Just for a convienience.";
-        text[162] = "Like a random shiny peeble on a road.";
-        text[163] = "A plant that hasn't been watered for god knows how many days just begging for some rain.";
-        text[164] = "Just trying to survive, trying to be itself.";
-        text[165] = "But there is no rain coming.";
-        text[166] = "Nothing that may correct the course of actions.";
-        text[167] = "All that is left is just waiting for the time to come. ";
-        text[168] = "All the hope you may have had is lost.";
-        text[169] = "Welcome to this world.";
+        // Bench Thoughts
+        text[200] = "what is my purpose";
+        text[201] = "what is wrong with me";
+        text[202] = "was that supposed to happen ?";
+        text[203] = "its better to just . . .";
+
+
+        // On Interactions
+        text[210] = "Place - Spark  ( E )";
+        text[211] = "Take - Spark  ( E )";
+        text[212] = "Held together by what exactly ?";
+        text[213] = "As if . . . the time stopped";
+        text[214] = "something is missing here";
+
+
+        // Insulting Crow 1
+        text[250] = "pathetic";
+        text[251] = "you thought it will be that easy ?";
+        text[252] = "just find that little spark in yourself";
+        text[253] = "then everything will surely work out";
+        text[254] = "a few more steps and everything will be great";
+        text[255] = "keep going, believe in yourself";
+        text[256] = "Don't make me laugh";
+        text[257] = "you knew it will never work";
+        text[258] = "might as well burn this whole place down and start from scratch";
+
+
+        // Lore Drop
+        text[260] = "A silent world.";
+        text[261] = "A world where things just stopped.";
+        text[262] = "Not because of some cataclysm.";
+        text[263] = "Not beacause of abandonment.";
+        text[264] = "But because of a damage.";
+        text[265] = "Damage dealt by others";
+        text[266] = "things not considered properly";
+        text[267] = "decisions made by people who won't give second thought a chance";
+        text[268] = "actions made without a feeling of consequence.";
+
+        text[269] = "Welcome.";
+        text[270] = "The world before your eyes is the one, some might say is beyond repair.";
+        text[271] = "The world doomed to fail.";
+        text[272] = "And yet. Here you stand. ";
+        text[273] = "Trying to make things right. Trying to fix this shithole. ";
+        text[274] = "Good Luck. Because i couldn't.";
+
+        text[275] = "So yeah, a world where things just stay.";
+        text[276] = "Just the way they were left.";
+        text[277] = "For someone to pickup. Just for a convenience.";
+        text[278] = "Like a random shiny peeble on a road.";
+        text[279] = "A plant that hasn't been watered for god knows how many days just begging for some rain.";
+        text[280] = "Just trying to survive, trying to be itself.";
+        text[281] = "But there is no rain coming.";
+        text[282] = "Nothing that may correct the course of actions.";
+        text[283] = "All that is left is just waiting for the time to come. ";
+        text[284] = "All the hope you may have had is lost.";
+        text[285] = "Welcome to this world.";
     }
 }
 
@@ -180,4 +213,15 @@ All the hope you may have had is lost.
 Welcome to this world.
 
 
+ */
+
+/*
+Trochê dziwny odg³os chodzenia
+Muzykê momentami wyciszyæ ? Chwilê jakiejœ spokojnej puœciæ ?
+Mo¿liwoœæ startu z dowolnego etapu
+Nie da sie skakaæ i biegaæ na raz
+Podczas siadania nie blokowaæ obrotu
+Dodatkowe deski do mostu
+Wskoczyæ do dziury
+Animacje kruków
  */
