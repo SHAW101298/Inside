@@ -71,7 +71,7 @@ public class IntroSceneScript : MonoBehaviour
         levelBlockade.SetActive(false);
         flameLight.intensity = flameIntensity;
         flameLight.range = flameRange;
-        flameMovement.StartMovement();
+        //flameMovement.StartMovement();
     }
     public void InteractWithLadder()
     {

@@ -87,6 +87,10 @@ public class FlameVisibility : MonoBehaviour
     public void ExitDanger()
     {
         inDanger = false;
+        lightSource.range = neutralRange;
+        lightSource.intensity = neutralIntensity;
+        lightSource.color = neutralColor;
+        dangerLevel = 0;
     }    
     
     void CalculateDangerLevel()
