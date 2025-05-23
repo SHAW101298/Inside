@@ -13,7 +13,7 @@ public class EnterTrigger : MonoBehaviour
     [SerializeField] bool destroyTriggerOnActivation;
     [SerializeField] float destroyDelay;
     [SerializeField] GameObject objectToEnable;
-    [SerializeField] List<GameObject> objectsToDisable;
+    [SerializeField] List<GameObject> objectsToActivate;
 
     float timer;
     bool startTimer;
@@ -23,17 +23,6 @@ public class EnterTrigger : MonoBehaviour
         if(other.CompareTag("Player"))
         {
             enterEvent.Invoke();
-            if(objectToEnable != null)
-            {
-                objectToEnable.SetActive(true);
-            }
-            if(objectsToDisable.Count > 0)
-            {
-                foreach(GameObject obj in objectsToDisable)
-                {
-                    obj.SetActive(false);
-                }
-            }
 
             startTimer = true;
         }
@@ -43,10 +32,6 @@ public class EnterTrigger : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             exitEvent.Invoke();
-            if (objectToEnable != null)
-            {
-                objectToEnable.SetActive(true);
-            }
 
             startTimer = true;
         }
@@ -75,6 +60,27 @@ public class EnterTrigger : MonoBehaviour
                 {
                     Destroy(this);
                 }
+            }
+        }
+    }
+
+    public void EnableObjects()
+    {
+        if (objectsToActivate.Count > 0)
+        {
+            foreach (GameObject obj in objectsToActivate)
+            {
+                obj.SetActive(true);
+            }
+        }
+    }
+    public void DisableObjects()
+    {
+        if (objectsToActivate.Count > 0)
+        {
+            foreach (GameObject obj in objectsToActivate)
+            {
+                obj.SetActive(false);
             }
         }
     }
