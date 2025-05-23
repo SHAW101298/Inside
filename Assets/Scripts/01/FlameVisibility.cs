@@ -12,6 +12,7 @@ public class FlameVisibility : MonoBehaviour
     public float dangerLevel;
     Vector3 followPosition;
     [SerializeField] LayerMask terrainLayer;
+    [SerializeField] float raycastDistance;
     [Header("Neutral")]
     [SerializeField] Color neutralColor;
     [SerializeField] float neutralRange;
@@ -59,7 +60,7 @@ public class FlameVisibility : MonoBehaviour
     {
         RaycastHit hitInfo;
         dir = forwardPosition.position - cameraPosition.position;
-        if(Physics.Raycast(cameraPosition.position, dir, out hitInfo, 2, terrainLayer) == true)
+        if(Physics.Raycast(cameraPosition.position, dir, out hitInfo, raycastDistance, terrainLayer) == true)
         {
             followPosition = hitInfo.point - (dir*0.2f);
         }
