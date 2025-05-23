@@ -13,7 +13,8 @@ public class EnterTrigger : MonoBehaviour
     [SerializeField] bool destroyTriggerOnActivation;
     [SerializeField] float destroyDelay;
     [SerializeField] GameObject objectToEnable;
-    [SerializeField] List<GameObject> objectsToActivate;
+    [SerializeField] List<GameObject> objectsGroup1;
+    [SerializeField] List<GameObject> objectsGroup2;
 
     float timer;
     bool startTimer;
@@ -64,21 +65,41 @@ public class EnterTrigger : MonoBehaviour
         }
     }
 
-    public void EnableObjects()
+    public void EnableGroup1()
     {
-        if (objectsToActivate.Count > 0)
+        if (objectsGroup1.Count > 0)
         {
-            foreach (GameObject obj in objectsToActivate)
+            foreach (GameObject obj in objectsGroup1)
             {
                 obj.SetActive(true);
             }
         }
     }
-    public void DisableObjects()
+    public void EnableGroup2()
     {
-        if (objectsToActivate.Count > 0)
+        if (objectsGroup2.Count > 0)
         {
-            foreach (GameObject obj in objectsToActivate)
+            foreach (GameObject obj in objectsGroup2)
+            {
+                obj.SetActive(true);
+            }
+        }
+    }
+    public void DisableGroup1()
+    {
+        if (objectsGroup1.Count > 0)
+        {
+            foreach (GameObject obj in objectsGroup1)
+            {
+                obj.SetActive(false);
+            }
+        }
+    }
+    public void DisableGroup2()
+    {
+        if (objectsGroup2.Count > 0)
+        {
+            foreach (GameObject obj in objectsGroup2)
             {
                 obj.SetActive(false);
             }
