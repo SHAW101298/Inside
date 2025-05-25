@@ -219,7 +219,7 @@ Welcome to this world.
 /*
 Trochê dziwny odg³os chodzenia
 Muzykê momentami wyciszyæ ? Chwilê jakiejœ spokojnej puœciæ ?
-Mo¿liwoœæ startu z dowolnego etapu
+    Mo¿liwoœæ startu z dowolnego etapu
     Nie da sie skakaæ i biegaæ na raz
     Podczas siadania nie blokowaæ obrotu
     Dodatkowe deski do mostu
