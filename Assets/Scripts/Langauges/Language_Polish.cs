@@ -51,6 +51,7 @@ public class Language_Polish : LanguageBase
         text[21] = "Wróæ do gry";
         text[22] = "Do Menu";
         text[23] = "Jêzyk";
+        text[24] = "Wybierz Rozdzia³";
 
 
         // INTERACTION TEXT

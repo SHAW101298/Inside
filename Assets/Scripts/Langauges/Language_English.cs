@@ -51,6 +51,7 @@ public class Language_English : LanguageBase
         text[21] = "Continue";
         text[22] = "To Menu";
         text[23] = "Language";
+        text[24] = "Choose Chapter";
 
 
         // INTERACTION TEXT
@@ -221,7 +222,7 @@ Muzykê momentami wyciszyæ ? Chwilê jakiejœ spokojnej puœciæ ?
 Mo¿liwoœæ startu z dowolnego etapu
     Nie da sie skakaæ i biegaæ na raz
     Podczas siadania nie blokowaæ obrotu
-Dodatkowe deski do mostu
+    Dodatkowe deski do mostu
 Wskoczyæ do dziury
 Animacje kruków
  */

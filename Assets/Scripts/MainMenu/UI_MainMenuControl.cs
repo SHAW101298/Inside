@@ -10,6 +10,7 @@ public class UI_MainMenuControl : MonoBehaviour
 
     [Header("WINDOWS")]
     [SerializeField] GameObject menuWindow;
+    [SerializeField] GameObject playWindow;
     [SerializeField] GameObject howToPlayWindow;
     [SerializeField] GameObject optionsWindow;
     [SerializeField] GameObject exitWindow;
@@ -51,8 +52,11 @@ public class UI_MainMenuControl : MonoBehaviour
 
     public void BTN_Play()
     {
-        Cursor.visible = false;
-        SceneManager.LoadScene(1);
+        desiredWindow = playWindow;
+        animate = true;
+        animatecurrent = true;
+        //Cursor.visible = false;
+        //SceneManager.LoadScene(1);
     }
     public void BTN_Menu()
     {
@@ -195,6 +199,11 @@ public class UI_MainMenuControl : MonoBehaviour
     public void Slider_ChangeMusicVolume()
     {
         Options.Instance.ChangeMusicVolume(musicSlider.value);
+    }
+    public void BTN_ChooseScene(int x)
+    {
+        Cursor.visible = false;
+        SceneManager.LoadScene(x);
     }
 
 
