@@ -10118,10 +10118,14 @@ MonoBehaviour:
   exitEvent:
     m_PersistentCalls:
       m_Calls: []
-  objectsToDestroy: []
-  destroyObjectOnActivation: 0
+  delayedEnterEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  delayedExitEvent:
+    m_PersistentCalls:
+      m_Calls: []
   destroyTriggerOnActivation: 0
-  destroyDelay: 0
+  delayedEventTriggerTime: 0
   objectToEnable: {fileID: 0}
   objectsGroup1: []
   objectsGroup2: []
@@ -15493,16 +15497,32 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1618564252}
+        m_TargetAssemblyTypeName: EnterTrigger, Assembly-CSharp
+        m_MethodName: DestroyGroup1
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   exitEvent:
     m_PersistentCalls:
       m_Calls: []
-  objectsToDestroy:
-  - {fileID: 1618564251}
-  destroyObjectOnActivation: 1
+  delayedEnterEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  delayedExitEvent:
+    m_PersistentCalls:
+      m_Calls: []
   destroyTriggerOnActivation: 0
-  destroyDelay: 0
+  delayedEventTriggerTime: 0
   objectToEnable: {fileID: 0}
-  objectsGroup1: []
+  objectsGroup1:
+  - {fileID: 1618564251}
   objectsGroup2: []
 --- !u!65 &1618564253
 BoxCollider:
@@ -17158,6 +17178,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1814097302}
     - target: {fileID: 2693384186368039057, guid: b5283154d3ca6924ea5cc295a39f41cb, type: 3}
+      propertyPath: objectsGroup1.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2693384186368039057, guid: b5283154d3ca6924ea5cc295a39f41cb, type: 3}
       propertyPath: destroyObjectOnActivation
       value: 1
       objectReference: {fileID: 0}
@@ -17165,6 +17189,10 @@ PrefabInstance:
       propertyPath: destroyTriggerOnActivation
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2693384186368039057, guid: b5283154d3ca6924ea5cc295a39f41cb, type: 3}
+      propertyPath: objectsGroup1.Array.data[0]
+      value: 
+      objectReference: {fileID: 1814097299}
     - target: {fileID: 2693384186368039057, guid: b5283154d3ca6924ea5cc295a39f41cb, type: 3}
       propertyPath: objectsToDestroy.Array.size
       value: 1
@@ -17182,19 +17210,47 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1814097299}
     - target: {fileID: 2693384186368039057, guid: b5283154d3ca6924ea5cc295a39f41cb, type: 3}
+      propertyPath: interactEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2693384186368039057, guid: b5283154d3ca6924ea5cc295a39f41cb, type: 3}
+      propertyPath: interactEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2693384186368039057, guid: b5283154d3ca6924ea5cc295a39f41cb, type: 3}
       propertyPath: interactEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 66622197}
     - target: {fileID: 2693384186368039057, guid: b5283154d3ca6924ea5cc295a39f41cb, type: 3}
+      propertyPath: interactEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1814097300}
+    - target: {fileID: 2693384186368039057, guid: b5283154d3ca6924ea5cc295a39f41cb, type: 3}
+      propertyPath: interactEvent.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2693384186368039057, guid: b5283154d3ca6924ea5cc295a39f41cb, type: 3}
       propertyPath: interactEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: InteractWithFlame
+      objectReference: {fileID: 0}
+    - target: {fileID: 2693384186368039057, guid: b5283154d3ca6924ea5cc295a39f41cb, type: 3}
+      propertyPath: interactEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: DestroyGroup1
       objectReference: {fileID: 0}
     - target: {fileID: 2693384186368039057, guid: b5283154d3ca6924ea5cc295a39f41cb, type: 3}
       propertyPath: interactEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: IntroSceneScript, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2693384186368039057, guid: b5283154d3ca6924ea5cc295a39f41cb, type: 3}
+      propertyPath: interactEvent.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: InteractTrigger, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2693384186368039057, guid: b5283154d3ca6924ea5cc295a39f41cb, type: 3}
       propertyPath: interactEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2693384186368039057, guid: b5283154d3ca6924ea5cc295a39f41cb, type: 3}
+      propertyPath: interactEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 3949300494022974500, guid: b5283154d3ca6924ea5cc295a39f41cb, type: 3}
@@ -17307,6 +17363,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5665249759228455968, guid: b5283154d3ca6924ea5cc295a39f41cb, type: 3}
   m_PrefabInstance: {fileID: 1814097298}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1814097300 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2693384186368039057, guid: b5283154d3ca6924ea5cc295a39f41cb, type: 3}
+  m_PrefabInstance: {fileID: 1814097298}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1814097302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57a88fdd02116f648b5ce61f8d40fe55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1814097302 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5665249758891850504, guid: b5283154d3ca6924ea5cc295a39f41cb, type: 3}
