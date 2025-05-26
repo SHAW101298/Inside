@@ -46,6 +46,10 @@ public class Crow_AnimationPlayer : MonoBehaviour
     {
         anim.SetTrigger("TakeOff");
     }
+    public void TriggerLanding()
+    {
+        anim.SetTrigger("Land");
+    }
     public void MarkAsFlying()
     {
         anim.SetBool("Flying", true);
