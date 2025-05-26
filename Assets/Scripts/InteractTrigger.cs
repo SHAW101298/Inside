@@ -8,12 +8,8 @@ public class InteractTrigger : MonoBehaviour
     public UnityEvent interactEvent;
     public UnityEvent delayedInteractEvent;
     [Space(10)]
-    [SerializeField] List<GameObject> objectsToDestroy;
-    [SerializeField] bool destroyObjectOnActivation;
     [SerializeField] bool destroyTriggerOnActivation;
-    [SerializeField] float destroyDelay;
-    [SerializeField] GameObject objectToEnable;
-    [SerializeField] GameObject objectToDisable;
+    [SerializeField] float delayInteractTriggerTime;
     [SerializeField] List<GameObject> objectsGroup1;
     [SerializeField] List<GameObject> objectsGroup2;
 
@@ -23,14 +19,11 @@ public class InteractTrigger : MonoBehaviour
     {
         interactEvent.Invoke();
 
-        if (objectToEnable != null)
+        if(destroyTriggerOnActivation == true)
         {
-            objectToEnable.SetActive(true);
+            Destroy(gameObject);
         }
-        if(objectToDisable != null)
-        {
-            objectToDisable.SetActive(false);
-        }
+
 
         startTimer = true;
     }
@@ -40,34 +33,18 @@ public class InteractTrigger : MonoBehaviour
         if(startTimer == true)
         {
             timer += Time.deltaTime;
-            if(timer >= destroyDelay)
+            if(timer >= delayInteractTriggerTime)
             {
                 startTimer = false;
                 timer = 0;
-
-
-                if (destroyObjectOnActivation == true)
-                {
-                    foreach (GameObject obj in objectsToDestroy)
-                    {
-                        Destroy(obj);
-                    }
-                }
-
-                if (destroyTriggerOnActivation == true)
-                {
-                    Destroy(gameObject);
-                }
+                delayedInteractEvent.Invoke();
             }
         }
     }
 
     public void TriggerDestruction()
     {
-        foreach (GameObject obj in objectsToDestroy)
-        {
-            Destroy(obj);
-        }
+        Destroy(gameObject);
     }
 
 
