@@ -7,7 +7,7 @@ public class Crow_AnimationPlayer : MonoBehaviour
 {
     [SerializeField] Crow_Data data;
     [SerializeField] Animator anim;
-
+    [SerializeField] bool playRandomIdleAnimation;
     [SerializeField] float delayBetweenRandomness;
     float timerRandomness;
 
@@ -27,6 +27,11 @@ public class Crow_AnimationPlayer : MonoBehaviour
     }
     void IdleRandomness()
     {
+        if(playRandomIdleAnimation == false)
+        {
+            return;
+        }
+
         timerRandomness += Time.deltaTime;
         if(timerRandomness >= delayBetweenRandomness)
         {
