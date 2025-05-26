@@ -9,6 +9,7 @@ public class InteractTrigger : MonoBehaviour
     public UnityEvent delayedInteractEvent;
     [Space(10)]
     [SerializeField] bool destroyTriggerOnActivation;
+    [SerializeField] bool disableTriggerOnActivation;
     [SerializeField] float delayInteractTriggerTime;
     [SerializeField] List<GameObject> objectsGroup1;
     [SerializeField] List<GameObject> objectsGroup2;
@@ -22,6 +23,10 @@ public class InteractTrigger : MonoBehaviour
         if(destroyTriggerOnActivation == true)
         {
             Destroy(gameObject);
+        }
+        if(disableTriggerOnActivation == true)
+        {
+            gameObject.SetActive(false);
         }
 
 

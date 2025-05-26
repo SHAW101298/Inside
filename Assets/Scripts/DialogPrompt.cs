@@ -13,6 +13,7 @@ public class DialogPrompt : MonoBehaviour
     public UnityEvent EVENT_StartShowing;
     public UnityEvent EVENT_EndShowing;
     public UnityEvent EVENT_EmptyIndexList;
+    public UnityEvent EVENT_AllTextsUsedUp;
 
 
     public void PromptAllDialogFields()
@@ -96,6 +97,13 @@ public class DialogPrompt : MonoBehaviour
     public void RemoveFirstFromUsed()
     {
         usedIndexes.RemoveAt(0);
+
+        if (usedIndexes.Count > 0)
+            return;
+        if (index.Count > 0)
+            return;
+        EVENT_AllTextsUsedUp.Invoke();
+
     }
     public void DestroyIfEmptyIndexes()
     {
@@ -105,7 +113,6 @@ public class DialogPrompt : MonoBehaviour
             return;
             
         Destroy(gameObject);
-
     }
     public void DEBUGSTARTSHOWING()
     {

@@ -161,7 +161,7 @@ public class Language_English : LanguageBase
         text[260] = "A silent world.";
         text[261] = "A world where things just stopped.";
         text[262] = "Not because of some cataclysm.";
-        text[263] = "Not beacause of abandonment.";
+        text[263] = "Not because of abandonment.";
         text[264] = "But because of a damage.";
         text[265] = "Damage dealt by others";
         text[266] = "things not considered properly";
@@ -188,7 +188,7 @@ public class Language_English : LanguageBase
         text[285] = "Welcome to this world.";
 
         // You want some advice ? Ok.
-        // Go and find a hidden spark of hope
+        // Go and find your own spark of hope
         // Who knows, maybe a door to the better future will open itself before you
     }
 }
