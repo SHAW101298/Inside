@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Crow_SoundPlayer : MonoBehaviour
 {
+    [SerializeField] Crow_Data data;
     public AudioSource source;
     public List<AudioClip> clips;
 

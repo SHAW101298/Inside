@@ -477,6 +477,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8234179445802022543}
+  - component: {fileID: 9204019428409015377}
   - component: {fileID: 4924084898784869551}
   - component: {fileID: 3808848163703892348}
   - component: {fileID: 2796457741310614874}
@@ -508,6 +509,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 100.174, z: 0}
+--- !u!114 &9204019428409015377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2797402014218499631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fa2b41aaa44fe445b90e4467800c449, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animationPlayer: {fileID: 2796457741310614874}
+  soundPlayer: {fileID: 4924084898784869551}
 --- !u!114 &4924084898784869551
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -520,6 +535,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f41ad6deda707f943ab3efcbd3f54866, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  data: {fileID: 9204019428409015377}
   source: {fileID: 2676590944389385354}
   clips:
   - {fileID: 8300000, guid: 9ef5412c97e37ff44a11c4905acc3ec1, type: 3}
@@ -554,6 +570,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89408bcd00c2644469cadffa1ac82592, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  data: {fileID: 9204019428409015377}
   anim: {fileID: 8917543096130133768}
   delayBetweenRandomness: 20
 --- !u!95 &8917543096130133768

@@ -1,13 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Crow_AnimationPlayer : MonoBehaviour
 {
+    [SerializeField] Crow_Data data;
     [SerializeField] Animator anim;
 
     [SerializeField] float delayBetweenRandomness;
     float timerRandomness;
+
+    public UnityEvent FinishedTakeOff;
 
 
     // Start is called before the first frame update
@@ -44,5 +48,10 @@ public class Crow_AnimationPlayer : MonoBehaviour
     public void MarkAsIdle()
     {
         anim.SetBool("Flying", false);
+    }
+
+    public void ANIM_FinishedTakeOff()
+    {
+        FinishedTakeOff.Invoke();
     }
 }
