@@ -12,6 +12,7 @@ public class Crow_AnimationPlayer : MonoBehaviour
     float timerRandomness;
 
     public UnityEvent FinishedTakeOff;
+    public UnityEvent FinishedLanding;
 
 
     // Start is called before the first frame update
@@ -62,5 +63,9 @@ public class Crow_AnimationPlayer : MonoBehaviour
     public void ANIM_FinishedTakeOff()
     {
         FinishedTakeOff.Invoke();
+    }
+    public void ANIM_FinishedLanding()
+    {
+        FinishedLanding.Invoke();
     }
 }
