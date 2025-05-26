@@ -186,10 +186,14 @@ public class Language_English : LanguageBase
         text[283] = "All that is left is just waiting for the time to come. ";
         text[284] = "All the hope you may have had is lost.";
         text[285] = "Welcome to this world.";
+
+        // You want some advice ? Ok.
+        // Go and find a hidden spark of hope
+        // Who knows, maybe a door to the better future will open itself before you
     }
 }
 
-/* Crow Lines
+/* Lore Lines
 
 A world where things just stopped. Not because of some cataclysm. Not beacause of abandonment.
 But because of a damage.
@@ -213,6 +217,18 @@ All that is left is just waiting for the time to come.
 All the hope you may have had is lost.
 Welcome to this world.
 
+
+ */
+/* Unfiltered Crows Lines
+    
+pathetic       
+you thought it will be that easy ?
+just find that little spark in yourself
+then everything will surely work out
+a few more steps and everything will be great
+keep going, believe in yourself
+Don't make me laugh
+you knew it will never work
 
  */
 
