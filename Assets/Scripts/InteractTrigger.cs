@@ -6,6 +6,7 @@ using UnityEngine.Events;
 public class InteractTrigger : MonoBehaviour
 {
     public UnityEvent interactEvent;
+    public UnityEvent delayedInteractEvent;
     [Space(10)]
     [SerializeField] List<GameObject> objectsToDestroy;
     [SerializeField] bool destroyObjectOnActivation;
@@ -13,6 +14,8 @@ public class InteractTrigger : MonoBehaviour
     [SerializeField] float destroyDelay;
     [SerializeField] GameObject objectToEnable;
     [SerializeField] GameObject objectToDisable;
+    [SerializeField] List<GameObject> objectsGroup1;
+    [SerializeField] List<GameObject> objectsGroup2;
 
     float timer;
     bool startTimer;
@@ -65,5 +68,63 @@ public class InteractTrigger : MonoBehaviour
         {
             Destroy(obj);
         }
+    }
+
+
+    public void EnableGroup1()
+    {
+        if (objectsGroup1.Count > 0)
+        {
+            foreach (GameObject obj in objectsGroup1)
+            {
+                obj.SetActive(true);
+            }
+        }
+    }
+    public void EnableGroup2()
+    {
+        if (objectsGroup2.Count > 0)
+        {
+            foreach (GameObject obj in objectsGroup2)
+            {
+                obj.SetActive(true);
+            }
+        }
+    }
+    public void DisableGroup1()
+    {
+        if (objectsGroup1.Count > 0)
+        {
+            foreach (GameObject obj in objectsGroup1)
+            {
+                obj.SetActive(false);
+            }
+        }
+    }
+    public void DisableGroup2()
+    {
+        if (objectsGroup2.Count > 0)
+        {
+            foreach (GameObject obj in objectsGroup2)
+            {
+                obj.SetActive(false);
+            }
+        }
+    }
+    public void DestroyGroup1()
+    {
+        foreach (GameObject obj in objectsGroup1)
+        {
+            Destroy(obj);
+        }
+        objectsGroup1.Clear();
+    }
+    public void DestroyGroup2()
+    {
+        foreach (GameObject obj in objectsGroup2)
+        {
+            Destroy(obj);
+        }
+        objectsGroup2.Clear();
     }
 }

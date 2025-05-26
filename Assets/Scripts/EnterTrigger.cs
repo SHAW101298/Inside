@@ -5,19 +5,22 @@ using UnityEngine.Events;
 
 public class EnterTrigger : MonoBehaviour
 {
+    [Header("EVENTS")]
     public UnityEvent enterEvent;
     public UnityEvent exitEvent;
-    [Space(10)]
-    [SerializeField] List<GameObject> objectsToDestroy;
-    [SerializeField] bool destroyObjectOnActivation;
+    public UnityEvent delayedEnterEvent;
+    public UnityEvent delayedExitEvent;
+    [Header("Data")]
     [SerializeField] bool destroyTriggerOnActivation;
-    [SerializeField] float destroyDelay;
+    [SerializeField] float delayedEventTriggerTime;
     [SerializeField] GameObject objectToEnable;
     [SerializeField] List<GameObject> objectsGroup1;
     [SerializeField] List<GameObject> objectsGroup2;
 
-    float timer;
-    bool startTimer;
+    float enterTimer;
+    float exitTimer;
+    bool startEnterTimer;
+    bool startExitTimer;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -25,7 +28,12 @@ public class EnterTrigger : MonoBehaviour
         {
             enterEvent.Invoke();
 
-            startTimer = true;
+            if (destroyTriggerOnActivation == true)
+            {
+                Destroy(this);
+            }
+
+            startEnterTimer = true;
         }
     }
     private void OnTriggerExit(Collider other)
@@ -34,33 +42,30 @@ public class EnterTrigger : MonoBehaviour
         {
             exitEvent.Invoke();
 
-            startTimer = true;
+            startExitTimer = true;
         }
     }
 
     private void Update()
     {
-        if (startTimer == true)
+        if (startEnterTimer == true)
         {
-            timer += Time.deltaTime;
-            if (timer >= destroyDelay)
+            enterTimer += Time.deltaTime;
+            if (enterTimer >= delayedEventTriggerTime)
             {
-                startTimer = false;
-                timer = 0;
-
-
-                if (destroyObjectOnActivation == true)
-                {
-                    foreach (GameObject obj in objectsToDestroy)
-                    {
-                        Destroy(obj);
-                    }
-                }
-
-                if (destroyTriggerOnActivation == true)
-                {
-                    Destroy(this);
-                }
+                startEnterTimer = false;
+                enterTimer = 0;
+                delayedEnterEvent.Invoke();
+            }
+        }
+        if (startExitTimer == true)
+        {
+            exitTimer += Time.deltaTime;
+            if (exitTimer >= delayedEventTriggerTime)
+            {
+                startExitTimer = false;
+                exitTimer = 0;
+                delayedExitEvent.Invoke();
             }
         }
     }
@@ -104,5 +109,21 @@ public class EnterTrigger : MonoBehaviour
                 obj.SetActive(false);
             }
         }
+    }
+    public void DestroyGroup1()
+    {
+        foreach (GameObject obj in objectsGroup1)
+        {
+            Destroy(obj);
+        }
+        objectsGroup1.Clear();
+    }
+    public void DestroyGroup2()
+    {
+        foreach (GameObject obj in objectsGroup2)
+        {
+            Destroy(obj);
+        }
+        objectsGroup2.Clear();
     }
 }

@@ -51,12 +51,17 @@ MonoBehaviour:
   exitEvent:
     m_PersistentCalls:
       m_Calls: []
-  objectsToDestroy: []
-  destroyObjectOnActivation: 0
+  delayedEnterEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  delayedExitEvent:
+    m_PersistentCalls:
+      m_Calls: []
   destroyTriggerOnActivation: 0
-  destroyDelay: 0
+  delayedEventTriggerTime: 1
   objectToEnable: {fileID: 0}
-  objectsToActivate: []
+  objectsGroup1: []
+  objectsGroup2: []
 --- !u!65 &6248831043082032564
 BoxCollider:
   m_ObjectHideFlags: 0
