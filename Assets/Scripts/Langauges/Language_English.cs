@@ -162,7 +162,7 @@ public class Language_English : LanguageBase
         text[261] = "A world where things just stopped.";
         text[262] = "Not because of some cataclysm.";
         text[263] = "Not because of abandonment.";
-        text[264] = "But because of a damage.";
+        text[264] = "But because of the damage.";
         text[265] = "Damage dealt by others";
         text[266] = "things not considered properly";
         text[267] = "decisions made by people who won't give second thought a chance";
@@ -187,6 +187,14 @@ public class Language_English : LanguageBase
         text[284] = "All the hope you may have had is lost.";
         text[285] = "Welcome to this world.";
 
+        text[286] = "You want some advice ?";
+        text[287] = "Go and find your own spark of hope.";
+        text[288] = "Who knows, maybe a door to the better future will open itself before you.";
+
+        text[290] = "Ahhh, I can already tell that you found what was missing.";
+        text[291] = "Now you can hear them clearly, right ?";
+        text[292] = "Ohhh, how i missed the silence.";
+        text[293] = "Now you're in charge.";
         // You want some advice ? Ok.
         // Go and find your own spark of hope
         // Who knows, maybe a door to the better future will open itself before you

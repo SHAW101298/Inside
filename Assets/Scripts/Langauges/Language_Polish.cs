@@ -189,5 +189,14 @@ public class Language_Polish : LanguageBase
         text[283] = "Jedyne co zosta³o, to czekaæ na to co nieuniknione.";
         text[284] = "Ca³a nadzieja, któr¹ mog³eœ mieæ, przepad³a";
         text[285] = "Witaj w œwiecie.";
+
+        text[286] = "Chcesz jakiœ wskazówek ?";
+        text[287] = "IdŸ znajdŸ swoj¹ w³asn¹ iskierkê nadzieii";
+        text[288] = "Kto wie, mo¿e drzwi do lepszego jutra stan¹ dla ciebie otworem.";
+
+        text[290] = "Ahhh, Ju¿ czujê, ¿e znalaz³eœ to czego brakowa³o.";
+        text[291] = "Teraz jesteœ w stanie je us³yszeæ, prawda ?";
+        text[292] = "Ohhh, jak brakowa³o mi tej ciszy.";
+        text[293] = "Tak¿e od teraz, to ty tu rz¹dzisz.";
     }
 }
