@@ -125,7 +125,7 @@ public class Language_English : LanguageBase
         text[166] = "last . . . request";
         text[167] = "erase . . . existence";
         text[168] = "Find the road";
-        text[169] = "please, no more hope";
+        text[169] = "please, leave";
         text[170] = "It feels like I'm the last one";
         text[171] = "The collapse is inevitable";
 

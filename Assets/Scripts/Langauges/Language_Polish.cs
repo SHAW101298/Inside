@@ -127,7 +127,7 @@ public class Language_Polish : LanguageBase
         text[166] = "ostatnia . . . proœba";
         text[167] = "zniszcz . . . egzystencje";
         text[168] = "ZnajdŸ drogê";
-        text[169] = "prosze, nie dawaj nadziei";
+        text[169] = "prosze, odejdŸ";
         text[170] = "Czujê, jakbym by³ ostatni";
         text[171] = "Upadek jest nieunikniony";
 
