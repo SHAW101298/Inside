@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class LevelScript_02 : MonoBehaviour
 {
+    [Header("References")]
     [SerializeField] GameObject missingPiece;
     [SerializeField] GameObject emptySpot;
     [SerializeField] GameObject emptySpotReadyForPiece;
@@ -17,6 +18,7 @@ public class LevelScript_02 : MonoBehaviour
 
     [Header("Checkers")]
     [SerializeField] float fogAmountOnRoad;
+    [SerializeField] float fogAmountNormal;
     [SerializeField] Animator doorAnimator;
 
     public bool foundMissingPiece;
@@ -28,7 +30,7 @@ public class LevelScript_02 : MonoBehaviour
         foundMissingPiece = true;
         emptySpotReadyForPiece.SetActive(true);
         emptySpot.SetActive(false);
-        RenderSettings.fogEndDistance = 80;
+        RenderSettings.fogEndDistance = fogAmountNormal;
 
         roadCrowsBefore.SetActive(false);
         roadCrowsAfter.SetActive(true);
@@ -59,6 +61,10 @@ public class LevelScript_02 : MonoBehaviour
     {
         Debug.Log("Enter The road");
         RenderSettings.fogEndDistance = fogAmountOnRoad;
+    }
+    public void ExitTheRoad()
+    {
+        RenderSettings.fogEndDistance = fogAmountNormal;
     }
 
 }

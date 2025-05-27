@@ -47,6 +47,5 @@ public class CollectorAudioSources : MonoBehaviour
 
             musicAudioSources[i].volume = newMusicVolume;
         }
-
     }
 }
