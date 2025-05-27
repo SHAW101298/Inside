@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,6 +13,7 @@ public class LevelScript_02 : MonoBehaviour
 
     [SerializeField] GameObject roadCrowsBefore;
     [SerializeField] GameObject roadCrowsAfter;
+    [SerializeField] AudioSource musicAudioSource;
     [Header("After placing Missing Piece")]
     [SerializeField] List<GameObject> objectsBeforePlacingPiece;
     [SerializeField] List<GameObject> objectsAfterPlacingPiece;
@@ -23,6 +25,10 @@ public class LevelScript_02 : MonoBehaviour
 
     public bool foundMissingPiece;
     public bool placedMissingPiece;
+    public bool roadTimerFade;
+    public bool roadTimerShine;
+    public float roadTimer;
+    public float roadTimerAmount;
 
     public void FoundMissingPiece()
     {
@@ -60,11 +66,50 @@ public class LevelScript_02 : MonoBehaviour
     public void EnterTheRoad()
     {
         Debug.Log("Enter The road");
-        RenderSettings.fogEndDistance = fogAmountOnRoad;
+        roadTimerFade = true;
+        roadTimerShine = false;
     }
     public void ExitTheRoad()
     {
-        RenderSettings.fogEndDistance = fogAmountNormal;
+        Debug.Log("Exit The road");
+        roadTimerShine = true;
+        roadTimerFade = false;
     }
 
+    private void Update()
+    {
+        if(roadTimerFade == true)
+        {
+            roadTimer += Time.deltaTime;
+            float percent = roadTimer / roadTimerAmount;
+            float fogDist = Mathf.Lerp(fogAmountNormal, fogAmountOnRoad, percent);
+            RenderSettings.fogEndDistance = fogDist;
+            musicAudioSource.volume = Mathf.Lerp(0.5f, 0, percent);
+
+            if(roadTimer >= roadTimerAmount)
+            {
+                roadTimerFade = false;
+                roadTimer = roadTimerAmount;
+                RenderSettings.fogEndDistance = fogAmountOnRoad;
+                musicAudioSource.volume = 0;
+            }
+        }
+
+        if(roadTimerShine == true)
+        {
+            roadTimer -= Time.deltaTime;
+            float percent = roadTimer / roadTimerAmount;
+            float fogDist = Mathf.Lerp(fogAmountNormal, fogAmountOnRoad, percent);
+            RenderSettings.fogEndDistance = fogDist;
+            musicAudioSource.volume = Mathf.Lerp(0.5f, 0, percent);
+
+            if (roadTimer <= 0)
+            {
+                roadTimerShine = false;
+                roadTimer = 0;
+                RenderSettings.fogEndDistance = fogAmountNormal;
+                musicAudioSource.volume = 0.5f;
+            }
+        }
+    }
 }

@@ -248,5 +248,5 @@ Muzykê momentami wyciszyæ ? Chwilê jakiejœ spokojnej puœciæ ?
     Podczas siadania nie blokowaæ obrotu
     Dodatkowe deski do mostu
 Wskoczyæ do dziury
-Animacje kruków
+    Animacje kruków
  */
