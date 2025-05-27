@@ -195,9 +195,17 @@ public class Language_English : LanguageBase
         text[291] = "Now you can hear them clearly, right ?";
         text[292] = "Ohhh, how i missed the silence.";
         text[293] = "Now you're in charge.";
-        // You want some advice ? Ok.
-        // Go and find your own spark of hope
-        // Who knows, maybe a door to the better future will open itself before you
+        text[294] = "Thanks for freeing me from this burden.";
+
+
+        // Insulting Crow 2
+        text[300] = "What are you even trying to accomplish ?";
+        text[301] = "Give Up.";
+        text[302] = "              . . .              ";
+        text[303] = "Can't you understand what i just said ?";
+        text[304] = "GIVE UP";
+        text[304] = "Do me a favour and end this facade.";
+        text[305] = "";
     }
 }
 

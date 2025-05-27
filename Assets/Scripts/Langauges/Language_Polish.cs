@@ -198,5 +198,6 @@ public class Language_Polish : LanguageBase
         text[291] = "Teraz jesteœ w stanie je us³yszeæ, prawda ?";
         text[292] = "Ohhh, jak brakowa³o mi tej ciszy.";
         text[293] = "Tak¿e od teraz, to ty tu rz¹dzisz.";
+        text[294] = "Dziêki za zdjêcie problemu ze mnie.";
     }
 }
