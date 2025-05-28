@@ -25,7 +25,7 @@ public class Language_Polish : LanguageBase
         }
 
         
-        text = new string[350];
+        text = new string[400];
         // UI TEXT
         text[0] = "Rozpocznij Grê";
         text[1] = "Jak graæ";
@@ -237,13 +237,12 @@ public class Language_Polish : LanguageBase
         // Insulting Crow 6
         text[340] = "HahAhAhaHAha";
         text[341] = "Dobry ¿art !";
-        text[342] = "Where did such a clown like you appear from ?";
         text[342] = "Sk¹d siê wzi¹³ taki klaun jak ty, co ?";
         text[343] = "Œmietnisko ?";
         text[344] = "Bo niby gdzie indziej znaleŸæ kogoœ tak bezu¿ytecznego ?";
         text[345] = "Ju¿ nie mogê siê doczekaæ aby zobaczyæ jak siê ³amiesz.";
         text[346] = "Walcz o swoje ¿ycie !";
         text[347] = "No dawaj, Dla zabawy !";
-        text[348] = "chcê widzieæ twój p³acz";
+        text[348] = "chcê widzieæ twój rozpacz";
     }
 }

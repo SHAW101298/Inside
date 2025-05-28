@@ -25,7 +25,7 @@ public class Language_English : LanguageBase
         }
 
 
-        text = new string[350];
+        text = new string[400];
         // UI TEXT
         text[0] = "Start Game";
         text[1] = "How To Play";
@@ -285,11 +285,17 @@ you knew it will never work
 
 /*
 Trochê dziwny odg³os chodzenia
-Muzykê momentami wyciszyæ ? Chwilê jakiejœ spokojnej puœciæ ?
+Chwilê jakiejœ spokojnej muzyki puœciæ ?
+Wskoczyæ do dziury
+    Muzykê momentami wyciszyæ ? 
     Mo¿liwoœæ startu z dowolnego etapu
     Nie da sie skakaæ i biegaæ na raz
     Podczas siadania nie blokowaæ obrotu
     Dodatkowe deski do mostu
-Wskoczyæ do dziury
     Animacje kruków
+ */
+/*
+Pod stert¹ martwych kruków, bêdzie le¿a³o ostrze.
+Kruki odlatuj¹ce gdy zbli¿a siê gracz, i przylatuj¹ce gdy siê oddali.
+Kruki co jakiœ czas lataj¹ce po niebie
  */
