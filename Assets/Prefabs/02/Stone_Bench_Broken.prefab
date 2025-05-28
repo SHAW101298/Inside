@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2851826697139251881}
   - component: {fileID: 33581338122853987}
   - component: {fileID: 1708794645838267108}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Stone_Bench_Broken
   m_TagString: Untagged
   m_Icon: {fileID: 0}

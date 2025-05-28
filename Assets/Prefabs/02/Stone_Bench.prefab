@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 2140150467487566268}
   - component: {fileID: 4204005571825466742}
   - component: {fileID: 3284871711071614752}
-  m_Layer: 0
+  - component: {fileID: 6615101865000099167}
+  m_Layer: 6
   m_Name: Stone_Bench
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -123,6 +124,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!65 &6615101865000099167
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2402490884466990243}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.32137468, y: 0.43819636, z: 1.8227786}
+  m_Center: {x: -0.0021127611, y: 0.20622453, z: 0.00023764372}
 --- !u!1 &3284871710105822735
 GameObject:
   m_ObjectHideFlags: 0
