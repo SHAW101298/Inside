@@ -207,8 +207,8 @@ public class Language_Polish : LanguageBase
         text[302] = ".  .  .                           ";
         text[303] = "Nie rozumiesz co siê do ciebie mówi ?";
         text[304] = "PODDAJ SIÊ";
-        text[304] = "Zrób mi przysz³ugê i skoñcz ju¿ z t¹ fasad¹.";
-        text[305] = "Nikt nawet nie chce, abyœ robi³ te rzeczy.";
+        text[305] = "Zrób mi przysz³ugê i skoñcz ju¿ z t¹ fasad¹.";
+        text[306] = "Nikt nawet nie chce, abyœ robi³ te rzeczy.";
 
         // Insulting Crow 3
         text[310] = "Widzisz tamt¹ stertê zw³ok ?";
@@ -232,5 +232,17 @@ public class Language_Polish : LanguageBase
         text[332] = "Nigdy nic dobrze nie zrobi³eœ.";
         text[333] = "Wiêc czemu myœlisz, ¿e teraz mia³oby byæ inaczej ?";
         text[334] = "Nigdy ci siê nie uda. Z tym mo¿esz mi wierzyæ.";
+
+        // Insulting Crow 6
+        text[340] = "HahAhAhaHAha";
+        text[341] = "Dobry ¿art !";
+        text[342] = "Where did such a clown like you appear from ?";
+        text[342] = "Sk¹d siê wzi¹³ taki klaun jak ty, co ?";
+        text[343] = "Œmietnisko ?";
+        text[344] = "Bo niby gdzie indziej znaleŸæ kogoœ tak bezu¿ytecznego ?";
+        text[345] = "Ju¿ nie mogê siê doczekaæ aby zobaczyæ jak siê ³amiesz.";
+        text[346] = "Walcz o swoje ¿ycie !";
+        text[347] = "No dawaj, Dla zabawy !";
+        text[348] = "chcê widzieæ twój p³acz";
     }
 }

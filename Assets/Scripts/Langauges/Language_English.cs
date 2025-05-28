@@ -198,14 +198,14 @@ public class Language_English : LanguageBase
         text[294] = "Thanks for freeing me from this burden.";
 
 
-        // Insulting Crow 2
+        // Insulting Crow 2  APPLIED
         text[300] = "What are you even trying to accomplish here ?";
         text[301] = "Give Up.";
         text[302] = ".  .  .                           ";
         text[303] = "Can't you understand what i just said ?";
         text[304] = "GIVE UP";
-        text[304] = "Do me a favour and end this facade.";
-        text[305] = "No one wants you doing any of these things.";
+        text[305] = "Do me a favour and end this facade.";
+        text[306] = "No one wants you doing any of these things.";
 
         // Insulting Crow 3  APPLIED 
         text[310] = "Do you see that pile of corpses over there ?";
@@ -214,7 +214,7 @@ public class Language_English : LanguageBase
         text[313] = "You were never meant to exist anyway";
         text[314] = "Accept that.";
 
-        // Insulting Crow 4
+        // Insulting Crow 4  APPLIED
         text[320] = "Whom do we have here ?";
         text[321] = "The long awaited savior!";
         text[322] = "The one destinied to make things right!";
@@ -229,8 +229,17 @@ public class Language_English : LanguageBase
         text[332] = "You never did anything right.";
         text[333] = "What makes you think, you can do it now ?";
         text[334] = "You will never make it. Trust me on that.";
-        // Good for nothing
-        // Delusions
+
+        // Insulting Crow 6  APPLIED
+        text[340] = "HahAhAhaHAha";
+        text[341] = "Thats a good one!";
+        text[342] = "Where did such a clown like you appear from ?";
+        text[343] = "Garbagepile ?";
+        text[344] = "Where else such good for nothing being would be ?";
+        text[345] = "I can't wait to see you break.";
+        text[346] = "Fight for your life !";
+        text[347] = "Come on, For fun !";
+        text[348] = "let's see you cry";
     }
 }
 
