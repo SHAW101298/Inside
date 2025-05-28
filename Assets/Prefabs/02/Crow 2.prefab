@@ -343,6 +343,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7764553216021862938}
+  - component: {fileID: 721496239825807592}
   - component: {fileID: 6760272162129203258}
   - component: {fileID: 3269382084736288233}
   - component: {fileID: 5748966096551877485}
@@ -372,6 +373,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 71.2, z: 0}
+--- !u!114 &721496239825807592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4564060505508354746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fa2b41aaa44fe445b90e4467800c449, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animationPlayer: {fileID: 5748966096551877485}
+  soundPlayer: {fileID: 6760272162129203258}
 --- !u!114 &6760272162129203258
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -384,6 +399,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f41ad6deda707f943ab3efcbd3f54866, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  data: {fileID: 721496239825807592}
   source: {fileID: 4368979679073853471}
   clips:
   - {fileID: 8300000, guid: 9ef5412c97e37ff44a11c4905acc3ec1, type: 3}
@@ -418,8 +434,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89408bcd00c2644469cadffa1ac82592, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  data: {fileID: 721496239825807592}
   anim: {fileID: 2011158911758505361}
+  playRandomIdleAnimation: 0
   delayBetweenRandomness: 0
+  FinishedTakeOff:
+    m_PersistentCalls:
+      m_Calls: []
+  FinishedLanding:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!95 &2011158911758505361
 Animator:
   serializedVersion: 5
