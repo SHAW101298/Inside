@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using System.Linq;
 
 public class ScreenWord : MonoBehaviour
 {
@@ -41,6 +42,26 @@ public class ScreenWord : MonoBehaviour
     public void SetText(string tekst)
     {
         textField.text = tekst;
+    }
+    public void SetText(string tekst,float dangerLevel)
+    {
+        string modifiedText = "";
+        float rand;
+        float upperChance = dangerLevel / 2;
+        for (int i = 0; i < tekst.Length; i++)
+        {
+            rand = Random.Range(0, 1f);
+            if (rand <= upperChance)
+            {
+                modifiedText += System.Char.ToUpper(tekst[i]);
+            }
+            else
+            {
+                modifiedText += tekst[i];
+            }
+        }
+        textField.text = modifiedText;
+        timeToLive -= dangerLevel * 1.5f;
     }
     public bool CheckIfExpired()
     {

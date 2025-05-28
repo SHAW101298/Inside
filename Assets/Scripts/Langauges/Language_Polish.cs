@@ -93,7 +93,7 @@ public class Language_Polish : LanguageBase
         text[106] = "pomocy";
         text[107] = "s³aby";
         text[108] = "nie odchodŸ";
-        text[109] = "PODDAJ SIÊ";
+        text[109] = "poddaj siê";
         text[110] = "bojê siê";
         text[111] = "nie mogê ju¿ tego znieœæ";
         text[112] = "przepadnij";
@@ -101,7 +101,7 @@ public class Language_Polish : LanguageBase
         text[114] = "zbyt zimno";
         text[115] = "to za du¿o";
         text[116] = "bez nadziei";
-        text[117] = "SZYBCIEJ";
+        text[117] = "szybciej";
         text[118] = "zostañ";
         text[119] = "przegrasz";
 

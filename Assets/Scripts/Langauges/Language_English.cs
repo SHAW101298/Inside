@@ -92,7 +92,7 @@ public class Language_English : LanguageBase
         text[106] = "help";
         text[107] = "weak";
         text[108] = "don't go";
-        text[109] = "GIVE UP";
+        text[109] = "give up";
         text[110] = "i'm afraid";
         text[111] = "can't take it anymore";
         text[112] = "get lost";
@@ -100,7 +100,7 @@ public class Language_English : LanguageBase
         text[114] = "so cold";
         text[115] = "it's too much";
         text[116] = "no hope";
-        text[117] = "FASTER";
+        text[117] = "faster";
         text[118] = "stay";
         text[119] = "lose";
 

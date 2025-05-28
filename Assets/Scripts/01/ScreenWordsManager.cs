@@ -50,7 +50,7 @@ public class ScreenWordsManager : MonoBehaviour
 
             // Set Random Text
             int randIndex = Random.Range(indexMin, indexMax);
-            tempWord.SetText(LanguageManager.Instance.GetText(randIndex));
+            tempWord.SetText(LanguageManager.Instance.GetText(randIndex), flame.dangerLevel);
             // Set Random Scale
             float randScale = Random.Range(-scaleVariation, scaleVariation);
             Vector3 newScale = Vector3.one * randScale;
