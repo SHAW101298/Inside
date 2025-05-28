@@ -27,6 +27,10 @@ public class Options : MonoBehaviour
     [SerializeField] float soundVolume;
     [SerializeField] ENUM_Language language;
 
+    private void Start()
+    {
+        Application.targetFrameRate = 60;
+    }
 
     public void ChangeVolumes(float music, float sound)
     {
