@@ -152,7 +152,7 @@ MonoBehaviour:
   timeToLive: 3
   lifeTimer: 0
   wordIsExpired: 0
-  erraticMovementAmount: 1.5
+  erraticMovementAmount: 600
   normalMovemntValue: 0
   transparencyTimer: 0
   transparencyCeilingTime: 1.5

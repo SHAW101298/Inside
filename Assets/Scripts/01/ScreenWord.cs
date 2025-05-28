@@ -62,6 +62,7 @@ public class ScreenWord : MonoBehaviour
         }
         textField.text = modifiedText;
         timeToLive -= dangerLevel * 1.5f;
+        erraticMovementAmount *= dangerLevel;
     }
     public bool CheckIfExpired()
     {
@@ -72,7 +73,7 @@ public class ScreenWord : MonoBehaviour
         Vector3 mov = new Vector3();
         mov.x = Random.Range(-erraticMovementAmount, erraticMovementAmount);
         mov.y = Random.Range(-erraticMovementAmount, erraticMovementAmount);
-        gameObject.transform.localPosition += mov;
+        gameObject.transform.localPosition += mov * Time.deltaTime;
     }
     void WordTransparency()
     {
