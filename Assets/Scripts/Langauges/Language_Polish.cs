@@ -220,7 +220,7 @@ public class Language_Polish : LanguageBase
         // Insulting Crow 4
         text[320] = "A kogó¿ to my tu mamy ?";
         text[321] = "D³ugo wyczekiwany zbawca!";
-        text[322] = "Ten, który przywróci sprawy na odpowieni tor";
+        text[322] = "Ten, który przywróci sprawy na odpowieni tor!";
         text[323] = "Pora¿ka a nie zbawca";
         text[324] = "Spójrz na siebie";
         text[325] = "Ktoœ taki jak ty, dokonuj¹cy czegoœ ?";

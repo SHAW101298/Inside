@@ -145,7 +145,7 @@ public class Language_English : LanguageBase
         text[214] = "something is missing here";
 
 
-        // Insulting Crow 1
+        // Insulting Crow 1  APPLIED
         text[250] = "pathetic";
         text[251] = "you thought it will be that easy ?";
         text[252] = "just find that little spark in yourself";
@@ -207,9 +207,9 @@ public class Language_English : LanguageBase
         text[304] = "Do me a favour and end this facade.";
         text[305] = "No one wants you doing any of these things.";
 
-        // Insulting Crow 3
+        // Insulting Crow 3  APPLIED 
         text[310] = "Do you see that pile of corpses over there ?";
-        text[311] = "Why won't you lie there and just die";
+        text[311] = "Why won't you just lie there and die";
         text[312] = "No one's gonna notice";
         text[313] = "You were never meant to exist anyway";
         text[314] = "Accept that.";
@@ -217,13 +217,13 @@ public class Language_English : LanguageBase
         // Insulting Crow 4
         text[320] = "Whom do we have here ?";
         text[321] = "The long awaited savior!";
-        text[322] = "The one destinied to make things right";
+        text[322] = "The one destinied to make things right!";
         text[323] = "savior my ass";
         text[324] = "Look at yourself";
         text[325] = "Someone like you, accomplishing anything ?";
         text[326] = "What a joke";
 
-        // Insulting Crow 5
+        // Insulting Crow 5  APPLIED
         text[330] = "Are you done ?";
         text[331] = "Stop being delusional";
         text[332] = "You never did anything right.";

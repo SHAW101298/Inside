@@ -15,12 +15,6 @@ public class Crow_AnimationPlayer : MonoBehaviour
     public UnityEvent FinishedLanding;
 
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
@@ -58,6 +52,20 @@ public class Crow_AnimationPlayer : MonoBehaviour
     public void MarkAsIdle()
     {
         anim.SetBool("Flying", false);
+    }
+    public void TriggerIdleRandom()
+    {
+        timerRandomness = 0;
+        int randInt = Random.Range(0, 2);
+        float rand = randInt;
+        anim.SetFloat("IdleBlend", rand);
+        anim.SetTrigger("IdleRandom");
+    }
+    public void TriggerIdleRandom(float blend)
+    {
+        timerRandomness = 0;
+        anim.SetFloat("IdleBlend", blend);
+        anim.SetTrigger("IdleRandom");
     }
 
     public void ANIM_FinishedTakeOff()
