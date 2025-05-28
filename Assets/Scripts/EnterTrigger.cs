@@ -30,7 +30,7 @@ public class EnterTrigger : MonoBehaviour
 
             if (destroyTriggerOnActivation == true)
             {
-                Destroy(this);
+                Destroy(gameObject);
             }
 
             startEnterTimer = true;
