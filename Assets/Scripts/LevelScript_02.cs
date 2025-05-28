@@ -10,17 +10,16 @@ public class LevelScript_02 : MonoBehaviour
     [SerializeField] GameObject emptySpot;
     [SerializeField] GameObject emptySpotReadyForPiece;
     [SerializeField] GameObject filledSpot;
-
-    [SerializeField] GameObject roadCrowsBefore;
-    [SerializeField] GameObject roadCrowsAfter;
     [SerializeField] AudioSource musicAudioSource;
     [Header("After placing Missing Piece")]
     [SerializeField] List<GameObject> objectsBeforePlacingPiece;
     [SerializeField] List<GameObject> objectsAfterPlacingPiece;
-
-    [Header("Checkers")]
     [SerializeField] Animator doorAnimator;
-
+    [Header("Character Slow Change")]
+    [SerializeField] SkinnedMeshRenderer characterMeshRenderer;
+    [SerializeField] Material transparentMaterial;
+    [SerializeField] float currentAlpha;
+    [Header("Checkers")]
     public bool foundMissingPiece;
     public bool placedMissingPiece;
 
@@ -31,6 +30,7 @@ public class LevelScript_02 : MonoBehaviour
         foundMissingPiece = true;
         emptySpotReadyForPiece.SetActive(true);
         emptySpot.SetActive(false);
+        characterMeshRenderer.material = transparentMaterial;
     }
 
     public void PlacedMissingPiece()
@@ -54,10 +54,11 @@ public class LevelScript_02 : MonoBehaviour
         doorAnimator.SetTrigger("Open");
     }
 
-
-
-    private void Update()
+    public void ModifyCharacterTransparency(float amount)
     {
-
+        currentAlpha -= amount;
+        Color color = transparentMaterial.color;
+        color.a = currentAlpha;
+        transparentMaterial.color = color;
     }
 }

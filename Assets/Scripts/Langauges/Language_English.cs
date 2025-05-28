@@ -297,5 +297,5 @@ Wskoczyæ do dziury
 /*
 Pod stert¹ martwych kruków, bêdzie le¿a³o ostrze.
 Kruki odlatuj¹ce gdy zbli¿a siê gracz, i przylatuj¹ce gdy siê oddali.
-Kruki co jakiœ czas lataj¹ce po niebie
+    Kruki co jakiœ czas lataj¹ce po niebie
  */
