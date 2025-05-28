@@ -25,7 +25,7 @@ public class Language_Polish : LanguageBase
         }
 
         
-        text = new string[300];
+        text = new string[350];
         // UI TEXT
         text[0] = "Rozpocznij Grê";
         text[1] = "Jak graæ";
@@ -199,5 +199,38 @@ public class Language_Polish : LanguageBase
         text[292] = "Ohhh, jak brakowa³o mi tej ciszy.";
         text[293] = "Tak¿e od teraz, to ty tu rz¹dzisz.";
         text[294] = "Dziêki za zdjêcie problemu ze mnie.";
+
+
+        // Insulting Crow 2
+        text[300] = "Co ty wogóle próbujesz tutaj osi¹gn¹æ ?";
+        text[301] = "Poddaj siê,";
+        text[302] = ".  .  .                           ";
+        text[303] = "Nie rozumiesz co siê do ciebie mówi ?";
+        text[304] = "PODDAJ SIÊ";
+        text[304] = "Zrób mi przysz³ugê i skoñcz ju¿ z t¹ fasad¹.";
+        text[305] = "Nikt nawet nie chce, abyœ robi³ te rzeczy.";
+
+        // Insulting Crow 3
+        text[310] = "Widzisz tamt¹ stertê zw³ok ?";
+        text[311] = "Co powiesz na to, abyœ siê w niej po³o¿y³ i poprostu zdech³ ?";
+        text[312] = "Nikt i tak przecie¿ nie zauwa¿y";
+        text[313] = "Nigdy nie by³o przeznaczone ci istnieæ i tak.";
+        text[314] = "Zaakceptuj to.";
+
+        // Insulting Crow 4
+        text[320] = "A kogó¿ to my tu mamy ?";
+        text[321] = "D³ugo wyczekiwany zbawca!";
+        text[322] = "Ten, który przywróci sprawy na odpowieni tor";
+        text[323] = "Pora¿ka a nie zbawca";
+        text[324] = "Spójrz na siebie";
+        text[325] = "Ktoœ taki jak ty, dokonuj¹cy czegoœ ?";
+        text[326] = "To chyba jakiœ ¿art";
+
+        // Insulting Crow 5
+        text[330] = "I jak, skoñczy³eœ ju¿ ?";
+        text[331] = "Skoñcz z tymi z³udzeniami.";
+        text[332] = "Nigdy nic dobrze nie zrobi³eœ.";
+        text[333] = "Wiêc czemu myœlisz, ¿e teraz mia³oby byæ inaczej ?";
+        text[334] = "Nigdy ci siê nie uda. Z tym mo¿esz mi wierzyæ.";
     }
 }

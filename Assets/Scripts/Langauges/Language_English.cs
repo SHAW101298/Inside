@@ -25,7 +25,7 @@ public class Language_English : LanguageBase
         }
 
 
-        text = new string[300];
+        text = new string[350];
         // UI TEXT
         text[0] = "Start Game";
         text[1] = "How To Play";
@@ -199,13 +199,38 @@ public class Language_English : LanguageBase
 
 
         // Insulting Crow 2
-        text[300] = "What are you even trying to accomplish ?";
+        text[300] = "What are you even trying to accomplish here ?";
         text[301] = "Give Up.";
-        text[302] = "              . . .              ";
+        text[302] = ".  .  .                           ";
         text[303] = "Can't you understand what i just said ?";
         text[304] = "GIVE UP";
         text[304] = "Do me a favour and end this facade.";
-        text[305] = "";
+        text[305] = "No one wants you doing any of these things.";
+
+        // Insulting Crow 3
+        text[310] = "Do you see that pile of corpses over there ?";
+        text[311] = "Why won't you lie there and just die";
+        text[312] = "No one's gonna notice";
+        text[313] = "You were never meant to exist anyway";
+        text[314] = "Accept that.";
+
+        // Insulting Crow 4
+        text[320] = "Whom do we have here ?";
+        text[321] = "The long awaited savior!";
+        text[322] = "The one destinied to make things right";
+        text[323] = "savior my ass";
+        text[324] = "Look at yourself";
+        text[325] = "Someone like you, accomplishing anything ?";
+        text[326] = "What a joke";
+
+        // Insulting Crow 5
+        text[330] = "Are you done ?";
+        text[331] = "Stop being delusional";
+        text[332] = "You never did anything right.";
+        text[333] = "What makes you think, you can do it now ?";
+        text[334] = "You will never make it. Trust me on that.";
+        // Good for nothing
+        // Delusions
     }
 }
 
