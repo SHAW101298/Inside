@@ -145,6 +145,7 @@ public class Language_Polish : LanguageBase
         text[212] = "Trzymane razem ale przez co ?";
         text[213] = "Jakby . . . czas stan¹³ w miejscu";
         text[214] = "wygl¹da jakby czegoœ tu brakowa³o";
+        text[215] = "Drzwi do lepszej przysz³oœci";
 
 
         // Insulting Crow 1

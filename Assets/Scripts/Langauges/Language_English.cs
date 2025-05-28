@@ -143,6 +143,7 @@ public class Language_English : LanguageBase
         text[212] = "Held together by what exactly ?";
         text[213] = "As if . . . the time stopped";
         text[214] = "something is missing here";
+        text[215] = "A door to better future";
 
 
         // Insulting Crow 1  APPLIED
