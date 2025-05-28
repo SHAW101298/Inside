@@ -38,9 +38,9 @@ public class FlyingBirdsController : MonoBehaviour
     public void ActivateRandomBird()
     {
         int rand = Random.Range(0, inactiveBirds.Count);
-        Debug.Log("rand = " + rand);
+        //Debug.Log("rand = " + rand);
         BirdFlyingOverhead bird = inactiveBirds[rand];
-        Debug.Log("bird = " + bird.gameObject.name);
+        //Debug.Log("bird = " + bird.gameObject.name);
 
         activeBirds.Add(bird);
         inactiveBirds.Remove(bird);
