@@ -47,6 +47,10 @@ public class InteractTrigger : MonoBehaviour
         }
     }
 
+    public void TriggerInteraction()
+    {
+        Interact();
+    }
     public void TriggerDestruction()
     {
         Destroy(gameObject);
