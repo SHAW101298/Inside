@@ -168,7 +168,7 @@ public class Language_Polish : LanguageBase
         text[264] = "Ale z powodu szkód.";
         text[265] = "Szkód wyrz¹dzonych przez innych";
         text[266] = "nieprzemyœlane decyzje";
-        text[267] = "decyzje podjête przez osoby, którym nie chcia³o siê myœleæ";
+        text[267] = "decyzje podjête przez osoby, którym nie chcia³o siê zastanowiæ drugi raz";
         text[268] = "dzia³ania podejmowane bez poczucia konsekwencji.";
 
         text[269] = "Witaj.";
@@ -181,10 +181,10 @@ public class Language_Polish : LanguageBase
 
         text[275] = "A wiêc tak, œwiat w którym wszystko zastyg³o.";
         text[276] = "Dok³adnie w takim stanie, w jakim je zostawiono.";;
-        text[277] = "Dla kogoœ do podniesienia, tylko z wygody";
+        text[277] = "Dla kogoœ do podniesienia, tylko z zaciekawienia.";
         text[278] = "Jak przypadkowy b³yszcz¹cy kamyk na drodze";
         text[280] = "Jak roœlina, która nie by³a podlewana przez bóg wie jak d³ugi czas, b³agaj¹ca o trochê deszczu.";
-        text[280] = "Tylko próboj¹ca przetrwaæ, staæ siê w pe³ni tym czym jest.";
+        text[280] = "Tylko próbuj¹ca przetrwaæ, staæ siê w pe³ni tym czym jest.";
         text[281] = "Ale deszcz nigdy nie nadejdzie.";
         text[282] = "Nic, co mog³oby poprawiæ kurs zdarzeñ.";
         text[283] = "Jedyne co zosta³o, to czekaæ na to co nieuniknione.";
@@ -200,6 +200,10 @@ public class Language_Polish : LanguageBase
         text[292] = "Ohhh, jak brakowa³o mi tej ciszy.";
         text[293] = "Tak¿e od teraz, to ty tu rz¹dzisz.";
         text[294] = "Dziêki za zdjêcie problemu ze mnie.";
+
+        text[295] = "Jeœli nie wiesz co teraz zrobiæ, mogê spróbowaæ ci jakoœ pomóc.";
+        text[296] = "Na pocz¹tek . . . Próbowa³eœ chocia¿ wys³uchaæ te myœli ?";
+        text[297] = "Kto wie, mo¿e dowiesz siê czegoœ wartoœciowego ?";
 
 
         // Insulting Crow 2
@@ -244,5 +248,12 @@ public class Language_Polish : LanguageBase
         text[346] = "Walcz o swoje ¿ycie !";
         text[347] = "No dawaj, Dla zabawy !";
         text[348] = "chcê widzieæ twój rozpacz";
+
+
+        // Past Self continued Talk
+        text[350] = "I jak ? Dowiedzia³eœ siê czegoœ u¿ytecznego ?";
+        text[351] = "Podejrzewam, ¿e niezbyt.";
+        text[352] = "Wiesz co siê mówi. Nie bêdzie zmian jeœli otoczenie pozostanie to samo.";
+        text[353] = "Wydaje mi siê, ¿e znajdziesz dla tego jakieœ zastosowanie."; // Hands a knife to the player
     }
 }

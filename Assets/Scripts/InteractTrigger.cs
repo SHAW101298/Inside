@@ -113,4 +113,14 @@ public class InteractTrigger : MonoBehaviour
         }
         objectsGroup2.Clear();
     }
+    public void EnableRandomObjectInGroup1()
+    {
+        int rand = Random.Range(0, objectsGroup1.Count);
+        objectsGroup1[rand].SetActive(true);
+    }
+    public void EnableRandomObjectInGroup2()
+    {
+        int rand = Random.Range(0, objectsGroup2.Count);
+        objectsGroup2[rand].SetActive(true);
+    }
 }

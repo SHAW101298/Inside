@@ -198,6 +198,9 @@ public class Language_English : LanguageBase
         text[293] = "Now you're in charge.";
         text[294] = "Thanks for freeing me from this burden.";
 
+        text[295] = "If you have no idea what to do, i can try to help you.";
+        text[296] = "First . . . Have you tried listening to these thoughts at least ?";
+        text[297] = "Who knows, maybe you will learn something useful ?";
 
         // Insulting Crow 2  APPLIED
         text[300] = "What are you even trying to accomplish here ?";
@@ -241,6 +244,16 @@ public class Language_English : LanguageBase
         text[346] = "Fight for your life !";
         text[347] = "Come on, For fun !";
         text[348] = "let's see you cry";
+
+
+        // Past Self continued Talk
+        text[350] = "And ? Did you learn anything of value ?";
+        text[351] = "Not much i guess";
+        text[352] = "You know what they say. There is no change when the environment stays the same.";
+        text[353] = "You may find some use for this i think."; // Hands a knife to the player
+
+        // After First Crow Killed
+        text[355] = "";
     }
 }
 
@@ -298,4 +311,7 @@ Wskoczyæ do dziury
 Pod stert¹ martwych kruków, bêdzie le¿a³o ostrze.
 Kruki odlatuj¹ce gdy zbli¿a siê gracz, i przylatuj¹ce gdy siê oddali.
     Kruki co jakiœ czas lataj¹ce po niebie
+Mo¿liwoœæ przewijania dialogu ?
+Mo¿liwoœæ wybierania wypowiadanych dialogów ?
+Zabijanie kruków zmniejsza widocznoœæ Past Self i zmniejsza Skalê czêœci cia³a do 0
  */
