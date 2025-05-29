@@ -25,7 +25,7 @@ public class Language_English : LanguageBase
         }
 
 
-        text = new string[400];
+        text = new string[450];
         // UI TEXT
         text[0] = "Start Game";
         text[1] = "How To Play";

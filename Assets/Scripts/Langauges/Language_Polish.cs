@@ -25,7 +25,7 @@ public class Language_Polish : LanguageBase
         }
 
         
-        text = new string[400];
+        text = new string[450];
         // UI TEXT
         text[0] = "Rozpocznij Grê";
         text[1] = "Jak graæ";
