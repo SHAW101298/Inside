@@ -5,6 +5,7 @@ using UnityEngine;
 public class TESTING : MonoBehaviour
 {
     public bool runAOO;
+    public bool runBOO;
     [Header("AOO")]
     public Transform mainSphere;
     public Transform secondSphere;
@@ -13,11 +14,15 @@ public class TESTING : MonoBehaviour
     public Vector3 rotationSpeed;
     public float movementSpeed;
     public float currentDistance;
+    [Header("BOO")]
+    public List<GameObject> bones;
+    public int lastBone;
 
 
     void Update()
     {
         AOO();
+        BOO();
     }
     void AOO()
     {
@@ -32,6 +37,15 @@ public class TESTING : MonoBehaviour
                 currentDestination.z = Random.Range(-25, 25);
             }
             secondSphere.position = Vector3.MoveTowards(secondSphere.position, currentDestination, movementSpeed);
+        }
+    }
+    void BOO()
+    {
+        if(runBOO == true)
+        {
+            runBOO = false;
+            bones[lastBone].transform.localScale = Vector3.zero;
+            lastBone++;
         }
     }
 }

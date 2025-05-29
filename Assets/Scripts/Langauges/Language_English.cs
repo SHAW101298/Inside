@@ -245,15 +245,28 @@ public class Language_English : LanguageBase
         text[347] = "Come on, For fun !";
         text[348] = "let's see you cry";
 
+        // Insulting Crow 7 APPLIED
+        text[350] = "Took you long enough to get here.";
+        text[351] = "Why are you always this slow ?";
+        text[352] = "Is it because you're tired ?";
+        text[353] = "Get a grip on your self.";
+        text[354] = "You bring nothing but shame.";
+        text[355] = "You deserve all these things. Thats your well earned reward.";
+        text[356] = "Come on. Enjoy yourself. What's stopping you ?";
+
 
         // Past Self continued Talk
-        text[350] = "And ? Did you learn anything of value ?";
-        text[351] = "Not much i guess";
-        text[352] = "You know what they say. There is no change when the environment stays the same.";
-        text[353] = "You may find some use for this i think."; // Hands a knife to the player
+        text[400] = "And ? Did you learn anything of value ?";
+        text[401] = "Not much i guess";
+        text[402] = "You know what they say.";
+        text[403] = "There will be no change when the environment stays the same.";
+        text[404] = "              ";
+        text[405] = "You may find some use for this i think."; // Hands a knife to the player
 
         // After First Crow Killed
-        text[355] = "";
+        text[410] = "Do what you have to.";
+        // After 3 Crows Killed
+        text[411] = "I hope its worth it.";
     }
 }
 

@@ -232,7 +232,7 @@ public class Language_Polish : LanguageBase
         text[326] = "To chyba jakiœ ¿art";
 
         // Insulting Crow 5
-        text[330] = "I jak, skoñczy³eœ ju¿ ?";
+        text[330] = "I jak, uda³o siê ?";
         text[331] = "Skoñcz z tymi z³udzeniami.";
         text[332] = "Nigdy nic dobrze nie zrobi³eœ.";
         text[333] = "Wiêc czemu myœlisz, ¿e teraz mia³oby byæ inaczej ?";
@@ -249,11 +249,26 @@ public class Language_Polish : LanguageBase
         text[347] = "No dawaj, Dla zabawy !";
         text[348] = "chcê widzieæ twój rozpacz";
 
+        // Insulting Crow 7
+        text[350] = "Trochê ci zaje³o dotarcie tutaj.";
+        text[351] = "Ile¿ to mo¿na na ciebie zawsze czekaæ ?";
+        text[352] = "Mo¿e to przez to, ¿e jesteœ zmêczony ?";
+        text[353] = "Ogarnij siê.";
+        text[354] = "Nie przynosisz nic, oprócz wstydu.";
+        text[355] = "Nale¿y ci siê to wszystko. To twoja ciê¿ko wypracowana nagroda.";
+        text[356] = "No dawaj. Ciesz siê. Coœ ciê powstrzymuje ?";
 
         // Past Self continued Talk
-        text[350] = "I jak ? Dowiedzia³eœ siê czegoœ u¿ytecznego ?";
-        text[351] = "Podejrzewam, ¿e niezbyt.";
-        text[352] = "Wiesz co siê mówi. Nie bêdzie zmian jeœli otoczenie pozostanie to samo.";
-        text[353] = "Wydaje mi siê, ¿e znajdziesz dla tego jakieœ zastosowanie."; // Hands a knife to the player
+        text[400] = "I jak ? Dowiedzia³eœ siê czegoœ u¿ytecznego ?";
+        text[401] = "Podejrzewam, ¿e niezbyt.";
+        text[402] = "Wiesz co siê mówi.";
+        text[403] = "Nie bêdzie zmian jeœli otoczenie pozostanie to samo.";
+        text[404] = "              ";
+        text[405] = "Wydaje mi siê, ¿e znajdziesz dla tego jakieœ zastosowanie."; // Hands a knife to the player
+
+        // After First Crow Killed
+        text[410] = "Rób co musisz.";
+        // After 3 Crows Killed
+        text[411] = "Mam nadziejê, ¿e warto.";
     }
 }
