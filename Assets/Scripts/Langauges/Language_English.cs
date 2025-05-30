@@ -256,7 +256,7 @@ public class Language_English : LanguageBase
         text[355] = "You deserve all these things. Thats your well earned reward.";
         text[356] = "Come on. Enjoy yourself. What's stopping you ?";
 
-        // Insulting Crow 8
+        // Insulting Crow 8  APPLIED
         text[360] = "You know what i always think when i look at you ?";
         text[361] = "That you're just a defect.";
         text[362] = "Defect on history pages. Meant to be erased.";
@@ -264,13 +264,13 @@ public class Language_English : LanguageBase
         text[364] = "Like a careless pencil mark in a sketchbook.";
         text[365] = "Keep that in your tiny mind.";
 
-        // Insulting Crow 9
+        // Insulting Crow 9  APPLIED
         text[370] = "Do you intend to put any effort into that ?";
         text[371] = "All i see is you just walking around";
         text[372] = "As if you dont know what to do at all";
         text[373] = "How dumb can you really be ?";
 
-        // Insulting Crow 10
+        // Insulting Crow 10  APPLIED
         text[380] = "You need to start accepting facts.";
         text[381] = "You chose all of this.";
         text[382] = "Every event is the result of your own inability";
@@ -283,7 +283,7 @@ public class Language_English : LanguageBase
         text[401] = "Not much i guess";
         text[402] = "You know what they say.";
         text[403] = "There will be no change when the environment stays the same.";
-        text[404] = "              ";
+        text[404] = "      ";
         text[405] = "You may find some use for this i think."; // Hands a knife to the player
 
         // After First Crow Killed
@@ -333,6 +333,8 @@ you knew it will never work
 
 defekt na kartach skazany na wymazanie.
 
+self fulfilling prophecy
+
  */
 
 /*
@@ -353,4 +355,5 @@ Kruki odlatuj¹ce gdy zbli¿a siê gracz, i przylatuj¹ce gdy siê oddali.
 Mo¿liwoœæ przewijania dialogu ?
 Mo¿liwoœæ wybierania wypowiadanych dialogów ?
 Zabijanie kruków zmniejsza widocznoœæ Past Self i zmniejsza Skalê czêœci cia³a do 0
+Zwyk³a rozmowa z krukami niszczy cia³o past self
  */

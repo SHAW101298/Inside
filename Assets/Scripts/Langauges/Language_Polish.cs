@@ -287,7 +287,7 @@ public class Language_Polish : LanguageBase
         text[401] = "Podejrzewam, ¿e niezbyt.";
         text[402] = "Wiesz co siê mówi.";
         text[403] = "Nie bêdzie zmian jeœli otoczenie pozostanie to samo.";
-        text[404] = "              ";
+        text[404] = "      ";
         text[405] = "Wydaje mi siê, ¿e znajdziesz dla tego jakieœ zastosowanie."; // Hands a knife to the player
 
         // After First Crow Killed
