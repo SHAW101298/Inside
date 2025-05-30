@@ -441,7 +441,7 @@ MonoBehaviour:
   anim: {fileID: 2011158911758505361}
   startStuckInTheAir: 0
   playRandomIdleAnimation: 0
-  delayBetweenRandomness: 0
+  delayBetweenRandomness: 20
   FinishedTakeOff:
     m_PersistentCalls:
       m_Calls: []
