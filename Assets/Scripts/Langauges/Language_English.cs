@@ -264,6 +264,19 @@ public class Language_English : LanguageBase
         text[364] = "Like a careless pencil mark in a sketchbook.";
         text[365] = "Keep that in your tiny mind.";
 
+        // Insulting Crow 9
+        text[370] = "Do you intend to put any effort into that ?";
+        text[371] = "All i see is you just walking around";
+        text[372] = "As if you dont know what to do at all";
+        text[373] = "How dumb can you really be ?";
+
+        // Insulting Crow 10
+        text[380] = "You need to start accepting facts.";
+        text[381] = "You chose all of this.";
+        text[382] = "Every event is the result of your own inability";
+        text[383] = "And you even chose to escape from the problems.";
+        text[384] = "Bury them down and forget.";
+        text[385] = "How classic of you.";
 
         // Past Self continued Talk
         text[400] = "And ? Did you learn anything of value ?";

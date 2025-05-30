@@ -268,6 +268,19 @@ public class Language_Polish : LanguageBase
         text[364] = "Jak niedba³a linia zrobiona o³ówkiem w szkicowniku.";
         text[365] = "Pamiêtaj o tym w tej swojej maleñkiej g³ówce.";
 
+        // Insulting Crow 9
+        text[370] = "Masz zamiar w³o¿yæ w to jaki kolwiek wysi³ek ?";
+        text[371] = "Jedyne co widzê, to jak krêcisz siê woko³o.";
+        text[372] = "Jakbyœ w zupe³noœci nie wiedzia³ co zrobiæ.";
+        text[373] = "Jak bardzo g³upi mo¿esz byæ ?";
+
+        // Insulting Crow 10
+        text[380] = "Musisz zacz¹æ akceptowaæ fakty.";
+        text[381] = "Sameu wybra³eœ to wszystko";
+        text[382] = "Ka¿de wydarzenie to rezultat twojej nieudolnoœci.";
+        text[383] = "Zdecydowa³eœ nawet uciec od wszystkich problemów.";
+        text[384] = "Zakopaæ je i zapomnieæ o nich.";
+        text[385] = "Czego innego mo¿na by³o siê po tobie spodziewaæ.";
 
         // Past Self continued Talk
         text[400] = "I jak ? Dowiedzia³eœ siê czegoœ u¿ytecznego ?";
