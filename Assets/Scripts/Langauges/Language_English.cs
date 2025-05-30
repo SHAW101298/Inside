@@ -349,12 +349,11 @@ Wskoczyæ do dziury
     Animacje kruków
  */
 /*
-Pod stert¹ martwych kruków, bêdzie le¿a³o ostrze.
 Kruki odlatuj¹ce gdy zbli¿a siê gracz, i przylatuj¹ce gdy siê oddali.
     Kruki co jakiœ czas lataj¹ce po niebie
 Mo¿liwoœæ przewijania dialogu ?
 Mo¿liwoœæ wybierania wypowiadanych dialogów ?
 Zabijanie kruków zmniejsza widocznoœæ Past Self i zmniejsza Skalê czêœci cia³a do 0
-Zwyk³a rozmowa z krukami niszczy cia³o past self
-collider na k³odzie
+    Zwyk³a rozmowa z krukami niszczy cia³o past self
+    collider na k³odzie
  */
