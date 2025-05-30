@@ -6,6 +6,17 @@ public class TESTING : MonoBehaviour
 {
     public bool runAOO;
     public bool runBOO;
+    [Header("Game Progression")]
+    public InteractTrigger missingPiece;
+    public InteractTrigger waitingAltar;
+    public InteractTrigger fakeDoor;
+    public InteractTrigger knifeGiving;
+    [Space(15)]
+    public bool triggerPickingMissingPiece;
+    public bool triggerPlacingMissingPiece;
+    public bool triggerOpeningFakeDoor;
+    public bool setAmountOfTalkedCrows;
+    public bool triggerTakingKnife;
     [Header("AOO")]
     public Transform mainSphere;
     public Transform secondSphere;
@@ -21,6 +32,7 @@ public class TESTING : MonoBehaviour
 
     void Update()
     {
+        GameProgression();
         AOO();
         BOO();
     }
@@ -46,6 +58,37 @@ public class TESTING : MonoBehaviour
             runBOO = false;
             bones[lastBone].transform.localScale = Vector3.zero;
             lastBone++;
+        }
+    }
+
+    void GameProgression()
+    {
+        if(triggerPickingMissingPiece == true)
+        {
+            triggerPickingMissingPiece = false;
+            missingPiece.TriggerInteraction();
+        }
+        if(triggerPlacingMissingPiece == true)
+        {
+            triggerPlacingMissingPiece = false;
+            waitingAltar.TriggerInteraction();
+        }     
+        if(triggerOpeningFakeDoor == true)
+        {
+            triggerOpeningFakeDoor = false;
+            fakeDoor.TriggerInteraction();
+        }
+        if (setAmountOfTalkedCrows == true)
+        {
+            setAmountOfTalkedCrows = false;
+            LevelScript_02.Instance.TalkedWithInsultingCrow();
+            LevelScript_02.Instance.TalkedWithInsultingCrow();
+            LevelScript_02.Instance.TalkedWithInsultingCrow();
+        }
+        if (triggerTakingKnife == true)
+        {
+            triggerTakingKnife = false;
+            knifeGiving.TriggerInteraction();
         }
     }
 }
