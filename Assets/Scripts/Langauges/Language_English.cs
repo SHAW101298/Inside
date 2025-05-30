@@ -65,6 +65,7 @@ public class Language_English : LanguageBase
         text[57] = "Stand Up  ( E )";
         text[58] = "Open  ( E )";
         text[59] = "Close  ( E )";
+        text[60] = "Kill  ( E )";
 
 
         // LEVEL NAMES
@@ -144,6 +145,7 @@ public class Language_English : LanguageBase
         text[213] = "As if . . . the time stopped";
         text[214] = "something is missing here";
         text[215] = "A door to better future";
+        text[216] = "Take - Dagger  ( E )";
 
 
         // Insulting Crow 1  APPLIED
@@ -254,6 +256,14 @@ public class Language_English : LanguageBase
         text[355] = "You deserve all these things. Thats your well earned reward.";
         text[356] = "Come on. Enjoy yourself. What's stopping you ?";
 
+        // Insulting Crow 8
+        text[360] = "You know what i always think when i look at you ?";
+        text[361] = "That you're just a defect.";
+        text[362] = "Defect on history pages. Meant to be erased.";
+        text[363] = "Forgotten";
+        text[364] = "Like a careless pencil mark in a sketchbook.";
+        text[365] = "Keep that in your tiny mind.";
+
 
         // Past Self continued Talk
         text[400] = "And ? Did you learn anything of value ?";
@@ -306,6 +316,9 @@ a few more steps and everything will be great
 keep going, believe in yourself
 Don't make me laugh
 you knew it will never work
+
+
+defekt na kartach skazany na wymazanie.
 
  */
 

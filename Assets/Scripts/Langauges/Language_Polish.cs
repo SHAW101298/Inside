@@ -65,6 +65,7 @@ public class Language_Polish : LanguageBase
         text[57] = "Wstañ  ( E )";
         text[58] = "Otwórz  ( E )";
         text[59] = "Zamknij  ( E )";
+        text[60] = "Zabij  ( E )";
 
 
         // LEVEL NAMES
@@ -146,6 +147,7 @@ public class Language_Polish : LanguageBase
         text[213] = "Jakby . . . czas stan¹³ w miejscu";
         text[214] = "wygl¹da jakby czegoœ tu brakowa³o";
         text[215] = "Drzwi do lepszej przysz³oœci";
+        text[216] = "WeŸ - Sztylet  ( E )";
 
 
         // Insulting Crow 1
@@ -257,6 +259,15 @@ public class Language_Polish : LanguageBase
         text[354] = "Nie przynosisz nic, oprócz wstydu.";
         text[355] = "Nale¿y ci siê to wszystko. To twoja ciê¿ko wypracowana nagroda.";
         text[356] = "No dawaj. Ciesz siê. Coœ ciê powstrzymuje ?";
+
+        // Insulting Crow 8
+        text[360] = "Wiesz co mi zawsze przychodzi na myœl, gdy na ciebie patrzê ?";
+        text[361] = "¯e jesteœ zwyczajnie defektem";
+        text[362] = "B³êdem na kartach historii. Skazanym na usuniêcie.";
+        text[363] = "Zapomnienie";
+        text[364] = "Jak niedba³a linia zrobiona o³ówkiem w szkicowniku.";
+        text[365] = "Pamiêtaj o tym w tej swojej maleñkiej g³ówce.";
+
 
         // Past Self continued Talk
         text[400] = "I jak ? Dowiedzia³eœ siê czegoœ u¿ytecznego ?";
