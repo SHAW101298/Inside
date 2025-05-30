@@ -77,7 +77,11 @@ public class LevelScript_02 : MonoBehaviour
 
         if(insultCrowsTalkedTo >= 3)
         {
-            knifeAllowingInteraction.SetActive(true);
+            if(knifeAllowingInteraction != null)
+            {
+                knifeAllowingInteraction.SetActive(true);
+
+            }
         }
     }
     public void KilledACrow()
