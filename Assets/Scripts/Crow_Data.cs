@@ -11,12 +11,11 @@ public class Crow_Data : MonoBehaviour
 
     public void TriggerDestruction()
     {
-        LevelScript_02.Instance.KilledACrow();
         Destroy(gameObject);
     }
     public void KillCrow()
     {
-        LevelScript_02.
+        LevelScript_02.Instance.KilledACrow();
         Destroy(gameObject);
     }
     public void EnableKillTrigger()
