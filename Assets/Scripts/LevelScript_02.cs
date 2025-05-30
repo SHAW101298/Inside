@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class LevelScript_02 : MonoBehaviour
 {
+    public static LevelScript_02 Instance;
     [Header("References")]
     [SerializeField] GameObject missingPiece;
     [SerializeField] GameObject emptySpot;
@@ -16,21 +17,30 @@ public class LevelScript_02 : MonoBehaviour
     [SerializeField] List<GameObject> objectsAfterPlacingPiece;
     [SerializeField] Animator doorAnimator;
     [Header("Character Slow Change")]
+    [SerializeField] GameObject knifeAllowingInteraction;
+    [SerializeField] int insultCrowsTalkedTo;
     [SerializeField] SkinnedMeshRenderer characterMeshRenderer;
     [SerializeField] Material transparentMaterial;
     [SerializeField] float currentAlpha;
+    [SerializeField] List<GameObject> bodyBones;
+    [SerializeField] List<GameObject> crowKillInteractions;
+    int lastBone;
+
     [Header("Checkers")]
     public bool foundMissingPiece;
     public bool placedMissingPiece;
 
-
+    private void Awake()
+    {
+        Instance = this;
+    }
     public void FoundMissingPiece()
     {
         missingPiece.SetActive(false);
         foundMissingPiece = true;
         emptySpotReadyForPiece.SetActive(true);
         emptySpot.SetActive(false);
-        characterMeshRenderer.material = transparentMaterial;
+        //characterMeshRenderer.material = transparentMaterial;
     }
 
     public void PlacedMissingPiece()
@@ -60,5 +70,26 @@ public class LevelScript_02 : MonoBehaviour
         Color color = transparentMaterial.color;
         color.a = currentAlpha;
         transparentMaterial.color = color;
+    }
+    public void TalkedWithInsultingCrow()
+    {
+        insultCrowsTalkedTo++;
+
+        if(insultCrowsTalkedTo >= 3)
+        {
+            knifeAllowingInteraction.SetActive(true);
+        }
+    }
+    public void KilledACrow()
+    {
+        bodyBones[lastBone].transform.localScale = Vector3.zero;
+        lastBone++;
+    }
+    public void EnableCrowKillInteractions()
+    {
+        foreach(GameObject obj in crowKillInteractions)
+        {
+            obj.SetActive(true);
+        }
     }
 }
