@@ -69,7 +69,6 @@ public class EnterTrigger : MonoBehaviour
             }
         }
     }
-
     public void EnableGroup1()
     {
         if (objectsGroup1.Count > 0)
@@ -125,5 +124,27 @@ public class EnterTrigger : MonoBehaviour
             Destroy(obj);
         }
         objectsGroup2.Clear();
+    }
+    public void TriggerDestruction()
+    {
+        Destroy(gameObject);
+    }
+    public void TriggerEnter()
+    {
+        Debug.Log("Trigger Enter");
+        enterEvent.Invoke();
+
+        if (destroyTriggerOnActivation == true)
+        {
+            Destroy(gameObject);
+        }
+
+        startEnterTimer = true;
+    }
+    public void TriggerExit()
+    {
+        exitEvent.Invoke();
+
+        startExitTimer = true;
     }
 }
