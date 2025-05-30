@@ -11,12 +11,15 @@ public class TESTING : MonoBehaviour
     public InteractTrigger waitingAltar;
     public InteractTrigger fakeDoor;
     public InteractTrigger knifeGiving;
+    public GameObject firstMeetingInteraction;
+    public GameObject secondMeetingInteraction;
     [Space(15)]
     public bool triggerPickingMissingPiece;
     public bool triggerPlacingMissingPiece;
     public bool triggerOpeningFakeDoor;
     public bool setAmountOfTalkedCrows;
     public bool triggerTakingKnife;
+    public bool disableLoreDrop;
     [Header("AOO")]
     public Transform mainSphere;
     public Transform secondSphere;
@@ -89,6 +92,12 @@ public class TESTING : MonoBehaviour
         {
             triggerTakingKnife = false;
             knifeGiving.TriggerInteraction();
+        }
+        if(disableLoreDrop == true)
+        {
+            disableLoreDrop = false;
+            firstMeetingInteraction.gameObject.SetActive(false);
+            secondMeetingInteraction.gameObject.SetActive(true);
         }
     }
 }
