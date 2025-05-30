@@ -7,6 +7,7 @@ public class Crow_AnimationPlayer : MonoBehaviour
 {
     [SerializeField] Crow_Data data;
     [SerializeField] Animator anim;
+    [SerializeField] bool startStuckInTheAir;
     [SerializeField] bool playRandomIdleAnimation;
     [SerializeField] float delayBetweenRandomness;
     float timerRandomness;
@@ -14,6 +15,14 @@ public class Crow_AnimationPlayer : MonoBehaviour
     public UnityEvent FinishedTakeOff;
     public UnityEvent FinishedLanding;
 
+    private void Start()
+    {
+        if (startStuckInTheAir == true)
+        {
+            TriggerTakeOff();
+        }
+
+    }
 
     // Update is called once per frame
     void Update()
