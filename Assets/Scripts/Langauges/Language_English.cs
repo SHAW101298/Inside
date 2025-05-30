@@ -201,7 +201,7 @@ public class Language_English : LanguageBase
         text[294] = "Thanks for freeing me from this burden.";
 
         text[295] = "If you have no idea what to do, i can try to help you.";
-        text[296] = "First . . . Have you tried listening to these thoughts at least ?";
+        text[296] = "First . . . Have you tried listening to them at least ?";
         text[297] = "Who knows, maybe you will learn something useful ?";
 
         // Insulting Crow 2  APPLIED
@@ -356,4 +356,5 @@ Mo¿liwoœæ przewijania dialogu ?
 Mo¿liwoœæ wybierania wypowiadanych dialogów ?
 Zabijanie kruków zmniejsza widocznoœæ Past Self i zmniejsza Skalê czêœci cia³a do 0
 Zwyk³a rozmowa z krukami niszczy cia³o past self
+collider na k³odzie
  */

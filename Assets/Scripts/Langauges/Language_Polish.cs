@@ -204,7 +204,7 @@ public class Language_Polish : LanguageBase
         text[294] = "Dziêki za zdjêcie problemu ze mnie.";
 
         text[295] = "Jeœli nie wiesz co teraz zrobiæ, mogê spróbowaæ ci jakoœ pomóc.";
-        text[296] = "Na pocz¹tek . . . Próbowa³eœ chocia¿ wys³uchaæ te myœli ?";
+        text[296] = "Na pocz¹tek . . . Próbowa³eœ chocia¿ je wys³uchaæ ?";
         text[297] = "Kto wie, mo¿e dowiesz siê czegoœ wartoœciowego ?";
 
 
