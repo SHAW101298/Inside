@@ -25,6 +25,9 @@ public class LevelScript_02 : MonoBehaviour
     [SerializeField] List<GameObject> bodyBones;
     [SerializeField] List<GameObject> crowKillInteractions;
     int lastBone;
+    [Header("Past Self killed Crow Interactions")]
+    public GameObject oneKilledCrow;
+    public GameObject threeKilledCrows;
 
     [Header("Checkers")]
     public bool foundMissingPiece;
@@ -88,6 +91,16 @@ public class LevelScript_02 : MonoBehaviour
     {
         bodyBones[lastBone].transform.localScale = Vector3.zero;
         lastBone++;
+        if(lastBone == 1)
+        {
+            oneKilledCrow.SetActive(true);
+        }
+        if(lastBone == 3)
+        {
+            oneKilledCrow.SetActive(false);
+            threeKilledCrows.SetActive(true);
+
+        }
     }
     public void EnableCrowKillInteractions()
     {
