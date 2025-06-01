@@ -79,7 +79,7 @@ public class Language_Polish : LanguageBase
         text[95] = "? ? ?";
         text[96] = "BRAK TEKSTU";
         text[97] = "Nawet nie drgnie";
-        text[98] = "GRA SKOÑCZONA NA TEN MOMENT. Jest kilka rzeczy, które zmieni³y siê na mapie, mo¿na iœæ i je sprawdziæ. Jednak poza tym nie ma ju¿ nic innego do zrobienia";
+        text[98] = "GRA SKOÑCZONA NA TEN MOMENT. Wci¹¿ mo¿na przeszukaæ mapê w celu wybicia kruków i wys³uchania ich, ale to wszystko. ";
         text[99] = "Jesteœ jedynie nieprzewidzianym goœciem w czyimœ umyœle. Ciesz siê podró¿¹ i obserwuj rozwój historii";
         //text[99] = "Jesteœ jedynie nieprzewidzianym goœciem w czyimœ umyœle. Odkryj prawdê ukryt¹ pod warstw¹ rzeczywistoœci.";
 

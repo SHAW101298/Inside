@@ -79,7 +79,7 @@ public class Language_English : LanguageBase
         text[95] = "? ? ?";
         text[96] = "NO TEXT";
         text[97] = "Won't even budge";
-        text[98] = "GAME FINISHED FOR NOW. There are a few things that changed on map, which you're free to explore. But nothing more than that is ready.";
+        text[98] = "GAME FINISHED FOR NOW. You may search the map, and kill the crows while listening to them but thats all there is right now.";
         text[99] = "You're just an unexpected guest inside someones mind. Enjoy the journey and watch the story unfold.";
 
 
