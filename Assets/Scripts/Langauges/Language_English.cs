@@ -282,6 +282,8 @@ public class Language_English : LanguageBase
         text[390] = "It was obvious from the start";// Self fulfilling Prophecy
         text[391] = "You are a Self fulfilling prophecy";
         text[392] = "You cannot change what was already set in stone.";
+        text[393] = "All your efforts are pointless.";
+        text[394] = "Just like with a child . . .";
 
         // Past Self continued Talk
         text[400] = "And ? Did you learn anything of value ?";
@@ -298,18 +300,18 @@ public class Language_English : LanguageBase
         text[415] = "A few are still alive.";
         // Crow location hints
         text[416] = "One might be near the ruined room. The one you came from.";
-        text[416] = "Have you searched the road properly ? I belive one should still be there.";
-        text[417] = "Those three pillars with one suspended in the air. How about searching there ?";
-        text[418] = "There is a crow near the hole. At least there always was.";
-        text[419] = "One should be somewhere close. Always watching.";
-        text[420] = "How about the lovely pair on a tree ?";
+        text[417] = "Have you searched the road properly ? I belive one should still be there.";
+        text[418] = "Those three pillars with one suspended in the air. How about searching there ?";
+        text[419] = "There is a crow near the hole. At least there always was.";
+        text[420] = "One should be somewhere close. Always watching.";
         text[421] = "How about the lovely pair on a tree ?";
-        text[422] = "What about the talkative one near the doors ?";
-        text[423] = "There might be silent one near the doors.";
-        text[424] = "Have you seen the one excluded from the temple standing on a rock ?";
-        text[425] = "There used to be a bridge somewhere around here. ";
-        text[426] = "Have you visited the one guarding the dead pile ?";
-        text[427] = "Cross section of the riverbed is a home to one of them. ";
+        text[422] = "How about the lovely pair on a tree ?";
+        text[423] = "What about the talkative one near the doors ?";
+        text[424] = "There might be silent one near the doors.";
+        text[425] = "Have you seen the one excluded from the temple standing on a rock ?";
+        text[426] = "There used to be a bridge somewhere around here. ";
+        text[427] = "Have you visited the one guarding the dead pile ?";
+        text[428] = "Cross section of the riverbed is a home to one of them. ";
     }
 }
 
