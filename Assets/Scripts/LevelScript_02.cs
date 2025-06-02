@@ -96,7 +96,7 @@ public class LevelScript_02 : MonoBehaviour
         {
             oneKilledCrow.SetActive(true);
             DialogManager.Instance.ShowText(98);
-            flyingBirdsController.SetAmountOfDesiredBirds(0);
+            
         }
         if(lastBone == 3)
         {
@@ -111,5 +111,6 @@ public class LevelScript_02 : MonoBehaviour
         {
             obj.SetActive(true);
         }
+        flyingBirdsController.SetAmountOfDesiredBirds(0);
     }
 }

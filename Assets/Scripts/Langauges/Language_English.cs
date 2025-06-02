@@ -278,6 +278,11 @@ public class Language_English : LanguageBase
         text[384] = "Bury them down and forget.";
         text[385] = "How classic of you.";
 
+        // Insulting Crow 11
+        text[390] = "It was obvious from the start";// Self fulfilling Prophecy
+        text[391] = "You are a Self fulfilling prophecy";
+        text[392] = "You cannot change what was already set in stone.";
+
         // Past Self continued Talk
         text[400] = "And ? Did you learn anything of value ?";
         text[401] = "Not much i guess";
@@ -290,6 +295,21 @@ public class Language_English : LanguageBase
         text[410] = "Do what you have to.";
         // After 3 Crows Killed
         text[411] = "I hope its worth it.";
+        text[415] = "A few are still alive.";
+        // Crow location hints
+        text[416] = "One might be near the ruined room. The one you came from.";
+        text[416] = "Have you searched the road properly ? I belive one should still be there.";
+        text[417] = "Those three pillars with one suspended in the air. How about searching there ?";
+        text[418] = "There is a crow near the hole. At least there always was.";
+        text[419] = "One should be somewhere close. Always watching.";
+        text[420] = "How about the lovely pair on a tree ?";
+        text[421] = "How about the lovely pair on a tree ?";
+        text[422] = "What about the talkative one near the doors ?";
+        text[423] = "There might be silent one near the doors.";
+        text[424] = "Have you seen the one excluded from the temple standing on a rock ?";
+        text[425] = "There used to be a bridge somewhere around here. ";
+        text[426] = "Have you visited the one guarding the dead pile ?";
+        text[427] = "Cross section of the riverbed is a home to one of them. ";
     }
 }
 
@@ -353,7 +373,7 @@ Kruki odlatuj¹ce gdy zbli¿a siê gracz, i przylatuj¹ce gdy siê oddali.
     Kruki co jakiœ czas lataj¹ce po niebie
 Mo¿liwoœæ przewijania dialogu ?
 Mo¿liwoœæ wybierania wypowiadanych dialogów ?
-Zabijanie kruków zmniejsza widocznoœæ Past Self i zmniejsza Skalê czêœci cia³a do 0
+    Zabijanie kruków zmniejsza widocznoœæ Past Self i zmniejsza Skalê czêœci cia³a do 0
     Zwyk³a rozmowa z krukami niszczy cia³o past self
     collider na k³odzie
  */
