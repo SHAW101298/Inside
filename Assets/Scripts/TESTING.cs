@@ -19,6 +19,7 @@ public class TESTING : MonoBehaviour
     public bool triggerOpeningFakeDoor;
     public bool setAmountOfTalkedCrows;
     public bool triggerTakingKnife;
+    public bool triggerKilledACrow;
     public bool disableLoreDrop;
     [Header("AOO")]
     public Transform mainSphere;
@@ -98,6 +99,11 @@ public class TESTING : MonoBehaviour
             disableLoreDrop = false;
             firstMeetingInteraction.gameObject.SetActive(false);
             secondMeetingInteraction.gameObject.SetActive(true);
+        }
+        if(triggerKilledACrow == true)
+        {
+            triggerKilledACrow = false;
+            LevelScript_02.Instance.KilledACrow();
         }
     }
 }

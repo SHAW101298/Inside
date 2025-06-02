@@ -12,6 +12,7 @@ public class LevelScript_02 : MonoBehaviour
     [SerializeField] GameObject emptySpotReadyForPiece;
     [SerializeField] GameObject filledSpot;
     [SerializeField] AudioSource musicAudioSource;
+    [SerializeField] FlyingBirdsController flyingBirdsController;
     [Header("After placing Missing Piece")]
     [SerializeField] List<GameObject> objectsBeforePlacingPiece;
     [SerializeField] List<GameObject> objectsAfterPlacingPiece;
@@ -24,7 +25,7 @@ public class LevelScript_02 : MonoBehaviour
     [SerializeField] float currentAlpha;
     [SerializeField] List<GameObject> bodyBones;
     [SerializeField] List<GameObject> crowKillInteractions;
-    int lastBone;
+    [SerializeField] int lastBone;
     [Header("Past Self killed Crow Interactions")]
     public GameObject oneKilledCrow;
     public GameObject threeKilledCrows;
@@ -95,6 +96,7 @@ public class LevelScript_02 : MonoBehaviour
         {
             oneKilledCrow.SetActive(true);
             DialogManager.Instance.ShowText(98);
+            flyingBirdsController.SetAmountOfDesiredBirds(0);
         }
         if(lastBone == 3)
         {

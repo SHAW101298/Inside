@@ -48,7 +48,10 @@ public class FlyingBirdsController : MonoBehaviour
         bird.gameObject.SetActive(true);
         bird.GetNewDestination();
         amountOfActiveBirds++;
-
+    }
+    public void SetAmountOfDesiredBirds(int amount)
+    {
+        desiredAmountOfActiveBirds = amount;
     }
 
 }
