@@ -294,5 +294,20 @@ public class Language_Polish : LanguageBase
         text[410] = "Rób co musisz.";
         // After 3 Crows Killed
         text[411] = "Mam nadziejê, ¿e warto.";
+        text[415] = "Kilka wci¹¿ jeszcze ¿yje.";
+        // Crow location hints
+        text[416] = "Jeden mo¿e byæ w pobli¿u zniszczonego pomieszczenia. Tego z którego przyby³eœ.";
+        text[417] = "Czy dok³adnie przeszuka³eœ drogê ? Wydaje mi siê, ¿e jeden wci¹¿ powinien tam byæ.";
+        text[418] = "Te trzy filary z czego jeden zawieszony w powietrzu. Szuka³eœ tam ?";
+        text[419] = "Jeden kruk jest w pobli¿u dziury. Przynajmniej zawsze tam by³.";
+        text[420] = "Jeden powinien byæ w pobli¿u. Zawsze obserwuj¹c.";
+        text[421] = "A co z ukochan¹ par¹ na drzewie ?";
+        text[422] = "A co z ukochan¹ par¹ na drzewie ?";
+        text[423] = "A pamiêtasz o tym gadatliwym przy drzwiach ?";
+        text[424] = "Jakiœ cichy mo¿e te¿ byæ przy drzwiach.";
+        text[425] = "Widzia³eœ tego wykluczonego przed œwi¹tyni¹, siedz¹cego na kamieniu ?";
+        text[426] = "Kiedyœ by³ gdzieœ tutaj most. ";
+        text[427] = "Odwiedzi³eœ ju¿ tego w pobli¿u martwej sterty kruków ?";
+        text[428] = "Punkt zbiegu rzek jeden z nich upatrzy³ sobie jako miejsce na dom.";
     }
 }
