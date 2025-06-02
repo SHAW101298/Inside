@@ -379,3 +379,10 @@ Mo¿liwoœæ wybierania wypowiadanych dialogów ?
     Zwyk³a rozmowa z krukami niszczy cia³o past self
     collider na k³odzie
  */
+/*
+    Co powinno staæ siê po zabiciu wszystkich kruków ?
+Gracz idzie do Past Self. Który mówi ¿e ju¿ nie ma wiêcej kruków. Trzeba sprawdziæ LastBone i uruchomiæ ostatni Interact wy³aczaj¹c zapytanie o lokalizacjê
+S³ychaæ ponownie pukanie ze strony drzwi mo¿e ? Wy³¹czyæ background Noise
+Mo¿liwoœæ zabicia Past Self
+
+ */
