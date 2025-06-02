@@ -8,6 +8,7 @@ public class InteractTrigger : MonoBehaviour
     public UnityEvent interactEvent;
     public UnityEvent delayedInteractEvent;
     [Space(10)]
+    [SerializeField] bool runTriggerOnStart;
     [SerializeField] bool destroyTriggerOnActivation;
     [SerializeField] bool disableTriggerOnActivation;
     [SerializeField] float delayInteractTriggerTime;
@@ -16,6 +17,7 @@ public class InteractTrigger : MonoBehaviour
 
     float timer;
     bool startTimer;
+
     public void Interact()
     {
         interactEvent.Invoke();
@@ -32,7 +34,13 @@ public class InteractTrigger : MonoBehaviour
 
         startTimer = true;
     }
-
+    private void Start()
+    {
+        if(runTriggerOnStart == true)
+        {
+            Interact();
+        }
+    }
     private void Update()
     {
         if(startTimer == true)
@@ -122,5 +130,27 @@ public class InteractTrigger : MonoBehaviour
     {
         int rand = Random.Range(0, objectsGroup2.Count);
         objectsGroup2[rand].SetActive(true);
+    }
+    public void CheckValidityOfLists()
+    {
+        for(int i = objectsGroup1.Count - 1; i >= 0; i--)
+        {
+            if (objectsGroup1[i] == null)
+            {
+                objectsGroup1.RemoveAt(i);
+            }
+        }
+        for (int i = objectsGroup2.Count - 1; i >= 0; i--)
+        {
+            if (objectsGroup2[i] == null)
+            {
+                objectsGroup2.RemoveAt(i);
+            }
+        }
+    }
+    public void InteractWithRandomTriggerInGroup1()
+    {
+        int rand = Random.Range(0, objectsGroup1.Count);
+        objectsGroup1[rand].GetComponentInChildren<InteractTrigger>().TriggerInteraction();
     }
 }
