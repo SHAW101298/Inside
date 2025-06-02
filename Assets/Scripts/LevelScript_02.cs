@@ -17,6 +17,7 @@ public class LevelScript_02 : MonoBehaviour
     [SerializeField] List<GameObject> objectsBeforePlacingPiece;
     [SerializeField] List<GameObject> objectsAfterPlacingPiece;
     [SerializeField] Animator doorAnimator;
+    [SerializeField] GameObject SecondInteractionTrigger;
     [Header("Character Slow Change")]
     [SerializeField] GameObject knifeAllowingInteraction;
     [SerializeField] int insultCrowsTalkedTo;
@@ -29,6 +30,7 @@ public class LevelScript_02 : MonoBehaviour
     [Header("Past Self killed Crow Interactions")]
     public GameObject oneKilledCrow;
     public GameObject threeKilledCrows;
+    public InteractTrigger crowLocalizationTrigger;
 
     [Header("Checkers")]
     public bool foundMissingPiece;
@@ -84,8 +86,8 @@ public class LevelScript_02 : MonoBehaviour
             if(knifeAllowingInteraction != null)
             {
                 knifeAllowingInteraction.SetActive(true);
-
             }
+            SecondInteractionTrigger.SetActive(false);
         }
     }
     public void KilledACrow()
@@ -104,12 +106,16 @@ public class LevelScript_02 : MonoBehaviour
             threeKilledCrows.SetActive(true);
 
         }
+        crowLocalizationTrigger.CheckValidityOfLists();
     }
     public void EnableCrowKillInteractions()
     {
         foreach(GameObject obj in crowKillInteractions)
         {
-            obj.SetActive(true);
+            if(obj != null)
+            {
+                obj.SetActive(true);
+            }
         }
         flyingBirdsController.SetAmountOfDesiredBirds(0);
     }
