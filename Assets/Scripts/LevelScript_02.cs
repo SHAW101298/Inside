@@ -20,6 +20,7 @@ public class LevelScript_02 : MonoBehaviour
     [SerializeField] GameObject SecondInteractionTrigger;
     [Header("Character Slow Change")]
     [SerializeField] GameObject knifeAllowingInteraction;
+    [SerializeField] Animator characterAnim;
     [SerializeField] int insultCrowsTalkedTo;
     [SerializeField] SkinnedMeshRenderer characterMeshRenderer;
     [SerializeField] Material transparentMaterial;
@@ -106,6 +107,10 @@ public class LevelScript_02 : MonoBehaviour
             oneKilledCrow.SetActive(false);
             threeKilledCrows.SetActive(true);
 
+        }
+        if(lastBone == 7)
+        {
+            characterAnim.SetTrigger("NoLegs");
         }
         crowLocalizationTrigger.CheckValidityOfLists();
 
