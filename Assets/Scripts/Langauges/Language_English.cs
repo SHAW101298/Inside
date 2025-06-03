@@ -314,6 +314,12 @@ public class Language_English : LanguageBase
         text[428] = "Cross section of the riverbed is a home to one of them. ";
 
         text[430] = "I think you got all of them. ";
+        text[431] = "Now it really is a still world. Not that i complain.";
+        text[432] = "What a blissfull emptiness. Peace.";
+        text[433] = "Like a sign of the approaching end";
+        text[434] = "Ever so slowly. Baring its fangs. Creeping around the corner.";
+        text[435] = "Considering the state Im in.";
+        text[436] = "Will you let me rest ?";
     }
 }
 

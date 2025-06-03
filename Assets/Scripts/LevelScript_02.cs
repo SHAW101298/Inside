@@ -118,6 +118,7 @@ public class LevelScript_02 : MonoBehaviour
         {
             allCrowsKilledInteraction.SetActive(true);
             crowLocalizationTrigger.TriggerDestruction();
+            musicAudioSource.gameObject.SetActive(false);
         }
     }
     public void EnableCrowKillInteractions()
