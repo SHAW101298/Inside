@@ -28,9 +28,10 @@ public class LevelScript_02 : MonoBehaviour
     [SerializeField] List<GameObject> crowKillInteractions;
     [SerializeField] int lastBone;
     [Header("Past Self killed Crow Interactions")]
-    public GameObject oneKilledCrow;
-    public GameObject threeKilledCrows;
-    public InteractTrigger crowLocalizationTrigger;
+    [SerializeField] GameObject oneKilledCrow;
+    [SerializeField] GameObject threeKilledCrows;
+    [SerializeField] InteractTrigger crowLocalizationTrigger;
+    [SerializeField] GameObject allCrowsKilledInteraction;
 
     [Header("Checkers")]
     public bool foundMissingPiece;
@@ -107,6 +108,12 @@ public class LevelScript_02 : MonoBehaviour
 
         }
         crowLocalizationTrigger.CheckValidityOfLists();
+
+        if(lastBone == 13)
+        {
+            allCrowsKilledInteraction.SetActive(true);
+            crowLocalizationTrigger.TriggerDestruction();
+        }
     }
     public void EnableCrowKillInteractions()
     {

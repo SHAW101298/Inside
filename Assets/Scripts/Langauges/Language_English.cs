@@ -312,6 +312,8 @@ public class Language_English : LanguageBase
         text[426] = "There used to be a bridge somewhere around here. ";
         text[427] = "Have you visited the one guarding the dead pile ?";
         text[428] = "Cross section of the riverbed is a home to one of them. ";
+
+        text[430] = "I think you got all of them. ";
     }
 }
 
@@ -384,5 +386,8 @@ Mo¿liwoœæ wybierania wypowiadanych dialogów ?
 Gracz idzie do Past Self. Który mówi ¿e ju¿ nie ma wiêcej kruków. Trzeba sprawdziæ LastBone i uruchomiæ ostatni Interact wy³aczaj¹c zapytanie o lokalizacjê
 S³ychaæ ponownie pukanie ze strony drzwi mo¿e ? Wy³¹czyæ background Noise
 Mo¿liwoœæ zabicia Past Self
-Search Party siê nie aktywuje
+    Search Party siê nie aktywuje
+    altar crows nie w³¹cza siê kill trigger
+    dead crows ma za wczeœnie w³¹czany kill trigger
+    broken bridge crow ma wci¹¿ w³aczony trigger z before
  */
