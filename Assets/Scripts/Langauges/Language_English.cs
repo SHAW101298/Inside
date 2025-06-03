@@ -319,7 +319,7 @@ public class Language_English : LanguageBase
         text[433] = "Like a sign of the approaching end";
         text[434] = "Ever so slowly. Baring its fangs. Creeping around the corner.";
         text[435] = "Considering the state Im in.";
-        text[436] = "Will you let me rest ?";
+        text[436] = "Will you let me finally rest ?"; // Enable Kill Interaction
     }
 }
 

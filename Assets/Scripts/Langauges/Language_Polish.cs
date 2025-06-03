@@ -309,5 +309,13 @@ public class Language_Polish : LanguageBase
         text[426] = "Kiedyœ by³ gdzieœ tutaj most. ";
         text[427] = "Odwiedzi³eœ ju¿ tego w pobli¿u martwej sterty kruków ?";
         text[428] = "Punkt zbiegu rzek jeden z nich upatrzy³ sobie jako miejsce na dom.";
+
+        text[430] = "To chyba ju¿ wszystkie. ";
+        text[431] = "Teraz jest to naprawdê zastyg³y œwiat.I to nie tak, ¿e narzekam.";
+        text[432] = "Có¿ za b³oga pustka. Spokój.";
+        text[433] = "Niczym znak nadci¹gaj¹cego koñca.";
+        text[434] = "Powolnego. Pokazuj¹cego swoje k³y. Czaj¹cego siê tu¿ za rogiem.";
+        text[435] = "Bior¹c pod uwagê mój stan . . .";
+        text[436] = "Pozwolisz mi nareszcie odpocz¹æ ?"; // Enable Kill Interaction
     }
 }
