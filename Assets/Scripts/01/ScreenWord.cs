@@ -61,7 +61,8 @@ public class ScreenWord : MonoBehaviour
             }
         }
         textField.text = modifiedText;
-        timeToLive -= dangerLevel * 1.5f;
+        float randMultiplier = Random.Range(0.8f, 1.2f);
+        timeToLive -= dangerLevel * 1.5f * randMultiplier;
         erraticMovementAmount *= dangerLevel;
     }
     public bool CheckIfExpired()

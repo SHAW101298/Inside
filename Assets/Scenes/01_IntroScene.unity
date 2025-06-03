@@ -14824,6 +14824,8 @@ MonoBehaviour:
   prefab: {fileID: 7814334197733999288, guid: 213ffb4b01002d44eae87f650385d4c9, type: 3}
   flame: {fileID: 5665249757933379192}
   desiredNumberOfWords: 0
+  numberOfWordsStaticModifier: -1
+  numberofWordsPercentModifier: 1
   scaleVariation: 0.3
   startPositionVariation: 400
   indexMin: 100

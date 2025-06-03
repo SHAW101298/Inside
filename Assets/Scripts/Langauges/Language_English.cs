@@ -114,6 +114,7 @@ public class Language_English : LanguageBase
         text[127] = "cornered";
         text[128] = "defect";
         text[129] = "meaningless";
+        text[130] = "jump";
 
         // SCENE 02
         // Crow Random Lines
@@ -377,33 +378,40 @@ self fulfilling prophecy
 
  */
 
-/*
+/* DO ZROBIENIA ?
 Trochê dziwny odg³os chodzenia
 Chwilê jakiejœ spokojnej muzyki puœciæ ?
 Wskoczyæ do dziury
+Kruki odlatuj¹ce gdy zbli¿a siê gracz, i przylatuj¹ce gdy siê oddali.
+Mo¿liwoœæ przewijania dialogu ?
+Mo¿liwoœæ wybierania wypowiadanych dialogów ?
+    
+ */
+/* ZROBIONE
     Muzykê momentami wyciszyæ ? 
     Mo¿liwoœæ startu z dowolnego etapu
     Nie da sie skakaæ i biegaæ na raz
     Podczas siadania nie blokowaæ obrotu
     Dodatkowe deski do mostu
     Animacje kruków
- */
-/*
-Kruki odlatuj¹ce gdy zbli¿a siê gracz, i przylatuj¹ce gdy siê oddali.
     Kruki co jakiœ czas lataj¹ce po niebie
-Mo¿liwoœæ przewijania dialogu ?
-Mo¿liwoœæ wybierania wypowiadanych dialogów ?
     Zabijanie kruków zmniejsza widocznoœæ Past Self i zmniejsza Skalê czêœci cia³a do 0
     Zwyk³a rozmowa z krukami niszczy cia³o past self
     collider na k³odzie
- */
-/*
+
     Co powinno staæ siê po zabiciu wszystkich kruków ?
     Gracz idzie do Past Self. Który mówi ¿e ju¿ nie ma wiêcej kruków. Trzeba sprawdziæ LastBone i uruchomiæ ostatni Interact wy³aczaj¹c zapytanie o lokalizacjê
-S³ychaæ ponownie pukanie ze strony drzwi mo¿e ? Wy³¹czyæ background Noise
-Mo¿liwoœæ zabicia Past Self
+    S³ychaæ ponownie pukanie ze strony drzwi mo¿e ? Wy³¹czyæ background Noise
+    Mo¿liwoœæ zabicia Past Self
     Search Party siê nie aktywuje
     altar crows nie w³¹cza siê kill trigger
     dead crows ma za wczeœnie w³¹czany kill trigger
     broken bridge crow ma wci¹¿ w³aczony trigger z before
  */
+
+
+/*
+
+JUMP JUMP JUMP JUMP
+
+*/

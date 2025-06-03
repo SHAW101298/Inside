@@ -11,6 +11,8 @@ public class ScreenWordsManager : MonoBehaviour
     [SerializeField] FlameVisibility flame;
     [Header("Data")]
     [SerializeField] int desiredNumberOfWords;
+    [SerializeField] int numberOfWordsStaticModifier;
+    [SerializeField] float numberofWordsPercentModifier;
     [SerializeField] float scaleVariation;
     [SerializeField] float startPositionVariation;
     [Header("Indexes of words")]
@@ -33,7 +35,7 @@ public class ScreenWordsManager : MonoBehaviour
 
     void CalculateDesiredNumberOfWords()
     {
-        desiredNumberOfWords = (int)(flame.dangerLevel * 4) - 1;
+        desiredNumberOfWords = (int)(flame.dangerLevel * 4 * numberofWordsPercentModifier) + numberOfWordsStaticModifier;
         if(desiredNumberOfWords < 0)
         {
             desiredNumberOfWords = 0;
