@@ -104,6 +104,16 @@ public class Language_English : LanguageBase
         text[117] = "faster";
         text[118] = "stay";
         text[119] = "lose";
+        text[120] = "kill";
+        text[121] = "die";
+        text[122] = "cut";
+        text[123] = "memories";
+        text[124] = "remember";
+        text[125] = "hide";
+        text[126] = "avoid";
+        text[127] = "cornered";
+        text[128] = "defect";
+        text[129] = "meaningless";
 
         // SCENE 02
         // Crow Random Lines
@@ -389,7 +399,7 @@ Mo¿liwoœæ wybierania wypowiadanych dialogów ?
  */
 /*
     Co powinno staæ siê po zabiciu wszystkich kruków ?
-Gracz idzie do Past Self. Który mówi ¿e ju¿ nie ma wiêcej kruków. Trzeba sprawdziæ LastBone i uruchomiæ ostatni Interact wy³aczaj¹c zapytanie o lokalizacjê
+    Gracz idzie do Past Self. Który mówi ¿e ju¿ nie ma wiêcej kruków. Trzeba sprawdziæ LastBone i uruchomiæ ostatni Interact wy³aczaj¹c zapytanie o lokalizacjê
 S³ychaæ ponownie pukanie ze strony drzwi mo¿e ? Wy³¹czyæ background Noise
 Mo¿liwoœæ zabicia Past Self
     Search Party siê nie aktywuje

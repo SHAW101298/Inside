@@ -14827,7 +14827,7 @@ MonoBehaviour:
   scaleVariation: 0.3
   startPositionVariation: 400
   indexMin: 100
-  indexMax: 120
+  indexMax: 130
 --- !u!4 &1479869290
 Transform:
   m_ObjectHideFlags: 0

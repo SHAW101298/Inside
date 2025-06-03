@@ -105,6 +105,16 @@ public class Language_Polish : LanguageBase
         text[117] = "szybciej";
         text[118] = "zostañ";
         text[119] = "przegrasz";
+        text[120] = "zabij";
+        text[121] = "umrzyj";
+        text[122] = "tnij";
+        text[123] = "wspomnienia";
+        text[124] = "zapamiêtaj";
+        text[125] = "ukryj siê";
+        text[126] = "unikaj";
+        text[127] = "w pu³apce";
+        text[128] = "defekt";
+        text[129] = "bez znaczenia";
 
 
         // SCENE 02
