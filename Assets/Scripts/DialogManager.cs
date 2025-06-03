@@ -97,11 +97,6 @@ public class DialogManager : MonoBehaviour
         timer += Time.deltaTime;
         if (timer >= delayBetweenLetters)
         {
-            timer -= delayBetweenLetters;
-            dialogField.text += currentTextToShow[lastLetterIndex];
-            lastLetterIndex++;
-
-
             // Finished with this text
             if (lastLetterIndex >= currentTextToShow.Length)
             {
@@ -109,7 +104,12 @@ public class DialogManager : MonoBehaviour
                 timer = 0;
                 animateText = false;
                 awaitingUntilRestart = true;
+                return;
             }
+
+            timer -= delayBetweenLetters;
+            dialogField.text += currentTextToShow[lastLetterIndex];
+            lastLetterIndex++;
         }
     }
     void AwateUntilFinishedWithReading()
