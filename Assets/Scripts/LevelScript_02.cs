@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelScript_02 : MonoBehaviour
 {
@@ -136,5 +137,9 @@ public class LevelScript_02 : MonoBehaviour
             }
         }
         flyingBirdsController.SetAmountOfDesiredBirds(0);
+    }
+    public void ChangeSceneToNextLevel()
+    {
+        SceneManager.LoadScene(3);
     }
 }
