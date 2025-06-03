@@ -33,6 +33,9 @@ public class LevelScript_02 : MonoBehaviour
     [SerializeField] GameObject threeKilledCrows;
     [SerializeField] InteractTrigger crowLocalizationTrigger;
     [SerializeField] GameObject allCrowsKilledInteraction;
+    [SerializeField] InteractTrigger doorCloseInteraction;
+    [SerializeField] RepeatedSoundController knockingSound;
+    [SerializeField] DimZone templeDimZone;
 
     [Header("Checkers")]
     public bool foundMissingPiece;
@@ -119,6 +122,8 @@ public class LevelScript_02 : MonoBehaviour
             allCrowsKilledInteraction.SetActive(true);
             crowLocalizationTrigger.TriggerDestruction();
             musicAudioSource.gameObject.SetActive(false);
+            doorCloseInteraction.TriggerInteraction();
+            templeDimZone.SetDesiredFogDistance(15);
         }
     }
     public void EnableCrowKillInteractions()

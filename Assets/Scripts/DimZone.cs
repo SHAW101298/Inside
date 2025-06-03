@@ -94,4 +94,9 @@ public class DimZone : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    public void SetDesiredFogDistance(float dist)
+    {
+        desiredFogAmount = dist;
+    }
+
 }
