@@ -71,7 +71,7 @@ public class Language_English : LanguageBase
         // LEVEL NAMES
         text[70] = "1-1 The Pit";
         text[71] = "1-2 The Stillness";
-        text[72] = "1-2 The Silent World";
+        text[72] = "1-3 The Unknown";
 
 
         // Additional Texts

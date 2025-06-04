@@ -71,7 +71,7 @@ public class Language_Polish : LanguageBase
         // LEVEL NAMES
         text[70] = "1-1 Dno";
         text[71] = "1-2 Bezruch";
-        text[72] = "1-2 Cichy Œwiat";
+        text[72] = "1-3 Nieznane";
 
 
         // Additional Texts
