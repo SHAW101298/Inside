@@ -292,6 +292,13 @@ public class Language_Polish : LanguageBase
         text[384] = "Zakopaæ je i zapomnieæ o nich.";
         text[385] = "Czego innego mo¿na by³o siê po tobie spodziewaæ.";
 
+        // Insulting Crow 11
+        text[390] = "To by³o oczywiste od samego pocz¹tku";// Self fulfilling Prophecy
+        text[391] = "Jesteœ jak samospe³niaj¹ca siê przepowiednia";
+        text[392] = "Nie zmienisz tego, co zapisano ci w kartach.";
+        text[393] = "Ca³y twój wysi³ek na marne.";
+        text[394] = "Jak z dzieckiem . . .";
+
         // Past Self continued Talk
         text[400] = "I jak ? Dowiedzia³eœ siê czegoœ u¿ytecznego ?";
         text[401] = "Podejrzewam, ¿e niezbyt.";
