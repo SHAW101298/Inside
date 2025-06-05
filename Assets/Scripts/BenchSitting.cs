@@ -6,7 +6,8 @@ using UnityEngine.Events;
 public class BenchSitting : MonoBehaviour
 {
     [SerializeField] bool isSitting;
-    [SerializeField] bool allowDialogPrompts;
+    [SerializeField] bool showDialogPrompts;
+    bool allowDialogPrompts;
     [SerializeField] GameObject sitPosition;
 
     [SerializeField] float sitTimer;
@@ -25,7 +26,7 @@ public class BenchSitting : MonoBehaviour
         dialogTimer = 0;
         PlayerData player = PlayerData.instance;
         player.gameObject.transform.position = sitPosition.transform.position;
-        player.gameObject.transform.localRotation = sitPosition.transform.localRotation;
+        player.gameObject.transform.rotation = sitPosition.transform.rotation;
         //player.BlockMovementAndRotationByAction();
         player.BlockMovementByAction();
     }
@@ -43,7 +44,10 @@ public class BenchSitting : MonoBehaviour
 
     private void Update()
     {
-        if(isSitting == true)
+        if (showDialogPrompts == false)
+            return;
+
+        if (isSitting == true)
         {
             sitTimer += Time.deltaTime;
 
