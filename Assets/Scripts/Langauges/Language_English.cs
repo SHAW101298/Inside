@@ -25,7 +25,7 @@ public class Language_English : LanguageBase
         }
 
 
-        text = new string[450];
+        text = new string[550];
         // UI TEXT
         text[0] = "Start Game";
         text[1] = "How To Play";
@@ -66,6 +66,7 @@ public class Language_English : LanguageBase
         text[58] = "Open  ( E )";
         text[59] = "Close  ( E )";
         text[60] = "Kill  ( E )";
+        text[61] = "Read  ( E )";
 
 
         // LEVEL NAMES
@@ -117,6 +118,8 @@ public class Language_English : LanguageBase
         text[130] = "jump";
 
         // SCENE 02
+        #region  
+
         // Crow Random Lines
         text[150] = "FIND IT !!!";
         text[151] = "FORGET !!!";
@@ -331,6 +334,10 @@ public class Language_English : LanguageBase
         text[434] = "Ever so slowly. Baring its fangs. Creeping around the corner.";
         text[435] = "Considering the state Im in.";
         text[436] = "Will you let me finally rest ?"; // Enable Kill Interaction
+
+#endregion
+
+        text[450] = "The Road";
     }
 }
 

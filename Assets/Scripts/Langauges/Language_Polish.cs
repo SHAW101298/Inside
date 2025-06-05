@@ -25,7 +25,7 @@ public class Language_Polish : LanguageBase
         }
 
         
-        text = new string[450];
+        text = new string[550];
         // UI TEXT
         text[0] = "Rozpocznij Grê";
         text[1] = "Jak graæ";
@@ -66,6 +66,7 @@ public class Language_Polish : LanguageBase
         text[58] = "Otwórz  ( E )";
         text[59] = "Zamknij  ( E )";
         text[60] = "Zabij  ( E )";
+        text[61] = "Czytaj  ( E )";
 
 
         // LEVEL NAMES
@@ -333,6 +334,9 @@ public class Language_Polish : LanguageBase
         text[433] = "Niczym znak nadci¹gaj¹cego koñca.";
         text[434] = "Powolnego. Pokazuj¹cego swoje k³y. Czaj¹cego siê tu¿ za rogiem.";
         text[435] = "Bior¹c pod uwagê mój stan . . .";
-        text[436] = "Pozwolisz mi nareszcie odpocz¹æ ?"; // Enable Kill Interaction
+        text[436] = "Pozwolisz mi nareszcie odpocz¹æ ?"; // Enable Kill Interaction,
+
+
+        text[450] = "Droga";
     }
 }
