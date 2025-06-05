@@ -117,6 +117,7 @@ public class Language_English : LanguageBase
         text[129] = "meaningless";
         text[130] = "jump";
 
+
         // SCENE 02
         #region  
 
