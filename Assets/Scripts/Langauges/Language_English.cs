@@ -423,5 +423,6 @@ Mo¿liwoœæ wybierania wypowiadanych dialogów ?
 JUMP JUMP JUMP JUMP
 Opcje dialogowe bêda siê pojawiaæ na ekranie, niektóre bêda czasowe ( tworzone na koñcu aby u³atwiæ rozdzielenie )
 
+lore drop niektore collidery nie sa triggerami
 
 */

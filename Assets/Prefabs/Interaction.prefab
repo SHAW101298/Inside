@@ -87,7 +87,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1770568741457227567}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
@@ -137,6 +137,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 
+  usedIndexes: 
   removeShownTextsFromList: 0
   EVENT_StartShowing:
     m_PersistentCalls:
@@ -145,6 +146,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   EVENT_EmptyIndexList:
+    m_PersistentCalls:
+      m_Calls: []
+  EVENT_AllTextsUsedUp:
     m_PersistentCalls:
       m_Calls: []
 --- !u!1 &5264076967837717763
@@ -196,12 +200,15 @@ MonoBehaviour:
   interactEvent:
     m_PersistentCalls:
       m_Calls: []
-  objectsToDestroy: []
-  destroyObjectOnActivation: 0
+  delayedInteractEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  runTriggerOnStart: 0
   destroyTriggerOnActivation: 0
-  destroyDelay: 0
-  objectToEnable: {fileID: 0}
-  objectToDisable: {fileID: 0}
+  disableTriggerOnActivation: 0
+  delayInteractTriggerTime: 0
+  objectsGroup1: []
+  objectsGroup2: []
 --- !u!135 &759425680013437374
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -210,7 +217,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5264076967837717763}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5

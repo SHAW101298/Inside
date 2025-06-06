@@ -103,7 +103,7 @@ public class LevelScript_02 : MonoBehaviour
         if(lastBone == 1)
         {
             oneKilledCrow.SetActive(true);
-            DialogManager.Instance.ShowText(98);
+            //DialogManager.Instance.ShowText(98);
             
         }
         if(lastBone == 3)
