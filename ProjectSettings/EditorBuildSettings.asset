@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/02_BurnedForestScene.unity
     guid: 57fd0251b6ef6384e9e4171cbd7dbc6a
+  - enabled: 1
+    path: Assets/Scenes/03_TheSearch.unity
+    guid: 848c7d7657a7d354aa80cee25680969a
   m_configObjects: {}
