@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerData : MonoBehaviour
 {
@@ -22,7 +23,7 @@ public class PlayerData : MonoBehaviour
     public CameraHookUp cam;
     public PlayerUI ui;
     public PlayerAnimations animations;
-
+    public PlayerInput input;
 
     public void BlockMovementAndRotationByUI()
     {
@@ -76,5 +77,12 @@ public class PlayerData : MonoBehaviour
     {
         rotation.AllowRotationByUI();
     }
-
+    public void ChangeMapToUI()
+    {
+        input.SwitchCurrentActionMap("UI");
+    }
+    public void ChangeMapToPlayer()
+    {
+        input.SwitchCurrentActionMap("Player");
+    }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using System.Linq;
+using UnityEngine.InputSystem;
 
 [System.Serializable]
 public class DialogData
@@ -45,11 +46,18 @@ public class DialogManager : MonoBehaviour
 
     [SerializeField] string currentTextToShow;
 
+    bool pauseWaitTimer;
     float timer;
     bool animateText;
     bool awaitingUntilRestart;
 
     int lastLetterIndex;
+
+    [Header("Player Dialog Options")]
+    [SerializeField] DialogChoice currentChoice;
+    [SerializeField] Transform optionsContent;
+    [SerializeField] GameObject optionPrefab;
+    bool choiceWasAlreadyMade;
 
     public void ShowText(DialogData data)
     {
@@ -78,6 +86,86 @@ public class DialogManager : MonoBehaviour
             currentTextToShow = LanguageManager.Instance.GetText(promptsToShow[0].index);
             animateText = true;
         }
+    }
+    public void ShowDialogOptions(DialogChoice choice)
+    {
+        currentChoice = choice;
+        GameObject temp;
+        pauseWaitTimer = true;
+        for(int i = 0; i < choice.options.Count; i++)
+        {
+            // Content size fitter and grid layout should work itself there
+            temp = Instantiate(optionPrefab);
+            temp.transform.SetParent(optionsContent);
+            // Get text component from UI script, and set text according to language
+
+        }
+    }
+    public void Action_Number1(InputAction.CallbackContext context)
+    {
+        if (context.phase != InputActionPhase.Performed)
+            return;
+        if (currentChoice == null)
+            return;
+
+        ShowDialogPromptOnChoice(1);
+    }
+    public void Action_Number2(InputAction.CallbackContext context)
+    {
+        if (context.phase != InputActionPhase.Performed)
+            return;
+        if (currentChoice == null)
+            return;
+
+        ShowDialogPromptOnChoice(2);
+    }
+    public void Action_Number3(InputAction.CallbackContext context)
+    {
+        if (context.phase != InputActionPhase.Performed)
+            return;
+        if (currentChoice == null)
+            return;
+
+        ShowDialogPromptOnChoice(3);
+    }
+    public void Action_Number4(InputAction.CallbackContext context)
+    {
+        if (context.phase != InputActionPhase.Performed)
+            return;
+        if (currentChoice == null)
+            return;
+
+        ShowDialogPromptOnChoice(4);
+    }
+    public void Action_Number5(InputAction.CallbackContext context)
+    {
+        if (context.phase != InputActionPhase.Performed)
+            return;
+        if (currentChoice == null)
+            return;
+
+        ShowDialogPromptOnChoice(5);
+    }
+    public void Action_Number6(InputAction.CallbackContext context)
+    {
+        if (context.phase != InputActionPhase.Performed)
+            return;
+        if (currentChoice == null)
+            return;
+        ShowDialogPromptOnChoice(6);
+    }
+
+    void ShowDialogPromptOnChoice(int x)
+    {
+        if (currentChoice.options.Count < x)
+            return;
+        if (choiceWasAlreadyMade == true)
+            return;
+
+        int index = currentChoice.options[x-1].GetLangIndex();
+        currentChoice.ChoosenOption(x-1);
+        ShowText(index);
+        choiceWasAlreadyMade = true;
     }
 
     private void Update()
@@ -114,6 +202,11 @@ public class DialogManager : MonoBehaviour
     }
     void AwateUntilFinishedWithReading()
     {
+        if(pauseWaitTimer == true)
+        {
+            return;
+        }
+
         timer += Time.deltaTime;
         if (timer >= timeForTextToRemain)
         {
@@ -141,4 +234,6 @@ public class DialogManager : MonoBehaviour
             }
         }
     }
+
+
 }
