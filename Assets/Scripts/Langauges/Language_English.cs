@@ -426,3 +426,26 @@ Opcje dialogowe bêda siê pojawiaæ na ekranie, niektóre bêda czasowe ( tworzone n
 lore drop niektore collidery nie sa triggerami
 
 */
+
+/* OD ROBERTA
+Da siê spojrzeæ za mapê na pierwszym poziomie
+WskaŸnik góra dó³ w pierwszym poziomie
+Zmiana czu³oœci myszy
+Wspiêcie siê na drabinê mo¿na uruchomiæ dwa razy
+Przy kamyczku na start nie mo¿na skoczyæ, zwiêkszyæ ground check
+Lore drop crow can't Interact
+Moc pogadaæ z ka¿dym krukiem
+Gdy siê siedzi, spacj¹ mo¿na te¿ wstaæ
+    "sameu wybra³eœ to wszystko"
+No lore drop after listening to crows ?
+Altar crow collider not trigger
+    Chce widzieæ twój rozpacz
+Oznaczyæ punkty wszystkie. Mo¿e jaœniejszy kolor
+Licznik zabitych kruków
+Przeniesienie spawnu bli¿ej Past Self
+Mapa.
+Gdy gracz dokonuje pierwszej interakcji z past self, to odkrywa siê mapa pod Tabem.
+Ka¿da interakcja z krukiem odkrywa ma³y fragment mapy, który ukazywany jest na du¿ej mapie.
+Czas gry 1 godzina, na 2 scenê
+Czas gry 10 minut 1 scena
+ */

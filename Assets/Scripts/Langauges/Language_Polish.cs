@@ -260,7 +260,7 @@ public class Language_Polish : LanguageBase
         text[345] = "Ju¿ nie mogê siê doczekaæ aby zobaczyæ jak siê ³amiesz.";
         text[346] = "Walcz o swoje ¿ycie !";
         text[347] = "No dawaj, Dla zabawy !";
-        text[348] = "chcê widzieæ twój rozpacz";
+        text[348] = "chcê widzieæ twoj¹ rozpacz";
 
         // Insulting Crow 7
         text[350] = "Trochê ci zaje³o dotarcie tutaj.";
@@ -287,7 +287,7 @@ public class Language_Polish : LanguageBase
 
         // Insulting Crow 10
         text[380] = "Musisz zacz¹æ akceptowaæ fakty.";
-        text[381] = "Sameu wybra³eœ to wszystko";
+        text[381] = "Samemu wybra³eœ to wszystko";
         text[382] = "Ka¿de wydarzenie to rezultat twojej nieudolnoœci.";
         text[383] = "Zdecydowa³eœ nawet uciec od wszystkich problemów.";
         text[384] = "Zakopaæ je i zapomnieæ o nich.";
