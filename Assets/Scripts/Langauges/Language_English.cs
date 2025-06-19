@@ -209,6 +209,8 @@ public class Language_English : LanguageBase
         text[287] = "Go and find your own spark of hope.";
         text[288] = "Who knows, maybe a door to the better future will open itself before you.";
 
+        text[289] = "You already made some progress on your own i see.";
+
         text[290] = "Ahhh, I can already tell that you found what was missing.";
         text[291] = "Now you can hear them clearly, right ?";
         text[292] = "Ohhh, how i missed the silence.";
@@ -301,6 +303,8 @@ public class Language_English : LanguageBase
         text[394] = "Just like with a child . . .";
 
         // Past Self continued Talk
+        text[399] = "Been busy, huh ? Going straight to the point. I can't complain though.";
+
         text[400] = "And ? Did you learn anything of value ?";
         text[401] = "Not much i guess";
         text[402] = "You know what they say.";
@@ -393,7 +397,19 @@ Wskoczyæ do dziury
 Kruki odlatuj¹ce gdy zbli¿a siê gracz, i przylatuj¹ce gdy siê oddali.
 Mo¿liwoœæ przewijania dialogu ?
 Mo¿liwoœæ wybierania wypowiadanych dialogów ?
-    
+A door to better future will open itself before you - zmieniæ aby nie by³o to mówione dos³ownie
+    Wylaczyc altar ready spot i w³aczyc placed spot
+    Wywolac asked for directions i asked for advice
+wlaczyc crow talker interaction after placing spark
+wlaczyc fter placing placing spark interaction na lore drop
+crow talker ma z³e trigger collidery
+    phase 1 skip interaction info wrong message
+phase 1 skip interaction problem jakis
+    phase 2 after listening to few crows zmienic obiekt referencyjny
+    nie uruchamiaj¹ siê kill parenty
+lore crow kill interaction not enabled
+    corpse pile crow kill trigger not enabled
+drzwi na koniec otwieraja sie i zamykaja od razu
  */
 /* ZROBIONE
     Muzykê momentami wyciszyæ ? 

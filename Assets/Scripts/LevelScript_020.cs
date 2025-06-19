@@ -1,24 +1,13 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class LevelScript_02 : MonoBehaviour
+public class LevelScript_020 : MonoBehaviour
 {
-    #region
-    public static LevelScript_02 Instance;
-    private void Awake()
-    {
-        Instance = this;
-    }
-#endregion
     [Header("Phase 1")]
     [SerializeField] bool askedForDirections1;
     [SerializeField] GameObject baseInteractionsPhase1;
     [SerializeField] GameObject phase1SkippedInteraction;
-    [SerializeField] List<GameObject> objectsAfterPlacingSpark;
-    [SerializeField] List<GameObject> objectsBeforePlacingSpark;
     [Header("Phase 2")]
     [SerializeField] bool askedForAdvice2;
     [SerializeField] GameObject baseInteractionsPhase2;
@@ -32,9 +21,7 @@ public class LevelScript_02 : MonoBehaviour
     [SerializeField] InteractTrigger crowLocalizationTrigger;
     [SerializeField] GameObject oneKilledCrow;
     [SerializeField] GameObject threeKilledCrows;
-    [SerializeField] List<GameObject> crowKillInteractions;
     [Header("Phase 4")]
-    [SerializeField] FlyingBirdsController flyingBirdsController;
     [SerializeField] DimZone templeDimZone;
     [SerializeField] AudioSource musicAudioSource;
     [SerializeField] GameObject allCrowsKilledInteraction;
@@ -45,38 +32,24 @@ public class LevelScript_02 : MonoBehaviour
     {
         askedForDirections1 = true;
     }
-    public void AskedForAdviceOnWhatToDo()
-    {
-        askedForAdvice2 = true;
-    }
     public void PlacedASpark()
     {
-        if (askedForDirections1 == false)
+        if(askedForDirections1 == false)
         {
             phase1SkippedInteraction.SetActive(true);
             baseInteractionsPhase1.SetActive(false);
-        }
-        foreach(GameObject obj in objectsBeforePlacingSpark)
-        {
-            obj.SetActive(false);
-        }
-        foreach(GameObject obj in objectsAfterPlacingSpark)
-        {
-            obj.SetActive(true);
         }
     }
     public void TalkedWithInsultingCrow()
     {
         insultCrowsTalkedTo++;
-        
+        phase1SkippedInteraction.SetActive(false);
 
         if (insultCrowsTalkedTo >= 3)
         {
-            if (askedForAdvice2 == false)
+            if(askedForAdvice2 == false)
             {
-                phase1SkippedInteraction.SetActive(false);
                 phase2SkippedInteraction.SetActive(true);
-                baseInteractionsPhase2.SetActive(false);
 
                 if (phase1SkippedInteraction != null)
                 {
@@ -122,22 +95,18 @@ public class LevelScript_02 : MonoBehaviour
             templeDimZone.SetDesiredFogDistance(15);
         }
     }
-    public void EnableCrowKillInteractions()
-    {
-        Debug.Log("Enable Kill Interactions");
-        foreach(GameObject obj in crowKillInteractions)
-        {
-            if(obj != null)
-            {
-                obj.SetActive(true);
-            }
-        }
-        flyingBirdsController.SetAmountOfDesiredBirds(0);
-    }
-    public void ChangeSceneToNextLevel()
-    {
-        SceneManager.LoadScene(3);
-    }
-
-
 }
+
+/* Possible Routes
+
+Gracz omija na pocz¹tek past self
+Tak¿e rozmowa musi uruchamiaæ mo¿liwoœæ nastêpnych rozmów !!!
+
+Gdyby gracz znalaz³ missing piece zanim spyta o wskazówkê, nale¿y pomin¹æ t¹ interakcje oraz uruchomiæ inn¹
+    You already made some progress on your own i see. Now you can hear them clearly, right ? ETC ETC
+Gdyby gracz znalaz³ missing piece i pogada³ z krukami to jest nastêpna interakcja do uruchomienia
+    Been busy, huh ? Going straight to the point. I can't complain though. And ? Did you learn anything of value ? ETC ETC
+
+
+
+*/
