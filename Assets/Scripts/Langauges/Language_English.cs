@@ -404,12 +404,12 @@ wlaczyc crow talker interaction after placing spark
 wlaczyc fter placing placing spark interaction na lore drop
 crow talker ma z³e trigger collidery
     phase 1 skip interaction info wrong message
-phase 1 skip interaction problem jakis
+    phase 1 skip interaction problem jakis
     phase 2 after listening to few crows zmienic obiekt referencyjny
     nie uruchamiaj¹ siê kill parenty
 lore crow kill interaction not enabled
     corpse pile crow kill trigger not enabled
-drzwi na koniec otwieraja sie i zamykaja od razu
+    drzwi na koniec otwieraja sie i zamykaja od razu
  */
 /* ZROBIONE
     Muzykê momentami wyciszyæ ? 
