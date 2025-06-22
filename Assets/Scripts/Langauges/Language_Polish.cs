@@ -119,6 +119,8 @@ public class Language_Polish : LanguageBase
 
 
         // SCENE 02
+        #region
+
         // Crow Random Lines
         text[150] = "ZNAJDè TO !!!";
         text[151] = "ZAPOMNIJ !!!";
@@ -188,7 +190,6 @@ public class Language_Polish : LanguageBase
         text[270] = "åwiat, ktÛry widzisz, jest tym, o ktÛrym wielu mog≥oby powiedzieÊ, øe jest nie do naprawienia.";
         text[271] = "åwiat skazany na poraøkÍ.";
         text[272] = "A jednak. Stoisz tu.";
-        text[273] = "Trying to make things right. Trying to fix this shithole.";
         text[273] = "PrÛbujesz jakoú to wszystko odkrÍciÊ. PrÛbujesz naprawiÊ tπ dziurÍ.";
         text[274] = "Powodzenia. Ja nie da≥em radÍ.";
 
@@ -208,6 +209,8 @@ public class Language_Polish : LanguageBase
         text[287] = "Idü znajdü swojπ w≥asnπ iskierkÍ nadzieii";
         text[288] = "Kto wie, moøe drzwi do lepszego jutra stanπ dla ciebie otworem.";
 
+        text[289] = "TRANSLATE THIS.";
+
         text[290] = "Ahhh, Juø czujÍ, øe znalaz≥eú to czego brakowa≥o.";
         text[291] = "Teraz jesteú w stanie je us≥yszeÊ, prawda ?";
         text[292] = "Ohhh, jak brakowa≥o mi tej ciszy.";
@@ -217,7 +220,6 @@ public class Language_Polish : LanguageBase
         text[295] = "Jeúli nie wiesz co teraz zrobiÊ, mogÍ sprÛbowaÊ ci jakoú pomÛc.";
         text[296] = "Na poczπtek . . . PrÛbowa≥eú chociaø je wys≥uchaÊ ?";
         text[297] = "Kto wie, moøe dowiesz siÍ czegoú wartoúciowego ?";
-
 
         // Insulting Crow 2
         text[300] = "Co ty wogÛle prÛbujesz tutaj osiπgnπÊ ?";
@@ -260,7 +262,7 @@ public class Language_Polish : LanguageBase
         text[345] = "Juø nie mogÍ siÍ doczekaÊ aby zobaczyÊ jak siÍ ≥amiesz.";
         text[346] = "Walcz o swoje øycie !";
         text[347] = "No dawaj, Dla zabawy !";
-        text[348] = "chcÍ widzieÊ twojπ rozpacz";
+        text[348] = "TRANSLATE THIS";
 
         // Insulting Crow 7
         text[350] = "TrochÍ ci zaje≥o dotarcie tutaj.";
@@ -301,6 +303,8 @@ public class Language_Polish : LanguageBase
         text[394] = "Jak z dzieckiem . . .";
 
         // Past Self continued Talk
+        text[399] = "TRANSLATE THIS"; //
+
         text[400] = "I jak ? Dowiedzia≥eú siÍ czegoú uøytecznego ?";
         text[401] = "Podejrzewam, øe niezbyt.";
         text[402] = "Wiesz co siÍ mÛwi.";
@@ -337,6 +341,7 @@ public class Language_Polish : LanguageBase
         text[436] = "Pozwolisz mi nareszcie odpoczπÊ ?"; // Enable Kill Interaction,
 
 
+        #endregion
         text[450] = "Droga";
     }
 }
