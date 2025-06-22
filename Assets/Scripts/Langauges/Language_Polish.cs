@@ -127,7 +127,7 @@ public class Language_Polish : LanguageBase
         text[152] = "Stracone . . .";
         text[153] = "Ju¿ Nied³ugo";
         text[154] = "Dlaczego";
-        text[155] = "zakoñcz to```";
+        text[155] = "zakoñcz to";
         text[156] = "samemu";
         text[157] = "zawiód³";
         text[158] = "wszystko stracone";
@@ -197,7 +197,7 @@ public class Language_Polish : LanguageBase
         text[276] = "Dok³adnie w takim stanie, w jakim je zostawiono.";;
         text[277] = "Dla kogoœ do podniesienia, tylko z zaciekawienia.";
         text[278] = "Jak przypadkowy b³yszcz¹cy kamyk na drodze";
-        text[280] = "Jak roœlina, która nie by³a podlewana przez bóg wie jak d³ugi czas, b³agaj¹ca o trochê deszczu.";
+        text[279] = "Jak roœlina, która nie by³a podlewana przez bóg wie jak d³ugi czas, b³agaj¹ca o trochê deszczu.";
         text[280] = "Tylko próbuj¹ca przetrwaæ, staæ siê w pe³ni tym czym jest.";
         text[281] = "Ale deszcz nigdy nie nadejdzie.";
         text[282] = "Nic, co mog³oby poprawiæ kurs zdarzeñ.";
@@ -340,8 +340,8 @@ public class Language_Polish : LanguageBase
         text[435] = "Bior¹c pod uwagê mój stan . . .";
         text[436] = "Pozwolisz mi nareszcie odpocz¹æ ?"; // Enable Kill Interaction,
 
+ #endregion
 
-        #endregion
         text[450] = "Droga";
     }
 }
