@@ -433,7 +433,7 @@ Opcje dialogowe bêda siê pojawiaæ na ekranie, niektóre bêda czasowe ( tworzone n
 */
 
 /* OD ROBERTA
-Da siê spojrzeæ za mapê na pierwszym poziomie
+    Da siê spojrzeæ za mapê na pierwszym poziomie
 WskaŸnik góra dó³ w pierwszym poziomie
 Zmiana czu³oœci myszy
     Wspiêcie siê na drabinê mo¿na uruchomiæ dwa razy
