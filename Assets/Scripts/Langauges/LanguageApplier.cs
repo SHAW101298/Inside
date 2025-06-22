@@ -10,7 +10,16 @@ public class LanguageApplier : MonoBehaviour
 
     public void SetAccordingToLanguage()
     {
-        textField.text = LanguageManager.Instance.GetText(index);
+        string text = LanguageManager.Instance.GetText(index);
+        if(text != "")
+        {
+            textField.text = text;
+        }
+        else
+        {
+            text = LanguageManager.Instance.GetText(96);
+            textField.text = text;
+        }
     }
 
     private void Start()
