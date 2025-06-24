@@ -41,6 +41,8 @@ public class PlayerMovement : MonoBehaviour
     public CharacterController controller;
 
     public LayerMask groundLayer;
+    public bool isSitting;
+    public BenchSitting bench;
 
 
 
@@ -139,6 +141,11 @@ public class PlayerMovement : MonoBehaviour
         if(context.phase != InputActionPhase.Performed)
         {
             return;
+        }
+
+        if(isSitting == true)
+        {
+            bench.StandUp();
         }
 
         //Debug.Log("Action Jump Approved");
@@ -261,5 +268,15 @@ public class PlayerMovement : MonoBehaviour
     public void ModifyMovementSpeedByFlat(float val)
     {
 
+    }
+    public void PlayerSitsDown(BenchSitting usedBench)
+    {
+        isSitting = true;
+        bench = usedBench;
+    }
+    public void PlayerStandsUp()
+    {
+        isSitting = false;
+        bench = null;
     }
 }

@@ -28,6 +28,7 @@ public class BenchSitting : MonoBehaviour
         player.gameObject.transform.position = sitPosition.transform.position;
         player.gameObject.transform.rotation = sitPosition.transform.rotation;
         //player.BlockMovementAndRotationByAction();
+        player.movement.PlayerSitsDown(this);
         player.BlockMovementByAction();
     }
     public void StandUp()
@@ -40,6 +41,7 @@ public class BenchSitting : MonoBehaviour
         //player.AllowMovementAndRotationByAction();
         player.AllowMovementByAction();
         player.gameObject.transform.localEulerAngles = Vector3.up * -90;
+        player.movement.PlayerStandsUp();
     }
 
     private void Update()
