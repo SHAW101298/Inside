@@ -144,6 +144,7 @@ public class Language_Polish : LanguageBase
         text[169] = "prosze, odejdŸ";
         text[170] = "Czujê, jakbym by³ ostatni";
         text[171] = "Upadek jest nieunikniony";
+        text[172] = "zmarnowane";
 
 
         // Bench Thoughts

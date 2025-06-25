@@ -18,6 +18,9 @@ public class InteractTrigger : MonoBehaviour
     float timer;
     bool startTimer;
 
+    [Header("Debug")]
+    [SerializeField] bool debugTriggerInteraction;
+
     public void Interact()
     {
         interactEvent.Invoke();
@@ -43,6 +46,13 @@ public class InteractTrigger : MonoBehaviour
     }
     private void Update()
     {
+        if(debugTriggerInteraction == true)
+        {
+            Debug.Log("Interaction Triggered be Debug");
+            debugTriggerInteraction = false;
+            TriggerInteraction();
+        }
+
         if(startTimer == true)
         {
             timer += Time.deltaTime;

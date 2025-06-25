@@ -144,7 +144,7 @@ public class Language_English : LanguageBase
         text[169] = "please, leave";
         text[170] = "It feels like I'm the last one";
         text[171] = "The collapse is inevitable";
-
+        text[172] = "wasted";
 
         // Bench Thoughts
         text[200] = "what is my purpose";
@@ -440,7 +440,7 @@ Zmiana czu³oœci myszy
 Przy kamyczku na start nie mo¿na skoczyæ, zwiêkszyæ ground check
 Lore drop crow can't Interact
 Moc pogadaæ z ka¿dym krukiem
-Gdy siê siedzi, spacj¹ mo¿na te¿ wstaæ
+    Gdy siê siedzi, spacj¹ mo¿na te¿ wstaæ
     "sameu wybra³eœ to wszystko"
 No lore drop after listening to crows ?
         Altar crow collider not trigger         Sprawdzone, niby jest ok ?
