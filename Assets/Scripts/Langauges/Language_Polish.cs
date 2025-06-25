@@ -256,6 +256,12 @@ public class Language_Polish : LanguageBase
         text[333] = "Wiêc czemu myœlisz, ¿e teraz mia³oby byæ inaczej ?";
         text[334] = "Nigdy ci siê nie uda. Z tym mo¿esz mi wierzyæ.";
 
+        // Insulting Crow 12 Temple Crow 1
+        text[336] = "Im bardziej z tym walczysz, tym wiêcej tracisz";
+        text[337] = "Koniec koñców, zostaniesz w tym wszystkim samemu";
+        text[338] = "PogódŸ siê z tym";
+        text[339] = "Czy¿ nie w³aœnie o tym zawsze marzy³eœ ?";
+
         // Insulting Crow 6
         text[340] = "HahAhAhaHAha";
         text[341] = "Dobry ¿art !";

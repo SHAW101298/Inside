@@ -148,6 +148,7 @@ public class Language_English : LanguageBase
         text[173] = "no effort";
         text[174] = "lies";
 
+
         // Bench Thoughts
         text[200] = "what is my purpose";
         text[201] = "what is wrong with me";
@@ -255,6 +256,12 @@ public class Language_English : LanguageBase
         text[333] = "What makes you think, you can do it now ?";
         text[334] = "You will never make it. Trust me on that.";
 
+        // Insulting Crow 12 Temple Crow 1
+        text[336] = "The harder you fight the more you lose";
+        text[337] = "In the end, you will end up all alone";
+        text[338] = "Embrace it";
+        text[339] = "Isn't that what you always dreamed of ?";
+
         // Insulting Crow 6 Pair Crows 2
         text[340] = "HahAhAhaHAha";
         text[341] = "Thats a good one!";
@@ -297,7 +304,7 @@ public class Language_English : LanguageBase
         text[384] = "Bury them down and forget.";
         text[385] = "How classic of you.";
 
-        // Insulting Crow Lore Crow
+        // Insulting Crow 11 Lore Crow
         text[390] = "It was obvious from the start";// Self fulfilling Prophecy
         text[391] = "You are a Self fulfilling prophecy";
         text[392] = "You cannot change what was already set in stone.";
@@ -436,15 +443,15 @@ Opcje dialogowe bêda siê pojawiaæ na ekranie, niektóre bêda czasowe ( tworzone n
 
 /* OD ROBERTA
     Da siê spojrzeæ za mapê na pierwszym poziomie
-WskaŸnik góra dó³ w pierwszym poziomie
+    WskaŸnik góra dó³ w pierwszym poziomie
 Zmiana czu³oœci myszy
     Wspiêcie siê na drabinê mo¿na uruchomiæ dwa razy
-Przy kamyczku na start nie mo¿na skoczyæ, zwiêkszyæ ground check
-Lore drop crow can't Interact
-Moc pogadaæ z ka¿dym krukiem
+    Przy kamyczku na start nie mo¿na skoczyæ, zwiêkszyæ ground check
+    Lore drop crow can't Interact
+    Moc pogadaæ z ka¿dym krukiem
     Gdy siê siedzi, spacj¹ mo¿na te¿ wstaæ
     "sameu wybra³eœ to wszystko"
-No lore drop after listening to crows ?
+    No lore drop after listening to crows ?
         Altar crow collider not trigger         Sprawdzone, niby jest ok ?
     Chce widzieæ twój rozpacz
 Oznaczyæ punkty wszystkie. Mo¿e jaœniejszy kolor
