@@ -223,7 +223,7 @@ public class Language_English : LanguageBase
         text[296] = "First . . . Have you tried listening to them at least ?";
         text[297] = "Who knows, maybe you will learn something useful ?";
 
-        // Insulting Crow 2  APPLIED
+        // Insulting Crow 2 Hole Crow
         text[300] = "What are you even trying to accomplish here ?";
         text[301] = "Give Up.";
         text[302] = ".  .  .                           ";
@@ -232,14 +232,14 @@ public class Language_English : LanguageBase
         text[305] = "Do me a favour and end this facade.";
         text[306] = "No one wants you doing any of these things.";
 
-        // Insulting Crow 3  APPLIED 
+        // Insulting Crow 3 Dead Crows
         text[310] = "Do you see that pile of corpses over there ?";
         text[311] = "Why won't you just lie there and die";
         text[312] = "No one's gonna notice";
         text[313] = "You were never meant to exist anyway";
         text[314] = "Accept that.";
 
-        // Insulting Crow 4  APPLIED
+        // Insulting Crow 4 Pair Crows 1
         text[320] = "Whom do we have here ?";
         text[321] = "The long awaited savior!";
         text[322] = "The one destinied to make things right!";
@@ -248,14 +248,14 @@ public class Language_English : LanguageBase
         text[325] = "Someone like you, accomplishing anything ?";
         text[326] = "What a joke";
 
-        // Insulting Crow 5  APPLIED
+        // Insulting Crow 5 Dialog Crow
         text[330] = "Are you done ?";
         text[331] = "Stop being delusional";
         text[332] = "You never did anything right.";
         text[333] = "What makes you think, you can do it now ?";
         text[334] = "You will never make it. Trust me on that.";
 
-        // Insulting Crow 6  APPLIED
+        // Insulting Crow 6 Pair Crows 2
         text[340] = "HahAhAhaHAha";
         text[341] = "Thats a good one!";
         text[342] = "Where did such a clown like you appear from ?";
@@ -266,7 +266,7 @@ public class Language_English : LanguageBase
         text[347] = "Come on, For fun !";
         text[348] = "let's see you cry";
 
-        // Insulting Crow 7 APPLIED
+        // Insulting Crow 7 MotionLess Pillars Crows
         text[350] = "Took you long enough to get here.";
         text[351] = "Why are you always this slow ?";
         text[352] = "Is it because you're tired ?";
@@ -275,7 +275,7 @@ public class Language_English : LanguageBase
         text[355] = "You deserve all these things. Thats your well earned reward.";
         text[356] = "Come on. Enjoy yourself. What's stopping you ?";
 
-        // Insulting Crow 8  APPLIED
+        // Insulting Crow 8 Pillars Crows
         text[360] = "You know what i always think when i look at you ?";
         text[361] = "That you're just a defect.";
         text[362] = "Defect on history pages. Meant to be erased.";
@@ -283,13 +283,13 @@ public class Language_English : LanguageBase
         text[364] = "Like a careless pencil mark in a sketchbook.";
         text[365] = "Keep that in your tiny mind.";
 
-        // Insulting Crow 9  APPLIED
+        // Insulting Crow 9 Road Crow
         text[370] = "Do you intend to put any effort into that ?";
         text[371] = "All i see is you just walking around";
         text[372] = "As if you dont know what to do at all";
         text[373] = "How dumb can you really be ?";
 
-        // Insulting Crow 10  APPLIED
+        // Insulting Crow 10 Broken Bridge Crow
         text[380] = "You need to start accepting facts.";
         text[381] = "You chose all of this.";
         text[382] = "Every event is the result of your own inability";
@@ -297,7 +297,7 @@ public class Language_English : LanguageBase
         text[384] = "Bury them down and forget.";
         text[385] = "How classic of you.";
 
-        // Insulting Crow 11
+        // Insulting Crow Lore Crow
         text[390] = "It was obvious from the start";// Self fulfilling Prophecy
         text[391] = "You are a Self fulfilling prophecy";
         text[392] = "You cannot change what was already set in stone.";
