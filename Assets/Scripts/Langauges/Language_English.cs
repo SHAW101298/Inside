@@ -145,6 +145,7 @@ public class Language_English : LanguageBase
         text[170] = "It feels like I'm the last one";
         text[171] = "The collapse is inevitable";
         text[172] = "wasted";
+        text[173] = "no effort";
 
         // Bench Thoughts
         text[200] = "what is my purpose";

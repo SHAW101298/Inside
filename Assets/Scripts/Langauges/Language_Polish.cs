@@ -145,6 +145,7 @@ public class Language_Polish : LanguageBase
         text[170] = "Czujê, jakbym by³ ostatni";
         text[171] = "Upadek jest nieunikniony";
         text[172] = "zmarnowane";
+        text[173] = "bez wysi³ku";
 
 
         // Bench Thoughts
