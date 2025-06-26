@@ -104,7 +104,6 @@ MonoBehaviour:
   isSitting: 0
   showDialogPrompts: 0
   sitPosition: {fileID: 2948003077692461139}
-  standUpPosition: {fileID: 6214287032707041974}
   sitTimer: 0
   dialogTimer: 0
   requiredSitTime: 4
@@ -201,30 +200,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2948003077652399975}
-        m_TargetAssemblyTypeName: InteractTrigger, Assembly-CSharp
-        m_MethodName: EnableGroup2
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2948003077652399975}
-        m_TargetAssemblyTypeName: InteractTrigger, Assembly-CSharp
-        m_MethodName: DisableGroup1
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
   delayedInteractEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -232,10 +207,8 @@ MonoBehaviour:
   destroyTriggerOnActivation: 0
   disableTriggerOnActivation: 0
   delayInteractTriggerTime: 0
-  objectsGroup1:
-  - {fileID: 2948003077652399978}
-  objectsGroup2:
-  - {fileID: 2948003078362323562}
+  objectsGroup1: []
+  objectsGroup2: []
   debugTriggerInteraction: 0
 --- !u!65 &2948003077652399972
 BoxCollider:
@@ -401,30 +374,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2948003078362323553}
-        m_TargetAssemblyTypeName: InteractTrigger, Assembly-CSharp
-        m_MethodName: EnableGroup1
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2948003078362323553}
-        m_TargetAssemblyTypeName: InteractTrigger, Assembly-CSharp
-        m_MethodName: DisableGroup2
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
   delayedInteractEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -432,10 +381,8 @@ MonoBehaviour:
   destroyTriggerOnActivation: 0
   disableTriggerOnActivation: 0
   delayInteractTriggerTime: 0
-  objectsGroup1:
-  - {fileID: 2948003077652399978}
-  objectsGroup2:
-  - {fileID: 2948003078362323562}
+  objectsGroup1: []
+  objectsGroup2: []
   debugTriggerInteraction: 0
 --- !u!65 &2948003078362323558
 BoxCollider:

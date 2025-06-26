@@ -85,4 +85,10 @@ public class PlayerData : MonoBehaviour
     {
         input.SwitchCurrentActionMap("Player");
     }
+    public void TeleportToPosition(Vector3 pos)
+    {
+        movement.controller.enabled = false;
+        gameObject.transform.position = pos;
+        movement.controller.enabled = true;
+    }
 }
