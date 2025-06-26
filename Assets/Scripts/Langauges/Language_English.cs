@@ -463,3 +463,7 @@ Ka¿da interakcja z krukiem odkrywa ma³y fragment mapy, który ukazywany jest na d
 Czas gry 1 godzina, na 2 scenê
 Czas gry 10 minut 1 scena
  */
+
+/* OD ANDZI
+ Na poziomie pierwszym jakaœ wariacja typu sieæ paj¹ka (OK), nietoperze ( nieee )
+ */
