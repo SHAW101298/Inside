@@ -33,9 +33,9 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2948003077692461138}
-  - {fileID: 2948003077739088560}
   - {fileID: 2948003077652399973}
   - {fileID: 2948003078362323557}
+  - {fileID: 2916247304690324673}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -104,11 +104,14 @@ MonoBehaviour:
   isSitting: 0
   showDialogPrompts: 0
   sitPosition: {fileID: 2948003077692461139}
+  standUpPosition: {fileID: 6214287032707041974}
   sitTimer: 0
   dialogTimer: 0
   requiredSitTime: 4
   delayBetweenDialogPrompts: 2
-  dialog: {fileID: 2948003077739088563}
+  dialog: {fileID: 0}
+  sitInteract: {fileID: 2948003077652399978}
+  standUpInteract: {fileID: 2948003078362323562}
   Event_PromptDialog:
     m_PersistentCalls:
       m_Calls:
@@ -169,7 +172,7 @@ Transform:
   m_Children:
   - {fileID: 2948003078128666777}
   m_Father: {fileID: 3414801998883955737}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2948003077652399975
 MonoBehaviour:
@@ -233,6 +236,7 @@ MonoBehaviour:
   - {fileID: 2948003077652399978}
   objectsGroup2:
   - {fileID: 2948003078362323562}
+  debugTriggerInteraction: 0
 --- !u!65 &2948003077652399972
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -277,65 +281,6 @@ Transform:
   m_Father: {fileID: 3414801998883955737}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
---- !u!1 &2948003077739088561
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2948003077739088560}
-  - component: {fileID: 2948003077739088563}
-  m_Layer: 0
-  m_Name: Dialog Prompt
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2948003077739088560
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2948003077739088561}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 3414801998883955737}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2948003077739088563
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2948003077739088561}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe83d7c77b71ca04f9db1777f95718c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  index: 7e0000007a0000007b000000710000006a0000006c0000007c0000008200000083000000840000008500000086000000
-  usedIndexes: 
-  removeShownTextsFromList: 0
-  EVENT_StartShowing:
-    m_PersistentCalls:
-      m_Calls: []
-  EVENT_EndShowing:
-    m_PersistentCalls:
-      m_Calls: []
-  EVENT_EmptyIndexList:
-    m_PersistentCalls:
-      m_Calls: []
-  EVENT_AllTextsUsedUp:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &2948003078128666782
 GameObject:
   m_ObjectHideFlags: 0
@@ -427,7 +372,7 @@ Transform:
   m_Children:
   - {fileID: 2948003078825526286}
   m_Father: {fileID: 3414801998883955737}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2948003078362323553
 MonoBehaviour:
@@ -491,6 +436,7 @@ MonoBehaviour:
   - {fileID: 2948003077652399978}
   objectsGroup2:
   - {fileID: 2948003078362323562}
+  debugTriggerInteraction: 0
 --- !u!65 &2948003078362323558
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -563,3 +509,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 57
+--- !u!1 &6214287032707041974
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2916247304690324673}
+  m_Layer: 0
+  m_Name: Stand Up Position
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2916247304690324673
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6214287032707041974}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -0.54, y: -0.1, z: -0.311}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3414801998883955737}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}

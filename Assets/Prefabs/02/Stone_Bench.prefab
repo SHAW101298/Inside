@@ -109,6 +109,8 @@ MonoBehaviour:
   requiredSitTime: 4
   delayBetweenDialogPrompts: 2
   dialog: {fileID: 3284871711200422067}
+  sitInteract: {fileID: 3284871711145321834}
+  standUpInteract: {fileID: 3284871711777519722}
   Event_PromptDialog:
     m_PersistentCalls:
       m_Calls:
@@ -297,6 +299,7 @@ MonoBehaviour:
   delayInteractTriggerTime: 0
   objectsGroup1: []
   objectsGroup2: []
+  debugTriggerInteraction: 0
 --- !u!65 &3284871711145321828
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -499,6 +502,7 @@ MonoBehaviour:
   delayInteractTriggerTime: 0
   objectsGroup1: []
   objectsGroup2: []
+  debugTriggerInteraction: 0
 --- !u!65 &3284871711777519718
 BoxCollider:
   m_ObjectHideFlags: 0
