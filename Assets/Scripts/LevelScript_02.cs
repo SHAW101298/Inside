@@ -112,6 +112,7 @@ public class LevelScript_02 : MonoBehaviour
             characterAnim.SetTrigger("NoLegs");
         }
         crowLocalizationTrigger.CheckValidityOfLists();
+        ObjectiveManager.Instance.Show(lastBone.ToString() + "/" + "12");
 
         if (lastBone == 13)
         {
