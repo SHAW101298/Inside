@@ -9,9 +9,13 @@ public class PlayerInteractRay : MonoBehaviour
     [SerializeField] LayerMask infoLayer;
     [SerializeField] LayerMask interactLayer;
     [SerializeField] float infoRaycastDistance;
+    bool blockedInteractions;
 
     public void ActionInteract(InputAction.CallbackContext context)
     {
+        if (blockedInteractions == true)
+            return;
+
         if (context.phase != InputActionPhase.Performed)
         {
             return;
@@ -43,5 +47,13 @@ public class PlayerInteractRay : MonoBehaviour
             data.ui.ShowText(textInfo);
         }
         
+    }
+    public void BlockInteractions()
+    {
+        blockedInteractions = true;
+    }
+    public void AllowInteractions()
+    {
+        blockedInteractions = false;
     }
 }

@@ -24,6 +24,7 @@ public class PlayerData : MonoBehaviour
     public PlayerUI ui;
     public PlayerAnimations animations;
     public PlayerInput input;
+    public PlayerInteractRay interactRay;
 
     public void BlockMovementAndRotationByUI()
     {
@@ -76,6 +77,14 @@ public class PlayerData : MonoBehaviour
     public void AllowRotationByUI()
     {
         rotation.AllowRotationByUI();
+    }
+    public void BlockInteractions()
+    {
+        interactRay.BlockInteractions();
+    }
+    public void AllowInteractions()
+    {
+        interactRay.AllowInteractions();
     }
     public void ChangeMapToUI()
     {

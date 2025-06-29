@@ -94,6 +94,11 @@ public class DialogManager : MonoBehaviour
         currentChoice = choice;
         GameObject temp;
         UI_Data ui_Data;
+
+        foreach(Transform child in optionsContent)
+        {
+            Destroy(child.gameObject);
+        }
         for(int i = 0; i < choice.options.Count; i++)
         {
             // Content size fitter and grid layout should work itself there
@@ -111,6 +116,8 @@ public class DialogManager : MonoBehaviour
         }
         // Block Player
         PlayerData.instance.BlockMovementAndRotationByUI();
+        PlayerData.instance.BlockInteractions();
+        PlayerData.instance.ChangeMapToUI();
     }
     public void PauseWaitTimer()
     {
@@ -123,6 +130,8 @@ public class DialogManager : MonoBehaviour
     public void ChooseDialogOption(int x)
     {
         PlayerData.instance.AllowMovemntAndRotationByUI();
+        PlayerData.instance.AllowInteractions();
+        PlayerData.instance.ChangeMapToPlayer();
         Debug.Log("ChooseDialogOption on " + x);
         ShowDialogPromptOnChoice(x);
     }
@@ -133,7 +142,7 @@ public class DialogManager : MonoBehaviour
         if (currentChoice == null)
             return;
 
-        ShowDialogPromptOnChoice(1);
+        ChooseDialogOption(0);
     }
     public void Action_Number2(InputAction.CallbackContext context)
     {
@@ -142,7 +151,7 @@ public class DialogManager : MonoBehaviour
         if (currentChoice == null)
             return;
 
-        ShowDialogPromptOnChoice(2);
+        ChooseDialogOption(1);
     }
     public void Action_Number3(InputAction.CallbackContext context)
     {
@@ -151,7 +160,7 @@ public class DialogManager : MonoBehaviour
         if (currentChoice == null)
             return;
 
-        ShowDialogPromptOnChoice(3);
+        ChooseDialogOption(2);
     }
     public void Action_Number4(InputAction.CallbackContext context)
     {
@@ -160,7 +169,7 @@ public class DialogManager : MonoBehaviour
         if (currentChoice == null)
             return;
 
-        ShowDialogPromptOnChoice(4);
+        ChooseDialogOption(3);
     }
     public void Action_Number5(InputAction.CallbackContext context)
     {
@@ -169,7 +178,7 @@ public class DialogManager : MonoBehaviour
         if (currentChoice == null)
             return;
 
-        ShowDialogPromptOnChoice(5);
+        ChooseDialogOption(4);
     }
     public void Action_Number6(InputAction.CallbackContext context)
     {
@@ -177,14 +186,12 @@ public class DialogManager : MonoBehaviour
             return;
         if (currentChoice == null)
             return;
-        ShowDialogPromptOnChoice(6);
+        ChooseDialogOption(5);
     }
 
     void ShowDialogPromptOnChoice(int x)
     {
         if (currentChoice.options.Count < x)
-            return;
-        if (choiceWasAlreadyMade == true)
             return;
 
         Debug.Log("ShowDialogPromptOnChoice on " + x);

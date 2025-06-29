@@ -7,6 +7,7 @@ public class DialogOption
 {
     [SerializeField] int lang_Index;
     public bool removeWhenChoosen;
+    public InteractTrigger trigger;
     public int GetLangIndex()
     {
         return lang_Index;
@@ -23,6 +24,10 @@ public class DialogChoice : MonoBehaviour
         if (options[x].removeWhenChoosen == true)
         {
             options.RemoveAt(x);
+        }
+        if (options[x].trigger != null)
+        {
+            options[x].trigger.TriggerInteraction();
         }
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
