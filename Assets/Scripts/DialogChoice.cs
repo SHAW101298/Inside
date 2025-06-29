@@ -19,10 +19,27 @@ public class DialogChoice : MonoBehaviour
 
     public void ChoosenOption(int x)
     {
+        Debug.Log("Choosen option " + x);
         if (options[x].removeWhenChoosen == true)
         {
             options.RemoveAt(x);
         }
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }
+    public void ShowOptions()
+    {
+        DialogManager.Instance.ShowDialogOptions(this);
+        Cursor.lockState = CursorLockMode.Confined;
+        Cursor.visible = true;
+    }
+    public void PauseShownText()
+    {
+        DialogManager.Instance.PauseWaitTimer();
+    }
+    public void UnPauseShownText()
+    {
+        DialogManager.Instance.UnPauseWaitTimer();
     }
 
 }

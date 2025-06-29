@@ -54,6 +54,7 @@ public class DialogManager : MonoBehaviour
     int lastLetterIndex;
 
     [Header("Player Dialog Options")]
+    [SerializeField] GameObject dialogOptionsWindow;
     [SerializeField] DialogChoice currentChoice;
     [SerializeField] Transform optionsContent;
     [SerializeField] GameObject optionPrefab;
@@ -89,17 +90,41 @@ public class DialogManager : MonoBehaviour
     }
     public void ShowDialogOptions(DialogChoice choice)
     {
+        dialogOptionsWindow.SetActive(true);
         currentChoice = choice;
         GameObject temp;
-        pauseWaitTimer = true;
+        UI_Data ui_Data;
         for(int i = 0; i < choice.options.Count; i++)
         {
             // Content size fitter and grid layout should work itself there
             temp = Instantiate(optionPrefab);
             temp.transform.SetParent(optionsContent);
+            temp.transform.localScale = Vector3.one;
+            int index = choice.options[i].GetLangIndex();
+            ui_Data = temp.GetComponent<UI_Data>();
+            string optionText = (i+1).ToString() + ". ";
+            optionText += LanguageManager.Instance.GetText(index);
+            ui_Data.SetTextField(optionText);
+            ui_Data.intValue = i;
             // Get text component from UI script, and set text according to language
 
         }
+        // Block Player
+        PlayerData.instance.BlockMovementAndRotationByUI();
+    }
+    public void PauseWaitTimer()
+    {
+        pauseWaitTimer = true;
+    }
+    public void UnPauseWaitTimer()
+    {
+        pauseWaitTimer = false;
+    }
+    public void ChooseDialogOption(int x)
+    {
+        PlayerData.instance.AllowMovemntAndRotationByUI();
+        Debug.Log("ChooseDialogOption on " + x);
+        ShowDialogPromptOnChoice(x);
     }
     public void Action_Number1(InputAction.CallbackContext context)
     {
@@ -162,8 +187,11 @@ public class DialogManager : MonoBehaviour
         if (choiceWasAlreadyMade == true)
             return;
 
-        int index = currentChoice.options[x-1].GetLangIndex();
-        currentChoice.ChoosenOption(x-1);
+        Debug.Log("ShowDialogPromptOnChoice on " + x);
+
+        dialogOptionsWindow.SetActive(false);
+        int index = currentChoice.options[x].GetLangIndex();
+        currentChoice.ChoosenOption(x);
         ShowText(index);
         choiceWasAlreadyMade = true;
     }

@@ -44,7 +44,7 @@ public class RockPathCreation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        PathCreation();
+        PathCreation2();
         PathDestruction();
     }
     void PathCreation()
@@ -138,5 +138,37 @@ public class RockPathCreation : MonoBehaviour
     public void TriggerDestruction()
     {
         Destroy(gameObject);
+    }
+
+    public void PathCreation2()
+    {
+        if (createPath == true)
+        {
+            timer += Time.deltaTime;
+            float percent = timer / creationTime;
+            float lastPercent = 0;
+
+            for (int i = 0; i < rockNumber; i++)
+            {
+                percent = ( timer -((float)i/10) ) / creationTime;
+                if(percent > 1)
+                {
+                    percent = 1;
+                }
+
+                rockTransforms[i].position = Vector3.Slerp(startTransform[i].position, desiredTransform[i].position, percent);
+                rockTransforms[i].rotation = Quaternion.Slerp(startTransform[i].rotation, desiredTransform[i].rotation, percent);
+                rockTransforms[i].localScale = Vector3.Slerp(startTransform[i].localScale, desiredTransform[i].localScale, percent);
+                lastPercent = percent;
+            }
+            if(lastPercent == 1)
+            {
+                percent = 1;
+                createPath = false;
+                timer = 0;
+                pathCreated.Invoke();
+                pathState = ENUM_PathState.created;
+            }
+        }
     }
 }

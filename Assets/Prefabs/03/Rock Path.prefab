@@ -78,7 +78,8 @@ MonoBehaviour:
   - {fileID: 5039622049841266110}
   nextGroup: {fileID: 0}
   enterTrigger: {fileID: 6009402739252268932}
-  creationTime: 3
+  creationTime: 2
+  pathState: 0
   pathCreated:
     m_PersistentCalls:
       m_Calls: []

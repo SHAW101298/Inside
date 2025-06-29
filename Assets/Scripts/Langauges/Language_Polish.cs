@@ -352,5 +352,10 @@ public class Language_Polish : LanguageBase
  #endregion
 
         text[450] = "Droga";
+        text[451] = "Wybór";
+        text[452] = "Poddaæ siê";
+        text[453] = "Byæ";
+
+        text[455] = "";
     }
 }

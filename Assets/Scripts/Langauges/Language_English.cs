@@ -352,6 +352,13 @@ public class Language_English : LanguageBase
 #endregion
 
         text[450] = "The Road";
+        text[451] = "The Choice";
+        text[452] = "Give Up";
+        text[453] = "Be";
+
+        text[455] = "What is this place ?";
+        text[456] = "Who Am I ?";
+        text[457] = "What's going on ?";
     }
 }
 
