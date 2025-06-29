@@ -359,6 +359,16 @@ public class Language_English : LanguageBase
         text[455] = "What is this place ?";
         text[456] = "Who Am I ?";
         text[457] = "What's going on ?";
+
+        // What is this place answer
+        text[460] = "This place used to be a past. Used to be a future.";
+        text[461] = "The beggining of everything.";
+        text[462] = "Now its just ... all that is left.";
+        // Who Am I answer
+        text[470] = "Go forward and find your answer.";
+        text[471] = "You're the one with the keys and a will.";
+        // What's going on answer
+        text[480] = "You got lost.";
     }
 }
 
