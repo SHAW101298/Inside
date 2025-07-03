@@ -27,13 +27,13 @@ public class DialogChoice : MonoBehaviour
     public void ChoosenOption(int x)
     {
         Debug.Log("Choosen option " + x);
-        if (options[x].removeWhenChoosen == true)
-        {
-            options.RemoveAt(x);
-        }
         if (options[x].trigger != null)
         {
             options[x].trigger.TriggerInteraction();
+        }
+        if (options[x].removeWhenChoosen == true)
+        {
+            options.RemoveAt(x);
         }
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;

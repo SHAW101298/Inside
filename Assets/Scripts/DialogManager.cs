@@ -181,8 +181,8 @@ public class DialogManager : MonoBehaviour
 
         dialogOptionsWindow.SetActive(false);
         int index = currentChoice.options[x].GetLangIndex();
+        //ShowText(currentChoice.options[x].GetDialogPrompt());
         currentChoice.ChoosenOption(x);
-        ShowText(currentChoice.options[x].GetDialogPrompt());
         choiceWasAlreadyMade = true;
     }
 

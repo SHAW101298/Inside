@@ -14,6 +14,8 @@ public class DialogPromptGroup : MonoBehaviour
 
     public void PromptAllDialogFields()
     {
+        Debug.Log("I AM " + gameObject.transform.parent.name);
+        Debug.Log("Prompt count = " + prompts.Count);
         prompts[0].EVENT_StartShowing.AddListener(GroupStarted);
         prompts[prompts.Count - 1].EVENT_EndShowing.AddListener(GroupFinished);
         for (int i = 0; i < prompts.Count; i++)

@@ -240,6 +240,13 @@ public class Language_Polish : LanguageBase
         text[313] = "Nigdy nie by³o przeznaczone ci istnieæ i tak.";
         text[314] = "Zaakceptuj to.";
 
+        // Insulting Crow 13 Temple Crow 2
+        text[315] = "Nadziei nie mo¿na wiecznie oszukiwaæ.";
+        text[316] = "W pewnym momencie, zwyczajnie staniesz w miejscu.";
+        text[317] = "Staniesz i bêdziesz siê zastanawia³, po co.";
+        text[318] = "Nareszcie uœwiadomisz sobie, ¿e nie ma sensu nawet próbowaæ.";
+        text[319] = "W³aœnie wtedy, przypomnisz sobie moje s³owa.";
+
         // Insulting Crow 4
         text[320] = "A kogó¿ to my tu mamy ?";
         text[321] = "D³ugo wyczekiwany zbawca!";
@@ -356,6 +363,20 @@ public class Language_Polish : LanguageBase
         text[452] = "Poddaæ siê";
         text[453] = "Byæ";
 
-        text[455] = "";
+        text[455] = "Co to za miejsce ?";
+        text[456] = "Kim jestem ?";
+        text[457] = "O co tutaj chodzi ?";
+
+
+
+        // What is this place answer
+        text[460] = "This place used to be a past. Used to be a future.";
+        text[461] = "The beggining of everything.";
+        text[462] = "Now its just ... all that is left.";
+        // Who Am I answer
+        text[470] = "Go forward and find your answer.";
+        text[471] = "You're the one with the keys and a will.";
+        // What's going on answer
+        text[480] = "You got lost.";
     }
 }

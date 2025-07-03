@@ -240,6 +240,13 @@ public class Language_English : LanguageBase
         text[313] = "You were never meant to exist anyway";
         text[314] = "Accept that.";
 
+        // Insulting Crow 13 Temple Crow 2
+        text[315] = "Hope cannot be eluded forever";
+        text[316] = "At some point, you will just stop.";
+        text[317] = "Stop and wonder what's the point";
+        text[318] = "Finally realize there is no reason to even try.";
+        text[319] = "You will remember my words then.";
+
         // Insulting Crow 4 Pair Crows 1
         text[320] = "Whom do we have here ?";
         text[321] = "The long awaited savior!";
