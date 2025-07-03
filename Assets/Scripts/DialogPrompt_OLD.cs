@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-[System.Serializable]
-public class DialogPrompt
+public class DialogPrompt_OLD : MonoBehaviour
 {
     public int index;
 

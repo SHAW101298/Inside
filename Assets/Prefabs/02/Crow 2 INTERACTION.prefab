@@ -123,89 +123,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.1989831, y: 1.888454, z: 1.1224617}
   m_Center: {x: -0.09949101, y: 0.44422224, z: -0.06123048}
---- !u!1 &1838755724155619136
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1838755724155619143}
-  - component: {fileID: 1838755724155619142}
-  m_Layer: 0
-  m_Name: Dialog Prompt
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1838755724155619143
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1838755724155619136}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 8234179445802022543}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1838755724155619142
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1838755724155619136}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe83d7c77b71ca04f9db1777f95718c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  index: 68000000
-  usedIndexes: 
-  removeShownTextsFromList: 0
-  EVENT_StartShowing:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 4924084898784869551}
-        m_TargetAssemblyTypeName: Crow_SoundPlayer, Assembly-CSharp
-        m_MethodName: Interact_PlayRandomCaw
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  EVENT_EndShowing:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1838755724155619142}
-        m_TargetAssemblyTypeName: DialogPrompt, Assembly-CSharp
-        m_MethodName: TriggerDestruction
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  EVENT_EmptyIndexList:
-    m_PersistentCalls:
-      m_Calls: []
-  EVENT_AllTextsUsedUp:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &1838755724791927825
 GameObject:
   m_ObjectHideFlags: 0
@@ -255,7 +172,7 @@ MonoBehaviour:
   interactEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1838755724155619142}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: DialogPrompt, Assembly-CSharp
         m_MethodName: PromptAllDialogFields
         m_Mode: 1
@@ -270,11 +187,13 @@ MonoBehaviour:
   delayedInteractEvent:
     m_PersistentCalls:
       m_Calls: []
+  runTriggerOnStart: 0
   destroyTriggerOnActivation: 1
   disableTriggerOnActivation: 0
   delayInteractTriggerTime: 0
   objectsGroup1: []
   objectsGroup2: []
+  debugTriggerInteraction: 0
 --- !u!65 &1838755724791927831
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -498,7 +417,6 @@ Transform:
   - {fileID: 5858237701022305185}
   - {fileID: 5901611511355083413}
   - {fileID: 1838755724791927824}
-  - {fileID: 1838755724155619143}
   - {fileID: 8484213856403672624}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -1374,7 +1292,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6689833010573166087, guid: a09c05afb5c411041b86901e025eab74, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6689833010573166087, guid: a09c05afb5c411041b86901e025eab74, type: 3}
       propertyPath: m_LocalPosition.x

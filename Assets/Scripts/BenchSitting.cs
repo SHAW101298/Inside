@@ -14,7 +14,7 @@ public class BenchSitting : MonoBehaviour
     [SerializeField] float dialogTimer;
     [SerializeField] float requiredSitTime;
     [SerializeField] float delayBetweenDialogPrompts;
-    [SerializeField] DialogPrompt dialog;
+    [SerializeField] DialogPromptGroup dialog;
 
     [SerializeField] GameObject sitInteract;
     [SerializeField] GameObject standUpInteract;

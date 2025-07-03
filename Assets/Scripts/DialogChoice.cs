@@ -6,12 +6,18 @@ using UnityEngine;
 public class DialogOption
 {
     [SerializeField] int lang_Index;
+    [SerializeField] DialogPrompt prompt;
     public bool removeWhenChoosen;
     public InteractTrigger trigger;
     public int GetLangIndex()
     {
         return lang_Index;
     }
+    public DialogPrompt GetDialogPrompt()
+    {
+        return prompt;
+    }
+
 }
 
 public class DialogChoice : MonoBehaviour

@@ -2230,7 +2230,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9170628902623201516, guid: 92b627872cf1a504985c0a8599c16676, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 97.754
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 9170628902623201516, guid: 92b627872cf1a504985c0a8599c16676, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3539,12 +3539,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   options:
   - lang_Index: 455
+    prompt: {fileID: 0}
     removeWhenChoosen: 0
     trigger: {fileID: 215578541}
   - lang_Index: 456
+    prompt: {fileID: 0}
     removeWhenChoosen: 0
     trigger: {fileID: 0}
   - lang_Index: 457
+    prompt: {fileID: 0}
     removeWhenChoosen: 0
     trigger: {fileID: 0}
 --- !u!1001 &1911484352

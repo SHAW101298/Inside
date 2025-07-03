@@ -24,15 +24,18 @@ public class IntroSceneScript : MonoBehaviour
     [Header("Flame Brighness Values")]
     public float flameIntensity;
     public float flameRange;
-    
+
+    [Header("Dialog Prompts")]
+    [SerializeField] DialogPrompt questionPrompt;
+    [SerializeField] DialogPrompt emptyPrompt;
 
 
 
     // Start is called before the first frame update
     void Start()
     {
-        DialogManager.Instance.ShowText(94);
-        DialogManager.Instance.ShowText(95);
+        DialogManager.Instance.ShowText(emptyPrompt);
+        DialogManager.Instance.ShowText(questionPrompt);
     }
 
     // Update is called once per frame

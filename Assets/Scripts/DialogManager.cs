@@ -40,7 +40,7 @@ public class DialogManager : MonoBehaviour
 
     public TMP_Text dialogField;
 
-    [SerializeField] List<DialogData> promptsToShow;
+    [SerializeField] List<DialogPrompt> promptsToShow;
     [SerializeField] float delayBetweenLetters;
     [SerializeField] float timeForTextToRemain;
 
@@ -60,32 +60,15 @@ public class DialogManager : MonoBehaviour
     [SerializeField] GameObject optionPrefab;
     bool choiceWasAlreadyMade;
 
-    public void ShowText(DialogData data)
+    public void ShowText(DialogPrompt prompt)
     {
-        promptsToShow.Add(data);
-        if(promptsToShow.Count == 1)
-        {
-            animateText = true;
-            lastLetterIndex = 0;
-            currentTextToShow = LanguageManager.Instance.GetText(promptsToShow[0].index);
-
-            if (promptsToShow[0].prompt != null)
-            {
-                promptsToShow[0].prompt.EVENT_StartShowing.Invoke();
-            }
-        }
-
-    }
-    public void ShowText(int index)
-    {
-        DialogData data = new DialogData(null, index);
-        promptsToShow.Add(data);
-
+        promptsToShow.Add(prompt);
         if (promptsToShow.Count == 1)
         {
+            animateText = true;
             lastLetterIndex = 0;
             currentTextToShow = LanguageManager.Instance.GetText(promptsToShow[0].index);
-            animateText = true;
+            promptsToShow[0].EVENT_StartShowing.Invoke();
         }
     }
     public void ShowDialogOptions(DialogChoice choice)
@@ -199,7 +182,7 @@ public class DialogManager : MonoBehaviour
         dialogOptionsWindow.SetActive(false);
         int index = currentChoice.options[x].GetLangIndex();
         currentChoice.ChoosenOption(x);
-        ShowText(index);
+        ShowText(currentChoice.options[x].GetDialogPrompt());
         choiceWasAlreadyMade = true;
     }
 
@@ -248,10 +231,7 @@ public class DialogManager : MonoBehaviour
             timer = 0;
             dialogField.text = "";
             awaitingUntilRestart = false;
-            if (promptsToShow[0].prompt != null)
-            {
-                promptsToShow[0].prompt.EVENT_EndShowing.Invoke();
-            }
+            promptsToShow[0].EVENT_EndShowing.Invoke();
 
             promptsToShow.RemoveAt(0);
 
@@ -260,11 +240,7 @@ public class DialogManager : MonoBehaviour
                 //Debug.Log("Setting new current text");
                 currentTextToShow = LanguageManager.Instance.GetText(promptsToShow[0].index);
 
-                if (promptsToShow[0].prompt != null)
-                {
-                    //Debug.Log("Prompt is present");
-                    promptsToShow[0].prompt.EVENT_StartShowing.Invoke();
-                }
+                promptsToShow[0].EVENT_StartShowing.Invoke();
                 animateText = true;
             }
         }
