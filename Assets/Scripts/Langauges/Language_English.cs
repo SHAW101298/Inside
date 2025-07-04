@@ -122,31 +122,31 @@ public class Language_English : LanguageBase
         #region  
 
         // Crow Random Lines
-        text[150] = "FIND IT !!!";
-        text[151] = "FORGET !!!";
-        text[152] = "Lost . . .";
-        text[153] = "Soon";
-        text[154] = "Why";
-        text[155] = "end this";
-        text[156] = "alone";
+        text[150] = "FIND IT !!!";  // Spawn
+        text[151] = "FORGET !!!";   // Near Old Spawn
+        text[152] = "Lost . . .";   // Bridge
+        text[153] = "Soon";         // Motionless Pillars
+        text[154] = "Why";          // Pillars
+        text[155] = "end this";     // Hole
+        text[156] = "alone";        // Dead
         text[157] = "failed";
         text[158] = "all is lost";
         text[159] = "no more reasons";
         text[160] = "Fear";
-        text[161] = "leave it";
+        text[161] = "leave it";     // Road
         text[162] = "tired";
         text[163] = "the cycle repeats";
         text[164] = "you're a fool";
         text[165] = "Leave.";
-        text[166] = "last . . . request";
-        text[167] = "erase . . . existence";
+        text[166] = "last . . . request";       // Pair
+        text[167] = "erase . . . existence";    // Pair
         text[168] = "Find the road";
         text[169] = "please, leave";
         text[170] = "It feels like I'm the last one";
         text[171] = "The collapse is inevitable";
         text[172] = "wasted";
-        text[173] = "no effort";
-        text[174] = "lies";
+        text[173] = "no effort";    // Road
+        text[174] = "lies";         // Road / Lore
 
 
         // Bench Thoughts

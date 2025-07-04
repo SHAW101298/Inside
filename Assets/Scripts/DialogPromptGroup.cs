@@ -44,6 +44,7 @@ public class DialogPromptGroup : MonoBehaviour
         {
             prompts[0].EVENT_EndShowing.AddListener(GroupFinished);
         }
+        
         if (removeShownTextsFromList == true)
         {
             prompts.RemoveAt(rand);
