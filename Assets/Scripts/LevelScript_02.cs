@@ -29,6 +29,7 @@ public class LevelScript_02 : MonoBehaviour
     [SerializeField] Animator characterAnim;
     [SerializeField] List<GameObject> bodyBones;
     [SerializeField] int lastBone;
+    [SerializeField] GameObject crowSearchParty;
     [SerializeField] InteractTrigger crowLocalizationTrigger;
     [SerializeField] GameObject oneKilledCrow;
     [SerializeField] GameObject threeKilledCrows;
@@ -102,6 +103,7 @@ public class LevelScript_02 : MonoBehaviour
         if (lastBone == 1)
         {
             oneKilledCrow.SetActive(true);
+            crowSearchParty.SetActive(true);
             //DialogManager.Instance.ShowText(98);
 
         }
@@ -109,6 +111,7 @@ public class LevelScript_02 : MonoBehaviour
         {
             oneKilledCrow.SetActive(false);
             threeKilledCrows.SetActive(true);
+            
 
         }
         if (lastBone == 7)
