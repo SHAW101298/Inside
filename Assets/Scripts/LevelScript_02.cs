@@ -74,21 +74,25 @@ public class LevelScript_02 : MonoBehaviour
         {
             if (askedForAdvice2 == false)
             {
-                phase1SkippedInteraction.SetActive(false);
+
+                if (baseInteractionsPhase2 == null)
+                    return;
+                if (phase2SkippedInteraction == null)
+                    return;
+
                 phase2SkippedInteraction.SetActive(true);
                 baseInteractionsPhase2.SetActive(false);
 
+                
                 if (phase1SkippedInteraction != null)
                 {
                     phase1SkippedInteraction.SetActive(false);
                 }
             }
-
-            if (knifeAllowingInteraction != null)
+            else
             {
-                knifeAllowingInteraction.SetActive(true);
+                baseInteractionsPhase2.SetActive(true);
             }
-            //SecondInteractionTrigger.SetActive(false);
         }
     }
     public void KilledACrow()
@@ -112,7 +116,7 @@ public class LevelScript_02 : MonoBehaviour
             characterAnim.SetTrigger("NoLegs");
         }
         crowLocalizationTrigger.CheckValidityOfLists();
-        ObjectiveManager.Instance.Show(lastBone.ToString() + "/" + "12");
+        ObjectiveManager.Instance.Show(lastBone.ToString() + "/" + "13");
 
         if (lastBone == 13)
         {

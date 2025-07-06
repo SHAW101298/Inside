@@ -14,8 +14,8 @@ public class DialogPromptGroup : MonoBehaviour
 
     public void PromptAllDialogFields()
     {
-        Debug.Log("I AM " + gameObject.transform.parent.name);
-        Debug.Log("Prompt count = " + prompts.Count);
+        //Debug.Log("I AM " + gameObject.transform.parent.name);
+        //Debug.Log("Prompt count = " + prompts.Count);
         prompts[0].EVENT_StartShowing.AddListener(GroupStarted);
         prompts[prompts.Count - 1].EVENT_EndShowing.AddListener(GroupFinished);
         for (int i = 0; i < prompts.Count; i++)
@@ -52,12 +52,12 @@ public class DialogPromptGroup : MonoBehaviour
     }
     public void GroupFinished()
     {
-        Debug.Log("Group Finished");
+        //Debug.Log("Group Finished");
         endShowingGroupEVENT.Invoke();
     }
     public void GroupStarted()
     {
-        Debug.Log("Group started");
+        //Debug.Log("Group started");
         startShowingGroupEVENT.Invoke();
     }
     public void TriggerDestruction()

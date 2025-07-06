@@ -129,21 +129,21 @@ public class Language_English : LanguageBase
         text[154] = "Why";          // Pillars
         text[155] = "end this";     // Hole
         text[156] = "alone";        // Dead
-        text[157] = "failed";
-        text[158] = "all is lost";
-        text[159] = "no more reasons";
+        text[157] = "failed";       // Altar
+        text[158] = "all is lost";  // Altar
+        text[159] = "no more reasons";          // Altar
         text[160] = "Fear";
         text[161] = "leave it";     // Road
         text[162] = "tired";
-        text[163] = "the cycle repeats";
-        text[164] = "you're a fool";
-        text[165] = "Leave.";
+        text[163] = "the cycle repeats";        // Road
+        text[164] = "you're a fool";            // Road
+        text[165] = "Leave.";       // Road
         text[166] = "last . . . request";       // Pair
         text[167] = "erase . . . existence";    // Pair
-        text[168] = "Find the road";
+        text[168] = "Find the road";                    // Dialog
         text[169] = "please, leave";
-        text[170] = "It feels like I'm the last one";
-        text[171] = "The collapse is inevitable";
+        text[170] = "It feels like I'm the last one";   // Dialog
+        text[171] = "The collapse is inevitable";       // Dialog
         text[172] = "wasted";
         text[173] = "no effort";    // Road
         text[174] = "lies";         // Road / Lore
@@ -319,7 +319,7 @@ public class Language_English : LanguageBase
         text[394] = "Just like with a child . . .";
 
         // Past Self continued Talk
-        text[399] = "Been busy, huh ? Going straight to the point. I can't complain though.";
+        text[399] = "Been busy, huh ?";
 
         text[400] = "And ? Did you learn anything of value ?";
         text[401] = "Not much i guess";
@@ -348,8 +348,8 @@ public class Language_English : LanguageBase
         text[427] = "Have you visited the one guarding the dead pile ?";
         text[428] = "Cross section of the riverbed is a home to one of them. ";
 
-        text[430] = "I think you got all of them. ";
-        text[431] = "Now it really is a still world. Not that i complain.";
+        text[430] = "I think you got all of them.";
+        text[431] = "Now it really is a still world.";
         text[432] = "What a blissfull emptiness. Peace.";
         text[433] = "Like a sign of the approaching end";
         text[434] = "Ever so slowly. Baring its fangs. Creeping around the corner.";
