@@ -456,15 +456,6 @@ A door to better future will open itself before you - zmieniæ aby nie by³o to mó
  */
 
 
-/*
-
-JUMP JUMP JUMP JUMP
-Opcje dialogowe bêda siê pojawiaæ na ekranie, niektóre bêda czasowe ( tworzone na koñcu aby u³atwiæ rozdzielenie )
-
-    lore drop niektore collidery nie sa triggerami
-
-*/
-
 /* OD ROBERTA
     Da siê spojrzeæ za mapê na pierwszym poziomie
     WskaŸnik góra dó³ w pierwszym poziomie
@@ -479,15 +470,21 @@ Zmiana czu³oœci myszy
         Altar crow collider not trigger         Sprawdzone, niby jest ok ?
     Chce widzieæ twój rozpacz
 Oznaczyæ punkty wszystkie. Mo¿e jaœniejszy kolor
-Licznik zabitych kruków
+    Licznik zabitych kruków
     Przeniesienie spawnu bli¿ej Past Self
-Mapa.
-Gdy gracz dokonuje pierwszej interakcji z past self, to odkrywa siê mapa pod Tabem.
-Ka¿da interakcja z krukiem odkrywa ma³y fragment mapy, który ukazywany jest na du¿ej mapie.
 Czas gry 1 godzina, na 2 scenê
 Czas gry 10 minut 1 scena
  */
 
 /* OD ANDZI
  Na poziomie pierwszym jakaœ wariacja typu sieæ paj¹ka (OK), nietoperze ( nieee )
+ */
+
+/*  Na pierwszym poziomie No Danger Zone Rooms
+Postaæ bij¹ca rêk¹ / g³ow¹ o mur
+Powtarza frazy why / no / try / once more /
+Po jakimœ czasie, bêdzie zmiana i postaæ przestaje biæ, mówi frazê " im done / mam doœæ "
+pomieszczenie zmienia siê wtedy w Danger Zone
+
+£añcuchy przykute do œciany
  */
