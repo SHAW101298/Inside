@@ -22,6 +22,8 @@ public class CollectorAudioSources : MonoBehaviour
 
     [SerializeField] List<AudioSource> soundAudioSources;
     [SerializeField] List<AudioSource> musicAudioSources;
+    [SerializeField] List<AudioSourceController> soundControllers;
+    [SerializeField] List<AudioSourceController> musicControllers;
    
     public void ChangeVolumeLevel()
     {
@@ -47,5 +49,38 @@ public class CollectorAudioSources : MonoBehaviour
 
             musicAudioSources[i].volume = newMusicVolume;
         }
+
+        for (int i = 0; i < soundControllers.Count; i++)
+        {
+            if (soundControllers[i] == null)
+            {
+                continue;
+            }
+            soundControllers[i].ChangeVolume();
+        }
+        for (int i = 0; i < musicControllers.Count; i++)
+        {
+            if (musicControllers[i] == null)
+            {
+                continue;
+            }
+            musicControllers[i].ChangeVolume();
+        }
+    }
+    public void AddSoundController(AudioSourceController source)
+    {
+        soundControllers.Add(source);
+    }
+    public void AddMusicController(AudioSourceController source)
+    {
+        musicControllers.Add(source);
+    }
+    public void RemoveSoundController(AudioSourceController source)
+    {
+        soundControllers.Remove(source);
+    }
+    public void RemoveMusicController(AudioSourceController source)
+    {
+        musicControllers.Remove(source);
     }
 }

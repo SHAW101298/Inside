@@ -6,15 +6,18 @@ public class Crow_Data : MonoBehaviour
 {
     public Crow_AnimationPlayer animationPlayer;
     public Crow_SoundPlayer soundPlayer;
+    public AudioSourceController sourceController;
     public GameObject killTriggerParent;
     public GameObject killTrigger;
 
     public void TriggerDestruction()
     {
+        sourceController.RemoveMe();
         Destroy(gameObject);
     }
     public void KillCrow()
     {
+        sourceController.RemoveMe();
         LevelScript_02.Instance.KilledACrow();
         Destroy(gameObject);
     }
