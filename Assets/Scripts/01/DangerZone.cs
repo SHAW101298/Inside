@@ -8,15 +8,24 @@ public class DangerZone : MonoBehaviour
 
     [SerializeField] Transform startPosition;
     [SerializeField] Transform endPosition;
-    [SerializeField] bool isActive;
+    bool isActive;
     [SerializeField] List<AudioSource> whisperSources;
     [SerializeField] float maxTimeDifference;
     [SerializeField] float minTimeDifference;
-    [SerializeField] float timeDifference;
-    [SerializeField] float timer;
-    [SerializeField] bool startTimer;
-    [SerializeField] int lastIndex;
+    float timeDifference;
+    float timer;
+    bool startTimer;
+    int lastIndex;
+    public float currentDangerLevel;
+    float distanceBetweenPoints;
+    bool reachedMaxDangerArea;
+    PlayerData playerData;
 
+    private void Start()
+    {
+        playerData = PlayerData.instance;
+        distanceBetweenPoints = Vector3.Distance(startPosition.position, endPosition.position);
+    }
     private void Update()
     {
         if(isActive == true)
@@ -27,7 +36,7 @@ public class DangerZone : MonoBehaviour
             }
         }
         SetRandomStartTimers();
-        
+        CalculateDanger();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -39,7 +48,8 @@ public class DangerZone : MonoBehaviour
     }
     public void ActivateDangerZone()
     {
-        flame.SetAsCurrentDanger(startPosition.position, endPosition.position);
+        //flame.SetAsCurrentDanger(startPosition.position, endPosition.position);
+        flame.SetAsCurrentDanger(this);
         isActive = true;
         startTimer = true;
         timer = 0;
@@ -53,6 +63,29 @@ public class DangerZone : MonoBehaviour
         timer = 0;
         lastIndex = 0;
     }
+    void CalculateDanger()
+    {
+        if(reachedMaxDangerArea == true)
+        {
+            return;
+        }
+
+        float dist = Vector3.Distance(playerData.transform.position, endPosition.position);
+        currentDangerLevel = ((dist - distanceBetweenPoints) * -1) / distanceBetweenPoints;
+        if (currentDangerLevel < 0)
+            currentDangerLevel = 0;
+    }
+
+    public void EnterMaxDangerArea()
+    {
+        reachedMaxDangerArea = true;
+        currentDangerLevel = 1;
+    }
+    public void LeftMaxDangerArea()
+    {
+        reachedMaxDangerArea = false;
+    }
+
 
     void SetRandomStartTimers()
     {

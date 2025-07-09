@@ -9,6 +9,7 @@ public class FlameVisibility : MonoBehaviour
     [SerializeField] Transform cameraPosition;
     [SerializeField] Transform forwardPosition;
     [SerializeField] Transform playerPosition;
+    [SerializeField] DangerZone currentDangerZone;
     public float dangerLevel;
     Vector3 followPosition;
     [SerializeField] LayerMask terrainLayer;
@@ -71,6 +72,7 @@ public class FlameVisibility : MonoBehaviour
     }
     void SetVisibilityAccordingToDanger()
     {
+        dangerLevel = currentDangerZone.currentDangerLevel;
         currentColor = Color.Lerp(neutralColor, dangerColor, dangerLevel);
         currentIntensity = Mathf.Lerp(neutralIntensity, dangerIntensity, dangerLevel);
         currentRange = Mathf.Lerp(neutralRange, dangerRange, dangerLevel);
@@ -78,11 +80,17 @@ public class FlameVisibility : MonoBehaviour
         lightSource.intensity = currentIntensity;
         lightSource.color = currentColor;
     }
+    
     public void SetAsCurrentDanger(Vector3 start, Vector3 end)
     {
         startPosition = start;
         endPosition = end;
         dangerDistance = Vector3.Distance(startPosition, endPosition);
+        inDanger = true;
+    }
+    public void SetAsCurrentDanger(DangerZone zone)
+    {
+        currentDangerZone = zone;
         inDanger = true;
     }
     public void ExitDanger()
