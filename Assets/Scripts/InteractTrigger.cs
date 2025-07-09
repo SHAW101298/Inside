@@ -131,6 +131,13 @@ public class InteractTrigger : MonoBehaviour
         }
         objectsGroup2.Clear();
     }
+    public void TeleportGroup1ToGroup2()
+    {
+        foreach(GameObject obj in objectsGroup1)
+        {
+            obj.transform.position = objectsGroup2[0].transform.position;
+        }
+    }
     public void EnableRandomObjectInGroup1()
     {
         int rand = Random.Range(0, objectsGroup1.Count);

@@ -10,6 +10,7 @@ public class DangerZone : MonoBehaviour
     [SerializeField] Transform endPosition;
     bool isActive;
     [SerializeField] List<AudioSource> whisperSources;
+    [SerializeField] List<AudioSourceController> audioControllers;
     [SerializeField] float maxTimeDifference;
     [SerializeField] float minTimeDifference;
     float timeDifference;
@@ -34,6 +35,10 @@ public class DangerZone : MonoBehaviour
             {
                 source.volume = flame.dangerLevel;
             }
+            foreach (AudioSourceController source in audioControllers)
+            {
+                source.ChangeDesiredVolume(flame.dangerLevel);
+            }
         }
         SetRandomStartTimers();
         CalculateDanger();
@@ -45,6 +50,10 @@ public class DangerZone : MonoBehaviour
         {
             ActivateDangerZone();
         }
+    }
+    public void RecalculateDistanceBetweenPoints()
+    {
+        distanceBetweenPoints = Vector3.Distance(startPosition.position, endPosition.position);
     }
     public void ActivateDangerZone()
     {
@@ -96,8 +105,9 @@ public class DangerZone : MonoBehaviour
             {
                 timer -= timeDifference;
                 timeDifference = Random.Range(minTimeDifference, maxTimeDifference);
-                whisperSources[lastIndex].gameObject.SetActive(true);
+                audioControllers[lastIndex].gameObject.SetActive(true);
                 lastIndex++;
+                Debug.Log("Time Difference = " + timeDifference);
                 if(lastIndex >= whisperSources.Count)
                 {
                     startTimer = false;
