@@ -116,6 +116,18 @@ public class Language_Polish : LanguageBase
         text[127] = "w pu³apce";
         text[128] = "defekt";
         text[129] = "bez znaczenia";
+        text[130] = "skacz";
+
+        text[131] = "Czeœæ";
+        text[132] = "Mi³o ciê poznaæ";
+        text[133] = "Móg³byœ mnie uwolniæ ?";
+        text[134] = "Zostañ ze mn¹ trochê d³u¿ej";
+
+        text[135] = "Niebezpieczeñstwo";
+        text[136] = "Powstrzymaæ";
+        text[137] = "Opanowaæ";
+
+        text[138] = "WRACAJ TU !!!";
 
 
         // SCENE 02

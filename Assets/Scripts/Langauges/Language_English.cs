@@ -117,6 +117,17 @@ public class Language_English : LanguageBase
         text[129] = "meaningless";
         text[130] = "jump";
 
+        text[131] = "Hello";
+        text[132] = "Nice to meet you";
+        text[133] = "Could you relase me ?";
+        text[134] = "Stay with me a bit longer.";
+
+        text[135] = "Danger";
+        text[136] = "Suppress";
+        text[137] = "Control";
+
+        text[138] = "GET BACK HERE !!!";
+
 
         // SCENE 02
         #region  
@@ -486,5 +497,7 @@ Powtarza frazy why / no / try / once more /
 Po jakimœ czasie, bêdzie zmiana i postaæ przestaje biæ, mówi frazê " im done / mam doœæ "
 pomieszczenie zmienia siê wtedy w Danger Zone
 
-£añcuchy przykute do œciany
+£añcuchy przykute do œciany, jeden ³añuch pêkniêty
+Na ³añuchach s³owa DANGER/Niebezpieczeñstwo  Suppress/powstrzymaæ  control/opanowaæ
+Pêkniêty ³añuch ma tekst Hello/Witaj. S³ychaæ wtedy odg³os ³añuchów za graczem, oraz pojawia siê wiêcej ³añcuchów
  */
