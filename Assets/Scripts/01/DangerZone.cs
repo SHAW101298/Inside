@@ -71,6 +71,16 @@ public class DangerZone : MonoBehaviour
         startTimer = false;
         timer = 0;
         lastIndex = 0;
+        flame.dangerLevel = 0;
+        
+        foreach (AudioSource source in whisperSources)
+        {
+            source.volume = flame.dangerLevel;
+        }
+        foreach (AudioSourceController source in audioControllers)
+        {
+            source.ChangeDesiredVolume(flame.dangerLevel);
+        }
     }
     void CalculateDanger()
     {

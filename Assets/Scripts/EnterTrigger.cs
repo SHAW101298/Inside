@@ -12,6 +12,7 @@ public class EnterTrigger : MonoBehaviour
     public UnityEvent delayedExitEvent;
     [Header("Data")]
     [SerializeField] bool destroyTriggerOnActivation;
+    [SerializeField] bool disableTriggerOnActivation;
     [SerializeField] float delayedEventTriggerTime;
     [SerializeField] GameObject objectToEnable;
     [SerializeField] List<GameObject> objectsGroup1;
@@ -31,6 +32,10 @@ public class EnterTrigger : MonoBehaviour
             if (destroyTriggerOnActivation == true)
             {
                 Destroy(gameObject);
+            }
+            if (disableTriggerOnActivation == true)
+            {
+                gameObject.SetActive(false);
             }
 
             startEnterTimer = true;
