@@ -21,7 +21,7 @@ public class InteractTrigger : MonoBehaviour
     [Header("Debug")]
     [SerializeField] bool debugTriggerInteraction;
 
-    public void Interact()
+    void Interact()
     {
         interactEvent.Invoke();
 

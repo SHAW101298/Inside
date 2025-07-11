@@ -27,7 +27,7 @@ public class PlayerInteractRay : MonoBehaviour
 
         if (Physics.Raycast(data.cam.transform.position, lookDir, out hitInfo, infoRaycastDistance, interactLayer) == true)
         {
-            hitInfo.collider.gameObject.GetComponent<InteractTrigger>().Interact();
+            hitInfo.collider.gameObject.GetComponent<InteractTrigger>().TriggerInteraction();
         }
 
         
