@@ -167,5 +167,14 @@ public class TimedTrigger : MonoBehaviour
         int rand = Random.Range(0, objectsGroup1.Count);
         objectsGroup1[rand].GetComponentInChildren<InteractTrigger>().TriggerInteraction();
     }
+    public void MoveObjectsInGroup1ToGroup2Position()
+    {
+        Vector3 pos = Vector3.Lerp(objectsGroup1[0].transform.position, objectsGroup2[0].transform.position, 0.01f);
+        foreach (GameObject obj in objectsGroup1)
+        {
+            obj.transform.position = pos;
+        }
+
+    }
 
 }

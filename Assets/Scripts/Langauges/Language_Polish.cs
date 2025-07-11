@@ -126,9 +126,12 @@ public class Language_Polish : LanguageBase
         text[135] = "Niebezpieczeñstwo";
         text[136] = "Powstrzymaæ";
         text[137] = "Opanowaæ";
-
         text[138] = "WRACAJ TU !!!";
 
+        text[139] = "Nie";
+        text[140] = "Spróbuj";
+        text[141] = "jeszcze raz";
+        text[142] = "mam doœæ";
 
         // SCENE 02
         #region

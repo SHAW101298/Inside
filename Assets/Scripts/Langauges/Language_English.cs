@@ -125,9 +125,12 @@ public class Language_English : LanguageBase
         text[135] = "Danger";
         text[136] = "Suppress";
         text[137] = "Control";
-
         text[138] = "GET BACK HERE !!!";
 
+        text[139] = "No";
+        text[140] = "Try";
+        text[141] = "once more";
+        text[142] = "im done";
 
         // SCENE 02
         #region  
