@@ -967,20 +967,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c9a0984ed9f018408bbe352c03e66cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1601142389}
-  spawnPoint: {fileID: 0}
-  flame: {fileID: 1814097299}
-  flameInfo: {fileID: 1814097303}
-  flameInteract: {fileID: 1814097302}
-  levelBlockade: {fileID: 0}
-  flameLight: {fileID: 1814097304}
-  flameMovement: {fileID: 1883316135}
-  doKnocking: 0
-  timeBetweenKnocks: 7
-  knockTimer: 3
-  knockingAudioSource: {fileID: 1168190675}
-  flameIntensity: 15
-  flameRange: 4
   questionPrompt:
     index: 95
     EVENT_StartShowing:
@@ -1099,7 +1085,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 2120654422}
+    m_TransformParent: {fileID: 239671773}
     m_Modifications:
     - target: {fileID: 1336741774369930838, guid: a09c05afb5c411041b86901e025eab74, type: 3}
       propertyPath: objectsGroup1.Array.size
@@ -1240,8 +1226,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.5553374, y: 0.33367464, z: 0.3514909}
-  m_Center: {x: 2.7776687, y: 0.0010581017, z: 0.009966217}
+  m_Size: {x: 10.0191555, y: 0.33367464, z: 0.3514909}
+  m_Center: {x: 8.238076, y: 0.0010636798, z: 0.010033447}
 --- !u!65 &75552523
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1253,8 +1239,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.5553374, y: 0.33367464, z: 0.3514909}
-  m_Center: {x: 2.7776687, y: 0.0010581017, z: 0.009966217}
+  m_Size: {x: 9.891447, y: 0.33367464, z: 0.3514909}
+  m_Center: {x: 8.147195, y: 0.0010626687, z: 0.010039276}
 --- !u!1001 &81209356
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5313,6 +5299,76 @@ Transform:
   - {fileID: 673713821}
   m_Father: {fileID: 148795545}
   m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &294896303
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 294896305}
+  - component: {fileID: 294896304}
+  m_Layer: 0
+  m_Name: Interaction Activator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &294896304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 294896303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57a88fdd02116f648b5ce61f8d40fe55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 294896304}
+        m_TargetAssemblyTypeName: InteractTrigger, Assembly-CSharp
+        m_MethodName: EnableGroup1
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  delayedInteractEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  runTriggerOnStart: 0
+  destroyTriggerOnActivation: 1
+  disableTriggerOnActivation: 0
+  delayInteractTriggerTime: 0
+  objectsGroup1:
+  - {fileID: 1010539781}
+  objectsGroup2: []
+  debugTriggerInteraction: 0
+--- !u!4 &294896305
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 294896303}
+  m_LocalRotation: {x: -0, y: -0, z: 0.0000000018626451, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1710317384}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &298048360
 PrefabInstance:
@@ -9485,6 +9541,18 @@ MonoBehaviour:
     EVENT_EndShowing:
       m_PersistentCalls:
         m_Calls:
+        - m_Target: {fileID: 2031963671}
+          m_TargetAssemblyTypeName: InteractTrigger, Assembly-CSharp
+          m_MethodName: TriggerInteraction
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
         - m_Target: {fileID: 1010539783}
           m_TargetAssemblyTypeName: InteractTrigger, Assembly-CSharp
           m_MethodName: DestroyGroup2
@@ -14968,7 +15036,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1978529630}
+    m_TransformParent: {fileID: 1350175452}
     m_Modifications:
     - target: {fileID: 1336741774369930838, guid: a09c05afb5c411041b86901e025eab74, type: 3}
       propertyPath: objectsGroup1.Array.size
@@ -15052,15 +15120,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6689833010573166087, guid: a09c05afb5c411041b86901e025eab74, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6689833010573166087, guid: a09c05afb5c411041b86901e025eab74, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6689833010573166087, guid: a09c05afb5c411041b86901e025eab74, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0.0000000037252899
       objectReference: {fileID: 0}
     - target: {fileID: 6689833010573166087, guid: a09c05afb5c411041b86901e025eab74, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -15120,8 +15188,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.5553374, y: 0.33367464, z: 0.3514909}
-  m_Center: {x: 2.7776687, y: 0.0010581017, z: 0.009966217}
+  m_Size: {x: 7.2762327, y: 0.33367464, z: 0.3514909}
+  m_Center: {x: 3.6381316, y: 0.0010434302, z: 0.009973223}
 --- !u!65 &822389533
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15133,8 +15201,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.5553374, y: 0.33367464, z: 0.3514909}
-  m_Center: {x: 2.7776687, y: 0.0010581017, z: 0.009966217}
+  m_Size: {x: 7.2572985, y: 0.33367464, z: 0.3514909}
+  m_Center: {x: 3.628657, y: 0.0010466222, z: 0.009970885}
 --- !u!4 &823229588 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4591776239436198498, guid: 29a63f5b8bed60441b1cce6faf0432ed, type: 3}
@@ -18041,7 +18109,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1336741774369930838, guid: a09c05afb5c411041b86901e025eab74, type: 3}
       propertyPath: objectsGroup1.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1336741774369930838, guid: a09c05afb5c411041b86901e025eab74, type: 3}
       propertyPath: objectsGroup2.Array.size
@@ -22161,7 +22229,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1237692382}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.57, z: 0}
+  m_LocalPosition: {x: -0.2, y: 1.57, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -22176,10 +22244,10 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1237692382}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 8, z: 10}
+  m_Size: {x: 2, y: 8, z: 10}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1237993649
 GameObject:
@@ -22276,6 +22344,76 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   removeShownTextsFromList: 1
+--- !u!1 &1240937562
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1240937563}
+  - component: {fileID: 1240937564}
+  m_Layer: 0
+  m_Name: Interaction Activator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1240937563
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1240937562}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1822652726}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1240937564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1240937562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57a88fdd02116f648b5ce61f8d40fe55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1240937564}
+        m_TargetAssemblyTypeName: InteractTrigger, Assembly-CSharp
+        m_MethodName: EnableGroup1
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  delayedInteractEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  runTriggerOnStart: 0
+  destroyTriggerOnActivation: 1
+  disableTriggerOnActivation: 0
+  delayInteractTriggerTime: 0
+  objectsGroup1:
+  - {fileID: 1710317388}
+  objectsGroup2: []
+  debugTriggerInteraction: 0
 --- !u!1001 &1241755502
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22893,18 +23031,6 @@ MonoBehaviour:
     EVENT_StartShowing:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1710317385}
-          m_TargetAssemblyTypeName: InteractTrigger, Assembly-CSharp
-          m_MethodName: EnableGroup1
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
         - m_Target: {fileID: 1110421713}
           m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
           m_MethodName: Play
@@ -22917,9 +23043,33 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 1710317385}
+          m_TargetAssemblyTypeName: InteractTrigger, Assembly-CSharp
+          m_MethodName: EnableGroup1
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     EVENT_EndShowing:
       m_PersistentCalls:
         m_Calls:
+        - m_Target: {fileID: 294896304}
+          m_TargetAssemblyTypeName: InteractTrigger, Assembly-CSharp
+          m_MethodName: TriggerInteraction
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
         - m_Target: {fileID: 1710317385}
           m_TargetAssemblyTypeName: InteractTrigger, Assembly-CSharp
           m_MethodName: DestroyGroup2
@@ -23482,7 +23632,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9d697ed072fafd445bbeae00457e7996, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.56
+      value: -1.9
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9d697ed072fafd445bbeae00457e7996, type: 3}
       propertyPath: m_LocalPosition.z
@@ -24573,7 +24723,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9d697ed072fafd445bbeae00457e7996, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.317
+      value: -1.87
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9d697ed072fafd445bbeae00457e7996, type: 3}
       propertyPath: m_LocalPosition.z
@@ -26579,7 +26729,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 9d697ed072fafd445bbeae00457e7996, type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9d697ed072fafd445bbeae00457e7996, type: 3}
       propertyPath: m_LocalPosition.x
@@ -29864,6 +30014,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 1240937564}
+          m_TargetAssemblyTypeName: InteractTrigger, Assembly-CSharp
+          m_MethodName: EnableGroup1
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   startShowingGroupEVENT:
     m_PersistentCalls:
       m_Calls: []
@@ -30111,7 +30273,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1336741774369930838, guid: a09c05afb5c411041b86901e025eab74, type: 3}
       propertyPath: objectsGroup1.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1336741774369930838, guid: a09c05afb5c411041b86901e025eab74, type: 3}
       propertyPath: objectsGroup2.Array.size
@@ -30856,15 +31018,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3257676935964911979, guid: bec01c0fd1fa91b49bc3d7d01646435b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.68
+      value: 9.6799965
       objectReference: {fileID: 0}
     - target: {fileID: 3257676935964911979, guid: bec01c0fd1fa91b49bc3d7d01646435b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.86
+      value: 1.8600001
       objectReference: {fileID: 0}
     - target: {fileID: 3257676935964911979, guid: bec01c0fd1fa91b49bc3d7d01646435b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 7.82
+      value: 7.820002
       objectReference: {fileID: 0}
     - target: {fileID: 3257676935964911979, guid: bec01c0fd1fa91b49bc3d7d01646435b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -30872,7 +31034,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3257676935964911979, guid: bec01c0fd1fa91b49bc3d7d01646435b, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3257676935964911979, guid: bec01c0fd1fa91b49bc3d7d01646435b, type: 3}
       propertyPath: m_LocalRotation.y
@@ -30880,7 +31042,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3257676935964911979, guid: bec01c0fd1fa91b49bc3d7d01646435b, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3257676935964911979, guid: bec01c0fd1fa91b49bc3d7d01646435b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -31384,6 +31546,8 @@ PrefabInstance:
     - {fileID: 5665249759228455975, guid: b5283154d3ca6924ea5cc295a39f41cb, type: 3}
     - {fileID: 5665249758891850510, guid: b5283154d3ca6924ea5cc295a39f41cb, type: 3}
     - {fileID: 5665249757615669675, guid: b5283154d3ca6924ea5cc295a39f41cb, type: 3}
+    - {fileID: 5665249759228455974, guid: b5283154d3ca6924ea5cc295a39f41cb, type: 3}
+    - {fileID: 3949300494022974500, guid: b5283154d3ca6924ea5cc295a39f41cb, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b5283154d3ca6924ea5cc295a39f41cb, type: 3}
 --- !u!1 &1814097299 stripped
 GameObject:
@@ -31409,16 +31573,6 @@ Transform:
 --- !u!1 &1814097302 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5665249758891850504, guid: b5283154d3ca6924ea5cc295a39f41cb, type: 3}
-  m_PrefabInstance: {fileID: 1814097298}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1814097303 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5665249757615669668, guid: b5283154d3ca6924ea5cc295a39f41cb, type: 3}
-  m_PrefabInstance: {fileID: 1814097298}
-  m_PrefabAsset: {fileID: 0}
---- !u!108 &1814097304 stripped
-Light:
-  m_CorrespondingSourceObject: {fileID: 5665249757572036692, guid: b5283154d3ca6924ea5cc295a39f41cb, type: 3}
   m_PrefabInstance: {fileID: 1814097298}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1818718696
@@ -31660,7 +31814,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1336741774369930838, guid: a09c05afb5c411041b86901e025eab74, type: 3}
       propertyPath: objectsGroup1.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1336741774369930838, guid: a09c05afb5c411041b86901e025eab74, type: 3}
       propertyPath: objectsGroup2.Array.size
@@ -31677,7 +31831,7 @@ PrefabInstance:
     - target: {fileID: 1336741774369930838, guid: a09c05afb5c411041b86901e025eab74, type: 3}
       propertyPath: objectsGroup1.Array.data[1]
       value: 
-      objectReference: {fileID: 1710317388}
+      objectReference: {fileID: 1441561317}
     - target: {fileID: 1336741774369930838, guid: a09c05afb5c411041b86901e025eab74, type: 3}
       propertyPath: objectsGroup1.Array.data[2]
       value: 
@@ -31689,6 +31843,10 @@ PrefabInstance:
     - target: {fileID: 1336741774369930838, guid: a09c05afb5c411041b86901e025eab74, type: 3}
       propertyPath: interactEvent.m_PersistentCalls.m_Calls.Array.size
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1336741774369930838, guid: a09c05afb5c411041b86901e025eab74, type: 3}
+      propertyPath: delayedInteractEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1336741774369930838, guid: a09c05afb5c411041b86901e025eab74, type: 3}
       propertyPath: interactEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -31739,6 +31897,22 @@ PrefabInstance:
       value: TriggerInteraction
       objectReference: {fileID: 0}
     - target: {fileID: 1336741774369930838, guid: a09c05afb5c411041b86901e025eab74, type: 3}
+      propertyPath: delayedInteractEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1336741774369930838, guid: a09c05afb5c411041b86901e025eab74, type: 3}
+      propertyPath: delayedInteractEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1240937564}
+    - target: {fileID: 1336741774369930838, guid: a09c05afb5c411041b86901e025eab74, type: 3}
+      propertyPath: delayedInteractEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1336741774369930838, guid: a09c05afb5c411041b86901e025eab74, type: 3}
+      propertyPath: delayedInteractEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: TriggerInteraction
+      objectReference: {fileID: 0}
+    - target: {fileID: 1336741774369930838, guid: a09c05afb5c411041b86901e025eab74, type: 3}
       propertyPath: interactEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: DialogPromptGroup, Assembly-CSharp
       objectReference: {fileID: 0}
@@ -31751,6 +31925,10 @@ PrefabInstance:
       value: InteractTrigger, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 1336741774369930838, guid: a09c05afb5c411041b86901e025eab74, type: 3}
+      propertyPath: delayedInteractEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: InteractTrigger, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1336741774369930838, guid: a09c05afb5c411041b86901e025eab74, type: 3}
       propertyPath: interactEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
@@ -31760,6 +31938,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1336741774369930838, guid: a09c05afb5c411041b86901e025eab74, type: 3}
       propertyPath: interactEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1336741774369930838, guid: a09c05afb5c411041b86901e025eab74, type: 3}
+      propertyPath: delayedInteractEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 1386427761529753451, guid: a09c05afb5c411041b86901e025eab74, type: 3}
@@ -32514,17 +32696,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 12.77781, y: 0.3315584, z: 0.33155847}
   m_Center: {x: 6.388907, y: 0, z: 0.0000038146973}
---- !u!114 &1883316135 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3949300494022974500, guid: b5283154d3ca6924ea5cc295a39f41cb, type: 3}
-  m_PrefabInstance: {fileID: 1814097298}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1814097299}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4dcbd2ee76692b344a88dcf8db1427c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1885038443
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34336,6 +34507,76 @@ Transform:
   m_Father: {fileID: 148795545}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2031963669
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2031963670}
+  - component: {fileID: 2031963671}
+  m_Layer: 0
+  m_Name: Interaction Activator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2031963670
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2031963669}
+  m_LocalRotation: {x: -0, y: -0, z: 0.0000000018626451, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1010539782}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2031963671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2031963669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57a88fdd02116f648b5ce61f8d40fe55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2031963671}
+        m_TargetAssemblyTypeName: InteractTrigger, Assembly-CSharp
+        m_MethodName: EnableGroup1
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  delayedInteractEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  runTriggerOnStart: 0
+  destroyTriggerOnActivation: 1
+  disableTriggerOnActivation: 0
+  delayInteractTriggerTime: 0
+  objectsGroup1:
+  - {fileID: 737745679}
+  objectsGroup2: []
+  debugTriggerInteraction: 0
 --- !u!1001 &2032191437
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34809,7 +35050,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 552545901}
+    m_TransformParent: {fileID: 1403533431}
     m_Modifications:
     - target: {fileID: 1336741774369930838, guid: a09c05afb5c411041b86901e025eab74, type: 3}
       propertyPath: objectsGroup1.Array.size
@@ -34961,8 +35202,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.5553374, y: 0.33367464, z: 0.3514909}
-  m_Center: {x: 2.7776687, y: 0.0010581017, z: 0.009966217}
+  m_Size: {x: 12.158868, y: 0.33367464, z: 0.3514909}
+  m_Center: {x: 6.07944, y: 0.0010924984, z: 0.009946454}
 --- !u!65 &2052468912
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -34974,8 +35215,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.5553374, y: 0.33367464, z: 0.3514909}
-  m_Center: {x: 2.7776687, y: 0.0010581017, z: 0.009966217}
+  m_Size: {x: 11.81096, y: 0.33367464, z: 0.3514909}
+  m_Center: {x: 5.9054866, y: 0.0010854879, z: 0.009957976}
 --- !u!1 &2055948324
 GameObject:
   m_ObjectHideFlags: 0

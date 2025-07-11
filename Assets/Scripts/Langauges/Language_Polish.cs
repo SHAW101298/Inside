@@ -120,7 +120,7 @@ public class Language_Polish : LanguageBase
 
         text[131] = "Czeœæ";
         text[132] = "Mi³o ciê poznaæ";
-        text[133] = "Móg³byœ mnie uwolniæ ?";
+        text[133] = "Móg³bym prosiæ ciê o ma³¹ przys³ugê ?";
         text[134] = "Zostañ ze mn¹ trochê d³u¿ej";
 
         text[135] = "Niebezpieczeñstwo";

@@ -119,7 +119,7 @@ public class Language_English : LanguageBase
 
         text[131] = "Hello";
         text[132] = "Nice to meet you";
-        text[133] = "Could you relase me ?";
+        text[133] = "Could you do me a little favour ?";
         text[134] = "Stay with me a bit longer.";
 
         text[135] = "Danger";
