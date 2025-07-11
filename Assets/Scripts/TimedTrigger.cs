@@ -41,7 +41,7 @@ public class TimedTrigger : MonoBehaviour
         if(timer >= timeBetweenActivations)
         {
             TriggerInteraction();
-            timer = 0;
+            timer -= timeBetweenActivations;
         }
     }
 
