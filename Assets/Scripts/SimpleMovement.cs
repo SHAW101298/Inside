@@ -59,7 +59,7 @@ public class SimpleMovement : MonoBehaviour
             return;
         Movement();
     }
-    public void StartMovement()
+    public void TRIGGER_StartMovement()
     {
         objectToMove.transform.position = startPos.position;
         EVENT_movementStart.Invoke();
