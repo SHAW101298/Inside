@@ -60,6 +60,10 @@ public class DangerZone : MonoBehaviour
         timer = 0;
         timeDifference = Random.Range(minTimeDifference, maxTimeDifference);
         lastIndex = 0;
+        foreach (AudioSourceController source in audioControllers)
+        {
+            source.ChangeDesiredVolume(flame.dangerLevel);
+        }
     }
     public void DisableDangerZone()
     {
