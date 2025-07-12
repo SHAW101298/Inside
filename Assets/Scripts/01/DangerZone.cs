@@ -9,18 +9,10 @@ public class DangerZone : MonoBehaviour
     [SerializeField] Transform startPosition;
     [SerializeField] Transform endPosition;
     bool isActive;
-    [SerializeField] List<AudioSource> whisperSources;
     [SerializeField] List<AudioSourceController> audioControllers;
     [SerializeField] float maxTimeDifference;
     [SerializeField] float minTimeDifference;
-    [Space(15)]
-    [SerializeField] bool moveEndPosition;
-    [SerializeField] bool moveStartPosition;
-    [SerializeField] Transform endPosition1;
-    [SerializeField] Transform startPosition1;
-    Vector3 endVel;
-    Vector3 startVel;
-    float moveTimer;
+
     float timeDifference;
     float timer;
     bool startTimer;
@@ -39,16 +31,10 @@ public class DangerZone : MonoBehaviour
     {
         if(isActive == true)
         {
-            foreach(AudioSource source in whisperSources)
-            {
-                source.volume = flame.dangerLevel;
-            }
             foreach (AudioSourceController source in audioControllers)
             {
                 source.ChangeDesiredVolume(flame.dangerLevel);
             }
-            EndPointMovement();
-            StartPointMovement();
         }
         SetRandomStartTimers();
         CalculateDanger();
@@ -83,10 +69,6 @@ public class DangerZone : MonoBehaviour
         lastIndex = 0;
         flame.dangerLevel = 0;
         
-        foreach (AudioSource source in whisperSources)
-        {
-            source.volume = flame.dangerLevel;
-        }
         foreach (AudioSourceController source in audioControllers)
         {
             source.ChangeDesiredVolume(flame.dangerLevel);
@@ -128,34 +110,11 @@ public class DangerZone : MonoBehaviour
                 audioControllers[lastIndex].gameObject.SetActive(true);
                 lastIndex++;
                 Debug.Log("Time Difference = " + timeDifference);
-                if(lastIndex >= whisperSources.Count)
+                if(lastIndex >= audioControllers.Count)
                 {
                     startTimer = false;
                     timer = 0;
                 }
-            }
-        }
-    }
-    void EndPointMovement()
-    {
-        if(moveEndPosition == true)
-        {
-            endPosition.transform.position = Vector3.SmoothDamp(endPosition.position, endPosition1.position, ref endVel, 2f);
-            if(Vector3.Distance(endPosition.position, endPosition1.position) <= 0.2f)
-            {
-                moveEndPosition = false;
-            }
-        }
-        
-    }
-    void StartPointMovement()
-    {
-        if (moveStartPosition == true)
-        {
-            startPosition.transform.position = Vector3.SmoothDamp(startPosition.position, startPosition1.position, ref startVel, 2f);
-            if (Vector3.Distance(startPosition.position, startPosition1.position) <= 0.2f)
-            {
-                moveStartPosition = false;
             }
         }
     }
