@@ -503,4 +503,9 @@ pomieszczenie zmienia siê wtedy w Danger Zone
 £añcuchy przykute do œciany, jeden ³añuch pêkniêty
 Na ³añuchach s³owa DANGER/Niebezpieczeñstwo  Suppress/powstrzymaæ  control/opanowaæ
 Pêkniêty ³añuch ma tekst Hello/Witaj. S³ychaæ wtedy odg³os ³añuchów za graczem, oraz pojawia siê wiêcej ³añcuchów
+
+Maska emocjonalna
+Jakieœ s³owa w pêtli
+A ka¿da interakcja z mask¹ sprawia ¿e maska pêka coraz mocniej i zmienane s¹ kwestie dialogowe.
+Po finalnej przemianie, wci¹¿ bêdzie interakcja, która niweluje ca³y Danger zone, jako nastêpna maska.
  */
