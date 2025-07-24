@@ -132,35 +132,51 @@ public class Language_English : LanguageBase
         text[141] = "once more";
         text[142] = "im done";
 
+        text[145] = "The truth hidden underneath";
+        text[146] = "The cracks that just can";
+        text[147] = "The ";
+        text[148] = "This all just a breeze";
+
+        text[148] = " Little Little Wind Blows";
+        text[149] = "I can't let go";
+        text[150] = "Don't look at me";
+        // Dig through ditches
+        // Burn through the witches
+
+
+        text[151] = "There is nothing wrong";
         // SCENE 02
         #region  
 
+
+        Debug.LogError("CROW LINES NEED FIXING");
+
         // Crow Random Lines
-        text[150] = "FIND IT !!!";  // Spawn
-        text[151] = "FORGET !!!";   // Near Old Spawn
-        text[152] = "Lost . . .";   // Bridge
-        text[153] = "Soon";         // Motionless Pillars
-        text[154] = "Why";          // Pillars
-        text[155] = "end this";     // Hole
-        text[156] = "alone";        // Dead
-        text[157] = "failed";       // Altar
-        text[158] = "all is lost";  // Altar
-        text[159] = "no more reasons";          // Altar
-        text[160] = "Fear";
-        text[161] = "leave it";     // Road
-        text[162] = "tired";
-        text[163] = "the cycle repeats";        // Road
-        text[164] = "you're a fool";            // Road
-        text[165] = "Leave.";       // Road
-        text[166] = "last . . . request";       // Pair
-        text[167] = "erase . . . existence";    // Pair
-        text[168] = "Find the road";                    // Dialog
-        text[169] = "please, leave";
-        text[170] = "It feels like I'm the last one";   // Dialog
-        text[171] = "The collapse is inevitable";       // Dialog
-        text[172] = "wasted";
-        text[173] = "no effort";    // Road
-        text[174] = "lies";         // Road / Lore
+        text[170] = "FIND IT !!!";  // Spawn
+        text[171] = "FORGET !!!";   // Near Old Spawn
+        text[172] = "Lost . . .";   // Bridge
+        text[173] = "Soon";         // Motionless Pillars
+        text[174] = "Why";          // Pillars
+        text[175] = "end this";     // Hole
+        text[176] = "alone";        // Dead
+        text[177] = "failed";       // Altar
+        text[178] = "all is lost";  // Altar
+        text[179] = "no more reasons";          // Altar
+        text[180] = "Fear";
+        text[181] = "leave it";     // Road
+        text[182] = "tired";
+        text[183] = "the cycle repeats";        // Road
+        text[184] = "you're a fool";            // Road
+        text[185] = "Leave.";       // Road
+        text[186] = "last . . . request";       // Pair
+        text[187] = "erase . . . existence";    // Pair
+        text[188] = "Find the road";                    // Dialog
+        text[189] = "please, leave";
+        text[190] = "It feels like I'm the last one";   // Dialog
+        text[191] = "The collapse is inevitable";       // Dialog
+        text[192] = "wasted";
+        text[193] = "no effort";    // Road
+        text[194] = "lies";         // Road / Lore
 
 
         // Bench Thoughts
