@@ -159,7 +159,7 @@ public class Language_Polish : LanguageBase
         text[159] = "MNIE ?!";
         text[160] = "¯e wogóle mia³ cZeLNoœÆ !";
         text[161] = "Ciekawe . . .";
-        text[162] = "Oooooh, JA NIGDY siê nie cofam.";
+        text[162] = "Oooooh, ja NIE MAM ZAMIARU siê cofaæ.";
         // Dig through ditches
         // Burn through the witches
 

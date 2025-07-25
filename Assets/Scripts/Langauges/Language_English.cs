@@ -159,7 +159,7 @@ public class Language_English : LanguageBase
         text[159] = "ME ?!";
         text[160] = "To even have the aUDacItY !";
         text[161] = "Interesting . . .";
-        text[162] = "OOOoh, I NEVER back down.";
+        text[162] = "OOOoh, I have NO INTENTION of backing down.";
         // Dig through ditches
         // Burn through the witches
 
