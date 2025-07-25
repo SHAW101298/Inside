@@ -140,7 +140,7 @@ public class Language_English : LanguageBase
 
         // Life Goes by, just deal with it
         text[145] = "The river of time dictates the road we walk on"; // Rzeka czasu wyznacza drogê któr¹ kroczymy
-        text[146] = "All we can do is follow along"; // Jedyne co mo¿emy zrobiæ, to pod¹¿aæ tym kursem.
+        text[146] = "All we can do is follow along."; // Jedyne co mo¿emy zrobiæ, to pod¹¿aæ tym kursem.
         text[147] = "Follow ... And belive there is something more than that." // Pod¹¿aæ ... I wierzyæ ¿e gdzieœ tam jest coœ wiêcej.
 
         // Things happen, but its just a small setback
@@ -157,9 +157,9 @@ public class Language_English : LanguageBase
         // Life is but a stepping stone
         text[155] = "sOMeOnE daReS tO TrY me ?"; // Ktoœ odwa¿y³ siê mnie sprawdziæ ?
         text[156] = "ME ?!"; // MNIE ?!
-        text[157] = "To even have the audacity!"; // ¯e wogóle mia³ czelnoœæ !
+        text[157] = "To even have the aUDacItY !"; // ¯e wogóle mia³ czelnoœæ !
         text[158] = "Interesting . . ." // Ciekawe . . . 
-        text[158] = "OOOoh, I never back down !"; // Oooooh, JA nigdy siê nie cofam.
+        text[158] = "OOOoh, I NEVER back down."; // Oooooh, JA nigdy siê nie cofam.
         // Dig through ditches
         // Burn through the witches
 
