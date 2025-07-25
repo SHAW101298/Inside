@@ -139,27 +139,27 @@ public class Language_Polish : LanguageBase
         text[147] = "To przecie¿ tylko drobny wietrzyk ... ".;
 
         // Life Goes by, just deal with it
-        text[145] = "Rzeka czasu wyznacza drogê któr¹ kroczymy";
-        text[146] = " Jedyne co mo¿emy zrobiæ, to pod¹¿aæ tym kursem.";
-        text[147] = "Pod¹¿aæ ... I wierzyæ ¿e gdzieœ tam jest coœ wiêcej.";
+        text[148] = "Rzeka czasu wyznacza drogê któr¹ kroczymy";
+        text[149] = " Jedyne co mo¿emy zrobiæ, to pod¹¿aæ tym kursem.";
+        text[150] = "Pod¹¿aæ ... I wierzyæ ¿e gdzieœ tam jest coœ wiêcej.";
 
         // Things happen, but its just a small setback
-        text[148] = "Niektóre rzeczy, s¹ nam zwyczajnie przeznaczone.";
-        text[149] = "Wci¹¿ jednak to my jesteœmy tymi wrzucanymi w wodê.";
-        text[150] = "Pomimo tego, to wci¹¿ my podejmujemy decyzjê w wielu przypadkach.";
+        text[151] = "Niektóre rzeczy, s¹ nam zwyczajnie przeznaczone.";
+        text[152] = "Wci¹¿ jednak to my jesteœmy tymi wrzucanymi w wodê.";
+        text[153] = "Pomimo tego, to wci¹¿ my podejmujemy decyzjê w wielu przypadkach.";
 
         // Life is no small setback. It is a setback
-        text[151] = "Ju¿ nie wiem gdzie mam pok³adaæ wiarê.";
-        text[152] = "Wszystko w co wierzy³em, lego w gruzach.";
-        text[153] = "A mo¿e wpad³o w swoje wyznaczone miejsce ?";
-        text[154] = "Jak kawa³ki uk³adanki stworzone na tak¹ konkretn¹ sytuacjê.";
+        text[154] = "Ju¿ nie wiem gdzie mam pok³adaæ wiarê.";
+        text[155] = "Wszystko w co wierzy³em, lego w gruzach.";
+        text[156] = "A mo¿e wpad³o w swoje wyznaczone miejsce ?";
+        text[157] = "Jak kawa³ki uk³adanki stworzone na tak¹ konkretn¹ sytuacjê.";
 
         // Life is but a stepping stone
-        text[155] = "kTOœ oDwA¿y£ œIÊ mnie sPrawDZiÆ ?";
-        text[156] = "MNIE ?!";
-        text[157] = "¯e wogóle mia³ cZeLNoœÆ !";
-        text[158] = "Ciekawe . . .";
-        text[158] = "Oooooh, JA NIGDY siê nie cofam.";
+        text[158] = "kTOœ oDwA¿y£ œIÊ mnie sPrawDZiÆ ?";
+        text[159] = "MNIE ?!";
+        text[160] = "¯e wogóle mia³ cZeLNoœÆ !";
+        text[161] = "Ciekawe . . .";
+        text[162] = "Oooooh, JA NIGDY siê nie cofam.";
         // Dig through ditches
         // Burn through the witches
 
