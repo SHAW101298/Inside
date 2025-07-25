@@ -134,32 +134,32 @@ public class Language_English : LanguageBase
 
 
         // Just of what am i so afraid ?
-        text[145] = "Just what am i afraid of ?!" // Czego ja siê tak w³aœciwie bojê ?!
-        text[146] = "That life will pass me by ?!"; // ¯e ¿ycie przeleci mi bokiem ?!
-        text[147] = "This is all just a breeze ... ". // To przecie¿ tylko drobny wietrzyk
+        text[145] = "Just what am i afraid of ?!"; 
+        text[146] = "That life will pass me by ?!";
+        text[147] = "This is all just a breeze ... ";
 
         // Life Goes by, just deal with it
-        text[148] = "The river of time dictates the road we walk on"; // Rzeka czasu wyznacza drogê któr¹ kroczymy
-        text[149] = "All we can do is follow along."; // Jedyne co mo¿emy zrobiæ, to pod¹¿aæ tym kursem.
-        text[150] = "Follow ... And belive there is something more than that." // Pod¹¿aæ ... I wierzyæ ¿e gdzieœ tam jest coœ wiêcej.
+        text[148] = "The river of time dictates the road we walk on";
+        text[149] = "All we can do is follow along.";
+        text[150] = "Follow ... And belive there is something more than that.";
 
         // Things happen, but its just a small setback
-        text[151] = "Some things are set in stone."; // Niektóre rzeczy, s¹ nam zwyczajnie przeznaczone
-        text[152] = "But we are the ones thrown into the water."; // Wci¹¿ jednak to my jesteœmy tymi wrzucanymi w wodê.
-        text[153] = "There are still things that we can decide for ourselves."; // Pomimo tego, to wci¹¿ my podejmujemy decyzjê w wielu przypadkach.
+        text[151] = "Some things are set in stone.";
+        text[152] = "But we are the ones thrown into the water.";
+        text[153] = "There are still things that we can decide for ourselves.";
 
         // Life is no small setback. It is a setback
-        text[154] = "I don't know where to put my trust anymore."; // Ju¿ nie wiem gdzie mam pok³adaæ wiarê
-        text[155] = "Everything i believed in fell apart."; // Wszystko w co wierzy³em, lego w gruzach.
-        text[156] = "Or maybe it fell into the right place ?"; // A mo¿e wpad³o w swoje wyznaczone miejsce ?
-        text[157] = "Like the puzzle pieces created for such an occasion."; // Jak kawa³ki uk³adanki stworzone na tak¹ konkretn¹ sytuacjê.
+        text[154] = "I don't know where to put my trust anymore.";
+        text[155] = "Everything i believed in fell apart.";
+        text[156] = "Or maybe it fell into the right place ?";
+        text[157] = "Like the puzzle pieces created for such an occasion.";
 
         // Life is but a stepping stone
-        text[158] = "sOMeOnE daReS tO TrY me ?"; // Ktoœ odwa¿y³ siê mnie sprawdziæ ?
-        text[159] = "ME ?!"; // MNIE ?!
-        text[160] = "To even have the aUDacItY !"; // ¯e wogóle mia³ czelnoœæ !
-        text[161] = "Interesting . . ." // Ciekawe . . . 
-        text[162] = "OOOoh, I NEVER back down."; // Oooooh, JA nigdy siê nie cofam.
+        text[158] = "sOMeOnE daReS tO TrY me ?";
+        text[159] = "ME ?!";
+        text[160] = "To even have the aUDacItY !";
+        text[161] = "Interesting . . .";
+        text[162] = "OOOoh, I NEVER back down.";
         // Dig through ditches
         // Burn through the witches
 

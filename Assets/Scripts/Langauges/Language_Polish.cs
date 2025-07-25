@@ -136,7 +136,7 @@ public class Language_Polish : LanguageBase
         // Just of what am i so afraid ?
         text[145] = "Czego ja siê tak w³aœciwie bojê ?!";
         text[146] = "¯e ¿ycie przeleci mi bokiem ?!";
-        text[147] = "To przecie¿ tylko drobny wietrzyk ... ".;
+        text[147] = "To przecie¿ tylko drobny wietrzyk ... ";
 
         // Life Goes by, just deal with it
         text[148] = "Rzeka czasu wyznacza drogê któr¹ kroczymy";

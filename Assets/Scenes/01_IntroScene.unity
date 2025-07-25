@@ -4166,7 +4166,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1336741774369930838, guid: a09c05afb5c411041b86901e025eab74, type: 3}
       propertyPath: objectsGroup2.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1336741774369930838, guid: a09c05afb5c411041b86901e025eab74, type: 3}
       propertyPath: objectsGroup1.Array.data[0]
@@ -4180,6 +4180,10 @@ PrefabInstance:
       propertyPath: objectsGroup2.Array.data[0]
       value: 
       objectReference: {fileID: 269650538}
+    - target: {fileID: 1336741774369930838, guid: a09c05afb5c411041b86901e025eab74, type: 3}
+      propertyPath: objectsGroup2.Array.data[1]
+      value: 
+      objectReference: {fileID: 2080564499}
     - target: {fileID: 1336741774369930838, guid: a09c05afb5c411041b86901e025eab74, type: 3}
       propertyPath: interactEvent.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -5935,11 +5939,11 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 1affd60d79d5b9641851665060fc086c, type: 2}
     - target: {fileID: -4810461025941666626, guid: 3f3c0f37f90ef774b8a94c3e4748da1a, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -3947740066139204642, guid: 3f3c0f37f90ef774b8a94c3e4748da1a, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 904156568619352534, guid: 3f3c0f37f90ef774b8a94c3e4748da1a, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -6785,7 +6789,7 @@ PrefabInstance:
     - target: {fileID: 7722713880520760181, guid: 53c4520c8d16ae749afda60758ef3be7, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: b3166e2f381c950478978cf792c7873b, type: 2}
+      objectReference: {fileID: 2100000, guid: 1affd60d79d5b9641851665060fc086c, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53c4520c8d16ae749afda60758ef3be7, type: 3}
 --- !u!64 &301400702
@@ -18382,7 +18386,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prompts:
-  - index: 0
+  - index: 148
+    EVENT_StartShowing:
+      m_PersistentCalls:
+        m_Calls: []
+    EVENT_EndShowing:
+      m_PersistentCalls:
+        m_Calls: []
+  - index: 149
+    EVENT_StartShowing:
+      m_PersistentCalls:
+        m_Calls: []
+    EVENT_EndShowing:
+      m_PersistentCalls:
+        m_Calls: []
+  - index: 150
     EVENT_StartShowing:
       m_PersistentCalls:
         m_Calls: []
@@ -19312,7 +19330,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prompts:
-  - index: 0
+  - index: 154
+    EVENT_StartShowing:
+      m_PersistentCalls:
+        m_Calls: []
+    EVENT_EndShowing:
+      m_PersistentCalls:
+        m_Calls: []
+  - index: 155
+    EVENT_StartShowing:
+      m_PersistentCalls:
+        m_Calls: []
+    EVENT_EndShowing:
+      m_PersistentCalls:
+        m_Calls: []
+  - index: 157
     EVENT_StartShowing:
       m_PersistentCalls:
         m_Calls: []
@@ -26275,7 +26307,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prompts:
-  - index: 0
+  - index: 158
+    EVENT_StartShowing:
+      m_PersistentCalls:
+        m_Calls: []
+    EVENT_EndShowing:
+      m_PersistentCalls:
+        m_Calls: []
+  - index: 159
+    EVENT_StartShowing:
+      m_PersistentCalls:
+        m_Calls: []
+    EVENT_EndShowing:
+      m_PersistentCalls:
+        m_Calls: []
+  - index: 160
+    EVENT_StartShowing:
+      m_PersistentCalls:
+        m_Calls: []
+    EVENT_EndShowing:
+      m_PersistentCalls:
+        m_Calls: []
+  - index: 161
+    EVENT_StartShowing:
+      m_PersistentCalls:
+        m_Calls: []
+    EVENT_EndShowing:
+      m_PersistentCalls:
+        m_Calls: []
+  - index: 162
     EVENT_StartShowing:
       m_PersistentCalls:
         m_Calls: []
@@ -31006,7 +31066,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prompts:
-  - index: 0
+  - index: 151
+    EVENT_StartShowing:
+      m_PersistentCalls:
+        m_Calls: []
+    EVENT_EndShowing:
+      m_PersistentCalls:
+        m_Calls: []
+  - index: 152
+    EVENT_StartShowing:
+      m_PersistentCalls:
+        m_Calls: []
+    EVENT_EndShowing:
+      m_PersistentCalls:
+        m_Calls: []
+  - index: 153
     EVENT_StartShowing:
       m_PersistentCalls:
         m_Calls: []
