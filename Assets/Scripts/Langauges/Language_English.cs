@@ -136,7 +136,7 @@ public class Language_English : LanguageBase
         // Just of what am i so afraid ?
         text[145] = "Just what am i afraid of ?!"; 
         text[146] = "That life will pass me by ?!";
-        text[147] = "This is all just a breeze ... ";
+        text[147] = "This is all just a breeze";
 
         // Life Goes by, just deal with it
         text[148] = "The river of time dictates the road we walk on";
@@ -159,7 +159,6 @@ public class Language_English : LanguageBase
         text[159] = "ME ?!";
         text[160] = "To even have the aUDacItY !";
         text[161] = "Interesting . . .";
-        text[162] = "OOOoh, I have NO INTENTION of backing down.";
         // Dig through ditches
         // Burn through the witches
 

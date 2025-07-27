@@ -106,6 +106,12 @@ public class DangerZone : MonoBehaviour
     {
         if (startTimer == true)
         {
+            if(audioControllers.Count == 0)
+            {
+                startTimer = false;
+                timer = 0;
+                return;
+            }
             timer += Time.deltaTime;
             if(timer >= timeDifference)
             {

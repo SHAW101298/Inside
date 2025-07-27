@@ -44,6 +44,7 @@ public class SimpleMovement : MonoBehaviour
     [Space(20)]
     public UnityEvent EVENT_movementStart;
     public UnityEvent EVENT_movementEnd;
+    public UnityEvent EVENT_movementInAction;
 
 
     // Start is called before the first frame update
@@ -72,6 +73,7 @@ public class SimpleMovement : MonoBehaviour
     }
     void Movement()
     {
+        EVENT_movementInAction.Invoke();
         switch(movementType)
         {
             case ENUM_MovementType.teleport:
