@@ -543,7 +543,7 @@ A ka¿da interakcja z mask¹ sprawia ¿e maska pêka coraz mocniej i zmienane s¹ kwe
 Po finalnej przemianie, wci¹¿ bêdzie interakcja, która niweluje ca³y Danger zone, jako nastêpna maska.
  */
 /*
-Intro Scene pierwsza komnata ma tylko 1 whisper source
+    Intro Scene pierwsza komnata ma tylko 1 whisper source
 Jakieœ losowe dŸwiêki horrorowe mo¿e dodaæ ?
     Head Bang z³a œcie¿ka dialogowa
     Head Bang Poprawiæ start Danger Zone

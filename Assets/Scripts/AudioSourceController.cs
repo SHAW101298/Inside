@@ -17,6 +17,10 @@ public class AudioSourceController : MonoBehaviour
 
     void Start()
     {
+        if(source == null)
+        {
+            source = gameObject.GetComponent<AudioSource>();
+        }
         switch (audioType)
         {
             case ENUM_AudioType.music:
