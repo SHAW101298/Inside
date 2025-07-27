@@ -76,6 +76,7 @@ public class Language_English : LanguageBase
 
 
         // Additional Texts
+        text[93] = "Press W to move Forward.";
         text[94] = "                               ";
         text[95] = "? ? ?";
         text[96] = "NO TEXT";
@@ -541,6 +542,12 @@ Maska emocjonalna
 Jakieœ s³owa w pêtli
 A ka¿da interakcja z mask¹ sprawia ¿e maska pêka coraz mocniej i zmienane s¹ kwestie dialogowe.
 Po finalnej przemianie, wci¹¿ bêdzie interakcja, która niweluje ca³y Danger zone, jako nastêpna maska.
+Dodaæ dŸwiêk pêkania w momencie zmian maski
+Jakieœ szybkie tupoty w trakcie tekstów
+
+Pole Nagrobków ?
+Wypisane na nich wszystkie zniszczone myœli ?
+Freedom / Hope / 
  */
 /*
     Intro Scene pierwsza komnata ma tylko 1 whisper source

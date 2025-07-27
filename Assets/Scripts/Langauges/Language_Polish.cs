@@ -76,6 +76,7 @@ public class Language_Polish : LanguageBase
 
 
         // Additional Texts
+        text[93] = "Wciœnij W aby iœæ do Przodu";
         text[94] = "                               ";
         text[95] = "? ? ?";
         text[96] = "BRAK TEKSTU";
