@@ -135,7 +135,7 @@ public class Language_English : LanguageBase
 
         // Just of what am i so afraid ?
         text[145] = "Just what am i afraid of ?!"; 
-        text[146] = "That life will pass me by ?!";
+        text[146] = "Life passing me by?";
         text[147] = "This is all just a breeze";
 
         // Life Goes by, just deal with it
@@ -541,4 +541,11 @@ Maska emocjonalna
 Jakieœ s³owa w pêtli
 A ka¿da interakcja z mask¹ sprawia ¿e maska pêka coraz mocniej i zmienane s¹ kwestie dialogowe.
 Po finalnej przemianie, wci¹¿ bêdzie interakcja, która niweluje ca³y Danger zone, jako nastêpna maska.
+ */
+/*
+Intro Scene pierwsza komnata ma tylko 1 whisper source
+Jakieœ losowe dŸwiêki horrorowe mo¿e dodaæ ?
+    Head Bang z³a œcie¿ka dialogowa
+    Head Bang Poprawiæ start Danger Zone
+    Mask Area Danger Zone siê nie neguje
  */

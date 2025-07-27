@@ -80,6 +80,9 @@ public class DangerZone : MonoBehaviour
     }
     void CalculateDanger()
     {
+        if (isActive == false)
+            return;
+
         if(reachedMaxDangerArea == true)
         {
             return;
@@ -127,5 +130,9 @@ public class DangerZone : MonoBehaviour
                 }
             }
         }
+    }
+    public void ZeroDangerLevel()
+    {
+        currentDangerLevel = 0;
     }
 }

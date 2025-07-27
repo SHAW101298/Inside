@@ -52,7 +52,7 @@ public class FlameVisibility : MonoBehaviour
 
         if(inDanger == true)
         {
-            CalculateDangerLevel();
+            //CalculateDangerLevel();
             SetVisibilityAccordingToDanger();
         }
     }
