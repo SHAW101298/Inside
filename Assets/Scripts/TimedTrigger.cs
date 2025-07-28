@@ -6,6 +6,7 @@ using UnityEngine.Events;
 public class TimedTrigger : MonoBehaviour
 {
     public UnityEvent interactEvent;
+    public UnityEvent finishEvent;
     [Space(10)]
     [SerializeField] bool runTriggerOnStart;
     [SerializeField] bool destroyTriggerOnActivation;
@@ -13,6 +14,8 @@ public class TimedTrigger : MonoBehaviour
     [Space(10)]
     [SerializeField] float timeBetweenActivations;
     [SerializeField] float timer;
+    [SerializeField] int maxActivationTimes;
+    [SerializeField] int activationTimes;
     [Space(10)]
     [SerializeField] List<GameObject> objectsGroup1;
     [SerializeField] List<GameObject> objectsGroup2;
@@ -48,6 +51,14 @@ public class TimedTrigger : MonoBehaviour
     public void TriggerInteraction()
     {
         Interact();
+        if (maxActivationTimes == 0)
+            return;
+
+        activationTimes++;
+        if(activationTimes >= maxActivationTimes)
+        {
+            finishEvent.Invoke();
+        }
     }
     public void TriggerDestruction()
     {
@@ -175,6 +186,30 @@ public class TimedTrigger : MonoBehaviour
             obj.transform.position = pos;
         }
 
+    }
+    public void EnableFirstInGroup1()
+    {
+        if (objectsGroup1.Count == 0)
+            return;
+        objectsGroup1[0].SetActive(true);
+    }
+    public void EnableFirstInGroup2()
+    {
+        if (objectsGroup2.Count == 0)
+            return;
+        objectsGroup2[0].SetActive(true);
+    }
+    public void RemoveFirstInGroup1()
+    {
+        if (objectsGroup1.Count == 0)
+            return;
+        objectsGroup1.RemoveAt(0);
+    }
+    public void RemoveFirstInGroup2()
+    {
+        if (objectsGroup2.Count == 0)
+            return;
+        objectsGroup2.RemoveAt(0);
     }
 
 }

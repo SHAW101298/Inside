@@ -142,7 +142,7 @@ public class Language_English : LanguageBase
         // Life Goes by, just deal with it
         text[148] = "The river of time dictates the road we walk on";
         text[149] = "All we can do is follow along.";
-        text[150] = "Follow ... And belive there is something more than that.";
+        text[150] = "Follow ... And belive there is something more.";
 
         // Things happen, but its just a small setback
         text[151] = "Some things are set in stone.";
