@@ -26,6 +26,7 @@ public class SimpleMovement : MonoBehaviour
     [SerializeField] ENUM_MovementType movementType;
     [SerializeField] bool isActive;
     [SerializeField] bool destroyAfterReachingDestination;
+    [SerializeField] bool disableAfterReachingDestination;
 
     [Header("Stable Movement Values")]
     [SerializeField] float stableSpeed;

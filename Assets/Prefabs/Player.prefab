@@ -845,6 +845,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -1196,7 +1197,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 5163093532726846642}
   m_Direction: 0
   m_Value: 0
-  m_Size: 1
+  m_Size: 0.99999946
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1450,6 +1451,9 @@ MonoBehaviour:
   interactLayer:
     serializedVersion: 2
     m_Bits: 256
+  rayCastTriggerLayer:
+    serializedVersion: 2
+    m_Bits: 512
   infoRaycastDistance: 4
 --- !u!114 &9170628902623201515
 MonoBehaviour:
@@ -1848,6 +1852,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &1986717580770749869
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2422,11 +2427,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7271587422031358506, guid: 6fc2a17ae2b7e504fbe525baf9b8eb98, type: 3}
       propertyPath: m_Size
-      value: 0.4961905
+      value: 0.49619025
       objectReference: {fileID: 0}
     - target: {fileID: 7271587422031358506, guid: 6fc2a17ae2b7e504fbe525baf9b8eb98, type: 3}
       propertyPath: m_Value
-      value: 1.9911785
+      value: 1.9911776
       objectReference: {fileID: 0}
     - target: {fileID: 7704223838477551094, guid: 6fc2a17ae2b7e504fbe525baf9b8eb98, type: 3}
       propertyPath: m_Options.m_Options.Array.data[0].m_Text

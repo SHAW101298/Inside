@@ -8,6 +8,7 @@ public class PlayerInteractRay : MonoBehaviour
     public PlayerData data;
     [SerializeField] LayerMask infoLayer;
     [SerializeField] LayerMask interactLayer;
+    [SerializeField] LayerMask rayCastTriggerLayer;
     [SerializeField] float infoRaycastDistance;
     bool blockedInteractions;
 
@@ -36,6 +37,7 @@ public class PlayerInteractRay : MonoBehaviour
     private void Update()
     {
         RayCastForInfo();
+        RayCastForTriggers();
     }
     void RayCastForInfo()
     {
@@ -45,8 +47,16 @@ public class PlayerInteractRay : MonoBehaviour
         {
             string textInfo = hitInfo.collider.gameObject.GetComponent<InformationHolder>().GetInformation();
             data.ui.ShowText(textInfo);
+        }   
+    }
+    void RayCastForTriggers()
+    {
+        Vector3 lookDir = data.cam.GetForwardDir();
+        RaycastHit hitInfo;
+        if (Physics.Raycast(data.cam.transform.position, lookDir, out hitInfo, infoRaycastDistance, rayCastTriggerLayer) == true)
+        {
+            hitInfo.collider.gameObject.GetComponent<InteractTrigger>().TriggerInteraction();
         }
-        
     }
     public void BlockInteractions()
     {
