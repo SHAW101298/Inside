@@ -437,7 +437,7 @@ MonoBehaviour:
   destroyTriggerOnActivation: 0
   disableTriggerOnActivation: 0
   timeBetweenActivations: 32
-  timer: 0
+  timeRandomnessMax: 0
   maxActivationTimes: 0
   activationTimes: 0
   objectsGroup1: []
@@ -2952,7 +2952,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &66622197
 MonoBehaviour:
@@ -6774,7 +6774,7 @@ MonoBehaviour:
   destroyTriggerOnActivation: 0
   disableTriggerOnActivation: 0
   timeBetweenActivations: 28
-  timer: 0
+  timeRandomnessMax: 0
   maxActivationTimes: 0
   activationTimes: 0
   objectsGroup1: []
@@ -7080,7 +7080,7 @@ MonoBehaviour:
   destroyTriggerOnActivation: 0
   disableTriggerOnActivation: 0
   timeBetweenActivations: 27
-  timer: 0
+  timeRandomnessMax: 0
   maxActivationTimes: 0
   activationTimes: 0
   objectsGroup1: []
@@ -8070,7 +8070,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &208895293
 GameObject:
@@ -17467,7 +17467,7 @@ MonoBehaviour:
   destroyTriggerOnActivation: 0
   disableTriggerOnActivation: 0
   timeBetweenActivations: 30
-  timer: 0
+  timeRandomnessMax: 0
   maxActivationTimes: 0
   activationTimes: 0
   objectsGroup1: []
@@ -17482,7 +17482,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 53c4520c8d16ae749afda60758ef3be7, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 53c4520c8d16ae749afda60758ef3be7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18679,7 +18679,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &346572676
 GameObject:
@@ -20276,7 +20276,7 @@ MonoBehaviour:
   destroyTriggerOnActivation: 0
   disableTriggerOnActivation: 0
   timeBetweenActivations: 30
-  timer: 0
+  timeRandomnessMax: 0
   maxActivationTimes: 0
   activationTimes: 0
   objectsGroup1: []
@@ -20672,7 +20672,7 @@ MonoBehaviour:
   destroyTriggerOnActivation: 0
   disableTriggerOnActivation: 0
   timeBetweenActivations: 32
-  timer: 0
+  timeRandomnessMax: 0
   maxActivationTimes: 0
   activationTimes: 0
   objectsGroup1: []
@@ -21319,7 +21319,7 @@ MonoBehaviour:
   destroyTriggerOnActivation: 0
   disableTriggerOnActivation: 0
   timeBetweenActivations: 30
-  timer: 0
+  timeRandomnessMax: 0
   maxActivationTimes: 0
   activationTimes: 0
   objectsGroup1: []
@@ -21596,7 +21596,7 @@ MonoBehaviour:
   destroyTriggerOnActivation: 0
   disableTriggerOnActivation: 0
   timeBetweenActivations: 28
-  timer: 0
+  timeRandomnessMax: 0
   maxActivationTimes: 0
   activationTimes: 0
   objectsGroup1: []
@@ -22774,7 +22774,7 @@ MonoBehaviour:
   destroyTriggerOnActivation: 0
   disableTriggerOnActivation: 0
   timeBetweenActivations: 33
-  timer: 0
+  timeRandomnessMax: 0
   maxActivationTimes: 0
   activationTimes: 0
   objectsGroup1: []
@@ -24596,7 +24596,7 @@ MonoBehaviour:
   destroyTriggerOnActivation: 0
   disableTriggerOnActivation: 0
   timeBetweenActivations: 3
-  timer: 0
+  timeRandomnessMax: 0
   maxActivationTimes: 4
   activationTimes: 0
   objectsGroup1:
@@ -26758,6 +26758,79 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 12.777807, y: 0.3336748, z: 0.35149094}
   m_Center: {x: 6.3889036, y: 0.0010581488, z: 0.009966217}
+--- !u!1 &595799246
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 595799247}
+  - component: {fileID: 595799248}
+  m_Layer: 0
+  m_Name: Knocking Time Trigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &595799247
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 595799246}
+  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -1.5098069, y: 1.1028266, z: 53.362915}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1748782059}
+  m_Father: {fileID: 919385373}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &595799248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 595799246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72ce61fdbd07c3b4da3580ed6561d6d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1748782060}
+        m_TargetAssemblyTypeName: DialogPromptGroup, Assembly-CSharp
+        m_MethodName: PromptAllDialogFields
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  finishEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  runTriggerOnStart: 0
+  destroyTriggerOnActivation: 0
+  disableTriggerOnActivation: 1
+  timeBetweenActivations: 8
+  timeRandomnessMax: 0
+  maxActivationTimes: 1
+  activationTimes: 0
+  objectsGroup1: []
+  objectsGroup2: []
+  debugTriggerInteraction: 0
 --- !u!4 &596698421 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4591776239436198498, guid: 29a63f5b8bed60441b1cce6faf0432ed, type: 3}
@@ -32149,7 +32222,7 @@ MonoBehaviour:
   destroyTriggerOnActivation: 0
   disableTriggerOnActivation: 0
   timeBetweenActivations: 32
-  timer: 0
+  timeRandomnessMax: 0
   maxActivationTimes: 0
   activationTimes: 0
   objectsGroup1: []
@@ -33781,7 +33854,7 @@ MonoBehaviour:
   destroyTriggerOnActivation: 0
   disableTriggerOnActivation: 0
   timeBetweenActivations: 27
-  timer: 0
+  timeRandomnessMax: 0
   maxActivationTimes: 0
   activationTimes: 0
   objectsGroup1: []
@@ -34302,7 +34375,7 @@ MonoBehaviour:
   destroyTriggerOnActivation: 0
   disableTriggerOnActivation: 0
   timeBetweenActivations: 29
-  timer: 0
+  timeRandomnessMax: 0
   maxActivationTimes: 0
   activationTimes: 0
   objectsGroup1: []
@@ -36332,7 +36405,7 @@ MonoBehaviour:
   destroyTriggerOnActivation: 0
   disableTriggerOnActivation: 0
   timeBetweenActivations: 29
-  timer: 0
+  timeRandomnessMax: 0
   maxActivationTimes: 0
   activationTimes: 0
   objectsGroup1: []
@@ -37663,6 +37736,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 485664184}
+  - {fileID: 595799247}
   m_Father: {fileID: 2133367569}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -38037,7 +38111,7 @@ MonoBehaviour:
   destroyTriggerOnActivation: 0
   disableTriggerOnActivation: 0
   timeBetweenActivations: 26
-  timer: 0
+  timeRandomnessMax: 0
   maxActivationTimes: 0
   activationTimes: 0
   objectsGroup1: []
@@ -39896,7 +39970,7 @@ MonoBehaviour:
   destroyTriggerOnActivation: 0
   disableTriggerOnActivation: 0
   timeBetweenActivations: 3
-  timer: 0
+  timeRandomnessMax: 0
   maxActivationTimes: 4
   activationTimes: 0
   objectsGroup1:
@@ -40891,6 +40965,67 @@ MonoBehaviour:
   up: {fileID: 105386771}
   down: {fileID: 446797864}
   rot: {x: 0, y: 0, z: 0}
+--- !u!1001 &1028030087
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 7c314edff0312a14face3f501ced2430, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7c314edff0312a14face3f501ced2430, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -23.941917
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7c314edff0312a14face3f501ced2430, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.7862227
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7c314edff0312a14face3f501ced2430, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.52556735
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7c314edff0312a14face3f501ced2430, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.68682337
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7c314edff0312a14face3f501ced2430, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.3688054
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7c314edff0312a14face3f501ced2430, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.1681475
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7c314edff0312a14face3f501ced2430, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.60330987
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7c314edff0312a14face3f501ced2430, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -17.681
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7c314edff0312a14face3f501ced2430, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 45.194
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7c314edff0312a14face3f501ced2430, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7c314edff0312a14face3f501ced2430, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1affd60d79d5b9641851665060fc086c, type: 2}
+    - target: {fileID: 919132149155446097, guid: 7c314edff0312a14face3f501ced2430, type: 3}
+      propertyPath: m_Name
+      value: Lantern
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7c314edff0312a14face3f501ced2430, type: 3}
 --- !u!1001 &1029079149
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -43797,7 +43932,7 @@ MonoBehaviour:
   destroyTriggerOnActivation: 0
   disableTriggerOnActivation: 0
   timeBetweenActivations: 25
-  timer: 0
+  timeRandomnessMax: 0
   maxActivationTimes: 0
   activationTimes: 0
   objectsGroup1: []
@@ -50649,7 +50784,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1276455156
 GameObject:
@@ -56421,7 +56556,7 @@ MonoBehaviour:
   destroyTriggerOnActivation: 0
   disableTriggerOnActivation: 0
   timeBetweenActivations: 7
-  timer: 3
+  timeRandomnessMax: 0
   maxActivationTimes: 0
   activationTimes: 0
   objectsGroup1: []
@@ -58737,7 +58872,7 @@ MonoBehaviour:
   destroyTriggerOnActivation: 0
   disableTriggerOnActivation: 0
   timeBetweenActivations: 29
-  timer: 0
+  timeRandomnessMax: 0
   maxActivationTimes: 0
   activationTimes: 0
   objectsGroup1: []
@@ -58810,7 +58945,7 @@ MonoBehaviour:
   destroyTriggerOnActivation: 0
   disableTriggerOnActivation: 0
   timeBetweenActivations: 26
-  timer: 0
+  timeRandomnessMax: 0
   maxActivationTimes: 0
   activationTimes: 0
   objectsGroup1: []
@@ -58869,7 +59004,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1480051327
 GameObject:
@@ -60337,7 +60472,7 @@ MonoBehaviour:
   destroyTriggerOnActivation: 0
   disableTriggerOnActivation: 0
   timeBetweenActivations: 33
-  timer: 0
+  timeRandomnessMax: 0
   maxActivationTimes: 0
   activationTimes: 0
   objectsGroup1: []
@@ -61970,7 +62105,7 @@ MonoBehaviour:
   destroyTriggerOnActivation: 0
   disableTriggerOnActivation: 0
   timeBetweenActivations: 40
-  timer: 0
+  timeRandomnessMax: 0
   maxActivationTimes: 0
   activationTimes: 0
   objectsGroup1:
@@ -62057,7 +62192,7 @@ MonoBehaviour:
   destroyTriggerOnActivation: 0
   disableTriggerOnActivation: 0
   timeBetweenActivations: 7
-  timer: 0
+  timeRandomnessMax: 0
   maxActivationTimes: 0
   activationTimes: 0
   objectsGroup1: []
@@ -63434,6 +63569,7 @@ MonoBehaviour:
   startPosition: {fileID: 145887792}
   endPosition: {fileID: 1266184826}
   audioControllers:
+  - {fileID: 1893131247}
   - {fileID: 647169449}
   - {fileID: 1498983750}
   - {fileID: 1699387032}
@@ -63442,7 +63578,6 @@ MonoBehaviour:
   - {fileID: 12512733}
   - {fileID: 1313625492}
   - {fileID: 1792805597}
-  - {fileID: 1893131247}
   - {fileID: 2125021819}
   - {fileID: 1411242519}
   - {fileID: 1462376889}
@@ -63621,7 +63756,7 @@ MonoBehaviour:
   destroyTriggerOnActivation: 0
   disableTriggerOnActivation: 0
   timeBetweenActivations: 30
-  timer: 0
+  timeRandomnessMax: 0
   maxActivationTimes: 0
   activationTimes: 0
   objectsGroup1: []
@@ -65100,7 +65235,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1686490708
 GameObject:
@@ -66071,7 +66206,7 @@ Transform:
   - {fileID: 1370714919}
   - {fileID: 1438347268}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1710206474
 GameObject:
@@ -66735,7 +66870,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1745693380
 GameObject:
@@ -66874,6 +67009,77 @@ Transform:
   m_Father: {fileID: 2094269212}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1748782058
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1748782059}
+  - component: {fileID: 1748782060}
+  m_Layer: 0
+  m_Name: Question Prompt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1748782059
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1748782058}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 595799247}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1748782060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1748782058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdf058a144978614d94d925b3f4b0ebe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prompts:
+  - index: 95
+    EVENT_StartShowing:
+      m_PersistentCalls:
+        m_Calls: []
+    EVENT_EndShowing:
+      m_PersistentCalls:
+        m_Calls: []
+  startShowingGroupEVENT:
+    m_PersistentCalls:
+      m_Calls: []
+  endShowingGroupEVENT:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 595799248}
+        m_TargetAssemblyTypeName: TimedTrigger, Assembly-CSharp
+        m_MethodName: TriggerDestruction
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  removeShownTextsFromList: 0
 --- !u!1 &1754323724 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4591776238228180268, guid: 29a63f5b8bed60441b1cce6faf0432ed, type: 3}
@@ -69127,7 +69333,7 @@ MonoBehaviour:
   destroyTriggerOnActivation: 0
   disableTriggerOnActivation: 0
   timeBetweenActivations: 3
-  timer: 0
+  timeRandomnessMax: 0
   maxActivationTimes: 4
   activationTimes: 0
   objectsGroup1:
@@ -70367,7 +70573,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1876263912
 PrefabInstance:
@@ -70720,7 +70926,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1893131246
 Transform:
   m_ObjectHideFlags: 0
@@ -71672,7 +71878,7 @@ MonoBehaviour:
   destroyTriggerOnActivation: 0
   disableTriggerOnActivation: 0
   timeBetweenActivations: 33
-  timer: 0
+  timeRandomnessMax: 0
   maxActivationTimes: 0
   activationTimes: 0
   objectsGroup1: []
@@ -73297,7 +73503,7 @@ MonoBehaviour:
   destroyTriggerOnActivation: 1
   disableTriggerOnActivation: 0
   timeBetweenActivations: 15
-  timer: 0
+  timeRandomnessMax: 0
   maxActivationTimes: 0
   activationTimes: 0
   objectsGroup1: []
@@ -75284,7 +75490,7 @@ MonoBehaviour:
   destroyTriggerOnActivation: 0
   disableTriggerOnActivation: 0
   timeBetweenActivations: 26
-  timer: 0
+  timeRandomnessMax: 0
   maxActivationTimes: 0
   activationTimes: 0
   objectsGroup1: []
@@ -76240,7 +76446,7 @@ MonoBehaviour:
   destroyTriggerOnActivation: 0
   disableTriggerOnActivation: 0
   timeBetweenActivations: 28
-  timer: 0
+  timeRandomnessMax: 0
   maxActivationTimes: 0
   activationTimes: 0
   objectsGroup1: []
@@ -76313,7 +76519,7 @@ MonoBehaviour:
   destroyTriggerOnActivation: 0
   disableTriggerOnActivation: 0
   timeBetweenActivations: 32
-  timer: 0
+  timeRandomnessMax: 0
   maxActivationTimes: 0
   activationTimes: 0
   objectsGroup1: []
@@ -79617,7 +79823,7 @@ MonoBehaviour:
   destroyTriggerOnActivation: 0
   disableTriggerOnActivation: 0
   timeBetweenActivations: 26
-  timer: 0
+  timeRandomnessMax: 0
   maxActivationTimes: 0
   activationTimes: 0
   objectsGroup1: []
@@ -79658,7 +79864,7 @@ Transform:
   - {fileID: 1486412576}
   - {fileID: 1920884068}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2134719462
 GameObject:
@@ -86465,7 +86671,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9170628902623201516, guid: 92b627872cf1a504985c0a8599c16676, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 9170628902623201516, guid: 92b627872cf1a504985c0a8599c16676, type: 3}
       propertyPath: m_LocalPosition.x
