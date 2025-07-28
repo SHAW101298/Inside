@@ -13,7 +13,9 @@ public class TimedTrigger : MonoBehaviour
     [SerializeField] bool disableTriggerOnActivation;
     [Space(10)]
     [SerializeField] float timeBetweenActivations;
-    [SerializeField] float timer;
+    [SerializeField] float timeRandomnessMax;
+    float timeRandomness;
+    float timer;
     [SerializeField] int maxActivationTimes;
     [SerializeField] int activationTimes;
     [Space(10)]
@@ -41,11 +43,16 @@ public class TimedTrigger : MonoBehaviour
         }
 
         timer += Time.deltaTime;
-        if(timer >= timeBetweenActivations)
+        if(timer >= timeBetweenActivations + timeRandomness)
         {
             TriggerInteraction();
-            timer -= timeBetweenActivations;
+            timer -= timeBetweenActivations + timeRandomness;
+            GenerateNewTimeRandomness();
         }
+    }
+    void GenerateNewTimeRandomness()
+    {
+        timeRandomness = Random.Range(0, timeRandomnessMax);
     }
 
     public void TriggerInteraction()
@@ -66,6 +73,7 @@ public class TimedTrigger : MonoBehaviour
     }
     public void StartTimer()
     {
+        GenerateNewTimeRandomness();
         gameObject.SetActive(true);
     }
     void Interact()
