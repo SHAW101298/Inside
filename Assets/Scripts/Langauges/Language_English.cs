@@ -556,4 +556,6 @@ Jakieœ losowe dŸwiêki horrorowe mo¿e dodaæ ?
     Head Bang Poprawiæ start Danger Zone
     Mask Area Danger Zone siê nie neguje
 zniszczone latarnie ?
+postaæ czasem chodz¹ca korytarzami ze œwiat³em
+pieczara z korzeniami ?
  */
