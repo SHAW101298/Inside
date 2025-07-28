@@ -24090,7 +24090,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 35
+  MaxDistance: 60
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -26775,7 +26775,7 @@ GameObject:
   - component: {fileID: 595799247}
   - component: {fileID: 595799248}
   m_Layer: 0
-  m_Name: Knocking Time Trigger
+  m_Name: Question Time Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

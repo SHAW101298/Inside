@@ -558,4 +558,6 @@ Jakieœ losowe dŸwiêki horrorowe mo¿e dodaæ ?
 zniszczone latarnie ?
 postaæ czasem chodz¹ca korytarzami ze œwiat³em
 pieczara z korzeniami ?
+puzzle spadaj¹ce z nieba w Mask Area
+Kolce
  */
