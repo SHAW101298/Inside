@@ -545,9 +545,18 @@ Po finalnej przemianie, wci¹¿ bêdzie interakcja, która niweluje ca³y Danger zone
 Dodaæ dŸwiêk pêkania w momencie zmian maski
 Jakieœ szybkie tupoty w trakcie tekstów
 
-Pole Nagrobków ?
-Wypisane na nich wszystkie zniszczone myœli ?
-Freedom / Hope / 
+Blizny i rany
+Pole Nagrobków ? Krzy¿y ?
+Rany przedstawione w formie zniszczonych obiektów
+Zwiêdniêta roœlina z urwan¹ ³odyg¹ / kwiatem
+Waza popêkana na kawa³ki
+Mur z cegie³, który trzeba zniszczyæ ceg³a po cegle aby przejœæ do g³êbszej czêsci pomieszczenia ze zniszczonymi obiektami
+Jakiœ zniszczony obiekt który mo¿na u³o¿yæ, co skutkuje przekazaniem wiadomoœci
+I just wanted to lessen the burden. Be of help. Be Something.
+Przed tym, s³owa brzmi¹
+Dead weight. And a constant problem.
+    scars and wounds cut too deep
+    broken pieces left behind
  */
 /*
     Intro Scene pierwsza komnata ma tylko 1 whisper source
@@ -560,4 +569,6 @@ postaæ czasem chodz¹ca korytarzami ze œwiat³em
 pieczara z korzeniami ?
 puzzle spadaj¹ce z nieba w Mask Area
 Kolce
+Po "ukoñczeniu" ka¿dego pomieszczenia, co jakiœ czas bêdzie grany dŸwiêk z niego. DŸwiêk ³añcuchów, bicia o œcianê,
+pêkniêcia / œmiech z maski
  */
