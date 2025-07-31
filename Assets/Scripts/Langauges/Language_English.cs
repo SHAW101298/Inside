@@ -557,6 +557,12 @@ Przed tym, s³owa brzmi¹
 Dead weight. And a constant problem.
     scars and wounds cut too deep
     broken pieces left behind
+    fake promises
+    lies
+    THats not in this room honestly - Opportiunites
+    This too - CHALLENGES
+
+
  */
 /*
     Intro Scene pierwsza komnata ma tylko 1 whisper source
