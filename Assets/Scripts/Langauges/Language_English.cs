@@ -529,6 +529,20 @@ Czas gry 10 minut 1 scena
  */
 
 /*  Na pierwszym poziomie No Danger Zone Rooms
+
+Pomieszczenia
+0 SPAWN
+1 Ogien
+2 Insane
+3 Gniew
+4 Stracone Zaufanie oraz Próba ochrony 
+5 Ci¹g³e próbowanie
+6 Maska Emocjonalna
+
+Próby ochrony
+Stracone Zaufanie
+
+
 Postaæ bij¹ca rêk¹ / g³ow¹ o mur
 Powtarza frazy why / no / try / once more /
 Po jakimœ czasie, bêdzie zmiana i postaæ przestaje biæ, mówi frazê " im done / mam doœæ "
@@ -546,12 +560,10 @@ Dodaæ dŸwiêk pêkania w momencie zmian maski
 Jakieœ szybkie tupoty w trakcie tekstów
 
 Blizny i rany
-Pole Nagrobków ? Krzy¿y ?
-Rany przedstawione w formie zniszczonych obiektów
-Zwiêdniêta roœlina z urwan¹ ³odyg¹ / kwiatem
-Waza popêkana na kawa³ki
+Powieszone ostrza na œcianie
+Zawalone elementy
+Zniszczona i przewrócona donica z uschniêtym kwiatem
 Mur z cegie³, który trzeba zniszczyæ ceg³a po cegle aby przejœæ do g³êbszej czêsci pomieszczenia ze zniszczonymi obiektami
-Jakiœ zniszczony obiekt który mo¿na u³o¿yæ, co skutkuje przekazaniem wiadomoœci
 I just wanted to lessen the burden. Be of help. Be Something.
 Przed tym, s³owa brzmi¹
 Dead weight. And a constant problem.
