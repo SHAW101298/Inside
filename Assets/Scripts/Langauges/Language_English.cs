@@ -574,7 +574,7 @@ Dead weight. And a constant problem.
     THats not in this room honestly - Opportiunites
     This too - CHALLENGES
 
-
+Le¿¹ce ostrza na stole kamiennym. w iloœci 5/6
  */
 /*
     Intro Scene pierwsza komnata ma tylko 1 whisper source
