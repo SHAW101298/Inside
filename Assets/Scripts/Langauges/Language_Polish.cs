@@ -185,7 +185,7 @@ public class Language_Polish : LanguageBase
         // Dig through ditches
         // Burn through the witches
 
-        text[200] = "Na ostrzu jest coœ napisane.";
+        text[200] = "Na ka¿dym ostrzu wyryto czyjeœ imiona.";
         text[201] = "Zniszcz  ( E )";
     }
     void FillTextScene2()
