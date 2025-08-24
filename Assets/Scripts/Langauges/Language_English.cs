@@ -6,6 +6,7 @@ public class Language_English : LanguageBase
 {
     public static Language_English Instance;
     public string[] text;
+    public int levelID;
 
     public override string GetText(int index)
     {
@@ -24,34 +25,57 @@ public class Language_English : LanguageBase
             DontDestroyOnLoad(this);
         }
 
+        LoadCorrectTexts();
 
-        text = new string[550];
+    }
+
+    void LoadCorrectTexts()
+    {
+        FillTextBase();
+        switch(levelID)
+        {
+            case 1:
+                FillTextScene1();
+                break;
+            case 2:
+                FillTextScene2();
+                break;
+            case 3:
+                FillTextScene3();
+                break;
+            default:
+                break;
+        }
+    }
+    void FillTextBase()
+    {
         // UI TEXT
-        text[0] = "Start Game";
-        text[1] = "How To Play";
-        text[2] = "Options";
-        text[3] = "Exit Game";
-        text[4] = "Exit Game ?";
-        text[5] = "Yes";
-        text[6] = "No";
-        text[7] = "Music";
-        text[8] = "Sounds";
-        text[9] = "Full Screen";
-        text[10] = "Resolution";
-        text[11] = "FPS Cap";
-        text[12] = "Vsync";
-        text[13] = "Return";
-        text[14] = "Save and Exit";
-        text[15] = "Return without Saving";
-        text[16] = "Controls";
-        text[17] = "Movement";
-        text[18] = "Jump";
-        text[19] = "Interact";
-        text[20] = "Run";
-        text[21] = "Continue";
-        text[22] = "To Menu";
-        text[23] = "Language";
-        text[24] = "Choose Chapter";
+        text[0] = "NO TEXT";
+        text[1] = "Start Game";
+        text[2] = "How To Play";
+        text[3] = "Options";
+        text[4] = "Exit Game";
+        text[5] = "Exit Game ?";
+        text[6] = "Yes";
+        text[7] = "No";
+        text[8] = "Music";
+        text[9] = "Sounds";
+        text[10] = "Full Screen";
+        text[11] = "Resolution";
+        text[12] = "FPS Cap";
+        text[13] = "Vsync";
+        text[14] = "Return";
+        text[15] = "Save and Exit";
+        text[16] = "Return without Saving";
+        text[17] = "Controls";
+        text[18] = "Movement";
+        text[19] = "Jump";
+        text[20] = "Interact";
+        text[21] = "Run";
+        text[22] = "Continue";
+        text[23] = "To Menu";
+        text[24] = "Language";
+        text[25] = "Choose Chapter";
 
 
         // INTERACTION TEXT
@@ -74,98 +98,98 @@ public class Language_English : LanguageBase
         text[71] = "1-2 The Stillness";
         text[72] = "1-3 The Unknown";
 
-
-        // Additional Texts
-        text[93] = "Press W to move Forward.";
-        text[94] = "                               ";
-        text[95] = "? ? ?";
-        text[96] = "NO TEXT";
-        text[97] = "Won't even budge";
-        text[98] = "GAME FINISHED FOR NOW. You may search the map, and kill the crows while listening to them but thats all there is right now.";
         text[99] = "You're just an unexpected guest inside someones mind. Enjoy the journey and watch the story unfold.";
+    }
+    void FillTextScene1()
+    {
+        // Additional Texts
+        text[100] = "Press W to move Forward.";
+        text[101] = "? ? ?";
 
 
         // Erratic Thoughts Intro Scene
-        text[100] = "run";
-        text[101] = "join";
-        text[102] = "no time";
-        text[103] = "escape";
-        text[104] = "they are coming";
-        text[105] = "paralyzed";
-        text[106] = "help";
-        text[107] = "weak";
-        text[108] = "don't go";
-        text[109] = "give up";
-        text[110] = "i'm afraid";
-        text[111] = "can't take it anymore";
-        text[112] = "get lost";
-        text[113] = "disappear";
-        text[114] = "so cold";
-        text[115] = "it's too much";
-        text[116] = "no hope";
-        text[117] = "faster";
-        text[118] = "stay";
-        text[119] = "lose";
-        text[120] = "kill";
-        text[121] = "die";
-        text[122] = "cut";
-        text[123] = "memories";
-        text[124] = "remember";
-        text[125] = "hide";
-        text[126] = "avoid";
-        text[127] = "cornered";
-        text[128] = "defect";
-        text[129] = "meaningless";
-        text[130] = "jump";
+        text[102] = "run";
+        text[103] = "join";
+        text[104] = "no time";
+        text[105] = "escape";
+        text[106] = "they are coming";
+        text[107] = "paralyzed";
+        text[108] = "help";
+        text[109] = "weak";
+        text[110] = "don't go";
+        text[111] = "give up";
+        text[112] = "i'm afraid";
+        text[113] = "can't take it anymore";
+        text[114] = "get lost";
+        text[115] = "disappear";
+        text[116] = "so cold";
+        text[117] = "it's too much";
+        text[118] = "no hope";
+        text[119] = "faster";
+        text[120] = "stay";
+        text[121] = "lose";
+        text[122] = "kill";
+        text[123] = "die";
+        text[124] = "cut";
+        text[125] = "memories";
+        text[126] = "remember";
+        text[127] = "hide";
+        text[128] = "avoid";
+        text[129] = "cornered";
+        text[130] = "defect";
+        text[131] = "meaningless";
+        text[132] = "jump";
 
-        text[131] = "Hello";
-        text[132] = "Nice to meet you";
-        text[133] = "Could you do me a little favour ?";
-        text[134] = "Stay with me a bit longer.";
+        text[140] = "Hello";
+        text[141] = "Nice to meet you";
+        text[142] = "Could you do me a little favour ?";
+        text[143] = "Stay with me a bit longer.";
+        text[144] = "GET BACK HERE !!!";
 
-        text[135] = "Danger";
-        text[136] = "Suppress";
-        text[137] = "Control";
-        text[138] = "GET BACK HERE !!!";
+        text[150] = "Danger";
+        text[151] = "Suppress";
+        text[152] = "Control";
 
-        text[139] = "No";
-        text[140] = "Try";
-        text[141] = "once more";
-        text[142] = "im done";
+        text[160] = "No";
+        text[161] = "Try";
+        text[162] = "once more";
+        text[163] = "im done";
 
 
         // Just of what am i so afraid ?
-        text[145] = "Just what am i afraid of ?!"; 
-        text[146] = "Life passing me by?";
-        text[147] = "This is all just a breeze";
+        text[170] = "Just what am i afraid of ?!";
+        text[171] = "Life passing me by?";
+        text[172] = "This is all just a breeze";
 
         // Life Goes by, just deal with it
-        text[148] = "The river of time dictates the road we walk on";
-        text[149] = "All we can do is follow along.";
-        text[150] = "Follow ... And belive there is something more.";
+        text[175] = "The river of time dictates the road we walk on";
+        text[176] = "All we can do is follow along.";
+        text[177] = "Follow ... And belive there is something more.";
 
         // Things happen, but its just a small setback
-        text[151] = "Some things are set in stone.";
-        text[152] = "But we are the ones thrown into the water.";
-        text[153] = "There are still things that we can decide for ourselves.";
+        text[180] = "Some things are set in stone.";
+        text[181] = "But we are the ones thrown into the water.";
+        text[182] = "There are still things that we can decide for ourselves.";
 
         // Life is no small setback. It is a setback
-        text[154] = "I don't know where to put my trust anymore.";
-        text[155] = "Everything i believed in fell apart.";
-        text[156] = "Or maybe it fell into the right place ?";
-        text[157] = "Like the puzzle pieces created for such an occasion.";
+        text[185] = "I don't know where to put my trust anymore.";
+        text[186] = "Everything i believed in fell apart.";
+        text[187] = "Or maybe it fell into the right place ?";
+        text[188] = "Like the puzzle pieces created for such an occasion.";
 
         // Life is but a stepping stone
-        text[158] = "sOMeOnE daReS tO TrY me ?";
-        text[159] = "ME ?!";
-        text[160] = "To even have the aUDacItY !";
-        text[161] = "Interesting . . .";
+        text[190] = "sOMeOnE daReS tO TrY me ?";
+        text[191] = "ME ?!";
+        text[192] = "To even have the aUDacItY !";
+        text[193] = "Interesting . . .";
         // Dig through ditches
         // Burn through the witches
+    }
+    void FillTextScene2()
+    {
+        text[97] = "Won't even budge";
 
         // SCENE 02
-        #region  
-
 
         Debug.LogError("CROW LINES NEED FIXING");
 
@@ -403,9 +427,9 @@ public class Language_English : LanguageBase
         text[434] = "Ever so slowly. Baring its fangs. Creeping around the corner.";
         text[435] = "Considering the state Im in.";
         text[436] = "Will you let me finally rest ?"; // Enable Kill Interaction
-
-#endregion
-
+    }
+    void FillTextScene3()
+    {
         text[450] = "The Road";
         text[451] = "The Choice";
         text[452] = "Give Up";
@@ -425,144 +449,7 @@ public class Language_English : LanguageBase
         // What's going on answer
         text[480] = "You got lost.";
     }
-    protected override void FillTextBase()
-    {
-        // UI TEXT
-        text[0] = "NO TEXT";
-        text[1] = "Start Game";
-        text[2] = "How To Play";
-        text[3] = "Options";
-        text[4] = "Exit Game";
-        text[5] = "Exit Game ?";
-        text[6] = "Yes";
-        text[7] = "No";
-        text[8] = "Music";
-        text[9] = "Sounds";
-        text[10] = "Full Screen";
-        text[11] = "Resolution";
-        text[12] = "FPS Cap";
-        text[13] = "Vsync";
-        text[14] = "Return";
-        text[15] = "Save and Exit";
-        text[16] = "Return without Saving";
-        text[17] = "Controls";
-        text[18] = "Movement";
-        text[19] = "Jump";
-        text[20] = "Interact";
-        text[21] = "Run";
-        text[22] = "Continue";
-        text[23] = "To Menu";
-        text[24] = "Language";
-        text[25] = "Choose Chapter";
 
-
-        // INTERACTION TEXT
-        text[50] = "Touch  ( E )";
-        text[51] = "Climb  ( E )";
-        text[52] = "Look  ( E )";
-        text[53] = "????  ( E )";
-        text[54] = "Place  ( E )";
-        text[55] = "Listen  ( E )";
-        text[56] = "Sit  ( E )";
-        text[57] = "Stand Up  ( E )";
-        text[58] = "Open  ( E )";
-        text[59] = "Close  ( E )";
-        text[60] = "Kill  ( E )";
-        text[61] = "Read  ( E )";
-
-
-        // LEVEL NAMES
-        text[70] = "1-1 The Pit";
-        text[71] = "1-2 The Stillness";
-        text[72] = "1-3 The Unknown";
-
-        text[99] = "You're just an unexpected guest inside someones mind. Enjoy the journey and watch the story unfold.";
-    }
-    protected override void FillTextScene0()
-    {
-        // Additional Texts
-        text[100] = "Press W to move Forward.";
-        text[101] = "? ? ?";
-
-
-        // Erratic Thoughts Intro Scene
-        text[102] = "run";
-        text[103] = "join";
-        text[104] = "no time";
-        text[105] = "escape";
-        text[106] = "they are coming";
-        text[107] = "paralyzed";
-        text[108] = "help";
-        text[109] = "weak";
-        text[110] = "don't go";
-        text[111] = "give up";
-        text[112] = "i'm afraid";
-        text[113] = "can't take it anymore";
-        text[114] = "get lost";
-        text[115] = "disappear";
-        text[116] = "so cold";
-        text[117] = "it's too much";
-        text[118] = "no hope";
-        text[119] = "faster";
-        text[120] = "stay";
-        text[121] = "lose";
-        text[122] = "kill";
-        text[123] = "die";
-        text[124] = "cut";
-        text[125] = "memories";
-        text[126] = "remember";
-        text[127] = "hide";
-        text[128] = "avoid";
-        text[129] = "cornered";
-        text[130] = "defect";
-        text[131] = "meaningless";
-        text[132] = "jump";
-
-        text[140] = "Hello";
-        text[141] = "Nice to meet you";
-        text[142] = "Could you do me a little favour ?";
-        text[143] = "Stay with me a bit longer.";
-        text[144] = "GET BACK HERE !!!";
-
-        text[150] = "Danger";
-        text[151] = "Suppress";
-        text[152] = "Control";
-
-        text[160] = "No";
-        text[161] = "Try";
-        text[162] = "once more";
-        text[163] = "im done";
-
-
-        // Just of what am i so afraid ?
-        text[170] = "Just what am i afraid of ?!";
-        text[171] = "Life passing me by?";
-        text[172] = "This is all just a breeze";
-
-        // Life Goes by, just deal with it
-        text[175] = "The river of time dictates the road we walk on";
-        text[176] = "All we can do is follow along.";
-        text[177] = "Follow ... And belive there is something more.";
-
-        // Things happen, but its just a small setback
-        text[180] = "Some things are set in stone.";
-        text[181] = "But we are the ones thrown into the water.";
-        text[182] = "There are still things that we can decide for ourselves.";
-
-        // Life is no small setback. It is a setback
-        text[185] = "I don't know where to put my trust anymore.";
-        text[186] = "Everything i believed in fell apart.";
-        text[187] = "Or maybe it fell into the right place ?";
-        text[188] = "Like the puzzle pieces created for such an occasion.";
-
-        // Life is but a stepping stone
-        text[190] = "sOMeOnE daReS tO TrY me ?";
-        text[191] = "ME ?!";
-        text[192] = "To even have the aUDacItY !";
-        text[193] = "Interesting . . .";
-        // Dig through ditches
-        // Burn through the witches
-    }
 }
 
 /* Lore Lines
