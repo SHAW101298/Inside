@@ -185,7 +185,7 @@ public class Language_English : LanguageBase
         // Dig through ditches
         // Burn through the witches
 
-        text[200] = "Something is written on the blade.";
+        text[200] = "There is a name engraved on each of the blades.";
         text[201] = "Break  ( E )";
     }
     void FillTextScene2()
