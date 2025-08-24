@@ -184,6 +184,9 @@ public class Language_English : LanguageBase
         text[193] = "Interesting . . .";
         // Dig through ditches
         // Burn through the witches
+
+        text[200] = "Something is written on the blade.";
+        text[201] = "Break  ( E )";
     }
     void FillTextScene2()
     {
