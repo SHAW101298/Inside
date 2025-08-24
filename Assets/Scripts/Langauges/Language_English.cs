@@ -425,6 +425,144 @@ public class Language_English : LanguageBase
         // What's going on answer
         text[480] = "You got lost.";
     }
+    protected override void FillTextBase()
+    {
+        // UI TEXT
+        text[0] = "NO TEXT";
+        text[1] = "Start Game";
+        text[2] = "How To Play";
+        text[3] = "Options";
+        text[4] = "Exit Game";
+        text[5] = "Exit Game ?";
+        text[6] = "Yes";
+        text[7] = "No";
+        text[8] = "Music";
+        text[9] = "Sounds";
+        text[10] = "Full Screen";
+        text[11] = "Resolution";
+        text[12] = "FPS Cap";
+        text[13] = "Vsync";
+        text[14] = "Return";
+        text[15] = "Save and Exit";
+        text[16] = "Return without Saving";
+        text[17] = "Controls";
+        text[18] = "Movement";
+        text[19] = "Jump";
+        text[20] = "Interact";
+        text[21] = "Run";
+        text[22] = "Continue";
+        text[23] = "To Menu";
+        text[24] = "Language";
+        text[25] = "Choose Chapter";
+
+
+        // INTERACTION TEXT
+        text[50] = "Touch  ( E )";
+        text[51] = "Climb  ( E )";
+        text[52] = "Look  ( E )";
+        text[53] = "????  ( E )";
+        text[54] = "Place  ( E )";
+        text[55] = "Listen  ( E )";
+        text[56] = "Sit  ( E )";
+        text[57] = "Stand Up  ( E )";
+        text[58] = "Open  ( E )";
+        text[59] = "Close  ( E )";
+        text[60] = "Kill  ( E )";
+        text[61] = "Read  ( E )";
+
+
+        // LEVEL NAMES
+        text[70] = "1-1 The Pit";
+        text[71] = "1-2 The Stillness";
+        text[72] = "1-3 The Unknown";
+
+        text[99] = "You're just an unexpected guest inside someones mind. Enjoy the journey and watch the story unfold.";
+    }
+    protected override void FillTextScene0()
+    {
+        // Additional Texts
+        text[100] = "Press W to move Forward.";
+        text[101] = "? ? ?";
+
+
+        // Erratic Thoughts Intro Scene
+        text[102] = "run";
+        text[103] = "join";
+        text[104] = "no time";
+        text[105] = "escape";
+        text[106] = "they are coming";
+        text[107] = "paralyzed";
+        text[108] = "help";
+        text[109] = "weak";
+        text[110] = "don't go";
+        text[111] = "give up";
+        text[112] = "i'm afraid";
+        text[113] = "can't take it anymore";
+        text[114] = "get lost";
+        text[115] = "disappear";
+        text[116] = "so cold";
+        text[117] = "it's too much";
+        text[118] = "no hope";
+        text[119] = "faster";
+        text[120] = "stay";
+        text[121] = "lose";
+        text[122] = "kill";
+        text[123] = "die";
+        text[124] = "cut";
+        text[125] = "memories";
+        text[126] = "remember";
+        text[127] = "hide";
+        text[128] = "avoid";
+        text[129] = "cornered";
+        text[130] = "defect";
+        text[131] = "meaningless";
+        text[132] = "jump";
+
+        text[140] = "Hello";
+        text[141] = "Nice to meet you";
+        text[142] = "Could you do me a little favour ?";
+        text[143] = "Stay with me a bit longer.";
+        text[144] = "GET BACK HERE !!!";
+
+        text[150] = "Danger";
+        text[151] = "Suppress";
+        text[152] = "Control";
+
+        text[160] = "No";
+        text[161] = "Try";
+        text[162] = "once more";
+        text[163] = "im done";
+
+
+        // Just of what am i so afraid ?
+        text[170] = "Just what am i afraid of ?!";
+        text[171] = "Life passing me by?";
+        text[172] = "This is all just a breeze";
+
+        // Life Goes by, just deal with it
+        text[175] = "The river of time dictates the road we walk on";
+        text[176] = "All we can do is follow along.";
+        text[177] = "Follow ... And belive there is something more.";
+
+        // Things happen, but its just a small setback
+        text[180] = "Some things are set in stone.";
+        text[181] = "But we are the ones thrown into the water.";
+        text[182] = "There are still things that we can decide for ourselves.";
+
+        // Life is no small setback. It is a setback
+        text[185] = "I don't know where to put my trust anymore.";
+        text[186] = "Everything i believed in fell apart.";
+        text[187] = "Or maybe it fell into the right place ?";
+        text[188] = "Like the puzzle pieces created for such an occasion.";
+
+        // Life is but a stepping stone
+        text[190] = "sOMeOnE daReS tO TrY me ?";
+        text[191] = "ME ?!";
+        text[192] = "To even have the aUDacItY !";
+        text[193] = "Interesting . . .";
+        // Dig through ditches
+        // Burn through the witches
+    }
 }
 
 /* Lore Lines

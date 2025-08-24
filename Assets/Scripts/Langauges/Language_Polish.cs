@@ -424,4 +424,145 @@ public class Language_Polish : LanguageBase
         // What's going on answer
         text[480] = "You got lost.";
     }
+
+    protected override void FillTextBase()
+    {
+        // UI TEXT
+        text[0] = "BRAK TEKSTU";
+        text[1] = "Rozpocznij Grê";
+        text[2] = "Jak graæ";
+        text[3] = "Opcje";
+        text[4] = "WyjdŸ z gry";
+        text[5] = "Wyjœæ z gry ?";
+        text[6] = "Tak";
+        text[7] = "Nie";
+        text[8] = "Muzyka";
+        text[9] = "DŸwiêki";
+        text[10] = "Pe³en Ekran";
+        text[11] = "Rozdzielczoœæ";
+        text[12] = "Limit FPS";
+        text[13] = "Vsync";
+        text[14] = "Powrót";
+        text[15] = "Zapisz i WyjdŸ";
+        text[16] = "WyjdŸ bez Zapisywania";
+        text[17] = "Sterowanie";
+        text[18] = "Poruszanie Siê";
+        text[19] = "Skok";
+        text[20] = "Interakcja";
+        text[21] = "Bieg";
+        text[22] = "Wróæ do gry";
+        text[23] = "Do Menu";
+        text[24] = "Jêzyk";
+        text[25] = "Wybierz Rozdzia³";
+    
+
+        // INTERACTION TEXT
+        text[50] = "Dotknij  ( E )";
+        text[51] = "Wspnij siê  ( E )";
+        text[52] = "Spójrz  ( E )";
+        text[53] = "????  ( E )";
+        text[54] = "Od³ó¿  ( E )";
+        text[55] = "S³uchaj  ( E )";
+        text[56] = "UsiadŸ  ( E )";
+        text[57] = "Wstañ  ( E )";
+        text[58] = "Otwórz  ( E )";
+        text[59] = "Zamknij  ( E )";
+        text[60] = "Zabij  ( E )";
+        text[61] = "Czytaj  ( E )";
+
+
+        // LEVEL NAMES
+        text[70] = "1-1 Dno";
+        text[71] = "1-2 Bezruch";
+        text[72] = "1-3 Nieznane";
+
+        text[99] = "Jesteœ jedynie nieprzewidzianym goœciem w czyimœ umyœle. Ciesz siê podró¿¹ i obserwuj rozwój historii";
+    }
+    protected override void FillTextScene0()
+    {
+        // Additional Texts
+        text[100] = "Wciœnij W aby iœæ do Przodu";
+        text[101] = "? ? ?";
+
+
+        // Erratic Thoughts Intro Scene
+        text[102] = "biegnij";
+        text[103] = "do³¹cz";
+        text[104] = "nie ma ju¿ czasu";
+        text[105] = "uciekaj";
+        text[106] = "ju¿ nadchodz¹";
+        text[107] = "sparali¿owany";
+        text[108] = "pomocy";
+        text[109] = "s³aby";
+        text[110] = "nie odchodŸ";
+        text[111] = "poddaj siê";
+        text[112] = "bojê siê";
+        text[113] = "nie mogê ju¿ tego znieœæ";
+        text[114] = "przepadnij";
+        text[115] = "zniknij";
+        text[116] = "zbyt zimno";
+        text[117] = "to za du¿o";
+        text[118] = "bez nadziei";
+        text[119] = "szybciej";
+        text[120] = "zostañ";
+        text[121] = "przegrasz";
+        text[122] = "zabij";
+        text[123] = "umrzyj";
+        text[124] = "tnij";
+        text[125] = "wspomnienia";
+        text[126] = "zapamiêtaj";
+        text[127] = "ukryj siê";
+        text[128] = "unikaj";
+        text[129] = "w pu³apce";
+        text[130] = "defekt";
+        text[131] = "bez znaczenia";
+        text[132] = "skacz";
+
+        text[140] = "Czeœæ";
+        text[141] = "Mi³o ciê poznaæ";
+        text[142] = "Móg³bym prosiæ ciê o ma³¹ przys³ugê ?";
+        text[143] = "Zostañ ze mn¹ trochê d³u¿ej";
+        text[144] = "WRACAJ TU !!!";
+
+        text[150] = "Niebezpieczeñstwo";
+        text[151] = "Powstrzymaæ";
+        text[152] = "Opanowaæ";
+
+        text[160] = "Nie";
+        text[161] = "Spróbuj";
+        text[162] = "jeszcze raz";
+        text[163] = "mam doœæ";
+
+
+        // Just of what am i so afraid ?
+        text[170] = "Czego ja siê tak w³aœciwie bojê ?!";
+        text[171] = "¯e ¿ycie przeleci mi bokiem ?!";
+        text[172] = "To przecie¿ tylko drobny wietrzyk";
+
+        // Life Goes by, just deal with it
+        text[175] = "Rzeka czasu wyznacza drogê któr¹ kroczymy";
+        text[176] = " Jedyne co mo¿emy zrobiæ, to pod¹¿aæ tym kursem.";
+        text[177] = "Pod¹¿aæ ... I wierzyæ ¿e gdzieœ tam jest coœ wiêcej.";
+
+        // Things happen, but its just a small setback
+        text[180] = "Niektóre rzeczy, s¹ nam zwyczajnie przeznaczone.";
+        text[181] = "Wci¹¿ jednak to my jesteœmy tymi wrzucanymi w wodê.";
+        text[182] = "Pomimo tego, to wci¹¿ my podejmujemy decyzjê w wielu przypadkach.";
+
+        // Life is no small setback. It is a setback
+        text[185] = "Ju¿ nie wiem gdzie mam pok³adaæ wiarê.";
+        text[186] = "Wszystko w co wierzy³em, lego w gruzach.";
+        text[187] = "A mo¿e wpad³o w swoje wyznaczone miejsce ?";
+        text[188] = "Jak kawa³ki uk³adanki stworzone na tak¹ konkretn¹ sytuacjê.";
+
+        // Life is but a stepping stone
+        text[190] = "kTOœ oDwA¿y£ œIÊ mnie sPrawDZiÆ ?";
+        text[191] = "MNIE ?!";
+        text[192] = "¯e wogóle mia³ cZeLNoœÆ !";
+        text[193] = "Ciekawe . . .";
+        // Dig through ditches
+        // Burn through the witches
+
+        // SCENE 02
+    }
 }
