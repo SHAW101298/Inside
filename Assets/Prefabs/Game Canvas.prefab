@@ -255,7 +255,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textField: {fileID: 2448135538344195755}
-  index: 2
+  index: 3
 --- !u!1 &111491604259058629
 GameObject:
   m_ObjectHideFlags: 0
@@ -1065,7 +1065,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textField: {fileID: 2298082708956990779}
-  index: 12
+  index: 13
 --- !u!1 &1218396963852267711
 GameObject:
   m_ObjectHideFlags: 0
@@ -1587,7 +1587,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textField: {fileID: 7202583023062423621}
-  index: 9
+  index: 10
 --- !u!1 &1852293792213988913
 GameObject:
   m_ObjectHideFlags: 0
@@ -2153,7 +2153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textField: {fileID: 1543626450950590120}
-  index: 10
+  index: 11
 --- !u!1 &2475340625219791535
 GameObject:
   m_ObjectHideFlags: 0
@@ -2705,7 +2705,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textField: {fileID: 7663723676628212619}
-  index: 8
+  index: 9
 --- !u!1 &3281293830297098326
 GameObject:
   m_ObjectHideFlags: 0
@@ -3401,7 +3401,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textField: {fileID: 16585838033449021}
-  index: 6
+  index: 7
 --- !u!1 &3799446843271119434
 GameObject:
   m_ObjectHideFlags: 0
@@ -4934,6 +4934,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -5726,7 +5727,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textField: {fileID: 7320641118210277589}
-  index: 14
+  index: 15
 --- !u!1 &4964014447809998847
 GameObject:
   m_ObjectHideFlags: 0
@@ -5901,7 +5902,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2223792181987455119}
   m_HandleRect: {fileID: 6186462404655895645}
   m_Direction: 0
-  m_Value: 0.00000007691891
+  m_Value: 0
   m_Size: 0.4961905
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -6444,7 +6445,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textField: {fileID: 5504307037029067338}
-  index: 3
+  index: 4
 --- !u!1 &5442714171458027487
 GameObject:
   m_ObjectHideFlags: 0
@@ -6820,7 +6821,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textField: {fileID: 4918192898322775778}
-  index: 4
+  index: 5
 --- !u!1 &5544327446070949638
 GameObject:
   m_ObjectHideFlags: 0
@@ -7359,7 +7360,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textField: {fileID: 4801000590378360578}
-  index: 16
+  index: 17
 --- !u!1 &6240392550739197412
 GameObject:
   m_ObjectHideFlags: 0
@@ -9233,7 +9234,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textField: {fileID: 3527301224053419271}
-  index: 5
+  index: 6
 --- !u!1 &7515211104205586134
 GameObject:
   m_ObjectHideFlags: 0
@@ -9398,7 +9399,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textField: {fileID: 6837741546964452437}
-  index: 23
+  index: 22
 --- !u!1 &7527120162120142219
 GameObject:
   m_ObjectHideFlags: 0
@@ -9600,7 +9601,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textField: {fileID: 5141840534431398849}
-  index: 13
+  index: 14
 --- !u!1 &7602574557810306618
 GameObject:
   m_ObjectHideFlags: 0
@@ -10676,7 +10677,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textField: {fileID: 8395973214545295936}
-  index: 11
+  index: 12
 --- !u!1 &8544696410710857656
 GameObject:
   m_ObjectHideFlags: 0
@@ -11552,7 +11553,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textField: {fileID: 4418376911360579556}
-  index: 22
+  index: 23
 --- !u!1 &8862479385880610231
 GameObject:
   m_ObjectHideFlags: 0
@@ -11951,7 +11952,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textField: {fileID: 2147840356347756383}
-  index: 7
+  index: 8
 --- !u!1 &9043221004984494263
 GameObject:
   m_ObjectHideFlags: 0
@@ -12129,7 +12130,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textField: {fileID: 4541553758383834353}
-  index: 23
+  index: 24
 --- !u!1 &9162208756463892395
 GameObject:
   m_ObjectHideFlags: 0
