@@ -199,9 +199,9 @@ public class Language_Polish : LanguageBase
         // Crow Random Lines
         text[110] = "ZNAJDè TO !!!";
         text[111] = "ZAPOMNIJ !!!";
+        text[112] = "Dlaczego";
         text[152] = "Stracone . . .";
         text[153] = "Juø Nied≥ugo";
-        text[112] = "Dlaczego";
         text[155] = "zakoÒcz to";
         text[156] = "samemu";
         text[157] = "zawiÛd≥";
