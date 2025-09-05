@@ -18980,11 +18980,11 @@ PrefabInstance:
     - target: {fileID: -2273073470301628796, guid: 53c4520c8d16ae749afda60758ef3be7, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: e1a2ceab5cd2343419a36d3be0be7c0e, type: 2}
+      objectReference: {fileID: 2100000, guid: 1affd60d79d5b9641851665060fc086c, type: 2}
     - target: {fileID: -2221039782360357564, guid: 53c4520c8d16ae749afda60758ef3be7, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: e1a2ceab5cd2343419a36d3be0be7c0e, type: 2}
+      objectReference: {fileID: 2100000, guid: 1affd60d79d5b9641851665060fc086c, type: 2}
     - target: {fileID: -1815528160606707224, guid: 53c4520c8d16ae749afda60758ef3be7, type: 3}
       propertyPath: m_Layer
       value: 6

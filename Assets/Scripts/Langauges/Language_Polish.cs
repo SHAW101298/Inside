@@ -190,18 +190,18 @@ public class Language_Polish : LanguageBase
     }
     void FillTextScene2()
     {
-        text[97] = "Nawet nie drgnie";
+        text[100] = "Nawet nie drgnie";
 
         // SCENE 02
 
         Debug.LogError("CROW LINES NEED FIXING");
 
         // Crow Random Lines
-        text[150] = "ZNAJDè TO !!!";
-        text[151] = "ZAPOMNIJ !!!";
+        text[110] = "ZNAJDè TO !!!";
+        text[111] = "ZAPOMNIJ !!!";
         text[152] = "Stracone . . .";
         text[153] = "Juø Nied≥ugo";
-        text[154] = "Dlaczego";
+        text[112] = "Dlaczego";
         text[155] = "zakoÒcz to";
         text[156] = "samemu";
         text[157] = "zawiÛd≥";

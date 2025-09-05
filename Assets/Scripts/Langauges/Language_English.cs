@@ -190,19 +190,19 @@ public class Language_English : LanguageBase
     }
     void FillTextScene2()
     {
-        text[97] = "Won't even budge";
+        text[100] = "Won't even budge";
 
         // SCENE 02
 
         Debug.LogError("CROW LINES NEED FIXING");
 
         // Crow Random Lines
-        text[170] = "FIND IT !!!";  // Spawn
-        text[171] = "FORGET !!!";   // Near Old Spawn
+        text[110] = "FIND IT !!!";  // Spawn
+        text[111] = "FORGET !!!";   // Near Old Spawn
+        text[112] = "end this";     // Hole
         text[172] = "Lost . . .";   // Bridge
         text[173] = "Soon";         // Motionless Pillars
         text[174] = "Why";          // Pillars
-        text[175] = "end this";     // Hole
         text[176] = "alone";        // Dead
         text[177] = "failed";       // Altar
         text[178] = "all is lost";  // Altar
