@@ -207,38 +207,85 @@ public class Language_English : LanguageBase
         text[117] = "failed";       // Altar
         text[118] = "no more reasons";          // Altar
         text[119] = "all is lost";  // Altar
-        text[180] = "Fear";
-        text[181] = "leave it";     // Road
-        text[182] = "tired";
-        text[183] = "the cycle repeats";        // Road
-        text[184] = "you're a fool";            // Road
-        text[185] = "Leave.";       // Road
-        text[186] = "last . . . request";       // Pair
-        text[187] = "erase . . . existence";    // Pair
-        text[188] = "Find the road";                    // Dialog
-        text[189] = "please, leave";
-        text[190] = "It feels like I'm the last one";   // Dialog
-        text[191] = "The collapse is inevitable";       // Dialog
-        text[192] = "wasted";
-        text[193] = "no effort";    // Road
-        text[194] = "lies";         // Road / Lore
+        text[120] = "last . . . request";       // Pair
+        text[121] = "erase . . . existence";    // Pair
+        text[122] = "Leave.";       // Road
+        text[123] = "leave it";     // Road
+        text[124] = "the cycle repeats";        // Road
+        text[125] = "you're a fool";            // Road
+        text[126] = "no effort";    // Road
+        text[127] = "lies";         // Road / Lore
+        text[128] = "It feels like I'm the last one";   // Dialog
+        text[129] = "The collapse is inevitable";       // Dialog
+        text[130] = "Find the road";                    // Dialog
+        text[131] = "Fear";
+        text[132] = "tired";
+        text[133] = "please, leave";
+        text[134] = "wasted";
 
 
         // Bench Thoughts
-        text[200] = "what is my purpose";
-        text[201] = "what is wrong with me";
-        text[202] = "was that supposed to happen ?";
-        text[203] = "its better to just . . .";
+        text[150] = "what is my purpose";
+        text[151] = "what is wrong with me";
+        text[152] = "was that supposed to happen ?";
+        text[153] = "its better to just . . .";
 
 
         // On Interactions
-        text[210] = "Place - Spark  ( E )";
-        text[211] = "Take - Spark  ( E )";
-        text[212] = "Held together by what exactly ?";
-        text[213] = "As if . . . the time stopped";
-        text[214] = "something is missing here";
-        text[215] = "A door to better future";
-        text[216] = "Take - Dagger  ( E )";
+        text[160] = "Place - Spark  ( E )";
+        text[161] = "Take - Spark  ( E )";
+        text[162] = "Held together by what exactly ?";
+        text[163] = "As if . . . the time stopped";
+        text[164] = "something is missing here";
+        text[165] = "A door to better future";
+        text[166] = "Take - Dagger  ( E )";
+
+
+        // Lore Drop
+        text[170] = "A silent world.";
+        text[171] = "A world where things just stopped.";
+        text[172] = "Not because of some cataclysm.";
+        text[173] = "Not because of abandonment.";
+        text[174] = "But because of the damage.";
+        text[175] = "Damage dealt by others";
+        text[176] = "things not considered properly";
+        text[177] = "decisions made by people who won't give second thought a chance";
+        text[178] = "actions made without a feeling of consequence.";
+
+        text[179] = "Welcome.";
+        text[180] = "The world before your eyes is the one, some might say is beyond repair.";
+        text[181] = "The world doomed to fail.";
+        text[182] = "And yet. Here you stand. ";
+        text[183] = "Trying to make things right. Trying to fix this shithole. ";
+        text[184] = "Good Luck. Because i couldn't.";
+
+        text[185] = "So yeah, a world where things just stay.";
+        text[186] = "Just the way they were left.";
+        text[187] = "For someone to pickup. Just for a convenience.";
+        text[188] = "Like a random shiny peeble on a road.";
+        text[189] = "A plant that hasn't been watered for god knows how many days just begging for some rain.";
+        text[190] = "Just trying to survive, trying to be itself.";
+        text[191] = "But there is no rain coming.";
+        text[192] = "Nothing that may correct the course of actions.";
+        text[193] = "All that is left is just waiting for the time to come. ";
+        text[194] = "All the hope you may have had is lost.";
+        text[195] = "Welcome to this world.";
+
+        text[196] = "You want some advice ?";
+        text[197] = "Go and find your own spark of hope.";
+        text[198] = "Who knows, maybe a door to the better future will open itself before you.";
+
+        text[199] = "You already made some progress on your own i see.";
+
+        text[200] = "Ahhh, I can already tell that you found what was missing.";
+        text[201] = "Now you can hear them clearly, right ?";
+        text[202] = "Ohhh, how i missed the silence.";
+        text[203] = "Now you're in charge.";
+        text[204] = "Thanks for freeing me from this burden.";
+
+        text[205] = "If you have no idea what to do, i can try to help you.";
+        text[206] = "First . . . Have you tried listening to them at least ?";
+        text[207] = "Who knows, maybe you will learn something useful ?";
 
 
         // Insulting Crow 1  APPLIED
@@ -251,53 +298,6 @@ public class Language_English : LanguageBase
         text[256] = "Don't make me laugh";
         text[257] = "you knew it will never work";
         text[258] = "might as well burn this whole place down and start from scratch";
-
-
-        // Lore Drop
-        text[260] = "A silent world.";
-        text[261] = "A world where things just stopped.";
-        text[262] = "Not because of some cataclysm.";
-        text[263] = "Not because of abandonment.";
-        text[264] = "But because of the damage.";
-        text[265] = "Damage dealt by others";
-        text[266] = "things not considered properly";
-        text[267] = "decisions made by people who won't give second thought a chance";
-        text[268] = "actions made without a feeling of consequence.";
-
-        text[269] = "Welcome.";
-        text[270] = "The world before your eyes is the one, some might say is beyond repair.";
-        text[271] = "The world doomed to fail.";
-        text[272] = "And yet. Here you stand. ";
-        text[273] = "Trying to make things right. Trying to fix this shithole. ";
-        text[274] = "Good Luck. Because i couldn't.";
-
-        text[275] = "So yeah, a world where things just stay.";
-        text[276] = "Just the way they were left.";
-        text[277] = "For someone to pickup. Just for a convenience.";
-        text[278] = "Like a random shiny peeble on a road.";
-        text[279] = "A plant that hasn't been watered for god knows how many days just begging for some rain.";
-        text[280] = "Just trying to survive, trying to be itself.";
-        text[281] = "But there is no rain coming.";
-        text[282] = "Nothing that may correct the course of actions.";
-        text[283] = "All that is left is just waiting for the time to come. ";
-        text[284] = "All the hope you may have had is lost.";
-        text[285] = "Welcome to this world.";
-
-        text[286] = "You want some advice ?";
-        text[287] = "Go and find your own spark of hope.";
-        text[288] = "Who knows, maybe a door to the better future will open itself before you.";
-
-        text[289] = "You already made some progress on your own i see.";
-
-        text[290] = "Ahhh, I can already tell that you found what was missing.";
-        text[291] = "Now you can hear them clearly, right ?";
-        text[292] = "Ohhh, how i missed the silence.";
-        text[293] = "Now you're in charge.";
-        text[294] = "Thanks for freeing me from this burden.";
-
-        text[295] = "If you have no idea what to do, i can try to help you.";
-        text[296] = "First . . . Have you tried listening to them at least ?";
-        text[297] = "Who knows, maybe you will learn something useful ?";
 
         // Insulting Crow 2 Hole Crow
         text[300] = "What are you even trying to accomplish here ?";

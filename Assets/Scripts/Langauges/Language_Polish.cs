@@ -207,21 +207,21 @@ public class Language_Polish : LanguageBase
         text[117] = "zawiód³";
         text[118] = "ju¿ nie ma powodu";
         text[119] = "wszystko stracone";
-        text[160] = "Strach";
-        text[161] = "zostaw to";
-        text[162] = "zmêczony";
-        text[163] = "a wiêc powtarzamy cykl";
-        text[164] = "jesteœ g³upcem";
-        text[165] = "OdejdŸ.";
-        text[166] = "ostatnia . . . proœba";
-        text[167] = "zniszcz . . . egzystencje";
-        text[168] = "ZnajdŸ drogê";
-        text[169] = "prosze, odejdŸ";
-        text[170] = "Czujê, jakbym by³ ostatni";
-        text[171] = "Upadek jest nieunikniony";
-        text[172] = "zmarnowane";
-        text[173] = "bez wysi³ku";
-        text[174] = "k³amstwa";
+        text[120] = "ostatnia . . . proœba";
+        text[121] = "zniszcz . . . egzystencje";
+        text[122] = "OdejdŸ.";
+        text[123] = "zostaw to";
+        text[124] = "a wiêc powtarzamy cykl";
+        text[125] = "jesteœ g³upcem";
+        text[126] = "bez wysi³ku";
+        text[127] = "k³amstwa";
+        text[128] = "Czujê, jakbym by³ ostatni";
+        text[129] = "Upadek jest nieunikniony";
+        text[130] = "ZnajdŸ drogê";
+        text[131] = "Strach";
+        text[132] = "zmêczony";
+        text[133] = "prosze, odejdŸ";
+        text[134] = "zmarnowane";
 
 
         // Bench Thoughts
@@ -232,13 +232,60 @@ public class Language_Polish : LanguageBase
 
 
         // On Interactions
-        text[210] = "Od³ó¿ - Iskra  ( E )";
-        text[211] = "WeŸ - Iskra  ( E )";
-        text[212] = "Trzymane razem ale przez co ?";
-        text[213] = "Jakby . . . czas stan¹³ w miejscu";
-        text[214] = "wygl¹da jakby czegoœ tu brakowa³o";
-        text[215] = "Drzwi do lepszej przysz³oœci";
-        text[216] = "WeŸ - Sztylet  ( E )";
+        text[160] = "Od³ó¿ - Iskra  ( E )";
+        text[161] = "WeŸ - Iskra  ( E )";
+        text[162] = "Trzymane razem ale przez co ?";
+        text[163] = "Jakby . . . czas stan¹³ w miejscu";
+        text[164] = "wygl¹da jakby czegoœ tu brakowa³o";
+        text[165] = "Drzwi do lepszej przysz³oœci";
+        text[166] = "WeŸ - Sztylet  ( E )";
+
+
+        // Lore Drop
+        text[170] = "Cichy Œwiat.";
+        text[171] = "Œwiat który poprostu siê zatrzyma³.";
+        text[172] = "Nie z powodu jakiegoœ kataklizmu.";
+        text[173] = "Nie z powodu opuszczenia.";
+        text[174] = "Ale z powodu szkód.";
+        text[175] = "Szkód wyrz¹dzonych przez innych";
+        text[176] = "nieprzemyœlane decyzje";
+        text[177] = "decyzje podjête przez osoby, którym nie chcia³o siê zastanowiæ drugi raz";
+        text[178] = "dzia³ania podejmowane bez poczucia konsekwencji.";
+
+        text[179] = "Witaj.";
+        text[180] = "Œwiat, który widzisz, jest tym, o którym wielu mog³oby powiedzieæ, ¿e jest nie do naprawienia.";
+        text[181] = "Œwiat skazany na pora¿kê.";
+        text[182] = "A jednak. Stoisz tu.";
+        text[183] = "Próbujesz jakoœ to wszystko odkrêciæ. Próbujesz naprawiæ t¹ dziurê.";
+        text[184] = "Powodzenia. Ja nie da³em radê.";
+
+        text[185] = "A wiêc tak, œwiat w którym wszystko zastyg³o.";
+        text[186] = "Dok³adnie w takim stanie, w jakim je zostawiono."; ;
+        text[187] = "Dla kogoœ do podniesienia, tylko z zaciekawienia.";
+        text[188] = "Jak przypadkowy b³yszcz¹cy kamyk na drodze";
+        text[189] = "Jak roœlina, która nie by³a podlewana przez bóg wie jak d³ugi czas, b³agaj¹ca o trochê deszczu.";
+        text[190] = "Tylko próbuj¹ca przetrwaæ, staæ siê w pe³ni tym czym jest.";
+        text[191] = "Ale deszcz nigdy nie nadejdzie.";
+        text[192] = "Nic, co mog³oby poprawiæ kurs zdarzeñ.";
+        text[193] = "Jedyne co zosta³o, to czekaæ na to co nieuniknione.";
+        text[194] = "Ca³a nadzieja, któr¹ mog³eœ mieæ, przepad³a";
+        text[195] = "Witaj w œwiecie.";
+
+        text[196] = "Chcesz jakiœ wskazówek ?";
+        text[197] = "IdŸ znajdŸ swoj¹ w³asn¹ iskierkê nadzieii";
+        text[198] = "Kto wie, mo¿e drzwi do lepszego jutra stan¹ dla ciebie otworem.";
+
+        text[199] = "TRANSLATE THIS.";
+
+        text[200] = "Ahhh, Ju¿ czujê, ¿e znalaz³eœ to czego brakowa³o.";
+        text[201] = "Teraz jesteœ w stanie je us³yszeæ, prawda ?";
+        text[202] = "Ohhh, jak brakowa³o mi tej ciszy.";
+        text[203] = "Tak¿e od teraz, to ty tu rz¹dzisz.";
+        text[204] = "Dziêki za zdjêcie problemu ze mnie.";
+
+        text[205] = "Jeœli nie wiesz co teraz zrobiæ, mogê spróbowaæ ci jakoœ pomóc.";
+        text[206] = "Na pocz¹tek . . . Próbowa³eœ chocia¿ je wys³uchaæ ?";
+        text[207] = "Kto wie, mo¿e dowiesz siê czegoœ wartoœciowego ?";
 
 
         // Insulting Crow 1
@@ -251,53 +298,6 @@ public class Language_Polish : LanguageBase
         text[256] = "Nie rozœmieszaj mnie";
         text[257] = "wiedzia³eœ ¿e to nie zadzia³a";
         text[258] = "równie dobrze mo¿na spaliæ to wszystko i zacz¹æ od zera";
-
-
-        // Lore Drop
-        text[260] = "Cichy Œwiat.";
-        text[261] = "Œwiat który poprostu siê zatrzyma³.";
-        text[262] = "Nie z powodu jakiegoœ kataklizmu.";
-        text[263] = "Nie z powodu opuszczenia.";
-        text[264] = "Ale z powodu szkód.";
-        text[265] = "Szkód wyrz¹dzonych przez innych";
-        text[266] = "nieprzemyœlane decyzje";
-        text[267] = "decyzje podjête przez osoby, którym nie chcia³o siê zastanowiæ drugi raz";
-        text[268] = "dzia³ania podejmowane bez poczucia konsekwencji.";
-
-        text[269] = "Witaj.";
-        text[270] = "Œwiat, który widzisz, jest tym, o którym wielu mog³oby powiedzieæ, ¿e jest nie do naprawienia.";
-        text[271] = "Œwiat skazany na pora¿kê.";
-        text[272] = "A jednak. Stoisz tu.";
-        text[273] = "Próbujesz jakoœ to wszystko odkrêciæ. Próbujesz naprawiæ t¹ dziurê.";
-        text[274] = "Powodzenia. Ja nie da³em radê.";
-
-        text[275] = "A wiêc tak, œwiat w którym wszystko zastyg³o.";
-        text[276] = "Dok³adnie w takim stanie, w jakim je zostawiono."; ;
-        text[277] = "Dla kogoœ do podniesienia, tylko z zaciekawienia.";
-        text[278] = "Jak przypadkowy b³yszcz¹cy kamyk na drodze";
-        text[279] = "Jak roœlina, która nie by³a podlewana przez bóg wie jak d³ugi czas, b³agaj¹ca o trochê deszczu.";
-        text[280] = "Tylko próbuj¹ca przetrwaæ, staæ siê w pe³ni tym czym jest.";
-        text[281] = "Ale deszcz nigdy nie nadejdzie.";
-        text[282] = "Nic, co mog³oby poprawiæ kurs zdarzeñ.";
-        text[283] = "Jedyne co zosta³o, to czekaæ na to co nieuniknione.";
-        text[284] = "Ca³a nadzieja, któr¹ mog³eœ mieæ, przepad³a";
-        text[285] = "Witaj w œwiecie.";
-
-        text[286] = "Chcesz jakiœ wskazówek ?";
-        text[287] = "IdŸ znajdŸ swoj¹ w³asn¹ iskierkê nadzieii";
-        text[288] = "Kto wie, mo¿e drzwi do lepszego jutra stan¹ dla ciebie otworem.";
-
-        text[289] = "TRANSLATE THIS.";
-
-        text[290] = "Ahhh, Ju¿ czujê, ¿e znalaz³eœ to czego brakowa³o.";
-        text[291] = "Teraz jesteœ w stanie je us³yszeæ, prawda ?";
-        text[292] = "Ohhh, jak brakowa³o mi tej ciszy.";
-        text[293] = "Tak¿e od teraz, to ty tu rz¹dzisz.";
-        text[294] = "Dziêki za zdjêcie problemu ze mnie.";
-
-        text[295] = "Jeœli nie wiesz co teraz zrobiæ, mogê spróbowaæ ci jakoœ pomóc.";
-        text[296] = "Na pocz¹tek . . . Próbowa³eœ chocia¿ je wys³uchaæ ?";
-        text[297] = "Kto wie, mo¿e dowiesz siê czegoœ wartoœciowego ?";
 
         // Insulting Crow 2
         text[300] = "Co ty wogóle próbujesz tutaj osi¹gn¹æ ?";
