@@ -199,14 +199,14 @@ public class Language_English : LanguageBase
         // Crow Random Lines
         text[110] = "FIND IT !!!";  // Spawn
         text[111] = "FORGET !!!";   // Near Old Spawn
-        text[112] = "end this";     // Hole
-        text[172] = "Lost . . .";   // Bridge
-        text[173] = "Soon";         // Motionless Pillars
-        text[174] = "Why";          // Pillars
-        text[176] = "alone";        // Dead
-        text[177] = "failed";       // Altar
-        text[178] = "all is lost";  // Altar
-        text[179] = "no more reasons";          // Altar
+        text[112] = "Why";          // Pillars
+        text[113] = "Soon";         // Motionless Pillars
+        text[114] = "Lost . . .";   // Bridge
+        text[115] = "alone";        // Dead
+        text[116] = "end this";     // Hole
+        text[117] = "failed";       // Altar
+        text[118] = "no more reasons";          // Altar
+        text[119] = "all is lost";  // Altar
         text[180] = "Fear";
         text[181] = "leave it";     // Road
         text[182] = "tired";
