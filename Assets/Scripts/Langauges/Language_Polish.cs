@@ -288,25 +288,69 @@ public class Language_Polish : LanguageBase
         text[207] = "Kto wie, mo¿e dowiesz siê czegoœ wartoœciowego ?";
 
 
-        // Insulting Crow 1
-        text[250] = "¿a³osne";
-        text[251] = "Naprawdê myœla³eœ, ¿e to bêdzie takie proste ?";
-        text[252] = "znajdŸ w sobie to coœ";
-        text[253] = "wtedy napewno wszystko siê u³o¿y";
-        text[254] = "jeszcze tylko kilka kroków i wszystko bêdzie dobrze ";
-        text[255] = "idŸ naprzód, uwierz w siebie";
-        text[256] = "Nie rozœmieszaj mnie";
-        text[257] = "wiedzia³eœ ¿e to nie zadzia³a";
-        text[258] = "równie dobrze mo¿na spaliæ to wszystko i zacz¹æ od zera";
+        // Past Self continued Talk
+        text[209] = "TRANSLATE THIS"; //
 
-        // Insulting Crow 2
-        text[300] = "Co ty wogóle próbujesz tutaj osi¹gn¹æ ?";
-        text[301] = "Poddaj siê,";
-        text[302] = ".  .  .                           ";
-        text[303] = "Nie rozumiesz co siê do ciebie mówi ?";
-        text[304] = "PODDAJ SIÊ";
-        text[305] = "Zrób mi przysz³ugê i skoñcz ju¿ z t¹ fasad¹.";
-        text[306] = "Nikt nawet nie chce, abyœ robi³ te rzeczy.";
+        text[210] = "I jak ? Dowiedzia³eœ siê czegoœ u¿ytecznego ?";
+        text[211] = "Podejrzewam, ¿e niezbyt.";
+        text[212] = "Wiesz co siê mówi.";
+        text[213] = "Nie bêdzie zmian jeœli otoczenie pozostanie to samo.";
+        text[214] = "      ";
+        text[215] = "Wydaje mi siê, ¿e znajdziesz dla tego jakieœ zastosowanie."; // Hands a knife to the player
+
+        // After First Crow Killed
+        text[220] = "Rób co musisz.";
+        // After 3 Crows Killed
+        text[221] = "Mam nadziejê, ¿e warto.";
+        text[225] = "Kilka wci¹¿ jeszcze ¿yje.";
+        // Crow location hints
+        text[230] = "Jeden mo¿e byæ w pobli¿u zniszczonego pomieszczenia. Tego z którego przyby³eœ.";
+        text[231] = "Te trzy filary z czego jeden zawieszony w powietrzu. Szuka³eœ tam ?";
+        text[232] = "Kiedyœ by³ gdzieœ tutaj most. ";
+        text[233] = "Odwiedzi³eœ ju¿ tego w pobli¿u martwej sterty kruków ?";
+        text[234] = "Jeden kruk jest w pobli¿u dziury. Przynajmniej zawsze tam by³.";
+        text[235] = "A pamiêtasz o tym gadatliwym przy drzwiach ?";
+        text[236] = "Jakiœ cichy mo¿e te¿ byæ przy drzwiach.";
+        text[237] = "Widzia³eœ tego wykluczonego przed œwi¹tyni¹, siedz¹cego na kamieniu ?";
+        text[238] = "A co z ukochan¹ par¹ na drzewie ?";
+        text[239] = "A co z ukochan¹ par¹ na drzewie ?";
+        text[240] = "Czy dok³adnie przeszuka³eœ drogê ? Wydaje mi siê, ¿e jeden wci¹¿ powinien tam byæ.";
+        text[241] = "Punkt zbiegu rzek jeden z nich upatrzy³ sobie jako miejsce na dom.";
+        text[242] = "Jeden powinien byæ w pobli¿u. Zawsze obserwuj¹c.";
+
+        text[250] = "To chyba ju¿ wszystkie. ";
+        text[251] = "Teraz jest to naprawdê zastyg³y œwiat.";
+        text[252] = "Có¿ za b³oga pustka. Spokój.";
+        text[253] = "Niczym znak nadci¹gaj¹cego koñca";
+        text[254] = "Powolnego. Pokazuj¹cego swoje k³y. Czaj¹cego siê tu¿ za rogiem.";
+        text[255] = "Bior¹c pod uwagê mój stan . . .";
+        text[256] = "Pozwolisz mi nareszcie odpocz¹æ ?"; // Enable Kill Interaction,
+
+
+        // Insulting Crow 8 Pillars
+        text[280] = "Wiesz co mi zawsze przychodzi na myœl, gdy na ciebie patrzê ?";
+        text[281] = "¯e jesteœ zwyczajnie defektem";
+        text[282] = "B³êdem na kartach historii. Skazanym na usuniêcie.";
+        text[283] = "Zapomnienie";
+        text[284] = "Jak niedba³a linia zrobiona o³ówkiem w szkicowniku.";
+        text[285] = "Pamiêtaj o tym w tej swojej maleñkiej g³ówce.";
+
+        // Insulting Crow 7
+        text[290] = "Trochê ci zaje³o dotarcie tutaj.";
+        text[291] = "Ile¿ to mo¿na na ciebie zawsze czekaæ ?";
+        text[292] = "Mo¿e to przez to, ¿e jesteœ zmêczony ?";
+        text[293] = "Ogarnij siê.";
+        text[294] = "Nie przynosisz nic, oprócz wstydu.";
+        text[295] = "Nale¿y ci siê to wszystko. To twoja ciê¿ko wypracowana nagroda.";
+        text[296] = "No dawaj. Ciesz siê. Coœ ciê powstrzymuje ?";
+
+        // Insulting Crow 10
+        text[300] = "Musisz zacz¹æ akceptowaæ fakty.";
+        text[301] = "Samemu wybra³eœ to wszystko";
+        text[302] = "Ka¿de wydarzenie to rezultat twojej nieudolnoœci.";
+        text[303] = "Zdecydowa³eœ nawet uciec od wszystkich problemów.";
+        text[304] = "Zakopaæ je i zapomnieæ o nich.";
+        text[305] = "Czego innego mo¿na by³o siê po tobie spodziewaæ.";
 
         // Insulting Crow 3
         text[310] = "Widzisz tamt¹ stertê zw³ok ?";
@@ -315,121 +359,81 @@ public class Language_Polish : LanguageBase
         text[313] = "Nigdy nie by³o przeznaczone ci istnieæ i tak.";
         text[314] = "Zaakceptuj to.";
 
-        // Insulting Crow 13 Temple Crow 2
-        text[315] = "Nadziei nie mo¿na wiecznie oszukiwaæ.";
-        text[316] = "W pewnym momencie, zwyczajnie staniesz w miejscu.";
-        text[317] = "Staniesz i bêdziesz siê zastanawia³, po co.";
-        text[318] = "Nareszcie uœwiadomisz sobie, ¿e nie ma sensu nawet próbowaæ.";
-        text[319] = "W³aœnie wtedy, przypomnisz sobie moje s³owa.";
-
-        // Insulting Crow 4
-        text[320] = "A kogó¿ to my tu mamy ?";
-        text[321] = "D³ugo wyczekiwany zbawca!";
-        text[322] = "Ten, który przywróci sprawy na odpowieni tor!";
-        text[323] = "Pora¿ka a nie zbawca";
-        text[324] = "Spójrz na siebie";
-        text[325] = "Ktoœ taki jak ty, dokonuj¹cy czegoœ ?";
-        text[326] = "To chyba jakiœ ¿art";
-
-        // Insulting Crow 5
-        text[330] = "I jak, uda³o siê ?";
-        text[331] = "Skoñcz z tymi z³udzeniami.";
-        text[332] = "Nigdy nic dobrze nie zrobi³eœ.";
-        text[333] = "Wiêc czemu myœlisz, ¿e teraz mia³oby byæ inaczej ?";
-        text[334] = "Nigdy ci siê nie uda. Z tym mo¿esz mi wierzyæ.";
+        // Insulting Crow 2
+        text[320] = "Co ty wogóle próbujesz tutaj osi¹gn¹æ ?";
+        text[321] = "Poddaj siê,";
+        text[322] = ".  .  .                           ";
+        text[323] = "Nie rozumiesz co siê do ciebie mówi ?";
+        text[324] = "PODDAJ SIÊ";
+        text[325] = "Zrób mi przysz³ugê i skoñcz ju¿ z t¹ fasad¹.";
+        text[326] = "Nikt nawet nie chce, abyœ robi³ te rzeczy.";
 
         // Insulting Crow 12 Temple Crow 1
-        text[336] = "Im bardziej z tym walczysz, tym wiêcej tracisz";
-        text[337] = "Koniec koñców, zostaniesz w tym wszystkim samemu";
-        text[338] = "PogódŸ siê z tym";
-        text[339] = "Czy¿ nie w³aœnie o tym zawsze marzy³eœ ?";
+        text[330] = "Im bardziej z tym walczysz, tym wiêcej tracisz";
+        text[331] = "Koniec koñców, zostaniesz w tym wszystkim samemu";
+        text[332] = "PogódŸ siê z tym";
+        text[333] = "Czy¿ nie w³aœnie o tym zawsze marzy³eœ ?";
+
+        // Insulting Crow 13 Temple Crow 2
+        text[340] = "Nadziei nie mo¿na wiecznie oszukiwaæ.";
+        text[341] = "W pewnym momencie, zwyczajnie staniesz w miejscu.";
+        text[342] = "Staniesz i bêdziesz siê zastanawia³, po co.";
+        text[343] = "Nareszcie uœwiadomisz sobie, ¿e nie ma sensu nawet próbowaæ.";
+        text[344] = "W³aœnie wtedy, przypomnisz sobie moje s³owa.";
+
+
+        // Insulting Crow 1
+        text[350] = "¿a³osne";
+        text[351] = "Naprawdê myœla³eœ, ¿e to bêdzie takie proste ?";
+        text[352] = "znajdŸ w sobie to coœ";
+        text[353] = "wtedy napewno wszystko siê u³o¿y";
+        text[354] = "jeszcze tylko kilka kroków i wszystko bêdzie dobrze ";
+        text[355] = "idŸ naprzód, uwierz w siebie";
+        text[356] = "Nie rozœmieszaj mnie";
+        text[357] = "wiedzia³eœ ¿e to nie zadzia³a";
+        text[358] = "równie dobrze mo¿na spaliæ to wszystko i zacz¹æ od zera";
+
+        // Insulting Crow 4
+        text[360] = "A kogó¿ to my tu mamy ?";
+        text[361] = "D³ugo wyczekiwany zbawca!";
+        text[362] = "Ten, który przywróci sprawy na odpowieni tor!";
+        text[363] = "Pora¿ka a nie zbawca";
+        text[364] = "Spójrz na siebie";
+        text[365] = "Ktoœ taki jak ty, dokonuj¹cy czegoœ ?";
+        text[366] = "To chyba jakiœ ¿art";
 
         // Insulting Crow 6
-        text[340] = "HahAhAhaHAha";
-        text[341] = "Dobry ¿art !";
-        text[342] = "Sk¹d siê wzi¹³ taki klaun jak ty, co ?";
-        text[343] = "Œmietnisko ?";
-        text[344] = "Bo niby gdzie indziej znaleŸæ kogoœ tak bezu¿ytecznego ?";
-        text[345] = "Ju¿ nie mogê siê doczekaæ aby zobaczyæ jak siê ³amiesz.";
-        text[346] = "Walcz o swoje ¿ycie !";
-        text[347] = "No dawaj, Dla zabawy !";
-        text[348] = "TRANSLATE THIS";
-
-        // Insulting Crow 7
-        text[350] = "Trochê ci zaje³o dotarcie tutaj.";
-        text[351] = "Ile¿ to mo¿na na ciebie zawsze czekaæ ?";
-        text[352] = "Mo¿e to przez to, ¿e jesteœ zmêczony ?";
-        text[353] = "Ogarnij siê.";
-        text[354] = "Nie przynosisz nic, oprócz wstydu.";
-        text[355] = "Nale¿y ci siê to wszystko. To twoja ciê¿ko wypracowana nagroda.";
-        text[356] = "No dawaj. Ciesz siê. Coœ ciê powstrzymuje ?";
-
-        // Insulting Crow 8
-        text[360] = "Wiesz co mi zawsze przychodzi na myœl, gdy na ciebie patrzê ?";
-        text[361] = "¯e jesteœ zwyczajnie defektem";
-        text[362] = "B³êdem na kartach historii. Skazanym na usuniêcie.";
-        text[363] = "Zapomnienie";
-        text[364] = "Jak niedba³a linia zrobiona o³ówkiem w szkicowniku.";
-        text[365] = "Pamiêtaj o tym w tej swojej maleñkiej g³ówce.";
+        text[370] = "HahAhAhaHAha";
+        text[371] = "Dobry ¿art !";
+        text[372] = "Sk¹d siê wzi¹³ taki klaun jak ty, co ?";
+        text[373] = "Œmietnisko ?";
+        text[374] = "Bo niby gdzie indziej znaleŸæ kogoœ tak bezu¿ytecznego ?";
+        text[375] = "Ju¿ nie mogê siê doczekaæ aby zobaczyæ jak siê ³amiesz.";
+        text[376] = "Walcz o swoje ¿ycie !";
+        text[377] = "No dawaj, Dla zabawy !";
+        text[378] = "TRANSLATE THIS";
 
         // Insulting Crow 9
-        text[370] = "Masz zamiar w³o¿yæ w to jaki kolwiek wysi³ek ?";
-        text[371] = "Jedyne co widzê, to jak krêcisz siê woko³o.";
-        text[372] = "Jakbyœ w zupe³noœci nie wiedzia³ co zrobiæ.";
-        text[373] = "Jak bardzo g³upi mo¿esz byæ ?";
+        text[380] = "Masz zamiar w³o¿yæ w to jaki kolwiek wysi³ek ?";
+        text[381] = "Jedyne co widzê, to jak krêcisz siê woko³o.";
+        text[382] = "Jakbyœ w zupe³noœci nie wiedzia³ co zrobiæ.";
+        text[383] = "Jak bardzo g³upi mo¿esz byæ ?";
 
-        // Insulting Crow 10
-        text[380] = "Musisz zacz¹æ akceptowaæ fakty.";
-        text[381] = "Samemu wybra³eœ to wszystko";
-        text[382] = "Ka¿de wydarzenie to rezultat twojej nieudolnoœci.";
-        text[383] = "Zdecydowa³eœ nawet uciec od wszystkich problemów.";
-        text[384] = "Zakopaæ je i zapomnieæ o nich.";
-        text[385] = "Czego innego mo¿na by³o siê po tobie spodziewaæ.";
+        // Insulting Crow 5
+        text[390] = "I jak, uda³o siê ?";
+        text[391] = "Skoñcz z tymi z³udzeniami.";
+        text[392] = "Nigdy nic dobrze nie zrobi³eœ.";
+        text[393] = "Wiêc czemu myœlisz, ¿e teraz mia³oby byæ inaczej ?";
+        text[394] = "Nigdy ci siê nie uda. Z tym mo¿esz mi wierzyæ.";
 
         // Insulting Crow 11
-        text[390] = "To by³o oczywiste od samego pocz¹tku";// Self fulfilling Prophecy
-        text[391] = "Jesteœ jak samospe³niaj¹ca siê przepowiednia";
-        text[392] = "Nie zmienisz tego, co zapisano ci w kartach.";
-        text[393] = "Ca³y twój wysi³ek na marne.";
-        text[394] = "Jak z dzieckiem . . .";
+        text[400] = "To by³o oczywiste od samego pocz¹tku";// Self fulfilling Prophecy
+        text[401] = "Jesteœ jak samospe³niaj¹ca siê przepowiednia";
+        text[402] = "Nie zmienisz tego, co zapisano ci w kartach.";
+        text[403] = "Ca³y twój wysi³ek na marne.";
+        text[404] = "Jak z dzieckiem . . .";
 
-        // Past Self continued Talk
-        text[399] = "TRANSLATE THIS"; //
 
-        text[400] = "I jak ? Dowiedzia³eœ siê czegoœ u¿ytecznego ?";
-        text[401] = "Podejrzewam, ¿e niezbyt.";
-        text[402] = "Wiesz co siê mówi.";
-        text[403] = "Nie bêdzie zmian jeœli otoczenie pozostanie to samo.";
-        text[404] = "      ";
-        text[405] = "Wydaje mi siê, ¿e znajdziesz dla tego jakieœ zastosowanie."; // Hands a knife to the player
-
-        // After First Crow Killed
-        text[410] = "Rób co musisz.";
-        // After 3 Crows Killed
-        text[411] = "Mam nadziejê, ¿e warto.";
-        text[415] = "Kilka wci¹¿ jeszcze ¿yje.";
-        // Crow location hints
-        text[416] = "Jeden mo¿e byæ w pobli¿u zniszczonego pomieszczenia. Tego z którego przyby³eœ.";
-        text[417] = "Czy dok³adnie przeszuka³eœ drogê ? Wydaje mi siê, ¿e jeden wci¹¿ powinien tam byæ.";
-        text[418] = "Te trzy filary z czego jeden zawieszony w powietrzu. Szuka³eœ tam ?";
-        text[419] = "Jeden kruk jest w pobli¿u dziury. Przynajmniej zawsze tam by³.";
-        text[420] = "Jeden powinien byæ w pobli¿u. Zawsze obserwuj¹c.";
-        text[421] = "A co z ukochan¹ par¹ na drzewie ?";
-        text[422] = "A co z ukochan¹ par¹ na drzewie ?";
-        text[423] = "A pamiêtasz o tym gadatliwym przy drzwiach ?";
-        text[424] = "Jakiœ cichy mo¿e te¿ byæ przy drzwiach.";
-        text[425] = "Widzia³eœ tego wykluczonego przed œwi¹tyni¹, siedz¹cego na kamieniu ?";
-        text[426] = "Kiedyœ by³ gdzieœ tutaj most. ";
-        text[427] = "Odwiedzi³eœ ju¿ tego w pobli¿u martwej sterty kruków ?";
-        text[428] = "Punkt zbiegu rzek jeden z nich upatrzy³ sobie jako miejsce na dom.";
-
-        text[430] = "To chyba ju¿ wszystkie. ";
-        text[431] = "Teraz jest to naprawdê zastyg³y œwiat.I to nie tak, ¿e narzekam.";
-        text[432] = "Có¿ za b³oga pustka. Spokój.";
-        text[433] = "Niczym znak nadci¹gaj¹cego koñca.";
-        text[434] = "Powolnego. Pokazuj¹cego swoje k³y. Czaj¹cego siê tu¿ za rogiem.";
-        text[435] = "Bior¹c pod uwagê mój stan . . .";
-        text[436] = "Pozwolisz mi nareszcie odpocz¹æ ?"; // Enable Kill Interaction,
     }
     void FillTextScene3()
     {

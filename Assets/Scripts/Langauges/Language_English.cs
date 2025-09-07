@@ -288,25 +288,69 @@ public class Language_English : LanguageBase
         text[207] = "Who knows, maybe you will learn something useful ?";
 
 
-        // Insulting Crow 1  APPLIED
-        text[250] = "pathetic";
-        text[251] = "you thought it will be that easy ?";
-        text[252] = "just find that little spark in yourself";
-        text[253] = "then everything will surely work out";
-        text[254] = "a few more steps and everything will be great";
-        text[255] = "keep going, believe in yourself";
-        text[256] = "Don't make me laugh";
-        text[257] = "you knew it will never work";
-        text[258] = "might as well burn this whole place down and start from scratch";
+        // Past Self continued Talk
+        text[209] = "Been busy, huh ?";
 
-        // Insulting Crow 2 Hole Crow
-        text[300] = "What are you even trying to accomplish here ?";
-        text[301] = "Give Up.";
-        text[302] = ".  .  .                           ";
-        text[303] = "Can't you understand what i just said ?";
-        text[304] = "GIVE UP";
-        text[305] = "Do me a favour and end this facade.";
-        text[306] = "No one wants you doing any of these things.";
+        text[210] = "And ? Did you learn anything of value ?";
+        text[211] = "Not much i guess";
+        text[212] = "You know what they say.";
+        text[213] = "There will be no change when the environment stays the same.";
+        text[214] = "      ";
+        text[215] = "You may find some use for this i think."; // Hands a knife to the player
+
+        // After First Crow Killed
+        text[220] = "Do what you have to.";
+        // After 3 Crows Killed
+        text[221] = "I hope its worth it.";
+        text[225] = "A few are still alive.";
+        // Crow location hints
+        text[230] = "One might be near the ruined room. The one you came from.  THIS NEEDS FIXING";
+        text[231] = "Those three pillars with one suspended in the air. How about searching there ?";
+        text[232] = "There used to be a bridge somewhere around here. ";
+        text[233] = "Have you visited the one guarding the dead pile ?";
+        text[234] = "There is a crow near the hole. At least there always was.";
+        text[235] = "What about the talkative one near the doors ?";
+        text[236] = "There might be silent one near the doors.";
+        text[237] = "Have you seen the one excluded from the temple standing on a rock ?";
+        text[238] = "How about the lovely pair on a tree ?";
+        text[239] = "How about the lovely pair on a tree ?";
+        text[240] = "Have you searched the road properly ? I belive one should still be there.";
+        text[241] = "Cross section of the riverbed is a home to one of them. ";
+        text[242] = "One should be somewhere close. Always watching.";
+
+        text[250] = "I think you got all of them.";
+        text[251] = "Now it really is a still world.";
+        text[252] = "What a blissfull emptiness. Peace.";
+        text[253] = "Like a sign of the approaching end";
+        text[254] = "Ever so slowly. Baring its fangs. Creeping around the corner.";
+        text[255] = "Considering the state Im in.";
+        text[256] = "Will you let me finally rest ?"; // Enable Kill Interaction
+
+
+        // Insulting Crow 8 Pillars Crows
+        text[280] = "You know what i always think when i look at you ?";
+        text[281] = "That you're just a defect.";
+        text[282] = "Defect on history pages. Meant to be erased.";
+        text[283] = "Forgotten";
+        text[284] = "Like a careless pencil mark in a sketchbook.";
+        text[285] = "Keep that in your tiny mind.";
+
+        // Insulting Crow 7 MotionLess Pillars Crows
+        text[290] = "Took you long enough to get here.";
+        text[291] = "Why are you always this slow ?";
+        text[292] = "Is it because you're tired ?";
+        text[293] = "Get a grip on your self.";
+        text[294] = "You bring nothing but shame.";
+        text[295] = "You deserve all these things. Thats your well earned reward.";
+        text[296] = "Come on. Enjoy yourself. What's stopping you ?";
+
+        // Insulting Crow 10 Broken Bridge Crow
+        text[300] = "You need to start accepting facts.";
+        text[301] = "You chose all of this.";
+        text[302] = "Every event is the result of your own inability";
+        text[303] = "And you even chose to escape from the problems.";
+        text[304] = "Bury them down and forget.";
+        text[305] = "How classic of you.";
 
         // Insulting Crow 3 Dead Crows
         text[310] = "Do you see that pile of corpses over there ?";
@@ -315,122 +359,82 @@ public class Language_English : LanguageBase
         text[313] = "You were never meant to exist anyway";
         text[314] = "Accept that.";
 
-        // Insulting Crow 13 Temple Crow 2
-        text[315] = "Hope cannot be eluded forever";
-        text[316] = "At some point, you will just stop.";
-        text[317] = "Stop and wonder what's the point";
-        text[318] = "Finally realize there is no reason to even try.";
-        text[319] = "You will remember my words then.";
-
-        // Insulting Crow 4 Pair Crows 1
-        text[320] = "Whom do we have here ?";
-        text[321] = "The long awaited savior!";
-        text[322] = "The one destinied to make things right!";
-        text[323] = "savior my ass";
-        text[324] = "Look at yourself";
-        text[325] = "Someone like you, accomplishing anything ?";
-        text[326] = "What a joke";
-
-        // Insulting Crow 5 Dialog Crow
-        text[330] = "Are you done ?";
-        text[331] = "Stop being delusional";
-        text[332] = "You never did anything right.";
-        text[333] = "What makes you think, you can do it now ?";
-        text[334] = "You will never make it. Trust me on that.";
+        // Insulting Crow 2 Hole Crow
+        text[320] = "What are you even trying to accomplish here ?";
+        text[321] = "Give Up.";
+        text[322] = ".  .  .                           ";
+        text[323] = "Can't you understand what i just said ?";
+        text[324] = "GIVE UP";
+        text[325] = "Do me a favour and end this facade.";
+        text[326] = "No one wants you doing any of these things.";
 
         // Insulting Crow 12 Temple Crow 1
-        text[336] = "The harder you fight the more you lose";
-        text[337] = "In the end, you will end up all alone";
-        text[338] = "Embrace it";
-        text[339] = "Isn't that what you always dreamed of ?";
+        text[330] = "The harder you fight the more you lose";
+        text[331] = "In the end, you will end up all alone";
+        text[332] = "Embrace it";
+        text[333] = "Isn't that what you always dreamed of ?";
+
+        // Insulting Crow 13 Temple Crow 2
+        text[340] = "Hope cannot be eluded forever";
+        text[341] = "At some point, you will just stop.";
+        text[342] = "Stop and wonder what's the point";
+        text[343] = "Finally realize there is no reason to even try.";
+        text[344] = "You will remember my words then.";
+
+
+        // Insulting Crow 1  APPLIED
+        text[350] = "pathetic";
+        text[351] = "you thought it will be that easy ?";
+        text[352] = "just find that little spark in yourself";
+        text[353] = "then everything will surely work out";
+        text[354] = "a few more steps and everything will be great";
+        text[355] = "keep going, believe in yourself";
+        text[356] = "Don't make me laugh";
+        text[357] = "you knew it will never work";
+        text[358] = "might as well burn this whole place down and start from scratch";
+
+        // Insulting Crow 4 Pair Crows 1
+        text[360] = "Whom do we have here ?";
+        text[361] = "The long awaited savior!";
+        text[362] = "The one destinied to make things right!";
+        text[363] = "savior my ass";
+        text[364] = "Look at yourself";
+        text[365] = "Someone like you, accomplishing anything ?";
+        text[366] = "What a joke";
 
         // Insulting Crow 6 Pair Crows 2
-        text[340] = "HahAhAhaHAha";
-        text[341] = "Thats a good one!";
-        text[342] = "Where did such a clown like you appear from ?";
-        text[343] = "Garbagepile ?";
-        text[344] = "Where else such good for nothing being would be ?";
-        text[345] = "I can't wait to see you break.";
-        text[346] = "Fight for your life !";
-        text[347] = "Come on, For fun !";
-        text[348] = "let's see you cry";
-
-        // Insulting Crow 7 MotionLess Pillars Crows
-        text[350] = "Took you long enough to get here.";
-        text[351] = "Why are you always this slow ?";
-        text[352] = "Is it because you're tired ?";
-        text[353] = "Get a grip on your self.";
-        text[354] = "You bring nothing but shame.";
-        text[355] = "You deserve all these things. Thats your well earned reward.";
-        text[356] = "Come on. Enjoy yourself. What's stopping you ?";
-
-        // Insulting Crow 8 Pillars Crows
-        text[360] = "You know what i always think when i look at you ?";
-        text[361] = "That you're just a defect.";
-        text[362] = "Defect on history pages. Meant to be erased.";
-        text[363] = "Forgotten";
-        text[364] = "Like a careless pencil mark in a sketchbook.";
-        text[365] = "Keep that in your tiny mind.";
+        text[370] = "HahAhAhaHAha";
+        text[371] = "Thats a good one!";
+        text[372] = "Where did such a clown like you appear from ?";
+        text[373] = "Garbagepile ?";
+        text[374] = "Where else such good for nothing being would be ?";
+        text[375] = "I can't wait to see you break.";
+        text[376] = "Fight for your life !";
+        text[377] = "Come on, For fun !";
+        text[378] = "let's see you cry";
 
         // Insulting Crow 9 Road Crow
-        text[370] = "Do you intend to put any effort into that ?";
-        text[371] = "All i see is you just walking around";
-        text[372] = "As if you dont know what to do at all";
-        text[373] = "How dumb can you really be ?";
+        text[380] = "Do you intend to put any effort into that ?";
+        text[381] = "All i see is you just walking around";
+        text[382] = "As if you dont know what to do at all";
+        text[383] = "How dumb can you really be ?";
 
-        // Insulting Crow 10 Broken Bridge Crow
-        text[380] = "You need to start accepting facts.";
-        text[381] = "You chose all of this.";
-        text[382] = "Every event is the result of your own inability";
-        text[383] = "And you even chose to escape from the problems.";
-        text[384] = "Bury them down and forget.";
-        text[385] = "How classic of you.";
+        // Insulting Crow 5 Dialog Crow
+        text[390] = "Are you done ?";
+        text[391] = "Stop being delusional";
+        text[392] = "You never did anything right.";
+        text[393] = "What makes you think, you can do it now ?";
+        text[394] = "You will never make it. Trust me on that.";
 
         // Insulting Crow 11 Lore Crow
-        text[390] = "It was obvious from the start";// Self fulfilling Prophecy
-        text[391] = "You are a Self fulfilling prophecy";
-        text[392] = "You cannot change what was already set in stone.";
-        text[393] = "All your efforts are pointless.";
-        text[394] = "Just like with a child . . .";
+        text[400] = "It was obvious from the start";// Self fulfilling Prophecy
+        text[401] = "You are a Self fulfilling prophecy";
+        text[402] = "You cannot change what was already set in stone.";
+        text[403] = "All your efforts are pointless.";
+        text[404] = "Just like with a child . . .";
 
-        // Past Self continued Talk
-        text[399] = "Been busy, huh ?";
-
-        text[400] = "And ? Did you learn anything of value ?";
-        text[401] = "Not much i guess";
-        text[402] = "You know what they say.";
-        text[403] = "There will be no change when the environment stays the same.";
-        text[404] = "      ";
-        text[405] = "You may find some use for this i think."; // Hands a knife to the player
-
-        // After First Crow Killed
-        text[410] = "Do what you have to.";
-        // After 3 Crows Killed
-        text[411] = "I hope its worth it.";
-        text[415] = "A few are still alive.";
-        // Crow location hints
-        text[416] = "One might be near the ruined room. The one you came from.";
-        text[417] = "Have you searched the road properly ? I belive one should still be there.";
-        text[418] = "Those three pillars with one suspended in the air. How about searching there ?";
-        text[419] = "There is a crow near the hole. At least there always was.";
-        text[420] = "One should be somewhere close. Always watching.";
-        text[421] = "How about the lovely pair on a tree ?";
-        text[422] = "How about the lovely pair on a tree ?";
-        text[423] = "What about the talkative one near the doors ?";
-        text[424] = "There might be silent one near the doors.";
-        text[425] = "Have you seen the one excluded from the temple standing on a rock ?";
-        text[426] = "There used to be a bridge somewhere around here. ";
-        text[427] = "Have you visited the one guarding the dead pile ?";
-        text[428] = "Cross section of the riverbed is a home to one of them. ";
-
-        text[430] = "I think you got all of them.";
-        text[431] = "Now it really is a still world.";
-        text[432] = "What a blissfull emptiness. Peace.";
-        text[433] = "Like a sign of the approaching end";
-        text[434] = "Ever so slowly. Baring its fangs. Creeping around the corner.";
-        text[435] = "Considering the state Im in.";
-        text[436] = "Will you let me finally rest ?"; // Enable Kill Interaction
     }
+
     void FillTextScene3()
     {
         text[450] = "The Road";
