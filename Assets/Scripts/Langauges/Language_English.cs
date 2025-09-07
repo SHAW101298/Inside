@@ -221,7 +221,7 @@ public class Language_English : LanguageBase
         text[131] = "Fear";
         text[132] = "tired";
         text[133] = "please, leave";
-        text[134] = "wasted";
+        text[134] = "wasted effort";    // Door
 
 
         // Bench Thoughts
@@ -274,6 +274,7 @@ public class Language_English : LanguageBase
         text[196] = "You want some advice ?";
         text[197] = "Go and find your own spark of hope.";
         text[198] = "Who knows, maybe a door to the better future will open itself before you.";
+        text[198] = "Who knows, maybe that damn door will finally open.";
 
         text[199] = "You already made some progress on your own i see.";
 

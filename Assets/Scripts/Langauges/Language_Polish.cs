@@ -221,7 +221,7 @@ public class Language_Polish : LanguageBase
         text[131] = "Strach";
         text[132] = "zmêczony";
         text[133] = "prosze, odejdŸ";
-        text[134] = "zmarnowane";
+        text[134] = "daremny wysi³ek";
 
 
         // Bench Thoughts
@@ -274,6 +274,7 @@ public class Language_Polish : LanguageBase
         text[196] = "Chcesz jakiœ wskazówek ?";
         text[197] = "IdŸ znajdŸ swoj¹ w³asn¹ iskierkê nadzieii";
         text[198] = "Kto wie, mo¿e drzwi do lepszego jutra stan¹ dla ciebie otworem.";
+        text[198] = "Kto wie, mo¿e te przeklête drzwi wkoñcu siê otworz¹.";
 
         text[199] = "TRANSLATE THIS.";
 
