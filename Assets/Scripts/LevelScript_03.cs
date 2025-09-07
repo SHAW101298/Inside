@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelScript_03 : MonoBehaviour
 {
@@ -31,5 +32,14 @@ public class LevelScript_03 : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void ChangeSceneToNextLevel()
+    {
+        SceneManager.LoadScene(4);
+    }
+    public void RestartScene()
+    {
+        SceneManager.LoadScene(3);
     }
 }
