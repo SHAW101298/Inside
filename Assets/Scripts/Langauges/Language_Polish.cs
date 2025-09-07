@@ -434,8 +434,8 @@ public class Language_Polish : LanguageBase
         text[403] = "Ca³y twój wysi³ek na marne.";
         text[404] = "Jak z dzieckiem . . .";
 
-
     }
+
     void FillTextScene3()
     {
         text[450] = "Droga";
