@@ -438,25 +438,26 @@ public class Language_Polish : LanguageBase
 
     void FillTextScene3()
     {
-        text[450] = "Droga";
-        text[451] = "Wybór";
-        text[452] = "Poddaæ siê";
-        text[453] = "Byæ";
+        text[100] = "Scie¿ka";
+        text[101] = "Wybór";
+        text[102] = "Poddaæ siê";
+        text[103] = "Byæ";
 
-        text[455] = "Co to za miejsce ?";
-        text[456] = "Kim jestem ?";
-        text[457] = "O co tutaj chodzi ?";
+        text[110] = "Co to za miejsce ?";
+        text[111] = "Kim jestem ?";
+        text[112] = "O co tutaj chodzi ?";
 
 
 
         // What is this place answer
-        text[460] = "This place used to be a past. Used to be a future.";
-        text[461] = "The beggining of everything.";
-        text[462] = "Now its just ... all that is left.";
+        text[115] = "This place used to be a past. Used to be a future.";
+        text[116] = "The beggining of everything.";
+        text[117] = "Now its just ... all that is left.";
         // Who Am I answer
-        text[470] = "Go forward and find your answer.";
-        text[471] = "You're the one with the keys and a will.";
+        text[120] = "Go forward and find your answer.";
+        text[121] = "You're the one with the keys and a will.";
         // What's going on answer
-        text[480] = "You got lost.";
+        text[125] = "You got lost.";
+        text[126] = "And now you're trying to find yourself.";
     }
 }

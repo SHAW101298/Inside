@@ -438,24 +438,25 @@ public class Language_English : LanguageBase
 
     void FillTextScene3()
     {
-        text[450] = "The Road";
-        text[451] = "The Choice";
-        text[452] = "Give Up";
-        text[453] = "Be";
+        text[100] = "The Path";
+        text[101] = "The Choice";
+        text[102] = "Give Up";
+        text[103] = "Be";
 
-        text[455] = "What is this place ?";
-        text[456] = "Who Am I ?";
-        text[457] = "What's going on ?";
+        text[110] = "What is this place ?";
+        text[111] = "Who Am I ?";
+        text[112] = "What's going on ?";
 
         // What is this place answer
-        text[460] = "This place used to be a past. Used to be a future.";
-        text[461] = "The beggining of everything.";
-        text[462] = "Now its just ... all that is left.";
+        text[115] = "This place used to be a past. Used to be a future.";
+        text[116] = "The beggining of everything.";
+        text[117] = "Now its just ... all that is left.";
         // Who Am I answer
-        text[470] = "Go forward and find your answer.";
-        text[471] = "You're the one with the keys and a will.";
+        text[120] = "Go forward and find your answer.";
+        text[121] = "You're the one with the keys and a will.";
         // What's going on answer
-        text[480] = "You got lost.";
+        text[125] = "You got lost.";
+        text[126] = "And now you're trying to find yourself.";
     }
 
 }
