@@ -456,7 +456,13 @@ public class Language_English : LanguageBase
         text[121] = "You're the one with the keys and a will.";
         // What's going on answer
         text[125] = "You got lost.";
-        text[126] = "And now you're trying to find yourself.";
+
+
+        // Rock Pushing
+        text[130] = "Left alone to deal with, what feels like impossible task."; // Ignored
+        text[131] = "Is that your idea of being merciful ?"; // Killed
+        text[132] = "Left with no purpose, just to rot and be forgotten."; // Ball taken away
+        text[133] = "The goal is fullfilled. But whose success is that really ?"; // Ball placed on the top
     }
 
 }
