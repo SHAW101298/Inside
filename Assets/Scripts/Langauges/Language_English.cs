@@ -463,6 +463,9 @@ public class Language_English : LanguageBase
         text[131] = "Is that your idea of being merciful ?"; // Killed
         text[132] = "Left with no purpose, just to rot and be forgotten."; // Ball taken away
         text[133] = "The goal is fullfilled. But whose success is that really ?"; // Ball placed on the top
+        text[134] = "Take  ( E )";
+        text[135] = "Drop  ( E )";
+        text[136] = "Put Back  ( E )";
     }
 
 }
