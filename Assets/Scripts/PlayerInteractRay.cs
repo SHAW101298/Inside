@@ -30,8 +30,10 @@ public class PlayerInteractRay : MonoBehaviour
         {
             hitInfo.collider.gameObject.GetComponent<InteractTrigger>().TriggerInteraction();
         }
-
-        
+    }
+    public void ActionLeftMouseButton(InputAction.CallbackContext context)
+    {
+        ActionInteract(context);
     }
 
     private void Update()

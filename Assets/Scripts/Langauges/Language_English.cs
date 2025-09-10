@@ -466,6 +466,9 @@ public class Language_English : LanguageBase
         text[134] = "Take  ( E )";
         text[135] = "Drop  ( E )";
         text[136] = "Put Back  ( E )";
+
+        text[140] = "Grab  ( E )";
+        text[141] = "Release  ( E )";
     }
 
 }
@@ -632,4 +635,5 @@ puzzle spadaj¹ce z nieba w Mask Area
 Kolce
 Po "ukoñczeniu" ka¿dego pomieszczenia, co jakiœ czas bêdzie grany dŸwiêk z niego. DŸwiêk ³añcuchów, bicia o œcianê,
 pêkniêcia / œmiech z maski
+Zwê¿yæ pomieszczenie z maskami, ³atwiej bêdzie wype³niæ ca³oœæ przyt³¹czaj¹c¹ logiczn¹ iloœci¹ masek
  */

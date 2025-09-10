@@ -30,6 +30,13 @@ public class LevelScript_03 : MonoBehaviour
     
     Flower field with a door
 
+
+    nice road should be near the end
+
+    */
+    /*Memory Well
+    Apparently, whatever you drop there disappears. Never to be seen again.
+
     */
 
     public int rockPushingState;
