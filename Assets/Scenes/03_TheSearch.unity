@@ -9331,7 +9331,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1241013815
 Transform:
   m_ObjectHideFlags: 0
@@ -9340,7 +9340,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1241013814}
   m_LocalRotation: {x: 0, y: 0.7071068, z: -0, w: -0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.25, z: 56.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -15782,7 +15782,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1982330132}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.000015258789, y: -0.34, z: 94.75}
+  m_LocalPosition: {x: -0.000015258789, y: -0.34, z: 57.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -16082,6 +16082,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2077876291}
+        m_TargetAssemblyTypeName: EnterTrigger, Assembly-CSharp
+        m_MethodName: EnableGroup2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   exitEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -16097,7 +16109,8 @@ MonoBehaviour:
   objectToEnable: {fileID: 0}
   objectsGroup1:
   - {fileID: 754026657}
-  objectsGroup2: []
+  objectsGroup2:
+  - {fileID: 2133991224}
 --- !u!135 &2077876292
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -16106,7 +16119,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2077876289}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 7
@@ -17604,11 +17617,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2948003077692461138, guid: 3dff16562f3207b40bf905737bff0969, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.7071068
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 2948003077692461138, guid: 3dff16562f3207b40bf905737bff0969, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2948003077692461138, guid: 3dff16562f3207b40bf905737bff0969, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 3414801998883955737, guid: 3dff16562f3207b40bf905737bff0969, type: 3}
       propertyPath: m_RootOrder
