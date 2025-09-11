@@ -448,12 +448,13 @@ public class Language_English : LanguageBase
         text[112] = "What's going on ?";
 
         // What is this place answer
-        text[115] = "This place used to be a past. Used to be a future.";
-        text[116] = "The beggining of everything.";
-        text[117] = "Now its just ... all that is left.";
+        text[115] = "This place used to be a past.";
+        text[116] = "Used to be a future.";
+        text[117] = "The beggining of everything.";
+        text[118] = "Now its just ... all that is left.";
         // Who Am I answer
-        text[120] = "Go forward and find your answer.";
-        text[121] = "You're the one with the keys and a will.";
+        text[120] = "If you're so curious, why won't you ask yourself ?";
+        text[121] = "Face the one who you try so hard to erase.";
         // What's going on answer
         text[125] = "You got lost.";
 

@@ -35,7 +35,5 @@ public class RockMoving : MonoBehaviour
             dest = hitInfo.point;
             gameObject.transform.position = Vector3.SmoothDamp(gameObject.transform.position, dest, ref velocity, smoothTime);
         }
-
-        
     }
 }
