@@ -641,5 +641,9 @@ Zwê¿yæ pomieszczenie z maskami, ³atwiej bêdzie wype³niæ ca³oœæ przyt³¹czaj¹c¹ lo
 
 /* Scena 2 Miejsca losowych aktywacji 
 
+Maski       Dead Crows
+£añcuchy    Lore Drop
+Kolce       The Road
+Bloki       Broken Bridge
 
- * /
+ */
