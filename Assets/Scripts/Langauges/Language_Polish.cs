@@ -225,10 +225,10 @@ public class Language_Polish : LanguageBase
 
 
         // Bench Thoughts
-        text[200] = "jaki jest cel mojego istnienia";
-        text[201] = "co jest ze mn¹ nie tak";
-        text[202] = "czy w³aœnie tak to mia³o wygl¹daæ ?";
-        text[203] = "proœciej by³oby zwyczajnie . . .";
+        text[150] = "jaki jest cel mojego istnienia";
+        text[151] = "co jest ze mn¹ nie tak";
+        text[152] = "czy w³aœnie tak to mia³o wygl¹daæ ?";
+        text[153] = "proœciej by³oby zwyczajnie . . .";
 
 
         // On Interactions
