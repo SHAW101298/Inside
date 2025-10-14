@@ -16,7 +16,7 @@ public  class LanguageManager : MonoBehaviour
         else
         {
             Instance = this;
-            DontDestroyOnLoad(this);
+            //DontDestroyOnLoad(this);
         } 
     }
     #endregion

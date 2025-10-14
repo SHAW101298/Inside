@@ -22,7 +22,7 @@ public class Language_English : LanguageBase
         else
         {
             Instance = this;
-            DontDestroyOnLoad(this);
+            //DontDestroyOnLoad(this);
         }
 
         LoadCorrectTexts();
@@ -638,3 +638,8 @@ Po "ukoñczeniu" ka¿dego pomieszczenia, co jakiœ czas bêdzie grany dŸwiêk z niego
 pêkniêcia / œmiech z maski
 Zwê¿yæ pomieszczenie z maskami, ³atwiej bêdzie wype³niæ ca³oœæ przyt³¹czaj¹c¹ logiczn¹ iloœci¹ masek
  */
+
+/* Scena 2 Miejsca losowych aktywacji 
+
+
+ * /

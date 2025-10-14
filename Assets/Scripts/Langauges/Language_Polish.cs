@@ -22,7 +22,7 @@ public class Language_Polish : LanguageBase
         else
         {
             Instance = this;
-            DontDestroyOnLoad(this);
+            //DontDestroyOnLoad(this);
         }
 
         LoadCorrectTexts();

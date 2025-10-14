@@ -29,9 +29,12 @@ public class LevelScript_03 : MonoBehaviour
     Rock Pushing
     
     Flower field with a door
-
+    Stars slowly being added to the night sky as the player progresses further
+    Normal Terrain but with a clear cut borders
+    terrain filled with trees and vegetation. Everything is grey though
 
     nice road should be near the end
+    A bridge to cross. The curvy japan like 
 
     */
     /*Memory Well
