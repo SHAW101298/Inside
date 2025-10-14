@@ -29,14 +29,6 @@ public class CameraHookUp : MonoBehaviour
     float x, y;
     [SerializeField] Transform forward;
 
-    [Space(15)]
-    [SerializeField] bool isDamped;
-    [SerializeField] float dampSmoothTime;
-    [SerializeField] Vector3 dampVelocity;
-    [SerializeField] float dampSnapDistance;
-
-
-
 
     private void Update()
     {
@@ -50,12 +42,6 @@ public class CameraHookUp : MonoBehaviour
             return;
         if (input.blockedRotationByAction == true)
             return;
-
-        if(isDamped == true)
-        {
-            DampedRoateCam();
-            return;
-        }
 
         RotateCam();
     }
@@ -79,26 +65,5 @@ public class CameraHookUp : MonoBehaviour
     {
         Vector3 dir = (forward.position - gameObject.transform.position).normalized;
         return dir;
-    }
-    void DampedRoateCam()
-    {
-        //x *= Time.deltaTime * sensitivity;
-        x *= sensitivity / 10;
-        y *= sensitivity / 10;
-        //input.body.transform.eulerAngles.y;
-        //y *= Time.deltaTime * sensitivity;
-
-        Vector3 rotation = Vector3.zero;
-        rotation.x = cam.transform.eulerAngles.x;
-        rotation.y = input.body.transform.eulerAngles.y;
-        rotation.x -= y;
-        //Vector3 rotateValue = new Vector3(y, -x, 0);
-        cam.transform.eulerAngles = rotation;
-        //handsObject.transform.localEulerAngles = new Vector3(rotation.x,0,0);
-
-        
-        Vector3 pos = Vector3.SmoothDamp(gameObject.transform.position, forward.position, ref dampVelocity, dampSmoothTime);
-        cam.transform.position = pos;
-
     }
 }
