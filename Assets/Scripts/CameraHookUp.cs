@@ -96,21 +96,9 @@ public class CameraHookUp : MonoBehaviour
         cam.transform.eulerAngles = rotation;
         //handsObject.transform.localEulerAngles = new Vector3(rotation.x,0,0);
 
-        Vector3 pos = Vector3.SmoothDamp(gameObject.transform.position, endPos.position, ref dampVelocity, dampSmoothTime);
-        objectToMove.transform.position = pos;
-
-        float dist = Vector3.Distance(objectToMove.transform.position, endPos.position);
-        if (dist <= dampSnapDistance)
-        {
-            objectToMove.transform.position = endPos.position;
-            isActive = false;
-            EVENT_movementEnd.Invoke();
-
-            if (destroyAfterReachingDestination == true)
-            {
-                TriggerDestruction();
-            }
-        }
+        
+        Vector3 pos = Vector3.SmoothDamp(gameObject.transform.position, forward.position, ref dampVelocity, dampSmoothTime);
+        cam.transform.position = pos;
 
     }
 }
