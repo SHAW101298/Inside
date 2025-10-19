@@ -348,6 +348,7 @@ GameObject:
   - component: {fileID: 3269382084736288233}
   - component: {fileID: 5748966096551877485}
   - component: {fileID: 2011158911758505361}
+  - component: {fileID: 8215548043890805081}
   m_Layer: 0
   m_Name: Crow 2
   m_TagString: Untagged
@@ -388,6 +389,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animationPlayer: {fileID: 5748966096551877485}
   soundPlayer: {fileID: 6760272162129203258}
+  sourceController: {fileID: 8215548043890805081}
   killTriggerParent: {fileID: 5525825513920423732}
   killTrigger: {fileID: 1324210340773112481}
 --- !u!114 &6760272162129203258
@@ -468,6 +470,24 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &8215548043890805081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4564060505508354746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45b1802cf4089994ab61477f7a112cf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioType: 1
+  source: {fileID: 4368979679073853471}
+  baseVolumeLevel: 1
+  desiredVolumeLevel: 1
+  calculatedVolumeLevel: 0
 --- !u!1 &5008422120610620022
 GameObject:
   m_ObjectHideFlags: 0
