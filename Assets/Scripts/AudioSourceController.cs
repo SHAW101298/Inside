@@ -17,23 +17,7 @@ public class AudioSourceController : MonoBehaviour
 
     void Start()
     {
-        if(source == null)
-        {
-            source = gameObject.GetComponent<AudioSource>();
-        }
-        switch (audioType)
-        {
-            case ENUM_AudioType.music:
-                CollectorAudioSources.Instance.AddMusicController(this);
-                break;
-            case ENUM_AudioType.sound:
-                CollectorAudioSources.Instance.AddSoundController(this);
-                break;
-            default:
-                CollectorAudioSources.Instance.AddSoundController(this);
-                break;
-        }
-        ChangeVolume();
+        AddMe();
     }
 
     public void ChangeVolume()
@@ -51,7 +35,7 @@ public class AudioSourceController : MonoBehaviour
                 globalVolumeLevel = Options.Instance.GetMusicVolume();
                 break;
         }
-        calculatedVolumeLevel = globalVolumeLevel * baseVolumeLevel * desiredVolumeLevel;
+        calculatedVolumeLevel = baseVolumeLevel * globalVolumeLevel *  desiredVolumeLevel;
         source.volume = calculatedVolumeLevel;
     }
     public void ChangeDesiredVolume(float newDesiredLevel)
@@ -73,5 +57,25 @@ public class AudioSourceController : MonoBehaviour
                 CollectorAudioSources.Instance.RemoveSoundController(this);
                 break;
         }
+    }
+    public void AddMe()
+    {
+        if (source == null)
+        {
+            source = gameObject.GetComponent<AudioSource>();
+        }
+        switch (audioType)
+        {
+            case ENUM_AudioType.music:
+                CollectorAudioSources.Instance.AddMusicController(this);
+                break;
+            case ENUM_AudioType.sound:
+                CollectorAudioSources.Instance.AddSoundController(this);
+                break;
+            default:
+                CollectorAudioSources.Instance.AddSoundController(this);
+                break;
+        }
+        ChangeVolume();
     }
 }

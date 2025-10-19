@@ -5,7 +5,8 @@ using UnityEngine.Events;
 
 public class DimZone : MonoBehaviour
 {
-    [SerializeField] AudioSource backgroundAudioSource;
+    //[SerializeField] AudioSource backgroundAudioSource;
+    [SerializeField] AudioSourceController backgroundAudioController;
 
     [SerializeField] float desiredFogAmount;
     [SerializeField] float normalFogAmount;
@@ -39,14 +40,16 @@ public class DimZone : MonoBehaviour
         float percent = timer / timeAmount;
         float fogDist = Mathf.Lerp(normalFogAmount, desiredFogAmount, percent);
         RenderSettings.fogEndDistance = fogDist;
-        backgroundAudioSource.volume = Mathf.Lerp(0.5f, 0, percent);
+        backgroundAudioController.ChangeDesiredVolume(Mathf.Lerp(1f, 0, percent));
+        //backgroundAudioSource.volume = Mathf.Lerp(0.5f, 0, percent);
 
         if (timer >= timeAmount)
         {
             dim = false;
             timer = timeAmount;
             RenderSettings.fogEndDistance = desiredFogAmount;
-            backgroundAudioSource.volume = 0;
+            //backgroundAudioSource.volume = 0;
+            backgroundAudioController.ChangeDesiredVolume(0);
             EVENT_DimmingFinished.Invoke();
         }
     }
@@ -59,14 +62,16 @@ public class DimZone : MonoBehaviour
         float percent = timer / timeAmount;
         float fogDist = Mathf.Lerp(normalFogAmount, desiredFogAmount, percent);
         RenderSettings.fogEndDistance = fogDist;
-        backgroundAudioSource.volume = Mathf.Lerp(0.5f, 0, percent);
+        //backgroundAudioSource.volume = Mathf.Lerp(0.5f, 0, percent);
+        backgroundAudioController.ChangeDesiredVolume(Mathf.Lerp(1, 0, percent));
 
         if (timer <= 0)
         {
             shine = false;
             timer = 0;
             RenderSettings.fogEndDistance = normalFogAmount;
-            backgroundAudioSource.volume = 0.5f;
+            //backgroundAudioSource.volume = 0.5f;
+            backgroundAudioController.ChangeDesiredVolume(1);
             EVENT_ShiningFinished.Invoke();
         }
     }
