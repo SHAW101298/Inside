@@ -238,6 +238,7 @@ public class Language_Polish : LanguageBase
         text[163] = "Jakby . . . czas stan¹³ w miejscu";
         text[164] = "wygl¹da jakby czegoœ tu brakowa³o";
         text[165] = "Drzwi do lepszej przysz³oœci";
+        text[165] = "Nikt nie wie, co znajduje siê po drugiej stronie";
         text[166] = "WeŸ - Sztylet  ( E )";
 
 

@@ -237,7 +237,7 @@ public class Language_English : LanguageBase
         text[162] = "Held together by what exactly ?";
         text[163] = "As if . . . the time stopped";
         text[164] = "something is missing here";
-        text[165] = "A door to better future";
+        text[165] = "No one knows what's on the other side";
         text[166] = "Take - Dagger  ( E )";
 
 
@@ -526,7 +526,6 @@ Kruki odlatuj¹ce gdy zbli¿a siê gracz, i przylatuj¹ce gdy siê oddali.
 Mo¿liwoœæ przewijania dialogu ?
 Mo¿liwoœæ wybierania wypowiadanych dialogów ?
 
-A door to better future will open itself before you - zmieniæ aby nie by³o to mówione dos³ownie
  */
 /* ZROBIONE
     Muzykê momentami wyciszyæ ? 
