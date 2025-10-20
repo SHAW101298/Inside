@@ -3,20 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class EnterTrigger : MonoBehaviour
+public class EnterTrigger : TriggerBase
 {
     [Header("EVENTS")]
     public UnityEvent enterEvent;
     public UnityEvent exitEvent;
     public UnityEvent delayedEnterEvent;
     public UnityEvent delayedExitEvent;
-    [Header("Data")]
-    [SerializeField] bool destroyTriggerOnActivation;
-    [SerializeField] bool disableTriggerOnActivation;
-    [SerializeField] float delayedEventTriggerTime;
-    [SerializeField] GameObject objectToEnable;
-    [SerializeField] List<GameObject> objectsGroup1;
-    [SerializeField] List<GameObject> objectsGroup2;
+
 
     float enterTimer;
     float exitTimer;
@@ -74,66 +68,7 @@ public class EnterTrigger : MonoBehaviour
             }
         }
     }
-    public void EnableGroup1()
-    {
-        if (objectsGroup1.Count > 0)
-        {
-            foreach (GameObject obj in objectsGroup1)
-            {
-                obj.SetActive(true);
-            }
-        }
-    }
-    public void EnableGroup2()
-    {
-        if (objectsGroup2.Count > 0)
-        {
-            foreach (GameObject obj in objectsGroup2)
-            {
-                obj.SetActive(true);
-            }
-        }
-    }
-    public void DisableGroup1()
-    {
-        if (objectsGroup1.Count > 0)
-        {
-            foreach (GameObject obj in objectsGroup1)
-            {
-                obj.SetActive(false);
-            }
-        }
-    }
-    public void DisableGroup2()
-    {
-        if (objectsGroup2.Count > 0)
-        {
-            foreach (GameObject obj in objectsGroup2)
-            {
-                obj.SetActive(false);
-            }
-        }
-    }
-    public void DestroyGroup1()
-    {
-        foreach (GameObject obj in objectsGroup1)
-        {
-            Destroy(obj);
-        }
-        objectsGroup1.Clear();
-    }
-    public void DestroyGroup2()
-    {
-        foreach (GameObject obj in objectsGroup2)
-        {
-            Destroy(obj);
-        }
-        objectsGroup2.Clear();
-    }
-    public void TriggerDestruction()
-    {
-        Destroy(gameObject);
-    }
+    
     public void TriggerEnter()
     {
         Debug.Log("Trigger Enter");
