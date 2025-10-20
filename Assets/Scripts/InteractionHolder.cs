@@ -9,4 +9,6 @@ public class InteractionHolder : MonoBehaviour
 
     [SerializeField] List<Interaction> possibleInteractions;
 
+
+
 }

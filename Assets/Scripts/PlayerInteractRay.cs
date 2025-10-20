@@ -28,7 +28,7 @@ public class PlayerInteractRay : MonoBehaviour
 
         if (Physics.Raycast(data.cam.transform.position, lookDir, out hitInfo, infoRaycastDistance, interactLayer) == true)
         {
-            hitInfo.collider.gameObject.GetComponent<InteractTrigger>().TriggerInteraction();
+            hitInfo.collider.gameObject.GetComponent<SimpleTrigger>().TriggerInteraction();
         }
     }
     public void ActionLeftMouseButton(InputAction.CallbackContext context)
@@ -40,6 +40,7 @@ public class PlayerInteractRay : MonoBehaviour
     {
         RayCastForInfo();
         RayCastForTriggers();
+        RayCastForInteractionsInfo();
     }
     void RayCastForInfo()
     {
@@ -57,7 +58,17 @@ public class PlayerInteractRay : MonoBehaviour
         RaycastHit hitInfo;
         if (Physics.Raycast(data.cam.transform.position, lookDir, out hitInfo, infoRaycastDistance, rayCastTriggerLayer) == true)
         {
-            hitInfo.collider.gameObject.GetComponent<InteractTrigger>().TriggerInteraction();
+            hitInfo.collider.gameObject.GetComponent<SimpleTrigger>().TriggerInteraction();
+        }
+    }
+    void RayCastForInteractionsInfo()
+    {
+        Vector3 lookDir = data.cam.GetForwardDir();
+        RaycastHit hitInfo;
+        if (Physics.Raycast(data.cam.transform.position, lookDir, out hitInfo, infoRaycastDistance, interactLayer) == true)
+        {
+            InteractionHolder textInfo = hitInfo.collider.gameObject.GetComponent<InteractionHolder>();
+            data.ui.ShowPossibleInteractions(textInfo);
         }
     }
     public void BlockInteractions()

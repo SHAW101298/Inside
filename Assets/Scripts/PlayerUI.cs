@@ -51,6 +51,10 @@ public class PlayerUI : MonoBehaviour
         timer = 0;
         windowIsActive = true;
     }
+    public void ShowPossibleInteractions(InteractionHolder holder)
+    {
+        Debug.LogWarning("IMPLEMENT ME");
+    }
     public void HideText()
     {
         infoWindow.SetActive(false);

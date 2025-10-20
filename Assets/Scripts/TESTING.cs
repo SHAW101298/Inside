@@ -7,10 +7,10 @@ public class TESTING : MonoBehaviour
     public bool runAOO;
     public bool runBOO;
     [Header("Game Progression")]
-    public InteractTrigger missingPiece;
-    public InteractTrigger waitingAltar;
-    public InteractTrigger fakeDoor;
-    public InteractTrigger knifeGiving;
+    public SimpleTrigger missingPiece;
+    public SimpleTrigger waitingAltar;
+    public SimpleTrigger fakeDoor;
+    public SimpleTrigger knifeGiving;
     public GameObject firstMeetingInteraction;
     public GameObject secondMeetingInteraction;
     [Space(15)]

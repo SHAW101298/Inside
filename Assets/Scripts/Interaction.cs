@@ -7,6 +7,7 @@ public class Interaction : MonoBehaviour
     // Holds Data about the Interaction
     [SerializeField] TriggerBase trigger;
     [SerializeField] InformationHolder info;
+    [SerializeField] bool isActive;
 
     public TriggerBase GetTriggerBase()
     {
@@ -15,5 +16,13 @@ public class Interaction : MonoBehaviour
     public InformationHolder GetInfoHolder()
     {
         return info;
+    }
+    public bool GetActiveState()
+    {
+        return isActive;
+    }
+    public void ChangeActiveState(bool newState)
+    {
+        isActive = newState;
     }
 }

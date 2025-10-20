@@ -30,7 +30,7 @@ public class LevelScript_02 : MonoBehaviour
     [SerializeField] List<GameObject> bodyBones;
     [SerializeField] int lastBone;
     [SerializeField] GameObject crowSearchParty;
-    [SerializeField] InteractTrigger crowLocalizationTrigger;
+    [SerializeField] SimpleTrigger crowLocalizationTrigger;
     [SerializeField] GameObject oneKilledCrow;
     [SerializeField] GameObject threeKilledCrows;
     [SerializeField] List<GameObject> crowKillInteractions;
@@ -39,7 +39,7 @@ public class LevelScript_02 : MonoBehaviour
     [SerializeField] DimZone templeDimZone;
     [SerializeField] AudioSource musicAudioSource;
     [SerializeField] GameObject allCrowsKilledInteraction;
-    [SerializeField] InteractTrigger doorCloseInteraction;
+    [SerializeField] SimpleTrigger doorCloseInteraction;
     [SerializeField] RepeatedSoundController knockingSound;
 
     public void AskedForDirectionsToSpark()

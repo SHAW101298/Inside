@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class TriggerBase : MonoBehaviour
+public abstract class TriggerBase : MonoBehaviour
 {
     // Holds all basic actions a trigger may do
 
@@ -79,5 +79,6 @@ public class TriggerBase : MonoBehaviour
     {
         Destroy(gameObject);
     }
+    public abstract void TriggerInteraction();
     #endregion
 }

@@ -184,7 +184,7 @@ public class TimedTrigger : MonoBehaviour
     public void InteractWithRandomTriggerInGroup1()
     {
         int rand = Random.Range(0, objectsGroup1.Count);
-        objectsGroup1[rand].GetComponentInChildren<InteractTrigger>().TriggerInteraction();
+        objectsGroup1[rand].GetComponentInChildren<SimpleTrigger>().TriggerInteraction();
     }
     public void MoveObjectsInGroup1ToGroup2Position()
     {

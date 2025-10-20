@@ -3,23 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class InteractTrigger : MonoBehaviour
+public class SimpleTrigger : TriggerBase
 {
-    public UnityEvent interactEvent;
     public UnityEvent delayedInteractEvent;
     [Space(10)]
     [SerializeField] bool runTriggerOnStart;
-    [SerializeField] bool destroyTriggerOnActivation;
-    [SerializeField] bool disableTriggerOnActivation;
     [SerializeField] float delayInteractTriggerTime;
-    [SerializeField] List<GameObject> objectsGroup1;
-    [SerializeField] List<GameObject> objectsGroup2;
+
 
     float timer;
     bool startTimer;
 
-    [Header("Debug")]
-    [SerializeField] bool debugTriggerInteraction;
+
 
     void Interact()
     {
@@ -65,72 +60,12 @@ public class InteractTrigger : MonoBehaviour
         }
     }
 
-    public void TriggerInteraction()
+    public override void TriggerInteraction()
     {
         Interact();
     }
-    public void TriggerDestruction()
-    {
-        Destroy(gameObject);
-    }
 
 
-    public void EnableGroup1()
-    {
-        if (objectsGroup1.Count > 0)
-        {
-            foreach (GameObject obj in objectsGroup1)
-            {
-                obj.SetActive(true);
-            }
-        }
-    }
-    public void EnableGroup2()
-    {
-        if (objectsGroup2.Count > 0)
-        {
-            foreach (GameObject obj in objectsGroup2)
-            {
-                obj.SetActive(true);
-            }
-        }
-    }
-    public void DisableGroup1()
-    {
-        if (objectsGroup1.Count > 0)
-        {
-            foreach (GameObject obj in objectsGroup1)
-            {
-                obj.SetActive(false);
-            }
-        }
-    }
-    public void DisableGroup2()
-    {
-        if (objectsGroup2.Count > 0)
-        {
-            foreach (GameObject obj in objectsGroup2)
-            {
-                obj.SetActive(false);
-            }
-        }
-    }
-    public void DestroyGroup1()
-    {
-        foreach (GameObject obj in objectsGroup1)
-        {
-            Destroy(obj);
-        }
-        objectsGroup1.Clear();
-    }
-    public void DestroyGroup2()
-    {
-        foreach (GameObject obj in objectsGroup2)
-        {
-            Destroy(obj);
-        }
-        objectsGroup2.Clear();
-    }
     public void TeleportGroup1ToGroup2()
     {
         foreach(GameObject obj in objectsGroup1)
@@ -168,6 +103,6 @@ public class InteractTrigger : MonoBehaviour
     public void InteractWithRandomTriggerInGroup1()
     {
         int rand = Random.Range(0, objectsGroup1.Count);
-        objectsGroup1[rand].GetComponentInChildren<InteractTrigger>().TriggerInteraction();
+        objectsGroup1[rand].GetComponentInChildren<SimpleTrigger>().TriggerInteraction();
     }
 }

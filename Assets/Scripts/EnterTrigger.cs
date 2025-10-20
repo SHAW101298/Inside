@@ -87,4 +87,8 @@ public class EnterTrigger : TriggerBase
 
         startExitTimer = true;
     }
+    public override void TriggerInteraction()
+    {
+        TriggerEnter();
+    }
 }

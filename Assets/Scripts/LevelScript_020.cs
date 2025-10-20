@@ -18,14 +18,14 @@ public class LevelScript_020 : MonoBehaviour
     [SerializeField] Animator characterAnim;
     [SerializeField] List<GameObject> bodyBones;
     [SerializeField] int lastBone;
-    [SerializeField] InteractTrigger crowLocalizationTrigger;
+    [SerializeField] SimpleTrigger crowLocalizationTrigger;
     [SerializeField] GameObject oneKilledCrow;
     [SerializeField] GameObject threeKilledCrows;
     [Header("Phase 4")]
     [SerializeField] DimZone templeDimZone;
     [SerializeField] AudioSource musicAudioSource;
     [SerializeField] GameObject allCrowsKilledInteraction;
-    [SerializeField] InteractTrigger doorCloseInteraction;
+    [SerializeField] SimpleTrigger doorCloseInteraction;
     [SerializeField] RepeatedSoundController knockingSound;
 
     public void AskedForDirectionsToSpark()
