@@ -5,10 +5,13 @@ using UnityEngine;
 public class Interaction : MonoBehaviour
 {
     // Holds Data about the Interaction
+    [SerializeField] int defaultInteractionKey;
+    [Space(10)]
+    [SerializeField] bool destroyObjectOnInteraction;
+    [SerializeField] bool disableOnInteraction;
+    [Space(10)]
     [SerializeField] TriggerBase trigger;
     [SerializeField] InformationHolder info;
-    [SerializeField] bool isActive;
-    [SerializeField] int defaultInteractionKey;
 
     public TriggerBase GetTriggerBase()
     {
@@ -18,14 +21,6 @@ public class Interaction : MonoBehaviour
     {
         return info;
     }
-    public bool GetActiveState()
-    {
-        return isActive;
-    }
-    public void ChangeActiveState(bool newState)
-    {
-        isActive = newState;
-    }
     public void Action_DeleteInteraction()
     {
         InteractionHolder holder = GetComponentInParent<InteractionHolder>();
@@ -34,10 +29,26 @@ public class Interaction : MonoBehaviour
     public void Action_ActivateTrigger()
     {
         trigger.TriggerInteraction();
+        if (disableOnInteraction == true)
+        {
+            Action_DisableInteraction();
+        }
+        if (destroyObjectOnInteraction == true)
+        {
+            Action_DeleteInteraction();
+            Destroy(gameObject);
+        }
     }
     public void Action_DisableInteraction()
     {
-        isActive = false;
         GetComponentInParent<InteractionHolder>().DisableInteraction(this);
+    }
+    public void Action_EnableInteraction()
+    {
+        GetComponentInParent<InteractionHolder>().EnableInteraction(this);
+    }
+    public int GetDefaultInteractionKey()
+    {
+        return defaultInteractionKey;
     }
 }

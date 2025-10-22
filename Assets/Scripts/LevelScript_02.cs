@@ -34,6 +34,7 @@ public class LevelScript_02 : MonoBehaviour
     [SerializeField] GameObject oneKilledCrow;
     [SerializeField] GameObject threeKilledCrows;
     [SerializeField] List<GameObject> crowKillInteractions;
+    [SerializeField] List<Crow_Data> importantCrows;
     [Header("Phase 4")]
     [SerializeField] FlyingBirdsController flyingBirdsController;
     [SerializeField] DimZone templeDimZone;
@@ -141,6 +142,10 @@ public class LevelScript_02 : MonoBehaviour
             }
         }
         flyingBirdsController.SetAmountOfDesiredBirds(0);
+        foreach(Crow_Data crow in importantCrows)
+        {
+            crow.EnableKillInteractions();
+        }
     }
     public void ChangeSceneToNextLevel()
     {

@@ -17,6 +17,8 @@ public class EnterTrigger : TriggerBase
     bool startEnterTimer;
     bool startExitTimer;
 
+    public float delayedEventTriggerTime;
+
     private void OnTriggerEnter(Collider other)
     {
         if(other.CompareTag("Player"))

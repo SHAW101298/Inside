@@ -11,7 +11,6 @@ public abstract class TriggerBase : MonoBehaviour
     [SerializeField] protected UnityEvent interactEvent;
     [SerializeField] protected bool destroyTriggerOnActivation;
     [SerializeField] protected bool disableTriggerOnActivation;
-    [SerializeField] protected float delayedEventTriggerTime;
 
     [SerializeField] protected List<GameObject> objectsGroup1;
     [SerializeField] protected List<GameObject> objectsGroup2;

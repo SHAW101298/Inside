@@ -11,27 +11,30 @@ public class InteractionHolder : MonoBehaviour
     [SerializeField] List<Interaction> possibleInteractions;
     [SerializeField] List<Interaction> disabledInteractions;
 
+    bool isDirty;
 
     public void RemoveInteraction(Interaction interaction)
     {
         possibleInteractions.Remove(interaction);
         disabledInteractions.Remove(interaction);
+
+        MarkAsDirty();
     }
     public void AddInteraction(Interaction interaction)
     {
         possibleInteractions.Add(interaction);
+        MarkAsDirty();
     }
     public void AddInteraction(Interaction interaction, bool state)
     {
         if(state == true)
         {
             possibleInteractions.Add(interaction);
-            interaction.ChangeActiveState(true);
+            MarkAsDirty();
         }
         else
         {
             disabledInteractions.Add(interaction);
-            interaction.ChangeActiveState(false);
         }
     }
     public List<Interaction> GetPossibleInteractions()
@@ -44,13 +47,39 @@ public class InteractionHolder : MonoBehaviour
     }
     public void Interact(int x)
     {
-        if (possibleInteractions[x] == null)
-            return;
-        possibleInteractions[x].Action_ActivateTrigger();
+        for(int i = 0; i < possibleInteractions.Count; i++)
+        {
+            if (possibleInteractions[i].GetDefaultInteractionKey() == x)
+            {
+                MarkAsDirty();
+                possibleInteractions[x].Action_ActivateTrigger();
+            }
+        }
     }
     public void DisableInteraction(Interaction inter)
     {
         possibleInteractions.Remove(inter);
         disabledInteractions.Add(inter);
+
+        MarkAsDirty();
+    }
+    public void EnableInteraction(Interaction inter)
+    {
+        possibleInteractions.Add(inter);
+        disabledInteractions.Remove(inter);
+
+        MarkAsDirty();
+    }
+    public bool CheckIfDirty()
+    {
+        return isDirty;
+    }
+    public void MarkAsClean()
+    {
+        isDirty = false;
+    }
+    public void MarkAsDirty()
+    {
+        isDirty = true;
     }
 }

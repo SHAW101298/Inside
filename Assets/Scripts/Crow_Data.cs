@@ -9,6 +9,7 @@ public class Crow_Data : MonoBehaviour
     public AudioSourceController sourceController;
     public GameObject killTriggerParent;
     public GameObject killTrigger;
+    public Interaction killInteraction;
 
     public void TriggerDestruction()
     {
@@ -28,5 +29,9 @@ public class Crow_Data : MonoBehaviour
     public void EnableKillParent()
     {
         killTriggerParent.SetActive(true);
+    }
+    public void EnableKillInteractions()
+    {
+        killInteraction.Action_EnableInteraction();
     }
 }

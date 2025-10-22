@@ -5,10 +5,11 @@ using UnityEngine.Events;
 
 public class SimpleTrigger : TriggerBase
 {
+    [Header("SPECIFIC")]
+    [SerializeField] float delayInteractTriggerTime;
     public UnityEvent delayedInteractEvent;
     [Space(10)]
     [SerializeField] bool runTriggerOnStart;
-    [SerializeField] float delayInteractTriggerTime;
 
 
     float timer;

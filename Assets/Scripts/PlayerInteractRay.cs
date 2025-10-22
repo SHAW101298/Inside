@@ -12,53 +12,54 @@ public class PlayerInteractRay : MonoBehaviour
     [SerializeField] float infoRaycastDistance;
     bool blockedInteractions;
 
+    private void Update()
+    {
+        RayCastForInteractionsInfo();
+    }
+
+
     public void ActionInteract(InputAction.CallbackContext context)
     {
-        if (blockedInteractions == true)
-            return;
-
-        if (context.phase != InputActionPhase.Performed)
+        bool flowControl = ActionFlowValidation(context);
+        if (!flowControl)
         {
             return;
         }
-        Vector3 lookDir = data.cam.GetForwardDir();
-        RaycastHit hitInfo;
-
-        //Debug.Log("TRYING TO INTERACT");
-
-        if (Physics.Raycast(data.cam.transform.position, lookDir, out hitInfo, infoRaycastDistance, interactLayer) == true)
-        {
-            hitInfo.collider.gameObject.GetComponent<InteractionHolder>().Interact(0);
-        }
+        RaycastForInteraction(0);
     }
     public void ActionInteract2(InputAction.CallbackContext context)
     {
-        if (blockedInteractions == true)
-            return;
-
-        if (context.phase != InputActionPhase.Performed)
+        bool flowControl = ActionFlowValidation(context);
+        if (!flowControl)
         {
             return;
         }
-        Vector3 lookDir = data.cam.GetForwardDir();
-        RaycastHit hitInfo;
-
-        //Debug.Log("TRYING TO INTERACT");
-
-        if (Physics.Raycast(data.cam.transform.position, lookDir, out hitInfo, infoRaycastDistance, interactLayer) == true)
-        {
-            hitInfo.collider.gameObject.GetComponent<InteractionHolder>().Interact(1);
-        }
+        RaycastForInteraction(1);
     }
     public void ActionLeftMouseButton(InputAction.CallbackContext context)
     {
-        if (blockedInteractions == true)
-            return;
-
-        if (context.phase != InputActionPhase.Performed)
+        bool flowControl = ActionFlowValidation(context);
+        if (!flowControl)
         {
             return;
         }
+        RaycastForInteraction(2);
+    }
+
+    private bool ActionFlowValidation(InputAction.CallbackContext context)
+    {
+        if (blockedInteractions == true)
+            return false;
+
+        if (context.phase != InputActionPhase.Performed)
+        {
+            return false;
+        }
+
+        return true;
+    }
+    void RaycastForInteraction(int button)
+    {
         Vector3 lookDir = data.cam.GetForwardDir();
         RaycastHit hitInfo;
 
@@ -66,50 +67,18 @@ public class PlayerInteractRay : MonoBehaviour
 
         if (Physics.Raycast(data.cam.transform.position, lookDir, out hitInfo, infoRaycastDistance, interactLayer) == true)
         {
-            hitInfo.collider.gameObject.GetComponent<InteractionHolder>().Interact(2);
+            hitInfo.collider.gameObject.GetComponent<InteractionHolder>().Interact(button);
         }
     }
 
-
-    private void Update()
-    {
-        RayCastForInfo();
-        RayCastForTriggers();
-        RayCastForInteractionsInfo();
-    }
-    void RayCastForInfo()
-    {
-        //Debug.LogError("OBSOLETE, CHANGE ME");
-        /*
-        Vector3 lookDir = data.cam.GetForwardDir();
-        RaycastHit hitInfo;
-        if(Physics.Raycast(data.cam.transform.position, lookDir, out hitInfo, infoRaycastDistance, infoLayer) == true)
-        {
-            string textInfo = hitInfo.collider.gameObject.GetComponent<InformationHolder>().GetInformation();
-            data.ui.ShowText(textInfo);
-        }   
-        */
-    }
-    void RayCastForTriggers()
-    {
-        //Debug.LogError("OBSOLETE, CHANGE ME");
-        /*
-        Vector3 lookDir = data.cam.GetForwardDir();
-        RaycastHit hitInfo;
-        if (Physics.Raycast(data.cam.transform.position, lookDir, out hitInfo, infoRaycastDistance, rayCastTriggerLayer) == true)
-        {
-            hitInfo.collider.gameObject.GetComponent<SimpleTrigger>().TriggerInteraction();
-        }
-        */
-    }
     void RayCastForInteractionsInfo()
     {
         Vector3 lookDir = data.cam.GetForwardDir();
         RaycastHit hitInfo;
         if (Physics.Raycast(data.cam.transform.position, lookDir, out hitInfo, infoRaycastDistance, interactLayer) == true)
         {
-            InteractionHolder textInfo = hitInfo.collider.gameObject.GetComponent<InteractionHolder>();
-            data.ui.ShowPossibleInteractions(textInfo);
+            InteractionHolder holder = hitInfo.collider.gameObject.GetComponent<InteractionHolder>();
+            data.ui.ShowPossibleInteractions(holder);
         }
     }
     
@@ -122,3 +91,33 @@ public class PlayerInteractRay : MonoBehaviour
         blockedInteractions = false;
     }
 }
+/* OBSOLETE
+void RayCastForInfo()
+{
+        //Debug.LogError("OBSOLETE, CHANGE ME");
+        /*
+        Vector3 lookDir = data.cam.GetForwardDir();
+        RaycastHit hitInfo;
+        if(Physics.Raycast(data.cam.transform.position, lookDir, out hitInfo, infoRaycastDistance, infoLayer) == true)
+        {
+            string textInfo = hitInfo.collider.gameObject.GetComponent<InformationHolder>().GetInformation();
+            data.ui.ShowText(textInfo);
+        }   
+
+    }
+    void RayCastForTriggers()
+{
+    //Debug.LogError("OBSOLETE, CHANGE ME");
+
+    Vector3 lookDir = data.cam.GetForwardDir();
+    RaycastHit hitInfo;
+    if (Physics.Raycast(data.cam.transform.position, lookDir, out hitInfo, infoRaycastDistance, rayCastTriggerLayer) == true)
+    {
+        hitInfo.collider.gameObject.GetComponent<SimpleTrigger>().TriggerInteraction();
+    }
+
+}
+
+
+*/
+
