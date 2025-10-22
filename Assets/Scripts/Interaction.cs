@@ -8,6 +8,7 @@ public class Interaction : MonoBehaviour
     [SerializeField] TriggerBase trigger;
     [SerializeField] InformationHolder info;
     [SerializeField] bool isActive;
+    [SerializeField] int defaultInteractionKey;
 
     public TriggerBase GetTriggerBase()
     {
@@ -24,5 +25,19 @@ public class Interaction : MonoBehaviour
     public void ChangeActiveState(bool newState)
     {
         isActive = newState;
+    }
+    public void Action_DeleteInteraction()
+    {
+        InteractionHolder holder = GetComponentInParent<InteractionHolder>();
+        holder.RemoveInteraction(this);
+    }
+    public void Action_ActivateTrigger()
+    {
+        trigger.TriggerInteraction();
+    }
+    public void Action_DisableInteraction()
+    {
+        isActive = false;
+        GetComponentInParent<InteractionHolder>().DisableInteraction(this);
     }
 }

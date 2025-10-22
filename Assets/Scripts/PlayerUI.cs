@@ -32,6 +32,11 @@ public class PlayerUI : MonoBehaviour
     [SerializeField] TMP_Dropdown languageDropDown;
     [Header("More")]
     [SerializeField] List<LanguageApplier> textFieldsToTranslate;
+    [Header("Interactions")]
+    [SerializeField] InteractionHolder currentInteraction;
+    [SerializeField] GameObject interactionsWindow;
+    [SerializeField] GameObject[] interactions;
+    [SerializeField] TMP_Text[] interactionsTextFields;
     float originalMusicVolume;
     float originalSoundVolume;
 
@@ -51,13 +56,37 @@ public class PlayerUI : MonoBehaviour
         timer = 0;
         windowIsActive = true;
     }
+
     public void ShowPossibleInteractions(InteractionHolder holder)
     {
-        Debug.LogWarning("IMPLEMENT ME");
+        //Debug.LogWarning("IMPLEMENT ME");
+
+        if (currentInteraction != holder)
+        {
+            currentInteraction = holder;
+        }
+        interactionsWindow.SetActive(true);
+        int count = holder.GetPossibleInteractions().Count;
+
+        // Disable all UI objects
+        interactions[0].SetActive(false);
+        interactions[1].SetActive(false);
+        interactions[2].SetActive(false);
+
+
+        for(int i = 0; i < count; i++)
+        {
+            interactions[i].SetActive(true);
+            interactionsTextFields[i].text = holder.GetPossibleInteractions()[i].GetInfoHolder().GetInformation();
+        }
+
+        timer = 0;
+        windowIsActive = true;
+        interactionsWindow.SetActive(true);
     }
     public void HideText()
     {
-        infoWindow.SetActive(false);
+        interactionsWindow.SetActive(false);
         windowIsActive = false;
     }
 

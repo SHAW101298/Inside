@@ -79,18 +79,18 @@ public class Language_English : LanguageBase
 
 
         // INTERACTION TEXT
-        text[50] = "Touch  ( E )";
-        text[51] = "Climb  ( E )";
-        text[52] = "Look  ( E )";
-        text[53] = "????  ( E )";
-        text[54] = "Place  ( E )";
-        text[55] = "Listen  ( E )";
-        text[56] = "Sit  ( E )";
-        text[57] = "Stand Up  ( E )";
-        text[58] = "Open  ( E )";
-        text[59] = "Close  ( E )";
-        text[60] = "Kill  ( E )";
-        text[61] = "Read  ( E )";
+        text[50] = "Touch";
+        text[51] = "Climb";
+        text[52] = "Look";
+        text[53] = "????";
+        text[54] = "Place";
+        text[55] = "Listen";
+        text[56] = "Sit";
+        text[57] = "Stand Up";
+        text[58] = "Open";
+        text[59] = "Close";
+        text[60] = "Kill";
+        text[61] = "Read";
 
 
         // LEVEL NAMES

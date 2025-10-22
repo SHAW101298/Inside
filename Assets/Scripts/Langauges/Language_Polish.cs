@@ -79,18 +79,18 @@ public class Language_Polish : LanguageBase
     
 
         // INTERACTION TEXT
-        text[50] = "Dotknij  ( E )";
-        text[51] = "Wspnij siê  ( E )";
-        text[52] = "Spójrz  ( E )";
-        text[53] = "????  ( E )";
-        text[54] = "Od³ó¿  ( E )";
-        text[55] = "S³uchaj  ( E )";
-        text[56] = "UsiadŸ  ( E )";
-        text[57] = "Wstañ  ( E )";
-        text[58] = "Otwórz  ( E )";
-        text[59] = "Zamknij  ( E )";
-        text[60] = "Zabij  ( E )";
-        text[61] = "Czytaj  ( E )";
+        text[50] = "Dotknij";
+        text[51] = "Wspnij siê";
+        text[52] = "Spójrz";
+        text[53] = "????";
+        text[54] = "Od³ó¿";
+        text[55] = "S³uchaj";
+        text[56] = "UsiadŸ";
+        text[57] = "Wstañ";
+        text[58] = "Otwórz";
+        text[59] = "Zamknij";
+        text[60] = "Zabij";
+        text[61] = "Czytaj";
 
 
         // LEVEL NAMES
