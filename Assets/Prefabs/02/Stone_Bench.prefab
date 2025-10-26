@@ -108,7 +108,7 @@ MonoBehaviour:
   dialogTimer: 0
   requiredSitTime: 4
   delayBetweenDialogPrompts: 2
-  dialog: {fileID: 3284871711200422067}
+  dialog: {fileID: 0}
   sitInteract: {fileID: 3284871711145321834}
   standUpInteract: {fileID: 3284871711777519722}
   Event_PromptDialog:
@@ -290,16 +290,16 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  destroyTriggerOnActivation: 0
+  disableTriggerOnActivation: 0
+  objectsGroup1: []
+  objectsGroup2: []
+  debugTriggerInteraction: 0
+  delayInteractTriggerTime: 0
   delayedInteractEvent:
     m_PersistentCalls:
       m_Calls: []
   runTriggerOnStart: 0
-  destroyTriggerOnActivation: 0
-  disableTriggerOnActivation: 0
-  delayInteractTriggerTime: 0
-  objectsGroup1: []
-  objectsGroup2: []
-  debugTriggerInteraction: 0
 --- !u!65 &3284871711145321828
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -322,7 +322,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3284871711200422064}
-  - component: {fileID: 3284871711200422067}
+  - component: {fileID: 5637792841887580537}
   m_Layer: 0
   m_Name: Dialog Prompt
   m_TagString: Untagged
@@ -345,7 +345,7 @@ Transform:
   m_Father: {fileID: 3034454281944335897}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3284871711200422067
+--- !u!114 &5637792841887580537
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -354,24 +354,101 @@ MonoBehaviour:
   m_GameObject: {fileID: 3284871711200422065}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe83d7c77b71ca04f9db1777f95718c6, type: 3}
+  m_Script: {fileID: 11500000, guid: cdf058a144978614d94d925b3f4b0ebe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  index: 7e0000007a0000007b000000710000006a0000006c0000007c0000008200000083000000840000008500000086000000
-  usedIndexes: 
+  prompts:
+  - index: 150
+    EVENT_StartShowing:
+      m_PersistentCalls:
+        m_Calls: []
+    EVENT_EndShowing:
+      m_PersistentCalls:
+        m_Calls: []
+  - index: 151
+    EVENT_StartShowing:
+      m_PersistentCalls:
+        m_Calls: []
+    EVENT_EndShowing:
+      m_PersistentCalls:
+        m_Calls: []
+  - index: 152
+    EVENT_StartShowing:
+      m_PersistentCalls:
+        m_Calls: []
+    EVENT_EndShowing:
+      m_PersistentCalls:
+        m_Calls: []
+  - index: 153
+    EVENT_StartShowing:
+      m_PersistentCalls:
+        m_Calls: []
+    EVENT_EndShowing:
+      m_PersistentCalls:
+        m_Calls: []
+  - index: 112
+    EVENT_StartShowing:
+      m_PersistentCalls:
+        m_Calls: []
+    EVENT_EndShowing:
+      m_PersistentCalls:
+        m_Calls: []
+  - index: 114
+    EVENT_StartShowing:
+      m_PersistentCalls:
+        m_Calls: []
+    EVENT_EndShowing:
+      m_PersistentCalls:
+        m_Calls: []
+  - index: 132
+    EVENT_StartShowing:
+      m_PersistentCalls:
+        m_Calls: []
+    EVENT_EndShowing:
+      m_PersistentCalls:
+        m_Calls: []
+  - index: 134
+    EVENT_StartShowing:
+      m_PersistentCalls:
+        m_Calls: []
+    EVENT_EndShowing:
+      m_PersistentCalls:
+        m_Calls: []
+  - index: 115
+    EVENT_StartShowing:
+      m_PersistentCalls:
+        m_Calls: []
+    EVENT_EndShowing:
+      m_PersistentCalls:
+        m_Calls: []
+  - index: 117
+    EVENT_StartShowing:
+      m_PersistentCalls:
+        m_Calls: []
+    EVENT_EndShowing:
+      m_PersistentCalls:
+        m_Calls: []
+  - index: 112
+    EVENT_StartShowing:
+      m_PersistentCalls:
+        m_Calls: []
+    EVENT_EndShowing:
+      m_PersistentCalls:
+        m_Calls: []
+  - index: 119
+    EVENT_StartShowing:
+      m_PersistentCalls:
+        m_Calls: []
+    EVENT_EndShowing:
+      m_PersistentCalls:
+        m_Calls: []
+  startShowingGroupEVENT:
+    m_PersistentCalls:
+      m_Calls: []
+  endShowingGroupEVENT:
+    m_PersistentCalls:
+      m_Calls: []
   removeShownTextsFromList: 0
-  EVENT_StartShowing:
-    m_PersistentCalls:
-      m_Calls: []
-  EVENT_EndShowing:
-    m_PersistentCalls:
-      m_Calls: []
-  EVENT_EmptyIndexList:
-    m_PersistentCalls:
-      m_Calls: []
-  EVENT_AllTextsUsedUp:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &3284871711609006750
 GameObject:
   m_ObjectHideFlags: 0
@@ -493,16 +570,16 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  destroyTriggerOnActivation: 0
+  disableTriggerOnActivation: 0
+  objectsGroup1: []
+  objectsGroup2: []
+  debugTriggerInteraction: 0
+  delayInteractTriggerTime: 0
   delayedInteractEvent:
     m_PersistentCalls:
       m_Calls: []
   runTriggerOnStart: 0
-  destroyTriggerOnActivation: 0
-  disableTriggerOnActivation: 0
-  delayInteractTriggerTime: 0
-  objectsGroup1: []
-  objectsGroup2: []
-  debugTriggerInteraction: 0
 --- !u!65 &3284871711777519718
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -34,8 +34,6 @@ public class BenchSitting : MonoBehaviour
         //player.BlockMovementAndRotationByAction();
         player.movement.PlayerSitsDown(this);
         player.BlockMovementByAction();
-        sitInteract.SetActive(false);
-        standUpInteract.SetActive(true);
     }
     public void StandUp()
     {
@@ -48,8 +46,6 @@ public class BenchSitting : MonoBehaviour
         player.AllowMovementByAction();
         //player.gameObject.transform.localEulerAngles = Vector3.up * -90;
         player.movement.PlayerStandsUp();
-        sitInteract.SetActive(true);
-        standUpInteract.SetActive(false);
     }
 
     private void Update()

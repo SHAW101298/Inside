@@ -36,6 +36,7 @@ public class PlayerUI_InteractionSystem : MonoBehaviour
         interactionsWindow.SetActive(false);
         isActive = false;
         currentInteraction = null;
+        timer = 0;
     }
 
     public void ShowPossibleInteractions(InteractionHolder holder)
@@ -46,20 +47,24 @@ public class PlayerUI_InteractionSystem : MonoBehaviour
         {
             if (holder.CheckIfDirty() == true)
             {
+                Debug.Log("ITS DIRTY");
                 RecreateButtons(holder);
             }
             timer = 0;
         }
         else
         {
+            //Debug.Log("ELSE");
             currentInteraction = holder;
             RecreateButtons(holder);
+            //Debug.Log("Current interaction = " + currentInteraction);
         }
         
     }
 
     void RecreateButtons(InteractionHolder holder)
     {
+        //Debug.Log("Recreating Buttons");
         foreach(Transform child in interactionsWindow.transform)
         {
             Destroy(child.gameObject);
