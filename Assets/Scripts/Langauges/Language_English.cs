@@ -457,6 +457,8 @@ public class Language_English : LanguageBase
         text[121] = "Face the one who you try so hard to erase.";
         // What's going on answer
         text[125] = "You got lost.";
+        text[126] = "Forgotten.";
+        
 
 
         // Rock Pushing
