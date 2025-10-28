@@ -45,6 +45,7 @@ public class Interaction : MonoBehaviour
     }
     public void Action_EnableInteraction()
     {
+        //Debug.Log("Action Enable Interaction");
         GetComponentInParent<InteractionHolder>().EnableInteraction(this);
     }
     public int GetDefaultInteractionKey()

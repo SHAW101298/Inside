@@ -51,6 +51,7 @@ public class PlayerUI : MonoBehaviour
 
     public void ShowPossibleInteractions(InteractionHolder holder)
     {
+        //Debug.Log("Interactions is " + holder);
         interactionSystem.ShowPossibleInteractions(holder);
     }
 

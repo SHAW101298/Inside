@@ -2,6 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+#region KNOWN BUGS
+/*
+ Dialog Prompt Group stacks listeners if using on - End Showing Group EVENT
+ */
+#endregion
+
+
 public class Language_English : LanguageBase
 {
     public static Language_English Instance;
