@@ -71,6 +71,7 @@ public class PlayerUI : MonoBehaviour
                 currentWindow = null;
                 uiActive = false;
                 Cursor.visible = false;
+                Cursor.lockState = CursorLockMode.Locked;
                 data.AllowMovemntAndRotationByUI();
             }
             else

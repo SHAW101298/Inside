@@ -47,12 +47,16 @@ public class InteractionHolder : MonoBehaviour
     }
     public void Interact(int x)
     {
+        //DEBUG_DropInfoAboutInteractions();
+        //DEBUG_DetailedInfoAboutInteractions();
         for(int i = 0; i < possibleInteractions.Count; i++)
         {
-            if (possibleInteractions[i].GetDefaultInteractionKey() == x)
+            int y = possibleInteractions[i].GetDefaultInteractionKey();
+            if (possibleInteractions[i].GetDefaultInteractionKey() == y)
             {
+                Debug.Log("Found matching interaction");
                 MarkAsDirty();
-                possibleInteractions[x].Action_ActivateTrigger();
+                possibleInteractions[i].Action_ActivateTrigger();
             }
         }
     }
@@ -83,5 +87,32 @@ public class InteractionHolder : MonoBehaviour
     public void MarkAsDirty()
     {
         isDirty = true;
+    }
+    public void DEBUG_DropInfoAboutInteractions()
+    {
+        string state;
+        if(CheckIfDirty() == true)
+        {
+            state = "TRUE";
+        }
+        else
+        {
+            state = "FALSE";
+        }
+        Debug.Log(gameObject.name + " || Amount =  " + possibleInteractions.Count + " / " + disabledInteractions.Count + "  || STATE = " + state) ;
+    }
+    public void DEBUG_DetailedInfoAboutInteractions()
+    {
+        Debug.Log("Possible Interactions is =" + possibleInteractions.Count);
+        for(int i = 0; i < possibleInteractions.Count; i++)
+        {
+            Debug.Log(i + " | " + possibleInteractions[i].DEBUG_DropInfo());
+            
+        }
+        Debug.Log("Disabled Interactions is =" + disabledInteractions.Count);
+        for(int i = 0; i < disabledInteractions.Count; i++)
+        {
+            Debug.Log(i + " | " + disabledInteractions[i].DEBUG_DropInfo());
+        }
     }
 }

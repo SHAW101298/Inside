@@ -52,4 +52,9 @@ public class Interaction : MonoBehaviour
     {
         return defaultInteractionKey;
     }
+    public string DEBUG_DropInfo()
+    {
+        string text = ("DEF_Key = " + defaultInteractionKey + " || TriggerType = " + trigger.GetType());
+        return text;
+    }
 }

@@ -1,39 +1,56 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class RockMoving : MonoBehaviour
 {
-    [SerializeField] float maxMoveDistance;
-    [SerializeField] LayerMask moveLayerMask;
-    [SerializeField] float smoothTime;
-    Vector3 dest;
-    Vector3 offset;
-
-    [Header("Debug")]
-    [SerializeField] bool isHeld;
-    [SerializeField] PlayerData player;
-    [SerializeField] Vector3 velocity;
-
-    public void Grab()
+    #region
+    public static RockMoving Instance;
+    private void Awake()
     {
-        isHeld = true;
+        Instance = this;
     }
-    public void Release()
-    {
-        isHeld = false;
-    }
+    #endregion
+    public LayerMask interactionLayer;
+    public MovableRock heldRock;
+
+    public LayerMask moveLayerMask;
+
+    public PlayerData player;
+
 
     // Update is called once per frame
     void Update()
     {
-        if(isHeld == true)
+
+    }
+    public void GrabRock(MovableRock rock)
+    {
+        heldRock = rock;
+    }
+    void ReleaseRock()
+    {
+        if(heldRock == null)
         {
-            Vector3 dir = player.cam.GetForwardDir();
-            RaycastHit hitInfo;
-            Physics.Raycast(player.cam.transform.position, dir, out hitInfo, maxMoveDistance, moveLayerMask);
-            dest = hitInfo.point;
-            gameObject.transform.position = Vector3.SmoothDamp(gameObject.transform.position, dest, ref velocity, smoothTime);
+            return;
         }
+        else
+        {
+            heldRock.Release();
+            heldRock = null;
+        }
+    }
+    public void ReleaseRock(InputAction.CallbackContext context)
+    {
+        //Debug.Log("Current phase = " + context.phase);
+        //Debug.Log("   ");
+        if (context.phase != InputActionPhase.Canceled)
+        {
+            return;
+        }
+
+        ReleaseRock();
     }
 }

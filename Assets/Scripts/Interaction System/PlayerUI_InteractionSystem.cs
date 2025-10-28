@@ -47,7 +47,7 @@ public class PlayerUI_InteractionSystem : MonoBehaviour
         {
             if (holder.CheckIfDirty() == true)
             {
-                Debug.Log("ITS DIRTY");
+                //Debug.Log("ITS DIRTY");
                 RecreateButtons(holder);
             }
             timer = 0;
