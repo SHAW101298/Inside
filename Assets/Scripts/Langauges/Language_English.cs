@@ -477,8 +477,8 @@ public class Language_English : LanguageBase
         text[135] = "Drop  ( E )";
         text[136] = "Put Back  ( E )";
 
-        text[140] = "Grab  ( E )";
-        text[141] = "Release  ( E )";
+        text[140] = "Grab";
+        text[141] = "Release";
     }
 
 }

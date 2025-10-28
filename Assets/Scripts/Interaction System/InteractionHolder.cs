@@ -54,7 +54,7 @@ public class InteractionHolder : MonoBehaviour
             int y = possibleInteractions[i].GetDefaultInteractionKey();
             if (possibleInteractions[i].GetDefaultInteractionKey() == y)
             {
-                Debug.Log("Found matching interaction");
+                //Debug.Log("Found matching interaction");
                 MarkAsDirty();
                 possibleInteractions[i].Action_ActivateTrigger();
             }

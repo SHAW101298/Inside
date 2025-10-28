@@ -4,19 +4,22 @@ using UnityEngine;
 
 public class MovableRock : MonoBehaviour
 {
+    [Header("Data")]
+    [SerializeField] float smoothTime;
+    [SerializeField] float stopDistance;
+    [SerializeField] Interaction grabInteraction;
+    RockMoving rm;
+
+    [Header("Debug")]
+    [SerializeField] Vector3 velocity;
+    [SerializeField] GameObject debugSPhere;
     [SerializeField] Vector3 desiredPosition;
     [SerializeField] Vector3 grabPoint;
-    Vector3 tempPos;
+    [SerializeField] Vector3 tempPos;
     [SerializeField] bool isHeld;
     [SerializeField] bool finishedMovement;
 
-    [Header("Data")]
-    [SerializeField] float smoothTime;
-    [SerializeField] Vector3 velocity;
-    RockMoving rm;
-    [SerializeField] GameObject debugSPhere;
-    [SerializeField] Vector3 current;
-
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -35,13 +38,12 @@ public class MovableRock : MonoBehaviour
         {
             return;
         }
-        current = transform.position - grabPoint;
-        tempPos = Vector3.SmoothDamp(current, desiredPosition, ref velocity, smoothTime);
+        tempPos = Vector3.SmoothDamp(transform.position, desiredPosition, ref velocity, smoothTime);
         gameObject.transform.position = tempPos;
 
         float dist = Vector3.Distance(tempPos, desiredPosition);
         //Debug.Log("dist = " + dist);
-        if(dist < 0.1f )
+        if(dist < stopDistance )
         {
             finishedMovement = true;        
         }
@@ -57,12 +59,12 @@ public class MovableRock : MonoBehaviour
         Physics.Raycast(rm.player.cam.transform.position, dir*3, out hitInfo, rm.moveLayerMask);
 
         desiredPosition = hitInfo.point + grabPoint;
-        debugSPhere.transform.position = desiredPosition;
+        //debugSPhere.transform.position = desiredPosition;
         finishedMovement = false;
     }
     public void Grab()
     {
-        Debug.Log("GRAB");
+        //Debug.Log("GRAB");
         Vector3 dir = rm.player.cam.GetForwardDir();
         RaycastHit hitInfo;
         Physics.Raycast(rm.player.cam.transform.position, dir, out hitInfo, rm.interactionLayer);
@@ -79,8 +81,8 @@ public class MovableRock : MonoBehaviour
     }
     public void Release()
     {
-        Debug.Log("RELEASE");
+        //Debug.Log("RELEASE");
         isHeld = false;
+        grabInteraction.Action_EnableInteraction();
     }
-
 }
