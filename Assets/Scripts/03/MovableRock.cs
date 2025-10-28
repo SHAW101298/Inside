@@ -56,7 +56,7 @@ public class MovableRock : MonoBehaviour
         }
         Vector3 dir = rm.player.cam.GetForwardDir();
         RaycastHit hitInfo;
-        Physics.Raycast(rm.player.cam.transform.position, dir*3, out hitInfo, rm.moveLayerMask);
+        Physics.Raycast(rm.player.cam.transform.position, dir*3, out hitInfo, 100, rm.moveLayerMask);
 
         desiredPosition = hitInfo.point + grabPoint;
         //debugSPhere.transform.position = desiredPosition;
@@ -67,7 +67,7 @@ public class MovableRock : MonoBehaviour
         //Debug.Log("GRAB");
         Vector3 dir = rm.player.cam.GetForwardDir();
         RaycastHit hitInfo;
-        Physics.Raycast(rm.player.cam.transform.position, dir, out hitInfo, rm.interactionLayer);
+        Physics.Raycast(rm.player.cam.transform.position, dir, out hitInfo, 100, rm.interactionLayer);
         //Debug.Log("Hit point = " + hitInfo.point);
         //Debug.Log("pos = " + gameObject.transform.position);
         grabPoint = hitInfo.point - gameObject.transform.position;
