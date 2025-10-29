@@ -115,4 +115,8 @@ public class InteractionHolder : MonoBehaviour
             Debug.Log(i + " | " + disabledInteractions[i].DEBUG_DropInfo());
         }
     }
+    public void ACTION_DestroyHolderObject()
+    {
+        Destroy(gameObject);
+    }
 }

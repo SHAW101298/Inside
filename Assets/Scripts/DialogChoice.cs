@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 [System.Serializable]
 public class DialogOption
@@ -23,6 +24,7 @@ public class DialogOption
 public class DialogChoice : MonoBehaviour
 {
     public List<DialogOption> options;
+    public UnityEvent EVENT_EmptyDialogOptions;
 
     public void ChoosenOption(int x)
     {
@@ -37,6 +39,11 @@ public class DialogChoice : MonoBehaviour
         }
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+
+        if(options.Count == 0)
+        {
+            EVENT_EmptyDialogOptions.Invoke();
+        }
     }
     public void ShowOptions()
     {
