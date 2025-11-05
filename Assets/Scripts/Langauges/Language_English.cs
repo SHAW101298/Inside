@@ -655,3 +655,15 @@ Kolce       The Road
 Bloki       Broken Bridge
 
  */
+
+/* Scena 3
+Ka¿da wyspa bêdzie obracalna ukazuj¹ca ciemn¹ stronê ka¿dego fragmentu
+03 Memory Well
+04 Rock Pushing ( kamieñ zostawiony na œrodku drogi )
+05 
+
+
+Na koniec bêdzie minigierka aby po³¹czyæ ze sob¹ wszystkie wyspy.
+Bêdzie miniaturowa wersja ka¿dej wyspy i bêdzie trzeba j¹ przeci¹gn¹æ w odpowiednie miejsce. Gdy bêdzie blisko odpowiedniego miejsca
+puszczone, wyspa sama doleci w wyznaczone miejsce i zablokowana zostanie mo¿liwoœæ jej ruchu.
+ */
