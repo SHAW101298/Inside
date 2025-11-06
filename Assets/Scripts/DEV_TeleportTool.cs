@@ -48,11 +48,13 @@ public class DEV_TeleportTool : MonoBehaviour
     {
         teleportWindow.SetActive(true);
         Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.Confined;
     }
     public void HideWindow()
     {
         teleportWindow.SetActive(false);
         Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
     public void TeleportTo(int x)
     {
