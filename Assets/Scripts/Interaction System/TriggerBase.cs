@@ -3,6 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
+public enum ENUM_TriggerTypes
+{
+    simple,
+    enter,
+    timed,
+    random,
+    look
+}
 public abstract class TriggerBase : MonoBehaviour
 {
     // Holds all basic actions a trigger may do
@@ -16,6 +24,7 @@ public abstract class TriggerBase : MonoBehaviour
     [SerializeField] protected List<GameObject> objectsGroup2;
 
     [SerializeField] protected bool debugTriggerInteraction;
+    protected ENUM_TriggerTypes triggerType;
 
     #region Possible Actions
     public void EnableGroup1()
@@ -79,5 +88,9 @@ public abstract class TriggerBase : MonoBehaviour
         Destroy(gameObject);
     }
     public abstract void TriggerInteraction();
+    public ENUM_TriggerTypes GetTriggerType()
+    {
+        return triggerType;
+    }
     #endregion
 }
