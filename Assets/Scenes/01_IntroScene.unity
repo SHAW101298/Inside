@@ -435,19 +435,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  destroyTriggerOnActivation: 0
+  disableTriggerOnActivation: 0
+  objectsGroup1: []
+  objectsGroup2: []
+  debugTriggerInteraction: 0
   finishEvent:
     m_PersistentCalls:
       m_Calls: []
   runTriggerOnStart: 1
-  destroyTriggerOnActivation: 0
-  disableTriggerOnActivation: 0
   timeBetweenActivations: 32
   timeRandomnessMax: 0
   maxActivationTimes: 0
   activationTimes: 0
-  objectsGroup1: []
-  objectsGroup2: []
-  debugTriggerInteraction: 0
 --- !u!1001 &4955684
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2609,13 +2609,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 51612642}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 20.72, y: 0, z: -2}
+  m_LocalRotation: {x: -0, y: 0.12309429, z: -0, w: 0.99239504}
+  m_LocalPosition: {x: -11.666542, y: 0, z: 1.2483749}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1847922086}
-  m_RootOrder: 1
+  m_Father: {fileID: 1859080143}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &51612644
 AudioSource:
@@ -7660,19 +7660,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  destroyTriggerOnActivation: 0
+  disableTriggerOnActivation: 0
+  objectsGroup1: []
+  objectsGroup2: []
+  debugTriggerInteraction: 0
   finishEvent:
     m_PersistentCalls:
       m_Calls: []
   runTriggerOnStart: 1
-  destroyTriggerOnActivation: 0
-  disableTriggerOnActivation: 0
   timeBetweenActivations: 28
   timeRandomnessMax: 0
   maxActivationTimes: 0
   activationTimes: 0
-  objectsGroup1: []
-  objectsGroup2: []
-  debugTriggerInteraction: 0
 --- !u!1001 &160304757
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8090,19 +8090,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  destroyTriggerOnActivation: 0
+  disableTriggerOnActivation: 0
+  objectsGroup1: []
+  objectsGroup2: []
+  debugTriggerInteraction: 0
   finishEvent:
     m_PersistentCalls:
       m_Calls: []
   runTriggerOnStart: 1
-  destroyTriggerOnActivation: 0
-  disableTriggerOnActivation: 0
   timeBetweenActivations: 27
   timeRandomnessMax: 0
   maxActivationTimes: 0
   activationTimes: 0
-  objectsGroup1: []
-  objectsGroup2: []
-  debugTriggerInteraction: 0
 --- !u!1 &171820215
 GameObject:
   m_ObjectHideFlags: 0
@@ -18560,19 +18560,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  destroyTriggerOnActivation: 0
+  disableTriggerOnActivation: 0
+  objectsGroup1: []
+  objectsGroup2: []
+  debugTriggerInteraction: 0
   finishEvent:
     m_PersistentCalls:
       m_Calls: []
   runTriggerOnStart: 1
-  destroyTriggerOnActivation: 0
-  disableTriggerOnActivation: 0
   timeBetweenActivations: 30
   timeRandomnessMax: 0
   maxActivationTimes: 0
   activationTimes: 0
-  objectsGroup1: []
-  objectsGroup2: []
-  debugTriggerInteraction: 0
 --- !u!1001 &301400700
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21757,19 +21757,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  destroyTriggerOnActivation: 0
+  disableTriggerOnActivation: 0
+  objectsGroup1: []
+  objectsGroup2: []
+  debugTriggerInteraction: 0
   finishEvent:
     m_PersistentCalls:
       m_Calls: []
   runTriggerOnStart: 1
-  destroyTriggerOnActivation: 0
-  disableTriggerOnActivation: 0
   timeBetweenActivations: 30
   timeRandomnessMax: 0
   maxActivationTimes: 0
   activationTimes: 0
-  objectsGroup1: []
-  objectsGroup2: []
-  debugTriggerInteraction: 0
 --- !u!1 &392476774
 GameObject:
   m_ObjectHideFlags: 0
@@ -22153,19 +22153,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  destroyTriggerOnActivation: 0
+  disableTriggerOnActivation: 0
+  objectsGroup1: []
+  objectsGroup2: []
+  debugTriggerInteraction: 0
   finishEvent:
     m_PersistentCalls:
       m_Calls: []
   runTriggerOnStart: 1
-  destroyTriggerOnActivation: 0
-  disableTriggerOnActivation: 0
   timeBetweenActivations: 32
   timeRandomnessMax: 0
   maxActivationTimes: 0
   activationTimes: 0
-  objectsGroup1: []
-  objectsGroup2: []
-  debugTriggerInteraction: 0
 --- !u!1001 &401371234
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22974,19 +22974,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  destroyTriggerOnActivation: 0
+  disableTriggerOnActivation: 0
+  objectsGroup1: []
+  objectsGroup2: []
+  debugTriggerInteraction: 0
   finishEvent:
     m_PersistentCalls:
       m_Calls: []
   runTriggerOnStart: 1
-  destroyTriggerOnActivation: 0
-  disableTriggerOnActivation: 0
   timeBetweenActivations: 30
   timeRandomnessMax: 0
   maxActivationTimes: 0
   activationTimes: 0
-  objectsGroup1: []
-  objectsGroup2: []
-  debugTriggerInteraction: 0
 --- !u!1001 &420997273
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23251,19 +23251,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  destroyTriggerOnActivation: 0
+  disableTriggerOnActivation: 0
+  objectsGroup1: []
+  objectsGroup2: []
+  debugTriggerInteraction: 0
   finishEvent:
     m_PersistentCalls:
       m_Calls: []
   runTriggerOnStart: 1
-  destroyTriggerOnActivation: 0
-  disableTriggerOnActivation: 0
   timeBetweenActivations: 28
   timeRandomnessMax: 0
   maxActivationTimes: 0
   activationTimes: 0
-  objectsGroup1: []
-  objectsGroup2: []
-  debugTriggerInteraction: 0
 --- !u!1001 &424358069
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24581,19 +24581,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  destroyTriggerOnActivation: 0
+  disableTriggerOnActivation: 0
+  objectsGroup1: []
+  objectsGroup2: []
+  debugTriggerInteraction: 0
   finishEvent:
     m_PersistentCalls:
       m_Calls: []
   runTriggerOnStart: 1
-  destroyTriggerOnActivation: 0
-  disableTriggerOnActivation: 0
   timeBetweenActivations: 33
   timeRandomnessMax: 0
   maxActivationTimes: 0
   activationTimes: 0
-  objectsGroup1: []
-  objectsGroup2: []
-  debugTriggerInteraction: 0
 --- !u!1001 &462871183
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26898,6 +26898,15 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  destroyTriggerOnActivation: 0
+  disableTriggerOnActivation: 0
+  objectsGroup1:
+  - {fileID: 707454201}
+  - {fileID: 12512732}
+  - {fileID: 1313625491}
+  - {fileID: 1792805596}
+  objectsGroup2: []
+  debugTriggerInteraction: 0
   finishEvent:
     m_PersistentCalls:
       m_Calls:
@@ -26914,19 +26923,10 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   runTriggerOnStart: 0
-  destroyTriggerOnActivation: 0
-  disableTriggerOnActivation: 0
   timeBetweenActivations: 3
   timeRandomnessMax: 0
   maxActivationTimes: 4
   activationTimes: 0
-  objectsGroup1:
-  - {fileID: 707454201}
-  - {fileID: 12512732}
-  - {fileID: 1313625491}
-  - {fileID: 1792805596}
-  objectsGroup2: []
-  debugTriggerInteraction: 0
 --- !u!1001 &547482458
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29487,19 +29487,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  destroyTriggerOnActivation: 0
+  disableTriggerOnActivation: 1
+  objectsGroup1: []
+  objectsGroup2: []
+  debugTriggerInteraction: 0
   finishEvent:
     m_PersistentCalls:
       m_Calls: []
   runTriggerOnStart: 0
-  destroyTriggerOnActivation: 0
-  disableTriggerOnActivation: 1
   timeBetweenActivations: 8.5
   timeRandomnessMax: 0
   maxActivationTimes: 1
   activationTimes: 0
-  objectsGroup1: []
-  objectsGroup2: []
-  debugTriggerInteraction: 0
 --- !u!4 &596698421 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4591776239436198498, guid: 29a63f5b8bed60441b1cce6faf0432ed, type: 3}
@@ -34393,6 +34393,7 @@ MonoBehaviour:
   objectsGroup2:
   - {fileID: 598192955}
   - {fileID: 1199348099}
+  - {fileID: 994261098}
   debugTriggerInteraction: 0
   delayInteractTriggerTime: 0
   delayedInteractEvent:
@@ -35527,19 +35528,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  destroyTriggerOnActivation: 0
+  disableTriggerOnActivation: 0
+  objectsGroup1: []
+  objectsGroup2: []
+  debugTriggerInteraction: 0
   finishEvent:
     m_PersistentCalls:
       m_Calls: []
   runTriggerOnStart: 1
-  destroyTriggerOnActivation: 0
-  disableTriggerOnActivation: 0
   timeBetweenActivations: 32
   timeRandomnessMax: 0
   maxActivationTimes: 0
   activationTimes: 0
-  objectsGroup1: []
-  objectsGroup2: []
-  debugTriggerInteraction: 0
 --- !u!1 &747518575
 GameObject:
   m_ObjectHideFlags: 0
@@ -37192,19 +37193,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  destroyTriggerOnActivation: 0
+  disableTriggerOnActivation: 0
+  objectsGroup1: []
+  objectsGroup2: []
+  debugTriggerInteraction: 0
   finishEvent:
     m_PersistentCalls:
       m_Calls: []
   runTriggerOnStart: 1
-  destroyTriggerOnActivation: 0
-  disableTriggerOnActivation: 0
   timeBetweenActivations: 27
   timeRandomnessMax: 0
   maxActivationTimes: 0
   activationTimes: 0
-  objectsGroup1: []
-  objectsGroup2: []
-  debugTriggerInteraction: 0
 --- !u!1001 &803764595
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37866,19 +37867,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  destroyTriggerOnActivation: 0
+  disableTriggerOnActivation: 0
+  objectsGroup1: []
+  objectsGroup2: []
+  debugTriggerInteraction: 0
   finishEvent:
     m_PersistentCalls:
       m_Calls: []
   runTriggerOnStart: 1
-  destroyTriggerOnActivation: 0
-  disableTriggerOnActivation: 0
   timeBetweenActivations: 29
   timeRandomnessMax: 0
   maxActivationTimes: 0
   activationTimes: 0
-  objectsGroup1: []
-  objectsGroup2: []
-  debugTriggerInteraction: 0
 --- !u!1 &820963981
 GameObject:
   m_ObjectHideFlags: 0
@@ -40113,19 +40114,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  destroyTriggerOnActivation: 0
+  disableTriggerOnActivation: 0
+  objectsGroup1: []
+  objectsGroup2: []
+  debugTriggerInteraction: 0
   finishEvent:
     m_PersistentCalls:
       m_Calls: []
   runTriggerOnStart: 1
-  destroyTriggerOnActivation: 0
-  disableTriggerOnActivation: 0
   timeBetweenActivations: 29
   timeRandomnessMax: 0
   maxActivationTimes: 0
   activationTimes: 0
-  objectsGroup1: []
-  objectsGroup2: []
-  debugTriggerInteraction: 0
 --- !u!1 &889876479
 GameObject:
   m_ObjectHideFlags: 0
@@ -41973,19 +41974,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  destroyTriggerOnActivation: 0
+  disableTriggerOnActivation: 0
+  objectsGroup1: []
+  objectsGroup2: []
+  debugTriggerInteraction: 0
   finishEvent:
     m_PersistentCalls:
       m_Calls: []
   runTriggerOnStart: 1
-  destroyTriggerOnActivation: 0
-  disableTriggerOnActivation: 0
   timeBetweenActivations: 26
   timeRandomnessMax: 0
   maxActivationTimes: 0
   activationTimes: 0
-  objectsGroup1: []
-  objectsGroup2: []
-  debugTriggerInteraction: 0
 --- !u!1001 &927970790
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44229,6 +44230,15 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  destroyTriggerOnActivation: 0
+  disableTriggerOnActivation: 0
+  objectsGroup1:
+  - {fileID: 2125021820}
+  - {fileID: 1411242520}
+  - {fileID: 1462376890}
+  - {fileID: 362427937}
+  objectsGroup2: []
+  debugTriggerInteraction: 0
   finishEvent:
     m_PersistentCalls:
       m_Calls:
@@ -44245,19 +44255,10 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   runTriggerOnStart: 0
-  destroyTriggerOnActivation: 0
-  disableTriggerOnActivation: 0
   timeBetweenActivations: 3
   timeRandomnessMax: 0
   maxActivationTimes: 4
   activationTimes: 0
-  objectsGroup1:
-  - {fileID: 2125021820}
-  - {fileID: 1411242520}
-  - {fileID: 1462376890}
-  - {fileID: 362427937}
-  objectsGroup2: []
-  debugTriggerInteraction: 0
 --- !u!1 &978744448
 GameObject:
   m_ObjectHideFlags: 0
@@ -44865,6 +44866,157 @@ Transform:
   m_Father: {fileID: 1319307429}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &994261095
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1859080143}
+    m_Modifications:
+    - target: {fileID: 803402973850489297, guid: 0cc45018cb59ae04da18f64a9e36c5d0, type: 3}
+      propertyPath: trigger
+      value: 
+      objectReference: {fileID: 994261099}
+    - target: {fileID: 803402973850489297, guid: 0cc45018cb59ae04da18f64a9e36c5d0, type: 3}
+      propertyPath: disableOnInteraction
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 803402973850489297, guid: 0cc45018cb59ae04da18f64a9e36c5d0, type: 3}
+      propertyPath: destroyObjectOnInteraction
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 803402973942660888, guid: 0cc45018cb59ae04da18f64a9e36c5d0, type: 3}
+      propertyPath: m_Name
+      value: Look Interaction Holder
+      objectReference: {fileID: 0}
+    - target: {fileID: 803402973942660888, guid: 0cc45018cb59ae04da18f64a9e36c5d0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 803402973942660891, guid: 0cc45018cb59ae04da18f64a9e36c5d0, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 803402973942660891, guid: 0cc45018cb59ae04da18f64a9e36c5d0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -31.27
+      objectReference: {fileID: 0}
+    - target: {fileID: 803402973942660891, guid: 0cc45018cb59ae04da18f64a9e36c5d0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 803402973942660891, guid: 0cc45018cb59ae04da18f64a9e36c5d0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 8.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 803402973942660891, guid: 0cc45018cb59ae04da18f64a9e36c5d0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.99239504
+      objectReference: {fileID: 0}
+    - target: {fileID: 803402973942660891, guid: 0cc45018cb59ae04da18f64a9e36c5d0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 803402973942660891, guid: 0cc45018cb59ae04da18f64a9e36c5d0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.12309429
+      objectReference: {fileID: 0}
+    - target: {fileID: 803402973942660891, guid: 0cc45018cb59ae04da18f64a9e36c5d0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 803402973942660891, guid: 0cc45018cb59ae04da18f64a9e36c5d0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 803402973942660891, guid: 0cc45018cb59ae04da18f64a9e36c5d0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 803402973942660891, guid: 0cc45018cb59ae04da18f64a9e36c5d0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 803402973850489303, guid: 0cc45018cb59ae04da18f64a9e36c5d0, type: 3}
+    - {fileID: 803402973942660885, guid: 0cc45018cb59ae04da18f64a9e36c5d0, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 0cc45018cb59ae04da18f64a9e36c5d0, type: 3}
+--- !u!4 &994261096 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 803402973942660891, guid: 0cc45018cb59ae04da18f64a9e36c5d0, type: 3}
+  m_PrefabInstance: {fileID: 994261095}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &994261097 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 803402973850489301, guid: 0cc45018cb59ae04da18f64a9e36c5d0, type: 3}
+  m_PrefabInstance: {fileID: 994261095}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &994261098 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 803402973942660888, guid: 0cc45018cb59ae04da18f64a9e36c5d0, type: 3}
+  m_PrefabInstance: {fileID: 994261095}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &994261099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 994261097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9045d779379787148a185e8e91d6dc05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 51612644}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1049563062}
+        m_TargetAssemblyTypeName: InteractionHolder, Assembly-CSharp
+        m_MethodName: ACTION_DestroyHolderObject
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  destroyTriggerOnActivation: 0
+  disableTriggerOnActivation: 0
+  objectsGroup1: []
+  objectsGroup2: []
+  debugTriggerInteraction: 0
+  delayInteractTriggerTime: 0
+  delayedInteractEvent:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!65 &994261100
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 994261098}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 3.2414703, z: 3.898491}
+  m_Center: {x: 0, y: 1.1207352, z: 0.13997269}
 --- !u!1001 &995302250
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45479,7 +45631,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1251654241}
-  - {fileID: 1847922086}
   m_Father: {fileID: 1859080143}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -46374,6 +46525,17 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1047902246}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1049563062 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 803402973942660890, guid: 0cc45018cb59ae04da18f64a9e36c5d0, type: 3}
+  m_PrefabInstance: {fileID: 994261095}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 994261098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9074bd1acce48fb4788222be93732854, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1053093810
 GameObject:
   m_ObjectHideFlags: 0
@@ -48527,19 +48689,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  destroyTriggerOnActivation: 0
+  disableTriggerOnActivation: 0
+  objectsGroup1: []
+  objectsGroup2: []
+  debugTriggerInteraction: 0
   finishEvent:
     m_PersistentCalls:
       m_Calls: []
   runTriggerOnStart: 1
-  destroyTriggerOnActivation: 0
-  disableTriggerOnActivation: 0
   timeBetweenActivations: 25
   timeRandomnessMax: 0
   maxActivationTimes: 0
   activationTimes: 0
-  objectsGroup1: []
-  objectsGroup2: []
-  debugTriggerInteraction: 0
 --- !u!1001 &1089445544
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -63069,19 +63231,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  destroyTriggerOnActivation: 0
+  disableTriggerOnActivation: 0
+  objectsGroup1: []
+  objectsGroup2: []
+  debugTriggerInteraction: 0
   finishEvent:
     m_PersistentCalls:
       m_Calls: []
   runTriggerOnStart: 0
-  destroyTriggerOnActivation: 0
-  disableTriggerOnActivation: 0
   timeBetweenActivations: 7
   timeRandomnessMax: 0
   maxActivationTimes: 0
   activationTimes: 0
-  objectsGroup1: []
-  objectsGroup2: []
-  debugTriggerInteraction: 0
 --- !u!1001 &1411889883
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -65510,19 +65672,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  destroyTriggerOnActivation: 0
+  disableTriggerOnActivation: 0
+  objectsGroup1: []
+  objectsGroup2: []
+  debugTriggerInteraction: 0
   finishEvent:
     m_PersistentCalls:
       m_Calls: []
   runTriggerOnStart: 1
-  destroyTriggerOnActivation: 0
-  disableTriggerOnActivation: 0
   timeBetweenActivations: 29
   timeRandomnessMax: 0
   maxActivationTimes: 0
   activationTimes: 0
-  objectsGroup1: []
-  objectsGroup2: []
-  debugTriggerInteraction: 0
 --- !u!1 &1479447651
 GameObject:
   m_ObjectHideFlags: 0
@@ -65583,19 +65745,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  destroyTriggerOnActivation: 0
+  disableTriggerOnActivation: 0
+  objectsGroup1: []
+  objectsGroup2: []
+  debugTriggerInteraction: 0
   finishEvent:
     m_PersistentCalls:
       m_Calls: []
   runTriggerOnStart: 1
-  destroyTriggerOnActivation: 0
-  disableTriggerOnActivation: 0
   timeBetweenActivations: 26
   timeRandomnessMax: 0
   maxActivationTimes: 0
   activationTimes: 0
-  objectsGroup1: []
-  objectsGroup2: []
-  debugTriggerInteraction: 0
 --- !u!1001 &1479522989
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -67375,19 +67537,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  destroyTriggerOnActivation: 0
+  disableTriggerOnActivation: 0
+  objectsGroup1: []
+  objectsGroup2: []
+  debugTriggerInteraction: 0
   finishEvent:
     m_PersistentCalls:
       m_Calls: []
   runTriggerOnStart: 1
-  destroyTriggerOnActivation: 0
-  disableTriggerOnActivation: 0
   timeBetweenActivations: 33
   timeRandomnessMax: 0
   maxActivationTimes: 0
   activationTimes: 0
-  objectsGroup1: []
-  objectsGroup2: []
-  debugTriggerInteraction: 0
 --- !u!1001 &1535257343
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -69396,21 +69558,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  finishEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  runTriggerOnStart: 0
   destroyTriggerOnActivation: 0
   disableTriggerOnActivation: 0
-  timeBetweenActivations: 40
-  timeRandomnessMax: 0
-  maxActivationTimes: 0
-  activationTimes: 0
   objectsGroup1:
   - {fileID: 1584670749}
   - {fileID: 1592015541}
   objectsGroup2: []
   debugTriggerInteraction: 0
+  finishEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  runTriggerOnStart: 0
+  timeBetweenActivations: 40
+  timeRandomnessMax: 0
+  maxActivationTimes: 0
+  activationTimes: 0
 --- !u!1001 &1589782345
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -69545,19 +69707,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  destroyTriggerOnActivation: 0
+  disableTriggerOnActivation: 0
+  objectsGroup1: []
+  objectsGroup2: []
+  debugTriggerInteraction: 0
   finishEvent:
     m_PersistentCalls:
       m_Calls: []
   runTriggerOnStart: 0
-  destroyTriggerOnActivation: 0
-  disableTriggerOnActivation: 0
   timeBetweenActivations: 7
   timeRandomnessMax: 0
   maxActivationTimes: 0
   activationTimes: 0
-  objectsGroup1: []
-  objectsGroup2: []
-  debugTriggerInteraction: 0
 --- !u!1001 &1597101253
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -71169,19 +71331,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  destroyTriggerOnActivation: 0
+  disableTriggerOnActivation: 0
+  objectsGroup1: []
+  objectsGroup2: []
+  debugTriggerInteraction: 0
   finishEvent:
     m_PersistentCalls:
       m_Calls: []
   runTriggerOnStart: 1
-  destroyTriggerOnActivation: 0
-  disableTriggerOnActivation: 0
   timeBetweenActivations: 30
   timeRandomnessMax: 0
   maxActivationTimes: 0
   activationTimes: 0
-  objectsGroup1: []
-  objectsGroup2: []
-  debugTriggerInteraction: 0
 --- !u!1 &1640188932
 GameObject:
   m_ObjectHideFlags: 0
@@ -77543,6 +77705,15 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  destroyTriggerOnActivation: 0
+  disableTriggerOnActivation: 0
+  objectsGroup1:
+  - {fileID: 1969396827}
+  - {fileID: 439946616}
+  - {fileID: 2034901930}
+  - {fileID: 1065998494}
+  objectsGroup2: []
+  debugTriggerInteraction: 0
   finishEvent:
     m_PersistentCalls:
       m_Calls:
@@ -77559,19 +77730,10 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   runTriggerOnStart: 0
-  destroyTriggerOnActivation: 0
-  disableTriggerOnActivation: 0
   timeBetweenActivations: 3
   timeRandomnessMax: 0
   maxActivationTimes: 4
   activationTimes: 0
-  objectsGroup1:
-  - {fileID: 1969396827}
-  - {fileID: 439946616}
-  - {fileID: 2034901930}
-  - {fileID: 1065998494}
-  objectsGroup2: []
-  debugTriggerInteraction: 0
 --- !u!1001 &1828499580
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -78186,7 +78348,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1027473809}
+    m_TransformParent: {fileID: 994261096}
     m_Modifications:
     - target: {fileID: 759425680013437374, guid: a09c05afb5c411041b86901e025eab74, type: 3}
       propertyPath: m_Radius
@@ -78340,6 +78502,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RAYCAST TEST
       objectReference: {fileID: 0}
+    - target: {fileID: 1712182950648486038, guid: a09c05afb5c411041b86901e025eab74, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1770568741457227567, guid: a09c05afb5c411041b86901e025eab74, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -78366,7 +78532,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6689833010573166087, guid: a09c05afb5c411041b86901e025eab74, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -31.27
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6689833010573166087, guid: a09c05afb5c411041b86901e025eab74, type: 3}
       propertyPath: m_LocalPosition.y
@@ -78374,11 +78540,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6689833010573166087, guid: a09c05afb5c411041b86901e025eab74, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 8.25
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6689833010573166087, guid: a09c05afb5c411041b86901e025eab74, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.99239504
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6689833010573166087, guid: a09c05afb5c411041b86901e025eab74, type: 3}
       propertyPath: m_LocalRotation.x
@@ -78386,7 +78552,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6689833010573166087, guid: a09c05afb5c411041b86901e025eab74, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.12309429
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6689833010573166087, guid: a09c05afb5c411041b86901e025eab74, type: 3}
       propertyPath: m_LocalRotation.z
@@ -78407,11 +78573,6 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 759425680013437374, guid: a09c05afb5c411041b86901e025eab74, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a09c05afb5c411041b86901e025eab74, type: 3}
---- !u!4 &1847922086 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6689833010573166087, guid: a09c05afb5c411041b86901e025eab74, type: 3}
-  m_PrefabInstance: {fileID: 1847922085}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1847922087 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1712182950648486038, guid: a09c05afb5c411041b86901e025eab74, type: 3}
@@ -80627,19 +80788,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  destroyTriggerOnActivation: 0
+  disableTriggerOnActivation: 0
+  objectsGroup1: []
+  objectsGroup2: []
+  debugTriggerInteraction: 0
   finishEvent:
     m_PersistentCalls:
       m_Calls: []
   runTriggerOnStart: 1
-  destroyTriggerOnActivation: 0
-  disableTriggerOnActivation: 0
   timeBetweenActivations: 33
   timeRandomnessMax: 0
   maxActivationTimes: 0
   activationTimes: 0
-  objectsGroup1: []
-  objectsGroup2: []
-  debugTriggerInteraction: 0
 --- !u!1001 &1913777065
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -82738,19 +82899,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  destroyTriggerOnActivation: 1
+  disableTriggerOnActivation: 0
+  objectsGroup1: []
+  objectsGroup2: []
+  debugTriggerInteraction: 0
   finishEvent:
     m_PersistentCalls:
       m_Calls: []
   runTriggerOnStart: 0
-  destroyTriggerOnActivation: 1
-  disableTriggerOnActivation: 0
   timeBetweenActivations: 15
   timeRandomnessMax: 0
   maxActivationTimes: 0
   activationTimes: 0
-  objectsGroup1: []
-  objectsGroup2: []
-  debugTriggerInteraction: 0
 --- !u!1 &1969396827 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4591776239436198509, guid: 29a63f5b8bed60441b1cce6faf0432ed, type: 3}
@@ -85310,19 +85471,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  destroyTriggerOnActivation: 0
+  disableTriggerOnActivation: 0
+  objectsGroup1: []
+  objectsGroup2: []
+  debugTriggerInteraction: 0
   finishEvent:
     m_PersistentCalls:
       m_Calls: []
   runTriggerOnStart: 1
-  destroyTriggerOnActivation: 0
-  disableTriggerOnActivation: 0
   timeBetweenActivations: 26
   timeRandomnessMax: 0
   maxActivationTimes: 0
   activationTimes: 0
-  objectsGroup1: []
-  objectsGroup2: []
-  debugTriggerInteraction: 0
 --- !u!1001 &2043980593
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -86254,19 +86415,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  destroyTriggerOnActivation: 0
+  disableTriggerOnActivation: 0
+  objectsGroup1: []
+  objectsGroup2: []
+  debugTriggerInteraction: 0
   finishEvent:
     m_PersistentCalls:
       m_Calls: []
   runTriggerOnStart: 1
-  destroyTriggerOnActivation: 0
-  disableTriggerOnActivation: 0
   timeBetweenActivations: 28
   timeRandomnessMax: 0
   maxActivationTimes: 0
   activationTimes: 0
-  objectsGroup1: []
-  objectsGroup2: []
-  debugTriggerInteraction: 0
 --- !u!1 &2065423865
 GameObject:
   m_ObjectHideFlags: 0
@@ -86327,19 +86488,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  destroyTriggerOnActivation: 0
+  disableTriggerOnActivation: 0
+  objectsGroup1: []
+  objectsGroup2: []
+  debugTriggerInteraction: 0
   finishEvent:
     m_PersistentCalls:
       m_Calls: []
   runTriggerOnStart: 1
-  destroyTriggerOnActivation: 0
-  disableTriggerOnActivation: 0
   timeBetweenActivations: 32
   timeRandomnessMax: 0
   maxActivationTimes: 0
   activationTimes: 0
-  objectsGroup1: []
-  objectsGroup2: []
-  debugTriggerInteraction: 0
 --- !u!1001 &2067360583
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -89727,19 +89888,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  destroyTriggerOnActivation: 0
+  disableTriggerOnActivation: 0
+  objectsGroup1: []
+  objectsGroup2: []
+  debugTriggerInteraction: 0
   finishEvent:
     m_PersistentCalls:
       m_Calls: []
   runTriggerOnStart: 1
-  destroyTriggerOnActivation: 0
-  disableTriggerOnActivation: 0
   timeBetweenActivations: 26
   timeRandomnessMax: 0
   maxActivationTimes: 0
   activationTimes: 0
-  objectsGroup1: []
-  objectsGroup2: []
-  debugTriggerInteraction: 0
 --- !u!1 &2133367568
 GameObject:
   m_ObjectHideFlags: 0
