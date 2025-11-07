@@ -34387,7 +34387,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   destroyTriggerOnActivation: 0
-  disableTriggerOnActivation: 1
+  disableTriggerOnActivation: 0
   objectsGroup1:
   - {fileID: 269650539}
   objectsGroup2:
@@ -45511,7 +45511,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   destroyTriggerOnActivation: 0
-  disableTriggerOnActivation: 1
+  disableTriggerOnActivation: 0
   objectsGroup1:
   - {fileID: 598192955}
   - {fileID: 1339470387}
@@ -56931,7 +56931,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   destroyTriggerOnActivation: 0
-  disableTriggerOnActivation: 1
+  disableTriggerOnActivation: 0
   objectsGroup1:
   - {fileID: 269650540}
   objectsGroup2:
@@ -66214,7 +66214,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   destroyTriggerOnActivation: 0
-  disableTriggerOnActivation: 1
+  disableTriggerOnActivation: 0
   objectsGroup1:
   - {fileID: 269650541}
   objectsGroup2:
@@ -78741,10 +78741,6 @@ PrefabInstance:
     - target: {fileID: 803402973850489303, guid: 0cc45018cb59ae04da18f64a9e36c5d0, type: 3}
       propertyPath: objectsGroup2.Array.size
       value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 803402973850489303, guid: 0cc45018cb59ae04da18f64a9e36c5d0, type: 3}
-      propertyPath: disableTriggerOnActivation
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 803402973850489303, guid: 0cc45018cb59ae04da18f64a9e36c5d0, type: 3}
       propertyPath: objectsGroup1.Array.data[0]
