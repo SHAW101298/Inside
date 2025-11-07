@@ -79,6 +79,8 @@ public class PlayerInteractRay : MonoBehaviour
         {
             InteractionHolder holder = hitInfo.collider.gameObject.GetComponent<InteractionHolder>();
             data.ui.ShowPossibleInteractions(holder);
+
+            HandleLookInteractions(holder);
         }
     }
     
@@ -89,6 +91,15 @@ public class PlayerInteractRay : MonoBehaviour
     public void AllowInteractions()
     {
         blockedInteractions = false;
+    }
+
+    public void HandleLookInteractions(InteractionHolder holder)
+    {
+        if (holder.GetPossibleInteractions()[0].GetTriggerBase().GetTriggerType() == ENUM_TriggerTypes.look)
+        {
+            holder.Interact(0);
+            //Debug.Log("LOOK TRIGGER");
+        }
     }
 }
 /* OBSOLETE

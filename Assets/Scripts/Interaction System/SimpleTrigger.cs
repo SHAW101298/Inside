@@ -106,4 +106,8 @@ public class SimpleTrigger : TriggerBase
         int rand = Random.Range(0, objectsGroup1.Count);
         objectsGroup1[rand].GetComponentInChildren<SimpleTrigger>().TriggerInteraction();
     }
+    public override ENUM_TriggerTypes GetTriggerType()
+    {
+        return ENUM_TriggerTypes.simple;
+    }
 }

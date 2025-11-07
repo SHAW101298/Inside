@@ -93,4 +93,8 @@ public class EnterTrigger : TriggerBase
     {
         TriggerEnter();
     }
+    public override ENUM_TriggerTypes GetTriggerType()
+    {
+        return ENUM_TriggerTypes.enter;
+    }
 }

@@ -3,24 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class TriggerRandom : MonoBehaviour
+public class TriggerRandom : TriggerBase
 {
-    public UnityEvent interactEvent;
     public UnityEvent finishEvent;
     [Space(10)]
     [SerializeField] float activationChance;
     [SerializeField] float maxPossibleActivations;
     float currentActivations;
-    [SerializeField] bool destroyTriggerOnActivation;
-    [SerializeField] bool disableTriggerOnActivation;
 
-    [Space(10)]
-    [SerializeField] List<GameObject> objectsGroup1;
-    [SerializeField] List<GameObject> objectsGroup2;
 
-    [SerializeField] bool debugTriggerInteraction;
-
-    public void TriggerInteraction()
+    public override void TriggerInteraction()
     {
         float rand = Random.Range(0, 100);
         if(rand <= activationChance)
@@ -59,46 +51,8 @@ public class TriggerRandom : MonoBehaviour
 
         
     }
-
-    public void EnableGroup1()
+    public override ENUM_TriggerTypes GetTriggerType()
     {
-        if (objectsGroup1.Count > 0)
-        {
-            foreach (GameObject obj in objectsGroup1)
-            {
-                obj.SetActive(true);
-            }
-        }
+        return ENUM_TriggerTypes.random;
     }
-    public void EnableGroup2()
-    {
-        if (objectsGroup2.Count > 0)
-        {
-            foreach (GameObject obj in objectsGroup2)
-            {
-                obj.SetActive(true);
-            }
-        }
-    }
-    public void DisableGroup1()
-    {
-        if (objectsGroup1.Count > 0)
-        {
-            foreach (GameObject obj in objectsGroup1)
-            {
-                obj.SetActive(false);
-            }
-        }
-    }
-    public void DisableGroup2()
-    {
-        if (objectsGroup2.Count > 0)
-        {
-            foreach (GameObject obj in objectsGroup2)
-            {
-                obj.SetActive(false);
-            }
-        }
-    }
-
 }

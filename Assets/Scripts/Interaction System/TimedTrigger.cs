@@ -3,14 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class TimedTrigger : MonoBehaviour
+public class TimedTrigger : TriggerBase
 {
-    public UnityEvent interactEvent;
     public UnityEvent finishEvent;
     [Space(10)]
     [SerializeField] bool runTriggerOnStart;
-    [SerializeField] bool destroyTriggerOnActivation;
-    [SerializeField] bool disableTriggerOnActivation;
     [Space(10)]
     [SerializeField] float timeBetweenActivations;
     [SerializeField] float timeRandomnessMax;
@@ -18,11 +15,7 @@ public class TimedTrigger : MonoBehaviour
     float timer;
     [SerializeField] int maxActivationTimes;
     [SerializeField] int activationTimes;
-    [Space(10)]
-    [SerializeField] List<GameObject> objectsGroup1;
-    [SerializeField] List<GameObject> objectsGroup2;
 
-    [SerializeField] bool debugTriggerInteraction;
     // Start is called before the first frame update
     void Start()
     {
@@ -55,7 +48,7 @@ public class TimedTrigger : MonoBehaviour
         timeRandomness = Random.Range(0, timeRandomnessMax);
     }
 
-    public void TriggerInteraction()
+    public override void TriggerInteraction()
     {
         Interact();
         if (maxActivationTimes == 0)
@@ -66,10 +59,6 @@ public class TimedTrigger : MonoBehaviour
         {
             finishEvent.Invoke();
         }
-    }
-    public void TriggerDestruction()
-    {
-        Destroy(gameObject);
     }
     public void StartTimer()
     {
@@ -88,64 +77,6 @@ public class TimedTrigger : MonoBehaviour
         {
             gameObject.SetActive(false);
         }
-    }
-
-
-    public void EnableGroup1()
-    {
-        if (objectsGroup1.Count > 0)
-        {
-            foreach (GameObject obj in objectsGroup1)
-            {
-                obj.SetActive(true);
-            }
-        }
-    }
-    public void EnableGroup2()
-    {
-        if (objectsGroup2.Count > 0)
-        {
-            foreach (GameObject obj in objectsGroup2)
-            {
-                obj.SetActive(true);
-            }
-        }
-    }
-    public void DisableGroup1()
-    {
-        if (objectsGroup1.Count > 0)
-        {
-            foreach (GameObject obj in objectsGroup1)
-            {
-                obj.SetActive(false);
-            }
-        }
-    }
-    public void DisableGroup2()
-    {
-        if (objectsGroup2.Count > 0)
-        {
-            foreach (GameObject obj in objectsGroup2)
-            {
-                obj.SetActive(false);
-            }
-        }
-    }
-    public void DestroyGroup1()
-    {
-        foreach (GameObject obj in objectsGroup1)
-        {
-            Destroy(obj);
-        }
-        objectsGroup1.Clear();
-    }
-    public void DestroyGroup2()
-    {
-        foreach (GameObject obj in objectsGroup2)
-        {
-            Destroy(obj);
-        }
-        objectsGroup2.Clear();
     }
     public void TeleportGroup1ToGroup2()
     {
@@ -220,4 +151,8 @@ public class TimedTrigger : MonoBehaviour
         objectsGroup2.RemoveAt(0);
     }
 
+    public override ENUM_TriggerTypes GetTriggerType()
+    {
+        return ENUM_TriggerTypes.timed;
+    }
 }

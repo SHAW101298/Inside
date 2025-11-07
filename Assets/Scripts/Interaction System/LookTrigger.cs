@@ -5,6 +5,7 @@ using UnityEngine.Events;
 
 public class LookTrigger : TriggerBase
 {
+    
     [Header("SPECIFIC")]
     [SerializeField] float delayInteractTriggerTime;
     public UnityEvent delayedInteractEvent;
@@ -12,7 +13,27 @@ public class LookTrigger : TriggerBase
     bool startTimer;
     public override void TriggerInteraction()
     {
-        throw new System.NotImplementedException();
+        Interact();
+    }
+    public override ENUM_TriggerTypes GetTriggerType()
+    {
+        return ENUM_TriggerTypes.look;
     }
 
+    void Interact()
+    {
+        interactEvent.Invoke();
+
+        if (destroyTriggerOnActivation == true)
+        {
+            Destroy(gameObject);
+        }
+        if (disableTriggerOnActivation == true)
+        {
+            gameObject.SetActive(false);
+        }
+
+
+        startTimer = true;
+    }
 }

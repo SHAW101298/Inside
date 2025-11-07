@@ -24,7 +24,6 @@ public abstract class TriggerBase : MonoBehaviour
     [SerializeField] protected List<GameObject> objectsGroup2;
 
     [SerializeField] protected bool debugTriggerInteraction;
-    protected ENUM_TriggerTypes triggerType;
 
     #region Possible Actions
     public void EnableGroup1()
@@ -88,9 +87,6 @@ public abstract class TriggerBase : MonoBehaviour
         Destroy(gameObject);
     }
     public abstract void TriggerInteraction();
-    public ENUM_TriggerTypes GetTriggerType()
-    {
-        return triggerType;
-    }
+    public abstract ENUM_TriggerTypes GetTriggerType();
     #endregion
 }
