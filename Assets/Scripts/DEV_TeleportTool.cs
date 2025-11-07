@@ -18,6 +18,7 @@ public class DEV_TeleportTool : MonoBehaviour
     public List<GameObject> teleportPositions;
     public GameObject UIPrefab;
     public GameObject content;
+    
 
     public void CreateWindowData()
     {

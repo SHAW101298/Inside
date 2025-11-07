@@ -1,11 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+public enum ENUM_ButtonKey
+{
+    E,
+    F,
+    LMB
+}
 
 public class Interaction : MonoBehaviour
 {
     // Holds Data about the Interaction
     [SerializeField] int defaultInteractionKey;
+    [SerializeField] ENUM_ButtonKey defaultInteractionButton;
     [Space(10)]
     [SerializeField] bool destroyObjectOnInteraction;
     [SerializeField] bool disableOnInteraction;
@@ -50,7 +57,8 @@ public class Interaction : MonoBehaviour
     }
     public int GetDefaultInteractionKey()
     {
-        return defaultInteractionKey;
+        return (int)defaultInteractionButton;
+        //return defaultInteractionKey;
     }
     public string DEBUG_DropInfo()
     {
