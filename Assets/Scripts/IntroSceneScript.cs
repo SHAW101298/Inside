@@ -5,20 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class IntroSceneScript : MonoBehaviour
 {
-    [Header("Dialog Prompts")]
-    [SerializeField] DialogPrompt questionPrompt;
-    [SerializeField] DialogPrompt emptyPrompt;
-
-
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        //DialogManager.Instance.ShowText(emptyPrompt);
-        //DialogManager.Instance.ShowText(questionPrompt);
-    }
-
-
+    [SerializeField] float playSoundDistance;
+    [SerializeField] AudioClip[] soundClips;
+    [SerializeField] GameObject soundPlayerPrefab;
     public void InteractWithLadder()
     {
         ScreenFadeEffect.Instance.FadeScreen();
@@ -29,5 +18,33 @@ public class IntroSceneScript : MonoBehaviour
     public void ChangeSceneToNextLevel()
     {
         SceneManager.LoadScene(2);
+    }
+
+    public void PlayChainsSound()
+    {
+        PrepareSoundPlayer(0);
+    }
+    public void PlayMaskSound()
+    {
+        PrepareSoundPlayer(1);
+    }
+    public void PlayThudSound()
+    {
+        PrepareSoundPlayer(2);
+    }
+
+    void PrepareSoundPlayer(int soundIndex)
+    {
+        Vector3 pos = PlayerData.instance.transform.position;
+        Vector3 forwardDir = PlayerData.instance.cam.GetForwardDir().normalized;
+        forwardDir *= playSoundDistance;
+        pos -= forwardDir;
+
+        GameObject soundPlayer = Instantiate(soundPlayerPrefab);
+        soundPlayer.transform.position = pos;
+
+        AudioSource audioSource = soundPlayer.GetComponent<AudioSource>();
+        audioSource.clip = soundClips[soundIndex];
+        audioSource.Play();
     }
 }

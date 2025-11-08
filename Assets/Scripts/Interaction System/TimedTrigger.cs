@@ -47,6 +47,10 @@ public class TimedTrigger : TriggerBase
     {
         timeRandomness = Random.Range(0, timeRandomnessMax);
     }
+    public void ResetTimer()
+    {
+        timer = 0;
+    }    
 
     public override void TriggerInteraction()
     {
@@ -58,6 +62,10 @@ public class TimedTrigger : TriggerBase
         if(activationTimes >= maxActivationTimes)
         {
             finishEvent.Invoke();
+        }
+        if(disableTriggerOnActivation == true)
+        {
+            gameObject.SetActive(false);
         }
     }
     public void StartTimer()
