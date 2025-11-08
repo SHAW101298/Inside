@@ -667,3 +667,7 @@ Na koniec bêdzie minigierka aby po³¹czyæ ze sob¹ wszystkie wyspy.
 Bêdzie miniaturowa wersja ka¿dej wyspy i bêdzie trzeba j¹ przeci¹gn¹æ w odpowiednie miejsce. Gdy bêdzie blisko odpowiedniego miejsca
 puszczone, wyspa sama doleci w wyznaczone miejsce i zablokowana zostanie mo¿liwoœæ jej ruchu.
  */
+/* Scena 1 Dzwieki do pobrania
+ Œmiech do maski
+Creepy œmiech ?
+ */
