@@ -5,6 +5,7 @@ using UnityEngine;
 #region KNOWN BUGS
 /*
  Dialog Prompt Group stacks listeners if using on - End Showing Group EVENT
+HeadBand fix lines
  */
 #endregion
 
@@ -109,6 +110,7 @@ public class Language_English : LanguageBase
     }
     void FillTextScene1()
     {
+        Debug.LogError("FIx HeadBang Lines");
         // Additional Texts
         text[100] = "Press W to move Forward.";
         text[101] = "? ? ?";
