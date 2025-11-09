@@ -95,6 +95,8 @@ public class PlayerInteractRay : MonoBehaviour
 
     public void HandleLookInteractions(InteractionHolder holder)
     {
+        if (holder.GetPossibleInteractionsCount() == 0)
+            return;
         if (holder.GetPossibleInteractions()[0].GetTriggerBase().GetTriggerType() == ENUM_TriggerTypes.look)
         {
             holder.Interact(0);
