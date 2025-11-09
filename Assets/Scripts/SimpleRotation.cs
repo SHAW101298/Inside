@@ -16,6 +16,11 @@ public class SimpleRotation : MonoBehaviour
     [SerializeField] Vector3 target;
     [SerializeField] float smoothTime;
     Vector3 currentVelocity;
+    [Header("Slerp")]
+    [SerializeField] Vector3 slerpStartRot;
+    [SerializeField] Vector3 slerpEndRot;
+    [SerializeField] float slerpTime;
+    [SerializeField] float slerpTimer;
 
     [Header("Debug")]
     [SerializeField] float dist;
@@ -39,6 +44,9 @@ public class SimpleRotation : MonoBehaviour
             case ENUM_MovementType.damp:
                 DampenedRotation();
                 break;
+            case ENUM_MovementType.slerp:
+                Slerp();
+                break;
             default:
                 break;
         }
@@ -54,6 +62,23 @@ public class SimpleRotation : MonoBehaviour
 
         if(dist < switchDistance)
         {
+            //objectToRotate.transform.localEulerAngles = target;
+            endRotation.Invoke();
+        }
+    }
+    void Slerp()
+    {
+        slerpTimer += Time.deltaTime;
+
+        float t = slerpTimer / slerpTime;
+        Vector3 rot = Vector3.Slerp(slerpStartRot, slerpEndRot, t);
+        objectToRotate.transform.localEulerAngles = rot;
+
+        dist = Vector3.Distance(objectToRotate.transform.localEulerAngles, slerpEndRot);
+
+        if (dist < switchDistance)
+        {
+            //objectToRotate.transform.localEulerAngles = target;
             endRotation.Invoke();
         }
     }

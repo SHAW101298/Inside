@@ -15,6 +15,7 @@ public enum ENUM_MovementType
     teleport,
     stable,
     lerp,
+    slerp,
     damp
 }
 
