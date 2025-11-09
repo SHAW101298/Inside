@@ -481,6 +481,9 @@ public class Language_English : LanguageBase
 
         text[140] = "Grab";
         text[141] = "Release";
+
+        // Memory Well
+        text[150] = "The Last Known Destination";
     }
 
 }
@@ -668,6 +671,14 @@ Ka¿da wyspa bêdzie obracalna ukazuj¹ca ciemn¹ stronê ka¿dego fragmentu
 Na koniec bêdzie minigierka aby po³¹czyæ ze sob¹ wszystkie wyspy.
 Bêdzie miniaturowa wersja ka¿dej wyspy i bêdzie trzeba j¹ przeci¹gn¹æ w odpowiednie miejsce. Gdy bêdzie blisko odpowiedniego miejsca
 puszczone, wyspa sama doleci w wyznaczone miejsce i zablokowana zostanie mo¿liwoœæ jej ruchu.
+
+    Memory Well
+IDEAS WE NEED IDEAS!!!
+The point of no return. The void. The easy way. The last stop / seen. The last known destination
+Zbieranie obiektów na wyspie i wrzucanie ich do studni ? Raczej nie
+
+
+
  */
 /* Scena 1 Dzwieki do pobrania
  Œmiech do maski

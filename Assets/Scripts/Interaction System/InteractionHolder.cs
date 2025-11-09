@@ -45,6 +45,14 @@ public class InteractionHolder : MonoBehaviour
     {
         return disabledInteractions;
     }
+    public int GetPossibleInteractionsCount()
+    {
+        return possibleInteractions.Count;
+    }
+    public int GetDisabledInteractionsCount()
+    {
+        return disabledInteractions.Count;
+    }
     public void Interact(int x)
     {
         //DEBUG_DropInfoAboutInteractions();
