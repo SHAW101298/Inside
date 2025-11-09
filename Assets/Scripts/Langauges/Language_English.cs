@@ -671,12 +671,16 @@ Ka¿da wyspa bêdzie obracalna ukazuj¹ca ciemn¹ stronê ka¿dego fragmentu
 Na koniec bêdzie minigierka aby po³¹czyæ ze sob¹ wszystkie wyspy.
 Bêdzie miniaturowa wersja ka¿dej wyspy i bêdzie trzeba j¹ przeci¹gn¹æ w odpowiednie miejsce. Gdy bêdzie blisko odpowiedniego miejsca
 puszczone, wyspa sama doleci w wyznaczone miejsce i zablokowana zostanie mo¿liwoœæ jej ruchu.
+Co jakiœ czas bêdzie widaæ kruka siedz¹cego na drzewie lub lataj¹cego w oddali.
 
     Memory Well
 IDEAS WE NEED IDEAS!!!
 The point of no return. The void. The easy way. The last stop / seen. The last known destination
 Zbieranie obiektów na wyspie i wrzucanie ich do studni ? Raczej nie
-
+Coœ symbolizuj¹ce utracone wspomnienia. Rysunki z brakujacymi elementami ?
+Jakieœ skrawki tekstu z brakuj¹cymi fragmentami.
+Jakiœ obiekt który mo¿na wrzuciæ do studni, ale wczeœniej bêdzie kartka czy coœ do podniesienia z tym elementem.
+Po podniesieniu bêdzie dodany do dziennika. Po wrzuceniu obiekt zniknie z tego wpisu. 
 
 
  */
