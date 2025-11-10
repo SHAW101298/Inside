@@ -99,6 +99,9 @@ public class Language_English : LanguageBase
         text[59] = "Close";
         text[60] = "Kill";
         text[61] = "Read";
+        text[62] = "Take";
+        text[63] = "Drop";
+        text[64] = "Put Back";
 
 
         // LEVEL NAMES
@@ -467,38 +470,44 @@ public class Language_English : LanguageBase
         // What's going on answer. TP on edge and start moving legs
         text[125] = "You got lost.";
         text[126] = "Forgotten.";
-        
-
-
-        // Rock Pushing
-        text[130] = "Left alone to deal with, what feels like impossible task."; // Ignored
-        text[131] = "Is that your idea of being merciful ?"; // Killed
-        text[132] = "Left with no purpose, just to rot and be forgotten."; // Ball taken away
-        text[133] = "The goal is fullfilled. But whose success is that really ?"; // Ball placed on the top
-        text[134] = "Take  ( E )";
-        text[135] = "Drop  ( E )";
-        text[136] = "Put Back  ( E )";
-
-        text[140] = "Grab";
-        text[141] = "Release";
-
+       
         // Memory Well
-        text[150] = "The Last Known Destination";
-        text[151] = "A Well ???";
-        text[152] = "Yes. Most of the time its a last resting place.";
-        text[153] = "Things seem to vanish out of existence in contact with it.";
-        text[154] = "Are you sure things will disappear ?";
-        text[155] = "Go ahead and see for yourself. Throw inside that ribbon you found."; // Player can decide to keep it.
-        text[156] = "Take Ribbon";
-        text[157] = "Throw Ribbon";
+        text[130] = "The Last Known Destination";
+        text[131] = "A Well ???";   // Question
+        text[132] = "Yes. Most of the time its a last resting place.";
+        text[133] = "Things seem to vanish out of existence in contact with it.";
+        text[134] = "Are you sure things will disappear ?"; // Question
+        text[135] = "Go ahead and see for yourself. Throw inside that ribbon you found."; // Player can decide to keep it.
+        text[136] = "Take Ribbon";
+        text[137] = "Throw Ribbon";
 
         // Upside Memory Well
-        text[160] = "Pretty convenient isn't it ?";
-        text[161] = "Just erase everything that's bothersome and continue moving forward.";
-        text[162] = "It's so easy to treat everything like a spit on a ground.";
-        text[163] = "A meaningless interactions done only for the sake of peace.";
-        text[164] = "Actions not even worth remembering. Begone from my mind.";
+        text[140] = "Pretty convenient isn't it ?";
+        text[141] = "Just erase everything that's bothersome and continue moving forward.";
+        text[142] = "It's so easy to treat everything like a spit on a ground.";
+        text[143] = "A meaningless interactions done only for the sake of peace.";
+        text[144] = "Actions not even worth remembering. Begone from your mind.";
+        text[145] = "In the end its just a bad memory right ? You're the victim here. ";
 
+        // Rock Pushing
+        text[150] = "What's that rock ?";   // Question
+        text[151] = "There is some guy here trying to push it off the edge. Don't ask me why, I'm as clueless as you. ";
+        text[152] = "How about we do a little prank, to brighten the mood, eh ? Lets loosen a few rocks somewhere up there.";
+        text[153] = "Just think about it, he's gonna fall flat on his face there wondering who did it to him.";
+        text[154] = "Aaaaaand done, now lets go and search for him!";   // Rocks Loosened
+
+        text[156] = "All actions have consequences. I'm surprised you got this far without realizing it.";
+        text[155] = "Ignored and left alone with impossible task to fulfill. What else did you expect ?"; // Ignored
+        //text[155] = "Left alone to deal with, what feels like impossible task? Ok, noted."; // Ignored
+        text[156] = "Was it a mercy or stupidity leading you with that choice ?"; // Killed
+        //text[156] = "Is that your idea of being merciful ? "; // Killed
+        text[157] = "Left with no purpose, just to rot and be forgotten. That's one way to go i guess. "; // Ball taken away
+        //text[157] = "Left with no purpose, just to rot and be forgotten. Noted."; // Ball taken away
+        text[158] = "I mean . . . The goal is fullfilled. But whose success is that really ?"; // Ball placed on the top
+        //text[158] = "The goal is fullfilled. But whose success is that really ?"; // Ball placed on the top
+
+        text[160] = "Grab";
+        text[161] = "Release";
     }
 
 }
@@ -697,6 +706,9 @@ Coœ symbolizuj¹ce utracone wspomnienia. Rysunki z brakujacymi elementami ?
 Jakieœ skrawki tekstu z brakuj¹cymi fragmentami.
 Jakiœ obiekt który mo¿na wrzuciæ do studni, ale wczeœniej bêdzie kartka czy coœ do podniesienia z tym elementem.
 Po podniesieniu bêdzie dodany do dziennika. Po wrzuceniu obiekt zniknie z tego wpisu. 
+
+Rock Pushing
+Napotyka siê kamieñ na drodze.
 
 
 
