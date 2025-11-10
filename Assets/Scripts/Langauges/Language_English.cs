@@ -456,15 +456,15 @@ public class Language_English : LanguageBase
         text[111] = "Who Am I ?";
         text[112] = "What's going on ?";
 
-        // What is this place answer
+        // What is this place answer TP on edge towards well and look at it
         text[115] = "This place used to be a past.";
         text[116] = "Used to be a future.";
         text[117] = "The beggining of everything.";
         text[118] = "Now its just ... all that is left.";
-        // Who Am I answer
+        // Who Am I answer. TP near Pillar and lean on it
         text[120] = "If you're so curious, why won't you ask yourself ?";
-        text[121] = "Face the one who you try so hard to erase.";
-        // What's going on answer
+        text[121] = "Face the one you try so hard to erase.";
+        // What's going on answer. TP on edge and start moving legs
         text[125] = "You got lost.";
         text[126] = "Forgotten.";
         
@@ -484,6 +484,21 @@ public class Language_English : LanguageBase
 
         // Memory Well
         text[150] = "The Last Known Destination";
+        text[151] = "A Well ???";
+        text[152] = "Yes. Most of the time its a last resting place.";
+        text[153] = "Things seem to vanish out of existence in contact with it.";
+        text[154] = "Are you sure things will disappear ?";
+        text[155] = "Go ahead and see for yourself. Throw inside that ribbon you found."; // Player can decide to keep it.
+        text[156] = "Take Ribbon";
+        text[157] = "Throw Ribbon";
+
+        // Upside Memory Well
+        text[160] = "Pretty convenient isn't it ?";
+        text[161] = "Just erase everything that's bothersome and continue moving forward.";
+        text[162] = "It's so easy to treat everything like a spit on a ground.";
+        text[163] = "A meaningless interactions done only for the sake of peace.";
+        text[164] = "Actions not even worth remembering. Begone from my mind.";
+
     }
 
 }
@@ -668,6 +683,7 @@ Ka¿da wyspa bêdzie obracalna ukazuj¹ca ciemn¹ stronê ka¿dego fragmentu
 05 
 
 
+
 Na koniec bêdzie minigierka aby po³¹czyæ ze sob¹ wszystkie wyspy.
 Bêdzie miniaturowa wersja ka¿dej wyspy i bêdzie trzeba j¹ przeci¹gn¹æ w odpowiednie miejsce. Gdy bêdzie blisko odpowiedniego miejsca
 puszczone, wyspa sama doleci w wyznaczone miejsce i zablokowana zostanie mo¿liwoœæ jej ruchu.
@@ -683,8 +699,24 @@ Jakiœ obiekt który mo¿na wrzuciæ do studni, ale wczeœniej bêdzie kartka czy coœ 
 Po podniesieniu bêdzie dodany do dziennika. Po wrzuceniu obiekt zniknie z tego wpisu. 
 
 
+
+Plan ?
+Siedzi postaæ na pocz¹tku, mo¿na podejœæ i zainicjowaæ rozmowê.
+Zale¿nie od wybranej opcji postaæ teleportuje siê w jakieœ miejsce, jest jakiœ efekt particle, zaczyna mówiæ oraz jest jakaœ animacja
+
  */
 /* Scena 1 Dzwieki do pobrania
  Œmiech do maski
 Creepy œmiech ?
+ */
+/* Ekwipunek /Dziennik
+Sposób dzia³ania :
+Wciœniêcie I pokazuje znalezione przedmioty. 
+Nie bêdzie ich du¿o na pewno. Krótka wskazówka o przedmiocie, oraz jakaœ miniatura
+Przedmioty pomiêdzy kartkami ksi¹¿ki ?
+
+Wciœniêcie J pokazuje dziennik.
+W dzienniku umieszczone bêd¹ znalezione kartki oraz wa¿ne wpisy na temat historii ?
+
+
  */
