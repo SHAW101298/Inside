@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.InputSystem;
 
 public class DEV_TeleportTool : MonoBehaviour
@@ -18,6 +19,8 @@ public class DEV_TeleportTool : MonoBehaviour
     public List<GameObject> teleportPositions;
     public GameObject UIPrefab;
     public GameObject content;
+
+    public UnityEvent buttonTrigger;
     
 
     public void CreateWindowData()
@@ -64,5 +67,16 @@ public class DEV_TeleportTool : MonoBehaviour
         HideWindow();
     }
 
+    public void ACTION_Z_BUTTON(InputAction.CallbackContext context)
+    {
+        if(context.phase == InputActionPhase.Performed)
+        {
+            TriggerEventFromButton();
+        }
+    }
+    public void TriggerEventFromButton()
+    {
+        buttonTrigger.Invoke();
+    }
     
 }

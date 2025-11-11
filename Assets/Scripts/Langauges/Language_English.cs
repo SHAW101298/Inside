@@ -480,6 +480,7 @@ public class Language_English : LanguageBase
         text[135] = "Go ahead and see for yourself. Throw inside that ribbon you found."; // Player can decide to keep it.
         text[136] = "Take Ribbon";
         text[137] = "Throw Ribbon";
+        text[138] = "Where did that come from ?";
 
         // Upside Memory Well
         text[140] = "Pretty convenient isn't it ?";
@@ -716,6 +717,7 @@ Plan ?
 Siedzi postaæ na pocz¹tku, mo¿na podejœæ i zainicjowaæ rozmowê.
 Zale¿nie od wybranej opcji postaæ teleportuje siê w jakieœ miejsce, jest jakiœ efekt particle, zaczyna mówiæ oraz jest jakaœ animacja
 
+Porozrzucaæ lewituj¹ce kamienie / wyspy wokó³ g³ównych
  */
 /* Scena 1 Dzwieki do pobrania
  Œmiech do maski
