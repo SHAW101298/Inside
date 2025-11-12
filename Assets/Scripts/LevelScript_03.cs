@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
 public class LevelScript_03 : MonoBehaviour
@@ -39,10 +40,16 @@ public class LevelScript_03 : MonoBehaviour
     */
     /*Memory Well
     Apparently, whatever you drop there disappears. Never to be seen again.
+     Objects to find
+    Ribbon - promise
+    Watch - time
+    Hammer - tools / ways 
+    SnowGlobe - joy
 
     */
 
-    public int rockPushingState;
+    [SerializeField] int hiddenObjectsFound;
+    public UnityEvent EVENT_HiddenObjectFound;
 
     void Start()
     {
@@ -66,5 +73,14 @@ public class LevelScript_03 : MonoBehaviour
     public void RestartScene()
     {
         SceneManager.LoadScene(3);
+    }
+    public void WellObjectFound()
+    {
+        hiddenObjectsFound++;
+
+        if(hiddenObjectsFound >= 4)
+        {
+
+        }
     }
 }

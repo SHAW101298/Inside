@@ -474,13 +474,11 @@ public class Language_English : LanguageBase
         // Memory Well
         text[130] = "The Last Known Destination";
         text[131] = "A Well ???";   // Question
-        text[132] = "Yes. Most of the time its a last resting place.";
-        text[133] = "Things seem to vanish out of existence in contact with it.";
-        text[134] = "Are you sure things will disappear ?"; // Question
-        text[135] = "Go ahead and see for yourself. Throw inside that ribbon you found."; // Player can decide to keep it.
+        text[132] = "Yes.";
+        text[133] = "Things seem to vanish out of existence in contact with it though.";
+        text[134] = "Where did that come from ?";
         text[136] = "Take Ribbon";
         text[137] = "Throw Ribbon";
-        text[138] = "Where did that come from ?";
 
         // Upside Memory Well
         text[140] = "Pretty convenient isn't it ?";
