@@ -41,6 +41,7 @@ public class SimpleMovement : MonoBehaviour
     [SerializeField] float dampSmoothTime;
     [SerializeField] Vector3 dampVelocity;
     [SerializeField] float dampSnapDistance;
+    [SerializeField] bool snapToEndPosition;
 
     float timer;
     [Space(20)]
@@ -149,9 +150,13 @@ public class SimpleMovement : MonoBehaviour
         float dist = Vector3.Distance(objectToMove.transform.position, endPos.position);
         if(dist <= dampSnapDistance)
         {
-            objectToMove.transform.position = endPos.position;
+            if(snapToEndPosition == true)
+            {
+                objectToMove.transform.position = endPos.position;
+            }
             isActive = false;
             EVENT_movementEnd.Invoke();
+            dampVelocity = Vector3.zero;
 
             if (destroyAfterReachingDestination == true)
             {
