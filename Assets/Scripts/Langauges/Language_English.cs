@@ -720,6 +720,8 @@ Porozrzucaæ lewituj¹ce kamienie / wyspy wokó³ g³ównych
 /* Scena 1 Dzwieki do pobrania
  Œmiech do maski
 Creepy œmiech ?
+Usczupliæ dialogi w scenie 02
+Popracowaæ nad scen¹ 01
  */
 /* Ekwipunek /Dziennik
 Sposób dzia³ania :
