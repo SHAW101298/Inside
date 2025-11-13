@@ -6,6 +6,7 @@ public class TESTING : MonoBehaviour
 {
     public bool runAOO;
     public bool runBOO;
+    public bool runCOO;
     [Header("Game Progression")]
     public SimpleTrigger missingPiece;
     public SimpleTrigger waitingAltar;
@@ -32,6 +33,9 @@ public class TESTING : MonoBehaviour
     [Header("BOO")]
     public List<GameObject> bones;
     public int lastBone;
+    [Header("COO")]
+    public float tValue;
+    public float yResult;
 
 
     void Update()
@@ -39,6 +43,7 @@ public class TESTING : MonoBehaviour
         GameProgression();
         AOO();
         BOO();
+        COO();
     }
     void AOO()
     {
@@ -63,6 +68,12 @@ public class TESTING : MonoBehaviour
             bones[lastBone].transform.localScale = Vector3.zero;
             lastBone++;
         }
+    }
+    void COO()
+    {
+        if (runCOO == false)
+            return;
+        yResult = tValue*(-tValue + 4);
     }
 
     void GameProgression()
