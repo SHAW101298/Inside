@@ -78,9 +78,12 @@ public class PlayerInteractRay : MonoBehaviour
         if (Physics.Raycast(data.cam.transform.position, lookDir, out hitInfo, infoRaycastDistance, interactLayer) == true)
         {
             InteractionHolder holder = hitInfo.collider.gameObject.GetComponent<InteractionHolder>();
+            if(HandleLookInteractions(holder) == true)
+            {
+                return;
+            }
             data.ui.ShowPossibleInteractions(holder);
 
-            HandleLookInteractions(holder);
         }
     }
     
@@ -93,15 +96,22 @@ public class PlayerInteractRay : MonoBehaviour
         blockedInteractions = false;
     }
 
-    public void HandleLookInteractions(InteractionHolder holder)
+    public bool HandleLookInteractions(InteractionHolder holder)
     {
         if (holder.GetPossibleInteractionsCount() == 0)
-            return;
+        {
+            Debug.Log("FALSE");
+            return false;
+        }
         if (holder.GetPossibleInteractions()[0].GetTriggerBase().GetTriggerType() == ENUM_TriggerTypes.look)
         {
             holder.Interact(0);
+            Debug.Log("TRUE");
+            return true;
             //Debug.Log("LOOK TRIGGER");
         }
+            Debug.Log("FALSE");
+        return false;
     }
 }
 /* OBSOLETE

@@ -1786,102 +1786,6 @@ MonoBehaviour:
     m_ActionName: Player/Escape[/Keyboard/escape]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7525562061741570630}
-        m_TargetAssemblyTypeName: DialogManager, Assembly-CSharp
-        m_MethodName: Action_Number1
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: 3b1ccf70-b10a-4110-b57e-7522af5dad58
-    m_ActionName: UI/1[/Keyboard/1]
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 7525562061741570630}
-        m_TargetAssemblyTypeName: DialogManager, Assembly-CSharp
-        m_MethodName: Action_Number2
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: e7056776-0cb4-48a2-a0eb-6fece1665baf
-    m_ActionName: UI/2[/Keyboard/2]
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 7525562061741570630}
-        m_TargetAssemblyTypeName: DialogManager, Assembly-CSharp
-        m_MethodName: Action_Number3
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: dc7eae25-a7ca-4ab4-b5f8-f784cf411451
-    m_ActionName: UI/3[/Keyboard/3]
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 7525562061741570630}
-        m_TargetAssemblyTypeName: DialogManager, Assembly-CSharp
-        m_MethodName: Action_Number4
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: afc57359-d71d-48c1-a1eb-b8579e49369b
-    m_ActionName: UI/4[/Keyboard/4]
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 7525562061741570630}
-        m_TargetAssemblyTypeName: DialogManager, Assembly-CSharp
-        m_MethodName: Action_Number5
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: 0a8875f2-3add-47e7-b37b-9ee4410a992c
-    m_ActionName: UI/5[/Keyboard/5]
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 7525562061741570630}
-        m_TargetAssemblyTypeName: DialogManager, Assembly-CSharp
-        m_MethodName: Action_Number6
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: 69cd3c1d-1dde-42ef-a121-438b9c6d5b0d
-    m_ActionName: UI/6[/Keyboard/6]
-  - m_PersistentCalls:
-      m_Calls:
       - m_Target: {fileID: 1806497338207384454}
         m_TargetAssemblyTypeName: DEV_TeleportTool, Assembly-CSharp
         m_MethodName: ActionDEVWindow
@@ -1897,27 +1801,43 @@ MonoBehaviour:
     m_ActionId: ddf19992-8cfc-43f8-be7c-7aeca4a92bf1
     m_ActionName: Player/DEV[/Keyboard/equals]
   - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 9170628902623201512}
-        m_TargetAssemblyTypeName: PlayerInteractRay, Assembly-CSharp
-        m_MethodName: ActionInteract2
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+    m_ActionId: 3b1ccf70-b10a-4110-b57e-7522af5dad58
+    m_ActionName: UI/1[/Keyboard/1]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: e7056776-0cb4-48a2-a0eb-6fece1665baf
+    m_ActionName: UI/2[/Keyboard/2]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: dc7eae25-a7ca-4ab4-b5f8-f784cf411451
+    m_ActionName: UI/3[/Keyboard/3]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: afc57359-d71d-48c1-a1eb-b8579e49369b
+    m_ActionName: UI/4[/Keyboard/4]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 0a8875f2-3add-47e7-b37b-9ee4410a992c
+    m_ActionName: UI/5[/Keyboard/5]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 69cd3c1d-1dde-42ef-a121-438b9c6d5b0d
+    m_ActionName: UI/6[/Keyboard/6]
+  - m_PersistentCalls:
+      m_Calls: []
     m_ActionId: eae345f6-74a8-4228-a8a5-38c24f3e1ee5
-    m_ActionName: Player/Interact1[/Keyboard/f]
+    m_ActionName: Player/Interact2[/Keyboard/f]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: d5de18a0-0ac6-4edf-a7d0-4d0a9a741f3b
+    m_ActionName: Player/InteractLMB[/Mouse/leftButton]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 9170628902623201512}
-        m_TargetAssemblyTypeName: PlayerInteractRay, Assembly-CSharp
-        m_MethodName: ActionLeftMouseButton
-        m_Mode: 0
+      - m_Target: {fileID: 1806497338207384454}
+        m_TargetAssemblyTypeName: DEV_TeleportTool, Assembly-CSharp
+        m_MethodName: TriggerEventFromButton
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1926,8 +1846,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_ActionId: d5de18a0-0ac6-4edf-a7d0-4d0a9a741f3b
-    m_ActionName: Player/Interact2[/Mouse/leftButton]
+    m_ActionId: 5d31cdeb-07f9-4631-bb59-b794d8d7acae
+    m_ActionName: Player/DEV_Z[/Keyboard/z]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: Keyboard&Mouse
   m_DefaultActionMap: Player
@@ -2001,6 +1921,9 @@ MonoBehaviour:
   teleportPositions: []
   UIPrefab: {fileID: 649017783427704486, guid: 2b3fa9d938fbd124ab938dd72d716684, type: 3}
   content: {fileID: 5181279692342626334}
+  buttonTrigger:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &9170628902720905094
 GameObject:
   m_ObjectHideFlags: 0
@@ -2828,17 +2751,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4711890174790223163, guid: 6fc2a17ae2b7e504fbe525baf9b8eb98, type: 3}
   m_PrefabInstance: {fileID: 2816365847248016256}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &7525562061741570630 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5721144937756600774, guid: 6fc2a17ae2b7e504fbe525baf9b8eb98, type: 3}
-  m_PrefabInstance: {fileID: 2816365847248016256}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98e925c51e43c364b8e7148f4058e128, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &7656509208459160201 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5572324241828067593, guid: 6fc2a17ae2b7e504fbe525baf9b8eb98, type: 3}
