@@ -228,6 +228,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7198078874134310644}
   - component: {fileID: 7198078874134310643}
+  - component: {fileID: 7350091142795264879}
   m_Layer: 0
   m_Name: Mask_Sad 1
   m_TagString: Untagged
@@ -274,6 +275,23 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &7350091142795264879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7198078874134310642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3887c50beeb8bd341abb2b00b3d71b8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 7198078874134310643}
+  offsetMinValue: 0
+  offsetMaxValue: 1
+  speedMinValue: 0.85
+  speedMaxValue: 1.15
 --- !u!1 &7198078874265144610
 GameObject:
   m_ObjectHideFlags: 0
@@ -367,7 +385,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 1affd60d79d5b9641851665060fc086c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

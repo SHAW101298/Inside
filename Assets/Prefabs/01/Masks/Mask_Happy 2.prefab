@@ -73,6 +73,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8105594238925577083}
   - component: {fileID: 4856245752120499092}
+  - component: {fileID: 8628823222481284181}
   m_Layer: 0
   m_Name: Mask_Happy 2
   m_TagString: Untagged
@@ -119,6 +120,23 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &8628823222481284181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2609812460002270348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3887c50beeb8bd341abb2b00b3d71b8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 4856245752120499092}
+  offsetMinValue: 0
+  offsetMaxValue: 1
+  speedMinValue: 0.85
+  speedMaxValue: 1.15
 --- !u!1 &3711149014819668677
 GameObject:
   m_ObjectHideFlags: 0
