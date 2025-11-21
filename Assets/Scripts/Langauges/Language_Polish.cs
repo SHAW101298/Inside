@@ -141,9 +141,12 @@ public class Language_Polish : LanguageBase
         text[132] = "skacz";
 
         text[140] = "Czeœæ";
-        text[141] = "Mi³o ciê poznaæ";
-        text[142] = "Móg³bym prosiæ ciê o ma³¹ przys³ugê ?";
-        text[143] = "Zostañ ze mn¹ trochê d³u¿ej";
+        //text[141] = "Mi³o ciê poznaæ";
+        text[141] = "pozwól mi byæ przewodnikiem";
+        //text[142] = "Móg³bym prosiæ ciê o ma³¹ przys³ugê ?";
+        text[142] = "Przestañ siê powstrzymywaæ";
+        //text[143] = "Zostañ ze mn¹ trochê d³u¿ej";
+        text[143] = "Zmia¿d¿ ich koœci pod swoimi stopami";
         text[144] = "WRACAJ TU !!!";
 
         text[150] = "Niebezpieczeñstwo";

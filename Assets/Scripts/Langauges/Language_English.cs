@@ -153,9 +153,12 @@ public class Language_English : LanguageBase
         text[132] = "jump";
 
         text[140] = "Hello";
-        text[141] = "Nice to meet you";
-        text[142] = "Could you do me a little favour ?";
-        text[143] = "Stay with me a bit longer.";
+        //text[141] = "Nice to meet you";
+        text[141] = "let me be your guide.";
+        //text[142] = "Could you do me a little favour ?";
+        text[142] = "Stop HOlDing back";
+        //text[143] = "Stay with me a bit longer.";
+        text[143] = "Crush their bones beneath your feet";
         text[144] = "GET BACK HERE !!!";
 
         text[150] = "Danger";
