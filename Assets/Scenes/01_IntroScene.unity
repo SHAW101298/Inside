@@ -14813,7 +14813,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4700357223894942073, guid: bec01c0fd1fa91b49bc3d7d01646435b, type: 3}
       propertyPath: objectsGroup2.Array.size
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4700357223894942073, guid: bec01c0fd1fa91b49bc3d7d01646435b, type: 3}
       propertyPath: objectsGroup1.Array.data[0]
@@ -14834,15 +14834,15 @@ PrefabInstance:
     - target: {fileID: 4700357223894942073, guid: bec01c0fd1fa91b49bc3d7d01646435b, type: 3}
       propertyPath: objectsGroup2.Array.data[1]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 544997963}
     - target: {fileID: 4700357223894942073, guid: bec01c0fd1fa91b49bc3d7d01646435b, type: 3}
       propertyPath: objectsGroup2.Array.data[2]
       value: 
-      objectReference: {fileID: 544997963}
+      objectReference: {fileID: 1485556397}
     - target: {fileID: 4700357223894942073, guid: bec01c0fd1fa91b49bc3d7d01646435b, type: 3}
       propertyPath: objectsGroup2.Array.data[3]
       value: 
-      objectReference: {fileID: 1485556397}
+      objectReference: {fileID: 80648438}
     - target: {fileID: 4700357223894942073, guid: bec01c0fd1fa91b49bc3d7d01646435b, type: 3}
       propertyPath: objectsGroup2.Array.data[4]
       value: 
@@ -33221,7 +33221,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!82 &899711552
 AudioSource:
   m_ObjectHideFlags: 0
@@ -33235,7 +33235,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 89dbf60eb689fac4288ab4d8666d8f2f, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
-  m_Pitch: 1
+  m_Pitch: 0.8
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -52645,7 +52645,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4700357223894942073, guid: bec01c0fd1fa91b49bc3d7d01646435b, type: 3}
       propertyPath: objectsGroup1.Array.size
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4700357223894942073, guid: bec01c0fd1fa91b49bc3d7d01646435b, type: 3}
       propertyPath: objectsGroup2.Array.size
@@ -52658,11 +52658,11 @@ PrefabInstance:
     - target: {fileID: 4700357223894942073, guid: bec01c0fd1fa91b49bc3d7d01646435b, type: 3}
       propertyPath: objectsGroup1.Array.data[1]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 544997963}
     - target: {fileID: 4700357223894942073, guid: bec01c0fd1fa91b49bc3d7d01646435b, type: 3}
       propertyPath: objectsGroup1.Array.data[2]
       value: 
-      objectReference: {fileID: 544997963}
+      objectReference: {fileID: 1485556397}
     - target: {fileID: 4700357223894942073, guid: bec01c0fd1fa91b49bc3d7d01646435b, type: 3}
       propertyPath: objectsGroup1.Array.data[3]
       value: 
