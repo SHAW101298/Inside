@@ -113,7 +113,6 @@ public class Language_English : LanguageBase
     }
     void FillTextScene1()
     {
-        Debug.LogError("FIx HeadBang Lines");
         // Additional Texts
         text[100] = "Press W to move Forward.";
         text[101] = "? ? ?";

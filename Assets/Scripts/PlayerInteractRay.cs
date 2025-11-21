@@ -100,17 +100,17 @@ public class PlayerInteractRay : MonoBehaviour
     {
         if (holder.GetPossibleInteractionsCount() == 0)
         {
-            Debug.Log("FALSE");
+            //Debug.Log("FALSE");
             return false;
         }
         if (holder.GetPossibleInteractions()[0].GetTriggerBase().GetTriggerType() == ENUM_TriggerTypes.look)
         {
             holder.Interact(0);
-            Debug.Log("TRUE");
+            //Debug.Log("TRUE");
             return true;
             //Debug.Log("LOOK TRIGGER");
         }
-            Debug.Log("FALSE");
+            //Debug.Log("FALSE");
         return false;
     }
 }
