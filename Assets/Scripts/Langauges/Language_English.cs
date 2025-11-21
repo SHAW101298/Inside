@@ -197,8 +197,12 @@ public class Language_English : LanguageBase
         text[191] = "ME ?!";
         text[192] = "To even have the aUDacItY !";
         text[193] = "Interesting . . .";
-        // Dig through ditches
-        // Burn through the witches
+
+        text[195] = "Just of what am i so afraid ?";
+        text[196] = "Life Goes by. Just deal with it";
+        text[197] = "Things happen, but its just a small setback";
+        text[198] = "Life is not just a small setback.";
+        text[199] = "Life is just a stepping stone.";
 
         text[200] = "There is a name engraved on each of the blades.";
         text[201] = "Break  ( E )";
