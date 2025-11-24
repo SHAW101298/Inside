@@ -111,7 +111,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultInteractionKey: 0
+  defaultInteractionButton: 0
   destroyObjectOnInteraction: 0
+  disableOnInteraction: 1
   trigger: {fileID: 1838755724791927830}
   info: {fileID: 1306867803348150186}
 --- !u!114 &1306867803348150186
@@ -154,7 +156,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  destroyTriggerOnActivation: 1
+  destroyTriggerOnActivation: 0
   disableTriggerOnActivation: 0
   objectsGroup1: []
   objectsGroup2: []
@@ -393,8 +395,6 @@ MonoBehaviour:
   animationPlayer: {fileID: 2796457741310614874}
   soundPlayer: {fileID: 4924084898784869551}
   sourceController: {fileID: 3174889353353623356}
-  killTriggerParent: {fileID: 0}
-  killTrigger: {fileID: 0}
   killInteraction: {fileID: 3955226738626098465}
 --- !u!114 &4924084898784869551
 MonoBehaviour:
@@ -700,7 +700,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultInteractionKey: 1
+  defaultInteractionButton: 0
   destroyObjectOnInteraction: 0
+  disableOnInteraction: 1
   trigger: {fileID: 8571150519590380158}
   info: {fileID: 6890911729618231328}
 --- !u!114 &6890911729618231328
