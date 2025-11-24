@@ -14,17 +14,12 @@ public class LevelScript_02 : MonoBehaviour
     }
 #endregion
     [Header("Phase 1")]
-    [SerializeField] bool askedForDirections1;
-    [SerializeField] GameObject baseInteractionsPhase1;
-    [SerializeField] GameObject phase1SkippedInteraction;
     [SerializeField] List<GameObject> objectsAfterPlacingSpark;
     [SerializeField] List<GameObject> objectsBeforePlacingSpark;
     [Header("Phase 2")]
-    [SerializeField] bool askedForAdvice2;
-    [SerializeField] GameObject baseInteractionsPhase2;
-    [SerializeField] GameObject phase2SkippedInteraction;
     [SerializeField] int insultCrowsTalkedTo;
-    [SerializeField] GameObject knifeAllowingInteraction;
+    [SerializeField] DialogOption knifeAllowingInteraction;
+    [SerializeField] DialogOption clueInteraction; 
     [Header("Phase 3")]
     [SerializeField] Animator characterAnim;
     [SerializeField] List<GameObject> bodyBones;
@@ -43,21 +38,8 @@ public class LevelScript_02 : MonoBehaviour
     [SerializeField] SimpleTrigger doorCloseInteraction;
     [SerializeField] RepeatedSoundController knockingSound;
 
-    public void AskedForDirectionsToSpark()
-    {
-        askedForDirections1 = true;
-    }
-    public void AskedForAdviceOnWhatToDo()
-    {
-        askedForAdvice2 = true;
-    }
     public void PlacedASpark()
     {
-        if (askedForDirections1 == false)
-        {
-            phase1SkippedInteraction.SetActive(true);
-            baseInteractionsPhase1.SetActive(false);
-        }
         foreach(GameObject obj in objectsBeforePlacingSpark)
         {
             obj.SetActive(false);
@@ -70,33 +52,41 @@ public class LevelScript_02 : MonoBehaviour
     public void TalkedWithInsultingCrow()
     {
         insultCrowsTalkedTo++;
-        
 
-        if (insultCrowsTalkedTo >= 3)
+        if (insultCrowsTalkedTo == 3)
         {
-            if (askedForAdvice2 == false)
+            clueInteraction.DisableOption();
+            knifeAllowingInteraction.EnableOption();
+        }
+
+
+            /*
+            if (insultCrowsTalkedTo >= 3)
             {
-
-                if (baseInteractionsPhase2 == null)
-                    return;
-                if (phase2SkippedInteraction == null)
-                    return;
-
-                phase2SkippedInteraction.SetActive(true);
-                baseInteractionsPhase2.SetActive(false);
-
-                
-                if (phase1SkippedInteraction != null)
+                if (askedForAdvice2 == false)
                 {
-                    phase1SkippedInteraction.SetActive(false);
+
+                    if (baseInteractionsPhase2 == null)
+                        return;
+                    if (phase2SkippedInteraction == null)
+                        return;
+
+                    phase2SkippedInteraction.SetActive(true);
+                    baseInteractionsPhase2.SetActive(false);
+
+
+                    if (phase1SkippedInteraction != null)
+                    {
+                        phase1SkippedInteraction.SetActive(false);
+                    }
+                }
+                else
+                {
+                    baseInteractionsPhase2.SetActive(true);
                 }
             }
-            else
-            {
-                baseInteractionsPhase2.SetActive(true);
-            }
+            */
         }
-    }
     public void KilledACrow()
     {
         bodyBones[lastBone].transform.localScale = Vector3.zero;

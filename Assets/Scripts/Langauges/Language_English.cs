@@ -651,7 +651,7 @@ public class Language_English : LanguageBase
         text[262] = "First . . . Have you tried listening to them at least ?";
         text[263] = "Who knows, maybe you will learn something useful ?";
 
-        text[270] = "And ? Did you learn anything of value ?";
+        text[270] = "And ? Did you hear anything of value ?";
         text[271] = "Not much i guess";
         text[272] = "You know what they say.";
         text[273] = "There will be no change when the environment stays the same.";
