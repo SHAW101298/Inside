@@ -742,8 +742,10 @@ W dzienniku umieszczone bêd¹ znalezione kartki oraz wa¿ne wpisy na temat histori
  */
 /* Mo¿liwe zmiany w pierwszej scenie
 Jakieœ zniszczone obiekty w Chains Zone
-Oczy od pocz¹tku widoczne w Chair Zone
+    Oczy od pocz¹tku widoczne w Chair Zone
 Co zrobiæ z headbang ? 
 Jakieœ nieudane rzeŸby na ma³ych filarach, coœ niedokoñczonego, 
-Pionowa œciana w któr¹ bije g³ow¹
+    Pionowa œciana w któr¹ bije g³ow¹
+Inne teksty lataj¹ce po ekranie w chain zone ?
+Innte teksty latajaæe po ekranie w mask zone ?
  */
