@@ -3,42 +3,24 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-[System.Serializable]
-public class DialogOption
-{
-    [SerializeField] int lang_Index;
-    [SerializeField] DialogPrompt prompt;
-    public bool removeWhenChoosen;
-    public SimpleTrigger trigger;
-    public int GetLangIndex()
-    {
-        return lang_Index;
-    }
-    public DialogPrompt GetDialogPrompt()
-    {
-        return prompt;
-    }
-
-}
-
 public class DialogChoice : MonoBehaviour
 {
     public List<DialogOption> options;
+    public List<DialogOption> disabledOptions;
     public UnityEvent EVENT_EmptyDialogOptions;
+    public UnityEvent EVENT_DialogChoiceMade;
 
     public void ChoosenOption(int x)
     {
         Debug.Log("Choosen option " + x);
         if (options[x].trigger != null)
         {
-            options[x].trigger.TriggerInteraction();
+            options[x].OptionChoosen();
         }
-        if (options[x].removeWhenChoosen == true)
-        {
-            options.RemoveAt(x);
-        }
+        
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+        EVENT_DialogChoiceMade.Invoke();
 
         if(options.Count == 0)
         {
@@ -58,6 +40,30 @@ public class DialogChoice : MonoBehaviour
     public void UnPauseShownText()
     {
         DialogManager.Instance.UnPauseWaitTimer();
+    }
+    public void EnableDialogOption(DialogOption option)
+    {
+        // prevents duplicates
+        if (options.Contains(option))
+        {
+            return;
+        }
+        disabledOptions.Remove(option);
+        options.Add(option);
+    }
+    public void DisableDialogOption(DialogOption option)
+    {
+        // prevents duplicates
+        if(disabledOptions.Contains(option))
+        {
+            return;
+        }
+        options.Remove(option);
+        disabledOptions.Add(option);
+    }
+    public void HideChoiceOptions()
+    {
+        DialogManager.Instance.HideDialogWindow();
     }
 
 }

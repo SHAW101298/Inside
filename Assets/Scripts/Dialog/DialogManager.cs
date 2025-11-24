@@ -185,7 +185,12 @@ public class DialogManager : MonoBehaviour
         currentChoice.ChoosenOption(x);
         choiceWasAlreadyMade = true;
     }
+    public void HideDialogWindow()
+    {
+        dialogOptionsWindow.SetActive(false);
+        choiceWasAlreadyMade = true;
 
+    }
     private void Update()
     {
         if(animateText == true)
