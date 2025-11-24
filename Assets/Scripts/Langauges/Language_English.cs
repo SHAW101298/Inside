@@ -102,6 +102,7 @@ public class Language_English : LanguageBase
         text[62] = "Take";
         text[63] = "Drop";
         text[64] = "Put Back";
+        text[65] = "Place";
 
 
         // LEVEL NAMES
@@ -265,14 +266,13 @@ public class Language_English : LanguageBase
 
 
         // On Interactions
-        text[160] = "Place - Spark  ( E )";
-        text[161] = "Take - Spark  ( E )";
+        text[160] = "Place spark";
+        text[161] = "Take spark";
         text[162] = "Held together by what exactly ?";
         text[163] = "As if . . . the time stopped";
         text[164] = "something is missing here";
         text[165] = "No one knows what's on the other side";
-        text[166] = "Take - Dagger  ( E )";
-
+        text[166] = "Take Dagger";
 
         // Lore Drop
         text[170] = "A silent world.";
@@ -766,5 +766,7 @@ Innte teksty latajaæe po ekranie w mask zone ?
  */
 
 /* Dialog na lore drop wprowadziæ
-
+ROad crow no crow LEAVE IT
+Motionless pillars fix event
+hole disable interaction on crow
  */
