@@ -197,14 +197,29 @@ public class Language_English : LanguageBase
         text[192] = "To even have the aUDacItY !";
         text[193] = "Interesting . . .";
 
-        text[195] = "Just of what am i so afraid ?";
+        text[195] = "Just what am i so afraid of?";
         text[196] = "Life Goes by. Just deal with it";
-        text[197] = "Things happen, but its just a small setback";
-        text[198] = "Life is not just a small setback.";
+        text[197] = "Things happen. Move.";
+        text[198] = "got stuck. without options.";
         text[199] = "Life is just a stepping stone.";
 
         text[200] = "There is a name engraved on each of the blades.";
         text[201] = "Break  ( E )";
+
+        // Mask Erratic Words
+        text[210] = "Join us";
+        text[211] = "Dont leave";
+        text[212] = "Dont run";
+        text[213] = "Smile";
+        text[214] = "Hide";
+        text[215] = "Change";
+        text[216] = "Enjoy";
+        text[217] = "Faster";
+        text[218] = "Think";
+        text[219] = "Decide";
+
+        // Chair Erratic Words
+        text[230] = "To be implemented";
     }
     void FillTextScene2()
     {
@@ -748,4 +763,8 @@ Jakieœ nieudane rzeŸby na ma³ych filarach, coœ niedokoñczonego,
     Pionowa œciana w któr¹ bije g³ow¹
 Inne teksty lataj¹ce po ekranie w chain zone ?
 Innte teksty latajaæe po ekranie w mask zone ?
+ */
+
+/* Dialog na lore drop wprowadziæ
+
  */
