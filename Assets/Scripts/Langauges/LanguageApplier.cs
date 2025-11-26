@@ -26,4 +26,9 @@ public class LanguageApplier : MonoBehaviour
     {
         SetAccordingToLanguage();
     }
+    public void ChangeIndexTo(int val)
+    {
+        index = val;
+        SetAccordingToLanguage();
+    }
 }
