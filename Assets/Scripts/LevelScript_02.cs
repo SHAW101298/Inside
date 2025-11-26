@@ -18,8 +18,8 @@ public class LevelScript_02 : MonoBehaviour
     [SerializeField] List<GameObject> objectsBeforePlacingSpark;
     [Header("Phase 2")]
     [SerializeField] int insultCrowsTalkedTo;
-    [SerializeField] DialogOption knifeAllowingInteraction;
-    [SerializeField] DialogOption clueInteraction; 
+    [SerializeField] GameObject phase2Interaction;
+    [SerializeField] GameObject knifeAllowingInteraction;
     [Header("Phase 3")]
     [SerializeField] Animator characterAnim;
     [SerializeField] List<GameObject> bodyBones;
@@ -55,8 +55,8 @@ public class LevelScript_02 : MonoBehaviour
 
         if (insultCrowsTalkedTo == 3)
         {
-            clueInteraction.DisableOption();
-            knifeAllowingInteraction.EnableOption();
+            phase2Interaction.SetActive(false);
+            knifeAllowingInteraction.SetActive(true);
         }
 
 

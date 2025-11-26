@@ -70,6 +70,12 @@ public class InteractionHolder : MonoBehaviour
     }
     public void DisableInteraction(Interaction inter)
     {
+        if (disabledInteractions.Contains(inter))
+        {
+            MarkAsDirty();
+            return;
+        }
+
         possibleInteractions.Remove(inter);
         disabledInteractions.Add(inter);
 
@@ -79,6 +85,12 @@ public class InteractionHolder : MonoBehaviour
     {
         //Debug.Log("Amount of interactions is =   " + possibleInteractions.Count + "  /  " + disabledInteractions.Count);
         //Debug.Log("Enabling Interaction = " + inter.gameObject);
+        if(possibleInteractions.Contains(inter))
+        {
+            MarkAsDirty();
+            return;
+        }
+
         disabledInteractions.Remove(inter);
         possibleInteractions.Add(inter);
 

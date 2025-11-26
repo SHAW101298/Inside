@@ -618,7 +618,7 @@ public class Language_English : LanguageBase
 
         text[224] = "Welcome.";
         text[225] = "The world before your eyes is the one, some might say is beyond repair.";
-        text[226] = "The world doomed to fail.";
+        text[226] = "A world doomed to fail.";
         text[227] = "And yet. Here you stand. ";
         text[228] = "Trying to make things right. Trying to fix this shithole. ";
         text[229] = "Good Luck. Because i couldn't.";
@@ -645,7 +645,7 @@ public class Language_English : LanguageBase
         text[256] = "Now you can hear them clearly, right ?";
         text[257] = "Ohhh, how i missed the silence.";
 
-        text[260] = "Now what ?";
+        text[260] = "Now what ?";// Dialog Option
 
         text[261] = "If you have no idea what to do next, i can try to help you.";
         text[262] = "First . . . Have you tried listening to them at least ?";
@@ -1038,8 +1038,15 @@ Inne teksty lataj¹ce po ekranie w chain zone ?
 Innte teksty latajaæe po ekranie w mask zone ?
  */
 
-/* Dialog na lore drop wprowadziæ
+/* 
 ROad crow no crow LEAVE IT
 Motionless pillars fix event
 hole disable interaction on crow
+ */
+
+/*
+ Lore drop w formie znajdywalnych kawa³ków tekstu, czynnoœci wykonanych, akcji w œwiecie.
+Rozci¹gaæ siê to bêdzie przez kilka scen.
+Ostrza w intro bêdzie mo¿na wzi¹æ.
+Roslina bêdzie dawa³a jeden tekst do lore
  */
