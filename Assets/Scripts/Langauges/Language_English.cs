@@ -111,6 +111,7 @@ public class Language_English : LanguageBase
         text[71] = "1-2 The Stillness";
         text[72] = "1-3 The Unknown";
 
+        text[98] = "    ";
         text[99] = "You're just an unexpected guest inside someones mind. Enjoy the journey and watch the story unfold.";
     }
     void FillTextScene1()
