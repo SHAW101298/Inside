@@ -31,4 +31,8 @@ public class LanguageApplier : MonoBehaviour
         index = val;
         SetAccordingToLanguage();
     }
+    public int GetIndex()
+    {
+        return index;
+    }
 }
