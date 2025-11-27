@@ -7,13 +7,12 @@ public class Note : MonoBehaviour
 {
     [SerializeField] List<TMP_Text> textFields;
     List<LanguageApplier> lang;
-    [SerializeField] bool setIndexOnStart;
     [SerializeField] int startIndex;
+    List<int> revealedLangIndex;
 
     private void Start()
     {
         GetLangAppliers();
-        SetIndexes();
     }
 
     public void ChangeLangData(int line, int newIndex)
@@ -24,17 +23,6 @@ public class Note : MonoBehaviour
     {
         return lang[line].GetIndex();
     }
-    public void SetIndexes()
-    {
-        if (setIndexOnStart == false)
-            return;
-        int index = startIndex;
-        for(int i = 0; i < lang.Count; i++)
-        {
-            lang[i].ChangeIndexTo(index);
-            index++;
-        }
-    }
     void GetLangAppliers()
     {
         lang = new List<LanguageApplier>();
@@ -42,6 +30,11 @@ public class Note : MonoBehaviour
         {
             lang.Add(textFields[i].GetComponent<LanguageApplier>());
         }
+    }
+    public void RevealNoteLine(int line)
+    {
+        int x = startIndex + line;
+        lang[line].ChangeIndexTo(x);
     }
 
 }

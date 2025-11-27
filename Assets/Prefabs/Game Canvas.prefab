@@ -2875,7 +2875,7 @@ MonoBehaviour:
   - {fileID: 5090813523543290464}
   - {fileID: 2023242445739245128}
   - {fileID: 2789238593247437777}
-  setIndexOnStart: 1
+  setIndexOnStart: 0
   startIndex: 216
 --- !u!1 &2030241595717530518
 GameObject:

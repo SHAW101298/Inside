@@ -804,6 +804,10 @@ public class Language_English : LanguageBase
 
 
     }
+    void FillNotes()
+    {
+        
+    }
 }
 
 /* Lore Lines
