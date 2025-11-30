@@ -14,6 +14,7 @@ public class Language_English : LanguageBase
 {
     public static Language_English Instance;
     public string[] text;
+    string[] loadedText;
     public int levelID;
 
     public override string GetText(int index)
@@ -40,6 +41,7 @@ public class Language_English : LanguageBase
     void LoadCorrectTexts()
     {
         FillTextBase();
+        FillNotes();
         switch(levelID)
         {
             case 1:
@@ -57,172 +59,185 @@ public class Language_English : LanguageBase
     }
     void FillTextBase()
     {
-        // UI TEXT
-        text[0] = "NO TEXT";
-        text[1] = "Start Game";
-        text[2] = "How To Play";
-        text[3] = "Options";
-        text[4] = "Exit Game";
-        text[5] = "Exit Game ?";
-        text[6] = "Yes";
-        text[7] = "No";
-        text[8] = "Music";
-        text[9] = "Sounds";
-        text[10] = "Full Screen";
-        text[11] = "Resolution";
-        text[12] = "FPS Cap";
-        text[13] = "Vsync";
-        text[14] = "Return";
-        text[15] = "Save and Exit";
-        text[16] = "Return without Saving";
-        text[17] = "Controls";
-        text[18] = "Movement";
-        text[19] = "Jump";
-        text[20] = "Interact";
-        text[21] = "Run";
-        text[22] = "Continue";
-        text[23] = "To Menu";
-        text[24] = "Language";
-        text[25] = "Choose Chapter";
+        // UI Text
+        loadedText = new string[100];
+        loadedText[0] = "NO Text";
+        loadedText[1] = "Start Game";
+        loadedText[2] = "How To Play";
+        loadedText[3] = "Options";
+        loadedText[4] = "Exit Game";
+        loadedText[5] = "Exit Game ?";
+        loadedText[6] = "Yes";
+        loadedText[7] = "No";
+        loadedText[8] = "Music";
+        loadedText[9] = "Sounds";
+        loadedText[10] = "Full Screen";
+        loadedText[11] = "Resolution";
+        loadedText[12] = "FPS Cap";
+        loadedText[13] = "Vsync";
+        loadedText[14] = "Return";
+        loadedText[15] = "Save and Exit";
+        loadedText[16] = "Return without Saving";
+        loadedText[17] = "Controls";
+        loadedText[18] = "Movement";
+        loadedText[19] = "Jump";
+        loadedText[20] = "Interact";
+        loadedText[21] = "Run";
+        loadedText[22] = "Continue";
+        loadedText[23] = "To Menu";
+        loadedText[24] = "Language";
+        loadedText[25] = "Choose Chapter";
 
 
-        // INTERACTION TEXT
-        text[50] = "Touch";
-        text[51] = "Climb";
-        text[52] = "Look";
-        text[53] = "????";
-        text[54] = "Place";
-        text[55] = "Listen";
-        text[56] = "Sit";
-        text[57] = "Stand Up";
-        text[58] = "Open";
-        text[59] = "Close";
-        text[60] = "Kill";
-        text[61] = "Read";
-        text[62] = "Take";
-        text[63] = "Drop";
-        text[64] = "Put Back";
-        text[65] = "Place";
-        text[66] = "Talk";
-        text[67] = "Leave";
+        // INTERACTION Text
+        loadedText[50] = "Touch";
+        loadedText[51] = "Climb";
+        loadedText[52] = "Look";
+        loadedText[53] = "????";
+        loadedText[54] = "Place";
+        loadedText[55] = "Listen";
+        loadedText[56] = "Sit";
+        loadedText[57] = "Stand Up";
+        loadedText[58] = "Open";
+        loadedText[59] = "Close";
+        loadedText[60] = "Kill";
+        loadedText[61] = "Read";
+        loadedText[62] = "Take";
+        loadedText[63] = "Drop";
+        loadedText[64] = "Put Back";
+        loadedText[65] = "Place";
+        loadedText[66] = "Talk";
+        loadedText[67] = "Leave";
 
         // LEVEL NAMES
-        text[70] = "1-1 The Pit";
-        text[71] = "1-2 The Stillness";
-        text[72] = "1-3 The Unknown";
+        loadedText[70] = "1-1 The Pit";
+        loadedText[71] = "1-2 The Stillness";
+        loadedText[72] = "1-3 The Unknown";
 
-        text[98] = "    ";
-        text[99] = "You're just an unexpected guest inside someones mind. Enjoy the journey and watch the story unfold.";
+        loadedText[98] = "    ";
+        loadedText[99] = "You're just an unexpected guest inside someones mind. Enjoy the journey and watch the story unfold.";
+
+        for (int i = 0; i < 100; i++)
+        {
+            text[i] = loadedText[i];
+        }
     }
     void FillTextScene1()
     {
+        loadedText = new string[200];
         // Additional Texts
-        text[100] = "Press W to move Forward.";
-        text[101] = "? ? ?";
+        loadedText[0] = "Press W to move Forward.";
+        loadedText[1] = "? ? ?";
 
 
         // Erratic Thoughts Intro Scene
-        text[102] = "run";
-        text[103] = "join";
-        text[104] = "no time";
-        text[105] = "escape";
-        text[106] = "they are coming";
-        text[107] = "paralyzed";
-        text[108] = "help";
-        text[109] = "weak";
-        text[110] = "don't go";
-        text[111] = "give up";
-        text[112] = "i'm afraid";
-        text[113] = "can't take it anymore";
-        text[114] = "get lost";
-        text[115] = "disappear";
-        text[116] = "so cold";
-        text[117] = "it's too much";
-        text[118] = "no hope";
-        text[119] = "faster";
-        text[120] = "stay";
-        text[121] = "lose";
-        text[122] = "kill";
-        text[123] = "die";
-        text[124] = "cut";
-        text[125] = "memories";
-        text[126] = "remember";
-        text[127] = "hide";
-        text[128] = "avoid";
-        text[129] = "cornered";
-        text[130] = "defect";
-        text[131] = "meaningless";
-        text[132] = "jump";
+        loadedText[2] = "run";
+        loadedText[3] = "join";
+        loadedText[4] = "no time";
+        loadedText[5] = "escape";
+        loadedText[6] = "they are coming";
+        loadedText[7] = "paralyzed";
+        loadedText[8] = "help";
+        loadedText[9] = "weak";
+        loadedText[10] = "don't go";
+        loadedText[11] = "give up";
+        loadedText[12] = "i'm afraid";
+        loadedText[13] = "can't take it anymore";
+        loadedText[14] = "get lost";
+        loadedText[15] = "disappear";
+        loadedText[16] = "so cold";
+        loadedText[17] = "it's too much";
+        loadedText[18] = "no hope";
+        loadedText[19] = "faster";
+        loadedText[20] = "stay";
+        loadedText[21] = "lose";
+        loadedText[22] = "kill";
+        loadedText[23] = "die";
+        loadedText[24] = "cut";
+        loadedText[25] = "memories";
+        loadedText[26] = "remember";
+        loadedText[27] = "hide";
+        loadedText[28] = "avoid";
+        loadedText[29] = "cornered";
+        loadedText[30] = "defect";
+        loadedText[31] = "meaningless";
+        loadedText[32] = "jump";
 
-        text[140] = "Hello";
-        //text[141] = "Nice to meet you";
-        text[141] = "let me be your guide.";
-        //text[142] = "Could you do me a little favour ?";
-        text[142] = "Stop HOlDing back";
-        //text[143] = "Stay with me a bit longer.";
-        text[143] = "Crush their bones beneath your feet";
-        text[144] = "GET BACK HERE !!!";
+        loadedText[40] = "Hello";
+        //loadedText[141] = "Nice to meet you";
+        loadedText[41] = "let me be your guide.";
+        //loadedText[142] = "Could you do me a little favour ?";
+        loadedText[42] = "Stop HOlDing back";
+        //loadedText[143] = "Stay with me a bit longer.";
+        loadedText[43] = "Crush their bones beneath your feet";
+        loadedText[44] = "GET BACK HERE !!!";
 
-        text[150] = "Danger";
-        text[151] = "Suppress";
-        text[152] = "Control";
+        loadedText[50] = "Danger";
+        loadedText[51] = "Suppress";
+        loadedText[52] = "Control";
 
-        text[160] = "No";
-        text[161] = "Try";
-        text[162] = "once more";
-        text[163] = "im done";
+        loadedText[60] = "No";
+        loadedText[61] = "Try";
+        loadedText[62] = "once more";
+        loadedText[63] = "im done";
 
 
         // Just of what am i so afraid ?
-        text[170] = "Just what am i afraid of ?!";
-        text[171] = "Life passing me by?";
-        text[172] = "This is all just a breeze";
+        loadedText[70] = "Just what am i afraid of ?!";
+        loadedText[71] = "Life passing me by?";
+        loadedText[72] = "This is all just a breeze";
 
         // Life Goes by, just deal with it
-        text[175] = "The river of time dictates the road we walk on";
-        text[176] = "All we can do is follow along.";
-        text[177] = "Follow ... And belive there is something more.";
+        loadedText[75] = "The river of time dictates the road we walk on";
+        loadedText[76] = "All we can do is follow along.";
+        loadedText[77] = "Follow ... And belive there is something more.";
 
         // Things happen, but its just a small setback
-        text[180] = "Some things are set in stone.";
-        text[181] = "But we are the ones thrown into the water.";
-        text[182] = "There are still things that we can decide for ourselves.";
+        loadedText[80] = "Some things are set in stone.";
+        loadedText[81] = "But we are the ones thrown into the water.";
+        loadedText[82] = "There are still things that we can decide for ourselves.";
 
         // Life is no small setback. It is a setback
-        text[185] = "I don't know where to put my trust anymore.";
-        text[186] = "Everything i believed in fell apart.";
-        text[187] = "Or maybe it fell into the right place ?";
-        text[188] = "Like the puzzle pieces created for such an occasion.";
+        loadedText[85] = "I don't know where to put my trust anymore.";
+        loadedText[86] = "Everything i believed in fell apart.";
+        loadedText[87] = "Or maybe it fell into the right place ?";
+        loadedText[88] = "Like the puzzle pieces created for such an occasion.";
 
         // Life is but a stepping stone
-        text[190] = "sOMeOnE daReS tO TrY me ?";
-        text[191] = "ME ?!";
-        text[192] = "To even have the aUDacItY !";
-        text[193] = "Interesting . . .";
+        loadedText[90] = "sOMeOnE daReS tO TrY me ?";
+        loadedText[91] = "ME ?!";
+        loadedText[92] = "To even have the aUDacItY !";
+        loadedText[93] = "Interesting . . .";
 
-        text[195] = "Just what am i so afraid of?";
-        text[196] = "Life Goes by. Just deal with it";
-        text[197] = "Things happen. Move.";
-        text[198] = "got stuck. without options.";
-        text[199] = "Life is just a stepping stone.";
+        loadedText[95] = "Just what am i so afraid of?";
+        loadedText[96] = "Life Goes by. Just deal with it";
+        loadedText[97] = "Things happen. Move.";
+        loadedText[98] = "got stuck. without options.";
+        loadedText[99] = "Life is just a stepping stone.";
 
-        text[200] = "There is a name engraved on each of the blades.";
-        text[201] = "Break  ( E )";
+        loadedText[100] = "There is a name engraved on each of the blades.";
+        loadedText[101] = "Break  ( E )";
 
         // Mask Erratic Words
-        text[210] = "Join us";
-        text[211] = "Dont leave";
-        text[212] = "Dont run";
-        text[213] = "Smile";
-        text[214] = "Hide";
-        text[215] = "Change";
-        text[216] = "Enjoy";
-        text[217] = "Faster";
-        text[218] = "Think";
-        text[219] = "Decide";
+        loadedText[110] = "Join us";
+        loadedText[111] = "Dont leave";
+        loadedText[112] = "Dont run";
+        loadedText[113] = "Smile";
+        loadedText[114] = "Hide";
+        loadedText[115] = "Change";
+        loadedText[116] = "Enjoy";
+        loadedText[117] = "Faster";
+        loadedText[118] = "Think";
+        loadedText[119] = "Decide";
 
         // Chair Erratic Words
-        text[230] = "To be implemented";
+        loadedText[130] = "To be implemented";
+
+
+        for (int i = 0; i < 200; i++)
+        {
+            text[i+300] = loadedText[i];
+        }
     }
     void FillTextScene2()
     {
@@ -659,6 +674,12 @@ public class Language_English : LanguageBase
         text[274] = "      ";
         text[275] = "You may find some use for this i think."; // Hands a knife to the player
 
+
+        for (int i = 0; i < 200; i++)
+        {
+            text[i + 300] = loadedText[i];
+        }
+
         /*
         // Past Self continued Talk
         text[209] = "Been busy, huh ?";
@@ -806,7 +827,36 @@ public class Language_English : LanguageBase
     }
     void FillNotes()
     {
-        
+        loadedText = new string[200];
+        // 200 linijek na Notatki wystarczyæ powinno
+        // Note Lore Drop
+        loadedText[0] = "A silent world.";
+        loadedText[1] = "A world where things just stopped.";
+        loadedText[2] = "Not because of some cataclysm.";
+        loadedText[3] = "Not because of abandonment.";
+        loadedText[4] = "But because of the damage.";
+        loadedText[5] = "Damage dealt by others";
+        loadedText[6] = "things not considered properly";
+        loadedText[7] = "decisions made by people who won't give second thought a chance";
+        loadedText[8] = "actions made without a feeling of consequence.";
+        loadedText[9] = "The world before your eyes is the one, some might say is beyond repair.";
+        loadedText[10] = "A world doomed to fail.";
+        loadedText[11] = "And yet. Here you stand. ";
+        loadedText[12] = "Trying to make things right. Trying to fix this shithole. ";
+        loadedText[13] = "A world where things just stay.";
+        loadedText[14] = "Just the way they were left.";
+        loadedText[15] = "For someone to pickup. Just for a convenience.";
+        loadedText[16] = "Like a random shiny peeble on a road.";
+        loadedText[17] = "A plant that hasn't been watered for god knows how many days just begging for some rain.";
+        loadedText[18] = "Just trying to survive, trying to be itself.";
+        loadedText[19] = "But there is no rain coming.";
+        loadedText[20] = "All that is left is just waiting for the time to come. ";
+        loadedText[21] = "All the hope you may have had is lost.";
+
+        for (int i = 0; i < 200; i++)
+        {
+            text[i+100] = loadedText[i];
+        }
     }
 }
 

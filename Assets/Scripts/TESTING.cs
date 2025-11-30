@@ -7,6 +7,7 @@ public class TESTING : MonoBehaviour
     public bool runAOO;
     public bool runBOO;
     public bool runCOO;
+    public bool runDOO;
     [Header("Game Progression")]
     public SimpleTrigger missingPiece;
     public SimpleTrigger waitingAltar;
@@ -36,7 +37,12 @@ public class TESTING : MonoBehaviour
     [Header("COO")]
     public float tValue;
     public float yResult;
-
+    [Header("DOO")]
+    public string[] mainarray;
+    public string[] array1;
+    public string[] array2;
+    public int array1RequiredSpace;
+    public int array2RequiredSpace;
 
     void Update()
     {
@@ -44,6 +50,7 @@ public class TESTING : MonoBehaviour
         AOO();
         BOO();
         COO();
+        DOO();
     }
     void AOO()
     {
@@ -74,6 +81,31 @@ public class TESTING : MonoBehaviour
         if (runCOO == false)
             return;
         yResult = tValue*(-tValue + 4);
+    }
+    void DOO()
+    {
+        if(runDOO == false)
+        {
+            return;
+        }
+        runDOO = false;
+
+        Debug.Log("array1 length = " + array1.Length);
+        Debug.Log("array2 length = " + array2.Length);
+
+        int reqSize = array1RequiredSpace + array2RequiredSpace;
+        mainarray = new string[reqSize];
+
+        for(int i = 0; i < array1RequiredSpace; i++)
+        {
+            mainarray[i] = array1[i];
+        }
+        for (int i = 0; i < array2RequiredSpace; i++)
+        {
+            mainarray[i + array1RequiredSpace] = array2[i];
+        }
+
+        
     }
 
     void GameProgression()

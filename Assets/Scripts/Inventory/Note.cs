@@ -8,9 +8,8 @@ public class Note : MonoBehaviour
     [SerializeField] List<TMP_Text> textFields;
     List<LanguageApplier> lang;
     [SerializeField] int startIndex;
-    List<int> revealedLangIndex;
 
-    private void Start()
+    private void Awake()
     {
         GetLangAppliers();
     }
@@ -25,6 +24,7 @@ public class Note : MonoBehaviour
     }
     void GetLangAppliers()
     {
+        Debug.Log("Getting Lang Appliers");
         lang = new List<LanguageApplier>();
         for(int i = 0; i< textFields.Count; i++)
         {
@@ -34,6 +34,9 @@ public class Note : MonoBehaviour
     public void RevealNoteLine(int line)
     {
         int x = startIndex + line;
+        Debug.Log("x = " + x + "  ||  Line = " + line);
+        Debug.Log("Error because Note is not in active state. Awake not called yet");
+        Debug.Log("lang count = " + lang.Count);
         lang[line].ChangeIndexTo(x);
     }
 

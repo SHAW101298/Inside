@@ -2875,7 +2875,6 @@ MonoBehaviour:
   - {fileID: 5090813523543290464}
   - {fileID: 2023242445739245128}
   - {fileID: 2789238593247437777}
-  setIndexOnStart: 0
   startIndex: 216
 --- !u!1 &2030241595717530518
 GameObject:
@@ -3867,7 +3866,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 1600, y: 900}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2956392051110878642
 GameObject:
