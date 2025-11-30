@@ -1,18 +1,44 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class ItemsData : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    #region
+    public static ItemsData Instance;
+    private void Awake()
     {
-        
+        DontDestroyOnLoad(this);
+        if (Instance != this && Instance != null)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            Instance = this;
+        }
     }
+#endregion
+    public List<Item> itemsAvailability;
 
-    // Update is called once per frame
-    void Update()
+    public void SyncPersistentData()
     {
-        
+        for(int i = 0; i < itemsAvailability.Count; i++)
+        {
+            ItemsManager.Instance.items[i].isOwned = itemsAvailability[i].isOwned;
+        }
+        /*
+        for (int i = 0; i < notes.Count; i++)
+        {
+            for (int j = 0; j < notes[i].isRevealed.Count; j++)
+            {
+                if (notes[i].isRevealed[j] == true)
+                {
+                    NotesManager.Instance.RevealNoteData(i, j);
+                }
+            }
+        }
+        */
     }
 }

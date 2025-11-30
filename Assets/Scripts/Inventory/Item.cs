@@ -8,5 +8,5 @@ public class Item : MonoBehaviour
     public string itemName;
     public string description;
     public int iconID;
-
+    public bool isOwned;
 }

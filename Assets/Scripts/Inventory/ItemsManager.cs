@@ -1,18 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class ItemsManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    #region
+    public static ItemsManager Instance;
+    private void Awake()
     {
-        
+        Instance = this;
     }
+#endregion
 
-    // Update is called once per frame
-    void Update()
+    public List<Item> items;
+
+    private void Start()
     {
-        
+        RequestSync();
     }
+    public void RequestSync()
+    {
+
+    }
+    
 }
