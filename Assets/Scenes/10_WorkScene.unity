@@ -672,7 +672,7 @@ MonoBehaviour:
   - 
   - 
   - 
-  levelID: 2
+  levelID: 1
 --- !u!4 &99875383
 Transform:
   m_ObjectHideFlags: 0
@@ -2476,6 +2476,98 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 92b627872cf1a504985c0a8599c16676, type: 3}
+--- !u!1 &1444113491
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1444113493}
+  - component: {fileID: 1444113492}
+  m_Layer: 0
+  m_Name: Testing
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1444113492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1444113491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2415f7a3e1dc35428c967ac19506a37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  runAOO: 0
+  runBOO: 0
+  runCOO: 0
+  runDOO: 0
+  missingPiece: {fileID: 0}
+  waitingAltar: {fileID: 0}
+  fakeDoor: {fileID: 0}
+  knifeGiving: {fileID: 0}
+  firstMeetingInteraction: {fileID: 0}
+  secondMeetingInteraction: {fileID: 0}
+  triggerPickingMissingPiece: 0
+  triggerPlacingMissingPiece: 0
+  triggerOpeningFakeDoor: 0
+  setAmountOfTalkedCrows: 0
+  triggerTakingKnife: 0
+  triggerKilledACrow: 0
+  disableLoreDrop: 0
+  mainSphere: {fileID: 0}
+  secondSphere: {fileID: 0}
+  destinationSphere: {fileID: 0}
+  currentDestination: {x: 0, y: 0, z: 0}
+  rotationSpeed: {x: 0, y: 0, z: 0}
+  movementSpeed: 0
+  currentDistance: 0
+  bones: []
+  lastBone: 0
+  tValue: 0
+  yResult: 0
+  mainarray: []
+  array1:
+  - a
+  - bb
+  - ccc
+  - dddd
+  - fffff
+  array2:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  array1RequiredSpace: 5
+  array2RequiredSpace: 10
+--- !u!4 &1444113493
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1444113491}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 548.65674, y: 527.48755, z: 152.33319}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2101083023
 GameObject:
   m_ObjectHideFlags: 0
