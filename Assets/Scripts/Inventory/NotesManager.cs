@@ -12,7 +12,6 @@ public class NotesManager : MonoBehaviour
     public static NotesManager Instance;
 #endregion
     public List<Note> notes;
-    public List<Note> RAW_Notes;
     [SerializeField] int currentlyAccessedNote;
 
     private void Start()

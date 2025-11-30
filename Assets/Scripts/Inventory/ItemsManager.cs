@@ -21,7 +21,20 @@ public class ItemsManager : MonoBehaviour
     }
     public void RequestSync()
     {
-
+        ItemsData.Instance.SyncPersistentData();
     }
-    
+
+    public void AddItem(int id)
+    {
+        items[id].isOwned = true;
+    }
+    public void RemoveItem(int id)
+    {
+        items[id].isOwned = false;
+    }
+
+    public bool CheckIfItemIsOwned(int id)
+    {
+        return items[id].isOwned;
+    }
 }
