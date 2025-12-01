@@ -835,10 +835,10 @@ public class Language_English : LanguageBase
         loadedText[2] = "Not because of some cataclysm.";
         loadedText[3] = "Not because of abandonment.";
         loadedText[4] = "But because of the damage.";
-        loadedText[5] = "Damage dealt by others";
+        loadedText[5] = "Damage dealt by others";   // Knives pick up interaction
         loadedText[6] = "things not considered properly";
         loadedText[7] = "decisions made by people who won't give second thought a chance";
-        loadedText[8] = "actions made without a feeling of consequence.";
+        loadedText[8] = "actions made without a feeling of consequence.";   // Scene 3 rock pushing any interaction
         loadedText[9] = "The world before your eyes is the one, some might say is beyond repair.";
         loadedText[10] = "A world doomed to fail.";
         loadedText[11] = "And yet. Here you stand. ";

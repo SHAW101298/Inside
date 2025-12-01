@@ -48,6 +48,27 @@ public class LevelScript_03 : MonoBehaviour
 
     */
 
+    /* Spiral Down
+    Some island, but with a cave entrance which will have a spiraling down road.
+    At the end of the road there will be exit out of bottom. At the exit what can be placed  ?
+
+    Or maybe spiral up. Meaning to go out of the loop.
+     */
+
+    /* Loneliness
+    A single tree among the trees ?
+    A Single tree among the bushes ?
+    A single Bush among the trees ?
+
+    How to portray loneliness. Not being understood ?
+    Paths. Signs. Spread out everywhere. Pointing in directions that no longer exist ? Or something else, i dont know.
+    Signs reading " The heart, the pain, the road, the way, the mind, the pain etc. ??
+    */
+
+    /* Being able to summon the second guessing mind at will with a button?
+    If something is here, it will tell something. If not, just standing, or sitting ?
+    */
+
     [SerializeField] int hiddenObjectsFound;
     public UnityEvent EVENT_HiddenObjectFound;
 
