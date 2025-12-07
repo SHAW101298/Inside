@@ -974,6 +974,9 @@ public class Language_English : LanguageBase
         loadedText[221] = "What a blissfull emptiness. Peace.";
         loadedText[222] = "Like a sign of the approaching end";
         loadedText[223] = "Ever so slowly. Baring its fangs. Creeping around the corner."; // Enable Kill Interaction
+
+        loadedText[225] = "Can't bring yourself to do it ?";
+        loadedText[226] = "Pathetic";
         //loadedText[222] = "Now it really is a still world.";
         //loadedText[225] = "Considering the state Im in.";
         //loadedText[226] = "Will you let me finally rest ?"; // Enable Kill Interaction

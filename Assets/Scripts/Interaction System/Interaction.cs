@@ -11,7 +11,6 @@ public enum ENUM_ButtonKey
 public class Interaction : MonoBehaviour
 {
     // Holds Data about the Interaction
-    [SerializeField] int defaultInteractionKey;
     [SerializeField] ENUM_ButtonKey defaultInteractionButton;
     [Space(10)]
     [SerializeField] bool destroyObjectOnInteraction;
@@ -57,12 +56,13 @@ public class Interaction : MonoBehaviour
     }
     public int GetDefaultInteractionKey()
     {
-        return (int)defaultInteractionButton;
+        int button = (int)defaultInteractionButton;
+        return button;
         //return defaultInteractionKey;
     }
     public string DEBUG_DropInfo()
     {
-        string text = ("DEF_Key = " + defaultInteractionKey + " || TriggerType = " + trigger.GetType());
+        string text = ("DEF_Key = " + defaultInteractionButton + " || TriggerType = " + trigger.GetType());
         return text;
     }
 }

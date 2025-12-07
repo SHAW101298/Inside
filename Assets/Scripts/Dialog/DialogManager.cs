@@ -100,7 +100,7 @@ public class DialogManager : MonoBehaviour
         // Block Player
         PlayerData.instance.BlockMovementAndRotationByUI();
         PlayerData.instance.BlockInteractions();
-        PlayerData.instance.ChangeMapToUI();
+        //PlayerData.instance.ChangeMapToUI();
     }
     public void PauseWaitTimer()
     {
@@ -114,7 +114,7 @@ public class DialogManager : MonoBehaviour
     {
         PlayerData.instance.AllowMovemntAndRotationByUI();
         PlayerData.instance.AllowInteractions();
-        PlayerData.instance.ChangeMapToPlayer();
+        //PlayerData.instance.ChangeMapToPlayer();
         Debug.Log("ChooseDialogOption on " + x);
         ShowDialogPromptOnChoice(x);
     }

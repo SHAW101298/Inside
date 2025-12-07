@@ -114,6 +114,7 @@ public class LevelScript_02 : MonoBehaviour
 
         if (lastBone == 13)
         {
+            threeKilledCrows.SetActive(false);
             allCrowsKilledInteraction.SetActive(true);
             crowLocalizationTrigger.TriggerDestruction();
             musicAudioSource.gameObject.SetActive(false);

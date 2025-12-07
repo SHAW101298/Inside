@@ -745,9 +745,22 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 9204019428409015377}
+        m_TargetAssemblyTypeName: Crow_Data, Assembly-CSharp
+        m_MethodName: KillCrow
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   destroyTriggerOnActivation: 0
   disableTriggerOnActivation: 0
-  objectsGroup1: []
+  objectsGroup1:
+  - {fileID: 2797402014218499631}
   objectsGroup2: []
   debugTriggerInteraction: 0
   delayInteractTriggerTime: 0.2

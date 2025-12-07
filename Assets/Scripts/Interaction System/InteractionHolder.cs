@@ -60,7 +60,7 @@ public class InteractionHolder : MonoBehaviour
         for(int i = 0; i < possibleInteractions.Count; i++)
         {
             int y = possibleInteractions[i].GetDefaultInteractionKey();
-            if (possibleInteractions[i].GetDefaultInteractionKey() == y)
+            if (x == y)
             {
                 //Debug.Log("Found matching interaction");
                 MarkAsDirty();

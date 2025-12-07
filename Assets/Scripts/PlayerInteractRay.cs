@@ -25,6 +25,7 @@ public class PlayerInteractRay : MonoBehaviour
         {
             return;
         }
+        Debug.Log("Interact 0");
         RaycastForInteraction(0);
     }
     public void ActionInteract2(InputAction.CallbackContext context)
@@ -34,6 +35,7 @@ public class PlayerInteractRay : MonoBehaviour
         {
             return;
         }
+        Debug.Log("Interact 2");
         RaycastForInteraction(1);
     }
     public void ActionLeftMouseButton(InputAction.CallbackContext context)
@@ -43,6 +45,7 @@ public class PlayerInteractRay : MonoBehaviour
         {
             return;
         }
+        Debug.Log("Interact LMB");
         RaycastForInteraction(2);
     }
 

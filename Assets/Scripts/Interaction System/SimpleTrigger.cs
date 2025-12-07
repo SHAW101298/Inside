@@ -44,7 +44,7 @@ public class SimpleTrigger : TriggerBase
     {
         if(debugTriggerInteraction == true)
         {
-            Debug.Log("Interaction Triggered be Debug");
+            Debug.Log("Interaction Triggered by Debug");
             debugTriggerInteraction = false;
             TriggerInteraction();
         }
