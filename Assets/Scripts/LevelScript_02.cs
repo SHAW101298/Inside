@@ -26,8 +26,8 @@ public class LevelScript_02 : MonoBehaviour
     [SerializeField] int lastBone;
     [SerializeField] GameObject crowSearchParty;
     [SerializeField] SimpleTrigger crowLocalizationTrigger;
-    [SerializeField] GameObject oneKilledCrow;
-    [SerializeField] GameObject threeKilledCrows;
+    [SerializeField] Interaction oneKilledCrow;
+    [SerializeField] Interaction threeKilledCrows;
     [SerializeField] List<GameObject> crowKillInteractions;
     [SerializeField] List<Crow_Data> importantCrows;
     [Header("Phase 4")]
@@ -93,15 +93,15 @@ public class LevelScript_02 : MonoBehaviour
         lastBone++;
         if (lastBone == 1)
         {
-            oneKilledCrow.SetActive(true);
-            crowSearchParty.SetActive(true);
+            oneKilledCrow.Action_EnableInteraction();
+            //crowSearchParty.SetActive(true);
             //DialogManager.Instance.ShowText(98);
 
         }
         if (lastBone == 3)
         {
-            oneKilledCrow.SetActive(false);
-            threeKilledCrows.SetActive(true);
+            oneKilledCrow.Action_DisableInteraction();
+            threeKilledCrows.Action_EnableInteraction();
             
 
         }
@@ -114,9 +114,9 @@ public class LevelScript_02 : MonoBehaviour
 
         if (lastBone == 13)
         {
-            threeKilledCrows.SetActive(false);
+            knifeAllowingInteraction.SetActive(false);
             allCrowsKilledInteraction.SetActive(true);
-            crowLocalizationTrigger.TriggerDestruction();
+            //crowLocalizationTrigger.TriggerDestruction();
             musicAudioSource.gameObject.SetActive(false);
             doorCloseInteraction.TriggerInteraction();
             templeDimZone.SetDesiredFogDistance(15);
