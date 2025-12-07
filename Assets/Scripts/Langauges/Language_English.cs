@@ -48,7 +48,7 @@ public class Language_English : LanguageBase
                 FillTextScene1();
                 break;
             case 2:
-                FillTextScene2Remake();
+                FillTextScene2Remake2();
                 break;
             case 3:
                 FillTextScene3();
@@ -498,63 +498,64 @@ public class Language_English : LanguageBase
 
     void FillTextScene3()
     {
-        text[100] = "The Path";
-        text[101] = "The Choice";
-        text[102] = "Give Up";
-        text[103] = "Be";
+        loadedText = new string[300];
+        loadedText[100] = "The Path";
+        loadedText[101] = "The Choice";
+        loadedText[102] = "Give Up";
+        loadedText[103] = "Be";
 
-        text[110] = "What is this place ?";
-        text[111] = "Who Am I ?";
-        text[112] = "What's going on ?";
+        loadedText[110] = "What is this place ?";
+        loadedText[111] = "Who Am I ?";
+        loadedText[112] = "What's going on ?";
 
         // What is this place answer TP on edge towards well and look at it
-        text[115] = "This place used to be a past.";
-        text[116] = "Used to be a future.";
-        text[117] = "The beggining of everything.";
-        text[118] = "Now its just ... all that is left.";
+        loadedText[115] = "This place used to be a past.";
+        loadedText[116] = "Used to be a future.";
+        loadedText[117] = "The beggining of everything.";
+        loadedText[118] = "Now its just ... all that is left.";
         // Who Am I answer. TP near Pillar and lean on it
-        text[120] = "If you're so curious, why won't you ask yourself ?";
-        text[121] = "Face the one you try so hard to erase.";
+        loadedText[120] = "If you're so curious, why won't you ask yourself ?";
+        loadedText[121] = "Face the one you try so hard to erase.";
         // What's going on answer. TP on edge and start moving legs
-        text[125] = "You got lost.";
-        text[126] = "Forgotten.";
+        loadedText[125] = "You got lost.";
+        loadedText[126] = "Forgotten.";
        
         // Memory Well
-        text[130] = "The Last Known Destination";
-        text[131] = "A Well ???";   // Question
-        text[132] = "Yes.";
-        text[133] = "Things seem to vanish out of existence in contact with it though.";
-        text[134] = "Where did that come from ?";
-        text[136] = "Take Ribbon";
-        text[137] = "Throw Ribbon";
+        loadedText[130] = "The Last Known Destination";
+        loadedText[131] = "A Well ???";   // Question
+        loadedText[132] = "Yes.";
+        loadedText[133] = "Things seem to vanish out of existence in contact with it though.";
+        loadedText[134] = "Where did that come from ?";
+        loadedText[136] = "Take Ribbon";
+        loadedText[137] = "Throw Ribbon";
 
         // Upside Memory Well
-        text[140] = "Pretty convenient isn't it ?";
-        text[141] = "Just erase everything that's bothersome and continue moving forward.";
-        text[142] = "It's so easy to treat everything like a spit on a ground.";
-        text[143] = "A meaningless interactions done only for the sake of peace.";
-        text[144] = "Actions not even worth remembering. Begone from your mind.";
-        text[145] = "In the end its just a bad memory right ? You're the victim here. ";
+        loadedText[140] = "Pretty convenient isn't it ?";
+        loadedText[141] = "Just erase everything that's bothersome and continue moving forward.";
+        loadedText[142] = "It's so easy to treat everything like a spit on a ground.";
+        loadedText[143] = "A meaningless interactions done only for the sake of peace.";
+        loadedText[144] = "Actions not even worth remembering. Begone from your mind.";
+        loadedText[145] = "In the end its just a bad memory right ? You're the victim here. ";
 
         // Rock Pushing
-        text[150] = "What's that rock ?";   // Question
-        text[151] = "There is some guy here trying to push it off the edge. Don't ask me why, I'm as clueless as you. ";
-        text[152] = "How about we do a little prank, to brighten the mood, eh ? Lets loosen a few rocks somewhere up there.";
-        text[153] = "Just think about it, he's gonna fall flat on his face there wondering who did it to him.";
-        text[154] = "Aaaaaand done, now lets go and search for him!";   // Rocks Loosened
+        loadedText[150] = "What's that rock ?";   // Question
+        loadedText[151] = "There is some guy here trying to push it off the edge. Don't ask me why, I'm as clueless as you. ";
+        loadedText[152] = "How about we do a little prank, to brighten the mood, eh ? Lets loosen a few rocks somewhere up there.";
+        loadedText[153] = "Just think about it, he's gonna fall flat on his face there wondering who did it to him.";
+        loadedText[154] = "Aaaaaand done, now lets go and search for him!";   // Rocks Loosened
 
-        text[156] = "All actions have consequences. I'm surprised you got this far without realizing it.";
-        text[155] = "Ignored and left alone with impossible task to fulfill. What else did you expect ?"; // Ignored
-        //text[155] = "Left alone to deal with, what feels like impossible task? Ok, noted."; // Ignored
-        text[156] = "Was it a mercy or stupidity leading you with that choice ?"; // Killed
-        //text[156] = "Is that your idea of being merciful ? "; // Killed
-        text[157] = "Left with no purpose, just to rot and be forgotten. That's one way to go i guess. "; // Ball taken away
-        //text[157] = "Left with no purpose, just to rot and be forgotten. Noted."; // Ball taken away
-        text[158] = "I mean . . . The goal is fullfilled. But whose success is that really ?"; // Ball placed on the top
-        //text[158] = "The goal is fullfilled. But whose success is that really ?"; // Ball placed on the top
+        loadedText[156] = "All actions have consequences. I'm surprised you got this far without realizing it.";
+        loadedText[155] = "Ignored and left alone with impossible task to fulfill. What else did you expect ?"; // Ignored
+        //loadedText[155] = "Left alone to deal with, what feels like impossible task? Ok, noted."; // Ignored
+        loadedText[156] = "Was it a mercy or stupidity leading you with that choice ?"; // Killed
+        //loadedText[156] = "Is that your idea of being merciful ? "; // Killed
+        loadedText[157] = "Left with no purpose, just to rot and be forgotten. That's one way to go i guess. "; // Ball taken away
+        //loadedText[157] = "Left with no purpose, just to rot and be forgotten. Noted."; // Ball taken away
+        loadedText[158] = "I mean . . . The goal is fullfilled. But whose success is that really ?"; // Ball placed on the top
+        //loadedText[158] = "The goal is fullfilled. But whose success is that really ?"; // Ball placed on the top
 
-        text[160] = "Grab";
-        text[161] = "Release";
+        loadedText[160] = "Grab";
+        loadedText[161] = "Release";
     }
 
     void FillTextScene2Remake()
@@ -829,265 +830,268 @@ public class Language_English : LanguageBase
     }
     void FillTextScene2Remake2()
     {
-        text[0] = "Won't even budge";
+        loadedText = new string[500];
+
+        loadedText[0] = "Won't even budge";
 
         // SCENE 02
 
         Debug.LogError("CROW LINES NEED FIXING");
 
         // Crow Random Lines
-        text[10] = "FIND IT !!!";  // Spawn
-        text[11] = "FORGET !!!";   // Near Old Spawn
-        text[12] = "Why";          // Pillars
-        text[13] = "Soon";         // Motionless Pillars
-        text[14] = "Lost . . .";   // Bridge
-        text[15] = "alone";        // Dead
-        text[16] = "end this";     // Hole
-        text[17] = "failed";       // Altar
-        text[18] = "no more reasons";          // Altar
-        text[19] = "all is lost";  // Altar
-        text[20] = "last . . . request";       // Pair
-        text[21] = "erase . . . existence";    // Pair
-        text[22] = "Leave.";       // Road
-        text[23] = "leave it";     // Road
-        text[24] = "the cycle repeats";        // Road
-        text[25] = "you're a fool";            // Road
-        text[26] = "no effort";    // Road
-        text[27] = "lies";         // Road / Lore
-        text[28] = "It feels like I'm the last one";   // Dialog
-        text[29] = "The collapse is inevitable";       // Dialog
-        text[30] = "Find the road";                    // Dialog
-        text[31] = "Fear";
-        text[32] = "tired";
-        text[33] = "please, leave";
-        text[34] = "wasted effort";    // Door
+        loadedText[10] = "FIND IT !!!";  // Spawn
+        loadedText[11] = "FORGET !!!";   // Near Old Spawn
+        loadedText[12] = "Why";          // Pillars
+        loadedText[13] = "Soon";         // Motionless Pillars
+        loadedText[14] = "Lost . . .";   // Bridge
+        loadedText[15] = "alone";        // Dead
+        loadedText[16] = "end this";     // Hole
+        loadedText[17] = "failed";       // Altar
+        loadedText[18] = "no more reasons";          // Altar
+        loadedText[19] = "all is lost";  // Altar
+        loadedText[20] = "last . . . request";       // Pair
+        loadedText[21] = "erase . . . existence";    // Pair
+        loadedText[22] = "Leave.";       // Road
+        loadedText[23] = "leave it";     // Road
+        loadedText[24] = "the cycle repeats";        // Road
+        loadedText[25] = "you're a fool";            // Road
+        loadedText[26] = "no effort";    // Road
+        loadedText[27] = "lies";         // Road / Lore
+        loadedText[28] = "It feels like I'm the last one";   // Dialog
+        loadedText[29] = "The collapse is inevitable";       // Dialog
+        loadedText[30] = "Find the road";                    // Dialog
+        loadedText[31] = "Fear";
+        loadedText[32] = "tired";
+        loadedText[33] = "please, leave";
+        loadedText[34] = "wasted effort";    // Door
 
 
         // Bench Thoughts
-        text[50] = "what is my purpose";
-        text[51] = "what is wrong with me";
-        text[52] = "was that supposed to happen ?";
-        text[53] = "its better to just . . .";
+        loadedText[50] = "what is my purpose";
+        loadedText[51] = "what is wrong with me";
+        loadedText[52] = "was that supposed to happen ?";
+        loadedText[53] = "its better to just . . .";
 
 
         // On Interactions
-        text[60] = "Place spark";
-        text[61] = "Take spark";
-        text[62] = "Held together by what exactly ?";
-        text[63] = "As if . . . the time stopped";
-        text[64] = "something is missing here";
-        text[65] = "No one knows what's on the other side";
-        text[66] = "Take Dagger";
+        loadedText[60] = "Place spark";
+        loadedText[61] = "Take spark";
+        loadedText[62] = "Held together by what exactly ?";
+        loadedText[63] = "As if . . . the time stopped";
+        loadedText[64] = "something is missing here";
+        loadedText[65] = "No one knows what's on the other side";
+        loadedText[66] = "Take Dagger";
 
         // Dialog
-        text[100] = "You need anything ?";
+        loadedText[100] = "You need anything ?";
 
-        text[101] = "What is going on ?";// Dialog Option
-        text[102] = "Nothing, as you can see.";
-        text[103] = "Look around you. Things stopped moving.";
+        loadedText[101] = "What is going on ?";// Dialog Option
+        loadedText[102] = "Nothing, as you can see.";
+        loadedText[103] = "Look around you. Things stopped moving.";
 
-        text[04] = "Could you give me some clues ?";// Dialog Option
-        text[106] = "You want some advice ?";
-        text[107] = "Go and find something capable of moving this world.";
-        text[108] = "Who knows, maybe that damn door will finally open.";
+        loadedText[104] = "Could you give me some clues ?";// Dialog Option
+        loadedText[106] = "You want some advice ?";
+        loadedText[107] = "Go and find something capable of moving this world.";
+        loadedText[108] = "Who knows, maybe that damn door will finally open.";
 
         // Lore Drop
-        text[114] = "Tell me about this world."; // Dialog Option
+        loadedText[114] = "Tell me about this world."; // Dialog Option
 
-        text[115] = "A silent world.";
-        text[116] = "A world where things just stopped.";
-        text[117] = "Not because of some cataclysm.";
-        text[118] = "Not because of abandonment.";
-        text[119] = "But because of the damage.";
-        text[120] = "Damage dealt by others";
-        text[121] = "things not considered properly";
-        text[122] = "decisions made by people who won't give second thought a chance";
-        text[123] = "actions made without a feeling of consequence.";
+        loadedText[115] = "A silent world.";
+        loadedText[116] = "A world where things just stopped.";
+        loadedText[117] = "Not because of some cataclysm.";
+        loadedText[118] = "Not because of abandonment.";
+        loadedText[119] = "But because of the damage.";
+        loadedText[120] = "Damage dealt by others";
+        loadedText[121] = "things not considered properly";
+        loadedText[122] = "decisions made by people who won't give second thought a chance";
+        loadedText[123] = "actions made without a feeling of consequence.";
 
-        text[124] = "Welcome.";
-        text[125] = "The world before your eyes is the one, some might say is beyond repair.";
-        text[126] = "A world doomed to fail.";
-        text[127] = "And yet. Here you stand. ";
-        text[128] = "Trying to make things right. Trying to fix this shithole. ";
-        text[129] = "Good Luck. Because i couldn't.";
+        loadedText[124] = "Welcome.";
+        loadedText[125] = "The world before your eyes is the one, some might say is beyond repair.";
+        loadedText[126] = "A world doomed to fail.";
+        loadedText[127] = "And yet. Here you stand. ";
+        loadedText[128] = "Trying to make things right. Trying to fix this shithole. ";
+        loadedText[129] = "Good Luck. Because i couldn't.";
 
-        text[130] = "So yeah, a world where things just stay.";
-        text[131] = "Just the way they were left.";
-        text[132] = "For someone to pickup. Just for a convenience.";
-        text[133] = "Like a random shiny peeble on a road.";
-        text[134] = "A plant that hasn't been watered for god knows how many days just begging for some rain.";
-        text[135] = "Just trying to survive, trying to be itself.";
-        text[136] = "But there is no rain coming.";
-        text[137] = "Nothing that may correct the course of actions.";
-        text[138] = "All that is left is just waiting for the time to come. ";
-        text[139] = "All the hope you may have had is lost.";
-        text[140] = "Welcome to this world.";
+        loadedText[130] = "So yeah, a world where things just stay.";
+        loadedText[131] = "Just the way they were left.";
+        loadedText[132] = "For someone to pickup. Just for a convenience.";
+        loadedText[133] = "Like a random shiny peeble on a road.";
+        loadedText[134] = "A plant that hasn't been watered for god knows how many days just begging for some rain.";
+        loadedText[135] = "Just trying to survive, trying to be itself.";
+        loadedText[136] = "But there is no rain coming.";
+        loadedText[137] = "Nothing that may correct the course of actions.";
+        loadedText[138] = "All that is left is just waiting for the time to come. ";
+        loadedText[139] = "All the hope you may have had is lost.";
+        loadedText[140] = "Welcome to this world.";
 
-        text[150] = "I found this. Is that what you need ?";//Dialog Option
-        text[151] = "Place it on the altar and see for yourself.";
+        loadedText[150] = "I found this. Is that what you need ?";//Dialog Option
+        loadedText[151] = "Place it on the altar and see for yourself.";
 
 
         // Phase 2 Dialog
 
-        text[155] = "Ahhh, I can already tell that you found what was missing.";
-        text[156] = "Now you can hear them clearly, right ?";
-        text[157] = "Ohhh, how i missed the silence.";
+        loadedText[155] = "Ahhh, I can already tell that you found what was missing.";
+        loadedText[156] = "Now you can hear them clearly, right ?";
+        loadedText[157] = "Ohhh, how i missed the silence.";
 
-        text[160] = "Now what ?";// Dialog Option
+        loadedText[160] = "Now what ?";// Dialog Option
 
-        text[161] = "If you have no idea what to do next, i can try to help you.";
-        text[162] = "First . . . Have you tried listening to them at least ?";
-        text[163] = "Who knows, maybe you will learn something useful ?";
+        loadedText[161] = "If you have no idea what to do next, i can try to help you.";
+        loadedText[162] = "First . . . Have you tried listening to them at least ?";
+        loadedText[163] = "Who knows, maybe you will learn something useful ?";
 
-        text[170] = "And ? Did you hear anything of value ?";
-        text[171] = "Not much i guess";
-        text[172] = "You know what they say.";
-        text[173] = "There will be no change when the environment stays the same.";
-        text[174] = "      ";
-        text[175] = "You may find some use for this i think."; // Hands a knife to the player
+        loadedText[170] = "And ? Did you hear anything of value ?";
+        loadedText[171] = "Not much i guess";
+        loadedText[172] = "You know what they say.";
+        loadedText[173] = "There will be no change when the environment stays the same.";
+        loadedText[174] = "      ";
+        loadedText[175] = "You may find some use for this i think."; // Hands a knife to the player
 
         // After First Crow Killed
-        text[180] = "Do what you have to.";
+        loadedText[180] = "Do what you have to.";
         // After 3 Crows Killed
-        text[181] = "I hope its worth it.";
+        loadedText[181] = "I hope its worth it.";
 
         // Tip to location
-        text[200] = "One might be near the ruined room. The one you came from.  THIS NEEDS FIXING";
-        text[201] = "Those three pillars with one suspended in the air. How about searching there ?";
-        text[202] = "There used to be a bridge somewhere around here. ";
-        text[203] = "Have you visited the one guarding the dead pile ?";
-        text[204] = "There is a crow near the hole. At least there always was.";
-        text[205] = "What about the talkative one near the doors ?";
-        text[206] = "There might be silent one near the doors.";
-        text[207] = "Have you seen the one excluded from the temple standing on a rock ?";
-        text[208] = "How about the lovely pair on a tree ?";
-        text[209] = "How about the lovely pair on a tree ?";
-        text[210] = "Have you searched the road properly ? I belive one should still be there.";
-        text[211] = "Cross section of the riverbed is a home to one of them. ";
-        text[212] = "One should be somewhere close. Always watching.";
+        loadedText[200] = "One might be near the ruined room. The one you came from.  THIS NEEDS FIXING";
+        loadedText[201] = "Those three pillars with one suspended in the air. How about searching there ?";
+        loadedText[202] = "There used to be a bridge somewhere around here. ";
+        loadedText[203] = "Have you visited the one guarding the dead pile ?";
+        loadedText[204] = "There is a crow near the hole. At least there always was.";
+        loadedText[205] = "What about the talkative one near the doors ?";
+        loadedText[206] = "There might be silent one near the doors.";
+        loadedText[207] = "Have you seen the one excluded from the temple standing on a rock ?";
+        loadedText[208] = "How about the lovely pair on a tree ?";
+        loadedText[209] = "How about the lovely pair on a tree ?";
+        loadedText[210] = "Have you searched the road properly ? I belive one should still be there.";
+        loadedText[211] = "Cross section of the riverbed is a home to one of them. ";
+        loadedText[212] = "One should be somewhere close. Always watching.";
 
         
-        text[220] = "I think you got all of them . . . ";
-        text[221] = "What a blissfull emptiness. Peace.";
-        text[222] = "Like a sign of the approaching end";
-        text[223] = "Ever so slowly. Baring its fangs. Creeping around the corner."; // Enable Kill Interaction
-        //text[222] = "Now it really is a still world.";
-        //text[225] = "Considering the state Im in.";
-        //text[226] = "Will you let me finally rest ?"; // Enable Kill Interaction
+        loadedText[220] = "I think you got all of them . . . ";
+        loadedText[221] = "What a blissfull emptiness. Peace.";
+        loadedText[222] = "Like a sign of the approaching end";
+        loadedText[223] = "Ever so slowly. Baring its fangs. Creeping around the corner."; // Enable Kill Interaction
+        //loadedText[222] = "Now it really is a still world.";
+        //loadedText[225] = "Considering the state Im in.";
+        //loadedText[226] = "Will you let me finally rest ?"; // Enable Kill Interaction
 
 
 
         // Insulting Crow 8 Pillars Crows
-        text[250] = "You know what i always think when i look at you ?";
-        text[251] = "That you're just a defect.";
-        text[252] = "Defect on history pages. Meant to be erased.";
-        text[253] = "Forgotten";
-        text[254] = "Like a careless pencil mark in a sketchbook.";
-        text[255] = "Keep that in your tiny mind.";
+        loadedText[250] = "You know what i always think when i look at you ?";
+        loadedText[251] = "That you're just a defect.";
+        loadedText[252] = "Defect on history pages. Meant to be erased.";
+        loadedText[253] = "Forgotten";
+        loadedText[254] = "Like a careless pencil mark in a sketchbook.";
+        loadedText[255] = "Keep that in your tiny mind.";
 
         // Insulting Crow 7 MotionLess Pillars Crows
-        text[260] = "Took you long enough to get here.";
-        text[261] = "Why are you always this slow ?";
-        text[262] = "Is it because you're tired ?";
-        text[263] = "Get a grip on your self.";
-        text[264] = "You bring nothing but shame.";
-        text[265] = "You deserve all these things. Thats your well earned reward.";
-        text[266] = "Come on. Enjoy yourself. What's stopping you ?";
+        loadedText[260] = "Took you long enough to get here.";
+        loadedText[261] = "Why are you always this slow ?";
+        loadedText[262] = "Is it because you're tired ?";
+        loadedText[263] = "Get a grip on your self.";
+        loadedText[264] = "You bring nothing but shame.";
+        loadedText[265] = "You deserve all these things. Thats your well earned reward.";
+        loadedText[266] = "Come on. Enjoy yourself. What's stopping you ?";
 
         // Insulting Crow 10 Broken Bridge Crow
-        text[270] = "You need to start accepting facts.";
-        text[271] = "You chose all of this.";
-        text[272] = "Every event is the result of your own inability";
-        text[273] = "And you even chose to escape from the problems.";
-        text[274] = "Bury them down and forget.";
-        text[275] = "How classic of you.";
+        loadedText[270] = "You need to start accepting facts.";
+        loadedText[271] = "You chose all of this.";
+        loadedText[272] = "Every event is the result of your own inability";
+        loadedText[273] = "And you even chose to escape from the problems.";
+        loadedText[274] = "Bury them down and forget.";
+        loadedText[275] = "How classic of you.";
 
         // Insulting Crow 3 Dead Crows
-        text[280] = "Do you see that pile of corpses over there ?";
-        text[281] = "Why won't you just lie there and die";
-        text[282] = "No one's gonna notice";
-        text[283] = "You were never meant to exist anyway";
-        text[284] = "Accept that.";
+        loadedText[280] = "Do you see that pile of corpses over there ?";
+        loadedText[281] = "Why won't you just lie there and die";
+        loadedText[282] = "No one's gonna notice";
+        loadedText[283] = "You were never meant to exist anyway";
+        loadedText[284] = "Accept that.";
 
         // Insulting Crow 2 Hole Crow
-        text[290] = "What are you even trying to accomplish here ?";
-        text[291] = "Give Up.";
-        text[292] = ".  .  .                           ";
-        text[293] = "Can't you understand what i just said ?";
-        text[294] = "GIVE UP";
-        text[295] = "Do me a favour and end this facade.";
-        text[296] = "No one wants you doing any of these things.";
+        loadedText[290] = "What are you even trying to accomplish here ?";
+        loadedText[291] = "Give Up.";
+        loadedText[292] = ".  .  .                           ";
+        loadedText[293] = "Can't you understand what i just said ?";
+        loadedText[294] = "GIVE UP";
+        loadedText[295] = "Do me a favour and end this facade.";
+        loadedText[296] = "No one wants you doing any of these things.";
 
         // Insulting Crow 12 Temple Crow 1
-        text[300] = "The harder you fight the more you lose";
-        text[301] = "In the end, you will end up all alone";
-        text[302] = "Embrace it";
-        text[303] = "Isn't that what you always dreamed of ?";
+        loadedText[300] = "The harder you fight the more you lose";
+        loadedText[301] = "In the end, you will end up all alone";
+        loadedText[302] = "Embrace it";
+        loadedText[303] = "Isn't that what you always dreamed of ?";
 
         // Insulting Crow 13 Temple Crow 2
-        text[310] = "Hope cannot be eluded forever";
-        text[311] = "At some point, you will just stop.";
-        text[312] = "Stop and wonder what's the point";
-        text[313] = "Finally realize there is no reason to even try.";
-        text[314] = "You will remember my words then.";
+        loadedText[310] = "Hope cannot be eluded forever";
+        loadedText[311] = "At some point, you will just stop.";
+        loadedText[312] = "Stop and wonder what's the point";
+        loadedText[313] = "Finally realize there is no reason to even try.";
+        loadedText[314] = "You will remember my words then.";
 
 
         // Insulting Crow 1  APPLIED
-        text[320] = "pathetic";
-        text[321] = "you thought it will be that easy ?";
-        text[322] = "just find that little spark in yourself";
-        text[323] = "then everything will surely work out";
-        text[324] = "a few more steps and everything will be great";
-        text[325] = "keep going, believe in yourself";
-        text[326] = "Don't make me laugh";
-        text[327] = "you knew it will never work";
-        text[328] = "might as well burn this whole place down and start from scratch";
+        loadedText[320] = "pathetic";
+        loadedText[321] = "you thought it will be that easy ?";
+        loadedText[322] = "just find that little spark in yourself";
+        loadedText[323] = "then everything will surely work out";
+        loadedText[324] = "a few more steps and everything will be great";
+        loadedText[325] = "keep going, believe in yourself";
+        loadedText[326] = "Don't make me laugh";
+        loadedText[327] = "you knew it will never work";
+        loadedText[328] = "might as well burn this whole place down and start from scratch";
 
         // Insulting Crow 4 Pair Crows 1
-        text[330] = "Whom do we have here ?";
-        text[331] = "The long awaited savior!";
-        text[332] = "The one destinied to make things right!";
-        text[333] = "savior my ass";
-        text[334] = "Look at yourself";
-        text[335] = "Someone like you, accomplishing anything ?";
-        text[336] = "What a joke";
+        loadedText[330] = "Whom do we have here ?";
+        loadedText[331] = "The long awaited savior!";
+        loadedText[332] = "The one destinied to make things right!";
+        loadedText[333] = "savior my ass";
+        loadedText[334] = "Look at yourself";
+        loadedText[335] = "Someone like you, accomplishing anything ?";
+        loadedText[336] = "What a joke";
 
         // Insulting Crow 6 Pair Crows 2
-        text[340] = "HahAhAhaHAha";
-        text[341] = "Thats a good one!";
-        text[342] = "Where did such a clown like you appear from ?";
-        text[343] = "Garbagepile ?";
-        text[344] = "Where else such good for nothing being would be ?";
-        text[345] = "I can't wait to see you break.";
-        text[346] = "Fight for your life !";
-        text[347] = "Come on, For fun !";
-        text[348] = "let's see you cry";
+        loadedText[340] = "HahAhAhaHAha";
+        loadedText[341] = "Thats a good one!";
+        loadedText[342] = "Where did such a clown like you appear from ?";
+        loadedText[343] = "Garbagepile ?";
+        loadedText[344] = "Where else such good for nothing being would be ?";
+        loadedText[345] = "I can't wait to see you break.";
+        loadedText[346] = "Fight for your life !";
+        loadedText[347] = "Come on, For fun !";
+        loadedText[348] = "let's see you cry";
 
         // Insulting Crow 9 Road Crow
-        text[350] = "Do you intend to put any effort into that ?";
-        text[351] = "All i see is you just walking around";
-        text[352] = "As if you dont know what to do at all";
-        text[353] = "How dumb can you really be ?";
+        loadedText[350] = "Do you intend to put any effort into that ?";
+        loadedText[351] = "All i see is you just walking around";
+        loadedText[352] = "As if you dont know what to do at all";
+        loadedText[353] = "How dumb can you really be ?";
 
         // Insulting Crow 5 Dialog Crow
-        text[360] = "Are you done ?";
-        text[361] = "Stop being delusional";
-        text[362] = "You never did anything right.";
-        text[363] = "What makes you think, you can do it now ?";
-        text[364] = "You will never make it. Trust me on that.";
+        loadedText[360] = "Are you done ?";
+        loadedText[361] = "Stop being delusional";
+        loadedText[362] = "You never did anything right.";
+        loadedText[363] = "What makes you think, you can do it now ?";
+        loadedText[364] = "You will never make it. Trust me on that.";
 
         // Insulting Crow 11 Lore Crow
-        text[470] = "It was obvious from the start";// Self fulfilling Prophecy
-        text[471] = "You are a Self fulfilling prophecy";
-        text[472] = "You cannot change what was already set in stone.";
-        text[473] = "All your efforts are pointless.";
-        text[474] = "Just like with a child . . .";
+        loadedText[370] = "It was obvious from the start";// Self fulfilling Prophecy
+        loadedText[371] = "You are a Self fulfilling prophecy";
+        loadedText[372] = "You cannot change what was already set in stone.";
+        loadedText[373] = "All your efforts are pointless.";
+        loadedText[374] = "Just like with a child . . .";
 
 
-        for (int i = 0; i < 200; i++)
+        for (int i = 0; i < 500; i++)
         {
             text[i + 300] = loadedText[i];
         }
+
 
 
     }
