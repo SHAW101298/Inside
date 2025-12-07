@@ -48218,6 +48218,7 @@ MonoBehaviour:
   objectsGroup2:
   - {fileID: 269650539}
   - {fileID: 816283377}
+  - {fileID: 216439035}
   debugTriggerInteraction: 0
   delayInteractTriggerTime: 0
   delayedInteractEvent:
@@ -55943,6 +55944,7 @@ MonoBehaviour:
   - {fileID: 269650541}
   objectsGroup2:
   - {fileID: 269650540}
+  - {fileID: 378782624}
   debugTriggerInteraction: 0
   delayInteractTriggerTime: 0
   delayedInteractEvent:
@@ -69278,7 +69280,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &1918908260
 Light:
   m_ObjectHideFlags: 0
