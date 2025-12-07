@@ -47,17 +47,8 @@ public class Interaction : MonoBehaviour
     }
     public void Action_DisableInteraction()
     {
-        Debug.Log("Name is = " + gameObject.name);
-        Debug.Log("Parent name is = " + gameObject.GetComponentInParent<Transform>().gameObject);
         InteractionHolder tempHOlder = GetComponentInParent<InteractionHolder>();
-        Debug.Log("Check");
-        Debug.Log(tempHOlder);
-        Debug.Log(tempHOlder);
-        Debug.Log("Check");
-        Debug.Log("Check");
-        
-        Debug.Log("holder is = " + tempHOlder);
-        GetComponentInParent<InteractionHolder>().DisableInteraction(this);
+        tempHOlder.DisableInteraction(this);
     }
     public void Action_EnableInteraction()
     {
