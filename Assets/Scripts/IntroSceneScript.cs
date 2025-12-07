@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+// Masks always being rotated towards the player ?
+
 public class IntroSceneScript : MonoBehaviour
 {
     [SerializeField] float playSoundDistance;
