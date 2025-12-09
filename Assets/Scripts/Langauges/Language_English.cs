@@ -392,7 +392,7 @@ public class Language_English : LanguageBase
         text[290] = "Took you long enough to get here.";
         text[291] = "Why are you always this slow ?";
         text[292] = "Is it because you're tired ?";
-        text[293] = "Get a grip on your self.";
+        text[293] = "Get a grip on yourself.";
         text[294] = "You bring nothing but shame.";
         text[295] = "You deserve all these things. Thats your well earned reward.";
         text[296] = "Come on. Enjoy yourself. What's stopping you ?";
@@ -887,7 +887,7 @@ public class Language_English : LanguageBase
 
         loadedText[101] = "What is going on ?";// Dialog Option
         loadedText[102] = "Nothing, as you can see.";
-        loadedText[103] = "Look around you. Things stopped moving.";
+        loadedText[103] = "Look around you. Things stopped.";
 
         loadedText[104] = "Could you give me some clues ?";// Dialog Option
         loadedText[106] = "You want some advice ?";
@@ -926,7 +926,7 @@ public class Language_English : LanguageBase
         loadedText[139] = "All the hope you may have had is lost.";
         loadedText[140] = "Welcome to this world.";
 
-        loadedText[150] = "I found this. Is that what you need ?";//Dialog Option
+        loadedText[150] = "I found something like this?";//Dialog Option
         loadedText[151] = "Place it on the altar and see for yourself.";
 
 
@@ -1041,7 +1041,7 @@ public class Language_English : LanguageBase
         // Insulting Crow 1  APPLIED
         loadedText[320] = "pathetic";
         loadedText[321] = "you thought it will be that easy ?";
-        loadedText[322] = "just find that little spark in yourself";
+        loadedText[322] = "just find that little spark";
         loadedText[323] = "then everything will surely work out";
         loadedText[324] = "a few more steps and everything will be great";
         loadedText[325] = "keep going, believe in yourself";
