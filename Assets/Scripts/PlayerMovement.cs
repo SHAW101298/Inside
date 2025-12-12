@@ -53,6 +53,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        MoveAccordingToGravity();
         if(blockedMovementByAction == true)
         {
             return;
@@ -167,7 +168,7 @@ public class PlayerMovement : MonoBehaviour
     
     void Idle()
     {
-        MoveAccordingToGravity();
+        //MoveAccordingToGravity();
         return;
     }
     void Walking()
@@ -183,7 +184,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         controller.Move(dir);
-        MoveAccordingToGravity();
+        //MoveAccordingToGravity();
     }
     void Jumping()
     {
@@ -198,7 +199,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         controller.Move(dir);
-        MoveAccordingToGravity();
+        //MoveAccordingToGravity();
 
         //if(groundedPlayer == true)
         if(velocity.y <= 0 && groundedPlayer)

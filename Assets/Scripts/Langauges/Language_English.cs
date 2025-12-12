@@ -556,6 +556,11 @@ public class Language_English : LanguageBase
 
         loadedText[160] = "Grab";
         loadedText[161] = "Release";
+
+        for (int i = 0; i < 200; i++)
+        {
+            text[i + 300] = loadedText[i];
+        }
     }
 
     void FillTextScene2Remake()
