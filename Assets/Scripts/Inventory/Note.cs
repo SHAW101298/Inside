@@ -11,6 +11,7 @@ public class Note : MonoBehaviour
 
     private void Awake()
     {
+        Debug.Log("NOte Awake");
         GetLangAppliers();
     }
 
