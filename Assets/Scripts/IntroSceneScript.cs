@@ -12,7 +12,7 @@ public class IntroSceneScript : MonoBehaviour
     [SerializeField] GameObject soundPlayerPrefab;
     public void InteractWithLadder()
     {
-        ScreenFadeEffect.Instance.FadeScreen();
+        //ScreenFadeEffect.Instance.FadeScreen();
         // Screen Fade
         // Change Scene
         //

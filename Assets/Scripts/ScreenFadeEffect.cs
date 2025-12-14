@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class ScreenFadeEffect : MonoBehaviour
 {
+    /*
     public static ScreenFadeEffect Instance;
     private void Awake()
     {
@@ -18,6 +19,7 @@ public class ScreenFadeEffect : MonoBehaviour
             Instance = this;
         }
     }
+    */
 
 
     [SerializeField] Image fadeScreen;
