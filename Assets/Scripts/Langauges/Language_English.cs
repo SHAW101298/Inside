@@ -499,63 +499,63 @@ public class Language_English : LanguageBase
     void FillTextScene3()
     {
         loadedText = new string[300];
-        loadedText[100] = "The Path";
-        loadedText[101] = "The Choice";
-        loadedText[102] = "Give Up";
-        loadedText[103] = "Be";
+        loadedText[0] = "The Path";
+        loadedText[1] = "The Choice";
+        loadedText[2] = "Give Up";
+        loadedText[3] = "Be";
 
-        loadedText[110] = "What is this place ?";
-        loadedText[111] = "Who Am I ?";
-        loadedText[112] = "What's going on ?";
+        loadedText[10] = "What is this place ?";
+        loadedText[11] = "Who Am I ?";
+        loadedText[12] = "What's going on ?";
 
         // What is this place answer TP on edge towards well and look at it
-        loadedText[115] = "This place used to be a past.";
-        loadedText[116] = "Used to be a future.";
-        loadedText[117] = "The beggining of everything.";
-        loadedText[118] = "Now its just ... all that is left.";
+        loadedText[15] = "This place used to be a past.";
+        loadedText[16] = "Used to be a future.";
+        loadedText[17] = "The beggining of everything.";
+        loadedText[18] = "Now its just ... all that is left.";
         // Who Am I answer. TP near Pillar and lean on it
-        loadedText[120] = "If you're so curious, why won't you ask yourself ?";
-        loadedText[121] = "Face the one you try so hard to erase.";
+        loadedText[20] = "If you're so curious, why won't you ask yourself ?";
+        loadedText[21] = "Face the one you try so hard to erase.";
         // What's going on answer. TP on edge and start moving legs
-        loadedText[125] = "You got lost.";
-        loadedText[126] = "Forgotten.";
+        loadedText[25] = "You got lost.";
+        loadedText[26] = "Forgotten.";
        
         // Memory Well
-        loadedText[130] = "The Last Known Destination";
-        loadedText[131] = "A Well ???";   // Question
-        loadedText[132] = "Yes.";
-        loadedText[133] = "Things seem to vanish out of existence in contact with it though.";
-        loadedText[134] = "Where did that come from ?";
-        loadedText[136] = "Take Ribbon";
-        loadedText[137] = "Throw Ribbon";
+        loadedText[30] = "The Last Known Destination";
+        loadedText[31] = "A Well ???";   // Question
+        loadedText[32] = "Yes.";
+        loadedText[33] = "Things seem to vanish out of existence in contact with it though.";
+        loadedText[34] = "Where did that come from ?";
+        loadedText[36] = "Take Ribbon";
+        loadedText[37] = "Throw Ribbon";
 
         // Upside Memory Well
-        loadedText[140] = "Pretty convenient isn't it ?";
-        loadedText[141] = "Just erase everything that's bothersome and continue moving forward.";
-        loadedText[142] = "It's so easy to treat everything like a spit on a ground.";
-        loadedText[143] = "A meaningless interactions done only for the sake of peace.";
-        loadedText[144] = "Actions not even worth remembering. Begone from your mind.";
-        loadedText[145] = "In the end its just a bad memory right ? You're the victim here. ";
+        loadedText[40] = "Pretty convenient isn't it ?";
+        loadedText[41] = "Just erase everything that's bothersome and continue moving forward.";
+        loadedText[42] = "It's so easy to treat everything like a spit on a ground.";
+        loadedText[43] = "A meaningless interactions done only for the sake of peace.";
+        loadedText[44] = "Actions not even worth remembering. Begone from your mind.";
+        loadedText[45] = "In the end its just a bad memory right ? You're the victim here. ";
 
         // Rock Pushing
-        loadedText[150] = "What's that rock ?";   // Question
-        loadedText[151] = "There is some guy here trying to push it off the edge. Don't ask me why, I'm as clueless as you. ";
-        loadedText[152] = "How about we do a little prank, to brighten the mood, eh ? Lets loosen a few rocks somewhere up there.";
-        loadedText[153] = "Just think about it, he's gonna fall flat on his face there wondering who did it to him.";
-        loadedText[154] = "Aaaaaand done, now lets go and search for him!";   // Rocks Loosened
+        loadedText[50] = "What's that rock ?";   // Question
+        loadedText[51] = "There is some guy here trying to push it off the edge. Don't ask me why, I'm as clueless as you. ";
+        loadedText[52] = "How about we do a little prank, to brighten the mood, eh ? Lets loosen a few rocks somewhere up there.";
+        loadedText[53] = "Just think about it, he's gonna fall flat on his face there wondering who did it to him.";
+        loadedText[54] = "Aaaaaand done, now lets go and search for him!";   // Rocks Loosened
 
-        loadedText[156] = "All actions have consequences. I'm surprised you got this far without realizing it.";
-        loadedText[155] = "Ignored and left alone with impossible task to fulfill. What else did you expect ?"; // Ignored
-        //loadedText[155] = "Left alone to deal with, what feels like impossible task? Ok, noted."; // Ignored
-        loadedText[156] = "Was it a mercy or stupidity leading you with that choice ?"; // Killed
-        //loadedText[156] = "Is that your idea of being merciful ? "; // Killed
-        loadedText[157] = "Left with no purpose, just to rot and be forgotten. That's one way to go i guess. "; // Ball taken away
-        //loadedText[157] = "Left with no purpose, just to rot and be forgotten. Noted."; // Ball taken away
-        loadedText[158] = "I mean . . . The goal is fullfilled. But whose success is that really ?"; // Ball placed on the top
-        //loadedText[158] = "The goal is fullfilled. But whose success is that really ?"; // Ball placed on the top
+        loadedText[56] = "All actions have consequences. I'm surprised you got this far without realizing it.";
+        loadedText[57] = "Ignored and left alone with impossible task to fulfill. What else did you expect ?"; // Ignored
+        //loadedText[157] = "Left alone to deal with, what feels like impossible task? Ok, noted."; // Ignored
+        loadedText[58] = "Was it a mercy or stupidity leading you with that choice ?"; // Killed
+        //loadedText[158] = "Is that your idea of being merciful ? "; // Killed
+        loadedText[59] = "Left with no purpose, just to rot and be forgotten. That's one way to go i guess. "; // Ball taken away
+        //loadedText[159] = "Left with no purpose, just to rot and be forgotten. Noted."; // Ball taken away
+        loadedText[60] = "I mean . . . The goal is fullfilled. But whose success is that really ?"; // Ball placed on the top
+        //loadedText[160] = "The goal is fullfilled. But whose success is that really ?"; // Ball placed on the top
 
-        loadedText[160] = "Grab";
-        loadedText[161] = "Release";
+        loadedText[61] = "Grab";
+        loadedText[62] = "Release";
 
         for (int i = 0; i < 200; i++)
         {
