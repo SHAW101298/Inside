@@ -48,6 +48,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemsAvailability:
   - {fileID: 639167519054255176}
+  - {fileID: 3262691684213655173}
 --- !u!1 &639167519054255177
 GameObject:
   m_ObjectHideFlags: 0
