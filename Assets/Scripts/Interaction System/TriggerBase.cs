@@ -9,7 +9,8 @@ public enum ENUM_TriggerTypes
     enter,
     timed,
     random,
-    look
+    look,
+    conditional
 }
 public abstract class TriggerBase : MonoBehaviour
 {
