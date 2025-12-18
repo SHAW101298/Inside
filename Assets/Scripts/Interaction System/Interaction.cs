@@ -7,7 +7,7 @@ public enum ENUM_ButtonKey
     F,
     LMB
 }
-
+[RequireComponent(typeof(InformationHolder))]
 public class Interaction : MonoBehaviour
 {
     // Holds Data about the Interaction
@@ -18,6 +18,10 @@ public class Interaction : MonoBehaviour
     [Space(10)]
     [SerializeField] TriggerBase trigger;
     [SerializeField] InformationHolder info;
+    [Header("DEBUG")]
+    [SerializeField] bool debug_Interact;
+    [SerializeField] bool debug_EnableInteraction;
+    [SerializeField] bool debug_DisableInteraction;
 
     public TriggerBase GetTriggerBase()
     {
@@ -65,5 +69,30 @@ public class Interaction : MonoBehaviour
     {
         string text = ("DEF_Key = " + defaultInteractionButton + " || TriggerType = " + trigger.GetType());
         return text;
+    }
+    private void Update()
+    {
+        HandleEditorDebug();
+    }
+    void HandleEditorDebug()
+    {
+        if(debug_Interact == true)
+        {
+            debug_Interact = false;
+            Debug.Log("DEBUG  || Interacted by editor debug");
+            Action_ActivateTrigger();
+        }
+        if (debug_EnableInteraction == true)
+        {
+            debug_EnableInteraction = false;
+            Debug.Log("DEBUG  || Enabled Interaction by editor debug");
+            Action_EnableInteraction();
+        }
+        if (debug_DisableInteraction == true)
+        {
+            debug_DisableInteraction = false;
+            Debug.Log("DEBUG  || Disabled Interaction by editor debug");
+            Action_DisableInteraction();
+        }
     }
 }

@@ -101,7 +101,7 @@ public class LevelScript_03 : MonoBehaviour
 
         if(hiddenObjectsFound >= 4)
         {
-
+            EVENT_HiddenObjectFound.Invoke();
         }
     }
 }
