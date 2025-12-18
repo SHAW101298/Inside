@@ -26,7 +26,7 @@ public class ConditionalTrigger : TriggerBase
         }
     }
 
-    public void IncreaseConditionValue()
+    public void TRIGGER_IncreaseConditionValue()
     {
         numberCondition++;
 
