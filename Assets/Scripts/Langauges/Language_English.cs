@@ -528,34 +528,41 @@ public class Language_English : LanguageBase
         loadedText[34] = "Where did that come from ?";
         loadedText[36] = "Take Ribbon";
         loadedText[37] = "Throw Ribbon";
+        loadedText[38] = "Take Watch";
+        loadedText[39] = "Throw Watch";
+        loadedText[40] = "Take Snow Globe";
+        loadedText[41] = "Throw Snow Globe";
+        loadedText[42] = "Take Hammer";
+        loadedText[43] = "Throw Hammer";
+
 
         // Upside Memory Well
-        loadedText[40] = "Pretty convenient isn't it ?";
-        loadedText[41] = "Just erase everything that's bothersome and continue moving forward.";
-        loadedText[42] = "It's so easy to treat everything like a spit on a ground.";
-        loadedText[43] = "A meaningless interactions done only for the sake of peace.";
-        loadedText[44] = "Actions not even worth remembering. Begone from your mind.";
-        loadedText[45] = "In the end its just a bad memory right ? You're the victim here. ";
+        loadedText[50] = "Pretty convenient isn't it ?";
+        loadedText[51] = "Just erase everything that's bothersome and continue moving forward.";
+        loadedText[52] = "It's so easy to treat everything like a spit on a ground.";
+        loadedText[53] = "A meaningless interactions done only for the sake of peace.";
+        loadedText[54] = "Actions not even worth remembering. Begone from your mind.";
+        loadedText[55] = "In the end its just a bad memory right ? You're the victim here. ";
 
         // Rock Pushing
-        loadedText[50] = "What's that rock ?";   // Question
-        loadedText[51] = "There is some guy here trying to push it off the edge. Don't ask me why, I'm as clueless as you. ";
-        loadedText[52] = "How about we do a little prank, to brighten the mood, eh ? Lets loosen a few rocks somewhere up there.";
-        loadedText[53] = "Just think about it, he's gonna fall flat on his face there wondering who did it to him.";
-        loadedText[54] = "Aaaaaand done, now lets go and search for him!";   // Rocks Loosened
+        loadedText[60] = "What's that rock ?";   // Question
+        loadedText[61] = "There is some guy here trying to push it off the edge. Don't ask me why, I'm as clueless as you. ";
+        loadedText[62] = "How about we do a little prank, to brighten the mood, eh ? Lets loosen a few rocks somewhere up there.";
+        loadedText[63] = "Just think about it, he's gonna fall flat on his face there wondering who did it to him.";
+        loadedText[64] = "Aaaaaand done, now lets go and search for him!";   // Rocks Loosened
 
-        loadedText[56] = "All actions have consequences. I'm surprised you got this far without realizing it.";
-        loadedText[57] = "Ignored and left alone with impossible task to fulfill. What else did you expect ?"; // Ignored
+        loadedText[66] = "All actions have consequences. I'm surprised you got this far without realizing it.";
+        loadedText[67] = "Ignored and left alone with impossible task to fulfill. What else did you expect ?"; // Ignored
         //loadedText[157] = "Left alone to deal with, what feels like impossible task? Ok, noted."; // Ignored
-        loadedText[58] = "Was it a mercy or stupidity leading you with that choice ?"; // Killed
+        loadedText[68] = "Was it a mercy or stupidity leading you with that choice ?"; // Killed
         //loadedText[158] = "Is that your idea of being merciful ? "; // Killed
-        loadedText[59] = "Left with no purpose, just to rot and be forgotten. That's one way to go i guess. "; // Ball taken away
+        loadedText[69] = "Left with no purpose, just to rot and be forgotten. That's one way to go i guess. "; // Ball taken away
         //loadedText[159] = "Left with no purpose, just to rot and be forgotten. Noted."; // Ball taken away
-        loadedText[60] = "I mean . . . The goal is fullfilled. But whose success is that really ?"; // Ball placed on the top
+        loadedText[70] = "I mean . . . The goal is fullfilled. But whose success is that really ?"; // Ball placed on the top
         //loadedText[160] = "The goal is fullfilled. But whose success is that really ?"; // Ball placed on the top
 
-        loadedText[61] = "Grab";
-        loadedText[62] = "Release";
+        loadedText[71] = "Grab";
+        loadedText[72] = "Release";
 
         for (int i = 0; i < 200; i++)
         {
