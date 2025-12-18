@@ -16,7 +16,6 @@ public class ItemsManager : MonoBehaviour
 
     private void Start()
     {
-        Debug.LogWarning("Get Item State should be here, not in item data !!");
         RequestSync();
     }
     public void RequestSync()

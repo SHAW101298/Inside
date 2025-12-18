@@ -8925,6 +8925,9 @@ MonoBehaviour:
   disableOnInteraction: 1
   trigger: {fileID: 219371512}
   info: {fileID: 219371511}
+  debug_Interact: 0
+  debug_EnableInteraction: 0
+  debug_DisableInteraction: 0
 --- !u!114 &219371511
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9568,6 +9571,63 @@ Transform:
   m_Father: {fileID: 1940647160}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &234591843
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7943315283917321161, guid: 3b0eaa653f0bec94bbd4112eac9772ce, type: 3}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 7943315283917321161, guid: 3b0eaa653f0bec94bbd4112eac9772ce, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 721.5308
+      objectReference: {fileID: 0}
+    - target: {fileID: 7943315283917321161, guid: 3b0eaa653f0bec94bbd4112eac9772ce, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 460.10754
+      objectReference: {fileID: 0}
+    - target: {fileID: 7943315283917321161, guid: 3b0eaa653f0bec94bbd4112eac9772ce, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.959541
+      objectReference: {fileID: 0}
+    - target: {fileID: 7943315283917321161, guid: 3b0eaa653f0bec94bbd4112eac9772ce, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7943315283917321161, guid: 3b0eaa653f0bec94bbd4112eac9772ce, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7943315283917321161, guid: 3b0eaa653f0bec94bbd4112eac9772ce, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7943315283917321161, guid: 3b0eaa653f0bec94bbd4112eac9772ce, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7943315283917321161, guid: 3b0eaa653f0bec94bbd4112eac9772ce, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7943315283917321161, guid: 3b0eaa653f0bec94bbd4112eac9772ce, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7943315283917321161, guid: 3b0eaa653f0bec94bbd4112eac9772ce, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7943315283917321167, guid: 3b0eaa653f0bec94bbd4112eac9772ce, type: 3}
+      propertyPath: m_Name
+      value: NoteData
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3b0eaa653f0bec94bbd4112eac9772ce, type: 3}
 --- !u!1001 &236883556
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19850,6 +19910,9 @@ MonoBehaviour:
   disableOnInteraction: 1
   trigger: {fileID: 370017150}
   info: {fileID: 370017151}
+  debug_Interact: 0
+  debug_EnableInteraction: 0
+  debug_DisableInteraction: 0
 --- !u!1 &375625937
 GameObject:
   m_ObjectHideFlags: 0
@@ -27575,6 +27638,9 @@ MonoBehaviour:
   disableOnInteraction: 1
   trigger: {fileID: 567281467}
   info: {fileID: 567281468}
+  debug_Interact: 0
+  debug_EnableInteraction: 0
+  debug_DisableInteraction: 0
 --- !u!1001 &569796577
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33809,6 +33875,9 @@ MonoBehaviour:
   disableOnInteraction: 1
   trigger: {fileID: 694068846}
   info: {fileID: 694068847}
+  debug_Interact: 0
+  debug_EnableInteraction: 0
+  debug_DisableInteraction: 0
 --- !u!1001 &694462976
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36116,6 +36185,9 @@ MonoBehaviour:
   disableOnInteraction: 1
   trigger: {fileID: 786664367}
   info: {fileID: 786664368}
+  debug_Interact: 0
+  debug_EnableInteraction: 0
+  debug_DisableInteraction: 0
 --- !u!1001 &787672942
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44502,6 +44574,9 @@ MonoBehaviour:
   disableOnInteraction: 1
   trigger: {fileID: 983476922}
   info: {fileID: 983476921}
+  debug_Interact: 0
+  debug_EnableInteraction: 0
+  debug_DisableInteraction: 0
 --- !u!114 &983476921
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45800,6 +45875,9 @@ MonoBehaviour:
   disableOnInteraction: 1
   trigger: {fileID: 1025026962}
   info: {fileID: 1025026961}
+  debug_Interact: 0
+  debug_EnableInteraction: 0
+  debug_DisableInteraction: 0
 --- !u!114 &1025026961
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46050,6 +46128,9 @@ MonoBehaviour:
   disableOnInteraction: 1
   trigger: {fileID: 1027473810}
   info: {fileID: 1027473811}
+  debug_Interact: 0
+  debug_EnableInteraction: 0
+  debug_DisableInteraction: 0
 --- !u!1001 &1028030087
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -55913,6 +55994,9 @@ MonoBehaviour:
   disableOnInteraction: 1
   trigger: {fileID: 1292865189}
   info: {fileID: 1292865190}
+  debug_Interact: 0
+  debug_EnableInteraction: 0
+  debug_DisableInteraction: 0
 --- !u!1001 &1293133078
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -62160,6 +62244,9 @@ MonoBehaviour:
   disableOnInteraction: 1
   trigger: {fileID: 1425441032}
   info: {fileID: 1425441033}
+  debug_Interact: 0
+  debug_EnableInteraction: 0
+  debug_DisableInteraction: 0
 --- !u!1 &1427487862
 GameObject:
   m_ObjectHideFlags: 0
@@ -62425,6 +62512,9 @@ MonoBehaviour:
   disableOnInteraction: 1
   trigger: {fileID: 1430271748}
   info: {fileID: 1430271749}
+  debug_Interact: 0
+  debug_EnableInteraction: 0
+  debug_DisableInteraction: 0
 --- !u!1001 &1430763561
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -64868,6 +64958,9 @@ MonoBehaviour:
   disableOnInteraction: 1
   trigger: {fileID: 1495931381}
   info: {fileID: 1495931382}
+  debug_Interact: 0
+  debug_EnableInteraction: 0
+  debug_DisableInteraction: 0
 --- !u!1001 &1496017489
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -69245,6 +69338,9 @@ MonoBehaviour:
   disableOnInteraction: 1
   trigger: {fileID: 1625646663}
   info: {fileID: 1625646664}
+  debug_Interact: 0
+  debug_EnableInteraction: 0
+  debug_DisableInteraction: 0
 --- !u!1 &1629776364
 GameObject:
   m_ObjectHideFlags: 0
@@ -85013,6 +85109,9 @@ MonoBehaviour:
   disableOnInteraction: 1
   trigger: {fileID: 2072392518}
   info: {fileID: 2072392519}
+  debug_Interact: 0
+  debug_EnableInteraction: 0
+  debug_DisableInteraction: 0
 --- !u!1001 &2074637194
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -88831,6 +88930,9 @@ MonoBehaviour:
   disableOnInteraction: 0
   trigger: {fileID: 4024270978253056981}
   info: {fileID: 4024270978253056980}
+  debug_Interact: 0
+  debug_EnableInteraction: 0
+  debug_DisableInteraction: 0
 --- !u!114 &4024270978253056980
 MonoBehaviour:
   m_ObjectHideFlags: 0

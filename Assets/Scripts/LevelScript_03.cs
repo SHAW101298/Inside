@@ -97,19 +97,6 @@ public class LevelScript_03 : MonoBehaviour
     {
         SceneManager.LoadScene(3);
     }
-    public void WellObjectFound()
-    {
-        hiddenObjectsFound++;
-
-        if(hiddenObjectsFound >= 4)
-        {
-            EVENT_HiddenObjectsThrown.Invoke();
-            if(ItemsData.Instance.CheckIfHasItem(0) == true)
-            {
-                ThrowDaggersInteraction.Action_EnableInteraction();
-            }
-        }
-    }
     public void WellObjectThrown()
     {
         hiddenObjectsThrown++;
@@ -120,7 +107,7 @@ public class LevelScript_03 : MonoBehaviour
     }
     public void EnableDaggersThrowInteraction()
     {
-        if (ItemsData.Instance.CheckIfHasItem(0) == true)
+        if (ItemsManager.Instance.CheckIfItemIsOwned(0) == true)
         {
             Debug.Log("Enabling interaction");
             ThrowDaggersInteraction.Action_EnableInteraction();

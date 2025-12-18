@@ -5,7 +5,7 @@ using UnityEngine;
 [System.Serializable]
 public class NotePersistentData
 {
-    [SerializeField]public List<bool> isRevealed;
+    [SerializeField]public List<bool> isLineRevealed;
 }
 public class NotesData : MonoBehaviour
 {
@@ -28,9 +28,9 @@ public class NotesData : MonoBehaviour
     {
         for(int i = 0; i < notes.Count; i++)
         {
-            for(int j = 0; j < notes[i].isRevealed.Count; j++)
+            for(int j = 0; j < notes[i].isLineRevealed.Count; j++)
             {
-                if (notes[i].isRevealed[j] == true)
+                if (notes[i].isLineRevealed[j] == true)
                 {
                     NotesManager.Instance.RevealNoteData(i, j);
                 }
