@@ -48,4 +48,9 @@ public class ItemsData : MonoBehaviour
     {
         itemsAvailability[id].ACTION_MarkAsNotOwned();
     }
+    public bool CheckIfHasItem(int id)
+    {
+        //Debug.Log("Item id " + id + " is owned ? || " + itemsAvailability[id].isOwned);
+        return itemsAvailability[id].isOwned;
+    }
 }

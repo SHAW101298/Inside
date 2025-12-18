@@ -70,7 +70,9 @@ public class LevelScript_03 : MonoBehaviour
     */
 
     [SerializeField] int hiddenObjectsFound;
-    public UnityEvent EVENT_HiddenObjectFound;
+    [SerializeField] int hiddenObjectsThrown;
+    public UnityEvent EVENT_HiddenObjectsThrown;
+    [SerializeField] Interaction ThrowDaggersInteraction;
 
     void Start()
     {
@@ -101,7 +103,27 @@ public class LevelScript_03 : MonoBehaviour
 
         if(hiddenObjectsFound >= 4)
         {
-            EVENT_HiddenObjectFound.Invoke();
+            EVENT_HiddenObjectsThrown.Invoke();
+            if(ItemsData.Instance.CheckIfHasItem(0) == true)
+            {
+                ThrowDaggersInteraction.Action_EnableInteraction();
+            }
+        }
+    }
+    public void WellObjectThrown()
+    {
+        hiddenObjectsThrown++;
+        if(hiddenObjectsThrown >= 4)
+        {
+            EVENT_HiddenObjectsThrown.Invoke();
+        }
+    }
+    public void EnableDaggersThrowInteraction()
+    {
+        if (ItemsData.Instance.CheckIfHasItem(0) == true)
+        {
+            Debug.Log("Enabling interaction");
+            ThrowDaggersInteraction.Action_EnableInteraction();
         }
     }
 }
