@@ -30,8 +30,17 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 2
+        time: 1.8333334
         value: 0.75
+        inSlope: 0.5
+        outSlope: 0.5
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 2
+        value: 1
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -42,8 +51,8 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: material._DissolveAmount
-    path: 
-    classID: 23
+    path: Hooded Girl 1 For Rigging
+    classID: 137
     script: {fileID: 0}
   m_PPtrCurves: []
   m_SampleRate: 60
@@ -54,10 +63,10 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 0
+      path: 3662128733
       attribute: 2304829741
       script: {fileID: 0}
-      typeID: 23
+      typeID: 137
       customType: 22
       isPPtrCurve: 0
     pptrCurveMapping: []
@@ -95,8 +104,17 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 2
+        time: 1.8333334
         value: 0.75
+        inSlope: 0.5
+        outSlope: 0.5
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 2
+        value: 1
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -107,8 +125,8 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: material._DissolveAmount
-    path: 
-    classID: 23
+    path: Hooded Girl 1 For Rigging
+    classID: 137
     script: {fileID: 0}
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
