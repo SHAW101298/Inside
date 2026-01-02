@@ -139,4 +139,8 @@ public class InteractionHolder : MonoBehaviour
     {
         Destroy(gameObject);
     }
+    public void ACTION_DisableHolderObject()
+    {
+        gameObject.SetActive(false);
+    }
 }
