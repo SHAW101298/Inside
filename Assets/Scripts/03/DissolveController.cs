@@ -24,13 +24,13 @@ public class DissolveController : MonoBehaviour
         Increasing();
         Decreasing();
     }
-    public void StartIncreasing()
+    public void StartDissolving()
     {
         decrease = false;
         increase = true;
         timer = 0;
     }
-    public void StartDecreasing()
+    public void StartMaterializing()
     {
         increase = false;
         decrease = true;
