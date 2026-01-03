@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class DissolveController : MonoBehaviour
 {
@@ -9,16 +10,22 @@ public class DissolveController : MonoBehaviour
     [SerializeField] string valueToBeChanged;
     [SerializeField] float changeTime;
     [Description("How much should the beggining of timer be offset, to flow correctly with dissolve amount")]
-    [SerializeField] float timerOffset;
+    [SerializeField] float valueOffset;
+    float endVal;
+    float beginVal;
     float timer;
     float currentValue;
-    [SerializeField] bool decrease;
-    [SerializeField] bool increase;
+    bool decrease;
+    bool increase;
+
+    public UnityEvent EVENT_Materialized;
+    public UnityEvent EVENT_Dissolved;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        endVal = 1 - valueOffset;
+        beginVal = valueOffset;
     }
 
     // Update is called once per frame
@@ -39,6 +46,7 @@ public class DissolveController : MonoBehaviour
     }
 
 
+    // Dissolving
     void Increasing()
     {
         if(increase == true)
@@ -46,15 +54,17 @@ public class DissolveController : MonoBehaviour
             timer += Time.deltaTime;
             currentValue = timer / changeTime;
             
-            if(currentValue >= 1)
+            if(currentValue >= endVal)
             {
-                currentValue = 1;
-                timer = 0;
+                currentValue = endVal;
+                timer = endVal * 2;
                 increase = false;
+                EVENT_Dissolved.Invoke();
             }
             mat.SetFloat(valueToBeChanged, currentValue);
         }
     }
+    // Materializing
     void Decreasing()
     {
         /*
@@ -82,6 +92,7 @@ public class DissolveController : MonoBehaviour
                 currentValue = 0;
                 timer = 0;
                 decrease = false;
+                EVENT_Materialized.Invoke();
             }
             mat.SetFloat(valueToBeChanged, currentValue);
         }
