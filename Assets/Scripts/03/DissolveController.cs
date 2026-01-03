@@ -26,6 +26,9 @@ public class DissolveController : MonoBehaviour
     {
         endVal = 1 - valueOffset;
         beginVal = valueOffset;
+
+        currentValue = endVal;
+        timer = endVal * 2;
     }
 
     // Update is called once per frame
