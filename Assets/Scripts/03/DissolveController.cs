@@ -100,4 +100,27 @@ public class DissolveController : MonoBehaviour
             mat.SetFloat(valueToBeChanged, currentValue);
         }
     }
+
+    public void ACTION_ForceDissolved_NOEVENT()
+    {
+        currentValue = endVal;
+        timer = endVal * 2;
+    }
+    public void ACTION_ForceMaterialized_NOEVENT()
+    {
+        currentValue = 0;
+        timer = 0;
+    }
+    public void ACTION_ForceDissolved_WITHEVENT()
+    {
+        currentValue = endVal;
+        timer = endVal * 2;
+        EVENT_Dissolved.Invoke();
+    }
+    public void ACTION_ForceMaterialized_WITHEVENT()
+    {
+        currentValue = 0;
+        timer = 0;
+        EVENT_Materialized.Invoke();
+    }
 }
