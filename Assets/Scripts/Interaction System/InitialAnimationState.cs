@@ -12,9 +12,12 @@ public class InitialAnimationState : MonoBehaviour
 
     Animator anim;
     // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
         anim = GetComponent<Animator>();
+    }
+    void Start()
+    {
         if(applyImmidately == true)
         {
             ApplyState();
