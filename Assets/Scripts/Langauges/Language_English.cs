@@ -569,6 +569,11 @@ public class Language_English : LanguageBase
         loadedText[80] = "Throw Daggers";
         loadedText[81] = "Take Daggers";
 
+        // Directions
+        loadedText[90] = "Are you lost ?";
+        loadedText[91] = "Or maybe you lost something ?";
+        loadedText[92] = "Or maybe its the other way around ?";
+
         for (int i = 0; i < 200; i++)
         {
             text[i + 300] = loadedText[i];
