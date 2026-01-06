@@ -546,26 +546,27 @@ public class Language_English : LanguageBase
 
         // Rock Pushing
         loadedText[60] = "What's that rock ?";   // Question
-        loadedText[61] = "There is some guy here trying to push it off the edge. Don't ask me why, I'm as clueless as you. ";
-        loadedText[62] = "How about we do a little prank, to brighten the mood, eh ? Lets loosen a few rocks somewhere up there.";
-        loadedText[63] = "Just think about it, he's gonna fall flat on his face there wondering who did it to him.";
-        loadedText[64] = "Aaaaaand done, now lets go and search for him!";   // Rocks Loosened
+        loadedText[61] = "There is some guy here trying to push it off the edge.";
+        loadedText[62] = "Don't ask me why, I'm as clueless as you. ";
+        loadedText[63] = "How about we do a little prank, to brighten the mood, eh ?";
+        loadedText[64] = "Lets loosen a few rocks somewhere up there.";
+        loadedText[65] = "Just think about it, he's gonna fall flat on his face there wondering who did it to him.";
+        loadedText[66] = "This seems like a spot !";
+        loadedText[67] = "Aaaaaand done, now lets go and search for him!";   // Rocks Loosened
 
-        loadedText[66] = "All actions have consequences. I'm surprised you got this far without realizing it.";
-        loadedText[67] = "Ignored and left alone with impossible task to fulfill. What else did you expect ?"; // Ignored
+        loadedText[70] = "All actions have consequences. I'm surprised you got this far without realizing it.";
+        loadedText[71] = "Ignored and left alone with impossible task to fulfill. What else did you expect ?"; // Ignored
         //loadedText[157] = "Left alone to deal with, what feels like impossible task? Ok, noted."; // Ignored
-        loadedText[68] = "Was it a mercy or stupidity leading you with that choice ?"; // Killed
+        loadedText[72] = "Was it a mercy or stupidity leading you with that choice ?"; // Killed
         //loadedText[158] = "Is that your idea of being merciful ? "; // Killed
-        loadedText[69] = "Left with no purpose, just to rot and be forgotten. That's one way to go i guess. "; // Ball taken away
+        loadedText[73] = "Left with no purpose, just to rot and be forgotten. That's one way to go i guess. "; // Ball taken away
         //loadedText[159] = "Left with no purpose, just to rot and be forgotten. Noted."; // Ball taken away
-        loadedText[70] = "I mean . . . The goal is fullfilled. But whose success is that really ?"; // Ball placed on the top
+        loadedText[74] = "I mean . . . The goal is fullfilled. But whose success is that really ?"; // Ball placed on the top
         //loadedText[160] = "The goal is fullfilled. But whose success is that really ?"; // Ball placed on the top
 
-        loadedText[71] = "Grab";
-        loadedText[72] = "Release";
 
-        loadedText[74] = "Throw Daggers";
-        loadedText[75] = "Take Daggers";
+        loadedText[80] = "Throw Daggers";
+        loadedText[81] = "Take Daggers";
 
         for (int i = 0; i < 200; i++)
         {
