@@ -546,13 +546,14 @@ public class Language_English : LanguageBase
 
         // Rock Pushing
         loadedText[60] = "What's that rock ?";   // Question
-        loadedText[61] = "There is some guy here trying to push it off the edge.";
+        loadedText[61] = "There is some guy here trying to push it along the path.";
         loadedText[62] = "Don't ask me why, I'm as clueless as you. ";
         loadedText[63] = "How about we do a little prank, to brighten the mood, eh ?";
         loadedText[64] = "Lets loosen a few rocks somewhere up there.";
         loadedText[65] = "Just think about it, he's gonna fall flat on his face there wondering who did it to him.";
         loadedText[66] = "This seems like a spot !";
         loadedText[67] = "Aaaaaand done, now lets go and search for him!";   // Rocks Loosened
+        loadedText[68] = "Loosen Rocks";
 
         loadedText[70] = "All actions have consequences. I'm surprised you got this far without realizing it.";
         loadedText[71] = "Ignored and left alone with impossible task to fulfill. What else did you expect ?"; // Ignored
