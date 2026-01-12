@@ -503,6 +503,7 @@ public class Language_English : LanguageBase
         loadedText[1] = "The Choice";
         loadedText[2] = "Give Up";
         loadedText[3] = "Be";
+        loadedText[4] = "Light Up";
 
         loadedText[10] = "What is this place ?";
         loadedText[11] = "Who Am I ?";
@@ -573,6 +574,7 @@ public class Language_English : LanguageBase
         loadedText[90] = "Are you lost ?";
         loadedText[91] = "Or maybe you lost something ?";
         loadedText[92] = "Or maybe its the other way around ?";
+
 
         for (int i = 0; i < 200; i++)
         {
