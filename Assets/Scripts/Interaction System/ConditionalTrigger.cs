@@ -35,5 +35,14 @@ public class ConditionalTrigger : TriggerBase
             TriggerInteraction();
         }
     }
+    public void TRIGGER_SetValue(int x)
+    {
+        numberCondition = x;
+
+        if (numberCondition >= requiredValue)
+        {
+            TriggerInteraction();
+        }
+    }
 
 }
