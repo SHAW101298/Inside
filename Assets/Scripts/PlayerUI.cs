@@ -21,6 +21,7 @@ public class PlayerUI : MonoBehaviour
     [SerializeField] GameObject optionsWindow;
     [SerializeField] GameObject exitWindow;
     [SerializeField] GameObject currentWindow;
+    [SerializeField] GameObject inventoryWindow;
     [Header("Options")]
     [SerializeField] Slider soundSlider;
     [SerializeField] Slider musicSlider;
@@ -29,6 +30,10 @@ public class PlayerUI : MonoBehaviour
     [SerializeField] TMP_Dropdown resolutionDropDown;
     [SerializeField] Toggle fullScreenToggle;
     [SerializeField] TMP_Dropdown languageDropDown;
+    [Header("Inventory")]
+    [SerializeField] GameObject itemsWindow;
+    [SerializeField] GameObject journalWindow;
+    [SerializeField] GameObject mapWindow;
     [Header("More")]
     [SerializeField] List<LanguageApplier> textFieldsToTranslate;
     float originalMusicVolume;
@@ -67,12 +72,11 @@ public class PlayerUI : MonoBehaviour
         {
             if(currentWindow == pauseWindow)
             {
-                currentWindow.SetActive(false);
-                currentWindow = null;
-                uiActive = false;
-                Cursor.visible = false;
-                Cursor.lockState = CursorLockMode.Locked;
-                data.AllowMovemntAndRotationByUI();
+                HideUI();
+            }
+            else if(currentWindow == inventoryWindow)
+            {
+                HideUI();
             }
             else
             {
@@ -84,12 +88,9 @@ public class PlayerUI : MonoBehaviour
         }
         else
         {
-            uiActive = true;
+            ActivateUI();
             currentWindow = pauseWindow;
             currentWindow.SetActive(true);
-            Cursor.visible = true;
-            Cursor.lockState = CursorLockMode.None;
-            data.BlockMovementAndRotationByUI();
 
 
             originalMusicVolume = Options.Instance.GetMusicVolume();
@@ -97,6 +98,54 @@ public class PlayerUI : MonoBehaviour
         }
     }
 
+    private void HideUI()
+    {
+        currentWindow.SetActive(false);
+        currentWindow = null;
+        uiActive = false;
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+        data.AllowMovemntAndRotationByUI();
+    }
+
+    private void ActivateUI()
+    {
+        uiActive = true;
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+        data.BlockMovementAndRotationByUI();
+    }
+
+    public void ACTION_InventoryButton(InputAction.CallbackContext context)
+    {
+        if (context.phase != InputActionPhase.Performed)
+        {
+            return;
+        }
+
+        ActivateUI();
+        itemsWindow.SetActive(true);
+    }
+    public void ACTION_MapButton(InputAction.CallbackContext context)
+    {
+        if (context.phase != InputActionPhase.Performed)
+        {
+            return;
+        }
+
+        ActivateUI();
+        mapWindow.SetActive(true);
+    }
+    public void ACTION_JournalButton(InputAction.CallbackContext context)
+    {
+        if (context.phase != InputActionPhase.Performed)
+        {
+            return;
+        }
+
+        ActivateUI();
+        journalWindow.SetActive(true);
+    }
     public void BTN_Continue()
     {
         currentWindow.SetActive(false);

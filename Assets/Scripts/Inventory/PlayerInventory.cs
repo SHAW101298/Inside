@@ -1,20 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using UnityEngine.UI;
 
 public class PlayerInventory : MonoBehaviour
 {
     public PlayerData data;
+    public GameObject itemUI_Prefab;
+    public GameObject itemsContent;
 
-    // Start is called before the first frame update
-    void Start()
+    public void UpdateItemsWindow()
     {
-        
+
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
