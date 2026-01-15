@@ -20,8 +20,8 @@ public class PlayerUI : MonoBehaviour
     [SerializeField] GameObject pauseWindow;
     [SerializeField] GameObject optionsWindow;
     [SerializeField] GameObject exitWindow;
-    [SerializeField] GameObject currentWindow;
     [SerializeField] GameObject inventoryWindow;
+    [SerializeField] GameObject currentWindow;
     [Header("Options")]
     [SerializeField] Slider soundSlider;
     [SerializeField] Slider musicSlider;
