@@ -576,6 +576,7 @@ public class Language_English : LanguageBase
         loadedText[92] = "Or maybe its the other way around ?";
         loadedText[93] = "All these signs, pointing in every direction.";
         loadedText[94] = "And yet, no step taken on any path. The irony of it";
+        loadedText[95] = "Want me to do something about it ?";
 
 
         for (int i = 0; i < 200; i++)
