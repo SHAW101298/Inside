@@ -11,6 +11,7 @@ public class UI_Data : MonoBehaviour
     public float floatValue;
     public string stringValue;
     public TMP_Text textField;
+    public Image image;
 
     public void SetTextField(string txt)
     {
@@ -26,5 +27,10 @@ public class UI_Data : MonoBehaviour
     {
         Debug.Log("Button Pressed on Option " + intValue);
         DialogManager.Instance.ChooseDialogOption(intValue);
+    }
+    public void INVENTORY_ClickOnItem()
+    {
+        Debug.Log("Clicked on Item in Inventory");
+        PlayerData.instance.inventory.ClickedOnItem(intValue);
     }
 }

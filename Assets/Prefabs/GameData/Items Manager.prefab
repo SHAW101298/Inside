@@ -96,7 +96,7 @@ MonoBehaviour:
   id: 2
   itemName: Ribbon
   description: Simple ribbon.
-  iconID: 0
+  iconID: 2
   isOwned: 0
 --- !u!1 &703286769689475239
 GameObject:
@@ -145,7 +145,7 @@ MonoBehaviour:
   id: 5
   itemName: Hammer
   description: A simple hammer.
-  iconID: 0
+  iconID: 1
   isOwned: 0
 --- !u!1 &703286769777242903
 GameObject:
@@ -194,7 +194,7 @@ MonoBehaviour:
   id: 3
   itemName: Snow Globe
   description: 'Only the miniature inside is intact. '
-  iconID: 0
+  iconID: 3
   isOwned: 0
 --- !u!1 &703286770056962270
 GameObject:
@@ -243,7 +243,7 @@ MonoBehaviour:
   id: 4
   itemName: Watch
   description: The hands are no longer moving.
-  iconID: 0
+  iconID: 4
   isOwned: 0
 --- !u!1 &703286770310005980
 GameObject:

@@ -25,6 +25,45 @@ public class PlayerData : MonoBehaviour
     public PlayerAnimations animations;
     public PlayerInput input;
     public PlayerInteractRay interactRay;
+    public PlayerInventory inventory;
+
+
+    private void Start()
+    {
+        SetReferences();
+    }
+
+    private void SetReferences()
+    {
+        if (movement == null)
+        {
+            movement = GetComponent<PlayerMovement>();
+        }
+        if (rotation == null)
+        {
+            rotation = GetComponent<PlayerRotation>();
+        }
+        if (ui == null)
+        {
+            ui = GetComponent<PlayerUI>();
+        }
+        if (animations == null)
+        {
+            animations = GetComponent<PlayerAnimations>();
+        }
+        if (input == null)
+        {
+            input = GetComponent<PlayerInput>();
+        }
+        if (interactRay == null)
+        {
+            interactRay = GetComponent<PlayerInteractRay>();
+        }
+        if (inventory == null)
+        {
+            inventory = GetComponent<PlayerInventory>();
+        }
+    }
 
     public void BlockMovementAndRotationByUI()
     {

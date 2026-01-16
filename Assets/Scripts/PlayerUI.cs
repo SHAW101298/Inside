@@ -123,8 +123,17 @@ public class PlayerUI : MonoBehaviour
             return;
         }
 
+        if(currentWindow == inventoryWindow)
+        {
+
+        }
+
         ActivateUI();
+        currentWindow = inventoryWindow;
+        currentWindow.SetActive(true);
         itemsWindow.SetActive(true);
+        mapWindow.SetActive(false);
+        journalWindow.SetActive(false);
     }
     public void ACTION_MapButton(InputAction.CallbackContext context)
     {
@@ -134,7 +143,11 @@ public class PlayerUI : MonoBehaviour
         }
 
         ActivateUI();
+        currentWindow = inventoryWindow;
+        currentWindow.SetActive(true);
+        itemsWindow.SetActive(false);
         mapWindow.SetActive(true);
+        journalWindow.SetActive(false);
     }
     public void ACTION_JournalButton(InputAction.CallbackContext context)
     {
@@ -144,6 +157,10 @@ public class PlayerUI : MonoBehaviour
         }
 
         ActivateUI();
+        currentWindow = inventoryWindow;
+        currentWindow.SetActive(true);
+        itemsWindow.SetActive(false);
+        mapWindow.SetActive(false);
         journalWindow.SetActive(true);
     }
     public void BTN_Continue()
