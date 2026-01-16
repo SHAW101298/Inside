@@ -28,7 +28,7 @@ public class DissolveController : MonoBehaviour
         beginVal = valueOffset;
 
         currentValue = endVal;
-        timer = endVal * 2;
+        timer = endVal * changeTime;
     }
 
     // Update is called once per frame
@@ -60,7 +60,7 @@ public class DissolveController : MonoBehaviour
             if(currentValue >= endVal)
             {
                 currentValue = endVal;
-                timer = endVal * 2;
+                timer = endVal * changeTime;
                 increase = false;
                 EVENT_Dissolved.Invoke();
             }
