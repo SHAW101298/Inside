@@ -67,8 +67,8 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _HorizonLineContribution: 0.84
-    - _HorizonLineExponent: 5.24
+    - _HorizonLineContribution: 1
+    - _HorizonLineExponent: 8
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
@@ -77,26 +77,30 @@ Material:
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
-    - _SunDiscExponent: 20000
+    - _StarHeight: 200
+    - _StarIntensity: 64.3
+    - _StarPower: 50
+    - _SunDiscExponent: 548
     - _SunDiscMultiplier: 5
-    - _SunHaloContribution: 0.5
+    - _SunHaloContribution: 0.307
     - _SunHaloExponent: 100
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Bottom: {r: 0.8392157, g: 0.6117647, b: 0.50980395, a: 1}
+    - _Bottom: {r: 0, g: 0, b: 0, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _HorizonLineColor: {r: 0.8666667, g: 0, b: 0.12549016, a: 0.7058824}
+    - _HorizonLineColor: {r: 0, g: 0, b: 0, a: 0.7058824}
     - _HorizonLineColor_1: {r: 0, g: 0, b: 0, a: 0}
     - _HorizonLineColor_2: {r: 0, g: 0, b: 0, a: 0}
     - _HorizonLineColor_3: {r: 0, g: 0, b: 0, a: 0}
     - _HorizonLineColor_4: {r: 0, g: 0, b: 0, a: 0}
     - _HorizonLineColor_5: {r: 0, g: 0, b: 0, a: 0}
-    - _MainLightDirection: {r: -0.59534866, g: -0.7307626, b: 0.33398497, a: 0}
-    - _SunDiscColor: {r: 1, g: 0.737255, b: 0.39999998, a: 1}
-    - _SunHaloColor: {r: 1, g: 0.5490196, b: 0, a: 1}
-    - _Top: {r: 0.10980389, g: 0.16078427, b: 0.19999996, a: 1}
+    - _MainLightDirection: {r: 0.32139385, g: -0.7660443, b: -0.5566705, a: 0}
+    - _StarColor: {r: 1, g: 0.9155275, b: 0.745283, a: 1}
+    - _SunDiscColor: {r: 0, g: 0, b: 0, a: 1}
+    - _SunHaloColor: {r: 0, g: 0, b: 0, a: 1}
+    - _Top: {r: 0.09019608, g: 0.09019608, b: 0.09019608, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &856469250508218311
 MonoBehaviour:

@@ -251,20 +251,6 @@
         {
             "m_OutputSlot": {
                 "m_Node": {
-                    "m_Id": "2101056432094367894cfda84fb69015"
-                },
-                "m_SlotId": 0
-            },
-            "m_InputSlot": {
-                "m_Node": {
-                    "m_Id": "ae1245dd4aa4456aa2ccb8bc1eb2af11"
-                },
-                "m_SlotId": -1286520615
-            }
-        },
-        {
-            "m_OutputSlot": {
-                "m_Node": {
                     "m_Id": "25150beb0a344de78ad23109419b5b09"
                 },
                 "m_SlotId": 3
@@ -1254,24 +1240,6 @@
         "e32": 0.0,
         "e33": 1.0
     }
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.Texture2DInputMaterialSlot",
-    "m_ObjectId": "1d1c2e1aad534bb8adf0c32e0e0e5514",
-    "m_Id": 670950598,
-    "m_DisplayName": "StarsTexture",
-    "m_SlotType": 0,
-    "m_Hidden": false,
-    "m_ShaderOutputName": "_StarsTexture",
-    "m_StageCapability": 3,
-    "m_BareResource": false,
-    "m_Texture": {
-        "m_SerializedTexture": "{\"texture\":{\"instanceID\":0}}",
-        "m_Guid": ""
-    },
-    "m_DefaultType": 0
 }
 
 {
@@ -3213,21 +3181,6 @@
 }
 
 {
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
-    "m_ObjectId": "87c5bd36e96b439297e6b8291fa5313f",
-    "m_Id": -1286520615,
-    "m_DisplayName": "StarsIntensity",
-    "m_SlotType": 0,
-    "m_Hidden": false,
-    "m_ShaderOutputName": "_StarsIntensity",
-    "m_StageCapability": 3,
-    "m_Value": 50.0,
-    "m_DefaultValue": 0.0,
-    "m_Labels": []
-}
-
-{
     "m_SGVersion": 1,
     "m_Type": "UnityEditor.ShaderGraph.Internal.Vector1ShaderProperty",
     "m_ObjectId": "883f97fb38f443cc98bef9287d96b209",
@@ -3942,10 +3895,7 @@
             "m_Id": "0b3ca4d19a0547449914b7057e4a7dfc"
         },
         {
-            "m_Id": "87c5bd36e96b439297e6b8291fa5313f"
-        },
-        {
-            "m_Id": "1d1c2e1aad534bb8adf0c32e0e0e5514"
+            "m_Id": "bfcf40cabef248b398b81aa8cd1388f8"
         },
         {
             "m_Id": "d2618607575e4c80b51e14dfbb125f8d"
@@ -3964,14 +3914,16 @@
         "657aa74a-5d66-482d-b06c-cf890bcf6dc9",
         "3bccdac4-7c8f-4b7e-9de5-81f165577c69",
         "819773b9-7eee-4a1b-8423-aa510a6e7729",
-        "7567781d-5723-4af5-870a-52c87fc13dd0"
+        "7567781d-5723-4af5-870a-52c87fc13dd0",
+        "8632df76-7ba8-492a-9f46-0ebb940b6a6b"
     ],
     "m_PropertyIds": [
         -1259052772,
         1844795799,
         -397470541,
         -1286520615,
-        670950598
+        670950598,
+        528280021
     ],
     "m_Dropdowns": [],
     "m_DropdownSelectedEntries": []
@@ -4438,6 +4390,31 @@
     "m_CustomColors": {
         "m_SerializableColors": []
     }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector4MaterialSlot",
+    "m_ObjectId": "bfcf40cabef248b398b81aa8cd1388f8",
+    "m_Id": 528280021,
+    "m_DisplayName": "StarColor",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "_StarColor",
+    "m_StageCapability": 3,
+    "m_Value": {
+        "x": 0.7283018827438355,
+        "y": 0.621209442615509,
+        "z": 0.23498040437698365,
+        "w": 1.0
+    },
+    "m_DefaultValue": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
+    },
+    "m_Labels": []
 }
 
 {
