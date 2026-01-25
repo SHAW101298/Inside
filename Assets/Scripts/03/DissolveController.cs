@@ -11,6 +11,12 @@ public class DissolveController : MonoBehaviour
     [SerializeField] float changeTime;
     [Description("How much should the beggining of timer be offset, to flow correctly with dissolve amount")]
     [SerializeField] float valueOffset;
+
+    [Header("Values")]
+    [SerializeField] float startValue;
+    [SerializeField] float endValue;
+    float lerpVal;
+
     float endVal;
     float beginVal;
     float timer;
@@ -52,6 +58,7 @@ public class DissolveController : MonoBehaviour
     // Dissolving
     void Increasing()
     {
+        /*
         if(increase == true)
         {
             timer += Time.deltaTime;
@@ -66,25 +73,27 @@ public class DissolveController : MonoBehaviour
             }
             mat.SetFloat(valueToBeChanged, currentValue);
         }
+        */
+        if(increase == true)
+        {
+            timer += Time.deltaTime;
+            currentValue = timer / changeTime;
+            
+            if(currentValue >= changeTime)
+            {
+                lerpVal = Mathf.Lerp(startValue, endValue, currentValue);
+                currentValue = 1;
+                timer = changeTime;
+                increase = false;
+                EVENT_Dissolved.Invoke();
+            }
+            mat.SetFloat(valueToBeChanged, lerpVal);
+        }
     }
     // Materializing
     void Decreasing()
     {
         /*
-        if(decrease == true)
-        {
-            timer += Time.deltaTime;
-            currentValue = 1 - timer / changeTime;
-
-            if (currentValue <= 0)
-            {
-                currentValue = 0;
-                timer = 0;
-                decrease = false;
-            }
-            mat.SetFloat(valueToBeChanged, currentValue);
-        }
-        */
         if (decrease == true)
         {
             timer -= Time.deltaTime;
@@ -98,6 +107,22 @@ public class DissolveController : MonoBehaviour
                 EVENT_Materialized.Invoke();
             }
             mat.SetFloat(valueToBeChanged, currentValue);
+        }
+        */
+        if (decrease == true)
+        {
+            timer += Time.deltaTime;
+            currentValue = timer / changeTime;
+
+            if (currentValue <= 0)
+            {
+                lerpVal = Mathf.Lerp(startValue, endValue, currentValue);
+                currentValue = 0;
+                timer = 0;
+                decrease = false;
+                EVENT_Materialized.Invoke();
+            }
+            mat.SetFloat(valueToBeChanged, lerpVal);
         }
     }
 

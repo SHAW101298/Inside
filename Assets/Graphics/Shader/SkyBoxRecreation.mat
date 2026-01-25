@@ -77,9 +77,9 @@ Material:
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
-    - _StarHeight: 200
+    - _StarHeight: 300
     - _StarIntensity: 64.3
-    - _StarPower: 34
+    - _StarPower: 35
     - _SunDiscExponent: 548
     - _SunDiscMultiplier: 5
     - _SunHaloContribution: 0.307
@@ -97,7 +97,7 @@ Material:
     - _HorizonLineColor_4: {r: 0, g: 0, b: 0, a: 0}
     - _HorizonLineColor_5: {r: 0, g: 0, b: 0, a: 0}
     - _MainLightDirection: {r: 0.32139385, g: -0.7660443, b: -0.5566705, a: 0}
-    - _StarColor: {r: 1, g: 0.9155275, b: 0.745283, a: 1}
+    - _StarColor: {r: 1, g: 1, b: 1, a: 1}
     - _SunDiscColor: {r: 0, g: 0, b: 0, a: 1}
     - _SunHaloColor: {r: 0, g: 0, b: 0, a: 1}
     - _Top: {r: 0.09019608, g: 0.09019608, b: 0.09019608, a: 0}
