@@ -38,7 +38,7 @@ public class ObjectMassivePlacement : MonoBehaviour
         for(int i = 0; i < amountOfObjectsToPlace; i++)
         {
             Vector2 randomCircle = Random.insideUnitCircle * circlePlacementSize;
-            Debug.Log("random circle = " + randomCircle);
+            //Debug.Log("random circle = " + randomCircle);
             randSpot = new Vector3(randomCircle.x, 0, randomCircle.y) + middleOfCircle.position ;
             dir = (randSpot - originOfRay.position).normalized;
 
@@ -46,7 +46,7 @@ public class ObjectMassivePlacement : MonoBehaviour
 
             if(Physics.Raycast(originOfRay.position, dir, out hit, 500f, raycastLayer) == true)
             {
-                Debug.Log("hit point is = " + hit.point);
+                //Debug.Log("hit point is = " + hit.point);
                 temp = Instantiate(objectToSpawn);
                 temp.transform.position = hit.point;
                 // transform randomization
