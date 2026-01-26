@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
+
 public class LevelScript_03 : MonoBehaviour
 {
 
@@ -73,6 +74,11 @@ public class LevelScript_03 : MonoBehaviour
     [SerializeField] int hiddenObjectsThrown;
     public UnityEvent EVENT_HiddenObjectsThrown;
     [SerializeField] Interaction ThrowDaggersInteraction;
+    [SerializeField] Vector3[] desiredIslandsPositions;
+    [SerializeField] GameObject[] islandsMiniatures;
+    [SerializeField] SimpleTrigger[] islandCorrectPlacementTriggers;
+    [SerializeField] float autoMoveDistance;
+
 
     void Start()
     {
@@ -111,6 +117,15 @@ public class LevelScript_03 : MonoBehaviour
         {
             Debug.Log("Enabling interaction");
             ThrowDaggersInteraction.Action_EnableInteraction();
+        }
+    }
+
+    public void ReleasedIsland(int x)
+    {
+        float dist = Vector3.Distance(islandsMiniatures[x].transform.position, desiredIslandsPositions[x]);
+        if(dist <= autoMoveDistance)
+        {
+            islandCorrectPlacementTriggers[x].TriggerInteraction();
         }
     }
 }

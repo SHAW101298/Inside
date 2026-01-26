@@ -504,6 +504,9 @@ public class Language_English : LanguageBase
         loadedText[2] = "Give Up";
         loadedText[3] = "Be";
         loadedText[4] = "Light Up";
+        loadedText[5] = "Grab";
+        loadedText[6] = "Release";
+
 
         loadedText[10] = "What is this place ?";
         loadedText[11] = "Who Am I ?";
