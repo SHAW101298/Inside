@@ -74,7 +74,7 @@ public class LevelScript_03 : MonoBehaviour
     [SerializeField] int hiddenObjectsThrown;
     public UnityEvent EVENT_HiddenObjectsThrown;
     [SerializeField] Interaction ThrowDaggersInteraction;
-    [SerializeField] Vector3[] desiredIslandsPositions;
+    [SerializeField] Transform[] desiredIslandsPositions;
     [SerializeField] GameObject[] islandsMiniatures;
     [SerializeField] SimpleTrigger[] islandCorrectPlacementTriggers;
     [SerializeField] float autoMoveDistance;
@@ -122,7 +122,7 @@ public class LevelScript_03 : MonoBehaviour
 
     public void ReleasedIsland(int x)
     {
-        float dist = Vector3.Distance(islandsMiniatures[x].transform.position, desiredIslandsPositions[x]);
+        float dist = Vector3.Distance(islandsMiniatures[x].transform.position, desiredIslandsPositions[x].position);
         if(dist <= autoMoveDistance)
         {
             islandCorrectPlacementTriggers[x].TriggerInteraction();
