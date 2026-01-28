@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using static UnityEngine.Rendering.DebugUI.Table;
 
 public class SimpleRotation : MonoBehaviour
 {
@@ -21,6 +22,8 @@ public class SimpleRotation : MonoBehaviour
     [SerializeField] Vector3 slerpEndRot;
     [SerializeField] float slerpTime;
     [SerializeField] float slerpTimer;
+    [Header("Stable")]
+    [SerializeField] Vector3 stableAmount;
 
     [Header("Debug")]
     [SerializeField] float dist;
@@ -29,7 +32,6 @@ public class SimpleRotation : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     // Update is called once per frame
@@ -46,6 +48,9 @@ public class SimpleRotation : MonoBehaviour
                 break;
             case ENUM_MovementType.slerp:
                 Slerp();
+                break;
+            case ENUM_MovementType.stable:
+                Stable();
                 break;
             default:
                 break;
@@ -81,5 +86,9 @@ public class SimpleRotation : MonoBehaviour
             //objectToRotate.transform.localEulerAngles = target;
             endRotation.Invoke();
         }
+    }
+    void Stable()
+    {
+        objectToRotate.transform.Rotate(stableAmount/100);
     }
 }
