@@ -4,23 +4,39 @@ using UnityEngine;
 
 public class IslandColorChanging : MonoBehaviour
 {
-    [SerializeField] Material mat;
+    [SerializeField] Material[] mats;
     [SerializeField] float blendVal;
     [SerializeField] Transform DesiredPos;
     [SerializeField] float acceptableDistance;
     float distance;
 
     [SerializeField] SimpleTrigger slotInTrigger;
-    float maxAwayDistance;
+    [SerializeField] float maxAwayDistance;
     float dist;
+
+    bool updateColors;
+
+    [SerializeField] float preview;
     private void Update()
     {
+        UpdateColors();
+    }
+    void UpdateColors()
+    {
+        if (updateColors == false)
+            return;
+
         dist = Vector3.Distance(transform.position, DesiredPos.position);
-        if(dist > maxAwayDistance)
+        if (dist > maxAwayDistance)
         {
             dist = maxAwayDistance;
         }
 
-        blendVal = dist / maxAwayDistance;
+        blendVal = (maxAwayDistance - dist) / maxAwayDistance;
+        preview = blendVal;
+        foreach (Material mat in mats)
+        {
+            mat.SetFloat("_BlendAmount", blendVal);
+        }
     }
 }
