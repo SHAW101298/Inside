@@ -46,11 +46,11 @@ Shader "Custom/SimpleColorShader"
         {
             // Albedo comes from a texture tinted by color
             fixed4 color = lerp(_Color, _SecondColor, _BlendAmount);
-            //fixed4 c = tex2D (_MainTex, IN.uv_MainTex) * color;
-            o.Albedo = color.rgb;
+            fixed4 c = tex2D (_MainTex, IN.uv_MainTex) * color;
+            o.Albedo = c.rgb;
             // Metallic and smoothness come from slider variables
-            //o.Metallic = _Metallic;
-            //o.Smoothness = _Glossiness;
+            o.Metallic = _Metallic;
+            o.Smoothness = _Glossiness;
             //o.Alpha = c.a;
         }
         ENDCG

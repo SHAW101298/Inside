@@ -1,5 +1,18 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-5790527165997833429
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 639247ca83abc874e893eb93af2b5e44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 0
 --- !u!21 &2100000
 Material:
   serializedVersion: 8
@@ -7,8 +20,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Island0_Green2
-  m_Shader: {fileID: 4800000, guid: 8072b40f872b4d44f8969365568e8f83, type: 3}
+  m_Name: ColorRevealPreview
+  m_Shader: {fileID: -6465566751694194690, guid: cbbedc0742f1f434891b99e1bc459d2d, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
@@ -58,7 +71,8 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _BlendAmount: 0
+    - _BUILTIN_QueueControl: 0
+    - _BUILTIN_QueueOffset: 0
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
@@ -75,8 +89,13 @@ Material:
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 1
+    - _noiseScale: 500
+    - _speed: 0.5
+    - _strength: 0.8
+    - _whispPercent: 9.97
+    - _whispScaleMultiplier: 2
     m_Colors:
-    - _Color: {r: 0.16862746, g: 0.16470589, b: 0.16470589, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _SecondColor: {r: 0.19909579, g: 0.4415095, b: 0.234571, a: 1}
+    - _color: {r: 1, g: 0.050943315, b: 0.8690881, a: 1}
   m_BuildTextureStacks: []
