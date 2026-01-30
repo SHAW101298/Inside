@@ -75,6 +75,7 @@ public class LevelScript_03 : MonoBehaviour
     public UnityEvent EVENT_HiddenObjectsThrown;
     [SerializeField] Interaction ThrowDaggersInteraction;
     [SerializeField] Transform[] desiredIslandsPositions;
+    [SerializeField] Transform[] lerpSTARTObjects;
     [SerializeField] GameObject[] islandsMiniatures;
     [SerializeField] SimpleTrigger[] islandCorrectPlacementTriggers;
     [SerializeField] float autoMoveDistance;
@@ -125,6 +126,7 @@ public class LevelScript_03 : MonoBehaviour
         float dist = Vector3.Distance(islandsMiniatures[x].transform.position, desiredIslandsPositions[x].position);
         if(dist <= autoMoveDistance)
         {
+            lerpSTARTObjects[x].position = islandsMiniatures[x].transform.position;
             islandCorrectPlacementTriggers[x].TriggerInteraction();
         }
     }

@@ -39,4 +39,12 @@ public class IslandColorChanging : MonoBehaviour
             mat.SetFloat("_BlendAmount", blendVal);
         }
     }
+    public void StartUpdatingColors()
+    {
+        updateColors = true;
+    }
+    public void StopUpdatingColors()
+    {
+        updateColors = false;
+    }
 }
