@@ -81,6 +81,20 @@ public class InteractionHolder : MonoBehaviour
 
         MarkAsDirty();
     }
+    public void DisableAllInteractions()
+    {
+        foreach(Interaction interaction in possibleInteractions)
+        {
+            interaction.Action_DisableInteraction();
+        }
+    }
+    public void EnableAllInteractions()
+    {
+        foreach (Interaction interaction in disabledInteractions)
+        {
+            interaction.Action_EnableInteraction();
+        }
+    }
     public void EnableInteraction(Interaction inter)
     {
         //Debug.Log("Amount of interactions is =   " + possibleInteractions.Count + "  /  " + disabledInteractions.Count);

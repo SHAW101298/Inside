@@ -45,6 +45,7 @@ public class IslandColorChanging : MonoBehaviour
     }
     public void StopUpdatingColors()
     {
+        //Debug.Log("Stop Updating Colors");
         updateColors = false;
     }
 }

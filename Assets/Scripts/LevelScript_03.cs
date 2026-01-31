@@ -123,9 +123,11 @@ public class LevelScript_03 : MonoBehaviour
 
     public void ReleasedIsland(int x)
     {
+        //Debug.Log("Released Island");
         float dist = Vector3.Distance(islandsMiniatures[x].transform.position, desiredIslandsPositions[x].position);
         if(dist <= autoMoveDistance)
         {
+            //Debug.Log("Distance is Enough");
             lerpSTARTObjects[x].position = islandsMiniatures[x].transform.position;
             islandCorrectPlacementTriggers[x].TriggerInteraction();
         }
