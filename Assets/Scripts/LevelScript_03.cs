@@ -74,11 +74,15 @@ public class LevelScript_03 : MonoBehaviour
     [SerializeField] int hiddenObjectsThrown;
     public UnityEvent EVENT_HiddenObjectsThrown;
     [SerializeField] Interaction ThrowDaggersInteraction;
+    [Header("Island 5")]
     [SerializeField] Transform[] desiredIslandsPositions;
     [SerializeField] Transform[] lerpSTARTObjects;
     [SerializeField] GameObject[] islandsMiniatures;
     [SerializeField] SimpleTrigger[] islandCorrectPlacementTriggers;
     [SerializeField] float autoMoveDistance;
+    [Header("Island 6")]
+    [SerializeField] GameObject stairsObject;
+    [SerializeField] LayerMask terrainLayer;
 
 
     void Start()
@@ -131,5 +135,26 @@ public class LevelScript_03 : MonoBehaviour
             lerpSTARTObjects[x].position = islandsMiniatures[x].transform.position;
             islandCorrectPlacementTriggers[x].TriggerInteraction();
         }
+    }
+    public void TeleportOnStairs()
+    {
+        Vector3 localpos;
+        Vector3 globalpos;
+        RaycastHit hit;
+        
+        if(Physics.Raycast(PlayerData.instance.gameObject.transform.position, Vector3.down, out hit, 5, terrainLayer))
+        {
+            Debug.Log("WE HIT SOMETHING = " + hit.collider.gameObject.name);
+            localpos = hit.collider.gameObject.transform.InverseTransformPoint(hit.point);
+            globalpos = stairsObject.transform.TransformPoint(localpos);
+            PlayerData.instance.TeleportToPosition(globalpos);
+        }
+        else
+        {
+            Debug.Log("NO HIT");
+        }
+        
+        
+
     }
 }
