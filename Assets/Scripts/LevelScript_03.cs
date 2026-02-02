@@ -54,6 +54,11 @@ public class LevelScript_03 : MonoBehaviour
     At the end of the road there will be exit out of bottom. At the exit what can be placed  ?
 
     Or maybe spiral up. Meaning to go out of the loop.
+
+    Spiral will be looping, until some action is done. Either talking with the person, destroying something, jumping down.
+    Not yet decided
+    Dialog person will materialize a blockade in a road, which will need to be destroyed. However they will still provide a shortcut.
+    A road skipping on the side of the blockade. Taking the easy path forces the player back again on the start.
      */
 
     /* Loneliness
