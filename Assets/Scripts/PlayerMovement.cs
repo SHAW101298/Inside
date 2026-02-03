@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Windows;
 
 public enum ENUM_PlayerMoveState
 {
@@ -29,9 +30,8 @@ public class PlayerMovement : MonoBehaviour
     bool blockedMovementByUI;
     [Header("Movement")]
     [SerializeField] float moveSpeed;
-    [SerializeField] float runSpeedMultiplier;
-    [SerializeField] float runningStaminaCost;
-    [SerializeField] bool isRunning;
+    [SerializeField] float walkSpeedMultiplier;
+    [SerializeField] bool isWalking;
     [Header("Jumping")]
     [SerializeField] float jumpHeight = 1.0f;
     [SerializeField] float jumpStaminaCost;
@@ -115,26 +115,26 @@ public class PlayerMovement : MonoBehaviour
         {
             input = context.ReadValue<Vector2>();
             TryToChangeState(ENUM_PlayerMoveState.walking);
-            anim.anim.SetBool("Walking", true);
+            anim.anim.SetBool("Running", true);
         }
         if (context.phase == InputActionPhase.Canceled)
         {
             input = Vector2.zero;
             TryToChangeState(ENUM_PlayerMoveState.idle);
-            anim.anim.SetBool("Walking", false);
+            anim.anim.SetBool("Running", false);
         }
     }
-    public void ActionRunning(InputAction.CallbackContext context)
+    public void ActionWalking(InputAction.CallbackContext context)
     {
-        if(context.phase == InputActionPhase.Performed)
+        if (context.phase == InputActionPhase.Performed)
         {
-            isRunning = true;
-            anim.anim.SetBool("Running", true);
+            isWalking = true;
+            anim.anim.SetBool("Walking", true);
         }
-        if(context.phase == InputActionPhase.Canceled)
+        if (context.phase == InputActionPhase.Canceled)
         {
-            anim.anim.SetBool("Running", false);
-            isRunning = false;
+            anim.anim.SetBool("Walking", false);
+            isWalking = false;
         }
     }
     public void ActionJump(InputAction.CallbackContext context)
@@ -178,9 +178,9 @@ public class PlayerMovement : MonoBehaviour
         dir *= moveSpeed * Time.deltaTime;
         dir = transform.TransformDirection(dir);
 
-        if(isRunning == true)
+        if(isWalking == true)
         {
-            dir *= runSpeedMultiplier;
+            dir *= walkSpeedMultiplier;
         }
 
         controller.Move(dir);
@@ -193,9 +193,9 @@ public class PlayerMovement : MonoBehaviour
         dir *= moveSpeed * Time.deltaTime;
         dir = transform.TransformDirection(dir);
 
-        if (isRunning == true)
+        if (isWalking == true)
         {
-            dir *= runSpeedMultiplier;
+            dir *= walkSpeedMultiplier;
         }
 
         controller.Move(dir);

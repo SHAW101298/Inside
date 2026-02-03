@@ -1531,10 +1531,9 @@ MonoBehaviour:
   groundedPlayer: 0
   groundCheckDistance: 0.2
   velocity: {x: 0, y: 0, z: 0}
-  moveSpeed: 3
-  runSpeedMultiplier: 2
-  runningStaminaCost: 0
-  isRunning: 0
+  moveSpeed: 5
+  walkSpeedMultiplier: 0.5
+  isWalking: 0
   jumpHeight: 1
   jumpStaminaCost: 0
   input: {x: 0, y: 0}
@@ -1798,7 +1797,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 9170628902623201518}
         m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
-        m_MethodName: ActionRunning
+        m_MethodName: ActionWalking
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3260,7 +3259,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7271587422031358506, guid: 6fc2a17ae2b7e504fbe525baf9b8eb98, type: 3}
       propertyPath: m_Value
-      value: 0.99558914
+      value: 0.99558926
       objectReference: {fileID: 0}
     - target: {fileID: 7704223838477551094, guid: 6fc2a17ae2b7e504fbe525baf9b8eb98, type: 3}
       propertyPath: m_Options.m_Options.Array.data[0].m_Text
