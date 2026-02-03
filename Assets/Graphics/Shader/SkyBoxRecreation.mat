@@ -96,7 +96,7 @@ Material:
     - _HorizonLineColor_3: {r: 0, g: 0, b: 0, a: 0}
     - _HorizonLineColor_4: {r: 0, g: 0, b: 0, a: 0}
     - _HorizonLineColor_5: {r: 0, g: 0, b: 0, a: 0}
-    - _MainLightDirection: {r: 0.32139385, g: -0.7660443, b: -0.5566705, a: 0}
+    - _MainLightDirection: {r: 0.4330128, g: -0.5000002, b: -0.75000006, a: 0}
     - _StarColor: {r: 1, g: 1, b: 1, a: 1}
     - _SunDiscColor: {r: 0, g: 0, b: 0, a: 1}
     - _SunHaloColor: {r: 0, g: 0, b: 0, a: 1}

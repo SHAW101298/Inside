@@ -59,6 +59,11 @@ public class LevelScript_03 : MonoBehaviour
     Not yet decided
     Dialog person will materialize a blockade in a road, which will need to be destroyed. However they will still provide a shortcut.
     A road skipping on the side of the blockade. Taking the easy path forces the player back again on the start.
+
+    change light direction to face down, so that the sun is visible on the climb.
+    change it back once on the top
+
+    Change the control so that run is default, and walk is on shift
      */
 
     /* Loneliness
