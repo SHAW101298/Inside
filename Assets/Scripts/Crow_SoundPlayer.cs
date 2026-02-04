@@ -5,6 +5,7 @@ using UnityEngine;
 public class Crow_SoundPlayer : MonoBehaviour
 {
     [SerializeField] Crow_Data data;
+    [SerializeField] bool playSounds = true;
     public AudioSource source;
     public List<AudioClip> clips;
     
@@ -14,6 +15,7 @@ public class Crow_SoundPlayer : MonoBehaviour
     public float pitchVariation;
     float timer;
     float timeDelay;
+
 
 
 
@@ -27,6 +29,9 @@ public class Crow_SoundPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (playSounds == false)
+            return;
+
         timer += Time.deltaTime;
         if(timer >= timeDelay)
         {

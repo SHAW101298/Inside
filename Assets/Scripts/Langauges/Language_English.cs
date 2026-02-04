@@ -584,6 +584,8 @@ public class Language_English : LanguageBase
         loadedText[94] = "And yet, no step taken on any path. The irony of it";
         loadedText[95] = "Want me to do something about it ?";
 
+        loadedText[100] = "Don't get stuck in there for too long.";
+
 
         for (int i = 0; i < 200; i++)
         {
