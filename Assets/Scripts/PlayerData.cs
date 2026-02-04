@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using static UnityEditor.PlayerSettings;
 
 public class PlayerData : MonoBehaviour
 {
@@ -137,6 +138,12 @@ public class PlayerData : MonoBehaviour
     {
         movement.controller.enabled = false;
         gameObject.transform.position = pos;
+        movement.controller.enabled = true;
+    }
+    public void TeleportToObject(GameObject objectPosition)
+    {
+        movement.controller.enabled = false;
+        gameObject.transform.position = objectPosition.transform.position;
         movement.controller.enabled = true;
     }
 }
