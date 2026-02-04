@@ -6,7 +6,7 @@ using UnityEngine;
 /*
  Dialog Prompt Group stacks listeners if using on - End Showing Group EVENT
 HeadBand fix lines
-DIrections island change dissolve and materialize order
+
 Rock moving add text to grab
 Rock moving add interaction to relase LMB
  */

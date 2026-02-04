@@ -85,12 +85,16 @@ public class MaterialPropertyController : MonoBehaviour
         timer = 0;
         currentValue = startValue;
         mat.SetFloat(valueToBeChanged, startValue);
+        increase = false;
+        decrease = false;
     }
     public void ACTION_ForceIncreased_NOEVENT()
     {
         timer = changeTime;
         currentValue = endValue;
         mat.SetFloat(valueToBeChanged, endValue);
+        increase = false;
+        decrease = false;
     }
     public void ACTION_ForceDecreased_WITHEVENT()
     {
@@ -98,6 +102,8 @@ public class MaterialPropertyController : MonoBehaviour
         currentValue = startValue;
         mat.SetFloat(valueToBeChanged, startValue);
         EVENT_Dissolved.Invoke();
+        increase = false;
+        decrease = false;
     }
     public void ACTION_ForceIncreased_WITHEVENT()
     {
@@ -105,5 +111,7 @@ public class MaterialPropertyController : MonoBehaviour
         currentValue = endValue;
         mat.SetFloat(valueToBeChanged, endValue);
         EVENT_Materialized.Invoke();
+        increase = false;
+        decrease = false;
     }
 }
