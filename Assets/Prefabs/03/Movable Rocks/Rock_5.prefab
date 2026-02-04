@@ -115,6 +115,7 @@ MonoBehaviour:
   smoothTime: 0.5
   stopDistance: 0.1
   grabInteraction: {fileID: 2906180188278314914}
+  relaseInteraction: {fileID: 1342066876504983496}
   velocity: {x: 0, y: 0, z: 0}
   debugSPhere: {fileID: 0}
   desiredPosition: {x: 0, y: 0, z: 0}
@@ -153,6 +154,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2906180188278314919}
+  - {fileID: 509597406501285211}
   m_Father: {fileID: 357356592683395377}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -170,7 +172,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   possibleInteractions:
   - {fileID: 2906180188278314914}
-  disabledInteractions: []
+  disabledInteractions:
+  - {fileID: 1342066876504983496}
 --- !u!64 &2906180188102113636
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -231,11 +234,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91a68a43589a2a844bf6858d8f776715, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultInteractionKey: 2
+  defaultInteractionButton: 0
   destroyObjectOnInteraction: 0
   disableOnInteraction: 1
   trigger: {fileID: 2906180188278314916}
   info: {fileID: 2906180188278314917}
+  debug_Interact: 0
+  debug_EnableInteraction: 0
+  debug_DisableInteraction: 0
 --- !u!114 &2906180188278314917
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -248,7 +254,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0452cc4c7ef6b5c4f8877c99edd9e1d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  index: 140
+  index: 305
 --- !u!114 &2906180188278314916
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -267,6 +273,110 @@ MonoBehaviour:
       - m_Target: {fileID: 251969101468906884}
         m_TargetAssemblyTypeName: MovableRock, Assembly-CSharp
         m_MethodName: Grab
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  destroyTriggerOnActivation: 0
+  disableTriggerOnActivation: 0
+  objectsGroup1: []
+  objectsGroup2: []
+  debugTriggerInteraction: 0
+  delayInteractTriggerTime: 0
+  delayedInteractEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  runTriggerOnStart: 0
+--- !u!1 &3306460151833971012
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 509597406501285211}
+  - component: {fileID: 1342066876504983496}
+  - component: {fileID: 4197976507671987586}
+  - component: {fileID: 4476102051637826709}
+  m_Layer: 0
+  m_Name: Relase Interaction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &509597406501285211
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3306460151833971012}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2906180188102113640}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1342066876504983496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3306460151833971012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91a68a43589a2a844bf6858d8f776715, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultInteractionButton: 2
+  destroyObjectOnInteraction: 0
+  disableOnInteraction: 1
+  trigger: {fileID: 4476102051637826709}
+  info: {fileID: 4197976507671987586}
+  debug_Interact: 0
+  debug_EnableInteraction: 0
+  debug_DisableInteraction: 0
+--- !u!114 &4197976507671987586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3306460151833971012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0452cc4c7ef6b5c4f8877c99edd9e1d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 306
+--- !u!114 &4476102051637826709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3306460151833971012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57a88fdd02116f648b5ce61f8d40fe55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 251969101468906884}
+        m_TargetAssemblyTypeName: MovableRock, Assembly-CSharp
+        m_MethodName: Release
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

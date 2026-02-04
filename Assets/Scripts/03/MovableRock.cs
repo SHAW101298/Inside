@@ -8,6 +8,7 @@ public class MovableRock : MonoBehaviour
     [SerializeField] float smoothTime;
     [SerializeField] float stopDistance;
     [SerializeField] Interaction grabInteraction;
+    [SerializeField] Interaction relaseInteraction;
     RockMoving rm;
 
     [Header("Debug")]
@@ -78,6 +79,7 @@ public class MovableRock : MonoBehaviour
         //temp.transform.position = hitInfo.point;
         isHeld = true;
         rm.GrabRock(this);
+        relaseInteraction.Action_EnableInteraction();
     }
     public void Release()
     {
