@@ -18,11 +18,15 @@ public class EnterTrigger : TriggerBase
     bool startExitTimer;
 
     public float delayedEventTriggerTime;
+    [Header("Specific Debug")]
+    [SerializeField] bool DebugTriggerEnter;
+    [SerializeField] bool DebugTriggerExit;
 
     private void OnTriggerEnter(Collider other)
     {
         if(other.CompareTag("Player"))
         {
+            //Debug.Log("PLayer Entered TRigger = " + gameObject.name);
             enterEvent.Invoke();
 
             if (destroyTriggerOnActivation == true)
@@ -69,11 +73,21 @@ public class EnterTrigger : TriggerBase
                 delayedExitEvent.Invoke();
             }
         }
+        if(DebugTriggerEnter == true)
+        {
+            DebugTriggerEnter = false;
+            TriggerEnter();
+        }
+        if(DebugTriggerExit == true)
+        {
+            DebugTriggerExit = false;
+            TriggerExit();
+        }
     }
     
     public void TriggerEnter()
     {
-        Debug.Log("Trigger Enter");
+        //Debug.Log("Trigger Enter");
         enterEvent.Invoke();
 
         if (destroyTriggerOnActivation == true)

@@ -7,8 +7,7 @@ using UnityEngine;
  Dialog Prompt Group stacks listeners if using on - End Showing Group EVENT
 HeadBand fix lines
 
-Rock moving add text to grab
-Rock moving add interaction to relase LMB
+SIgn on well island has no dialog
  */
 #endregion
 
@@ -1151,7 +1150,7 @@ public class Language_English : LanguageBase
         loadedText[9] = "The world before your eyes is the one, some might say is beyond repair.";
         loadedText[10] = "A world doomed to fail.";
         loadedText[11] = "And yet. Here you stand. ";
-        loadedText[12] = "Trying to make things right. Trying to fix this shithole. ";
+        loadedText[12] = "Trying to make things right. Trying to fix this shithole. ";  // Interaction where you let go of the daggers ?
         loadedText[13] = "A world where things just stay.";
         loadedText[14] = "Just the way they were left.";
         loadedText[15] = "For someone to pickup. Just for a convenience.";

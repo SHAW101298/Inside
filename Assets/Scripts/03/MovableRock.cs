@@ -86,5 +86,6 @@ public class MovableRock : MonoBehaviour
         //Debug.Log("RELEASE");
         isHeld = false;
         grabInteraction.Action_EnableInteraction();
+        relaseInteraction.Action_DisableInteraction();
     }
 }

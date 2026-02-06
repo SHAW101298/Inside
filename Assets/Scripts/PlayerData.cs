@@ -135,12 +135,14 @@ public class PlayerData : MonoBehaviour
     }
     public void TeleportToPosition(Vector3 pos)
     {
+        //Debug.Log("TEleporting to position = " + pos);
         movement.controller.enabled = false;
         gameObject.transform.position = pos;
         movement.controller.enabled = true;
     }
     public void TeleportToObject(GameObject objectPosition)
     {
+        //Debug.Log("Teleporting to Object = " + objectPosition.name);
         movement.controller.enabled = false;
         gameObject.transform.position = objectPosition.transform.position;
         movement.controller.enabled = true;

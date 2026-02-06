@@ -63,6 +63,7 @@ public class DEV_TeleportTool : MonoBehaviour
     public void TeleportTo(int x)
     {
         //PlayerData.instance.gameObject.transform.position = teleportPositions[x].transform.position;
+        Debug.Log("Teleport to = " + x);
         PlayerData.instance.TeleportToPosition(teleportPositions[x].transform.position);
         HideWindow();
     }

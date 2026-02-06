@@ -445,6 +445,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6761582826613105319}
   - component: {fileID: 2879080493151246307}
+  - component: {fileID: 8442579858187774708}
   m_Layer: 0
   m_Name: ScreenFade Effect
   m_TagString: Untagged
@@ -483,13 +484,50 @@ MonoBehaviour:
   fadeColor: {r: 0, g: 0, b: 0, a: 1}
   fadeTime: 1.5
   fade: 0
-  unfade: 1
+  unfade: 0
   screenFaded:
     m_PersistentCalls:
       m_Calls: []
   screenUnfaded:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &8442579858187774708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4443664240626703855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57a88fdd02116f648b5ce61f8d40fe55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2879080493151246307}
+        m_TargetAssemblyTypeName: ScreenFadeEffect, Assembly-CSharp
+        m_MethodName: UnFadeScreen
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  destroyTriggerOnActivation: 0
+  disableTriggerOnActivation: 0
+  objectsGroup1: []
+  objectsGroup2: []
+  debugTriggerInteraction: 0
+  delayInteractTriggerTime: 0
+  delayedInteractEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  runTriggerOnStart: 1
 --- !u!1 &4739447935124270765
 GameObject:
   m_ObjectHideFlags: 0

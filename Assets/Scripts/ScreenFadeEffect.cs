@@ -35,9 +35,7 @@ public class ScreenFadeEffect : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        timer = fadeTime;
-        unfade = true;
-        fadeScreen.color = fadeColor;
+
     }
 
     // Update is called once per frame
