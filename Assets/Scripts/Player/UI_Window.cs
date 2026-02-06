@@ -4,15 +4,24 @@ using UnityEngine;
 
 public class UI_Window : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] GameObject parent;
+    [SerializeField] UI_Window parentWindow;
+    [SerializeField] bool isOpened;
+    public void OpenWindow()
     {
-        
-    }
+        if(isOpened == false)
+        {
+            parentWindow.HideWindow();
 
-    // Update is called once per frame
-    void Update()
+        }
+        else
+        {
+            HideWindow();
+            parentWindow.OpenWindow();
+        }
+    }
+    public void HideWindow()
     {
-        
+
     }
 }
