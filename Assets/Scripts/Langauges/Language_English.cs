@@ -84,11 +84,12 @@ public class Language_English : LanguageBase
         loadedText[18] = "Movement";
         loadedText[19] = "Jump";
         loadedText[20] = "Interact";
-        loadedText[21] = "Run";
+        loadedText[21] = "Walk";
         loadedText[22] = "Continue";
         loadedText[23] = "To Menu";
         loadedText[24] = "Language";
         loadedText[25] = "Choose Chapter";
+        loadedText[26] = "Dev Teleport Tool";
 
 
         // INTERACTION Text
