@@ -127,13 +127,8 @@ public class PlayerUI : MonoBehaviour
         {
 
         }
-
-        ActivateUI();
-        currentWindow = inventoryWindow;
-        currentWindow.SetActive(true);
-        itemsWindow.SetActive(true);
-        mapWindow.SetActive(false);
-        journalWindow.SetActive(false);
+        BTN_Inventory();
+        
     }
     public void ACTION_MapButton(InputAction.CallbackContext context)
     {
@@ -141,13 +136,8 @@ public class PlayerUI : MonoBehaviour
         {
             return;
         }
-
-        ActivateUI();
-        currentWindow = inventoryWindow;
-        currentWindow.SetActive(true);
-        itemsWindow.SetActive(false);
-        mapWindow.SetActive(true);
-        journalWindow.SetActive(false);
+        BTN_Map();
+        
     }
     public void ACTION_JournalButton(InputAction.CallbackContext context)
     {
@@ -155,13 +145,8 @@ public class PlayerUI : MonoBehaviour
         {
             return;
         }
-
-        ActivateUI();
-        currentWindow = inventoryWindow;
-        currentWindow.SetActive(true);
-        itemsWindow.SetActive(false);
-        mapWindow.SetActive(false);
-        journalWindow.SetActive(true);
+        BTN_Notes();
+        
     }
     public void BTN_Continue()
     {
@@ -224,6 +209,33 @@ public class PlayerUI : MonoBehaviour
     public void Slider_ChangeMusicVolume()
     {
         Options.Instance.ChangeMusicVolume(musicSlider.value);
+    }
+    public void BTN_Inventory()
+    {
+        ActivateUI();
+        currentWindow = inventoryWindow;
+        currentWindow.SetActive(true);
+        itemsWindow.SetActive(true);
+        mapWindow.SetActive(false);
+        journalWindow.SetActive(false);
+    }
+    public void BTN_Notes()
+    {
+        ActivateUI();
+        currentWindow = inventoryWindow;
+        currentWindow.SetActive(true);
+        itemsWindow.SetActive(false);
+        mapWindow.SetActive(false);
+        journalWindow.SetActive(true);
+    }
+    public void BTN_Map()
+    {
+        ActivateUI();
+        currentWindow = inventoryWindow;
+        currentWindow.SetActive(true);
+        itemsWindow.SetActive(false);
+        mapWindow.SetActive(true);
+        journalWindow.SetActive(false);
     }
 
     void SaveSettings()
