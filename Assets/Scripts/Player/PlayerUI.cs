@@ -10,6 +10,8 @@ using UnityEngine.UI;
 
 public class PlayerUI : MonoBehaviour
 {
+    public static PlayerUI instance;
+
     public PlayerData data;
     bool uiActive;
     [Header("Systems")]
@@ -43,18 +45,19 @@ public class PlayerUI : MonoBehaviour
     bool windowIsActive;
     float timer;
 
+    private void Awake()
+    {
+        instance = this;
+    }
     private void Start()
     {
-        Cursor.visible = false;
+        HideUI();
     }
 
-
-
-    private void Update()
+    public void SetCurrentWindow(UI_Window window)
     {
-
+        currentWindow = window;
     }
-
     public void ShowPossibleInteractions(InteractionHolder holder)
     {
         //Debug.Log("Interactions is " + holder);
@@ -101,8 +104,6 @@ public class PlayerUI : MonoBehaviour
 
         */
         currentWindow.HideWindow();
-        currentWindow.OpenParentWindow();
-        currentWindow = currentWindow.parentWindow;
 
     }
 
