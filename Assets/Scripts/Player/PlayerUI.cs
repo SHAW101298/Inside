@@ -17,11 +17,12 @@ public class PlayerUI : MonoBehaviour
 
 
     [Header("Windows")]
-    [SerializeField] GameObject pauseWindow;
-    [SerializeField] GameObject optionsWindow;
-    [SerializeField] GameObject exitWindow;
-    [SerializeField] GameObject inventoryWindow;
-    [SerializeField] GameObject currentWindow;
+    [SerializeField] UI_Window defaultGameWindow;
+    [SerializeField] UI_Window pauseWindow;
+    [SerializeField] UI_Window optionsWindow;
+    [SerializeField] UI_Window exitWindow;
+    [SerializeField] UI_Window inventoryWindow;
+    [SerializeField] UI_Window currentWindow;
     [Header("Options")]
     [SerializeField] Slider soundSlider;
     [SerializeField] Slider musicSlider;
@@ -68,6 +69,7 @@ public class PlayerUI : MonoBehaviour
             return;
         }
 
+        /*
         if(uiActive == true)
         {
             if(currentWindow == pauseWindow)
@@ -96,12 +98,16 @@ public class PlayerUI : MonoBehaviour
             originalMusicVolume = Options.Instance.GetMusicVolume();
             originalSoundVolume = Options.Instance.GetSoundVolume();
         }
+
+        */
+        currentWindow.HideWindow();
+        currentWindow.OpenParentWindow();
+        currentWindow = currentWindow.parentWindow;
+
     }
 
     private void HideUI()
     {
-        currentWindow.SetActive(false);
-        currentWindow = null;
         uiActive = false;
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
@@ -150,18 +156,16 @@ public class PlayerUI : MonoBehaviour
     }
     public void BTN_Continue()
     {
-        currentWindow.SetActive(false);
-        currentWindow = null;
-        uiActive = false;
-        Cursor.visible = false;
-
-        data.AllowMovemntAndRotationByUI();
+        currentWindow.HideWindow();
+        currentWindow.OpenParentWindow();
+        currentWindow = defaultGameWindow;
+        HideUI();
     }
     public void BTN_Options()
     {
-        currentWindow.SetActive(false);
+        currentWindow.HideWindow();
+        optionsWindow.OpenWindow();
         currentWindow = optionsWindow;
-        currentWindow.SetActive(true);
     }
     public void BTN_ToMenu()
     {
@@ -169,9 +173,9 @@ public class PlayerUI : MonoBehaviour
     }
     public void BTN_ExitGame()
     {
-        currentWindow.SetActive(false);
+        currentWindow.HideWindow();
+        exitWindow.OpenWindow();
         currentWindow = exitWindow;
-        currentWindow.SetActive(true);
     }
     public void BTN_ExitGameYES()
     {
@@ -179,9 +183,9 @@ public class PlayerUI : MonoBehaviour
     }
     public void BTN_Return()
     {
-        currentWindow.SetActive(false);
+        currentWindow.HideWindow();
+        currentWindow.OpenParentWindow();
         currentWindow = pauseWindow;
-        currentWindow.SetActive(true);
     }
     public void BTN_SaveSettings()
     {
