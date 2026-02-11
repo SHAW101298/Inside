@@ -79,7 +79,7 @@ Material:
     - _SrcBlend: 1
     - _StarHeight: 300
     - _StarIntensity: 64.3
-    - _StarPower: 55
+    - _StarPower: 35
     - _SunDiscExponent: 548
     - _SunDiscMultiplier: 5
     - _SunHaloContribution: 0.307
