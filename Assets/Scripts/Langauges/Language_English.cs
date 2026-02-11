@@ -588,7 +588,9 @@ public class Language_English : LanguageBase
         loadedText[95] = "Want me to do something about it ?";
 
         loadedText[100] = "Don't get stuck in there for too long.";
-
+        loadedText[101] = "The Heart";
+        loadedText[102] = "The Mind";
+        loadedText[103] = "The Pain";
 
         for (int i = 0; i < 200; i++)
         {
