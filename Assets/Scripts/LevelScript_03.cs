@@ -152,14 +152,14 @@ public class LevelScript_03 : MonoBehaviour
         
         if(Physics.Raycast(PlayerData.instance.gameObject.transform.position, Vector3.down, out hit, 5, terrainLayer))
         {
-            Debug.Log("WE HIT SOMETHING = " + hit.collider.gameObject.name);
+            //Debug.Log("WE HIT SOMETHING = " + hit.collider.gameObject.name);
             localpos = hit.collider.gameObject.transform.InverseTransformPoint(hit.point);
             globalpos = stairsObject.transform.TransformPoint(localpos);
             PlayerData.instance.TeleportToPosition(globalpos);
         }
         else
         {
-            Debug.Log("NO HIT");
+            //Debug.Log("NO HIT");
         }
         
         

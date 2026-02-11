@@ -58,6 +58,7 @@ public class DialogManager : MonoBehaviour
     [SerializeField] DialogChoice currentChoice;
     [SerializeField] Transform optionsContent;
     [SerializeField] GameObject optionPrefab;
+    bool isMakingChoice;
     bool choiceWasAlreadyMade;
 
     public void ShowText(DialogPrompt prompt)
@@ -100,6 +101,7 @@ public class DialogManager : MonoBehaviour
         // Block Player
         PlayerData.instance.BlockMovementAndRotationByUI();
         PlayerData.instance.BlockInteractions();
+        isMakingChoice = true;
         //PlayerData.instance.ChangeMapToUI();
     }
     public void PauseWaitTimer()
@@ -110,10 +112,15 @@ public class DialogManager : MonoBehaviour
     {
         pauseWaitTimer = false;
     }
+    public bool GetChoiceState()
+    {
+        return isMakingChoice;
+    }
     public void ChooseDialogOption(int x)
     {
         PlayerData.instance.AllowMovemntAndRotationByUI();
         PlayerData.instance.AllowInteractions();
+        isMakingChoice = false;
         //PlayerData.instance.ChangeMapToPlayer();
         Debug.Log("ChooseDialogOption on " + x);
         ShowDialogPromptOnChoice(x);
@@ -177,7 +184,7 @@ public class DialogManager : MonoBehaviour
         if (currentChoice.options.Count < x)
             return;
 
-        Debug.Log("ShowDialogPromptOnChoice on " + x);
+        //Debug.Log("ShowDialogPromptOnChoice on " + x);
 
         dialogOptionsWindow.SetActive(false);
         int index = currentChoice.options[x].GetLangIndex();

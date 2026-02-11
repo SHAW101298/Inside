@@ -20,17 +20,17 @@ public class UI_Data : MonoBehaviour
 
     public void DATA_TeleportPosition()
     {
-        Debug.Log("DATA TELEPORT POSITION");
+        //Debug.Log("DATA TELEPORT POSITION");
         DEV_TeleportTool.Instance.TeleportTo(intValue);
     }
     public void DIALOG_ChooseOption()
     {
-        Debug.Log("Button Pressed on Option " + intValue);
+        //Debug.Log("Button Pressed on Option " + intValue);
         DialogManager.Instance.ChooseDialogOption(intValue);
     }
     public void INVENTORY_ClickOnItem()
     {
-        Debug.Log("Clicked on Item in Inventory");
+        //Debug.Log("Clicked on Item in Inventory");
         PlayerData.instance.inventory.ClickedOnItem(intValue);
     }
 }

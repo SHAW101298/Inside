@@ -23,7 +23,9 @@ public class PlayerUI : MonoBehaviour
     [SerializeField] UI_Window pauseWindow;
     [SerializeField] UI_Window optionsWindow;
     [SerializeField] UI_Window exitWindow;
-    [SerializeField] UI_Window inventoryWindow;
+    [SerializeField] UI_Window itemsWindow;
+    [SerializeField] UI_Window notesWindow;
+    [SerializeField] UI_Window mapWindow;
     [SerializeField] UI_Window currentWindow;
     [Header("Options")]
     [SerializeField] Slider soundSlider;
@@ -33,10 +35,6 @@ public class PlayerUI : MonoBehaviour
     [SerializeField] TMP_Dropdown resolutionDropDown;
     [SerializeField] Toggle fullScreenToggle;
     [SerializeField] TMP_Dropdown languageDropDown;
-    [Header("Inventory")]
-    [SerializeField] GameObject itemsWindow;
-    [SerializeField] GameObject journalWindow;
-    [SerializeField] GameObject mapWindow;
     [Header("More")]
     [SerializeField] List<LanguageApplier> textFieldsToTranslate;
     float originalMusicVolume;
@@ -57,6 +55,12 @@ public class PlayerUI : MonoBehaviour
     public void SetCurrentWindow(UI_Window window)
     {
         currentWindow = window;
+    }
+    public bool CompareWithCurrentWindow(UI_Window tested)
+    {
+        if (currentWindow == tested)
+            return true;
+        return false;
     }
     public void ShowPossibleInteractions(InteractionHolder holder)
     {
@@ -103,8 +107,19 @@ public class PlayerUI : MonoBehaviour
         }
 
         */
-        currentWindow.HideWindow();
-
+        currentWindow.OpenParentWindow();
+        if(currentWindow == defaultGameWindow)
+        {
+            HideUI();
+        }
+        else
+        {
+            ActivateUI();
+        }
+        if(DialogManager.Instance.GetChoiceState() == true)
+        {
+            ActivateUI();
+        }
     }
 
     private void HideUI()
@@ -129,11 +144,6 @@ public class PlayerUI : MonoBehaviour
         {
             return;
         }
-
-        if(currentWindow == inventoryWindow)
-        {
-
-        }
         BTN_Inventory();
         
     }
@@ -157,16 +167,12 @@ public class PlayerUI : MonoBehaviour
     }
     public void BTN_Continue()
     {
-        currentWindow.HideWindow();
-        currentWindow.OpenParentWindow();
-        currentWindow = defaultGameWindow;
+        defaultGameWindow.OpenWindow();
         HideUI();
     }
     public void BTN_Options()
     {
-        currentWindow.HideWindow();
         optionsWindow.OpenWindow();
-        currentWindow = optionsWindow;
     }
     public void BTN_ToMenu()
     {
@@ -174,9 +180,7 @@ public class PlayerUI : MonoBehaviour
     }
     public void BTN_ExitGame()
     {
-        currentWindow.HideWindow();
         exitWindow.OpenWindow();
-        currentWindow = exitWindow;
     }
     public void BTN_ExitGameYES()
     {
@@ -185,15 +189,11 @@ public class PlayerUI : MonoBehaviour
     public void BTN_Return()
     {
         currentWindow.HideWindow();
-        currentWindow.OpenParentWindow();
-        currentWindow = pauseWindow;
     }
     public void BTN_SaveSettings()
     {
         SaveSettings();
-        currentWindow.SetActive(false);
-        currentWindow = pauseWindow;
-        currentWindow.SetActive(true);
+        currentWindow.HideWindow();
     }
     public void BTN_ReturnWithoutSaving()
     {
@@ -201,9 +201,7 @@ public class PlayerUI : MonoBehaviour
         vsyncDropDown.value = QualitySettings.vSyncCount;
         fullScreenToggle.isOn = Screen.fullScreen;
 
-        currentWindow.SetActive(false);
-        currentWindow = pauseWindow;
-        currentWindow.SetActive(true);
+        currentWindow.HideWindow();
 
     }
 
@@ -217,30 +215,27 @@ public class PlayerUI : MonoBehaviour
     }
     public void BTN_Inventory()
     {
+        if (currentWindow == pauseWindow)
+            return;
         ActivateUI();
-        currentWindow = inventoryWindow;
-        currentWindow.SetActive(true);
-        itemsWindow.SetActive(true);
-        mapWindow.SetActive(false);
-        journalWindow.SetActive(false);
+        currentWindow.HideWindow();
+        itemsWindow.OpenWindow();
     }
     public void BTN_Notes()
     {
+        if (currentWindow == pauseWindow)
+            return;
         ActivateUI();
-        currentWindow = inventoryWindow;
-        currentWindow.SetActive(true);
-        itemsWindow.SetActive(false);
-        mapWindow.SetActive(false);
-        journalWindow.SetActive(true);
+        currentWindow.HideWindow();
+        notesWindow.OpenWindow();
     }
     public void BTN_Map()
     {
+        if (currentWindow == pauseWindow)
+            return;
         ActivateUI();
-        currentWindow = inventoryWindow;
-        currentWindow.SetActive(true);
-        itemsWindow.SetActive(false);
-        mapWindow.SetActive(true);
-        journalWindow.SetActive(false);
+        currentWindow.HideWindow();
+        mapWindow.OpenWindow();
     }
 
     void SaveSettings()

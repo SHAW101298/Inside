@@ -9,11 +9,16 @@ public class UI_Window : MonoBehaviour
     public void OpenWindow()
     {
         gameObject.SetActive(true);
+        PlayerUI.instance.SetCurrentWindow(this);
     }
     public void HideWindow()
     {
         gameObject.SetActive(false);
-        parentWindow.OpenWindow();
+    }
+    public void OpenParentWindow()
+    {
+        gameObject.SetActive(false);
+        parentWindow.gameObject.SetActive(true);
         PlayerUI.instance.SetCurrentWindow(parentWindow);
     }
 }
