@@ -592,7 +592,7 @@ public class Language_English : LanguageBase
         loadedText[102] = "The Mind";
         loadedText[103] = "The Pain";
 
-        loadedText[105] = "That's taken care of i guess.";
+        loadedText[105] = "That's taken care of I guess.";
         loadedText[106] = "Things start to take shape at least.";
         loadedText[107] = "See you on the other side.";
 
