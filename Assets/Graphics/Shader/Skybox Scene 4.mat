@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: SkyBoxRecreation
+  m_Name: Skybox Scene 4
   m_Shader: {fileID: -6465566751694194690, guid: 4f78e66778145304f91ce8d444754b19, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -67,8 +67,8 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _HorizonLineContribution: 1
-    - _HorizonLineExponent: 8
+    - _HorizonLineContribution: 0.4
+    - _HorizonLineExponent: 3
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
@@ -77,30 +77,30 @@ Material:
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
-    - _StarHeight: 300
+    - _StarHeight: 0
     - _StarIntensity: 64.3
-    - _StarPower: 65
-    - _SunDiscExponent: 548
-    - _SunDiscMultiplier: 5
-    - _SunHaloContribution: 0.307
-    - _SunHaloExponent: 100
+    - _StarPower: 1
+    - _SunDiscExponent: 1597
+    - _SunDiscMultiplier: 4
+    - _SunHaloContribution: 0.5
+    - _SunHaloExponent: 50
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Bottom: {r: 0, g: 0, b: 0, a: 1}
+    - _Bottom: {r: 0.64, g: 0.4332308, b: 0.36102563, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _HorizonLineColor: {r: 0, g: 0, b: 0, a: 0.7058824}
+    - _HorizonLineColor: {r: 0.1764706, g: 0.536688, b: 0.6313726, a: 1}
     - _HorizonLineColor_1: {r: 0, g: 0, b: 0, a: 0}
     - _HorizonLineColor_2: {r: 0, g: 0, b: 0, a: 0}
     - _HorizonLineColor_3: {r: 0, g: 0, b: 0, a: 0}
     - _HorizonLineColor_4: {r: 0, g: 0, b: 0, a: 0}
     - _HorizonLineColor_5: {r: 0, g: 0, b: 0, a: 0}
-    - _MainLightDirection: {r: 0.4330128, g: -0.5000002, b: -0.75000006, a: 0}
-    - _StarColor: {r: 1, g: 1, b: 1, a: 1}
-    - _SunDiscColor: {r: 0, g: 0, b: 0, a: 1}
-    - _SunHaloColor: {r: 0, g: 0, b: 0, a: 1}
-    - _Top: {r: 0.09019608, g: 0.09019608, b: 0.09019608, a: 0}
+    - _MainLightDirection: {r: 0, g: -0.55890346, b: 0.8292327, a: 0}
+    - _StarColor: {r: 0, g: 0, b: 0, a: 0}
+    - _SunDiscColor: {r: 1, g: 0.91372854, b: 0.83584905, a: 1}
+    - _SunHaloColor: {r: 1, g: 0.84313726, b: 0.6039216, a: 1}
+    - _Top: {r: 0.7660377, g: 0.5157167, b: 0.43216085, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &856469250508218311
 MonoBehaviour:
