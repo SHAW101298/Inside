@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+[ExecuteInEditMode]
 public class ObjectMassiveTransformRandomizer : MonoBehaviour
 {
     [SerializeField] List<GameObject> objectsToAffect;
@@ -19,11 +19,14 @@ public class ObjectMassiveTransformRandomizer : MonoBehaviour
     }
     void Randomizer()
     {
-        if(RandomizeTrigger == true)
-        {
-            RandomizeTrigger = false;
-        }
+        if (RandomizeTrigger == false)
+            return;
+            
+        RandomizeTrigger = false;
+
+
         int maxCount = objectsToAffect.Count;
+        Debug.Log("Max count = " + maxCount);
         for(int i = 0; i < maxCount; i++)
         {
             objectsToAffect[i].transform.position += GetRandomPosition();
