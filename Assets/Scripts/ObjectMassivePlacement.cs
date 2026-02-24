@@ -35,20 +35,26 @@ public class ObjectMassivePlacement : MonoBehaviour
         Vector3 randScale;
         Vector3 randSpot;
         GameObject temp;
-        for(int i = 0; i < amountOfObjectsToPlace; i++)
+        GameObject parent = GameObject.CreatePrimitive(PrimitiveType.Sphere);
+
+        int treesCount = 0;
+        for (int i = 0; i < amountOfObjectsToPlace; i++)
         {
             Vector2 randomCircle = Random.insideUnitCircle * circlePlacementSize;
             //Debug.Log("random circle = " + randomCircle);
             randSpot = new Vector3(randomCircle.x, 0, randomCircle.y) + middleOfCircle.position ;
-            dir = (randSpot - originOfRay.position).normalized;
+            Vector3 calculatedOrigin = randSpot + new Vector3(0, 50, 0);
+            //Debug.Log("calculated origin = " + calculatedOrigin);
+            dir = (randSpot - calculatedOrigin).normalized;
 
+            
 
-
-            if(Physics.Raycast(originOfRay.position, dir, out hit, 500f, raycastLayer) == true)
+            if(Physics.Raycast(calculatedOrigin, dir, out hit, 500f, raycastLayer) == true)
             {
                 //Debug.Log("hit point is = " + hit.point);
                 temp = Instantiate(objectToSpawn);
                 temp.transform.position = hit.point;
+                temp.transform.SetParent(parent.transform);
                 // transform randomization
                 randRot.x = Random.Range(-rotationRandomization.x, rotationRandomization.x);
                 randRot.y = Random.Range(-rotationRandomization.y, rotationRandomization.y);
@@ -58,7 +64,9 @@ public class ObjectMassivePlacement : MonoBehaviour
                 randScale.z = Random.Range(1 - scaleRandomization.z, 1 + scaleRandomization.z);
                 temp.transform.localEulerAngles = randRot;
                 temp.transform.localScale = randScale;
+                treesCount++;
             }
         }
+            Debug.Log("Created " + treesCount + " trees.");
     }
 }
