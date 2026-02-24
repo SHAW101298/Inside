@@ -4059,7 +4059,7 @@ PrefabInstance:
     - target: {fileID: 312798698618953876, guid: f435f7f3312a5e54bb39da4827e890eb, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: ef1e84a0860a9dd42a2ee8a49fcfbe73, type: 2}
+      objectReference: {fileID: 2100000, guid: 64d9143cd4ab1b24d8c0203bae58f6ff, type: 2}
     - target: {fileID: 919132149155446097, guid: f435f7f3312a5e54bb39da4827e890eb, type: 3}
       propertyPath: m_Name
       value: 04_Terrain3
