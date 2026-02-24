@@ -4054,8 +4054,12 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: dbf84e0fdb4a7ff44a77aec6e6f4bc9f, type: 2}
     - target: {fileID: -1346369550762627069, guid: f435f7f3312a5e54bb39da4827e890eb, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 312798698618953876, guid: f435f7f3312a5e54bb39da4827e890eb, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ef1e84a0860a9dd42a2ee8a49fcfbe73, type: 2}
     - target: {fileID: 919132149155446097, guid: f435f7f3312a5e54bb39da4827e890eb, type: 3}
       propertyPath: m_Name
       value: 04_Terrain3
@@ -5767,7 +5771,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &170831824
 Transform:
   m_ObjectHideFlags: 0
