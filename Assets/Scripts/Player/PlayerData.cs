@@ -27,7 +27,6 @@ public class PlayerData : MonoBehaviour
     public PlayerInteractRay interactRay;
     public PlayerInventory inventory;
 
-
     private void Start()
     {
         SetReferences();
