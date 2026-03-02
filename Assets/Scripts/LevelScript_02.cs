@@ -30,6 +30,7 @@ public class LevelScript_02 : MonoBehaviour
     [SerializeField] Interaction threeKilledCrows;
     [SerializeField] List<GameObject> crowKillInteractions;
     [SerializeField] List<Crow_Data> importantCrows;
+    [SerializeField] GameObject loreTalkTip;
     [Header("Phase 4")]
     [SerializeField] FlyingBirdsController flyingBirdsController;
     [SerializeField] DimZone templeDimZone;
@@ -94,6 +95,7 @@ public class LevelScript_02 : MonoBehaviour
         if (lastBone == 1)
         {
             oneKilledCrow.Action_EnableInteraction();
+            loreTalkTip.gameObject.SetActive(true);
             //crowSearchParty.SetActive(true);
             //DialogManager.Instance.ShowText(98);
 

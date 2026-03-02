@@ -29,11 +29,12 @@ public class BenchSitting : MonoBehaviour
         sitTimer = 0;
         dialogTimer = 0;
         PlayerData player = PlayerData.instance;
-        player.gameObject.transform.position = sitPosition.transform.position;
-        player.gameObject.transform.rotation = sitPosition.transform.rotation;
-        //player.BlockMovementAndRotationByAction();
-        player.movement.PlayerSitsDown(this);
         player.BlockMovementByAction();
+        player.movement.PlayerSitsDown(this);
+        player.TeleportToPosition(sitPosition.transform.position);
+        //player.gameObject.transform.position = sitPosition.transform.position;
+        //player.gameObject.transform.rotation = sitPosition.transform.rotation;
+        //player.BlockMovementAndRotationByAction();
     }
     public void StandUp()
     {
@@ -46,6 +47,8 @@ public class BenchSitting : MonoBehaviour
         player.AllowMovementByAction();
         //player.gameObject.transform.localEulerAngles = Vector3.up * -90;
         player.movement.PlayerStandsUp();
+        standUpInteract.SetActive(false);
+        sitInteract.SetActive(true);
     }
 
     private void Update()
