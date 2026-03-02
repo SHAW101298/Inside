@@ -71,6 +71,10 @@ public abstract class TriggerBase : MonoBehaviour
     {
         foreach (GameObject obj in objectsGroup1)
         {
+            if(obj == null)
+            {
+                continue;
+            }
             Destroy(obj);
         }
         objectsGroup1.Clear();
@@ -79,6 +83,10 @@ public abstract class TriggerBase : MonoBehaviour
     {
         foreach (GameObject obj in objectsGroup2)
         {
+            if (obj == null)
+            {
+                continue;
+            }
             Destroy(obj);
         }
         objectsGroup2.Clear();
