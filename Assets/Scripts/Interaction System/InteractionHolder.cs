@@ -13,6 +13,18 @@ public class InteractionHolder : MonoBehaviour
 
     bool isDirty;
 
+    private void Start()
+    {
+        foreach(Interaction interaction in possibleInteractions)
+        {
+            interaction.EnableUITipObject();
+        }
+        foreach (Interaction interaction in disabledInteractions)
+        {
+            interaction.DisableUITipObject();
+        }
+    }
+
     public void RemoveInteraction(Interaction interaction)
     {
         possibleInteractions.Remove(interaction);
@@ -151,10 +163,26 @@ public class InteractionHolder : MonoBehaviour
     }
     public void ACTION_DestroyHolderObject()
     {
+        foreach(Interaction interaction in possibleInteractions)
+        {
+            interaction.DestroyUITipObject();
+        }
+        foreach(Interaction interaction in disabledInteractions)
+        {
+            interaction.DestroyUITipObject();
+        }
         Destroy(gameObject);
     }
     public void ACTION_DisableHolderObject()
     {
+        foreach (Interaction interaction in possibleInteractions)
+        {
+            interaction.DisableUITipObject();
+        }
+        foreach (Interaction interaction in disabledInteractions)
+        {
+            interaction.DisableUITipObject();
+        }
         gameObject.SetActive(false);
     }
 }

@@ -18,6 +18,7 @@ public class Interaction : MonoBehaviour
     [Space(10)]
     [SerializeField] TriggerBase trigger;
     [SerializeField] InformationHolder info;
+    [SerializeField] GameObject uiTipObject;
     [Header("DEBUG")]
     [SerializeField] bool debug_Interact;
     [SerializeField] bool debug_EnableInteraction;
@@ -35,6 +36,10 @@ public class Interaction : MonoBehaviour
     {
         InteractionHolder holder = GetComponentInParent<InteractionHolder>();
         holder.RemoveInteraction(this);
+        if (uiTipObject != null)
+        {
+            Destroy(uiTipObject);
+        }
     }
     public void Action_ActivateTrigger()
     {
@@ -53,11 +58,13 @@ public class Interaction : MonoBehaviour
     {
         InteractionHolder tempHOlder = GetComponentInParent<InteractionHolder>();
         tempHOlder.DisableInteraction(this);
+        DisableUITipObject();
     }
     public void Action_EnableInteraction()
     {
         //Debug.Log("Action Enable Interaction");
         GetComponentInParent<InteractionHolder>().EnableInteraction(this);
+        EnableUITipObject();
     }
     public int GetDefaultInteractionKey()
     {
@@ -93,6 +100,27 @@ public class Interaction : MonoBehaviour
             debug_DisableInteraction = false;
             Debug.Log("DEBUG  || Disabled Interaction by editor debug");
             Action_DisableInteraction();
+        }
+    }
+    public void DestroyUITipObject()
+    {
+        if (uiTipObject != null)
+        {
+            Destroy(uiTipObject);
+        }
+    }
+    public void DisableUITipObject()
+    {
+        if (uiTipObject != null)
+        {
+            uiTipObject.SetActive(false);
+        }
+    }
+    public void EnableUITipObject()
+    {
+        if (uiTipObject != null)
+        {
+            uiTipObject.SetActive(true);
         }
     }
 }
