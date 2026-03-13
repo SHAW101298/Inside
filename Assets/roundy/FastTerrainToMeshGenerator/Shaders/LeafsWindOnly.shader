@@ -13,6 +13,8 @@ Shader "Roundy/Vegetation/LeafsWindOnly" {
         
         [MainColor] _Color ("Color", Color) = (1,1,1,1)
         [Enum(Off,0,Front,1,Back,2)] _CullMode ("Cull Mode", Float) = 0
+        _Glossiness ("Smoothness", Range(0,1)) = 0.5
+        _Metallic ("Metallic", Range(0,1)) = 0.0
     }
 
     SubShader {
