@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Blue 1 Wind
+  m_Name: Wind Orange 1
   m_Shader: {fileID: 4800000, guid: 96062b39ba4ab5f4ca1a9986915c1845, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -87,6 +87,6 @@ Material:
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _Tint: {r: 0.29803923, g: 0.39607844, b: 0.48235294, a: 1}
+    - _Tint: {r: 0.7294118, g: 0.30588236, b: 0.28627452, a: 1}
     - _wind_dir: {r: 0.5, g: 0.05, b: 0.5, a: 0}
   m_BuildTextureStacks: []
