@@ -78,6 +78,7 @@ Shader "Polygon Wind/Tree" {
             sampler2D _MainTex;
             fixed4 _Tint;
 
+
                 //Structs
                 struct Input {
                     float2 uv_MainTex;
