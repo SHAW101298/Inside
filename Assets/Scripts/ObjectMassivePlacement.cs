@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using UnityEditor;
 using UnityEngine;
 
 [ExecuteInEditMode]
 public class ObjectMassivePlacement : MonoBehaviour
 {
     [SerializeField] GameObject objectToSpawn;
+    [SerializeField] Object prefabToSpawn;
     [SerializeField] Transform middleOfCircle;
     [SerializeField] Transform originOfRay;
     [SerializeField] float circlePlacementSize;
@@ -52,7 +54,16 @@ public class ObjectMassivePlacement : MonoBehaviour
             if(Physics.Raycast(calculatedOrigin, dir, out hit, 500f, raycastLayer) == true)
             {
                 //Debug.Log("hit point is = " + hit.point);
-                temp = Instantiate(objectToSpawn);
+                if(prefabToSpawn != null)
+                {
+                    Object spawnedPrefab = PrefabUtility.InstantiatePrefab(prefabToSpawn);
+                    temp = (GameObject)spawnedPrefab;
+                }
+                else
+                {
+                    temp = Instantiate(objectToSpawn);
+                }
+                    
                 temp.transform.position = hit.point;
                 temp.transform.SetParent(parent.transform);
                 // transform randomization

@@ -6202,6 +6202,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToSpawn: {fileID: 1805793521}
+  prefabToSpawn: {fileID: 7162942252211074866, guid: a6b275cf112fce74089087dd1184125d, type: 3}
   middleOfCircle: {fileID: 1331154661}
   originOfRay: {fileID: 0}
   circlePlacementSize: 20
@@ -14710,7 +14711,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1331154660}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.77, y: -1.79, z: 12.27}
+  m_LocalPosition: {x: -14.6, y: -1.79, z: 101}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
