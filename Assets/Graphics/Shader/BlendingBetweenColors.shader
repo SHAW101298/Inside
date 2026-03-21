@@ -1,4 +1,4 @@
-Shader "Custom/SimpleColorShader"
+Shader "Custom/BlendingBetweenColors"
 {
     Properties
     {
