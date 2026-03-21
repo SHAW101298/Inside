@@ -52,6 +52,8 @@ Shader "Polygon Wind/Tree" {
 
         _r_influence ("Red Vertex Influence", range(0,1)) = 1
         _b_influence ("Blue Vertex Influence", range(0,1)) = 1
+        _Metallic ("Metallic", range(0,1)) = 0
+        _Glossiness ("Smoothness", range(0,1)) = 0
 
     }
  
@@ -60,7 +62,7 @@ Shader "Polygon Wind/Tree" {
 
         CGPROGRAM
         #pragma target 3.0
-        #pragma surface surf Lambert vertex:vert addshadow
+        #pragma surface surf Standard fullforwardshadows
 
             //Declared Variables
             float4 _wind_dir;
@@ -74,9 +76,12 @@ Shader "Polygon Wind/Tree" {
             float _tree_sway_stutter_influence;
             float _r_influence;
             float _b_influence;
+            half _Smoothness;
+            half _Metallic;
 
             sampler2D _MainTex;
             fixed4 _Tint;
+            
 
 
                 //Structs
@@ -105,10 +110,12 @@ Shader "Polygon Wind/Tree" {
                 }
 
                 // Surface Shader
-                void surf (Input IN, inout SurfaceOutput o) {
+                void surf (Input IN, inout SurfaceOutputStandard o) {
                     fixed4 c = tex2D(_MainTex, IN.uv_MainTex) * _Tint;
                     o.Albedo = c.rgb;
                     o.Alpha = c.a;
+                    o.Metallic = _Metallic;
+                    o.Smoothness = _Smoothness;
                 }
 
         ENDCG
