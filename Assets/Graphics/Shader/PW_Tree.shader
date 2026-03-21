@@ -62,7 +62,7 @@ Shader "Polygon Wind/Tree" {
 
         CGPROGRAM
         #pragma target 3.0
-        #pragma surface surf Standard fullforwardshadows
+        #pragma surface surf Standard vertex:vert addshadow
 
             //Declared Variables
             float4 _wind_dir;
@@ -76,7 +76,7 @@ Shader "Polygon Wind/Tree" {
             float _tree_sway_stutter_influence;
             float _r_influence;
             float _b_influence;
-            half _Smoothness;
+            half _Glossiness;
             half _Metallic;
 
             sampler2D _MainTex;
@@ -114,8 +114,9 @@ Shader "Polygon Wind/Tree" {
                     fixed4 c = tex2D(_MainTex, IN.uv_MainTex) * _Tint;
                     o.Albedo = c.rgb;
                     o.Alpha = c.a;
+                    //o.Gloss = 1;
                     o.Metallic = _Metallic;
-                    o.Smoothness = _Smoothness;
+                    o.Smoothness = _Glossiness;
                 }
 
         ENDCG
