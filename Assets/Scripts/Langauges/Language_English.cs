@@ -8,6 +8,8 @@ using UnityEngine;
 HeadBand fix lines
 
 SIgn on well island has no dialog
+
+
  */
 #endregion
 
@@ -42,6 +44,7 @@ public class Language_English : LanguageBase
 
     void LoadCorrectTexts()
     {
+        Debug.Log("Add mouse sensitivity setting");
         FillTextBase();
         FillNotes();
         switch(levelID)
@@ -119,6 +122,8 @@ public class Language_English : LanguageBase
         loadedText[70] = "1-1 The Pit";
         loadedText[71] = "1-2 The Stillness";
         loadedText[72] = "1-3 The Unknown";
+        loadedText[73] = "1-4 The Passing";
+
 
         loadedText[98] = "    ";
         loadedText[99] = "You're just an unexpected guest inside someones mind. Enjoy the journey and watch the story unfold.";

@@ -167,7 +167,7 @@ public class PlayerUI : MonoBehaviour
     }
     public void BTN_Continue()
     {
-        defaultGameWindow.OpenWindow();
+        pauseWindow.OpenParentWindow();
         HideUI();
     }
     public void BTN_Options()
